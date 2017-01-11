@@ -32,7 +32,7 @@ if(myjob == "Mafia") then { _cashout = _cashout * 3 };
 
 [_cashout] call Client_fnc_addCash;
 
-hint format["Zarobi³eœ $%1.",_cashout];
+hint format["Zarobiles $%1.",_cashout];
 
 
 
@@ -52,7 +52,7 @@ _barArray = ["np_copperbar1","np_ironbar1","np_silverbar1","NP_Wood","CG_OilCani
 _priceArray = [80,155,275,90,470];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
-if(globalProtection != 0) exitwith { hint "Ju¿ przetwarzam"; };
+if(globalProtection != 0) exitwith { hint "Juz przetwarzam"; };
 _localProtection = 0;
 
 
@@ -84,4 +84,4 @@ _cashTotal = 0;
 
 globalProtection = 0;
 
-hint format["Zarobi³eœ $%1",_cashTotal];
+hint format["Zarobiles $%1",_cashTotal];
