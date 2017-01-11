@@ -17,14 +17,14 @@ _markers = [];
 		_marker = createMarkerLocal [format["%1_PD_UNIT",name _x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorBlue";
 		_marker setMarkerTypeLocal "hd_dot";
-		_marker setMarkerTextLocal "PD Unit";
+		_marker setMarkerTextLocal format["%1",name _x];
 		_markers pushBack [_marker,_x];
 	};
 
 } foreach PlayableUnits;
 
 
-while {visibleMap} do
+while {visibleMap || visibleGPS} do
 {
 	{
 		private["_marker","_unit"];
