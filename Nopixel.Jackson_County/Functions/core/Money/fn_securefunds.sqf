@@ -1,0 +1,1 @@
+deletevehicle currentcursortarget;
