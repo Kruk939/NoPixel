@@ -716,7 +716,7 @@ NoPixel_InteractionMenuItems = [
 	],
 	
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 1 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 6 "],
 		["ARSENAL", "[cursorobject] spawn client_fnc_vars"]
 	],
 
