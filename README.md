@@ -7,7 +7,7 @@
 
 
 
-
+<hr>
 
 #TODO
 * Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
