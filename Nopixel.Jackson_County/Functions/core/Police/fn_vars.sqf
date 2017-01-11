@@ -101,8 +101,16 @@ _availableWeapon = [
 "CUP_optic_CompM2_Black",
 "CUP_optic_CompM4"
 ];
+
+_availableAttachments = [
+
+];
  
- 
+_availableItems = [
+
+];
+
+
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
 [_crate,((itemCargo _crate) + _availableHeadgear + _availableGoggles + _availableUniforms + _availableVests)] call BIS_fnc_addVirtualItemCargo;
 [_crate,((magazineCargo _crate) + _availableMagazine)] call BIS_fnc_addVirtualMagazineCargo;
