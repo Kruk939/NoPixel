@@ -7,24 +7,30 @@ _garage = [];
 if(myJob == "Cop") then {
 	_garage = [
 			"MELB_H6M",
+			"VVV_Ford_CVPI_Normal",
+			"VVV_Ford_CVPI_sheriff",
+			"VVV_Ford_CVPI_swat",
+			"VVV_dodge_charger_normal",
+			"VVV_dodge_charger_swat",
+			"VVV_dodge_charger_black",
+			"VVV_Dodge_Charger_HighWay",
+			"vvv_DodgeDurango_POLICE",
+			"VVV_DodgeDurango_Highway",
 			"ivory_suburban_unmarked",
 			"ivory_suburban_slicktop",
 			"ivory_suburban_marked",
-			"VVV_dodge_charger_black",
-			"VVV_dodge_charger_swat",
-			"VVV_dodge_charger_normal",
-			"B_Boat_Transport_01_F",
-			"C_Boat_Civil_01_F",
-			"ivory_evox_marked",
 			"ivory_evox_unmarked",
 			"ivory_evox_slicktop",
-			"ivory_isf_marked",
+			"ivory_evox_marked",
 			"ivory_isf_unmarked",
 			"ivory_isf_slicktop",
-			"ivory_m3_marked",
+			"ivory_isf_marked",
 			"ivory_m3_unmarked",
 			"ivory_m3_slicktop",
-			"vvv_DodgeDurango_POLICE"
+			"ivory_m3_marked",
+			"ivory_rev_marked",
+			"B_Boat_Transport_01_F",
+			"C_Boat_Civil_01_F"
 			];
 	//if(player getvariable "cop" > 7) then { _garage pushback "B_MRAP_01_hmg_F"; };
 };
