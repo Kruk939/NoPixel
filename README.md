@@ -12,3 +12,4 @@
 #TODO
 * Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
 * Autokomis (Katekarin)
+* Panel gracza pod nową misję
