@@ -842,17 +842,8 @@ NoPixel_InteractionMenuItems = [
 		["Napraw obiekt", "[""Repairing Object"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
-
-
-
-
-//	[
-//		["getplayerUID player IN ['76561198020808333','76561198059765677','76561198061587586','76561198000946472']"],
-//		["BAN HAMMER", "closedialog 0; createdialog ""koiladmin""; ",4]
-//	]
-
 	[
-		["jesteadmine==1"],
+		["jesteadmine == 1"],
 		["BAN HAMMER", "closedialog 0; createdialog ""koiladmin""; ",4]
 	]
 
