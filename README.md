@@ -4,3 +4,8 @@
 3. **Plik** można wykorzystać wyłącznie w celach edukacyjnych.
 4. **Plik** nie może być udostępniany bez mojej zgody.
 5. **Pliki** nie mogą być wykorzystywane na innym serwerze niż na tym, który został utworzony przez [stanlakeside.pl](http://stanlakeside.pl)
+
+
+#TODO
+* Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
+* Autokomis (Katekarin)
