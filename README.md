@@ -6,6 +6,9 @@
 5. **Pliki** nie mogą być wykorzystywane na innym serwerze niż na tym, który został utworzony przez [stanlakeside.pl](http://stanlakeside.pl)
 
 
+
+
+
 #TODO
 * Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
 * Autokomis (Katekarin)
