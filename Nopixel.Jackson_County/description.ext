@@ -3,7 +3,7 @@ enableDebugConsole = 1;
 respawn = "BASE";
 disabledAI = 1;
 author = "Koil";
-onLoadName = "Silverlake by Stanlakeside";
+onLoadName = "Silverlake by StanLakeside";
 onLoadMission = "Powered on NoPixel Mod by Koil";
 respawndelay = 1;
 

@@ -13,3 +13,10 @@
 * Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
 * Autokomis (Katekarin)
 * Panel gracza pod nową misję
+
+
+<hr>
+#WAŻNE PLIKI
+*\Functions\core\Police\fn_vars.sqf - ARSENAL
+*\Functions\core\Init\fn_miscvariables.sqf - VARIABLES - ADMIN'S ID
+
