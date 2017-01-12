@@ -6,14 +6,16 @@ if(isNil "paycheck") then { paycheck = 0; };
 	if(paycheck > 280) then { paycheck = 280; };
 
 if(!taskrunning) then {
-	hint format["Wlasnie otrzymales $35 z %1 w bonusach",paycheck];	
+	_str = format["Wlasnie otrzymales $35 z %1 w bonusach",paycheck];
+	[_str, true] spawn domsg;
 	paycheck = paycheck + 35;
 } else {
 	if(myJob == "Fire") then { _addition = player getvariable "Fire"; _addition = _addition + 2; paycheck = paycheck + (25*_addition); };
 	if(myJob == "EMS") then { _addition = player getvariable "EMS"; _addition = _addition + 2; paycheck = paycheck + (25*_addition); };
 	if(myJob == "Cop") then { _addition = player getvariable "Cop"; _addition = _addition + 2; paycheck = paycheck + (25*_addition); };	
 	if(myJob == "Mafia") then { _addition = player getvariable "Mafia"; _addition = _addition + 2; paycheck = paycheck + (5*_addition); };	
-	hint format["Wlasnie otrzymales $75 z %1 w bonusach",paycheck];
+	_str = format["Wlasnie otrzymales $75 z %1 w bonusach",paycheck];
+	[_str, true] spawn domsg;
 	paycheck = paycheck + 75;
 };
 

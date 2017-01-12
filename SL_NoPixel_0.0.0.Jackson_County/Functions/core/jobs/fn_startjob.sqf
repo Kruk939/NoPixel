@@ -17,11 +17,11 @@ _Jobs pushback "Ochrona";
 };
 
 if(count currentTrashman < 3) then {
-_Jobs pushback "Wywóz śmieci"; 
+_Jobs pushback "Wywoz smieci"; 
 };
 
 if(count currentNewsMan < 3) then {
-_Jobs pushback "Reporter wiadomości"; 
+_Jobs pushback "Reporter wiadomosci"; 
 };
 
 if(count currentRepairmen < 7) then {
@@ -29,7 +29,7 @@ _Jobs pushback "Mechanik";
 };
 
 if(count currentTaxiDrivers < 7) then {
-_Jobs pushback "Taksówkarz"; 
+_Jobs pushback "Taksowkarz"; 
 };
 if(_jobs isequalto []) then { _jobs = ["Brak dostępnych prac"]; };
 
