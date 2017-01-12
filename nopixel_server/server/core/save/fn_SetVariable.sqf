@@ -7,7 +7,7 @@ if(isNil "_new") exitwith { };
  
 if(_variable == "usedgarage") exitwith { 
 if(isNil "_new") exitwith {}; 
-GarageVariableWhore setvariable [_object, _new, false]; 
+	GarageVariableWhore setvariable [_object, _new, false]; 
 }; 
  
 if(_variable == "getunitloadout" && (_object getvariable "sync") == 0) exitwith {}; 
