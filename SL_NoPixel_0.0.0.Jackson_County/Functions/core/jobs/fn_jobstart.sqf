@@ -54,19 +54,19 @@ if (str _jobtype find "Fire Dispatch" > -1) exitwith {
 	publicvariable "currentFireDispatch";	
 };
 
-if (str _jobtype find "Kurier Fedex" > -1) exitwith {
+if (str _jobtype find "mail" > -1 || str _jobtype == "mail") exitwith {
 	[] spawn client_fnc_mailSystem;
 	currentmailmen pushback _player;
 	publicvariable "currentMailMen";	
 };
 
-if (str _jobtype find "Taksówkarz" > -1) exitwith {
+if (str _jobtype find "taxi" > -1 || str _jobtype == "taxi") exitwith {
 	[] spawn client_fnc_startTaxi;
 	currentTaxiDrivers pushback _player;
 	publicvariable "currentTaxiDrivers";
 };
 
-if (str _jobtype find "Ochrona" > -1) exitwith {
+if (str _jobtype find "repairman" > -1 || str _jobtype == "repairman") exitwith {
 	[] spawn client_fnc_startSecurity;
 	currentsecurity pushback _player;
 	publicvariable "currentSecurity";	
@@ -96,19 +96,19 @@ if (str _jobtype find "Tow Truck Driver" > -1) exitwith {
 	publicvariable "currentTowTruckDrivers";
 };
 
-if (str _jobtype find "Wywóz śmieci" > -1) exitwith {
+if (str _jobtype find "trashman" > -1 || str _jobtype == "trashman") exitwith {
 	[] spawn client_fnc_startGarbage;
 	currentTrashMan pushback _player;
 	publicvariable "currentTrashman";	
 };
 
-if (str _jobtype find "Reporter wiadomości" > -1) exitwith {
+if (str _jobtype find "reporter" > -1 || str _jobtype == "reporter") exitwith {
 	[] spawn client_fnc_startNews;	
 	currentNewsMan pushback _player;
 	publicvariable "currentNewsMan";
 };
 
-if (str _jobtype find "Mechanik" > -1) exitwith {	
+if (str _jobtype find "repairman" > -1 || str _jobtype == "repairman") exitwith {	
 	[] spawn client_fnc_startRepair;
 	currentRepairmen pushback _player;
 	publicvariable "currentRepairmen";	

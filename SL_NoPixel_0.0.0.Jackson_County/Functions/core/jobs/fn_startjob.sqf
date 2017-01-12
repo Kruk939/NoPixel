@@ -9,33 +9,33 @@ lbClear _list;
 _jobs = [];
 
 if(count currentMailmen < 3) then {
-_Jobs pushback "Kurier Fedex"; 
+_Jobs pushback ["Kurier Fedex","kurier"]; 
 };
 
 if(count currentSecurity < 2) then {
-_Jobs pushback "Ochrona"; 
+_Jobs pushback ["Ochrona","ochrona"]; 
 };
 
 if(count currentTrashman < 3) then {
-_Jobs pushback "Wywoz smieci"; 
+_Jobs pushback ["Wywóz śmieci","smieciarz"]; 
 };
 
 if(count currentNewsMan < 3) then {
-_Jobs pushback "Reporter wiadomosci"; 
+_Jobs pushback ["Reporter wiadomości","reporter"]; 
 };
 
 if(count currentRepairmen < 7) then {
-_Jobs pushback "Mechanik"; 
+_Jobs pushback ["Mechanik","mechanik"]; 
 };
 
 if(count currentTaxiDrivers < 7) then {
-_Jobs pushback "Taksowkarz"; 
+_Jobs pushback ["Taksowkarz","taxi"]; 
 };
 if(_jobs isequalto []) then { _jobs = ["Brak dostępnych prac"]; };
 
 {
-	_list lbAdd format["Praca: %1",_x];
-	_list lbSetdata [(lbSize _list)-1,str(_x)];
+	_list lbAdd format["Praca: %1",_x select 0];
+	_list lbSetdata [(lbSize _list)-1,str(_x select 1)];
 } foreach _jobs;
 
 _list lbAdd "Praca: Drwal";
