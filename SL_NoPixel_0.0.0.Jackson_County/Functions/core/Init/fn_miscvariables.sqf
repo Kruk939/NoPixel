@@ -86,6 +86,7 @@ client_fnc_keyBusyPlayer = compileFinal
 	uisleep 1;
 	busyPlayer = false;
 ";
+
 client_fnc_blindfolded = compileFinal
 "
 	blindfolded = true;
@@ -182,7 +183,6 @@ client_fnc_animSync = compileFinal
 	if(isNull _unit) exitWith {};
 	_unit switchMove _anim;
 ";
-
 
 doquickmsg = compileFinal
 "
@@ -319,17 +319,10 @@ domsg = {
 	};
 };
 
-//event handlers - lets drive it off one event instead of multiple, okay? okay.
-
-
-
-
 
 player addEventHandler["put", {
 
 		_loadout = getunitloadout player;
-
-
 		_isPack = getNumber(configFile >> "CfgVehicles" >> (_this select 2) >> "isBackpack");
 		_attempt = isClass (ConfigFile >> "CfgWeapons" >> (_this select 2));
 		if(_attempt || _isPack == 1) then {	[player, "getunitloadout", _loadout] remoteExec ["Server_fnc_setVariable",2]; };
@@ -365,132 +358,64 @@ player addEventHandler["handleDamage", { _this spawn Client_fnc_handleDamage; fa
 
 client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","client_fnc_nametags"] call BIS_fnc_addStackedEventHandler; 
 
-turboVehicleList = [ 
-
-"ivory_190e_tuned3",
-
-"ivory_rs4_tuned3",
-
-"ivory_c_tuned3",
-
-"ivory_e36_tuned3",
-
-"ivory_m3_tuned3",
-
-"ivory_evox_tuned3",
-
-"ivory_r34_tuned3",
-
-"ivory_isf_tuned3",
-
-"ivory_lfa_tuned3",
-
-"ivory_elise_tuned3",
-
-"ivory_gt500_tuned3",
-
-"ivory_supra_tuned3",
-
-"ivory_gti_tuned3",
-
-"ivory_wrx_tuned3" ];
-
-
-
-
-upgradeVehicleList = [ "ivory_190e_tuned1",
-
-"ivory_rs4_tuned1",
-
-"ivory_c_tuned1",
-
-"ivory_e36_tuned1",
-
-"ivory_m3_tuned1",
-
-"ivory_evox_tuned1",
-
-"ivory_r34_tuned1",
-
-"ivory_isf_tuned1",
-
-"ivory_lfa_tuned1",
-
-"ivory_elise_tuned1",
-
-"ivory_gt500_tuned1",
-
-"ivory_supra_tuned1",
-
-"ivory_gti_tuned1",
-
-"ivory_wrx_tuned1",
-
-
-
-
-
-
-"ivory_190e_tuned2",
-
-"ivory_rs4_tuned2",
-
-"ivory_c_tuned2",
-
-"ivory_e36_tuned2",
-
-"ivory_m3_tuned2",
-
-"ivory_evox_tuned2",
-
-"ivory_r34_tuned2",
-
-"ivory_isf_tuned2",
-
-"ivory_lfa_tuned2",
-
-"ivory_elise_tuned2",
-
-"ivory_gt500_tuned2",
-
-"ivory_supra_tuned2",
-
-"ivory_gti_tuned2",
-
-"ivory_wrx_tuned2",
-
-
-
-
-
-"ivory_190e_tuned3",
-
-"ivory_rs4_tuned3",
-
-"ivory_c_tuned3",
-
-"ivory_e36_tuned3",
-
-"ivory_m3_tuned3",
-
-"ivory_evox_tuned3",
-
-"ivory_r34_tuned3",
-
-"ivory_isf_tuned3",
-
-"ivory_lfa_tuned3",
-
-"ivory_elise_tuned3",
-
-"ivory_gt500_tuned3",
-
-"ivory_supra_tuned3",
-
-"ivory_gti_tuned3",
-
-"ivory_wrx_tuned3" ];
-
-
-
-
+turboVehicleList = [
+	"ivory_190e_tuned3",
+	"ivory_rs4_tuned3",
+	"ivory_c_tuned3",
+	"ivory_e36_tuned3",
+	"ivory_m3_tuned3",
+	"ivory_evox_tuned3",
+	"ivory_r34_tuned3",
+	"ivory_isf_tuned3",
+	"ivory_lfa_tuned3",
+	"ivory_elise_tuned3",
+	"ivory_gt500_tuned3",
+	"ivory_supra_tuned3",
+	"ivory_gti_tuned3",
+	"ivory_wrx_tuned3"
+];
+
+upgradeVehicleList = [
+	"ivory_190e_tuned1",
+	"ivory_rs4_tuned1",
+	"ivory_c_tuned1",
+	"ivory_e36_tuned1",
+	"ivory_m3_tuned1",
+	"ivory_evox_tuned1",
+	"ivory_r34_tuned1",
+	"ivory_isf_tuned1",
+	"ivory_lfa_tuned1",
+	"ivory_elise_tuned1",
+	"ivory_gt500_tuned1",
+	"ivory_supra_tuned1",
+	"ivory_gti_tuned1",
+	"ivory_wrx_tuned1",
+	"ivory_190e_tuned2",
+	"ivory_rs4_tuned2",
+	"ivory_c_tuned2",
+	"ivory_e36_tuned2",
+	"ivory_m3_tuned2",
+	"ivory_evox_tuned2",
+	"ivory_r34_tuned2",
+	"ivory_isf_tuned2",
+	"ivory_lfa_tuned2",
+	"ivory_elise_tuned2",
+	"ivory_gt500_tuned2",
+	"ivory_supra_tuned2",
+	"ivory_gti_tuned2",
+	"ivory_wrx_tuned2",
+	"ivory_190e_tuned3",
+	"ivory_rs4_tuned3",
+	"ivory_c_tuned3",
+	"ivory_e36_tuned3",
+	"ivory_m3_tuned3",
+	"ivory_evox_tuned3",
+	"ivory_r34_tuned3",
+	"ivory_isf_tuned3",
+	"ivory_lfa_tuned3",
+	"ivory_elise_tuned3",
+	"ivory_gt500_tuned3",
+	"ivory_supra_tuned3",
+	"ivory_gti_tuned3",
+	"ivory_wrx_tuned3"
+];
