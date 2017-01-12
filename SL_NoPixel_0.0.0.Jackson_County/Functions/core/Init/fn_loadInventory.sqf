@@ -41,51 +41,51 @@ if(_mayor) then {
 };
 
 if(_mafia == 10) then {
-	format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];
+	//format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9842.84,3677.44,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
 if(_mafia == 9) then {
-	format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];
+	//format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9736.28,3629.54,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
 if(_cop == 10) then {
 	player setvariable ["coplevel",10,false];
-	format["The Police Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
+	//format["The Police Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9626,3578.7,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
 if(_cop == 9) then {
 	player setvariable ["coplevel",9,false];
-	format["The Police Captain has entered the City! %1", name player] remoteexec ["hint",-2];
+	//format["The Police Captain has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9516.43,3526.09,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
 if(_ems == 10) then {
 	player setvariable ["ems",10,false];
-	format["The EMS Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
+	//format["The EMS Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9412.31,3479.1,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
 if(_ems == 9) then {
 	player setvariable ["ems",9,false];
-	format["The EMS Deputy Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
+	//format["The EMS Deputy Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9306.67,3430.66,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
 if(_legal == 10) then {
-	format["The Chief Justice has entered the City! %1", name player] remoteexec ["hint",-2];
+	//format["The Chief Justice has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9188.22,3371.8,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
 if(_legal == 9) then {
-	format["The Supreme Court Justice has entered the City! %1", name player] remoteexec ["hint",-2];
+	//format["The Supreme Court Justice has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9094.99,3324.16,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
 if(_legal == 8) then {
-	format["The District Attorney has entered the City! %1", name player] remoteexec ["hint",-2];
+	//format["The District Attorney has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[8984.55,3274.12,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
