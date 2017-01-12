@@ -131,7 +131,7 @@ _marker setMarkerTextLocal "Moja klitka";
 _marker = createMarkerLocal [getPlayerUID player, _shop];
 _marker setMarkerShapeLocal "ICON";
 _marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal format["%1 - CLOSED", _shopname];
+_marker setMarkerTextLocal format["%1 - ZAMKNIĘTY", _shopname];
 
 
 player setVariable ["shopname", _shopname, false];

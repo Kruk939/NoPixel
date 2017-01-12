@@ -102,7 +102,7 @@ if(_type == "license") then {
 
 	if(_adjust == "Add") then { 
 
-		if(_amount == 1) then { licensearray SET [0,1]; ["Otrzymales Prawojazdy",false] spawn domsg; };
+		if(_amount == 1) then { licensearray SET [0,1]; ["Otrzymales prawo jazdy",false] spawn domsg; };
 		if(_amount == 2) then { licensearray SET [1,1]; ["Otrzymales licencje na bron",false] spawn domsg;  };
 		if(_amount == 3) then { licensearray SET [2,1]; ["Otrzymales licencje gornika",false] spawn domsg;  };
 		if(_amount == 4) then { licensearray SET [3,1]; ["Otrzymales licencje drwala",false] spawn domsg; };
@@ -112,7 +112,7 @@ if(_type == "license") then {
 
 	if(_adjust == "Remove") then { 
 
-		if(_amount == 1) then { licensearray SET [0,0]; ["Straciles Prawojazdy",false] spawn domsg; };
+		if(_amount == 1) then { licensearray SET [0,0]; ["Straciles prawo jazdy",false] spawn domsg; };
 		if(_amount == 2) then { licensearray SET [1,0]; ["Straciles licencje na bron",false] spawn domsg; };
 		if(_amount == 3) then { licensearray SET [2,0]; ["Straciles licencje gornika",false] spawn domsg; };
 		if(_amount == 4) then { licensearray SET [3,0]; ["Straciles licencje drwala",false] spawn domsg; };

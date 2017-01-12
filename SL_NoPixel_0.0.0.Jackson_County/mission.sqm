@@ -6312,7 +6312,7 @@ class Mission
 			dataType="Marker";
 			position[]={5445.5278,7.1111614e+034,5163.189};
 			name="rareFish";
-			text="Rare Item Trader";
+			text="Handlarz rzadkich przedmiotów";
 			type="respawn_unknown";
 			colorName="ColorPink";
 			id=240;
@@ -6852,7 +6852,7 @@ class Mission
 			dataType="Marker";
 			position[]={2394.9121,4.1779913e+012,5317.0142};
 			name="rally1";
-			text="Rally Sign Up";
+			text="Zapisy na wyścigi";
 			type="mil_flag";
 			id=298;
 			atlOffset=4.1779913e+012;

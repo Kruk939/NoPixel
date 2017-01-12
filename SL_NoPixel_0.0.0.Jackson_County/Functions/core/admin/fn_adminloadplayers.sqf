@@ -21,6 +21,79 @@ _list = _display displayCtrl 1501;
 
 lbClear _list;
 
+if (jesteadmine == 1) then {
+
+_list lbAdd format["%1", "Invisible On"];
+_list lbSetdata [(lbSize _list)-1,str(5)];
+
+_list lbAdd format["%1", "Invisible Off"];
+_list lbSetdata [(lbSize _list)-1,str(6)];
+
+_list lbAdd format["%1", "God Mode On"];
+_list lbSetdata [(lbSize _list)-1,str(3)];
+
+_list lbAdd format["%1", "God Mode Off"];
+_list lbSetdata [(lbSize _list)-1,str(4)];
+
+_list lbAdd format["%1", "Sync Data"];
+_list lbSetdata [(lbSize _list)-1,str(8)];
+
+_list lbAdd format["%1", "Ghost Spectate"];
+_list lbSetdata [(lbSize _list)-1,str(24)];
+
+_list lbAdd format["%1", "Toggle TP"];
+_list lbSetdata [(lbSize _list)-1,str(26)];
+
+};
+
+
+if (jesteadmine == 2) then {
+
+_list lbAdd format["%1", "Invisible On"];
+_list lbSetdata [(lbSize _list)-1,str(5)];
+
+_list lbAdd format["%1", "Invisible Off"];
+_list lbSetdata [(lbSize _list)-1,str(6)];
+
+_list lbAdd format["%1", "God Mode On"];
+_list lbSetdata [(lbSize _list)-1,str(3)];
+
+_list lbAdd format["%1", "God Mode Off"];
+_list lbSetdata [(lbSize _list)-1,str(4)];
+
+_list lbAdd format["%1", "Sync Data"];
+_list lbSetdata [(lbSize _list)-1,str(8)];
+
+_list lbAdd format["%1", "Ghost Spectate"];
+_list lbSetdata [(lbSize _list)-1,str(24)];
+
+_list lbAdd format["%1", "Teleport To"];
+_list lbSetdata [(lbSize _list)-1,str(1)];
+
+_list lbAdd format["%1", "Teleport To Me"];
+_list lbSetdata [(lbSize _list)-1,str(2)];
+
+_list lbAdd format["%1", "Toggle TP"];
+_list lbSetdata [(lbSize _list)-1,str(26)];
+
+_list lbAdd format["%1", "Sync Data"];
+_list lbSetdata [(lbSize _list)-1,str(8)];
+
+_list lbAdd format["%1", "Full Heal"];
+_list lbSetdata [(lbSize _list)-1,str(13)];
+
+_list lbAdd format["%1", "Revive"];
+_list lbSetdata [(lbSize _list)-1,str(14)];
+
+_list lbAdd format["%1", "Revive All Dead"];
+_list lbSetdata [(lbSize _list)-1,str(22)];
+
+_list lbAdd format["%1", "Kick Target"];
+_list lbSetdata [(lbSize _list)-1,str(27)];
+};
+
+if (jesteadmine == 3) then {
+
 _list lbAdd format["%1", "Teleport To"];
 _list lbSetdata [(lbSize _list)-1,str(1)];
 
@@ -101,3 +174,4 @@ _list lbSetdata [(lbSize _list)-1,str(26)];
 
 _list lbAdd format["%1", "Kick Target"];
 _list lbSetdata [(lbSize _list)-1,str(27)];
+};
