@@ -10,7 +10,7 @@
 <hr>
 
 #TODO
-* Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
+* Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy. √ 
 * Autokomis (Katekarin)
 * Panel gracza pod nową misję
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
