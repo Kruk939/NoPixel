@@ -44,6 +44,12 @@ _list lbSetdata [(lbSize _list)-1,str(24)];
 _list lbAdd format["%1", "Toggle TP"];
 _list lbSetdata [(lbSize _list)-1,str(26)];
 
+_list lbAdd format["%1", "Teleport To"];
+_list lbSetdata [(lbSize _list)-1,str(1)];
+
+_list lbAdd format["%1", "Teleport To Me"];
+_list lbSetdata [(lbSize _list)-1,str(2)];
+
 };
 
 
