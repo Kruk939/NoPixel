@@ -15,7 +15,7 @@
 * Panel gracza pod nową misję
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Sync przy wyjściu z gry (Przycisk ABORT)
-* Kupowanie licencji na broń (5000$)
+* Kupowanie licencji na broń (5000$) √ 
 
 
 <hr>
