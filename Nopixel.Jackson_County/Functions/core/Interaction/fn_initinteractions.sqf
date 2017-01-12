@@ -123,7 +123,7 @@ NoPixel_InteractionMenuItems = [
 //	],
 
 //	[
-//		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && player getvariable ""mafia"" > 5 "],
+//		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && (player getvariable ""mafia"") > 5 "],
 //		["Daj Pożyczkę", " [currentcursortarget] spawn client_fnc_giveLoan; ",1]
 //	],
 
@@ -240,7 +240,7 @@ NoPixel_InteractionMenuItems = [
 
 
 	[
-		["(getpos player) distance [1055,3660,0.014] < 20 && player getvariable ""Mafia"" > 0 "],
+		["(getpos player) distance [1055,3660,0.014] < 20 && (player getvariable ""Mafia"") > 0 "],
 		["Sprzedaj pojazd", " ['Sprzedawanie',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
