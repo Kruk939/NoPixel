@@ -8,6 +8,7 @@ if (str _jobtype find "Cop" > -1) exitwith {
 		[] spawn client_fnc_startCop;
 		currentCop pushback _player;
 		publicvariable "currentCop";
+		["basic"] spawn client_fnc_setGear;
 
 };
 
@@ -16,6 +17,7 @@ if (str _jobtype find "EMS" > -1) exitwith {
 		[] spawn client_fnc_startEMS;
 		currentEMS pushback _player;
 		publicvariable "currentEMS";
+		["basic"] spawn client_fnc_setGear;
 };
 
 if (str _jobtype find "Fire" > -1) exitwith {  
@@ -23,6 +25,7 @@ if (str _jobtype find "Fire" > -1) exitwith {
 		[] spawn client_fnc_startFire;
 		currentFire pushback _player;
 		publicvariable "currentFire";	
+		["basic"] spawn client_fnc_setGear;
 };
 
 if (str _jobtype find "Mafia" > -1) exitwith {   
