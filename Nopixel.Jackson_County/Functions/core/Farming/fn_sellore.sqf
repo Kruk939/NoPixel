@@ -5,7 +5,7 @@ petroleo < string to object
 private["_n","_i","_localProtection"];
 
 _barArray = ["np_copperbar1","np_ironbar1","np_silverbar1","NP_Wood","CG_OilCanister"];
-_priceArray = [65,85,135,50,235];
+_priceArray = [30,45,75,10,115];
 
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { hint "Już przetwarzam"; };

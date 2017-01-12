@@ -11,24 +11,24 @@ if(_condition == "gunstore") then {
 		["cg_pickaxe",nil,120,1],
 		["cg_bat",nil,120,1],
 		["vvv_fishing_rod",nil,120,1],
-		["hgun_mas_ww2_acp_F",nil,1200,1],
-		["hgun_Pistol_heavy_01_F",nil,1200,1],
-		["hgun_ACPC2_F",nil,1200,1],
-		["hgun_mas_ww2_bhp_F",nil,1250,1],
-		["sab_1911_handgun",nil,1490,1],
-		["CUP_hgun_Compact",nil,1500,1],
-		["hgun_mas_ww2_lug_F",nil,1600,1],
-		["CUP_hgun_Makarov",nil,1700,1],
-		["CUP_hgun_PB6P9",nil,2500,1],
-		["RH_g17",nil,2000,1],
-		["CUP_hgun_M9",nil,2700,1],	
-		["CUP_hgun_TaurusTracker455",nil,3500,1],
-		["hgun_mas_ww2_tt33_F",nil,3300,1],
-		["RH_uspm",nil,3600,1],
-		["RH_kimber",nil,3200,1],
-		["RH_fn57",nil,3000,1],
-		["RH_fnp45",nil,3500,1],
-		["taser",nil,1500,1]
+		["hgun_mas_ww2_acp_F",nil,3100,1],
+		["hgun_Pistol_heavy_01_F",nil,3000,1],
+		["hgun_ACPC2_F",nil,3150,1],
+		["hgun_mas_ww2_bhp_F",nil,3050,1],
+		["sab_1911_handgun",nil,3210,1],
+		["CUP_hgun_Compact",nil,3300,1],
+		["hgun_mas_ww2_lug_F",nil,3175,1],
+		["CUP_hgun_Makarov",nil,3500,1],
+		["CUP_hgun_PB6P9",nil,5200,1],
+		["RH_g17",nil,4600,1],
+		["CUP_hgun_M9",nil,6350,1],	
+		["CUP_hgun_TaurusTracker455",nil,6500,1],
+		["hgun_mas_ww2_tt33_F",nil,4300,1],
+		["RH_uspm",nil,7800,1],
+		["RH_kimber",nil,9600,1],
+		["RH_fn57",nil,7400,1],
+		["RH_fnp45",nil,6800,1],
+		["taser",nil,2200,1]
 	];
 
 	{
@@ -829,7 +829,7 @@ lbClear _list;
 		_magazine = _magazines select 0;
 		_item = [_magazine] call client_fnc_fetchItemType;
 		_list lbAdd format["$%2 (Tax %%3): %1",_item select 1, 10,taxRate];
-		_list lbSetdata [(lbSize _list)-1, str([_magazine,_item select 1, 10,2,0,_addedprice])];
+		_list lbSetdata [(lbSize _list)-1, str([_magazine,_item select 1, 50,2,0,_addedprice])];
 		_list lbSetPicture [(lbSize _list)-1,_item select 2];
 	};
 } foreach _storeList;

@@ -224,7 +224,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["currentcursortarget in current_cars || myjob IN [""Cop"",""Fire"",""EMS""] "],
-		["Wyciągnij graczy", " ['Wyciąganie graczy',8,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Wyciągnij graczy", " ['Wyciąganie graczy',10,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 	[
@@ -246,7 +246,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat' "],
-		["Napraw", "['Naprawianie',25,client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask",2]
+		["Napraw", "['Naprawianie',30,client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask",2]
 	],
 
 	[
@@ -276,7 +276,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["CurrentCursorTarget in Current_Cars", "myhouse distance getpos player < 50"],
-		["Schowaj do garażu", "['Storing Vehicle',5, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
+		["Schowaj do garażu", "['Storing Vehicle',10, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 
@@ -328,7 +328,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["CurrentCursorTarget isKindOf 'Man' && myjob == ""Cop"""],
-		["Odbierz licencję", " ['Odbieranie',6,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
+		["Odbierz licencję", " ['Odbieranie',5,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 	[
@@ -343,7 +343,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man' && (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Przeszukaj", " ['Przeszukiwanie',8,client_fnc_startpatdown,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Przeszukaj", " ['Przeszukiwanie',10,client_fnc_startpatdown,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
 
@@ -671,22 +671,22 @@ NoPixel_InteractionMenuItems = [
 
 //	[
 //		["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
-//		["Fire Dispatch Sign-In", "[player,""Fire Dispatch""] spawn client_fnc_jobstart;",4]
+//		["Zapis strażacka centrala", "[player,""Fire Dispatch""] spawn client_fnc_jobstart;",4]
 //	],
 
 	[
 		[" myjob == ""Cop"" && !dispatch && (player getvariable ""cop"") > 0 "],
-		["Police Dispatch Sign-in", "[player,""Police Dispatch""] spawn client_fnc_jobstart;",4]
+		["Zapis policyjna centrala", "[player,""Police Dispatch""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""EMS"" && !dispatch && (player getvariable ""ems"") > 0 "],
-		["EMS Dispatch Sign-In", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
+		["Zapis medyczna centrala", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
 	],
 
 	[
 		["dispatch"],
-		["Dispatch Sign-Off", "[player] remoteExec [""server_fnc_quitDispatch"",2]; dispatch = false;",4]
+		["Wypis z centrali", "[player] remoteExec [""server_fnc_quitDispatch"",2]; dispatch = false;",4]
 		//["Dispatch Sign-Off", "Dispatch = false",4]
 	],
 

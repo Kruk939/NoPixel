@@ -1,5 +1,3 @@
-// Edytowane przez: Adi     afr-rp.pl
-
 _class1 = ["CG_Heroin"];  
 _class2 = ["CG_MethBag100","CG_MethBag90"]; 
 _class3 = ["CG_Cocaine"]; 

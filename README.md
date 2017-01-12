@@ -14,10 +14,12 @@
 * Autokomis (Katekarin)
 * Panel gracza pod nową misję
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
+* Sync przy wyjściu z gry (Przycisk ABORT)
+* Kupowanie licencji na broń (5000$)
 
 
 <hr>
 #WAŻNE PLIKI
-*\Functions\core\Police\fn_vars.sqf - ARSENAL
-*\Functions\core\Init\fn_miscvariables.sqf - VARIABLES - ADMIN'S ID
+* \Functions\core\Police\fn_vars.sqf - ARSENAL
+* \Functions\core\Init\fn_miscvariables.sqf - VARIABLES - ADMIN'S ID
 

@@ -37,27 +37,80 @@ _PistolClasses = [
 ];
 
 _PricesPistolClasses = [
-	[1,1,0,0,0],
-	[1,0,1,0,0],
-	[1,1,0,0,0],
-	[1,1,0,0,0],
-	[1,0,1,0,0],
-	[1,1,0,0,0],
-	[1,1,0,0,0],
-	[1,0,1,0,0],
-	[1,0,1,0,0],
-	[1,0,0,1,0],
-	[1,0,0,1,0],
-	[0,0,0,1,1],
-	[0,0,0,1,1],
-	[1,1,0,0,2],
-	[1,1,0,0,2],
-	[1,0,1,0,3],
-	[1,0,5,0,7],
-	[1,5,0,1,7]
+	//1911 ACP
+	//hgun_mas_ww2_acp_F
+	[3,2,0,0,0],
+	
+	//4-five .45 ACP
+	//hgun_Pistol_heavy_01_F
+	[3,0,2,0,0],
+	
+	//ACP-C2 .45 ACP
+	//hgun_ACPC2_F
+	[3,2,0,0,0],
+	
+	//Browning HP
+	//hgun_mas_ww2_bhp_F
+	[3,1,0,0,0],
+	
+	//Colt 1911
+	//sab_1911_handgun
+	[4,0,2,0,0],
+	
+	//CZ 75 COMPACT
+	//CUP_hgun_Compact
+	[3,2,0,0,0],
+	
+	//Luger
+	//hgun_mas_ww2_lug_F
+	[2,1,0,0,0],
+	
+	//Makarov PM
+	//CUP_hgun_Makarov
+	[3,0,1,0,0],
+	
+	//PB 6P9
+	//CUP_hgun_PB6P9
+	[3,0,1,0,0],
+	
+	//M9
+	//CUP_hgun_M9
+	[3,0,0,1,0],
+	
+	//Taurus Tracker Model 455
+	//CUP_hgun_TaurusTracker455
+	[3,0,0,1,0],
+	
+	//Tokarev
+	//hgun_mas_ww2_tt33_F
+	[2,0,0,1,1],
+	
+	//USP40 Match
+	//RH_uspm
+	[3,0,0,1,2],
+	
+	//Kimber Desert Warrior
+	//RH_kimber
+	[3,1,0,0,2],
+	
+	//FN Five-Seven
+	//RH_fn57
+	[3,1,0,0,2],
+	
+	//FNP45 Tactical
+	//RH_fnp45
+	[3,0,1,0,3],
+	
+	//Desert Eagle Gold
+	//RH_Deagleg
+	[3,0,5,0,7],
+	
+	//Desert Eagle Silver
+	//RH_Deagles
+	[3,5,0,1,7]
 ];
 
-_PistolMags = [1,1,0,0,0];
+_PistolMags = [2,1,0,0,0];
 
 
 if(myJob == "Mafia") then {
@@ -149,16 +202,16 @@ _itemList = [
 
 
 _PricesItemList = [
-	[1,1,1,1,10],
+	[4,1,2,1,10],
 	[15,1,0,0,0],
 	[10,1,0,0,2],
 	[0,3,5,5,5],
 	[0,5,0,1,2],
 	[0,1,0,0,1],
-	[0,1,5,5,5],
+	[1,1,10,8,7],
 	[2,5,0,0,0],
 	[0,7,1,1,1],
-	[1,1,1,1,2]	
+	[3,1,4,2,8]	
 ];
 
 
@@ -214,7 +267,7 @@ _clothing1 =
 		"CUP_U_C_Worker_02",
 		"CUP_U_C_Worker_03",
 		"CUP_U_C_Worker_04",
-				"EF_FEM_2U",
+		"EF_FEM_2U",
 		"EF_FEM_2BK",
 		"EF_FEM_3_2",
 		"EF_FEM_3_3LPBPS",
