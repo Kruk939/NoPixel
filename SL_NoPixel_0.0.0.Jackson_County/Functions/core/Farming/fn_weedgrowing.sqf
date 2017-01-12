@@ -1,7 +1,7 @@
-WaterArray = ["UWAGA: Liście więdną!","UWAGA: Ziemia wygląda sucho!","UWAGA: Roślina wygląda sucho!"];
-PruneArray = ["UWAGA: Za dużo liści!","UWAGA: Roślina wygląda na przerośniętą!"];
+WaterArray = ["UWAGA: Liście opadly!","UWAGA: Roslina zwiedla!"];
+PruneArray = ["UWAGA: Roslina chyba jest za duza!","UWAGA: Roślina wygląda na przerośniętą!"];
 CoolArray2 = ["UWAGA: Na liściach widać brązowe plamy!","UWAGA: Roślina ma za dużą temperaturę!"];
-HeatArray2 = ["UWAGA: Roślina jest zbyt wilgotna!"];
+HeatArray2 = ["UWAGA: Roslina gnije!"];
 TurnoverArray = ["UWAGA: Trzeba przerzucić glebę!"];
 private["_stage1","_stage2"];
 _count = 0;
@@ -32,19 +32,17 @@ player removeaction myActionPack2;
 
 if(isNull mydt2) exitwith {};
 
-_randomValue = round(random 3);
-_randomValue = _randomValue + 1;
+_randomValue = round(random 3) + 1;
 
 if(myDrugValue2 < 0) then { myDrugValue2 = 1; };
 
 _item = format["CG_WeedBag%1", myDrugValue2];
 
 if(player distance [1409.98,5740.65,0.00143814] < 400) then { 
-	_randomValue = round(random 2);
-	_randomvalue = _randomvalue + _randomvalue;
+	_randomValue = round(random 2) * 2;
 };
 
-hint format["Wychodowałeś %1 paczek zioła!",_randomvalue];
+hint format["Wychodowałeś %1 paczek zioła!",_randomValue];
 
 while {_randomValue > 0} do { player additem _item; _randomValue = _randomValue - 1; };
 
