@@ -23,3 +23,7 @@
 * \Functions\core\Police\fn_vars.sqf - ARSENAL
 * \Functions\core\Init\fn_miscvariables.sqf - VARIABLES - ADMIN'S ID
 
+<hr>
+#POMYSLY
+* Zwiekszenie ceny za crafting lockpick'a. Ale wtedy dac mozliwosc sprzedazy auta dla kazdego.
+

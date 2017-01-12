@@ -1,0 +1,103 @@
+extDB2: Version: 71
+extDB2: https://github.com/Torndeco/extDB2
+extDB2: Windows Version
+Message: All development for extDB2 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB2 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 20/02/15
+
+
+extDB2: Found extdb-conf.ini
+extDB2: Detected 8 Cores, Setting up 6 Worker Threads
+
+
+[19:44:51:457253 +02:00] [Thread 7616] extDB2: Database Type: MySQL
+[19:44:51:470587 +02:00] [Thread 7616] extDB2: Database Session Pool Started
+[19:44:51:471037 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Loading Template Filename: C:\Program Files (x86)\Steam\steamapps\common\Arma 3\@extDBNP\extDB\sql_custom_v2\rpframework.ini
+[19:44:51:471083 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Version 10 Detected, Latest Version 12 Available
+[19:44:52:230606 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String getMayor:2
+[19:44:52:230623 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname getMayor
+[19:44:52:230640 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String racetimes:1
+[19:44:52:230645 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname racetimes
+[19:44:52:230681 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String rallyracetimes:1
+[19:44:52:230685 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname rallyracetimes
+[19:44:52:230712 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String mafiaBank:1
+[19:44:52:230715 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname mafiaBank
+[19:44:52:254886 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String racetimes:2
+[19:44:52:254910 +02:00] [Thread 7920] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname racetimes
+[19:44:52:254898 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String rallyracetimes:2
+[19:44:52:254923 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname rallyracetimes
+[19:44:55:943996 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String racetimes:3
+[19:44:55:944013 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname racetimes
+[19:44:55:971028 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String rallyracetimes:3
+[19:44:55:971044 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname rallyracetimes
+[20:01:55:578325 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String updateCop:7:76561198201987250
+[20:01:55:578352 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname updateCop
+[20:01:56:165260 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String updateCop:7:76561198201987250
+[20:01:56:165277 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname updateCop
+[20:01:56:319765 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String updateCop:7:76561198201987250
+[20:01:56:319785 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname updateCop
+[20:01:56:444980 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String updateCop:7:76561198201987250
+[20:01:56:444998 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname updateCop
+[20:04:17:030624 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String updateEMS:7:76561198171609822
+[20:04:17:030643 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname updateEMS
+[20:04:19:449700 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String updateEMS:7:76561198171609822
+[20:04:19:449728 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname updateEMS
+[20:12:50:461753 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:12:50:461791 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:12:50:461800 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 140 Input String: getCrimeType:1
+[20:12:57:953281 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:12:57:953315 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:12:57:953324 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 141 Input String: getCrimeType:1
+[20:13:02:522376 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:02:522404 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:02:522413 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 142 Input String: getCrimeType:1
+[20:13:12:758285 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:12:758328 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:12:758340 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 143 Input String: getCrimeType:1
+[20:13:14:759943 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:14:759986 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:14:759999 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 144 Input String: getCrimeType:1
+[20:13:21:608165 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:21:608222 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:21:608238 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 145 Input String: getCrimeType:1
+[20:13:21:776388 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:21:776434 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:21:776485 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 146 Input String: getCrimeType:1
+[20:13:24:844217 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:24:844267 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:24:844284 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 147 Input String: getCrimeType:0
+[20:13:34:677400 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Incorrect Number of Inputs: Input String insertCrime:Dorian Lych 2:76561198253273755:Michal Kaminski:Kradziez:5:[]:1
+[20:13:34:677428 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Incorrect Number of Inputs: Expected: 5 Got: 7
+[20:13:35:322079 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:35:322120 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:35:322132 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 148 Input String: getCrimeType:1
+[20:13:36:814867 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:36:814902 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:36:814913 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 149 Input String: getCrimeType:1
+[20:13:40:851650 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:40:851696 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:40:851711 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 150 Input String: getCrimeType:0
+[20:13:43:463623 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Incorrect Number of Inputs: Input String insertCrime:Dorian Lych 2:76561198253273755:Marian Minkovsky:187:1:[]:1
+[20:13:43:463640 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Incorrect Number of Inputs: Expected: 5 Got: 7
+[20:13:45:032159 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:45:032191 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:45:032201 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 151 Input String: getCrimeType:1
+[20:13:50:380446 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Incorrect Number of Inputs: Input String insertCrime:Dorian Lych 2:76561198253273755:Michal Kaminski:187:1:[]:1
+[20:13:50:380468 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Incorrect Number of Inputs: Expected: 5 Got: 7
+[20:13:51:338036 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:51:338073 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:51:338087 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 152 Input String: getCrimeType:1
+[20:13:52:275035 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:52:275070 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:52:275080 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 153 Input String: getCrimeType:1
+[20:13:54:432935 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:13:54:432973 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:13:54:432986 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 154 Input String: getCrimeType:0
+[20:13:57:926073 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Incorrect Number of Inputs: Input String updateCrime:1:1:any
+[20:13:57:926094 +02:00] [Thread 7616] extDB2: SQL_CUSTOM_V2: Incorrect Number of Inputs: Expected: 5 Got: 3
+[20:14:00:023531 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error StatementException: MySQL: [MySQL]: [Comment]: mysql_stmt_prepare error	[mysql_stmt_error]: Unknown column 'caseID' in 'field list'	[mysql_stmt_errno]: 1054	[mysql_stmt_sqlstate]: 42S22	[statemnt]: SELECT caseID, officerGUID, charges, status, evidence FROM wanted WHERE status=?;
+[20:14:00:023573 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Wiping Statements + Session
+[20:14:00:023586 +02:00] [Thread 4016] extDB2: SQL_CUSTOM_V2: Error: UniqueID: 155 Input String: getCrimeType:1

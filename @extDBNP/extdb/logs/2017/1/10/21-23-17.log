@@ -1,0 +1,36 @@
+extDB2: Version: 71
+extDB2: https://github.com/Torndeco/extDB2
+extDB2: Windows Version
+Message: All development for extDB2 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB2 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 20/02/15
+
+
+extDB2: Found extdb-conf.ini
+extDB2: Detected 8 Cores, Setting up 6 Worker Threads
+
+
+[22:23:17:055942 +02:00] [Thread 11308] extDB2: Database Type: MySQL
+[22:23:17:066771 +02:00] [Thread 11308] extDB2: Database Session Pool Started
+[22:23:17:067176 +02:00] [Thread 11308] extDB2: SQL_CUSTOM_V2: Loading Template Filename: C:\Program Files (x86)\Steam\steamapps\common\Arma 3\@extDBNP\extDB\sql_custom_v2\rpframework.ini
+[22:23:17:067207 +02:00] [Thread 11308] extDB2: SQL_CUSTOM_V2: Version 10 Detected, Latest Version 12 Available
+[22:23:17:318592 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String getMayor:2
+[22:23:17:318609 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname getMayor
+[22:23:17:318642 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String racetimes:1
+[22:23:17:318651 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname racetimes
+[22:23:17:318686 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String rallyracetimes:1
+[22:23:17:318695 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname rallyracetimes
+[22:23:17:318705 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String mafiaBank:1
+[22:23:17:318709 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname mafiaBank
+[22:23:17:448299 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String racetimes:2
+[22:23:17:448315 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname racetimes
+[22:23:17:448362 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String rallyracetimes:2
+[22:23:17:448371 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname rallyracetimes
+[22:23:19:392753 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String rallyracetimes:3
+[22:23:19:392771 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname rallyracetimes
+[22:23:19:392848 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Input String racetimes:3
+[22:23:19:392858 +02:00] [Thread 9032] extDB2: SQL_CUSTOM_V2: Error No Custom Call Not Found: Callname racetimes
+[12:48:17:102303 +02:00] [Thread 11308] extDB2: Stopping ...
