@@ -849,10 +849,9 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["jesteadmine == 1"],
+		["jesteadmine>=1"],
 		["BAN HAMMER", "closedialog 0; createdialog ""koiladmin""; ",4]
 	]
-
 ];
 
 player setVariable["loaded", 2, false];
