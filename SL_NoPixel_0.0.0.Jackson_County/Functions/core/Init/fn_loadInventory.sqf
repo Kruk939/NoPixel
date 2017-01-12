@@ -125,7 +125,7 @@ deletemarkerlocal "myhouse";
 _marker = createMarkerLocal ["myhouse", _house];
 _marker setMarkerShapeLocal "ICON";
 _marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal "My House";
+_marker setMarkerTextLocal "Moja klitka";
 
 
 _marker = createMarkerLocal [getPlayerUID player, _shop];

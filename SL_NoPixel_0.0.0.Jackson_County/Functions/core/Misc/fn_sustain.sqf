@@ -98,13 +98,13 @@ if(_type == "unhealthiness") then {
 //LICENSES [0,0,0,0,0,0] -- groundvehicle / gun / mining / woodlogging / fishing / 
 
 
-
+_cash = player getVariable "wallet";
 if(_type == "license") then {
 
 	if(_adjust == "Add") then { 
 
 		if(_amount == 1) then { licensearray SET [0,1]; ["Otrzymales Prawojazdy",false] spawn domsg; };
-		if(_amount == 2) then { licensearray SET [1,1]; ["Otrzymales licencje na bron",false] spawn domsg;  };
+		if(_amount == 2) then {if (_cash > 2500) {licensearray SET [1,1]; ["Otrzymales licencje na bron",false] spawn domsg;} else exitWith{["Masz za mało pieniędzy w portfelu!",false] spawn domsg;};  };
 		if(_amount == 3) then { licensearray SET [2,1]; ["Otrzymales licencje gornika",false] spawn domsg;  };
 		if(_amount == 4) then { licensearray SET [3,1]; ["Otrzymales licencje drwala",false] spawn domsg; };
 		if(_amount == 5) then { licensearray SET [4,1]; ["Otrzymales licencje rybaka",false] spawn domsg; };

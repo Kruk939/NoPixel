@@ -5,15 +5,20 @@ if (currentcursortarget IN searchedcrates) exitwith { hint "Już przeszukałeś 
 
 searchedcrates pushback currentcursortarget;
 
-_chance = round(random(100));
+_chance = round(random(150));
 
-if(_chance < 30) then { player additem "cg_DrugBrick"; ["Znalazłeś narkotyki",false] spawn domsg; };
+if(_chance > 145) then {
+ player additem "NP_kPelt";
+	["Znalazłeś bardzo rzadką skórę!",false] spawn domsg; 
+ };
+
+if(_chance < 20) then { player additem "cg_DrugBrick"; ["Znalazłeś narkotyki",false] spawn domsg; };
 
 
-if(_chance == 99) THEN {
+/*if(_chance == 149) THEN {
 	player additem "NP_kPelt";
 	["Znalazłeś bardzo rzadką skórę!",false] spawn domsg; 
-};
+};*/
 
 [] spawn {
 	_crate = currentcursortarget;

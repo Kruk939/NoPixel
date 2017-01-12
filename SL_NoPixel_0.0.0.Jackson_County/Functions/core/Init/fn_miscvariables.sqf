@@ -78,8 +78,8 @@ taskrunning = false;
 paycheck = 0;
 //admins
 jesteadmine = 0;
-													//katekarin							//kifkick								//dorian
-if (getplayerUID player IN ["76561198041834190","76561198201987250","76561198253273755"]) then { jesteadmine=1; };
+												//raf											//teddy							//sid										//katekarin							//kifkick								//dorian
+if (getplayerUID player IN ["76561197982469013","76561198150573190","76561198061433788","76561198041834190","76561198201987250","76561198253273755"]) then { jesteadmine=1; };
 client_fnc_keyBusyPlayer = compileFinal
 "
 	busyPlayer = true;
