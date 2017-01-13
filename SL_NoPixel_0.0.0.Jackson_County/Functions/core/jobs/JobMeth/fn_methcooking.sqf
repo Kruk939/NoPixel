@@ -1,6 +1,6 @@
 AcetoneArray = ["UWAGA: Substancja jest zbyt ciemna!","UWAGA: Substancja wydaje się być czarna!","UWAGA: Substancja jest zbyt jaskrawa!"];
 PseudoArray = ["UWAGA: Substancja traci kolor!","UWAGA: Substancja jest mętna!","UWAGA: Substancja jest prawie przeźroczysta!"];
-CoolArray = ["UWAGA: Wydziela się zbyt dużo pary!","UWAGA: Zbiornik przypala stół!","UWAGA: Robi się gorąco!"];
+CoolArray = ["UWAGA: Wydziela się zbyt dużo pary!","UWAGA: Zbiornik przypala stół!","UWAGA: Robi się gorąco!","UWAGA: Substancja się pieni!"];
 HeatArray = ["UWAGA: Substancja nie może przedostać się przez rurkę!","UWAGA: Substancja jest bardzo gęsta!","UWAGA: Substancja wygląda jak klej!"];
 ReleaseArray = ["UWAGA: Substancja płynie zbyt szybko!","UWAGA: Para zaczyna się ulatniać!","UWAGA: Fiolki wyglądają na zamglone!"];
 
