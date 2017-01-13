@@ -66,7 +66,7 @@ if (str _jobtype find "taxi" > -1 || str _jobtype == "taxi") exitwith {
 	publicvariable "currentTaxiDrivers";
 };
 
-if (str _jobtype find "repairman" > -1 || str _jobtype == "repairman") exitwith {
+if (str _jobtype find "security" > -1 || str _jobtype == "security") exitwith {
 	[] spawn client_fnc_startSecurity;
 	currentsecurity pushback _player;
 	publicvariable "currentSecurity";	

@@ -9,15 +9,15 @@ lbClear _list;
 _jobs = [];
 
 if(count currentMailmen < 3) then {
-_Jobs pushback ["Kurier Fedex","kurier"]; 
+_Jobs pushback ["Kurier Fedex","mail"]; 
 };
 
 if(count currentSecurity < 2) then {
-_Jobs pushback ["Ochrona","ochrona"]; 
+_Jobs pushback ["Ochrona","security"]; 
 };
 
 if(count currentTrashman < 3) then {
-_Jobs pushback ["Wywóz śmieci","smieciarz"]; 
+_Jobs pushback ["Wywóz śmieci","trashman"]; 
 };
 
 if(count currentNewsMan < 3) then {
@@ -25,7 +25,7 @@ _Jobs pushback ["Reporter wiadomości","reporter"];
 };
 
 if(count currentRepairmen < 7) then {
-_Jobs pushback ["Mechanik","mechanik"]; 
+_Jobs pushback ["Mechanik","repairman"]; 
 };
 
 if(count currentTaxiDrivers < 7) then {
