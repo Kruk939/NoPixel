@@ -5,18 +5,18 @@
 4. **Plik** nie może być udostępniany bez mojej zgody.
 5. **Pliki** nie mogą być wykorzystywane na innym serwerze niż na tym, który został utworzony przez [stanlakeside.pl](http://stanlakeside.pl)
 
-
-
 <hr>
-
 #TODO
-* Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy. √ 
 * Autokomis (Katekarin)
 * Panel gracza pod nową misję
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Sync przy wyjściu z gry (Przycisk ABORT)
-* Kupowanie licencji na broń (5000$) √ 
 
+<hr>
+#DONE
+* Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
+* Kupowanie licencji na broń (5000$)
+* Ilość dostępnych prac w zależności od ilości osób.
 
 <hr>
 #WAŻNE PLIKI
