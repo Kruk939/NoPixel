@@ -6791,7 +6791,7 @@ class Mission
 			dataType="Marker";
 			position[]={8037.9189,1.1356199e+014,5070.6992};
 			name="formula1";
-			text="Formula 1 Sign Up";
+			text="Zapisy na Formula 1";
 			type="mil_flag";
 			id=291;
 			atlOffset=1.1356199e+014;

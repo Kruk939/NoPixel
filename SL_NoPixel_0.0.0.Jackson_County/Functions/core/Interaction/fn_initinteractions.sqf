@@ -43,7 +43,7 @@ NoPixel_InteractionMenuItems = [
 	[ 
 		//[" (lastforcesync + 1) < time && ( myjob != ""Cop"" && myjob != ""EMS"" && myjob != ""Fire"" ) "], 
 		[" (lastforcesync + 300) < time "], 
-		["Sync Data (5min CD)", "	_new = player getVariable ""wallet"";	[player, ""wallet"", _new] remoteExec [""Server_fnc_setVariable"",2]; _loadout = getunitloadout player; [player,1,getplayeruid player,name player,_loadout] remoteExec [""server_fnc_steppedsync"",2]; lastforcesync = time; ",5] 
+		["Sync Data (5min CD)", "	_new = player getVariable ""wallet"";	[player, ""wallet"", _new] remoteExec [""Server_fnc_setVariable"",2]; _loadout = getunitloadout player; [player,1,getplayeruid player,name player,_loadout] remoteExec [""server_fnc_steppedsync"",2]; lastforcesync = time; hint ""Pomyślnie zapisano!""; ",5] 
 	],
 
 	[ 

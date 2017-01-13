@@ -151,10 +151,16 @@ if(_shopcontent isequalto [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]) then {
 _marker = createMarkerLocal [getPlayerUID player, getpos _player]; 
 _marker setMarkerShapeLocal "ICON"; 
 _marker setMarkerTypeLocal "hd_dot"; 
-_marker setMarkerTextLocal format["%1 - CLOSED", _shopname]; 
+_marker setMarkerTextLocal format["%1 - ZAMKNIĘTY", _shopname]; 
 } else { 
 _marker = createMarker [getPlayerUID player, getpos _player]; 
 _marker setMarkerShape "ICON"; 
 _marker setMarkerType "hd_dot"; 
-_marker setMarkerText format["%1", _shopname]; 
+if!(_shopname == "") {
+	_marker setMarkerText format["%1", _shopname]; 
+	} else {
+	_msg = "Nie nazwałem sklepu";
+	_marker setMarkerText format["%1", _msg]; 
+};
+
 }; 
