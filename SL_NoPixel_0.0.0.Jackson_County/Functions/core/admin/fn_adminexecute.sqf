@@ -61,7 +61,7 @@ if(_statementsent == 11) then {
 };
 
 if(_statementsent == 12) then {
-
+hint "Function disabled";
 };
 
 if(_statementsent == 13) then {

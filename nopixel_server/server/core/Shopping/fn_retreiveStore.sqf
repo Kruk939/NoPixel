@@ -156,7 +156,7 @@ _marker setMarkerTextLocal format["%1 - ZAMKNIĘTY", _shopname];
 _marker = createMarker [getPlayerUID player, getpos _player]; 
 _marker setMarkerShape "ICON"; 
 _marker setMarkerType "hd_dot"; 
-if!(_shopname == "") {
+if!(_shopname == "") then{
 	_marker setMarkerText format["%1", _shopname]; 
 	} else {
 	_msg = "Nie nazwałem sklepu";

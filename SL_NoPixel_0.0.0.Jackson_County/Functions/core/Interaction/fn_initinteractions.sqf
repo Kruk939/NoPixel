@@ -79,7 +79,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(licensearray select 4) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Licencja Górnika 400$", "_cashcheck = [1,400] call client_fnc_checkmoney; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",5] call client_fnc_sustain; [400] call Client_fnc_removecash; ",1]
+		["Licencja Rybaka 400$", "_cashcheck = [1,400] call client_fnc_checkmoney; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",5] call client_fnc_sustain; [400] call Client_fnc_removecash; ",1]
 	],
 
 	[

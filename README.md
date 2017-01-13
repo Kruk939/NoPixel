@@ -14,6 +14,7 @@
 * Sync przy wyjściu z gry (Przycisk ABORT)
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Dodanie pracy kierowcy autobusu.
+* Ukrywanie swojego steamid gdy jestem niewidzialny (fn_nametags.sqf ; fn_adminexecute.sqf)
 
 <hr>
 #DONE

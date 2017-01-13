@@ -1,17 +1,3 @@
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 private["_queryStmt","_queryResult","_key","_mode","_return","_loop"]; 
  
 if (!params [ 

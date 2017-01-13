@@ -33,10 +33,27 @@ _randomValue = round(random 5) + 1;
 
 if(myDrugValue < 50) then { myDrugValue = 50; };
 _item = format["CG_MethBag%1", myDrugValue];
-hint format["Ugotowałeś %1 worków metamfetaminy!",_randomvalue];
+_msg = format["Ugotowałeś %1 worków metamfetaminy",_randomvalue];
+[_msg, true] spawn domsg;
+//hint format["Ugotowałeś %1 worków metamfetaminy!",_randomvalue];
 
 while {_randomValue > 0} do { player additem _item; _randomValue = _randomValue - 1; };
 
 deletevehicle myDT;
 
 player additem "NP_DrugTable";
+
+/*
+
+DO DODANIA W PÓŹNIEJSZEJ FAZIE ROZWOJU SERWERA
+
+_chance = round(random(100));
+
+if(_chance > 98) then {
+	["O nie! Zepsułem stół i nic z niego nie zostało!",false] spawn domsg; 
+ };
+ 
+ if(_chance < 98) then {
+ ["Składam stół i spierdalam!",false] spawn domsg; 
+ player additem "NP_DrugTable";
+ };*/
