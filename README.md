@@ -13,6 +13,7 @@
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Sync przy wyjściu z gry (Przycisk ABORT)
 * Naprawić komputer policji(wantedlista - dodawanie)
+* Dodanie pracy kierowcy autobusu.
 
 <hr>
 #DONE
