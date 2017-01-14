@@ -360,6 +360,7 @@ player addEventHandler["put", {
 player addEventHandler["Fired",{_this call client_fnc_handleFired;}];
 //player addEventHandler["FiredNear",{_this call client_fnc_handlefiredNear;}];
 player addEventHandler["handleDamage", { _this spawn Client_fnc_handleDamage; false } ];
+player addEventHandler["HandleDisconnect",{ _this spawn Server_fnc_statSave; }];
 
 client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","client_fnc_nametags"] call BIS_fnc_addStackedEventHandler; 
 

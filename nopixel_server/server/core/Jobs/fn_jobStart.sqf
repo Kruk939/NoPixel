@@ -36,8 +36,8 @@ if (str _jobtype find "Fire" > -1) exitwith {
 if(count currentFire < 5) then { 
 [_player, 0, getplayeruid _player, 0] call Server_fnc_statSave;   
 [] remoteExec ["client_fnc_startFire",_player]; 
-currentFire pushback _player; 
 _player setvariable ["sync",0,false]; 
+currentFire pushback _player; 
 publicvariable "currentFire"; 
 } else { 
  

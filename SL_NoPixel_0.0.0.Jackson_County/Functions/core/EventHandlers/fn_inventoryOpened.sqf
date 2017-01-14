@@ -57,6 +57,11 @@ if(_container isKindOf "MotorCycle" && {(locked _container) == 2}) exitWith {
 	};
 };
 
+if (_container isKindOf "Man" && !alive _container) exitWith {
+   handle = true;
+   handle;
+};
+
 
 
 [] spawn

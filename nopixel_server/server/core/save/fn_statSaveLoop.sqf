@@ -27,6 +27,8 @@
     _uid = getplayerUID _x;
 
     _syncInfo = _x getVariable "sync";
+	
+	if(isNil "_syncInfo") then { _syncinfo = 1; }; 
 
     if (_syncInfo == 1) then {
         _updatestr = format ["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _cop, _ems, _mafia, _fire, _legal, _uid];
