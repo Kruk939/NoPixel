@@ -128,6 +128,7 @@ class CfgFunctions
 			class seizeObjects {};
 			class raidshop {};
 			class raidhouse {};
+			class copmapmarkers {};
 		};
 
 		class Wanted {
@@ -249,7 +250,6 @@ class CfgFunctions
 		class Medical
 		{
 			file = "Functions\core\Medical";
-			class copmapmarkers {};
 			class bleed{};
 			class bandagetarget {};
 			class loadcargo {};

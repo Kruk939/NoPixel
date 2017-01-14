@@ -30,7 +30,7 @@ _markers = [];
 } foreach vehicles;
 
 
-while {visibleMap} do
+while {visibleMap || visibleGPS} do
 {
 	{
 		private["_marker","_unit"];
