@@ -30,15 +30,15 @@ _fire = _this select 21;
 _legal = _this select 22;
 _prisontime = _this select 23;
 _prisonreason = _this select 24;
-_mayor = _this select 25;
+//_mayor = _this select 25;
 
 
 _higherup = false;
 
-if(_mayor) then { 
+/*if(_mayor) then { 
 	[] spawn client_fnc_mayorsetup; 
 	_house = getpos nearestObject [[9949.03,3732.87,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
+};*/
 
 if(_mafia == 10) then {
 	//format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];

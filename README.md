@@ -15,12 +15,15 @@
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Dodanie pracy kierowcy autobusu.
 * Ukrywanie swojego steamid gdy jestem niewidzialny (fn_nametags.sqf ; fn_adminexecute.sqf)
+* Naprawienie burmistrza (tymczasowo musiałem wyłączyć [fn_initStats.sqf ; fn_loadinventory.sqf])
 
 <hr>
 #DONE
 * Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
 * Kupowanie licencji na broń (5000$)
 * Ilość dostępnych prac w zależności od ilości osób.
+* Zapisywanie "wejściówek" dla COP,EMS,MAFIA,LEGAL,MAYOR,FIRE
+* Naprawiono errory w RPT dot. updateHouse, updateShop (wszystko już zapisuje prawidłowo)
 
 <hr>
 #WAŻNE PLIKI

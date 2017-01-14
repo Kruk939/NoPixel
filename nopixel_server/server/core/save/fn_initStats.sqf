@@ -96,10 +96,10 @@ _garage deleteAt _pia;
 } foreach _inUseVehicles;
 };
 
-_mayor = false;
+/*_mayor = false;
 if(_uid == call compile format["%1",currentmayor]) then { _mayor = true; theMayor = _player; };
 
-if(_mayor) then{ _houselevel = 3; _player setVariable ["houselevel", _houselevel, false]; };
+if(_mayor) then{ _houselevel = 3; _player setVariable ["houselevel", _houselevel, false]; };*/
 
 
 _house = [0,0,0];
@@ -129,9 +129,10 @@ _player setVariable ["shop", _shop, false];
 _house setVariable ["house", _player, false];
 _shop setVariable ["shop", _player, false];
 
-diag_log["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prison, _prisonreason,_mayor];
-
-[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prison, _prisonreason,_mayor] remoteexec ["Client_fnc_loadInventory", _player];
+diag_log["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 ",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prison, _prisonreason];
+																																																																																																																																																													//,_mayor
+[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prison, _prisonreason] remoteexec ["Client_fnc_loadInventory", _player];
+																																																																																																						//,_mayor
 
 } else {
 

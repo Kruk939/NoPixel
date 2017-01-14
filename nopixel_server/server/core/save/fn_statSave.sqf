@@ -41,6 +41,12 @@ deletemarker format["%1",_uid];
 _cash = _player getVariable "wallet";
 _bank = _player getVariable "atm";
 
+_cop = _player getVariable "cop";
+_ems = _player getVariable "ems";
+_mafia = _player getVariable "mafia";
+_fire = _player getVariable "fire";
+_legal = _player getVariable "legal";
+
 _position = position _player;
 
 _syncInfo = _player getVariable "sync";
@@ -48,12 +54,12 @@ if(isNil "_syncInfo") then { _syncinfo = 1; };
 _exit = false;
 
 if(_syncInfo == 0 || _player in CurrentCop || _player in currentEMS || _player in currentFire) then {
-_updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];
+_updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _cop, _ems, _mafia, _fire, _legal, _uid];
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 _exit = true;
 } else {
 
-_updatestr = format ["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];
+_updatestr = format ["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _cop, _ems, _mafia, _fire, _legal, _uid];
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 if(!isNil "theMayor") then { if(_player == theMayor) then { TaxRate = 0; publicVariable "TaxRate"; }; };
 

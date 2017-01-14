@@ -103,7 +103,7 @@ if (!isnull _holder) then {
     _player setVariable["housecontent", _playercontent, false];
 
     _updatestr = format["updateHouse:%1:%2", _playercontent, getPlayerUID _player];
-    _update = [0, _updatestr] call ExternalS_fnc_ExtDBasync;
+    _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 
     deleteVehicle _holder;
     _pia = activecrates find _uid;

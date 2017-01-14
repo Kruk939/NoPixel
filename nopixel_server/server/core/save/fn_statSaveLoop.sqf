@@ -12,6 +12,12 @@
 
     _cash = _x getVariable "wallet";
     _bank = _x getVariable "atm";
+	
+	_cop = _x getVariable "cop";
+	_ems = _x getVariable "ems";
+	_mafia = _x getVariable "mafia";
+	_fire = _x getVariable "fire";
+	_legal = _x getVariable "legal";
 
     _position = position _x;
 
@@ -23,10 +29,10 @@
     _syncInfo = _x getVariable "sync";
 
     if (_syncInfo == 1) then {
-        _updatestr = format["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];
+        _updatestr = format ["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _cop, _ems, _mafia, _fire, _legal, _uid];
         _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
     } else {
-        _updatestr = format["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];
+        _updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _cop, _ems, _mafia, _fire, _legal, _uid];
         _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
     };
 
