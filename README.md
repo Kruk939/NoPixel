@@ -22,7 +22,7 @@
 * Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
 * Kupowanie licencji na broń (5000$)
 * Ilość dostępnych prac w zależności od ilości osób.
-* Zapisywanie "wejściówek" dla COP,EMS,MAFIA,LEGAL,MAYOR,FIRE
+* Zapisywanie "wejściówek" dla COP,EMS,MAFIA,LEGAL,MAYOR,FIRE przy syncu
 * Naprawiono errory w RPT dot. updateHouse, updateShop (wszystko już zapisuje prawidłowo)
 
 <hr>
