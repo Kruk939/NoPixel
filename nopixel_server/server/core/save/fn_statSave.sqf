@@ -6,7 +6,6 @@ _statuses = _player getVariable "statuses";
 if(isNil "_statuses") exitwith { };
 
 _items = _player getVariable "getunitloadout";
-//_items = getunitloadout _player; 
 
 _phoneBackground = _player getVariable "phoneBackground";
 _messages = _player getVariable "messages";
