@@ -16,6 +16,7 @@
 * Dodanie pracy kierowcy autobusu.
 * Ukrywanie swojego steamid gdy jestem niewidzialny (fn_nametags.sqf ; fn_adminexecute.sqf)
 * Naprawienie burmistrza (tymczasowo musiałem wyłączyć [fn_initStats.sqf ; fn_loadinventory.sqf])
+* Panic button'y dla COP, EMS
 
 <hr>
 #DONE
