@@ -1,8 +1,6 @@
- 
-_type = _this select 0; 
+ _type = _this select 0; 
 _player = _this select 1; 
-_rank = _this select 2; 
- 
+_rank = _this select 2;  
 _uidPlayer = getplayerUID _player; 
  
 _type = toLower(_type);
@@ -19,10 +17,9 @@ if(_rank > 1) then {
 	if(_updateSQL != "") then {
 		_updatestr = format ["%1:%2:%3", _updateSQL, _rank, _uidplayer];
 		_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 
-		[_type,_rank] remoteExec ["client_fnc_setvariable",_player];
 		diag_log format ["Promoted %1 to %2 rank %3", _player, _type, _rank]; 
 	} else {
 		diag_log format ["Unkown faction: %1; Player: %2; Rank: %3", _type, _player, _rank];
 	};
 };
- 
+[_type,_rank] remoteExec ["client_fnc_setvariable",_player];
