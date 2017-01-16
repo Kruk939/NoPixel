@@ -56,8 +56,8 @@ if (str _jobtype find "Fire Dispatch" > -1) exitwith {
 
 if (str _jobtype find "mail" > -1 || str _jobtype == "mail") exitwith {
 	[] spawn client_fnc_mailSystem;
-	currentmailmen pushback _player;
-	publicvariable "currentMailMen";	
+	currentMailmen pushback _player;
+	publicvariable "currentMailmen";	
 };
 
 if (str _jobtype find "taxi" > -1 || str _jobtype == "taxi") exitwith {

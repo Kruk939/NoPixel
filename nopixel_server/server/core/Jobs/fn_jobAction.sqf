@@ -12,9 +12,9 @@ diag_log ["job action %1", _sender];
 _units = []; 
  
 if (_jobType == "Fedex Worker") exitwith { 
-if(currentmailmen isequalto []) exitwith { [] remoteExec ["client_fnc_completemail",_sender]; }; 
-_units = currentmailmen; 
-_selection = _units call BIS_fnc_selectRandom; 
+if(currentMailmen isequalto []) exitwith { [] remoteExec ["client_fnc_completemail",_sender]; }; 
+	_units = currentMailmen; 
+	_selection = _units call BIS_fnc_selectRandom; 
 [_location,_sender,_jobType,_message] remoteExec ["client_fnc_mailSystem",_selection]; 
 }; 
  
