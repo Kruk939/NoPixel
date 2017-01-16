@@ -51,7 +51,7 @@ booli = (_check select 0) select 0;
 
 
 
-_garrageArray = _player getvariable "garage";
+_garageArray = _player getvariable "garage";
 _newVehicle = [_licensePlate, _class, _color, _finish, _rims, _windows, _lights,_statuses,_owner];
 
 _garageArray pushback _newVehicle;
