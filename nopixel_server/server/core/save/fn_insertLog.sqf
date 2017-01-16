@@ -23,5 +23,7 @@ if(_uid == "") then {
 };
 _cash = _unit getVariable ["wallet",-1];
 _bank = _unit getVariable ["atm",-1];
-_insertstr = format ["logEvent:%1:%2:%3:%4:%5", _uid, _type, _text, _cash, _bank];
+_pos = getPos _unit;
+_name = name _unit;
+_insertstr = format ["logEvent:%1:%2:%3:%4:%5:%6:%7", _uid, _name, _type, _text, _cash, _bank, _pos];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
