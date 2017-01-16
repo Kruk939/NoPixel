@@ -7499,3 +7499,355 @@ _play>
 2017/01/16, 18:25:56 "ExtDB QUERY:"
 2017/01/16, 18:25:56 "0:247739:logEvent:76561198165879535:John Random:sync:Synchronizacja:249:2895:[8268.65,2968.24,0.00143814]"
 2017/01/16, 18:25:56 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:26:07 Error: Object(39 : 17) not found
+2017/01/16, 18:26:08 Error: Object(39 : 18) not found
+2017/01/16, 18:26:09 Error: Object(39 : 19) not found
+2017/01/16, 18:26:10 "ExtDB QUERY:"
+2017/01/16, 18:26:10 "0:247739:updatePlayerInfo:[[],[],[""CUP_hgun_M9"","""","""","""",[""CUP_15Rnd_9x19_M9"",10],[],""""],[""CUP_U_I_GUE_Anorak_02"",[]],[],[""CUP_B_HikingPack_Civ"",[[""Masque_Wolfv2"",1],[""np_energydrink"",1,1],[""CG_wheel"",1,1],[""np_beefsoup"",1,1],[""CUP_15Rnd_9x19_M9"",8,15],[""CG_ATF_Bandage_i"",2,1],[""NP_DrugTable"",1,1]]],"""","""",[],[""ItemMap"","""",""cg_tabletd_41"",""ItemCompass"",""Itemwatch"",""""]]:0:25013:[6293.18,3688.13,0.0271881]:[]:[186,74,94,65,0,0.232407,17,[0,0,0,0,0,0,0,0,0,0,0],[1,1,0,0,0,0],2,[0,0,-0.32,0,-0.34],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""CG_PICKAXE""],[1]],[[""np_copperbar1"",""np_ironbar1"",""np_silverbar1"",""CG_DrugBrick"",""NP_Wood"",""CG_OilCanister"",""CG_wheel"",""CG_Cocaine"",""np_water""],[3,9,1,1,13,6,1,4,3]],[[""H_ALFR_SkiMask_Glasses_3"",""CUP_NVG_PVS7"",""vvv_character_agente_473""],[1,3,1]],[[],[]]]:[[[""CG_PICKAXE""],[1],[10000]],[[""np_ironbar1"",""np_copperbar1"",""NP_uPelt""],[30,29,1],[10000,10000,10000]],[[""U_B_Wetsuit""],[1],[1999]],[[],[]
+2017/01/16, 18:26:10 "insertLog:civ_29 sync Synchronizacja"
+2017/01/16, 18:26:10 "ExtDB QUERY:"
+2017/01/16, 18:26:10 "0:247739:logEvent:76561198197461805:Mikolaj Werner:sync:Synchronizacja:0:25013:[6293.18,3688.13,0.0271881]"
+2017/01/16, 18:26:10 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:26:10 Error: Object(39 : 20) not found
+2017/01/16, 18:26:13 Error: Object(39 : 21) not found
+2017/01/16, 18:26:13 Error: Object(37 : 76) not found
+2017/01/16, 18:26:15 Error: Object(39 : 24) not found
+2017/01/16, 18:26:16 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:26:18 Error: Object(39 : 27) not found
+2017/01/16, 18:26:20 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:26:25 Error: Object(39 : 30) not found
+2017/01/16, 18:26:27 Error: Object(39 : 31) not found
+2017/01/16, 18:26:29 Error: Object(39 : 33) not found
+2017/01/16, 18:26:32 Error: Object(39 : 37) not found
+2017/01/16, 18:26:33 Error: Object(39 : 39) not found
+2017/01/16, 18:26:36 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:26:43 "insertLog:civ_28 job Rozpoczal prace - EMS"
+2017/01/16, 18:26:43 "ExtDB QUERY:"
+2017/01/16, 18:26:43 "0:247739:logEvent:76561198058284094:Andrew CatFish:job:Rozpoczal prace - EMS:0:19820:[9539.47,4110.4,0.00143814]"
+2017/01/16, 18:26:43 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:26:43 ["%1 %2 %3 %4",civ_28,0,"76561198058284094",0]
+2017/01/16, 18:26:43 "ExtDB QUERY:"
+2017/01/16, 18:26:43 "0:247739:updatePlayerInfoNoGear:0:19820:[9539.47,4110.4,0.00143814]:[]:[123,90,86,100,0,0.457367,0,[0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,0],2,[0,0,0,-0.200001,-0.14],[""nobody"",0,""no reason"",""NO DATE""]]:[[[],[]],[[""NP_Wood"",""np_copperbar1""],[18,1]],[[],[]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198058284094"
+2017/01/16, 18:26:43 "insertLog:civ_28 EMS Wyciagnal wyposazenie - basic"
+2017/01/16, 18:26:43 "ExtDB QUERY:"
+2017/01/16, 18:26:43 "0:247739:logEvent:76561198058284094:Andrew CatFish:EMS:Wyciagnal wyposazenie - basic:0:19820:[9539.47,4110.4,0.00143814]"
+2017/01/16, 18:26:43 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:26:50 "ExtDB QUERY:"
+2017/01/16, 18:26:50 "0:247739:updatePlayerInfoNoGear:0:24698:[8266.89,2971.34,0.00143814]:[]:[294,70,72,90,0,0,85,[0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,0],2,[-0.3,-0.94,0,-0.94,0],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""CUP_arifle_Sa58V""],[2]],[[""CG_OilCanister"",""CUP_30Rnd_Sa58_M"",""NP_DrugTable""],[7,8,2]],[[""CUP_NVG_PVS7""],[1]],[[],[]]]:[[[""CUP_arifle_Sa58V"",""Binocular""],[2,1],[1e+006,1e+006]],[[""CG_Heroin"",""CUP_30Rnd_Sa58_M"",""np_groceries""],[20,23,1],[1e+006,1e+006,0]],[[],[],[]],[[],[],[]]]:[80001,1]:2:76561198161472762"
+2017/01/16, 18:26:50 "insertLog:civ_26 sync Synchronizacja"
+2017/01/16, 18:26:50 "ExtDB QUERY:"
+2017/01/16, 18:26:50 "0:247739:logEvent:76561198161472762:Easy Smith:sync:Synchronizacja:0:24698:[8266.89,2971.34,0.00143814]"
+2017/01/16, 18:26:50 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:26:52 Warning Message: Cannot open object zara\loc\backpack_w.p3d
+2017/01/16, 18:26:56 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:26:57 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:27:06 Error: Object(37 : 98) not found
+2017/01/16, 18:27:09 Error: Object(37 : 103) not found
+2017/01/16, 18:27:11 Error: Object(37 : 106) not found
+2017/01/16, 18:27:16 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:27:18 Error: Object(37 : 110) not found
+2017/01/16, 18:27:32 Error: Object(37 : 127) not found
+2017/01/16, 18:27:32 "insertLog:civ_34 job Rozpoczal prace - taxi"
+2017/01/16, 18:27:32 "ExtDB QUERY:"
+2017/01/16, 18:27:32 "0:247739:logEvent:76561198063629420:Karol Kania:job:Rozpoczal prace - taxi:0:5043:[6913.92,2326.02,0.00143814]"
+2017/01/16, 18:27:32 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:27:33 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:27:36 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:27:56 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:27:59 No player found for channel 1443892032 - message ignored
+2017/01/16, 18:27:59 Client: Remote object 23:0 not found
+2017/01/16, 18:27:59 ["%1 %2 %3 %4",civ_25,2.0326e+009,"76561198147740738","Patryk Sprytny"]
+2017/01/16, 18:27:59 "ExtDB QUERY:"
+2017/01/16, 18:27:59 "0:247739:updatePlayerInfoNoGear:130:5190:[9580.31,4118.63,0.00140762]:[]:[241,50,54,95,0,0.00913778,4,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,0,0,0,-0.0599999],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""cg_hatchet""],[1]],[[""CG_ATF_Bandage_i""],[2]],[[""CUP_NVG_PVS7"",""U_B_Wetsuit""],[3,1]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198147740738"
+2017/01/16, 18:28:07 "ExtDB QUERY:"
+2017/01/16, 18:28:07 "0:247739:updatePlayerInfo:[[],[""CG_PICKAXE"","""","""","""",[""sharp_swing"",99951],[],""""],[""hgun_Pistol_heavy_01_F"","""","""","""",[""11Rnd_45ACP_Mag"",11],[],""""],[""vvv_character_agente_473"",[[""np_energydrink"",4,1],[""11Rnd_45ACP_Mag"",3,11],[""CG_ATF_Bandage_i"",4,1],[""np_chickensoup"",2,1]]],[],[""CUP_B_HikingPack_Civ"",[[""CG_wheel"",1,1],[""CG_Engine"",1,1],[[""vvv_fishing_rod"","""","""","""",[""cebos"",1],[],""""],1]]],""H_Beret_blk"",""G_Squares"",[],[""ItemMap"","""",""cg_tabletd_56"",""ItemCompass"",""Itemwatch"",""""]]:0:5043:[6910.84,2329.59,0.00143814]:[]:[124,98,94,95,0,0.198524,21,[0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,0],2,[0,0,0,0,-0.44],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""gold_fishing_rod"",""cg_hatchet""],[1,1]],[[""cebos"",""CG_Cocaine"",""CG_wheel"",""np_chickensoup"",""np_water""],[5,2,2,1,4]],[[],[]],[[],[]]]:[[[],[],[]],[[""CG_OilCanister""],[8],[800]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198063629420"
+2017/01/16, 18:28:07 "insertLog:civ_34 sync Synchronizacja"
+2017/01/16, 18:28:07 "ExtDB QUERY:"
+2017/01/16, 18:28:07 "0:247739:logEvent:76561198063629420:Karol Kania:sync:Synchronizacja:0:5043:[6910.84,2329.59,0.00143814]"
+2017/01/16, 18:28:07 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:28:10 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:28:16 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:28:30 Unaccessible
+2017/01/16, 18:28:30 "ExtDB QUERY:"
+2017/01/16, 18:28:30 "0:247739:existPlayerInfo:76561198073108672"
+2017/01/16, 18:28:30 ["init stats %1","76561198073108672"]
+2017/01/16, 18:28:30 "Slazak White [[],[],[],[""TRYK_shirts_DENIM_BL"",[]],[],[],"""","""",[],[""ItemMap"",""ItemGPS"",""cg_tabletd_3"",""ItemCompass"",""Itemwatch"",""""]] [5067.63,6395.09,0.00209045] 97 7225 284 2 0 [[""ocjn418"",""Jonzie_Mini_Cooper"",""fuzzywuzzy"",""Matte"",""black"",1,1,1,""76561198073108672""],[""vgcu687"",""ADM_1969_Charger"",""darkred"",""Metallic"",""antiquewhite"",0,0,1,""76561198073108672""]] [] [80001,1] [] [43,34,8,0,0,0.060187,0,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,0,0,0,0],[""nobody"",0,""no reason"",""NO DATE""]] 1 Shop Slazak White [6281.12,3629.88,0] [6330.06,1451.27,0] [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]] [] [[""Hi, this is your first text message, welcome to the Silver Lake Verizon network!"",""Dear Slazak White"",""Verizon""]] [] 0 0 0 0 none "
+2017/01/16, 18:28:30 "insertLog:civ_37 connection Gracz wszedl serwer"
+2017/01/16, 18:28:30 "ExtDB QUERY:"
+2017/01/16, 18:28:30 "0:247739:logEvent:76561198073108672:Slazak White:connection:Gracz wszedl serwer:97:7225:[6278.15,3622.41,0.00143886]"
+2017/01/16, 18:28:30 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:28:36 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:28:47 "insertLog:civ_13 job Rozpoczal prace - taxi"
+2017/01/16, 18:28:47 "ExtDB QUERY:"
+2017/01/16, 18:28:47 "0:247739:logEvent:76561198117189304:Lucian Whitehead:job:Rozpoczal prace - taxi:1279:4294:[7170.48,2486.23,0.00143814]"
+2017/01/16, 18:28:47 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:28:47 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:28:55 ADM_1969_Charger: Wheel_unhide - unknown animation source Wheel_Damper
+2017/01/16, 18:28:56 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:29:16 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:29:23 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:29:36 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:29:53 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:29:56 "insertLog:civ_21 job Rozpoczal prace - EMS"
+2017/01/16, 18:29:56 "ExtDB QUERY:"
+2017/01/16, 18:29:56 "0:247739:logEvent:76561198036635137:Jérôme Droolans:job:Rozpoczal prace - EMS:101:12195:[9574.09,4122.54,0.00144005]"
+2017/01/16, 18:29:56 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:29:56 ["%1 %2 %3 %4",civ_21,0,"76561198036635137",0]
+2017/01/16, 18:29:56 "ExtDB QUERY:"
+2017/01/16, 18:29:56 "0:247739:updatePlayerInfoNoGear:101:12195:[9574.09,4122.54,0.00144005]:[]:[42,6,16,95,0,0.0422431,0,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,0,0,0,0],[""nobody"",0,""no reason"",""NO DATE""]]:[[[],[]],[[],[]],[[""CG_EMS2""],[1]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198036635137"
+2017/01/16, 18:29:56 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:29:56 "insertLog:civ_21 EMS Wyciagnal wyposazenie - basic"
+2017/01/16, 18:29:56 "ExtDB QUERY:"
+2017/01/16, 18:29:56 "0:247739:logEvent:76561198036635137:Jérôme Droolans:EMS:Wyciagnal wyposazenie - basic:101:12195:[9574.09,4122.54,0.00144005]"
+2017/01/16, 18:29:56 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:29:58 "insertLog:civ_15 job Zakonczyl prace - EMS"
+2017/01/16, 18:29:58 "ExtDB QUERY:"
+2017/01/16, 18:29:58 "0:247739:logEvent:76561198091792459:Antoni Pierozek:job:Zakonczyl prace - EMS:496:1334:[9572.76,4124.36,0.00145912]"
+2017/01/16, 18:29:58 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:29:58 ["leave job % 1",civ_15]
+2017/01/16, 18:29:59 "insertLog:civ_21 job Rozpoczal prace - Medic Dispatch"
+2017/01/16, 18:29:59 "ExtDB QUERY:"
+2017/01/16, 18:29:59 "0:247739:logEvent:76561198036635137:Jérôme Droolans:job:Rozpoczal prace - Medic Dispatch:101:12195:[9574.09,4122.54,0.00141907]"
+2017/01/16, 18:29:59 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:29:59 Unaccessible
+2017/01/16, 18:29:59 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:30:00 "ExtDB QUERY:"
+2017/01/16, 18:30:00 "0:247739:existPlayerInfo:76561198147740738"
+2017/01/16, 18:30:00 ["init stats %1","76561198147740738"]
+2017/01/16, 18:30:00 "Patryk Sprytny [[],[],[],[""vvv_character_agente_47"",[]],[],[""CUP_B_HikingPack_Civ"",[[""ItemGPS"",1],[""CG_ATF_Bandage_i"",2,1],[""CG_wheel"",1,1]]],""TRYK_R_CAP_BLK"","""",[""Binocular"","""","""","""",[],[],""""],[""ItemMap"",""ItemGPS"",""cg_tabletd_1"",""ItemCompass"",""Itemwatch"",""""]] [9580.31,4118.63,0.00140762] 130 5190 268 0 3 [[""bhlt613"",""ADM_1969_Camaro"",""peridot"",""Matte"",""black"",1,1,1,""76561198147740738""],[""ipok558"",""ivory_rs4_2"",""black"",""Glossy"",""antiquewhite"",0,0,1,""76561198147740738""]] [557ed600# 248465: ivory_c.p3d] [80001,1] [] [241,50,54,95,0,0.00913778,4,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,0,0,0,-0.0599999],[""nobody"",0,""no reason"",""NO DATE""]] 1 Shop Patryk Sprytny [6254.03,3613.28,-2.38419e-007] [7617.28,2590.62,-0.116898] [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]] [] [[""chuju"",""SMS from Patryk Rogalik"",""Patryk Rogalik""]] [[""qwms407"",""ivory_c_2"",""black"",""Metallic"",""antiquewhite"",0,0,1,""76561198147740738""]] 0 0 0 0 none "
+2017/01/16, 18:30:00 "insertLog:civ_5 connection Gracz wszedl serwer"
+2017/01/16, 18:30:00 "ExtDB QUERY:"
+2017/01/16, 18:30:00 "0:247739:logEvent:76561198147740738:Patryk Sprytny:connection:Gracz wszedl serwer:130:5190:[6257.71,3606.02,0.00143886]"
+2017/01/16, 18:30:00 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:30:00 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:30:01 "ExtDB QUERY:"
+2017/01/16, 18:30:01 "0:247739:updatePlayerInfo:[[],[],[""hgun_Pistol_heavy_01_F"","""","""","""",[""11Rnd_45ACP_Mag"",0],[],""""],[""KAEL_SUITS_BR_F14"",[]],[],[""CUP_B_HikingPack_Civ"",[[""CG_wheel"",1,1]]],""ALE_H_Cowboy_White"",""G_Bandanna_aviator"",[],[""ItemMap"","""",""cg_tabletd_25"",""ItemCompass"",""Itemwatch"",""""]]:496:1334:[9572.76,4124.36,0.00145912]:[]:[137,20,10,95,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,-0.02,0,0,-0.22],[""nobody"",0,""no reason"",""NO DATE""]]:[[[],[]],[[""CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M""],[2]],[[""KAEL_SUITS_BR_F14"",""G_Aviator""],[1,1]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80012,10]:1:76561198091792459"
+2017/01/16, 18:30:01 "insertLog:civ_15 sync Synchronizacja"
+2017/01/16, 18:30:01 "ExtDB QUERY:"
+2017/01/16, 18:30:01 "0:247739:logEvent:76561198091792459:Antoni Pierozek:sync:Synchronizacja:496:1334:[9572.76,4124.36,0.00145912]"
+2017/01/16, 18:30:01 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:30:04 Server: Object 11:3 not found (message Type_121)
+2017/01/16, 18:30:12 "ExtDB QUERY:"
+2017/01/16, 18:30:12 "0:247739:updatePlayerInfo:[[],[""CG_BATON"","""","""","""",[""nonlethal_swing"",100000],[],""""],[""RH_uspm"","""","""","""",[""RH_16Rnd_40cal_usp"",16],[],""""],[""silver_lake_police"",[]],[],[""AM_PoliceBelt"",[[""RH_16Rnd_40cal_usp"",7,16],[""vvv_np_magazine_taser"",10,1],[""nonlethal_swing"",1,100000],[""NP_8mPoliceLine"",1,1],[""NP_4mPoliceLine"",1,1],[""NP_1mPoliceLine"",1,1],[""NP_PoliceBarrierL"",1,1],[""NP_PoliceBarrierS"",1,1],[""CG_Spikes_Collapsed"",1,1],[""CG_wheel"",1,1],[""CG_ATF_Bandage_i"",6,1],[[""taser"","""","""","""",[],[],""""],1]]],""Campaign_Hat_Dark"","""",[""Binocular"","""","""","""",[],[],""""],[""ItemMap"",""ItemGPS"",""cg_tabletd_48"",""ItemCompass"",""Itemwatch"",""""]]:28:26835:[8276.75,2973.49,0.0247917]:[]:[187,84,90,95,0,0.0223535,99,[0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,0],2,[0,0,0,0,-0.04],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""RH_uspm"",""Binocular""],[1,1]],[[""RH_7Rnd_45cal_m1911"",""np_silverbar1"",""NP_Wood"",""np_copperbar1"",""CG_OilCanister"",""NP_DrugTable"
+2017/01/16, 18:30:12 "insertLog:civ_133 sync Synchronizacja"
+2017/01/16, 18:30:12 "ExtDB QUERY:"
+2017/01/16, 18:30:12 "0:247739:logEvent:76561198030912509:Alex Knox:sync:Synchronizacja:28:26835:[8276.75,2973.49,0.0247917]"
+2017/01/16, 18:30:12 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:30:14 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:30:16 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:30:19 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:30:23 Server: Object 46:5 not found (message Type_121)
+2017/01/16, 18:30:24 Unaccessible
+2017/01/16, 18:30:25 "ExtDB QUERY:"
+2017/01/16, 18:30:25 "0:247739:existPlayerInfo:76561198038590445"
+2017/01/16, 18:30:25 ["init stats %1","76561198038590445"]
+2017/01/16, 18:30:25 "Vincent Gambino [[],[""cg_hatchet"","""","""","""",[""sharp_swing"",99368],[],""""],[""sab_1911_handgun"","""","""","""",[""9Rnd_45ACP_Mag"",9],[],""""],[""U_B_Wetsuit"",[]],[],[""CUP_B_HikingPack_Civ"",[[""np_groceries"",1,1],[""9Rnd_45ACP_Mag"",9,9],[""np_energydrink"",1,1],[""CG_ATF_Bandage_i"",1,1],[""CG_ATF_First_Aid_Kit_i"",1,1],[""CG_DrugBrick"",1,1],[""NP_kPelt"",1,1]]],""CUP_H_NAPA_Fedora"","""",[],[""ItemMap"","""",""cg_tabletd_136"",""ItemCompass"",""Itemwatch"",""""]] [7102.07,2462.08,0.00144005] 55 2503 332 0 0 [[""bafc522"",""B_Boat_Transport_01_F"",""aureolin"",""Glossy"",""antiquewhite"",0,0,1,""76561198038590445""],[""nxxd537"",""ADM_1969_Camaro"",""hanblue"",""Matte"",""black"",1,1,0,""76561198038590445""],[""stqt656"",""Jonzie_Mini_Cooper"",""lightskyblue"",""Matte"",""black"",1,1,1,""76561198038590445""]] [] [80001,1] [] [81,64,100,100,0,0.0145336,9,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,1,0,0],2,[0,0,0,0,-0.14],[""nobody"",0,""no reason"",""NO DATE""]] 1 Shop Vincent Gambino [6856.13,6064.45,-1
+2017/01/16, 18:30:25 "insertLog:civ_2 connection Gracz wszedl serwer"
+2017/01/16, 18:30:25 "ExtDB QUERY:"
+2017/01/16, 18:30:25 "0:247739:logEvent:76561198038590445:Vincent Gambino:connection:Gracz wszedl serwer:55:2503:[6855.69,6055.41,0.00143814]"
+2017/01/16, 18:30:25 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:30:31 Server: Object 45:10 not found (message Type_170)
+2017/01/16, 18:30:34 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:30:35 "ExtDB QUERY:"
+2017/01/16, 18:30:35 "0:247739:updatePlayerInfo:[[],[],[],[""np_shirt_8"",[]],[],[""CUP_B_HikingPack_Civ"",[[""np_copperbar1"",1,1],[""np_ironbar1"",1,1],[""np_silverbar1"",1,1],[""NP_Wood"",1,1],[""9Rnd_45ACP_Mag"",3,9],[[""sab_1911_handgun"","""","""","""",[""9Rnd_45ACP_Mag"",9],[],""""],1],[[""CG_PICKAXE"","""","""","""",[],[],""""],1]]],"""","""",[],[""ItemMap"","""",""cg_tabletd_26"",""ItemCompass"",""Itemwatch"",""""]]:98:3945:[8273.6,2978.88,0.00143814]:[]:[23,78,98,95,0,0,3,[0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,0],2,[0,0,0,0,0.96],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""cg_hatchet""],[1]],[[""NP_Wood"",""np_silverbar1"",""np_ironbar1"",""np_copperbar1""],[18,2,3,9]],[[],[]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198026169844"
+2017/01/16, 18:30:35 "insertLog:civ_73 sync Synchronizacja"
+2017/01/16, 18:30:35 "ExtDB QUERY:"
+2017/01/16, 18:30:35 "0:247739:logEvent:76561198026169844:Arek Olejniczak:sync:Synchronizacja:98:3945:[8273.6,2978.88,0.00143814]"
+2017/01/16, 18:30:35 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:30:36 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:30:37 "ExtDB QUERY:"
+2017/01/16, 18:30:37 "0:247739:updatePlayerInfo:[[],[],[],[""TRYK_U_denim_hood_blk"",[]],[],[""CUP_B_SLA_Medicbag"",[]],"""","""",[""Binocular"","""","""","""",[],[],""""],[""ItemMap"",""ItemGPS"",""cg_tabletd_34"",""ItemCompass"",""Itemwatch"",""""]]:774:12475:[8272.64,2979.58,0.00143814]:[]:[90,60,60,0,0,0.00787023,10,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,0,0,0,-0.18],[""nobody"",0,""no reason"",""NO DATE""]]:[[[],[]],[[],[]],[[],[]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198171609822"
+2017/01/16, 18:30:37 "insertLog:civ_27 sync Synchronizacja"
+2017/01/16, 18:30:37 "ExtDB QUERY:"
+2017/01/16, 18:30:37 "0:247739:logEvent:76561198171609822:Jimmy Skurczyrak:sync:Synchronizacja:774:12475:[8272.64,2979.58,0.00143814]"
+2017/01/16, 18:30:37 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:30:37 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:30:39 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:30:41 Server: Object 11:3 not found (message Type_121)
+2017/01/16, 18:30:54 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:30:56 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:30:59 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:31:00 Server: Object 46:5 not found (message Type_121)
+2017/01/16, 18:31:14 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:31:14 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:31:14 "insertLog:civ_20 sync Synchronizacja"
+2017/01/16, 18:31:14 "ExtDB QUERY:"
+2017/01/16, 18:31:14 "0:247739:logEvent:76561198036085831:Shiv Taylor:sync:Synchronizacja:267:14720:[8498.5,5929.33,0.00128937]"
+2017/01/16, 18:31:14 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:31:14 "ExtDB QUERY:"
+2017/01/16, 18:31:14 "0:247739:updatePlayerInfo:[[],[""CG_PICKAXE"","""","""","""",[""sharp_swing"",99915],[],""""],[],[""TRYK_U_B_wh_blk_Rollup_CombatUniform"",[]],[],[""CUP_B_HikingPack_Civ"",[[""CG_wheel"",1,1],[""CG_DrugBrick"",1,1],[""NP_DrugTable"",1,1]]],""TRYK_R_CAP_BLK"","""",[],[""ItemMap"","""",""cg_tabletd_10"",""ItemCompass"",""Itemwatch"",""""]]:267:14720:[8498.5,5929.33,0.00128937]:[]:[102,2,0,40,0,0.05,0,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,0,0,0,0],[""nobody"",0,""no reason"",""NO DATE""]]:[[[],[]],[[""np_copperbar1"",""np_ironbar1"",""NP_Wood""],[35,19,38]],[[""U_B_Wetsuit"",""CUP_NVG_PVS7""],[1,2]],[[],[]]]:[[[],[],[]],[[""np_copperbar1"",""np_ironbar1""],[44,24],[60,70]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198036085831"
+2017/01/16, 18:31:16 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:31:18 Server: Object 11:3 not found (message Type_121)
+2017/01/16, 18:31:19 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:31:24 Error: Object(37 : 154) not found
+2017/01/16, 18:31:34 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:31:36 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:31:37 Server: Object 46:5 not found (message Type_121)
+2017/01/16, 18:31:39 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:31:51 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:31:54 "insertLog:civ_134 job Zakonczyl prace - Cop"
+2017/01/16, 18:31:54 "ExtDB QUERY:"
+2017/01/16, 18:31:54 "0:247739:logEvent:76561198007690584:Liang Kappovsky:job:Zakonczyl prace - Cop:86:25935:[8291.4,3009.41,0.00143814]"
+2017/01/16, 18:31:54 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:31:54 ["leave job % 1",civ_134]
+2017/01/16, 18:31:54 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:31:56 Server: Object 11:3 not found (message Type_121)
+2017/01/16, 18:31:56 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:31:58 Client: Remote object 24:0 not found
+2017/01/16, 18:31:58 ["%1 %2 %3 %4",civ_20,1.86921e+009,"76561198036085831","Shiv Taylor"]
+2017/01/16, 18:31:58 "ExtDB QUERY:"
+2017/01/16, 18:31:58 "0:247739:updatePlayerInfo:[[],[""CG_PICKAXE"","""","""","""",[""sharp_swing"",99915],[],""""],[],[""TRYK_U_B_wh_blk_Rollup_CombatUniform"",[]],[],[""CUP_B_HikingPack_Civ"",[[""NP_DrugTable"",1,1],[""CG_wheel"",1,1],[""CG_MethBag100"",13,1]]],""TRYK_R_CAP_BLK"","""",[],[""ItemMap"","""",""cg_tabletd_10"",""ItemCompass"",""Itemwatch"",""""]]:267:14755:[8501.54,5927.31,0.00102234]:[]:[102,0,0,40,0,0.1,0,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,0,0,0,0],[""nobody"",0,""no reason"",""NO DATE""]]:[[[],[]],[[""np_copperbar1"",""np_ironbar1"",""NP_Wood""],[35,19,38]],[[""U_B_Wetsuit"",""CUP_NVG_PVS7""],[1,2]],[[],[]]]:[[[],[],[]],[[""np_copperbar1"",""np_ironbar1""],[44,24],[60,70]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198036085831"
+2017/01/16, 18:31:58 "refreshing job list"
+2017/01/16, 18:31:59 Warning: Cleanup player - person 2:838 not found
+2017/01/16, 18:31:59 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:32:01 Warning: Cleanup player - person 2:838 not found
+2017/01/16, 18:32:02 NetServer::SendMsg: cannot find channel #1771056410, users.card=35
+2017/01/16, 18:32:02 NetServer: users.get failed when sending to 1771056410
+2017/01/16, 18:32:02 Message not sent - error 0, message ID = ffffffff, to 1771056410 (Ajit Mukherjee)
+2017/01/16, 18:32:05 "ExtDB QUERY:"
+2017/01/16, 18:32:05 "0:247739:updatePlayerInfo:[[],[],[],[""TRYK_shirts_DENIM_BL"",[]],[""EF_BS"",[]],[""TRYK_Winter_pack"",[[""vvv_np_magazine_taser"",4,1],[""NP_8mPoliceLine"",1,1],[""CG_Spikes_Collapsed"",1,1],[""CG_wheel"",1,1],[""CG_ATF_Bandage_i"",7,1],[""RH_33Rnd_9x19_g18"",4,33],[[""taser"","""","""","""",[],[],""""],1],[""EF_PBDF_M1"",false]]],""ALE_H_NewEra_Black"",""G_Aviator"",[""Binocular"","""","""","""",[],[],""""],[""ItemMap"",""ItemGPS"",""cg_tabletd_32"",""ItemCompass"",""Itemwatch"",""""]]:86:25935:[8291.33,3009.12,0.00143814]:[]:[72,62,78,0,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[1,0,1,1,1,0],2,[0,0,0,0,0],[""nobody"",0,""no reason"",""NO DATE""]]:[[[],[]],[[""NP_Wood""],[23]],[[""CUP_U_C_Mechanic_01""],[1]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198007690584"
+2017/01/16, 18:32:05 "insertLog:civ_134 sync Synchronizacja"
+2017/01/16, 18:32:05 "ExtDB QUERY:"
+2017/01/16, 18:32:05 "0:247739:logEvent:76561198007690584:Liang Kappovsky:sync:Synchronizacja:86:25935:[8291.33,3009.12,0.00143814]"
+2017/01/16, 18:32:05 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:32:06 ["%1 %2 %3 %4",civ_134,0,"76561198007690584",0]
+2017/01/16, 18:32:06 "ExtDB QUERY:"
+2017/01/16, 18:32:06 "0:247739:updatePlayerInfoNoGear:86:25935:[8291.33,3009.1,0.00143814]:[]:[72,62,78,0,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[1,0,1,1,1,0],2,[0,0,0,0,0],[""nobody"",0,""no reason"",""NO DATE""]]:[[[],[]],[[""NP_Wood""],[23]],[[""CUP_U_C_Mechanic_01""],[1]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198007690584"
+2017/01/16, 18:32:06 Server: Object 37:191 not found (message Type_440)
+2017/01/16, 18:32:06 "insertLog:civ_134 job Rozpoczal prace - Cop"
+2017/01/16, 18:32:06 "ExtDB QUERY:"
+2017/01/16, 18:32:06 "0:247739:logEvent:76561198007690584:Liang Kappovsky:job:Rozpoczal prace - Cop:86:25935:[8291.33,3009.1,0.00143814]"
+2017/01/16, 18:32:06 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:32:06 "insertLog:civ_134 Cop Wyciagnal wyposazenie - basic"
+2017/01/16, 18:32:06 "ExtDB QUERY:"
+2017/01/16, 18:32:06 "0:247739:logEvent:76561198007690584:Liang Kappovsky:Cop:Wyciagnal wyposazenie - basic:86:25935:[8291.33,3009.1,0.00143814]"
+2017/01/16, 18:32:06 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:32:13 Server: Object 46:5 not found (message Type_121)
+2017/01/16, 18:32:14 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:32:16 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:32:19 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:32:21 Server: Object 37:197 not found (message Type_440)
+2017/01/16, 18:32:28 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:32:29 "ExtDB QUERY:"
+2017/01/16, 18:32:29 "0:247739:updateCarStatus:1:zvbn669"
+2017/01/16, 18:32:29 Error in expression <layer];
+deletevehicle _object;
+} else {
+_information SET[7, 1];
+_currentCars = _>
+2017/01/16, 18:32:29   Error position: <_information SET[7, 1];
+_currentCars = _>
+2017/01/16, 18:32:29   Error Undefined variable in expression: _information
+2017/01/16, 18:32:29 File NoPixel_Server\server\core\Garage\fn_updateCarStatus.sqf, line 30
+2017/01/16, 18:32:32 Server: Object 11:3 not found (message Type_121)
+2017/01/16, 18:32:34 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:32:36 Error in expression <se;
+if (_status == 0) then {
+_license = _information select 0;
+_carowner = _info>
+2017/01/16, 18:32:36   Error position: <_information select 0;
+_carowner = _info>
+2017/01/16, 18:32:36   Error Undefined variable in expression: _information
+2017/01/16, 18:32:36 File NoPixel_Server\server\core\Garage\fn_updateCarStatus.sqf, line 14
+2017/01/16, 18:32:36 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:32:37 ["give task %1","News"]
+2017/01/16, 18:32:37 Trying to call RemoteExec(Call) with 0 targets for func 'client_fnc_startnews'. Maximum is 1000
+2017/01/16, 18:32:37 Error in expression <IS_fnc_selectRandom; 
+_players pushback _player; 
+_player2 = currentNewsMan call>
+2017/01/16, 18:32:37   Error position: <_player; 
+_player2 = currentNewsMan call>
+2017/01/16, 18:32:37   Error Undefined variable in expression: _player
+2017/01/16, 18:32:37 File NoPixel_Server\server\core\Jobs\fn_giveTask.sqf, line 15
+2017/01/16, 18:32:39 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:32:44 ["request medic %1",civ_11]
+2017/01/16, 18:32:47 "insertLog:civ_134 job Zakonczyl prace - Cop"
+2017/01/16, 18:32:47 "ExtDB QUERY:"
+2017/01/16, 18:32:47 "0:247739:logEvent:76561198007690584:Liang Kappovsky:job:Zakonczyl prace - Cop:86:25935:[8291.4,3008.99,0.00143814]"
+2017/01/16, 18:32:47 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:32:47 ["leave job % 1",civ_134]
+2017/01/16, 18:32:50 Server: Object 46:5 not found (message Type_121)
+2017/01/16, 18:32:53 Error in expression <se;
+if (_status == 0) then {
+_license = _information select 0;
+_carowner = _info>
+2017/01/16, 18:32:53   Error position: <_information select 0;
+_carowner = _info>
+2017/01/16, 18:32:53   Error Undefined variable in expression: _information
+2017/01/16, 18:32:53 File NoPixel_Server\server\core\Garage\fn_updateCarStatus.sqf, line 14
+2017/01/16, 18:32:54 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:32:56 "insertLog:civ_134 job Rozpoczal prace - Cop"
+2017/01/16, 18:32:56 "ExtDB QUERY:"
+2017/01/16, 18:32:56 "0:247739:logEvent:76561198007690584:Liang Kappovsky:job:Rozpoczal prace - Cop:86:25935:[8291.38,3008.98,0.00143814]"
+2017/01/16, 18:32:56 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:32:56 ["%1 %2 %3 %4",civ_134,0,"76561198007690584",0]
+2017/01/16, 18:32:56 "ExtDB QUERY:"
+2017/01/16, 18:32:56 "0:247739:updatePlayerInfoNoGear:86:25935:[8291.38,3008.98,0.00143814]:[]:[72,62,78,0,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[1,0,1,1,1,0],2,[0,0,0,0,0],[""nobody"",0,""no reason"",""NO DATE""]]:[[[],[]],[[""NP_Wood""],[23]],[[""CUP_U_C_Mechanic_01""],[1]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198007690584"
+2017/01/16, 18:32:56 Server: Object 37:205 not found (message Type_440)
+2017/01/16, 18:32:56 "insertLog:civ_134 Cop Wyciagnal wyposazenie - basic"
+2017/01/16, 18:32:56 "ExtDB QUERY:"
+2017/01/16, 18:32:56 "0:247739:logEvent:76561198007690584:Liang Kappovsky:Cop:Wyciagnal wyposazenie - basic:86:25935:[8291.38,3008.98,0.00143814]"
+2017/01/16, 18:32:56 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:32:56 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:32:59 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:33:04 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:33:08 Server: Object 37:211 not found (message Type_440)
+2017/01/16, 18:33:09 Server: Object 11:3 not found (message Type_121)
+2017/01/16, 18:33:13 "insertLog:civ_133 job Zakonczyl prace - Cop"
+2017/01/16, 18:33:13 "ExtDB QUERY:"
+2017/01/16, 18:33:13 "0:247739:logEvent:76561198030912509:Alex Knox:job:Zakonczyl prace - Cop:28:26835:[8277.1,2979.06,0.00143814]"
+2017/01/16, 18:33:13 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:33:13 ["leave job % 1",civ_133]
+2017/01/16, 18:33:15 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:33:16 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:33:19 Sound: Error: File: cg_mission_files\sounds\blindfold.ogg not found !!!
+2017/01/16, 18:33:19 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:33:26 "insertLog:civ_133 job Rozpoczal prace - Cop"
+2017/01/16, 18:33:26 "ExtDB QUERY:"
+2017/01/16, 18:33:26 "0:247739:logEvent:76561198030912509:Alex Knox:job:Rozpoczal prace - Cop:28:26835:[8277.3,2978.39,0.00143814]"
+2017/01/16, 18:33:26 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:33:26 ["%1 %2 %3 %4",civ_133,0,"76561198030912509",0]
+2017/01/16, 18:33:26 "ExtDB QUERY:"
+2017/01/16, 18:33:26 "0:247739:updatePlayerInfoNoGear:28:26835:[8277.3,2978.39,0.00143814]:[]:[187,84,90,95,0,0.0223535,99,[0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,0],2,[0,0,0,0,-0.04],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""RH_uspm"",""Binocular""],[1,1]],[[""RH_7Rnd_45cal_m1911"",""np_silverbar1"",""NP_Wood"",""np_copperbar1"",""CG_OilCanister"",""NP_DrugTable"",""RH_16Rnd_40cal_usp"",""CG_ATF_Bandage_i""],[15,5,2,5,2,1,8,7]],[[""CUP_NVG_PVS7"",""ItemGPS""],[1,1]],[[],[]]]:[[[""sab_1911_handgun"",""hgun_ACPC2_F""],[3,2],[2500,2500]],[[""CG_MethBag100""],[20],[0]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198030912509"
+2017/01/16, 18:33:26 Server: Object 32:27 not found (message Type_93)
+2017/01/16, 18:33:26 "insertLog:civ_133 Cop Wyciagnal wyposazenie - basic"
+2017/01/16, 18:33:26 "ExtDB QUERY:"
+2017/01/16, 18:33:26 "0:247739:logEvent:76561198030912509:Alex Knox:Cop:Wyciagnal wyposazenie - basic:28:26835:[8277.3,2978.39,0.00143814]"
+2017/01/16, 18:33:26 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:33:26 Error: Object(32 : 27) not found
+2017/01/16, 18:33:26 "ExtDB QUERY:"
+2017/01/16, 18:33:26 "0:247739:updatePlayerInfo:[[],[],[],[""vvv_character_agente_47"",[]],[],[""CUP_B_HikingPack_Civ"",[[""ItemGPS"",1],[""CG_ATF_Bandage_i"",2,1],[""CG_wheel"",1,1]]],""TRYK_R_CAP_BLK"","""",[""Binocular"","""","""","""",[],[],""""],[""ItemMap"",""ItemGPS"",""cg_tabletd_61"",""ItemCompass"",""Itemwatch"",""""]]:130:5190:[9526.29,4094.54,0.00143814]:[]:[241,50,54,95,0,0.00913778,4,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,0,0,0,-0.0599999],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""cg_hatchet""],[1]],[[""CG_ATF_Bandage_i""],[2]],[[""CUP_NVG_PVS7"",""U_B_Wetsuit""],[3,1]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198147740738"
+2017/01/16, 18:33:26 "insertLog:civ_5 sync Synchronizacja"
+2017/01/16, 18:33:26 "ExtDB QUERY:"
+2017/01/16, 18:33:26 "0:247739:logEvent:76561198147740738:Patryk Sprytny:sync:Synchronizacja:130:5190:[9526.29,4094.54,0.00143814]"
+2017/01/16, 18:33:26 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:33:27 Server: Object 46:5 not found (message Type_121)
+2017/01/16, 18:33:27 Error: Object(32 : 28) not found
+2017/01/16, 18:33:27 "insertLog:civ_5 job Rozpoczal prace - EMS"
+2017/01/16, 18:33:27 "ExtDB QUERY:"
+2017/01/16, 18:33:27 "0:247739:logEvent:76561198147740738:Patryk Sprytny:job:Rozpoczal prace - EMS:130:5190:[9526.29,4094.54,0.00143814]"
+2017/01/16, 18:33:27 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:33:27 ["%1 %2 %3 %4",civ_5,0,"76561198147740738",0]
+2017/01/16, 18:33:27 "ExtDB QUERY:"
+2017/01/16, 18:33:27 "0:247739:updatePlayerInfoNoGear:130:5190:[9526.29,4094.54,0.00143814]:[]:[241,50,54,95,0,0.00913778,4,[0,0,0,0,0,0,0,0,0,0,0],[1,0,0,0,0,0],2,[0,0,0,0,-0.0599999],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""cg_hatchet""],[1]],[[""CG_ATF_Bandage_i""],[2]],[[""CUP_NVG_PVS7"",""U_B_Wetsuit""],[3,1]],[[],[]]]:[[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198147740738"
+2017/01/16, 18:33:27 "insertLog:civ_5 EMS Wyciagnal wyposazenie - basic"
+2017/01/16, 18:33:27 "ExtDB QUERY:"
+2017/01/16, 18:33:27 "0:247739:logEvent:76561198147740738:Patryk Sprytny:EMS:Wyciagnal wyposazenie - basic:130:5190:[9526.29,4094.54,0.00143814]"
+2017/01/16, 18:33:27 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:33:28 Server: Object 37:218 not found (message Type_121)
+2017/01/16, 18:33:30 "insertLog:civ_5 job Rozpoczal prace - Medic Dispatch"
+2017/01/16, 18:33:30 "ExtDB QUERY:"
+2017/01/16, 18:33:30 "0:247739:logEvent:76561198147740738:Patryk Sprytny:job:Rozpoczal prace - Medic Dispatch:130:5190:[9526.29,4094.54,0.00143814]"
+2017/01/16, 18:33:30 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:33:34 "insertLog:civ_133 job Zakonczyl prace - Cop"
+2017/01/16, 18:33:34 "ExtDB QUERY:"
+2017/01/16, 18:33:34 "0:247739:logEvent:76561198030912509:Alex Knox:job:Zakonczyl prace - Cop:28:26835:[8277.34,2978.39,0.00143814]"
+2017/01/16, 18:33:34 "extdb2 Error: [0,""Error Incorrect Number of Inputs""]"
+2017/01/16, 18:33:34 ["leave job % 1",civ_133]
+2017/01/16, 18:33:34 Server: Object 11:3 not found (message Type_93)
+2017/01/16, 18:33:36 Server: Object 2:860 not found (message Type_93)
+2017/01/16, 18:33:39 Server: Object 46:5 not found (message Type_93)
+2017/01/16, 18:33:41 "ExtDB QUERY:"
+2017/01/16, 18:33:41 "0:247739:updatePlayerInfo:[[],[""CG_PICKAXE"","""","""","""",[""sharp_swing"",99951],[],""""],[""hgun_Pistol_heavy_01_F"","""","""","""",[""11Rnd_45ACP_Mag"",11],[],""""],[""vvv_character_agente_473"",[[""np_energydrink"",4,1],[""11Rnd_45ACP_Mag"",3,11],[""CG_ATF_Bandage_i"",4,1],[""np_chickensoup"",2,1]]],[],[""CUP_B_HikingPack_Civ"",[[""CG_wheel"",1,1],[""CG_Engine"",1,1],[[""vvv_fishing_rod"","""","""","""",[""cebos"",1],[],""""],1]]],""H_Beret_blk"",""G_Squares"",[],[""ItemMap"","""",""cg_tabletd_56"",""ItemCompass"",""Itemwatch"",""""]]:0:5163:[137.957,928.28,0.00143886]:[]:[125,98,94,95,0,0.198524,21,[0,0,0,0,0,0,0,0,0,0,0],[1,1,1,1,1,0],2,[0,0,0,0,-0.44],[""nobody"",0,""no reason"",""NO DATE""]]:[[[""gold_fishing_rod"",""cg_hatchet""],[1,1]],[[""cebos"",""CG_Cocaine"",""CG_wheel"",""np_chickensoup"",""np_water""],[5,2,2,1,4]],[[],[]],[[],[]]]:[[[],[],[]],[[""CG_OilCanister""],[8],[800]],[[],[],[]],[[],[],[]]]:[80001,1]:1:76561198063629420"
+2017/01/16, 18:33:41 Server: Object 2:860 not found (message Type_121)
+2017/01/16, 18:33:46 Server: Object 11:3 not found (message Type_121)
