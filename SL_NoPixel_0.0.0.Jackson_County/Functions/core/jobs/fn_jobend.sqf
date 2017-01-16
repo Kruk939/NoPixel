@@ -5,7 +5,7 @@ if(myJob IN ["Cop","Fire","EMS"]) then {
 
 
 
-[player, "job", format["Zakonczyl prace: %1", myjob]] remoteExec ["Server_fnc_insertLog", 2];
+[player, "job", format["Zakonczyl prace - %1", myjob]] remoteExec ["Server_fnc_insertLog", 2];
 myjob = "none";
 taskrunning = false;
 dispatch = false;

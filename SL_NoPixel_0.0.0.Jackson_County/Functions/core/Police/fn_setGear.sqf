@@ -187,4 +187,4 @@ if(myjob == "Mafia") exitwith {
 	_level = player getVariable "Mafia";
 	player forceadduniform "vvv_traje_mafioso_F_1";
 };
-[player, myjob, format["Wyciagnal wyposazenie: %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
+[player, myjob, format["Wyciagnal wyposazenie - %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
