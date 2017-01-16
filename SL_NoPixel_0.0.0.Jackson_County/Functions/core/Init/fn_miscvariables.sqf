@@ -79,7 +79,7 @@ paycheck = 0;
 //admins
 jesteadmine = 0;
 										//derek
-if (getplayerUID player IN ["76561197991728220"]) then { jesteadmine=1; };
+if (getplayerUID player IN ["76561197991728220","76561198131854921"]) then { jesteadmine=1; };
 										//arthur							//danio						//egtu
 if (getplayerUID player IN ["76561198028980508","76561198082441969","76561198013757235"]) then { jesteadmine=2; };
 										//raf								//sid							//dzoka						//teddy

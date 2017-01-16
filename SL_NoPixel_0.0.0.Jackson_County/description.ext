@@ -272,6 +272,7 @@ class CfgFunctions
 			class totalPain {};	
 			class sendrevive {};		
 			class revived {};
+			class medicClothes {};
 		};
 		class Mayor
 		{
