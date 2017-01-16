@@ -3,6 +3,7 @@
 _player = _this select 0;
 _jobtype = _this select 1;
 
+[player, "job", format["Rozpoczal prace - %1", _jobtype]] remoteExec ["Server_fnc_insertLog", 2];
 if (str _jobtype find "Cop" > -1) exitwith {   
 		[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];	
 		[] spawn client_fnc_startCop;
@@ -114,4 +115,3 @@ if (str _jobtype find "repairman" > -1 || str _jobtype == "repairman") exitwith 
 	publicvariable "currentRepairmen";	
 };
 
-[player, "job", format["Rozpoczal prace - %1", _jobtype]] remoteExec ["Server_fnc_insertLog", 2];

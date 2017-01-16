@@ -7,6 +7,7 @@ params[["_type","basic"]];
 // wrzucic do core/Police po stronie klienta(plik misji)
 
 
+[player, myjob, format["Wyciagnal wyposazenie - %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
 if(myjob == "Cop") exitwith {
 
 	if(_type == "basic") then {
@@ -187,4 +188,3 @@ if(myjob == "Mafia") exitwith {
 	_level = player getVariable "Mafia";
 	player forceadduniform "vvv_traje_mafioso_F_1";
 };
-[player, myjob, format["Wyciagnal wyposazenie - %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
