@@ -14,7 +14,7 @@ wreckRemovalMinTime = 10;
 class Header {
     gameType = RPG;
     minPlayers = 1;
-    maxPlayers = 100;
+    maxPlayers = 120;
 };
 
 #include "dialogs\Dialogs.hpp"
@@ -129,6 +129,7 @@ class CfgFunctions
 			class raidshop {};
 			class raidhouse {};
 			class copmapmarkers {};
+			class policeClothes{};
 		};
 
 		class Wanted {
