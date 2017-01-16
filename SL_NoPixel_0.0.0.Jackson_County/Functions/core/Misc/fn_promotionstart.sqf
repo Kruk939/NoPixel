@@ -1,4 +1,4 @@
-private["_display","_list","_i","_EMS","_Cop","_fire","_Mafia"];
+private["_display","_list","_i","_EMS","_Cop","_Fire","_Mafia","_legal"];
 //Cop - EMS - Mafia - Fire
 disableSerialization;
 _max = 0;
@@ -7,15 +7,15 @@ _Cop = player getvariable "Cop";
 _Fire = player getvariable "Fire";
 _Mafia = player getvariable "Mafia";
 _legal = player getvariable "legal";
-if(myJob == "Cop" && _cop < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
-if(myJob == "EMS" && _ems < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob == "Cop" && _Cop < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob == "EMS" && _EMS < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 if(myJob == "Fire" && _Fire < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 if(myJob == "Mafia" && _Mafia < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 
 if((myJob == "Judge" || myJob == "Lawyer") && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 
 
-if(myJob == "Cop") then { _max = _cop; };
+if(myJob == "Cop") then { _max = _Cop; };
 if(myJob == "EMS") then { _max = _EMS; };
 if(myJob == "Fire") then { _max = _Fire; };
 if(myJob == "Mafia") then { _max = _Mafia; };
