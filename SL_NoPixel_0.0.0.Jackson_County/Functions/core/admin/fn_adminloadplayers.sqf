@@ -23,6 +23,10 @@ lbClear _list;
 
 if (jesteadmine == 1) then {
 
+};
+
+if (jesteadmine == 2) then {
+
 _list lbAdd format["%1", "Invisible On"];
 _list lbSetdata [(lbSize _list)-1,str(5)];
 
@@ -53,7 +57,7 @@ _list lbSetdata [(lbSize _list)-1,str(2)];
 };
 
 
-if (jesteadmine == 2) then {
+if (jesteadmine == 3) then {
 
 _list lbAdd format["%1", "Invisible On"];
 _list lbSetdata [(lbSize _list)-1,str(5)];
@@ -98,7 +102,7 @@ _list lbAdd format["%1", "Kick Target"];
 _list lbSetdata [(lbSize _list)-1,str(27)];
 };
 
-if (jesteadmine == 3) then {
+if (jesteadmine == 4) then {
 
 _list lbAdd format["%1", "Teleport To"];
 _list lbSetdata [(lbSize _list)-1,str(1)];
