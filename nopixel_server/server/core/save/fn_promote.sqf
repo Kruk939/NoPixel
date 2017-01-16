@@ -1,4 +1,4 @@
- _type = _this select 0; 
+_type = _this select 0; 
 _player = _this select 1; 
 _rank = _this select 2;  
 _uidPlayer = getplayerUID _player; 

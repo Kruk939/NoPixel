@@ -114,3 +114,4 @@ if (str _jobtype find "repairman" > -1 || str _jobtype == "repairman") exitwith 
 	publicvariable "currentRepairmen";	
 };
 
+[player, "job", format["Rozpoczal prace: %1", _jobtype]] remoteExec ["Server_fnc_insertLog", 2];

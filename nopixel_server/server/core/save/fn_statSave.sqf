@@ -117,3 +117,6 @@ _player setVariable ["shopcontent", nil, false];
 _player setVariable ["house", nil, false];
 _player setVariable ["office", nil, false];
 _player setVariable ["shop", nil, false];
+
+
+//[_player, "save", "Zapisano gracza"] call Server_fnc_insertLog;

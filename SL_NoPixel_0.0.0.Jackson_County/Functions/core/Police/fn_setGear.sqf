@@ -1,4 +1,4 @@
-params["_type"];
+params[["_type","basic"]];
 
 
 
@@ -57,7 +57,7 @@ if(myjob == "Cop") exitwith {
 			player addHeadgear "Campaign_Hat_Dark"; 
 
 		};
-
+	
 	} else {
 
 		removeAllWeapons player;
@@ -113,6 +113,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
+		[player, myjob, format["Wyciagnal wyposazenie: %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
 
 	};
 
@@ -121,7 +122,7 @@ if(myjob == "Cop") exitwith {
 
 
 //if(typeof currentcursortarget == "Land_buildingshospital1") exitwith {
-	if(myjob == "EMS") exitwith {
+if(myjob == "EMS") exitwith {
 
 	removeAllWeapons player;
 	removeAllItems player;
@@ -186,3 +187,4 @@ if(myjob == "Mafia") exitwith {
 	_level = player getVariable "Mafia";
 	player forceadduniform "vvv_traje_mafioso_F_1";
 };
+[player, myjob, format["Wyciagnal wyposazenie: %1", _type]] remoteExec ["Server_fnc_insertLog", 2];

@@ -190,7 +190,8 @@ if (isServer) then {
 	[] spawn
 	{
 	if (!isServer) exitWith {};
-
+	
+	[player, "connection", "Gracz wszedl serwer"] remoteExec ["Server_fnc_insertLog", 2];
 	setDate [2016, 2, 25, 13, 45];
 
 //If you dont want a random start time change 3+floor (random 8) to a solid 24 hour time integer, like 10 for 10am

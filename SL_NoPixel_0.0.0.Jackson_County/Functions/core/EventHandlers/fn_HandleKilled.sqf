@@ -35,7 +35,6 @@ _fuck = name _killer;
 _you = name _unit;
 
 
-
 if(_fuck != _you) then {
 	if(_fuck find "Error: " > -1) then {
 		[getpos player, "News", "Vehicle Accident"] remoteexec ["server_fnc_giveTask",2];
@@ -56,6 +55,7 @@ if(_fuck != _you) then {
 		_playerkill = true;
 		shooting_death = true;
 	};
+	[player, "killed", format["Gracz zostal zabity przez %1 (%2) z odleglosci %3 z broni %4",_fuck, getPlayerUID _killer, _killdistance, _killweapon]] remoteExec ["Server_fnc_insertLog", 2];
 } else {
 	shooting_death = false;
 	[getpos player, "News", "Unknown Death"] remoteexec ["server_fnc_giveTask",2];
@@ -124,3 +124,4 @@ player setdamage 0;
 		if(!deadPlayer) exitwith {};
 	};
 };
+
