@@ -254,3 +254,4 @@ if(client_energy > 0) then {
 	player enablefatigue false;
 	player enablestamina false;
 };
+[player, "connection", "Gracz wszedl serwer"] remoteExec ["Server_fnc_insertLog", 2];

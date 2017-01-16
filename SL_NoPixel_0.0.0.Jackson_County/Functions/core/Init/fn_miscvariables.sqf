@@ -425,4 +425,3 @@ upgradeVehicleList = [
 	"ivory_gti_tuned3",
 	"ivory_wrx_tuned3"
 ];
-[player, "connection", "Gracz wszedl serwer"] remoteExec ["Server_fnc_insertLog", 2];
