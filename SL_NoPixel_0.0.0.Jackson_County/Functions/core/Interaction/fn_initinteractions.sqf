@@ -732,14 +732,14 @@ NoPixel_InteractionMenuItems = [
 	],
 	
 	[
-		[" (myjob == ""EMS"" && typeof cursorobject == "Box_NATO_Uniforms_F"") && player getvariable ""ems"" > 1 "],
-		["Ubrania EMS", "[cursorobject] spawn client_fnc_medicClothes"]
+		[" (myjob == ""EMS"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""ems"" > 1 "],
+		["Mundury EMS", "[cursorobject] spawn client_fnc_medicClothes"]
 	],
 	
-	[
+	/*[
 		[" (myjob == ""Fire"" && typeof cursorobject == "Box_NATO_Uniforms_F"") && player getvariable ""Fire"" > 1 "],
 		["Ubrania FD", "[cursorobject] spawn client_fnc_medicClothes"]
-	],
+	],*/
 
 	[
 		[" myjob == ""none"" && (player getvariable ""cop"") > 0 && typeof cursorobject == ""Land_PoliceStation"""],
