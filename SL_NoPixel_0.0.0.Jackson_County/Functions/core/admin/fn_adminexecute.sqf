@@ -25,10 +25,12 @@ if(_statementsent == 4) then {
 
 if(_statementsent == 5) then {
 	[_target,true] remoteExec ["hideobjectglobal", 2]; 
+	player setVariable ["st_hide",true];
 };
 
 if(_statementsent == 6) then {
-	[_target,false] remoteExec ["hideobjectglobal", 2]; 
+	[_target,false] remoteExec ["hideobjectglobal", 2];
+	player setVariable ["st_hide",false];
 };
 
 if(_statementsent == 7) then {

@@ -29,22 +29,22 @@ if(isNull _ui) then {
 	_pos = [visiblePosition _x select 0, visiblePosition _x select 1, ((_x modelToWorld (_x selectionPosition "head")) select 2)+.5];
 	_sPos = worldToScreen _pos;
 	_distance = _x distance player;
-	//_name = _x getVariable ["realname", name _x];
-	//_kontakt = [player, _name] remoteExec ["server_fnc_kontakty"];
-	//_kontakt = remoteExec["server_fnc_kontakty", _name];
 	_name = getPlayerUID  _x;
-		
+	
 	_dickbag = true;
 	_text = "";
-	if(count _sPos > 1 && isPlayer _x && _distance < 14 && !adminESP && _x != player && vehicle player == player && currentweapon player == "") then {
+	
+	_isAdmin = _x getVariable ["st_hide", false];
+	
+	if(count _sPos > 1 && isPlayer _x && _distance < 14 && !adminESP && _x != player && vehicle player == player && currentweapon player == "" && !_isAdmin) then {
 		if(_x isKindOf "Man") then {
-			_text = format["<t color='#FFFFFF' font='puristaMedium'>%1</t>",_name, _distance];
+			_text = format["<t color='#FFFFFF' font='puristaMedium'>%1</t>",_name];
 		} else {
 			_crew = crew (vehicle _x);
 			{
 				_names = format[" & %1",name (_crew select _n)];
 			}foreach _crew;
-			_text = format["<t color='#FFFFFF' font='puristaMedium'>%1</t>",_names, _distance];
+			_text = format["<t color='#FFFFFF' font='puristaMedium'>%1</t>",_names];
 		};
 
 		_idc = _ui displayCtrl (iconID + _forEachIndex);
