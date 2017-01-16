@@ -29,6 +29,7 @@ if(_cash < _price) exitwith { [format["KOSZT: %1 - Za mało pieniędzy.",_price]
 
 closedialog 0;
 
+[player, "car", format["Kupil samochod - %1 za %2", _class, _price]] remoteExec ["Server_fnc_insertLog", 2];
 ["Pojazd zostanie dostarczony do Twojego garażu.", true] spawn domsg;
 
 _player = player;
