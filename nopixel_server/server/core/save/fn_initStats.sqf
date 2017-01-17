@@ -97,8 +97,8 @@ if (_booli) then {
 	_mayor = false;
 	if(_uid == currentMayor) then {
 		_mayor = true;
+		theMayor = _player;
 	};
-	theMayor = _player;
 	
 	/*_mayor = false;
 	if(_uid == call compile format["%1",currentmayor]) then { _mayor = true; theMayor = _player; };
