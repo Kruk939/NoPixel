@@ -1,9 +1,3 @@
-
-
-
-
-
-
 _quantity = _this select 0;
 
 diag_log ["tax update %1", _quantity];
