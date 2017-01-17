@@ -128,7 +128,7 @@ _availableWeapon = [
 	"Taser",
 	"RH_mateba",
 	"RH_mp412",
-	"CUP_srifle_M24_wdl",
+	//"CUP_srifle_M24_wdl",
 	"CUP_arifle_M4A1_black",
 	"CUP_sgun_M1014",
 	"CUP_arifle_M16A4_Base",
