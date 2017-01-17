@@ -144,8 +144,7 @@ NoPixel_InteractionMenuItems = [
 //	],
 
 	[
-		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Mafia"" "],
-		//["Track Car", " currentcursortarget setvariable [""tracking"",true,false]; ",1]
+		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && (myJob == ""Mafia"" || myJob == ""Cop"") "],
 		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTracking; ",1]
 	],
 	
