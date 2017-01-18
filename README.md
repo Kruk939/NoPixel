@@ -31,6 +31,7 @@
 #WAŻNE PLIKI
 * \Functions\core\Police\fn_vars.sqf - ARSENAL
 * \Functions\core\Init\fn_miscvariables.sqf - VARIABLES - ADMIN'S ID
+* \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
 <hr>
 #POMYSLY
