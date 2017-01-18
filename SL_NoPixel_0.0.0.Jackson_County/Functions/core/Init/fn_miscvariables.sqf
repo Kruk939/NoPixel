@@ -423,6 +423,7 @@ upgradeVehicleList = [
 	"vvv_Chevrolet_Impala_tuned1",
 	"vvv_Chevrolet_Impala_tuned2",
 	"ivory_911_tuned1",
+	"ivory_911_tuned2",
 	"vvv_Abarth_695_tuned1",
 	"vvv_Abarth_695_tuned2",
 	"ivory_190e_tuned1",
