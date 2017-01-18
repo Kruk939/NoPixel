@@ -164,3 +164,9 @@ if (_player IN currentlegalaid) exitwith {
 //    currentLegalAid ="";
 
 };
+if (_player IN currentDoughnuts) exitwith {
+    _pia = currentDoughnuts find _player;
+    currentDoughnuts deleteAt _pia;
+    publicvariable "currentDoughnuts";
+
+};

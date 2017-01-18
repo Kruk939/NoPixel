@@ -512,6 +512,15 @@ NoPixel_InteractionMenuItems = [
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"""],
 		["Cukiernia", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn client_fnc_LoadStore;",3]
 	],
+	
+	[
+		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
+		["Pączkowe ubranka", "closedialog 0; createdialog ""GeneralStore_Menu""; [""doughnuts_general""] spawn client_fnc_LoadStore;",3]
+	],
+	[
+		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
+		["Pączkowe bronie", "closedialog 0; createdialog ""gun_menu""; [""doughnuts_gun""] spawn client_fnc_LoadStore;",3]
+	],
 
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dexters"""],
@@ -759,6 +768,10 @@ NoPixel_InteractionMenuItems = [
 	[
 		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
 		["Praca sędziego", "[player,""Judge""] spawn client_fnc_jobstart;",4]
+	],
+	[
+		["myjob == ""none"" && (player getvariable ""doughnuts"") > 0"],
+		["Przewoznik paczkow", "[player,""doughnuts""] spawn client_fnc_jobstart;",4]
 	],
 
 	[

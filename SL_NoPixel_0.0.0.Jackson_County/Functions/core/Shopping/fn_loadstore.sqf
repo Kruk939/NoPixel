@@ -3,7 +3,7 @@ private["_storeList","_addedprice"];
 disableSerialization;
 _condition = _this select 0;
 _storeList = [];
-
+_doughnuts = player getVariable ["doughnutsLevel", 0];
 if(_condition == "gunstore") then {
 
 	_gunStorePistols = [
@@ -29,8 +29,8 @@ if(_condition == "gunstore") then {
 		["RH_fn57",nil,7400,1],
 		["RH_fnp45",nil,6800,1],
 		["taser",nil,2200,1]
-	];
-
+	];	
+	_gunStorePistols = _gunStorePistols;
 	{
 		_storeList pushback _x;
 	} foreach _gunStorePistols;
@@ -717,6 +717,90 @@ if(_condition == "head") then {
 
 };
 
+if(_condition == "doughnuts_general") then {
+	
+	//Doughnuts
+	_additional = [];
+	if(_doughnuts > 0) then {
+		_ret = [
+			["G_Shades_Black",nil,120,3,4]
+		];
+		_additional = _additional + _ret;
+	};
+	if(_doughnuts > 1) then {
+		_ret = [
+		
+		
+		];
+		_additional = _additional + _ret;
+	};
+	if(_doughnuts > 2) then {
+		_ret = [
+		
+		
+		];
+		_additional = _additional + _ret;
+	};
+	if(_doughnuts > 3) then {
+		_ret = [
+		
+		
+		];
+		_additional = _additional + _ret;
+	};
+	if(_doughnuts > 4) then {
+		_ret = [
+		
+		
+		];
+		_additional = _additional + _ret;
+	};
+	{
+		_storeList pushback _x;
+	} foreach _additional;
+};
+if(_condition == "doughnuts_gun") then {
+	
+	//Doughnuts
+	_additional = [];
+	if(_doughnuts > 0) then {
+		_ret = [
+			["G_Shades_Black",nil,120,3,4]
+		];
+		_additional = _additional + _ret;
+	};
+	if(_doughnuts > 1) then {
+		_ret = [
+		
+		
+		];
+		_additional = _additional + _ret;
+	};
+	if(_doughnuts > 2) then {
+		_ret = [
+		
+		
+		];
+		_additional = _additional + _ret;
+	};
+	if(_doughnuts > 3) then {
+		_ret = [
+		
+		
+		];
+		_additional = _additional + _ret;
+	};
+	if(_doughnuts > 4) then {
+		_ret = [
+		
+		
+		];
+		_additional = _additional + _ret;
+	};
+	{
+		_storeList pushback _x;
+	} foreach _additional;
+};
 
 
 if(_condition == "glasses") then {
@@ -807,6 +891,9 @@ lbClear _list;
 	_price = _x select 2;
 	_type = _x select 3;
 	_classtype = _x select 4;
+	if(_doughnuts == 3) then { _price = _price * (1 - 0.05); };
+	if(_doughnuts == 4) then { _price = _price * (1 - 0.10); };
+	if(_doughnuts == 5) then { _price = _price * (1 - 0.15); };
 	if(isNil "_classtype") then { _classType = 0; };
 
 	if(_condition == "rarefish") then {
@@ -822,14 +909,15 @@ lbClear _list;
 	_list lbSetPicture [(lbSize _list)-1,_item select 2];
 
 	if(_condition == "gunstore") then {
+		_magPrice = 50;
 		_addedprice = (_price / 100) * taxRate;
 		_addedprice = round (_addedprice);
 		_price = _addedprice + _price;
 		_magazines = getArray (configFile / "CfgWeapons" / _class / "magazines");
 		_magazine = _magazines select 0;
 		_item = [_magazine] call client_fnc_fetchItemType;
-		_list lbAdd format["$%2 (Tax %%3): %1",_item select 1, 10,taxRate];
-		_list lbSetdata [(lbSize _list)-1, str([_magazine,_item select 1, 50,2,0,_addedprice])];
+		_list lbAdd format["$%2 (Tax %%3): %1",_item select 1, _magPrice,taxRate];
+		_list lbSetdata [(lbSize _list)-1, str([_magazine,_item select 1, _magPrice,2,0,_addedprice])];
 		_list lbSetPicture [(lbSize _list)-1,_item select 2];
 	};
 } foreach _storeList;
