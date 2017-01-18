@@ -47,8 +47,7 @@ _availableGoggles = [
 	"TRYK_TAC_EARMUFF_SHADE_Gs",
 	"TAC_PMC_ID_H2",
 	"TAC_PMC_ID_B2",
-	"TAC_PMC_ID_W2",
-	
+	"TAC_PMC_ID_W2"
 ];
  
 _availableUniforms = [
@@ -92,7 +91,7 @@ _availableUniforms = [
 	"silver_lake_fbi",
 	"silver_lake_police",
 	"silver_lake_sheriff",
-	"silver_lake_statepolice",
+	"silver_lake_statepolice"
 ];
  
 _availableVests = [
@@ -108,7 +107,6 @@ _availableBackpacks = [
 	"AM_PoliceBelt",
 	TAC_BP_Butt_B2,
 	TAC_BP_Butt_B
- 
 ];
  
 _availableMagazine = [
