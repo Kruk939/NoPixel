@@ -78,7 +78,7 @@ _availableUniforms = [
 	"U_BG_Guerilla2_1",
 	"U_B_Wetsuit",
 	"U_C_Poloshirt_redwhite",
-	"U_C_Poloshirt_tricolour"
+	"U_C_Poloshirt_tricolour",
 	"female_highway",
 	"female_police",
 	"female_police1",
@@ -105,8 +105,8 @@ _availableVests = [
  
 _availableBackpacks = [
 	"AM_PoliceBelt",
-	TAC_BP_Butt_B2,
-	TAC_BP_Butt_B
+	"TAC_BP_Butt_B2",
+	"TAC_BP_Butt_B"
 ];
  
 _availableMagazine = [
