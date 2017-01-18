@@ -74,7 +74,10 @@ if (_vehicle isKindOf "Car") then {
 		[_vehicle, _numberPlate, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
 	};
 
-	if (str _className find "nopixel_" > -1 ) then {
+	if (str _className find "opixel_" > -1 ) then {
+		[_vehicle, [_carColor,_carFinish]] remoteexec ["client_fnc_initVehicle",2];
+	};
+	if (str _className find "vv_" > -1 ) then {
 		[_vehicle, [_carColor,_carFinish]] remoteexec ["client_fnc_initVehicle",2];
 	};
 
