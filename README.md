@@ -21,11 +21,13 @@
 
 <hr>
 #DONE
-* Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy.
+* Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy (EMS, FIRE, COP).
 * Kupowanie licencji na broń (5000$)
 * Ilość dostępnych prac w zależności od ilości osób.
-* Zapisywanie "wejściówek" dla COP,EMS,MAFIA,LEGAL,MAYOR,FIRE przy syncu
+* Zapisywanie "wejściówek" dla COP,EMS,MAFIA,LEGAL,MAYOR,FIRE przy promote
 * Naprawiono errory w RPT dot. updateHouse, updateShop (wszystko już zapisuje prawidłowo)
+* Dodano Doughnuts - czyli firmę z pączkami
+* Logowanie serwera (wchodzenie na serwer, wychodzenie, rozpoczynanie i kończenie pracy, kupowanie pojazdów, pobieranie ekwipunku)
 
 <hr>
 #WAŻNE PLIKI
