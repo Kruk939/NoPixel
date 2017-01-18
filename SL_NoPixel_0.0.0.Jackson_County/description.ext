@@ -175,6 +175,7 @@ class CfgFunctions
 			class startMafia {};
 			class startFire {};
 			class startEMS {};
+			class startDoughnuts {};
 		};
 
 		class jobs {

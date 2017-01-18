@@ -31,6 +31,7 @@ _legal = _this select 22;
 _prisontime = _this select 23;
 _prisonreason = _this select 24;
 _mayor = _this select 25;
+_doughnuts = _this select 26;
 
 
 _higherup = false;
@@ -112,6 +113,7 @@ player setVariable ["ems", _ems, false];
 player setVariable ["fire", _fire, false];
 player setVariable ["mafia", _mafia, false];
 player setVariable ["legal", _legal, false];
+player setVariable ["doughnuts", _doughnuts, false];
 
 player setVariable ["garage", _garage, false];
 player setVariable ["messages", _messages, false];
@@ -172,7 +174,14 @@ if(_prisontime > 0) then {
 } else {
 
 
-
+/*
+	if(_doughnuts == 2 && _houselevel != 3) then {
+		_houselevel = 2;
+	};
+	if(_doughnuts > 2) then {
+		_houselevel = 3;
+	};
+*/
 player setpos [7639.87,2553.39,0.00143814];
 
 if(_higherup) exitwith { player setpos _house};

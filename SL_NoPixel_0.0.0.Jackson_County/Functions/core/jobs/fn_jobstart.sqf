@@ -4,35 +4,40 @@ _player = _this select 0;
 _jobtype = _this select 1;
 
 [player, "job", format["Rozpoczal prace - %1", _jobtype]] remoteExec ["Server_fnc_insertLog", 2];
-if (str _jobtype find "Cop" > -1) exitwith {   
-		[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];	
-		[] spawn client_fnc_startCop;
-		currentCop pushback _player;
-		publicvariable "currentCop";
-		["basic"] spawn client_fnc_setGear;
-
+if (str _jobtype find "Cop" > -1) exitwith {
+	[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];	
+	[] spawn client_fnc_startCop;
+	currentCop pushback _player;
+	publicvariable "currentCop";
+	["basic"] spawn client_fnc_setGear;
 };
 
-if (str _jobtype find "EMS" > -1) exitwith {  
-		[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];		
-		[] spawn client_fnc_startEMS;
-		currentEMS pushback _player;
-		publicvariable "currentEMS";
-		["basic"] spawn client_fnc_setGear;
+if (str _jobtype find "EMS" > -1) exitwith {
+	[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];		
+	[] spawn client_fnc_startEMS;
+	currentEMS pushback _player;
+	publicvariable "currentEMS";
+	["basic"] spawn client_fnc_setGear;
 };
 
-if (str _jobtype find "Fire" > -1) exitwith {  
-		[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];		
-		[] spawn client_fnc_startFire;
-		currentFire pushback _player;
-		publicvariable "currentFire";	
-		["basic"] spawn client_fnc_setGear;
+if (str _jobtype find "Fire" > -1) exitwith {
+	[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];		
+	[] spawn client_fnc_startFire;
+	currentFire pushback _player;
+	publicvariable "currentFire";	
+	["basic"] spawn client_fnc_setGear;
 };
 
-if (str _jobtype find "Mafia" > -1) exitwith {   
-		[] spawn client_fnc_startMafia;
-		currentMafia pushback _player;
-		publicvariable "currentMafia";
+if (str _jobtype find "Mafia" > -1) exitwith {
+	[] spawn client_fnc_startMafia;
+	currentMafia pushback _player;
+	publicvariable "currentMafia";
+};
+
+if(str _jobtype find "doughnuts" > -1 || str _jobtype == "doughnuts") exitWith {
+	[] spawn client_fnc_startDoughnuts;
+	currentDoughnuts pushback _player;
+	publicVariable "currentDoughnuts";
 };
 
 
@@ -114,4 +119,3 @@ if (str _jobtype find "repairman" > -1 || str _jobtype == "repairman") exitwith 
 	currentRepairmen pushback _player;
 	publicvariable "currentRepairmen";	
 };
-
