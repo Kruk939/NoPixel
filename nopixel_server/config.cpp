@@ -43,6 +43,7 @@ class CfgFunctions {
             class storeUpdateName {};
             class finishStoreUpdate {};
 			class closeshop {};
+			class vehBuy {};
         };
         class Wanted {
             file = "NoPixel_Server\server\core\Wanted";

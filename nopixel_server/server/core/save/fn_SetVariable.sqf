@@ -6,7 +6,7 @@ if(isNil "_new") exitwith { };
  
  
 if(_variable == "usedgarage") exitwith { 
-if(isNil "_new") exitwith {}; 
+	if(isNil "_new") exitwith {}; 
 	GarageVariableWhore setvariable [_object, _new, false]; 
 }; 
  
