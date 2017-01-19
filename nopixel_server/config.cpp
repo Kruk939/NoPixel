@@ -18,6 +18,7 @@ class CfgFunctions {
             class MafiaOwed {};
             class promote {};
             class connected {};
+            class resetConnected {};
             class handleDisconnect {};
             class setupVariablesServer {};
             class initStats {};

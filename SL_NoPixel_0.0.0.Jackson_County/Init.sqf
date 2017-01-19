@@ -2,6 +2,7 @@ enableSaving [false, false];
 
 if (isServer) then {
 	["rpframework", "SQL_CUSTOM_V2", "rpframework"] spawn ExternalS_fnc_ExtDBinit;
+	[] remoteExec ["Server_fnc_resetConnected", 2];
 
 	_nearc = nearestObject[[9907.22, 3532.38, 0.00143814], "Land_Gate_C "];
 	_newgatepos = getpos _nearc;
