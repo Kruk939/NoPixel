@@ -7,14 +7,12 @@
 
 <hr>
 #TODO
-* Autokomis (Katekarin)
-* Firmy (Kruk)
+* Firmy
 * Panel gracza pod nową misję
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Dodanie pracy kierowcy autobusu.
 * Ukrywanie swojego steamid gdy jestem niewidzialny (fn_nametags.sqf ; fn_adminexecute.sqf)
-* Naprawienie burmistrza (tymczasowo musiałem wyłączyć [fn_initStats.sqf ; fn_loadinventory.sqf])
 * Panic button'y dla COP, EMS
 * Naprawić pracę dziennikarza
 
@@ -28,6 +26,8 @@
 * Dodano Doughnuts - czyli firmę z pączkami
 * Logowanie serwera (wchodzenie na serwer, wychodzenie, rozpoczynanie i kończenie pracy, kupowanie pojazdów, pobieranie ekwipunku)
 * Sync przy wyjściu z gry (Przycisk ABORT)
+* Naprawienie burmistrza
+* Autokomis (Kruk)
 
 
 <hr>
