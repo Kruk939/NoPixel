@@ -477,7 +477,28 @@ NoPixel_InteractionMenuItems = [
 		["player distance myhouse < 10 || typeof CurrentCursorTarget IN [""Land_PostB""]"],
 		["Sprawdź mail'a", "[] spawn client_fnc_openMail",3]
 	],
-
+	
+	[
+		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 30 && cursorTarget in Current_Cars && cursorTarget getVariable[""vehPrice"",0] == 0"],
+		["Wystaw samochód", "createDialog ""vehSetPrice""",3]
+	],
+	
+	[
+		["cursorTarget getVariable[""vehPrice"",0] > 0 && cursorTarget in Current_Cars"],
+		["Usuń cenę", "cursorTarget setVariable[""vehPrice"",0]",3]
+	],
+	
+	[
+		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 30 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0"],
+		["Sprawdz cenę", "hint format [""Cena pojazdu:\n$%1"",cursorTarget getVariable[""vehPrice"",0]];",3]
+	],
+	
+	[
+		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 30 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0 && !(cursorTarget in Current_Cars)"],
+		["Kup samochód", "[] spawn client_fnc_vehBuy",3]
+	],
+	
+	
 	[
 		["str CurrentCursorTarget find ""mailboxnorth"" > -1"],
 		["Sprawdź pocztę", "createdialog ""client_findMail""",3]

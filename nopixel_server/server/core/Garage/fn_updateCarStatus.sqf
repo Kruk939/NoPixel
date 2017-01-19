@@ -5,10 +5,6 @@ _player = _this select 3;
 
 _information = _object getVariable "information";
 
-//if (isNil "_information") exitwith {
- //deletevehicle _object;
-//};
-
 _exit = false;
 if (_status == 0) then {
  _license = _information select 0;

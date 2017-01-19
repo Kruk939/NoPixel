@@ -6,7 +6,7 @@ myjob = "Doughnuts";
 taskrunning = true;
 [] call client_fnc_hudwork;
 player setVariable ["doughnutsLevel", _doughnuts, false];
-_pay = [0,60,120,200,350,500];
+_pay = [0,60,120,200,250,350];
 _payment = _pay select _doughnuts;
 if(!taskrunning) then {
 	[_payment] spawn {
