@@ -36,3 +36,6 @@
 
 //policedialogs
 #include "ticket.hpp"
+
+
+#include "vehSetPrice.hpp"

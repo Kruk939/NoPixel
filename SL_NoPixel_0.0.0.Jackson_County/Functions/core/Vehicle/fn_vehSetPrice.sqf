@@ -1,5 +1,10 @@
-_price = parseNumber(_this select 0);
-_shop = getpos nearestObject [getPos player, "Land_ModernShowroom"];
+if(!dialog) exitWith {};
+
+_display = findDisplay 7001;
+_control = _display displayCtrl 4202;
+
+_price = parseNumber(_control);
+_shop = nearestObject [getPos player, "Land_ModernShowroom"];
 _veh = cursorTarget;
 _dir = getDir _shop;
 _carsInShop = _shop getVariable ["CarsToBuy",[]];
@@ -36,3 +41,5 @@ _veh attachTo[_shop, (_pos select 0)];
 _carsInShop pushBack [_newPos select 0, _price, _veh];
 _shop setVariable ["CarsToBuy",_carsInShop,true];
 _veh setVariable ["vehPrice", _price, true];
+
+closeDialog 0;
