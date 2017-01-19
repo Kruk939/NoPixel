@@ -11,7 +11,6 @@
 * Firmy (Kruk)
 * Panel gracza pod nową misję
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
-* Sync przy wyjściu z gry (Przycisk ABORT)
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Dodanie pracy kierowcy autobusu.
 * Ukrywanie swojego steamid gdy jestem niewidzialny (fn_nametags.sqf ; fn_adminexecute.sqf)
@@ -28,6 +27,8 @@
 * Naprawiono errory w RPT dot. updateHouse, updateShop (wszystko już zapisuje prawidłowo)
 * Dodano Doughnuts - czyli firmę z pączkami
 * Logowanie serwera (wchodzenie na serwer, wychodzenie, rozpoczynanie i kończenie pracy, kupowanie pojazdów, pobieranie ekwipunku)
+* Sync przy wyjściu z gry (Przycisk ABORT)
+
 
 <hr>
 #WAŻNE PLIKI
