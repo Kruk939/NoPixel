@@ -1,4 +1,3 @@
-
 private["_storeList","_addedprice"];
 disableSerialization;
 _condition = _this select 0;
@@ -723,35 +722,113 @@ if(_condition == "doughnuts_general") then {
 	_additional = [];
 	if(_doughnuts > 0) then {
 		_ret = [
-			["G_Shades_Black",nil,120,3,4]
+			["nopixel_character_agente_47",nil,300,3,1],
+			["vvv_traje_ejecutivo_1",nil,300,3,1],
+			["vvv_traje_dallas",nil,300,3,1],
+			["NP_traje_test",nil,300,3,1],
+			["NP_traje_test10",nil,300,3,1],
+			["CUP_B_ACRPara_m95",nil,600,4,2],
+			["CUP_B_GER_Pack_Flecktarn",nil,400,4,2],
+			["B_Bergen_tna_F",nil,3500,4,2],
+			["B_Carryall_ghex_F",nil,200,4,2],
+			["H_BobaMask",nil,300,3,5],
+			["acj_casco_ammerica",nil,300,3,5],
+			["CUP_H_TKI_Lungee_Open_02",nil,300,3,5],
+			["CUP_H_USA_Cap",nil,300,3,5],
+			["CUP_H_TKI_Lungee_01",nil,300,3,5],
+			["acj_casco_calavera",nil,300,3,5],
+			["vvv_azgt_hat",nil,300,3,5],
+			["vvv_azteca_hat",nil,300,3,5],
+			["vvv_bolsa_hat",nil,300,3,5],
+			["vvv_monor_hat",nil,300,3,5]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 1) then {
 		_ret = [
-		
-		
+		    ["NP_traje_test5",nil,300,3,1],
+			["vvv_traje_jackoy7",nil,300,3,1],
+			["vvv_character_jennifer",nil,300,3,1],
+			["vvv_character_messi",nil,300,3,1],
+			["vvv_character_alma",nil,300,3,1],
+			["vvv_traje_motox_02_3",nil,300,3,1],
+			["vvv_traje_motox_02_7",nil,300,3,1],
+			["vvv_traje_motox_02_8",nil,300,3,1],
+			["vvv_traje_motox_02_2",nil,300,3,1],
+			["vvv_character_agente_473",nil,300,3,1],
+			["CUP_U_B_FR_Officer",nil,300,3,1],
+			["B_Uniform_survivor2_l",nil,300,3,1],
+			["G_Uniform_survivor5_l",nil,300,3,1],
+			["TRYK_U_B_ARO1_CBR_R_CombatUniform",nil,300,3,1],
+			["U_mas_ww2_O_CombatUniform_ger",nil,300,3,1],
+			["B_Carryall_ghex_F",nil,300,4,2],
+			["vvv_mono_hat",nil,300,3,5],
+			["vvv_SkullMask_hat",nil,300,3,5],
+			["vvv_slasher_hat",nil,300,3,5],
+			["H_ALFR_OVERKILL_I",nil,10000,3,5]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 2) then {
 		_ret = [
-		
-		
+		    ["vvv_traje_romano",nil,300,3,1],
+			["vvv_character_funcionario_2",nil,300,3,1],
+			["vvv_character_wandelina",nil,300,3,1],
+			["vvv_character_wandelina_2",nil,300,3,1],
+			["CUP_U_B_CZ_WDL_TShirt",nil,300,3,1],
+			["CUP_B_USMC_Navy_Blue",nil,300,3,1],
+			["U_I_C_Soldier_Bandit_2_F",nil,300,3,1],
+			["U_C_man_sport_2_F",nil,300,3,1],
+			["vvv_hazmat",nil,1200,3,1],
+			["KAEL_SUITS_BR_F16",nil,300,3,1],
+			["TAC_BAL_BK",nil,300,4,2],
+			["Masque_zeus",nil,300,3,5],
+			["H_ALFR_Metal_Facemask_gry",nil,1000,3,5],
+			["H_ALFR_Metal_Facemask_oli",nil,1000,3,5],
+			["H_ALFR_Metal_Facemask_blk",nil,1000,3,5],
+			["H_ALFR_OVERKILL_II",nil,10000,3,5]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 3) then {
 		_ret = [
-		
-		
+		    ["CUP_U_B_BAF_MTP_S6_UnRolled",nil,300,3,1],
+			["CUP_U_B_BAF_MTP_Tshirt",nil,300,3,1],
+			["CUP_U_O_CHDKZ_Bardak",nil,300,3,1],
+			["CUP_U_O_CHDKZ_Commander",nil,300,3,1],
+			["CUP_U_C_Policeman_01",nil,1000,3,1],
+			["TAC_LBT_LEGAB2_BK",nil,500,4,2],
+			["Masque_zeus",nil,300,3,5],
+			["Paintball_Mask_02",nil,300,3,5],
+			["Paintball_Mask_05",nil,300,3,5],
+			["H_ALFR_Sheep_Mask",nil,300,3,5],
+			["H_ALFR_Heist_Mask_3",nil,300,3,5],
+			["H_PatriotMask",nil,500,3,5],
+			["H_ALFR_OVERKILL_III",nil,10000,3,5]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 4) then {
 		_ret = [
-		
-		
+		    ["CUP_U_B_GER_Flecktarn_2",nil,300,3,1],
+			["CUP_U_B_GER_Tropentarn_2",nil,300,3,1],
+			["CUP_U_I_Ghillie_Top",nil,6000,3,1],
+			["U_B_Protagonist_VR",nil,2000,3,1],
+			["CUP_U_C_Labcoat_02",nil,300,3,1],
+			["CUP_U_I_GUE_Flecktarn3",nil,300,3,1],
+			["vvv_character_batman",nil,1000,3,1],
+			["B_Bergen_tna_F",nil,1500,4,2],
+			["TRYK_Winter_pack",nil,1000,4,2],
+			["BL_mask2_Hat",nil,300,3,5],
+			["CUP_H_C_Policecap_01",nil,500,3,5],
+			["Gorb_RoughSantaClaus1",nil,300,3,5],
+			["CUP_H_SLA_OfficerCap",nil,300,3,5],
+			["H_ALFR_Metal_Gasmask_RU_fuckyou",nil,500,3,5],
+			["H_mas_ww2_cap_ger",nil,500,3,5],
+			["H_mas_ww2_beret_rus",nil,500,3,5],
+			["H_mas_ww2_cap_rus",nil,500,3,5],
+			["H_mas_ww2_beret_ger",nil,500,3,5],
+			["H_ALFR_OVERKILL_IV",nil,10000,3,5]
 		];
 		_additional = _additional + _ret;
 	};
@@ -765,35 +842,54 @@ if(_condition == "doughnuts_gun") then {
 	_additional = [];
 	if(_doughnuts > 0) then {
 		_ret = [
-			["G_Shades_Black",nil,120,3,4]
+			["hgun_mas_ww2_bhp_F",nil,5000,1],
+			["RH_python",nil,9000,1],
+			["CUP_hgun_Phantom",nil,8000,1],
+			["RH_fn57_t",nil,8000,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 1) then {
 		_ret = [
-		
-		
+		    ["CUP_hgun_Glock17",nil,5000,1],
+			["RH_g18",nil,8000,1],
+			["RH_kimber",nil,8000,1],
+			["RH_kimber_nw",nil,8000,1],
+			["CUP_hgun_Makarov",nil,5000,1],
+			["sab_mauser96_handgun",nil,5000,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 2) then {
 		_ret = [
-		
-		
+		    ["hgun_P07_khk_F",nil,5000,1],
+			["CUP_hgun_PB6P9",nil,5000,1],
+			["hgun_Pistol_Signal_F",nil,2000,1],
+			["hgun_Pistol_01_F",nil,5000,1],
+			["hgun_Rook40_F",nil,5000,1],
+			["RH_mp412",nil,6000,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 3) then {
 		_ret = [
-		
-		
+		    ["CUP_hgun_TaurusTracker455_gold",nil,12000,1],
+			["CUP_hgun_TaurusTracker455",nil,7000,1],
+			["RH_usp",nil,6000,1],
+			["RH_tt33",nil,5000,1],
+			["RH_vp70",nil,5000,1],
+			["RH_vz61",nil,12000,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 4) then {
 		_ret = [
-		
-		
+		    ["CUP_srifle_CZ550",nil,40000,1],
+			["CUP_smg_bizon",nil,35000,1],
+			["CUP_smg_MP5A5",nil,35000,1],
+			["hgun_PDW2000",nil,30000,1],
+			["SMG_02_F",nil,35000,1],
+			["arifle_mas_ww2_tommy",nil,45000,1]
 		];
 		_additional = _additional + _ret;
 	};
