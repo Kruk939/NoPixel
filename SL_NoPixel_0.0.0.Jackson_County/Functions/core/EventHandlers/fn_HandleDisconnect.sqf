@@ -27,3 +27,4 @@ _loadout = getunitloadout _player;
 [_player, 1, _uid, _name,_loadout] remoteExec ["server_fnc_steppedsync",2];
 
 [_player, "disconnect", "Gracz opuscil serwer", _uid] remoteExec ["Server_fnc_insertLog", 2];
+[_player,"0"] remoteExec ["Server_fnc_connected", 2];
