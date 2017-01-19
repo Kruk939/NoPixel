@@ -8,6 +8,7 @@ class vehSetPrice {
 		class Life_RscTitleBackground: client_RscText {
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			idc = -1;
+			text = "Wystaw auto";
 			x = 0.3;
 			y = 0.2;
 			w = 0.47;
@@ -16,6 +17,7 @@ class vehSetPrice {
 		
 		class MainBackground: client_RscText {
 			colorBackground[] = {0, 0, 0, 0.7};
+			text = "";
 			idc = -1;
 			x = 0.3;
 			y = 0.2 + (11 / 250);
@@ -40,8 +42,9 @@ class vehSetPrice {
 			sizeEx = 0.030;
 			x = 0.40; y = 0.30;
 			w = 0.25; h = 0.03;
+			autocomplete = false;
 		};
-		class setPrice: client_RscButton {
+		class setPrice: RscButton {
 			idc = -1;
 			text = "Ustaw cene";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
