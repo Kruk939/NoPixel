@@ -8,11 +8,9 @@
 <hr>
 #TODO
 * Firmy
-* Panel gracza pod nową misję
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Dodanie pracy kierowcy autobusu.
-* Ukrywanie swojego steamid gdy jestem niewidzialny (fn_nametags.sqf ; fn_adminexecute.sqf)
 * Panic button'y dla COP, EMS
 * Naprawić pracę dziennikarza
 
@@ -28,6 +26,8 @@
 * Sync przy wyjściu z gry (Przycisk ABORT)
 * Naprawienie burmistrza
 * Autokomis (Kruk)
+* Ukrywanie swojego steamid gdy jestem niewidzialny (fn_nametags.sqf ; fn_adminexecute.sqf)
+* Panel gracza pod nową misję
 
 
 <hr>
