@@ -485,7 +485,7 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["cursorTarget getVariable[""vehPrice"",0] > 0 && cursorTarget in Current_Cars"],
-		["Usuń cenę", "cursorTarget setVariable[""vehPrice"",0]",3]
+		["Usuń cenę", "cursorTarget setVariable[""vehPrice"",0,true]",3]
 	],
 	
 	[

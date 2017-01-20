@@ -13,6 +13,7 @@
 * Dodanie pracy kierowcy autobusu.
 * Panic button'y dla COP, EMS
 * Naprawić pracę dziennikarza
+* Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 
 <hr>
 #DONE
