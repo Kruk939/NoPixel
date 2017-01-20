@@ -42,7 +42,6 @@ class vehSetPrice {
 			sizeEx = 0.030;
 			x = 0.40; y = 0.30;
 			w = 0.25; h = 0.03;
-			autocomplete = false;
 		};
 		class setPrice: RscButton {
 			idc = -1;
