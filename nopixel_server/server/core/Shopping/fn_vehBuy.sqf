@@ -15,9 +15,10 @@ _price = _this select 0;
 _veh = _this select 1;
 _buyer = _this select 2;
 _information = _veh getVariable ["information",[]];
-if(count _information isEqualTo 0) exitWith { [_buyer, "car", format ["Nie mogl kupic samochodu i stracil: $%1",_price]] spawn Server_fnc_insertLog; };
+if(count _information isEqualTo 0) exitWith { [_buyer, "car", format ["Nie mogl kupic samochodu i stracil - $%1",_price]] spawn Server_fnc_insertLog; };
 
 _player = objNull;
+
 
 _carowner = _information select 8;
 _information set [8, (getPlayerUID _buyer)];
