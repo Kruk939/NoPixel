@@ -1,17 +1,7 @@
 /*
 	File : fn_showNotification.sqf
 
-	Author: UpperM
-
-	Description:
-
-	Show some infos with a nice move :-)
-	You can edit the script whitout my permission but you are not allow to remove the credit (but you can add "Edit by : Your Name" )
-	You are not allowed to sale my script !
-
-	Contact : uppperm@gmail.com
-	Youtube : upperm.fr/youtube
-	Website : upperm.fr
+	Description: Show some infos with a nice move :-)
 
 	Parameter(s):
 	_title 		: STRING - Default Value  : ""
