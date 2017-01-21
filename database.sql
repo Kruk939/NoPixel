@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-01-19 19:30:20
+Date: 2017-01-21 15:52:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -47,7 +47,17 @@ CREATE TABLE `logs` (
   `pos` varchar(50) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1373 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5040 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for mafiaatm
+-- ----------------------------
+DROP TABLE IF EXISTS `mafiaatm`;
+CREATE TABLE `mafiaatm` (
+  `atm` int(255) NOT NULL DEFAULT '0',
+  `id` int(255) DEFAULT NULL,
+  PRIMARY KEY (`atm`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mail
@@ -102,7 +112,7 @@ CREATE TABLE `users` (
   `connected` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`bankaccount`),
   UNIQUE KEY `uid` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=378 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=398 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for wanted
