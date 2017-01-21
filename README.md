@@ -29,6 +29,8 @@
 * Autokomis (Kruk)
 * Ukrywanie swojego steamid gdy jestem niewidzialny (fn_nametags.sqf ; fn_adminexecute.sqf)
 * Panel gracza pod nową misję
+* Naprawiono bankomat mafii
+* Przygotowano misję pod system odszkodowań (w bazie danych czy osoba jest połączona z serwerem ; resetuje się przy restarcie)
 
 
 <hr>
@@ -40,4 +42,3 @@
 <hr>
 #POMYSLY
 * Zwiekszenie ceny za crafting lockpick'a. Ale wtedy dac mozliwosc sprzedazy auta dla kazdego.
-
