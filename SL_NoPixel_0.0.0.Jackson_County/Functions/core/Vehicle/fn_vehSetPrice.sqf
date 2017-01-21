@@ -19,7 +19,7 @@ _shop = nearestObject [getPos player, "Land_ModernShowroom"];
 _veh = cursorTarget;
 _dir = getDir _shop;
 _carsInShop = _shop getVariable ["CarsToBuy",[]];
-_information = _object getVariable ["information",[]];
+_information = _veh getVariable ["information",[]];
 _carowner = _information select 8;
 _pos = [
 	[0,[2,-18,1.2], -140],

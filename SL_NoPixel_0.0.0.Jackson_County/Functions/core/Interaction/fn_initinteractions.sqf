@@ -494,12 +494,12 @@ NoPixel_InteractionMenuItems = [
 	],
 	
 	[
-		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 30 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0"],
+		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 40 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0"],
 		["Sprawdz cenę", "hint format [""Cena pojazdu:\n$%1"",cursorTarget getVariable[""vehPrice"",0]];",3]
 	],
 	
 	[
-		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 30 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0 && !(cursorTarget in Current_Cars)"],
+		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 40 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0 && !(cursorTarget in Current_Cars)"],
 		["Kup samochód", "[] spawn client_fnc_vehBuy",3]
 	],
 	
