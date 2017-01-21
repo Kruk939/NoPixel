@@ -17,11 +17,14 @@ if (_amount > 0) then
 			
 			[_amount] call Client_fnc_removeBank;
 			[_amount] call Client_fnc_addCash;
-			hint "Pomyślnie wypłacono pieniądze!";
+
+			["Sukces","Pomyślnie wypłacono pieniądze!",[0,255,0,1],""] call Client_fnc_showNotification;
+			//hint "Pomyślnie wypłacono pieniądze!";
 			
 		} else {
-		
-			hint "Za mały stan konta!";
+
+			["Błąd","Za mały stan konta!",[255,0,0,1],""] call Client_fnc_showNotification;
+			//hint "Za mały stan konta!";
 		
 		};
 
@@ -32,11 +35,14 @@ if (_amount > 0) then
 			
 			["Remove",_amount] remoteexec ["server_fnc_updateMafiaBank",2];
 			[_amount] call Client_fnc_addCash;
-			hint "Pomyślnie wypłacono pieniądze!";
+
+			["Sukces","Pomyślnie wypłacono pieniądze!",[0,255,0,1],""] call Client_fnc_showNotification;
+			//hint "Pomyślnie wypłacono pieniądze!";
 			
 		} else {
-		
-			hint "Za mały stan konta!";
+
+			["Błąd","Za mały stan konta!",[255,0,0,1],""] call Client_fnc_showNotification;
+			//hint "Za mały stan konta!";
 		
 		};
 
@@ -46,7 +52,8 @@ if (_amount > 0) then
  else  
 {
 
-	hint "Musisz wypłacić więcej niż $0!";
+	["Błąd","Musisz wypłacić więcej niż $0!",[255,0,0,1],""] call Client_fnc_showNotification;
+	//hint "Musisz wypłacić więcej niż $0!";
 	
 };
 
