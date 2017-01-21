@@ -29,7 +29,7 @@ while {true} do
 		};
 		if(client_seatbelt) then { 427 cutfadeout 1; };
 	};
-	if(vehicle player isEqualTo player && client_seatwarn) then { client_seatwarn = false; 427 cutfadeout 1; };
-	if(vehicle player isEqualTo player && client_seatbelt) then { client_seatbelt = false; 427 cutfadeout 1; };
+	if(vehicle player == player && client_seatwarn) then { client_seatwarn = false; 427 cutfadeout 1; };
+	if(vehicle player == player && client_seatbelt) then { client_seatbelt = false; 427 cutfadeout 1; };
 	uisleep 1;
 };

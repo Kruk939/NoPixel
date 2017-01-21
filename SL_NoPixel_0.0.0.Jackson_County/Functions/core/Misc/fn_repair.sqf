@@ -2,11 +2,11 @@
 
 _object = _this select 0;
 
-if(myjob isEqualTo "repairman") exitwith { _object setdamage 0; };
+if(myjob == "repairman") exitwith { _object setdamage 0; };
 
 if(_object gethit "motor" > 0.9 && _object iskindof "car") exitwith { 
 
-	_engines = {_x isEqualTo "CG_Engine"} count magazines player;
+	_engines = {_x == "CG_Engine"} count magazines player;
 	if(_engines > 0) exitwith { 
 		_object setdamage 0; 
 		_chance = random ( 100 );
@@ -26,7 +26,7 @@ if(_object gethit "motor" > 0.9 && _object iskindof "car") exitwith {
 	hint "Potrzebujesz mechanika, odholowac do garazu albo zestaw do naprawy silnika!"; 
 };
 
-_wheels = {_x isEqualTo "CG_wheel"} count magazines player;
+_wheels = {_x == "CG_wheel"} count magazines player;
 if(_wheels > 0) exitwith {
  _object setdamage 0; 
  	_chance = random ( 100 );

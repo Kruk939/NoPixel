@@ -27,7 +27,7 @@ _information set [8, (getPlayerUID _buyer)];
 _garageArray = _buyer getvariable "garage";
 _garageArray pushback _information;
 
-{if (getplayeruid _x isEqualTo _carowner) exitwith { _player = _x; }; } foreach playableunits;
+{if (getplayeruid _x == _carowner) exitwith { _player = _x; }; } foreach playableunits;
 
 if(isNull _player) then {
 	_updatestr = format ["updateVehOwnerPay:%1:%2", _price, _carowner]; 

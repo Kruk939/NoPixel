@@ -137,16 +137,16 @@ if (isServer) then {
 
 	{ _x setFuelCargo 0; } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_fs_feed_F"], 20000]);
 
-	waitUntil {sleep 0.05; !(isNil {player}) && player isEqualTo player && alive player};
+	waitUntil {sleep 0.05; !(isNil {player}) && player == player && alive player};
 
 	[] call Client_fnc_miscVariables;
 	player allowdamage false;
 	[player] remoteexec ["Server_fnc_initStats",2];
 
-	waituntil {(player getvariable "loaded") isEqualTo 1};
+	waituntil {(player getvariable "loaded") == 1};
 	player allowdamage true;
 	[] call client_fnc_initInteractions;
-	waituntil {(player getvariable "loaded") isEqualTo 2};
+	waituntil {(player getvariable "loaded") == 2};
 
 	[] call client_fnc_karmaPhoneInit;
 
@@ -176,7 +176,7 @@ if (isServer) then {
 		["Zabijanie gracza za battleloga.", true] spawn domsg;
 		["Remove",1] call client_fnc_doHealth;
 	};
-	if(uniform player isEqualTo "" && female) then {
+	if(uniform player == "" && female) then {
 		player forceadduniform "vvv_character_protibanador";
 	};
 	player setdamage myHealth;
@@ -206,7 +206,7 @@ if (isServer) then {
 	life_koil_hh = 0;
 	while{true}do
 	{
-	if (sunOrMoon isEqualTo 0 && life_koil_hh != 1) then {
+	if (sunOrMoon == 0 && life_koil_hh != 1) then {
 		_resourceZones = ["Spooky"];
 		_zone = "Spooky";
 		_straszymy = true;

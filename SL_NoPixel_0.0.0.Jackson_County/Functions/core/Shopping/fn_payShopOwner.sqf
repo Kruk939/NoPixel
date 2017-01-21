@@ -21,7 +21,7 @@ if(player distance myshop < 50) then {
 
 if(_lostprice > 0) then {
 	if(isNil "taxpayments") then { taxpayments = 0; };
-	if(taxpayments isEqualTo 0) then { taxpayments = taxpayments + _lostprice;	[_lostprice] spawn client_fnc_payMayor; } else { taxpayments = taxpayments + _lostprice; };
+	if(taxpayments == 0) then { taxpayments = taxpayments + _lostprice;	[_lostprice] spawn client_fnc_payMayor; } else { taxpayments = taxpayments + _lostprice; };
 };
 
 [_totalprice] call Client_fnc_addBank;

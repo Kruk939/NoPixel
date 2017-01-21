@@ -1,6 +1,6 @@
 
 	playSound "cgphone_hangup";
-	if(player isEqualTo myCallOwner) exitwith {
+	if(player == myCallOwner) exitwith {
 		[] call client_fnc_resetcall;
 		callInProgress = false;
 	};

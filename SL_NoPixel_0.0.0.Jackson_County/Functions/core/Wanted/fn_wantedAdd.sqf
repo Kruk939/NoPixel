@@ -2,7 +2,7 @@
 
 
 _currentitemindex = lbCurSel 911;
-if (_currentitemindex isEqualTo -1) exitWith {};
+if (_currentitemindex == -1) exitWith {};
 _status = lbData [911, _currentitemindex];
 _charges = ctrlText 1116;
 currentcursortarget = call compile format ["%1",currentcursortarget];

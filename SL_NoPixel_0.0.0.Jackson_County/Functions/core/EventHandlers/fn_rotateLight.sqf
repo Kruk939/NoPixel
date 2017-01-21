@@ -2,7 +2,7 @@ private["_new"];
 _type = _this select 0;
 _current = (vehicle player) animationphase "light_x_anim"; 
 
-if(_type isEqualTo 2) then {
+if(_type == 2) then {
 	if(_current > 0.65) then { _current = 0; }; 
 	_new = _current + 0.02; 
 } else {

@@ -1,7 +1,7 @@
 disableserialization;
 private["_vehicle","_car","_mycash","_curFuel"];
 _currentitemindex = lbCurSel 1500;
-if (_currentitemindex isEqualTo -1) exitWith {};
+if (_currentitemindex == -1) exitWith {};
 _car = lbData [1500, _currentitemindex];
 _vehicle = call compile format["%1", _car]; 
 _pos = _vehicle select 1;
@@ -10,7 +10,7 @@ _vehicle = _vehicle select 0;
 _vehicles = nearestObjects [_pos, ["Car","Air","Ship"], 7];
 
 {
-	if(typeof _x isEqualTo _vehicle) exitwith { _vehicle = _x; };
+	if(typeof _x == _vehicle) exitwith { _vehicle = _x; };
 }foreach _vehicles;
 
 _startpos = getpos _vehicle;

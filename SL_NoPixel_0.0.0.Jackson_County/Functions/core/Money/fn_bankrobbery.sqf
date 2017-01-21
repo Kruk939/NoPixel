@@ -31,7 +31,7 @@ while {true} do {
 
 		bankrobber = 2;
 
-		while{bankrobber isEqualTo 2} do {
+		while{bankrobber == 2} do {
 
 			deletevehicle _ps;
 			playSound3D ["cg_mission_files\sounds\npdrillfailing.ogg", player, false, getPosAtL _thedrill, 1, 1, 45];

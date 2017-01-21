@@ -5,7 +5,7 @@ if (isNil "drugcount") then {
     drugcount = 0;
 };
 
-if (_type isEqualTo 1) then {
+if (_type == 1) then {
     drugcount = drugcount + _number;
 } else {
     drugcount = drugcount - _number;

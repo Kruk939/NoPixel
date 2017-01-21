@@ -13,7 +13,7 @@ _localProtection = 0;
 
 _n = 0;
 {
-	_total = {_x isEqualTo (_oreArray select _n)} count magazines player;
+	_total = {_x == (_oreArray select _n)} count magazines player;
 	_i = _total;
 
 	while{ _i > 0 } do {
@@ -40,7 +40,7 @@ _n = 0;
 if(_localProtection != globalProtection) exitwith { globalProtection = 0; };
 
 
-if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) isEqualTo player) then {
+if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == player) then {
 
 	_thecargo = getmagazineCargo (vehicle player);
 

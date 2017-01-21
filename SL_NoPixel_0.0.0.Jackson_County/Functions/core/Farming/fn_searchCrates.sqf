@@ -15,7 +15,7 @@ if(_chance > 145) then {
 if(_chance < 20) then { player additem "cg_DrugBrick"; ["Znalazłeś narkotyki",false] spawn domsg; };
 
 
-/*if(_chance isEqualTo 149) THEN {
+/*if(_chance == 149) THEN {
 	player additem "NP_kPelt";
 	["Znalazłeś bardzo rzadką skórę!",false] spawn domsg; 
 };*/

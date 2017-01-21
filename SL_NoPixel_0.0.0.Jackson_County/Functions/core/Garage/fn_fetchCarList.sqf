@@ -1,7 +1,7 @@
 _list = _this select 0;
 _return = [];
 
-if(_list isEqualTo "ems") exitwith {
+if(_list == "ems") exitwith {
 
 	_return = [
 		["Jonzie_ambluance",2000],
@@ -10,7 +10,7 @@ if(_list isEqualTo "ems") exitwith {
 
 };
 
-if(_list isEqualTo "cop") exitwith {
+if(_list == "cop") exitwith {
 
 	_return = [
 		["ivory_suburban_marked",2000],
@@ -44,7 +44,7 @@ if(_list isEqualTo "cop") exitwith {
 
 */
 
-if(_list isEqualTo "buggy") exitwith {
+if(_list == "buggy") exitwith {
 
 	_return = [
 		["shounka_buggy",200000],
@@ -60,7 +60,7 @@ if(_list isEqualTo "buggy") exitwith {
 
 };
 
-if(_list isEqualTo "utility") exitwith {
+if(_list == "utility") exitwith {
 
 	_return = [
 		["ivory_190e_taxi",10000],
@@ -71,7 +71,7 @@ if(_list isEqualTo "utility") exitwith {
 
 };
 
-if(_list isEqualTo "vehicles") exitwith {
+if(_list == "vehicles") exitwith {
 
 	_return = [
 		["Jonzie_Mini_Cooper",1500],
@@ -99,7 +99,7 @@ if(_list isEqualTo "vehicles") exitwith {
 
 };
 
-if(_list isEqualTo "f1") exitwith {
+if(_list == "f1") exitwith {
 
 	_return = [
 		["vvv_formula1_tmac",1125000],
@@ -122,7 +122,7 @@ if(_list isEqualTo "f1") exitwith {
 
 };
 
-if(_list isEqualTo "rally") exitwith {
+if(_list == "rally") exitwith {
 
 	_return = [
 		["vvv_seatleon_2014_arruabarrena",425000],

@@ -98,29 +98,29 @@ if (_booli) then {
 	} foreach _inUseVehicles;
 	};
 	_mayor = false;
-	if(_uid isEqualTo currentMayor) then {
+	if(_uid == currentMayor) then {
 		_mayor = true;
 		theMayor = _player;
 	};
 	
 	/*_mayor = false;
-	if(_uid isEqualTo call compile format["%1",currentmayor]) then { _mayor = true; theMayor = _player; };
+	if(_uid == call compile format["%1",currentmayor]) then { _mayor = true; theMayor = _player; };
 
 	if(_mayor) then{ _houselevel = 3; _player setVariable ["houselevel", _houselevel, false]; };*/
 
 
 	_house = [0,0,0];
-	if(_houseLevel isEqualTo 1) then {
+	if(_houseLevel == 1) then {
 	_house = tier1housing call BIS_fnc_selectRandom;
 	_pia = tier1housing find _house;
 	tier1housing deleteAt _pia;
 	};
-	if(_houseLevel isEqualTo 2) then {
+	if(_houseLevel == 2) then {
 	_house = tier2housing call BIS_fnc_selectRandom;
 	_pia = tier2housing find _house;
 	tier2housing deleteAt _pia;
 	};
-	if(_houseLevel isEqualTo 3) then {
+	if(_houseLevel == 3) then {
 	_house = tier3housing call BIS_fnc_selectRandom;
 	_pia = tier3housing find _house;
 	tier3housing deleteAt _pia;

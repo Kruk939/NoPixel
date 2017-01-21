@@ -13,7 +13,7 @@ if(PhonesRinging) exitwith { ["Poczekaj zanim dodasz osobę do rozmowy - jest w 
 [myCallOwner,_type] remoteExec ["client_fnc_ringPlayer",_unit];
 
 
-if(_type isEqualTo 1) then {
+if(_type == 1) then {
 
 	[] spawn {
 		_mypos = getpos player;

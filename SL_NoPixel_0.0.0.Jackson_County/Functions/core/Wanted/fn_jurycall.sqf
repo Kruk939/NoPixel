@@ -14,7 +14,7 @@ _officer = _this select 2;
 
 if(isNil "JuryDuty") then { JuryDuty = false; };
 	
-if( clientarrested || imRestrained || ( driver ( vehicle player ) isEqualTo player && vehicle player != player ) || myJob != "None" || JuryDuty ) exitwith {};
+if( clientarrested || imRestrained || ( driver ( vehicle player ) == player && vehicle player != player ) || myJob != "None" || JuryDuty ) exitwith {};
 
 
 ["Zostales wyznaczony do lawy przysieglych, otrzymasz $2000 jeśli proces dobiegnie końca. Czy sie zgadzasz?"] call client_fnc_questionPlayer;

@@ -13,10 +13,10 @@ if(!taskrunning) then {
 		_payment = this select 0;
 		playertasks = [];
 		taskrunning = true;
-		while{taskrunning && myjob isEqualTo "Doughnuts"} do {
+		while{taskrunning && myjob == "Doughnuts"} do {
 			uisleep 180;
 			paycheck = paycheck + _payment;
 		};
-		if(myjob isEqualTo "Doughnuts") then { [] call client_fnc_jobEnd; };
+		if(myjob == "Doughnuts") then { [] call client_fnc_jobEnd; };
 	};
 };

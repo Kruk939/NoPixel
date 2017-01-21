@@ -14,14 +14,14 @@ vehspawned = createVehicle ["ivory_r34", getpos player, [], 0, "NONE"];
 */
 
 _currentitemindex = lbCurSel 1500;
-if (_currentitemindex isEqualTo -1) exitWith {};
+if (_currentitemindex == -1) exitWith {};
 _car = lbData [1500, _currentitemindex];
 
 lbDelete [1500, _currentitemindex];
 
 _car = call compile format["%1", _car]; 
 
-if((_this select 0) isEqualTo 1) exitwith { 
+if((_this select 0) == 1) exitwith { 
 	_vehicle = _car createvehicle getpos player; 
 	_vehicle allowdamage false;
 	//[_vehicle, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
@@ -52,7 +52,7 @@ _vehicle = _classname createVehicle [(getpos player) select 0,(getpos player) se
 waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 
 //changing the vehicle to non-impounded
-if(_status isEqualTo 0) then { 
+if(_status == 0) then { 
 	[_numberPlate,1,_vehicle,player] remoteExec ["Server_fnc_updateCarStatus",2];
 	_car SET [7,1];
 };

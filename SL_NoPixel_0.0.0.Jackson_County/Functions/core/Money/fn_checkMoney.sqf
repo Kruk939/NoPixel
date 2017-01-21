@@ -7,7 +7,7 @@ Params
 params ["_type", "_amount"];
 
 _return = false;
-if (_type isEqualTo 1) then {
+if (_type == 1) then {
 	_cash = player getVariable "wallet";
 	_math = _cash - _amount;
 	if (_math >= 0) then {_return = true}

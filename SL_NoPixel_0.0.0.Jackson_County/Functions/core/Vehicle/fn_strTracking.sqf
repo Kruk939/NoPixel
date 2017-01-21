@@ -7,7 +7,7 @@ _tracker2 = (_veh getVariable["tracker2",true]);
 _tracker3 = (_veh getVariable["tracker3",true]);
 _exit = false;
 
-if (player isEqualTo _tracker1 || player isEqualTo _tracker2 || player isEqualTo _tracker3) exitwith {hint "Już sledzisz ten pojazd";};
+if (player == _tracker1 || player == _tracker2 || player == _tracker3) exitwith {hint "Już sledzisz ten pojazd";};
 
 
 player playmove "AinvPknlMstpSnonWnonDnon_medic_1";

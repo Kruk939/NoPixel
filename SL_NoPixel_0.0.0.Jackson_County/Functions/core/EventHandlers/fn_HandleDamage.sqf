@@ -9,16 +9,16 @@ params ["_unit","_selectionName","_damage","_source","_projectile","_hitPartInde
 
 if(!isNull _source) then {
 
-	if(typeof _source isEqualTo "NP_DrugTable") then { _damage = 0; };
+	if(typeof _source == "NP_DrugTable") then { _damage = 0; };
 
 	if(_source != _unit) then {
 
-		if (vehicle _unit isEqualTo _unit) then
+		if (vehicle _unit == _unit) then
 		{
 			_vehicle = vehicle _source;
 		    if ( _vehicle isKindOf "Air" || _vehicle isKindOf "Car" || _vehicle isKindOf "Boat" ) then
 		    {
-		    	if(typeof _vehicle isEqualTo "B_MRAP_01_hmg_F") exitwith {};
+		    	if(typeof _vehicle == "B_MRAP_01_hmg_F") exitwith {};
 				_speed = speed _vehicle;
 				[] spawn KK_fnc_forceRagdoll;
 				if(_speed < 70) then { _damage = 0.1; }; 
@@ -31,7 +31,7 @@ if(!isNull _source) then {
 
 		if(paintballing && _source != player && _curWep in ["Weapon_angel_F","Weapon_angel_rasta_F","Weapon_egosl_F","Weapon_angel_kitty_F","Weapon_invert_mini_dye_F","Weapon_tippmann_x7_F","Weapon_tippmann_x7_UMP_F"] && !paintballhit) then {
 			paintballhit = true;
-			if(!godmode && _selectionName isEqualTo "") then {
+			if(!godmode && _selectionName == "") then {
 				godmode = true;
 				[2] remoteexec ["client_fnc_paintball",_source];
 			};
@@ -42,17 +42,17 @@ if(!isNull _source) then {
 			_damage = 0;
 		};
 
-		if(_curWep in ["CG_CROSS","CG_BATON","CG_TELBAT","CG_BAT","CG_SHOVEL"] && vehicle player isEqualTo player) exitwith {
+		if(_curWep in ["CG_CROSS","CG_BATON","CG_TELBAT","CG_BAT","CG_SHOVEL"] && vehicle player == player) exitwith {
 			[_unit,_source] spawn client_fnc_blunthit;
 			_damage = 0;
 		};
 
-		if(_curWep in ["cg_scythe","CG_PICKAXE","cg_hatchet","cg_machete"] && vehicle player isEqualTo player) exitwith {
+		if(_curWep in ["cg_scythe","CG_PICKAXE","cg_hatchet","cg_machete"] && vehicle player == player) exitwith {
 			[_unit,_source] spawn client_fnc_sharphit;
 			_damage = 0;
 		};
 
-		if(_curWep isEqualTo "Taser" && vehicle player isEqualTo player && vehicle _source isEqualTo _source) exitwith {
+		if(_curWep == "Taser" && vehicle player == player && vehicle _source == _source) exitwith {
 			if(player distance _source < 40) then {
 				[_unit,_source] spawn client_fnc_tazed;
 			};
@@ -76,11 +76,11 @@ if(client_unhealthiness < 60 || client_meth > 0 || client_heroin > 0 || client_c
 
 
 
-if(_selectionName isEqualTo "") then {
+if(_selectionName == "") then {
 
-if(myjob isEqualTo "Cop") then { _damage = _damage / 3; };
+if(myjob == "Cop") then { _damage = _damage / 3; };
 
-if(uniform player isEqualTo "nopixel_character_swat") then { _damage = _damage / 3; };
+if(uniform player == "nopixel_character_swat") then { _damage = _damage / 3; };
 
 	if(client_meth > 14) then { _damage = _damage / 1.1; };
 	if(client_meth > 10) then { _damage = _damage / 1.1; };

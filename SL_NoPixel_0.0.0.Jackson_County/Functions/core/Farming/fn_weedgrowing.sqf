@@ -11,11 +11,11 @@ while{_count < 10 && growingweed} do {
 	sleep 10;
 	checkFinish2 = false;
 	_randomValue = round(random 5);
-	if(_randomValue isEqualTo 1 || _randomvalue isEqualTo 0) then { requiredOutput2 = "Water"; _message = waterArray call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue isEqualTo 2) then { requiredOutput2 = "Prune"; _message = PruneArray call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue isEqualTo 3) then { requiredOutput2 = "Cool"; _message = CoolArray2 call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue isEqualTo 4) then { requiredOutput2 = "Heat"; _message = HeatArray2 call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue isEqualTo 5) then { requiredOutput2 = "Turnover"; _message = TurnoverArray call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 1 || _randomvalue == 0) then { requiredOutput2 = "Water"; _message = waterArray call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 2) then { requiredOutput2 = "Prune"; _message = PruneArray call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 3) then { requiredOutput2 = "Cool"; _message = CoolArray2 call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 4) then { requiredOutput2 = "Heat"; _message = HeatArray2 call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 5) then { requiredOutput2 = "Turnover"; _message = TurnoverArray call BIS_fnc_selectRandom; hint _message; };
 	sleep 20;	
 	_count = _count + 1;
 	MYDT2 setpos [(getpos mydt2 select 0),(getpos mydt2 select 1),(getpos mydt2 select 2)+0.15];

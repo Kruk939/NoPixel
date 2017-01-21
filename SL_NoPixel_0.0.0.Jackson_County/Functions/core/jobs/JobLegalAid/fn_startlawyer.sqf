@@ -15,11 +15,11 @@ if(!taskrunning) then {
 		taskrunning = true;
 
 		_warnings = 0;
-		while{taskrunning && myjob isEqualTo "Lawyer"} do {
+		while{taskrunning && myjob == "Lawyer"} do {
 			uisleep 180;
 			paycheck = paycheck + 80;
 		};
-		if(myjob isEqualTo "Lawyer") then { [] call client_fnc_jobEnd; };
+		if(myjob == "Lawyer") then { [] call client_fnc_jobEnd; };
 	};
 };
 player setVariable ["coplevel", 1, false];

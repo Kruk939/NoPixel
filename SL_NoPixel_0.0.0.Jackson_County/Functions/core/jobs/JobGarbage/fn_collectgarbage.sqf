@@ -2,7 +2,7 @@ private["_oldBinDir","_oldBinPos"];
 _veh = vehicle player;
 _type = _this select 0;
 
-if(_type isEqualTo "dump") then {
+if(_type == "dump") then {
 
 	_veh setfuel 0;
 	_veh animate ['contenedor_unhide',1];
@@ -39,7 +39,7 @@ if(_type isEqualTo "dump") then {
 };
 
 
-if(mybin distance (vehicle player) < 25 && _type isEqualTo "bin") then {
+if(mybin distance (vehicle player) < 25 && _type == "bin") then {
 	(vehicle player) setVelocity [0, 0, 0];
 	_isBinSelected = mybin;
 	_oldBinPos = getpos _isBinSelected;
@@ -51,7 +51,7 @@ if(mybin distance (vehicle player) < 25 && _type isEqualTo "bin") then {
 
 	paycheck = paycheck + 35;
 
-	if(_veh isEqualTo player) exitwith {};
+	if(_veh == player) exitwith {};
 		
 	_veh setfuel 0;
 	_veh animate ['contenedor_unhide',1];

@@ -2,12 +2,12 @@
 
 _type = _this select 2;
 
-if(_type isEqualTo "destroy") exitwith { 
+if(_type == "destroy") exitwith { 
 	["location", "onEachFrame"] call BIS_fnc_removeStackedEventHandler; 
 	["Job", "onEachFrame"] call BIS_fnc_removeStackedEventHandler; 
 };
 
-if(_type isEqualTo "Location") exitwith { 
+if(_type == "Location") exitwith { 
 	myposition = _this select 0;
 	mytext = _this select 1;
 
@@ -31,7 +31,7 @@ if(_type isEqualTo "Location") exitwith {
 
 };
 
-if(_type isEqualTo "Job") exitwith { 
+if(_type == "Job") exitwith { 
 	mypositionJob = _this select 0;
 	mytextJob = _this select 1;
 

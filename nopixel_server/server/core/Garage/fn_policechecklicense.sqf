@@ -19,7 +19,7 @@ if (_booli) then {
     _owner = (_fetch select 3);
 
     {
-        if (getplayeruid _x isEqualTo _owner) then {
+        if (getplayeruid _x == _owner) then {
             _owner = name _x;
         };
     }

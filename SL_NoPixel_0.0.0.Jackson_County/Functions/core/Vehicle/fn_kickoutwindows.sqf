@@ -6,7 +6,7 @@ while{_doorkick > 0} do {
 	_doorkick = _doorkick - 1;
 	_locked = locked (vehicle player);
 
-	if(_doorkick isEqualTo 44 || _doorkick isEqualTo 25 || _doorkick isEqualTo 10) then {
+	if(_doorkick == 44 || _doorkick == 25 || _doorkick == 10) then {
 		playSound3D ["cg_mission_files\sounds\glassbreak.ogg", vehicle player, false, getPosasl (vehicle player), 1, 1, 45];
 	};
 

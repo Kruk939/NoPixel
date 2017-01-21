@@ -18,7 +18,7 @@ if(!taskrunning) then {
 		taskrunning = true;
 
 		_warnings = 0;
-		while{taskrunning && myjob isEqualTo "security"} do {
+		while{taskrunning && myjob == "security"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
 				hint "Nie masz obecnie żadnych zleceń, patroluj miasto i pilnuj sklepów!";
@@ -38,7 +38,7 @@ if(!taskrunning) then {
 				};
 			};
 		};
-		if(myjob isEqualTo "security") then { [] call client_fnc_jobEnd; };
+		if(myjob == "security") then { [] call client_fnc_jobEnd; };
 	};
 };
 

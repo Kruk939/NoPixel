@@ -9,7 +9,7 @@ _quer = "extdb2" callExtension _querstr;
 _array = call compile _quer; 
 _return = _array select 1; 
 _count = 0; 
-if (_mode isEqualTo 2) then { 
+if (_mode == 2) then { 
 _uniqID = call compile _return; 
  
 _return = ""; 
@@ -25,7 +25,7 @@ _return = _return + _returni;
 }; 
 if(_count > 60) exitwith { diag_log "DB Error - 10 loops"; }; 
  
-if ((_array select 0) isEqualTo 0) exitWith 
+if ((_array select 0) == 0) exitWith 
 { 
 diag_log format ["extdb2 Error: %1", _quer]; 
 }; 

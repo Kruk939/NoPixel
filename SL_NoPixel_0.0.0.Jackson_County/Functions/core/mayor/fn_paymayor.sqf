@@ -9,7 +9,7 @@ while { true } do {
 		_startingpayment = taxpayments;
 	};
 	_n = _n + 1;
-	if(_n isEqualTo 5) exitwith {};
+	if(_n == 5) exitwith {};
 };
 
 [taxpayments] remoteexec ["server_fnc_paymayor",2];

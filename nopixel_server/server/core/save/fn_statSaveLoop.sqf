@@ -22,7 +22,7 @@
 
     _syncInfo = _x getVariable ["sync", 1];
 
-    if (_syncInfo isEqualTo 1) then {
+    if (_syncInfo == 1) then {
         _updatestr = format["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];
         _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
     } else {
@@ -30,13 +30,13 @@
         _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
     };
 
-    if (_houseLevel isEqualTo 1) then {
+    if (_houseLevel == 1) then {
         tier1housing pushback _house;
     };
-    if (_houseLevel isEqualTo 2) then {
+    if (_houseLevel == 2) then {
         tier2housing pushback _house;
     };
-    if (_houseLevel isEqualTo 3) then {
+    if (_houseLevel == 3) then {
         tier3housing pushback _house;
     };
 

@@ -3,7 +3,7 @@ disableSerialization;
 _condition = _this select 0;
 _storeList = [];
 _doughnuts = player getVariable ["doughnutsLevel", 0];
-if(_condition isEqualTo "gunstore") then {
+if(_condition == "gunstore") then {
 
 	_gunStorePistols = [
 		["cg_hatchet",nil,120,1],
@@ -36,7 +36,7 @@ if(_condition isEqualTo "gunstore") then {
 
 };
 
-if(_condition isEqualTo "rarefish") then {
+if(_condition == "rarefish") then {
 
 		_gunStorePistols = [
 
@@ -225,7 +225,7 @@ if(_condition isEqualTo "rarefish") then {
 };
 
 
-if(_condition isEqualTo "clothing") then {
+if(_condition == "clothing") then {
 
 	_clothing = [
 		//maseczki
@@ -473,7 +473,7 @@ if(_condition isEqualTo "clothing") then {
 };
 
 
-if(_condition isEqualTo "backpack") then {
+if(_condition == "backpack") then {
 
 	_clothing = [
 		["TAC_BP_KAR_B",nil,50,4,2],
@@ -495,7 +495,7 @@ if(_condition isEqualTo "backpack") then {
 
 
 
-if(_condition isEqualTo "veststore") then {
+if(_condition == "veststore") then {
 
 	_gunStoreVests = [
 
@@ -508,7 +508,7 @@ if(_condition isEqualTo "veststore") then {
 };
 
 
-if(_condition isEqualTo "mcdonalds") then {
+if(_condition == "mcdonalds") then {
 
 	_mcdonalds = [
 		["np_happymeal",nil,8,3],
@@ -525,7 +525,7 @@ if(_condition isEqualTo "mcdonalds") then {
 };
 
 
-if(_condition isEqualTo "hotdogs") then {
+if(_condition == "hotdogs") then {
 
 	_hotdogStore = [
 		["np_hotdog",nil,8,3],
@@ -541,7 +541,7 @@ if(_condition isEqualTo "hotdogs") then {
 
 };
 
-if(_condition isEqualTo "general") then {
+if(_condition == "general") then {
 
 	_generalGroceries = [
 
@@ -570,7 +570,7 @@ if(_condition isEqualTo "general") then {
 };
 
 
-if(_condition isEqualTo "donuts") then {
+if(_condition == "donuts") then {
 
 	_donuts = [
 		["np_chdonuts",nil,8,3],
@@ -585,7 +585,7 @@ if(_condition isEqualTo "donuts") then {
 
 };
 
-if(_condition isEqualTo "pizza") then {
+if(_condition == "pizza") then {
 
 	_pizza = [
 		["np_hpizza",nil,14,3],
@@ -637,7 +637,7 @@ if(_condition IN ["bar"]) then {
 };
 
 
-if(_condition isEqualTo "head") then {
+if(_condition == "head") then {
 
 	_gunStorePistols = [
 
@@ -716,7 +716,7 @@ if(_condition isEqualTo "head") then {
 
 };
 
-if(_condition isEqualTo "doughnuts_general") then {
+if(_condition == "doughnuts_general") then {
 	
 	//Doughnuts
 	_additional = [];
@@ -836,7 +836,7 @@ if(_condition isEqualTo "doughnuts_general") then {
 		_storeList pushback _x;
 	} foreach _additional;
 };
-if(_condition isEqualTo "doughnuts_gun") then {
+if(_condition == "doughnuts_gun") then {
 	
 	//Doughnuts
 	_additional = [];
@@ -899,7 +899,7 @@ if(_condition isEqualTo "doughnuts_gun") then {
 };
 
 
-if(_condition isEqualTo "glasses") then {
+if(_condition == "glasses") then {
 
 	_gunStorePistols = [
 
@@ -987,12 +987,12 @@ lbClear _list;
 	_price = _x select 2;
 	_type = _x select 3;
 	_classtype = _x select 4;
-	if(_doughnuts isEqualTo 3) then { _price = _price * (1 - 0.05); };
-	if(_doughnuts isEqualTo 4) then { _price = _price * (1 - 0.10); };
-	if(_doughnuts isEqualTo 5) then { _price = _price * (1 - 0.15); };
+	if(_doughnuts == 3) then { _price = _price * (1 - 0.05); };
+	if(_doughnuts == 4) then { _price = _price * (1 - 0.10); };
+	if(_doughnuts == 5) then { _price = _price * (1 - 0.15); };
 	if(isNil "_classtype") then { _classType = 0; };
 
-	if(_condition isEqualTo "rarefish") then {
+	if(_condition == "rarefish") then {
 		_list lbAdd format["%2: %1", _item select 1, _price];
 	} else {
 		_addedprice = (_price / 100) * taxRate;
@@ -1004,7 +1004,7 @@ lbClear _list;
 	_list lbSetdata [(lbSize _list)-1, str([_class,_item select 1, _price,_type,_classtype,_addedprice])];
 	_list lbSetPicture [(lbSize _list)-1,_item select 2];
 
-	if(_condition isEqualTo "gunstore") then {
+	if(_condition == "gunstore") then {
 		_magPrice = 50;
 		_addedprice = (_price / 100) * taxRate;
 		_addedprice = round (_addedprice);

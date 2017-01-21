@@ -4,7 +4,7 @@ if(_veh iskindof "Car" || _veh iskindof "Ship" || _veh iskindof "Air") then {
 	_locked = locked _veh;
 	if(_veh in current_cars && player distance _veh < 8) then {
 
-		if(_locked isEqualTo 2) then {
+		if(_locked == 2) then {
 			
 			if(local _veh) then {
 				_veh lock 0;

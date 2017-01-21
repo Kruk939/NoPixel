@@ -48,7 +48,7 @@ _totalprice = _quantity * _price;
 if(_newcount < 0) exitwith { _ERROR = "Not enough of that item."; }; 
 if(_cash < _totalprice) exitwith { _ERROR = "Not enough cash."; }; 
  
-if(_newcount isEqualTo 0) then { 
+if(_newcount == 0) then { 
  
 _location = (_myweapons select 0) FIND _item; 
 (_myweapons select 0) deleteAt _location; 
@@ -78,7 +78,7 @@ _totalprice = _quantity * _price;
 if(_newcount < 0) exitwith { _ERROR = "Not enough of that item."; }; 
 if(_cash < _totalprice) exitwith { _ERROR = "Not enough cash."; }; 
  
-if(_newcount isEqualTo 0) then { 
+if(_newcount == 0) then { 
  
 _location = (_mymagazines select 0) FIND _item; 
 (_mymagazines select 0) deleteAt _location; 
@@ -109,7 +109,7 @@ _totalprice = _quantity * _price;
 if(_newcount < 0) exitwith { _ERROR = "Not enough of that item."; }; 
 if(_cash < _totalprice) exitwith { _ERROR = "Not enough cash."; }; 
  
-if(_newcount isEqualTo 0) then { 
+if(_newcount == 0) then { 
  
 (_myitems select 0) deleteAt _location; 
 (_myitems select 1) deleteAt _location; 
@@ -139,7 +139,7 @@ _totalprice = _quantity * _price;
 if(_newcount < 0) exitwith { _ERROR = "Not enough of that item."; }; 
 if(_cash < _totalprice) exitwith { _ERROR = "Not enough cash."; }; 
  
-if(_newcount isEqualTo 0) then { 
+if(_newcount == 0) then { 
  
 _location = (_mybackpacks select 0) FIND _item; 
 (_mybackpacks select 0) deleteAt _location; 
@@ -154,7 +154,7 @@ _mybackpacks SET [1,_mybackpackscount];
 }; 
 }; 
  
-if(_ERROR isEqualTo "Success") exitwith { 
+if(_ERROR == "Success") exitwith { 
  
 _shopcontent = [_myweapons,_mymagazines,_myitems,_mybackpacks]; 
 _shopplayer setVariable ["shopcontent",_shopcontent,false]; 

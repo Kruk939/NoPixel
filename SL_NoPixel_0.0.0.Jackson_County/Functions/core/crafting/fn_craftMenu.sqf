@@ -113,7 +113,7 @@ _PricesPistolClasses = [
 _PistolMags = [2,1,0,0,0];
 
 
-if(myJob isEqualTo "Mafia") then {
+if(myJob == "Mafia") then {
 
 	_iMafiaClasses = [
 		//small auto
@@ -372,14 +372,14 @@ uisleep 0.05;
 
 _display = findDisplay 1111;
 
-if((_this select 0) isEqualTo "REFRESH") exitwith {
+if((_this select 0) == "REFRESH") exitwith {
 
 	if(isNil "_status") exitwith {};
 
 	if(_status IN _pistolClasses) then {
 		_mySelect = 0;
 		{
-			if(_status isEqualTo _x) exitwith {};
+			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _PistolClasses;
 		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
@@ -395,7 +395,7 @@ if((_this select 0) isEqualTo "REFRESH") exitwith {
 	if(_status IN _iMafiaClasses) then {
 		_mySelect = 0;
 		{
-			if(_status isEqualTo _x) exitwith {};
+			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _iMafiaClasses;
 		_selectedWeapon = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;
@@ -411,7 +411,7 @@ if((_this select 0) isEqualTo "REFRESH") exitwith {
 	if(_status IN _itemList) then {
 		_mySelect = 0;
 		{
-			if(_status isEqualTo _x) exitwith {};
+			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _itemList;
 
@@ -429,7 +429,7 @@ if((_this select 0) isEqualTo "REFRESH") exitwith {
 
 		_mySelect = 0;
 		{
-			if(_status isEqualTo _x) exitwith {};
+			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _clothing1;
 
@@ -445,7 +445,7 @@ if((_this select 0) isEqualTo "REFRESH") exitwith {
 
 		_mySelect = 0;
 		{
-			if(_status isEqualTo _x) exitwith {};
+			if(_status == _x) exitwith {};
 			_mySelect = _myselect + 1;
 		} foreach _clothing2;
 
@@ -478,7 +478,7 @@ _list = _display displayCtrl 1113;
 
 lbClear _list;
 
-if((_this select 0) isEqualTo "FRESH") exitwith {
+if((_this select 0) == "FRESH") exitwith {
 
 	_btn3 ctrlShow true;
 
@@ -496,7 +496,7 @@ if(isNil "_status") exitwith { hint "Error with Selection!"; };
 	_btn2 ctrlShow true;
 	_btn5 ctrlShow true;
 
-if(_status isEqualTo "Pistols") exitwith {
+if(_status == "Pistols") exitwith {
 
 	{
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
@@ -506,7 +506,7 @@ if(_status isEqualTo "Pistols") exitwith {
 
 };
 
-if(_status isEqualTo "Large Weapons") exitwith {
+if(_status == "Large Weapons") exitwith {
 
 	{
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
@@ -516,7 +516,7 @@ if(_status isEqualTo "Large Weapons") exitwith {
 
 };
 
-if(_status isEqualTo "Items") exitwith {
+if(_status == "Items") exitwith {
 
 	{
 		_selectedweapon = (configfile >> "CfgMagazines" >> _x >> "displayName") call BIS_fnc_getCfgData;
@@ -527,7 +527,7 @@ if(_status isEqualTo "Items") exitwith {
 };
 
 
-if(_status isEqualTo "Clothing") exitwith {
+if(_status == "Clothing") exitwith {
 
 	{
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
@@ -537,7 +537,7 @@ if(_status isEqualTo "Clothing") exitwith {
 
 };
 
-if(_status isEqualTo "Quality Clothing") exitwith {
+if(_status == "Quality Clothing") exitwith {
 
 	{
 		_selectedweapon = (configfile >> "CfgWeapons" >> _x >> "displayName") call BIS_fnc_getCfgData;
@@ -552,7 +552,7 @@ if(isNil "shopholder") then {
 	shopholder = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);  
 };
 
-if((_this select 0) isEqualTo "CRAFT") exitwith {
+if((_this select 0) == "CRAFT") exitwith {
 
 	if(_status IN _PistolClasses) then {
 		_count = _pistolclasses FIND _status;
@@ -582,7 +582,7 @@ if(_status IN _clothing1 || _status IN _clothing2) then {
 
 	_checkCost = _cost;
 
-	_amountcurrent = {_x isEqualTo "NP_Pelt"} count magazines player;
+	_amountcurrent = {_x == "NP_Pelt"} count magazines player;
 	if(_amountcurrent < _checkCost) exitwith { hint "Not enough resources"; _error = true; };
 
 	if(_error) exitwith {};
@@ -605,7 +605,7 @@ if(_status IN _clothing1 || _status IN _clothing2) then {
 		_materialCheck = _materials select _n;
 		_checkCost = _cost select _n;
 
-		_amountcurrent = {_x isEqualTo (_materials select _n)} count magazines player;
+		_amountcurrent = {_x == (_materials select _n)} count magazines player;
 		if(_amountcurrent < _checkCost) exitwith { hint "Not enough resources"; _error = true; };
 		_n = _n + 1;
 
@@ -652,7 +652,7 @@ if(_error) exitwith {};
 	closedialog 0;
 };
 
-if((_this select 0) isEqualTo "CRAFTMAG") exitwith {
+if((_this select 0) == "CRAFTMAG") exitwith {
 
 	if(_status IN _PistolClasses) then {
 		_count = _pistolclasses FIND _status;
@@ -670,7 +670,7 @@ if((_this select 0) isEqualTo "CRAFTMAG") exitwith {
 		_materialCheck = _materials select _n;
 		_checkCost = _cost select _n;
 
-		_amountcurrent = {_x isEqualTo (_materials select _n)} count magazines player;
+		_amountcurrent = {_x == (_materials select _n)} count magazines player;
 		if(_amountcurrent < _checkCost) exitwith { hint "Not enough resources"; _error = true; };
 		_n = _n + 1;
 

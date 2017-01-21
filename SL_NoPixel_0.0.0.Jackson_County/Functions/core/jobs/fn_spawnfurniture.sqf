@@ -36,11 +36,11 @@ if(count mychairs > 6) then {
 
 _totalallowed = player getvariable "houselevel";
 _totalallowed = _totalallowed * 3;
-if(count mychairs > _totalallowed && count attachedobjects player isEqualTo 0) exitwith { hint "Too much furniture"; };
+if(count mychairs > _totalallowed && count attachedobjects player == 0) exitwith { hint "Too much furniture"; };
 
 
-if(_type isEqualTo 1) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 1) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "big_chair_civ" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,1,2]];
 		attachedfurniture = true;
@@ -58,8 +58,8 @@ if(_type isEqualTo 1) exitwith {
 	};
 };
 
-if(_type isEqualTo 2) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 2) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "sofagris_civ" createvehicle getpos player; 
 		fuckingcouch attachto [player,[0,1,2]];
 		attachedfurniture = true;
@@ -78,8 +78,8 @@ if(_type isEqualTo 2) exitwith {
 	};
 };
 
-if(_type isEqualTo 3) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 3) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "sillamedico2_civ" createvehicle getpos player; 
 		fuckingcouch attachto [player,[0,1.5,1.3]];
 		attachedfurniture = true;
@@ -98,8 +98,8 @@ if(_type isEqualTo 3) exitwith {
 	};
 };
 
-if(_type isEqualTo 4) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 4) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "sillademedico_civ" createvehicle getpos player; 
 		fuckingcouch attachto [player,[0,1.5,1.3]];
 		attachedfurniture = true;
@@ -118,8 +118,8 @@ if(_type isEqualTo 4) exitwith {
 	};
 };
 
-if(_type isEqualTo 5) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 5) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "Land_WoodenTable_large_F" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,2,1]];
 		attachedfurniture = true;
@@ -137,8 +137,8 @@ if(_type isEqualTo 5) exitwith {
 	};
 };
 
-if(_type isEqualTo 6) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 6) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "vvv_lowmodel_mesaoficina" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,1.5,2]];
 		attachedfurniture = true;
@@ -156,8 +156,8 @@ if(_type isEqualTo 6) exitwith {
 	};
 };
 
-if(_type isEqualTo 7) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 7) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "vvv_lowmodel_jukebox" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,1.2,2]];
 		attachedfurniture = true;
@@ -175,8 +175,8 @@ if(_type isEqualTo 7) exitwith {
 	};
 };
 
-if(_type isEqualTo 8) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 8) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "vvv_lowmodel_comoda1" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,1,2]];
 		attachedfurniture = true;
@@ -198,8 +198,8 @@ if(_type isEqualTo 8) exitwith {
 
 
 
-if(_type isEqualTo 9) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 9) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "nopixel_tools_escritorio2" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,1,2]];
 		attachedfurniture = true;
@@ -218,8 +218,8 @@ if(_type isEqualTo 9) exitwith {
 };
 
 
-if(_type isEqualTo 10) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 10) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "nopixel_tools_lampara2" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,1,2]];
 		attachedfurniture = true;
@@ -238,8 +238,8 @@ if(_type isEqualTo 10) exitwith {
 };
 
 
-if(_type isEqualTo 11) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 11) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "nopixel_tools_mesa" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,1,2]];
 		attachedfurniture = true;
@@ -258,8 +258,8 @@ if(_type isEqualTo 11) exitwith {
 };
 
 
-if(_type isEqualTo 12) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 12) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "nopixel_tools_planta" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,1,2]];
 		attachedfurniture = true;
@@ -278,8 +278,8 @@ if(_type isEqualTo 12) exitwith {
 };
 
 
-if(_type isEqualTo 13) exitwith {
-	if(_status isEqualTo 1) then {
+if(_type == 13) exitwith {
+	if(_status == 1) then {
 		fuckingcouch = "cama_civ" createvehicle getpos player;
 		fuckingcouch attachto [player,[0,1,2]];
 		attachedfurniture = true;

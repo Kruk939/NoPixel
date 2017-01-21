@@ -13,7 +13,7 @@ _information = _this select 1;
 
 
 //spam detection for selling etc.
-if(_detection isEqualTo 1) exitwith {
+if(_detection == 1) exitwith {
 
 	if(isNil "faultcount") exitwith { 
 		faultcount = 1; 

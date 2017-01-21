@@ -19,7 +19,7 @@ player setVariable ["coplevel", 0, false];
 if(!isNil "vehspawned") then {
 	if(!isNull vehspawned) then {
 		_players = crew (vehspawned);
-		if(count _players isEqualTo 0) then {
+		if(count _players == 0) then {
 			{ 
 					detach _x;
 					deletevehicle _x; 

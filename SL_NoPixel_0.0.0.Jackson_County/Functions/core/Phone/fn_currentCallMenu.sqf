@@ -10,7 +10,7 @@ _list = _display displayCtrl 5338;
 lbClear _list;
 {
 	_userID = _x getvariable "PhoneID";
-	if( _userID isEqualTo _myID && _x != player) then {
+	if( _userID == _myID && _x != player) then {
 		_list lbAdd format["%1 - %2", name _x];
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
 	};

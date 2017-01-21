@@ -14,5 +14,5 @@ _players pushback player;
 
 [_object,true] remoteExec ["hideobject",_players];
 uisleep _length;
-if(_length isEqualTo 0) exitwith {};
+if(_length == 0) exitwith {};
 [_object,false] remoteExec ["hideobject",_players];

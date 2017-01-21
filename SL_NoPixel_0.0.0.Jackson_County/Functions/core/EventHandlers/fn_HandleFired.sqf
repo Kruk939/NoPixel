@@ -22,15 +22,15 @@ if(_ammo isKindOf "Melee") exitwith {
 	_anim = getText(_cfg>>"anim");
 	_unit playActionNow _anim;
 
-	if(currentWeapon _unit isEqualTo "cg_pickaxe") then {
+	if(currentWeapon _unit == "cg_pickaxe") then {
 		[] call client_fnc_mineMetal;
 	 };
 
-	if(currentWeapon _unit isEqualTo "cg_hatchet") then {
+	if(currentWeapon _unit == "cg_hatchet") then {
 		[] call client_fnc_cutTree;
 	 };
 
-	if(currentWeapon _unit isEqualTo "cg_bat" && typeof cursorobject IN ["Land_buildingCommercial1","Land_buildingCommercial2"] && player distance getpos cursorobject < 3 && myjob != "Security") then {
+	if(currentWeapon _unit == "cg_bat" && typeof cursorobject IN ["Land_buildingCommercial1","Land_buildingCommercial2"] && player distance getpos cursorobject < 3 && myjob != "Security") then {
 		[cursorobject] spawn client_fnc_BATrobbery;
 	 };
 
@@ -40,6 +40,6 @@ if(currentWeapon _unit IN ["vvv_fishing_rod","epic_fishing_rod","platinum_fishin
 	[] spawn client_fnc_poleFishing;
 };
 
-if(vehicle player isEqualTo player) then {
+if(vehicle player == player) then {
 //	[] call client_fnc_forceFPS;
 };

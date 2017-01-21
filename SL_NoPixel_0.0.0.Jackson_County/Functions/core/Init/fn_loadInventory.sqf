@@ -42,51 +42,51 @@ if(_mayor) then {
 };
 
 
-if(_mafia isEqualTo 10) then {
+if(_mafia == 10) then {
 	//format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9842.84,3677.44,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
-if(_mafia isEqualTo 9) then {
+if(_mafia == 9) then {
 	//format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9736.28,3629.54,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
-if(_cop isEqualTo 10) then {
+if(_cop == 10) then {
 	player setvariable ["coplevel",10,false];
 	//format["The Police Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9626,3578.7,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
-if(_cop isEqualTo 9) then {
+if(_cop == 9) then {
 	player setvariable ["coplevel",9,false];
 	//format["The Police Captain has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9516.43,3526.09,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
-if(_ems isEqualTo 10) then {
+if(_ems == 10) then {
 	player setvariable ["ems",10,false];
 	//format["The EMS Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9412.31,3479.1,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
-if(_ems isEqualTo 9) then {
+if(_ems == 9) then {
 	player setvariable ["ems",9,false];
 	//format["The EMS Deputy Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9306.67,3430.66,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
-if(_legal isEqualTo 10) then {
+if(_legal == 10) then {
 	//format["The Chief Justice has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9188.22,3371.8,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
-if(_legal isEqualTo 9) then {
+if(_legal == 9) then {
 	//format["The Supreme Court Justice has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9094.99,3324.16,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
-if(_legal isEqualTo 8) then {
+if(_legal == 8) then {
 	//format["The District Attorney has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[8984.55,3274.12,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
@@ -175,7 +175,7 @@ if(_prisontime > 0) then {
 
 
 
-if(_doughnuts isEqualTo 2 && _houselevel != 3) then {
+if(_doughnuts == 2 && _houselevel != 3) then {
 	_houselevel = 2;
 };
 if(_doughnuts > 2) then {
@@ -186,19 +186,19 @@ player setpos [7639.87,2553.39,0.00143814];
 if(_higherup) exitwith { player setpos _house};
 
 
-	if(_houselevel isEqualTo 1) then {
+	if(_houselevel == 1) then {
 		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];  
 		_containerpos = (_nobject select 0) getrelpos [8,0]; 
 		player setpos _containerpos;
 	};
 
-	if(_houselevel isEqualTo 2) then {
+	if(_houselevel == 2) then {
 		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];   
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
 		player setpos _containerpos;
 	};
 
-	if(_houselevel isEqualTo 3) then {
+	if(_houselevel == 3) then {
 		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];   
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
 		player setpos _containerpos;
@@ -225,7 +225,7 @@ removeHeadgear player;
 player setunitloadout _items;
 
 // player select here
-if((_statuses select 9) isEqualTo 0) then {
+if((_statuses select 9) == 0) then {
 	[] spawn client_fnc_playerselect;
 	[] spawn {
 		"dynamicBlur" ppEffectEnable true; /* enables ppeffect */
@@ -235,7 +235,7 @@ if((_statuses select 9) isEqualTo 0) then {
 		"dynamicBlur" ppEffectEnable false;	
 	};
 } else {
-	if((_statuses select 9) isEqualTo 1) then { 
+	if((_statuses select 9) == 1) then { 
 		Female = true;
 	} else { Female = false; };
 	player setVariable["loaded", 1, false];	

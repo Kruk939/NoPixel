@@ -6,8 +6,8 @@
 disableSerialization;
 _answer = _this select 0;
 
-if(_answer isEqualTo "Female") then { Female = true; player forceAddUniform "EF_FEM_4_2LPBP2"; };
-if(_answer isEqualTo "Male") then { Female = false; };
+if(_answer == "Female") then { Female = true; player forceAddUniform "EF_FEM_4_2LPBP2"; };
+if(_answer == "Male") then { Female = false; };
 
 _display = findDisplay 1444;
 _control = _display displayCtrl 1500;

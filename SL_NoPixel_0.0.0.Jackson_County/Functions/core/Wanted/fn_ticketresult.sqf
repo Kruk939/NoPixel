@@ -15,7 +15,7 @@ _cop = ctrlText _ctrl;
 _cop = call compile format["%1",_cop];
 _responseReason = "Odmowa zapłaty.";
 
-if(_response isEqualTo "paid") then {
+if(_response == "paid") then {
 	_old = player getVariable "atm";
 	_new = _old - _amount;
 	if (_new < 0) then { 
@@ -24,7 +24,7 @@ if(_response isEqualTo "paid") then {
 	};
 };
 
-if(_response isEqualTo "refused") then {
+if(_response == "refused") then {
 	[format["Nie zapłacono: %1",_responseReason], false] remoteExec ["domsg",_cop];
 } else { 
 	[_amount] call Client_fnc_removeBank;

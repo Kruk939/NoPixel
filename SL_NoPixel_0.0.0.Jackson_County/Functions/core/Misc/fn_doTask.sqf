@@ -38,7 +38,7 @@ while{true} do {
 	uisleep 1;
 	_timeLeft = _timeLeft - 1;
 	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
-	if(_timeLeft isEqualTo 0) exitwith {};
+	if(_timeLeft == 0) exitwith {};
 
 	if( !(_animation isEqualTo 0) && (animationstate player) != _animation) then { player playmove _animation; };
 	if((getposATL player) distance (getposATL _distanceCheck) > 6) exitwith { _success = false; _error = "Movement Error"; };

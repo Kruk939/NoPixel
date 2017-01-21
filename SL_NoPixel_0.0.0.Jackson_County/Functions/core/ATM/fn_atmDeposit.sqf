@@ -8,7 +8,7 @@ if (_amount > 0) then
 {
 
 
-	if(_bankType isEqualTo 0) then {
+	if(_bankType == 0) then {
 
 		_check = [1, _amount] call Client_fnc_checkMoney;
 		if (_check) then 

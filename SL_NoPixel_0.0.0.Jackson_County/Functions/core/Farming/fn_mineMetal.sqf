@@ -64,9 +64,9 @@ if (str _rock find ": w_sharprock" > -1 || str _rock find ": bluntrock" > -1 ) e
 	if(_findchance > 14) then {	
 		mymetal pushback _rock;
 		 _myOre = "np_copperore1";
-		 if(_findchance isEqualTo 15 || _findchance isEqualTo 16 || _findchance isEqualTo 17) then { _myOre = "np_copperore1"; };
-		 if(_findchance isEqualTo 18 || _findchance isEqualTo 19) then { _myOre = "np_ironore1"; };
-		 if(_findchance isEqualTo 20) then { _myOre = "np_silverore1"; };
+		 if(_findchance == 15 || _findchance == 16 || _findchance == 17) then { _myOre = "np_copperore1"; };
+		 if(_findchance == 18 || _findchance == 19) then { _myOre = "np_ironore1"; };
+		 if(_findchance == 20) then { _myOre = "np_silverore1"; };
 		player additem _myOre;
 		["You found some ore!", true] spawn domsg;
 	};	

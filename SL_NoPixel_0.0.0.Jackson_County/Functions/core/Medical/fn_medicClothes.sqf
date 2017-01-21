@@ -1,7 +1,7 @@
 //null = [this] execVM "virtual_arsenal_init.sqf"
 
 //	[
-//		[" (myjob isEqualTo ""Cop"" && typeof cursorobject isEqualTo ""Box_NATO_Uniforms_F"") && player getvariable ""cop"" > 1 "],
+//		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""cop"" > 1 "],
 //		["MUNDURY", "[cursorobject] spawn client_fnc_vars"]
 //	],
 

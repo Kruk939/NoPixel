@@ -19,13 +19,13 @@ shops pushback _shop;
 
 _houselevel = _player getVariable "houselevel";
 
-if(_houseLevel isEqualTo 1) then {
+if(_houseLevel == 1) then {
 tier1housing pushback _house;
 };
-if(_houseLevel isEqualTo 2) then {
+if(_houseLevel == 2) then {
 tier2housing pushback _house;
 };
-if(_houseLevel isEqualTo 3) then {
+if(_houseLevel == 3) then {
 tier3housing pushback _house;
 };
 
@@ -46,7 +46,7 @@ _syncInfo = _player getVariable "sync";
 if(isNil "_syncInfo") then { _syncinfo = 1; };
 _exit = false;
 
-if(_syncInfo isEqualTo 0 || _player in CurrentCop || _player in currentEMS || _player in currentFire) then {
+if(_syncInfo == 0 || _player in CurrentCop || _player in currentEMS || _player in currentFire) then {
 _updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 _exit = true;
@@ -54,21 +54,21 @@ _exit = true;
 
 _updatestr = format ["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
-if(!isNil "theMayor") then { if(_player isEqualTo theMayor) then { TaxRate = 0; publicVariable "TaxRate"; }; };
+if(!isNil "theMayor") then { if(_player == theMayor) then { TaxRate = 0; publicVariable "TaxRate"; }; };
 
 };
 
 if (_exit) exitwith { deleteVehicle _player; };
 
-if(_houseLevel isEqualTo 1) then {
+if(_houseLevel == 1) then {
 tier1housing pushback _house;
 };
 
-if(_houseLevel isEqualTo 2) then {
+if(_houseLevel == 2) then {
 tier2housing pushback _house;
 };
 
-if(_houseLevel isEqualTo 3) then {
+if(_houseLevel == 3) then {
 tier3housing pushback _house;
 };
 

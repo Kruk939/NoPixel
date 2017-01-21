@@ -14,7 +14,7 @@ if(!taskrunning) then {
 		taskrunning = true;
 
 		_warnings = 0;
-		while{taskrunning && myjob isEqualTo "NewsMan"} do {
+		while{taskrunning && myjob == "NewsMan"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
 				hint "Nie masz obecnie żadnych zleceń!";
@@ -34,7 +34,7 @@ if(!taskrunning) then {
 				};
 			};
 		};
-		if(myjob isEqualTo "NewsMan") then { [] call client_fnc_jobEnd; };
+		if(myjob == "NewsMan") then { [] call client_fnc_jobEnd; };
 	};
 };
 

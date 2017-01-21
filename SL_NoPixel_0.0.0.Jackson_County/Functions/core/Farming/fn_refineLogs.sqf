@@ -3,7 +3,7 @@ Refine Logs trees by koil
 */
 private["_localprotection"];
 
-if(backpack player isEqualTo "") exitwith { hint "Musisz mieć plecak!"; };
+if(backpack player == "") exitwith { hint "Musisz mieć plecak!"; };
 
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { hint "Już przetwarzam"; };

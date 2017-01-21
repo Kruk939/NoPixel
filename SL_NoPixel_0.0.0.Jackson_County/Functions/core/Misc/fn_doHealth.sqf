@@ -6,20 +6,20 @@ if(deadPlayer) exitwith {};
 params [["_adjust", "", [""]], ["_amount", 0, [0]], ["_source", objNull, [objNull]],["_headshot", 0, [0]]];
 _change = false;
 
-if(_adjust isEqualTo "Add") then {
+if(_adjust == "Add") then {
 	myHealth = myHealth - _amount;
 	if(_amount > 0.1) then {
 		[6] spawn Client_fnc_HudElements;	
 	};	
 };
-if(_adjust isEqualTo "Remove") then {
+if(_adjust == "Remove") then {
 	myHealth = myHealth + _amount; 
 	if(_amount > 0.1) then {
 		[5] spawn Client_fnc_HudElements;
 	};
 };
 
-if(_adjust isEqualTo "Set") then {
+if(_adjust == "Set") then {
 	[6] spawn Client_fnc_HudElements; 
 	myHealth = _amount; 
 };
