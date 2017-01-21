@@ -32,7 +32,7 @@ if (_amount > 0) then
 			
 			["Add",_amount] remoteexec ["server_fnc_updateMafiaBank",2];
 			[_amount] call Client_fnc_removeCash;
-			hint "Pomyślnie wypłacono pieniądze!";
+			hint "Pomyślnie wpłacono pieniądze!";
 			
 		} else {
 		

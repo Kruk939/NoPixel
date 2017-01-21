@@ -52,4 +52,5 @@ publicvariable "currentTrashMan";
 publicvariable "currentNewsMan"; 
 publicvariable "currentRepairmen"; 
 publicvariable "currentTaxiDrivers";
+publicvariable "mafiaBank";
 //publicVariable "TaxRate";

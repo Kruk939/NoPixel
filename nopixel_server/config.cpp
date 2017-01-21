@@ -24,6 +24,7 @@ class CfgFunctions {
             class initStats {};
             class steppedSync {};
             class statSave {};
+            class statSaveDisconnect {};
             class statSaveLoop {};
             class cleanup {};
             class SetVariable {};

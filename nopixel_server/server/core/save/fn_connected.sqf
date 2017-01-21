@@ -10,14 +10,13 @@
 		Return: nothing
 */
  
- private["_type","_player","_playerUID","_updateStr"];
+ params["_playerUID","_type"];
+ private["_updateStr"];
+
+if(isNil "_playerUID" || isNil "_type") exitWith {diag_log "fn_connected.sqf: nil (1)";}; 
+if("_type" == "") exitWith {diag_log "fn_connected.sqf: _type empty (2)";}; 
+//if(isNull _playerUID || isNull "_type") exitWith {diag_log "fn_connected.sqf: _playerUID is null (3)"};
  
- _player = this select 0;
- _type = this select 1;
- 
- _playerUID = getPlayerUID _player;
  
  _updateStr = format["updateConnected:%1:%2", _type, _playerUID];
  _update = [0, _updateStr] call ExternalS_fnc_ExtDBquery;
- 
- 
