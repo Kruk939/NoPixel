@@ -22,8 +22,8 @@ while{ClientArrested} do {
 	uisleep 1;
 	secondsLeft = secondsLeft - 1;
 	_update = _update + 1;
-	if(secondsLeft == 0) exitwith {};
-	if(_update == 300) then { 
+	if(secondsLeft isEqualTo 0) exitwith {};
+	if(_update isEqualTo 300) then { 
 		_update = 0;
 		_time = secondsLeft / 60;
 		_time = round(_time);

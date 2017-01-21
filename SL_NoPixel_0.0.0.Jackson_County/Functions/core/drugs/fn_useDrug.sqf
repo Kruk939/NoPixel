@@ -6,33 +6,33 @@ _unhealth = client_unhealthiness / 50;
 _amount = _amount - _unhealth;
 
 
-if(_type == "marijuana") then {
+if(_type isEqualTo "marijuana") then {
 	client_marijuana = _amount;
 	player setCustomAimCoef 0;
 	["set",0] call Client_Fnc_DoHealth;
 	["Czujesz się wspaniale i bardzo spokojnie.",false] spawn domsg;
 };
 
-if(_type == "cocaine") then {
+if(_type isEqualTo "cocaine") then {
 	client_cocaine = _amount;
 	player setAnimSpeedCoef 1.2;
 	["Czujesz, że mógłbyś przebiec maraton.",false] spawn domsg;
 };
 
-if(_type == "heroin") then {
+if(_type isEqualTo "heroin") then {
 	client_heroin = _amount;
 	player setUnitRecoilCoefficient 0.5;
 	["Celowanie wydaje się teraz o wiele łatwiejsze!",false] spawn domsg;
 };
 
 
-if(_type == "meth") then {
+if(_type isEqualTo "meth") then {
 	client_meth = _amount;
 	["Czujesz się niezniszczalny.",false] spawn domsg;
 	//notazepls
 };
 
-if(_type == "energy") then {
+if(_type isEqualTo "energy") then {
 	client_energy = _amount;
 	player enablefatigue false;
 	player enablestamina false;

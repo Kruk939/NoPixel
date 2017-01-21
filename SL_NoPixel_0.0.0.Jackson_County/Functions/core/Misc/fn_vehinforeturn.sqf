@@ -3,7 +3,7 @@ private["_owner"];
 _carowner = _vehicle select 8;
 {
 
-	if( (getplayeruid _x) == _carowner ) then {
+	if( (getplayeruid _x) isEqualTo _carowner ) then {
 		_owner = _x;
 	};
 
@@ -80,10 +80,10 @@ if(_owner IN _owedPlayers) then {
 	_value = 0;
 
 	{
-		if((_x select 0) == _typeofVeh) then { _value = (_x select 1) * 0.65; };
+		if((_x select 0) isEqualTo _typeofVeh) then { _value = (_x select 1) * 0.65; };
 	}foreach _civilianVehicle;
 
-	if(_value == 0) exitwith { hint "Wartość pojazdu to 0"; };
+	if(_value isEqualTo 0) exitwith { hint "Wartość pojazdu to 0"; };
 
 	_amount = _amount - _value;
 	if(_amount < 0) then { _amount = 0; };

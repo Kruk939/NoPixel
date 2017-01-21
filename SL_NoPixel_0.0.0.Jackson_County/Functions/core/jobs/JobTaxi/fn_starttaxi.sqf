@@ -15,10 +15,10 @@ if(!taskrunning) then {
 		taskrunning = true;
 
 		_warnings = 0;
-		while{taskrunning && myjob == "taxi"} do {
+		while{taskrunning && myjob isEqualTo "taxi"} do {
 			uisleep 180;
 			paycheck = paycheck + 55;
 		};
-		if(myjob == "taxi") then { [] call client_fnc_jobEnd; };
+		if(myjob isEqualTo "taxi") then { [] call client_fnc_jobEnd; };
 	};
 };

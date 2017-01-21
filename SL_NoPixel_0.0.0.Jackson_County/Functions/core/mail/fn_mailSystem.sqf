@@ -13,7 +13,7 @@ if(!taskrunning) then {
 		taskrunning = true;
 
 		_warnings = 0;
-		while{taskrunning && myjob == "mail"} do {
+		while{taskrunning && myjob isEqualTo "mail"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
 	
@@ -34,7 +34,7 @@ if(!taskrunning) then {
 				if(player distance ((playertasks select 0) select 0) < 15) then {
 					hint "Ukończyłeś zlecenie!";
 					paycheck = paycheck + 235;
-					if(((playertasks select 0) select 3) == "Personal") then {
+					if(((playertasks select 0) select 3) isEqualTo "Personal") then {
 						[] remoteExec ["client_fnc_completemail",((playertasks select 0) select 1)];
 					};
 					playertasks deleteat 0;
@@ -48,12 +48,12 @@ if(!taskrunning) then {
 		};
 			
 			{
-				if((_x select 3) == "Personal") then {
+				if((_x select 3) isEqualTo "Personal") then {
 					[] remoteExec ["client_fnc_completemail",(_x select 1)];
 				};
 			} foreach playertasks;
 
-			if(myjob == "mail") then { [] call client_fnc_jobEnd; };
+			if(myjob isEqualTo "mail") then { [] call client_fnc_jobEnd; };
 	};
 };
 

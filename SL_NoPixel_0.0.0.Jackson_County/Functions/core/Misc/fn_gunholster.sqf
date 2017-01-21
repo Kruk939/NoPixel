@@ -16,7 +16,7 @@ while{true} do
 	};
 	while {_time > time} do {
 		if (currentWeapon player != "") then {
-			if(animationstate player == "amovpknlmstpsraswpstdnon") then { player switchmove ""; };
+			if(animationstate player isEqualTo "amovpknlmstpsraswpstdnon") then { player switchmove ""; };
 			player action ["SwitchWeapon", player, player, 100];
 		};
 	};

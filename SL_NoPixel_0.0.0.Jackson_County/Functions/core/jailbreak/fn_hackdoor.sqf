@@ -19,12 +19,12 @@ _fencetoopen = cursorobject;
 	};
 	playSound3D ["CG_Jobs\sounds\jailbreak\hacking.ogg", player, false, (getposasl player), 3, 1, 55];
 	
-	if(typeOf _fenceToOpen == "Land_GateB") then {
+	if(typeOf _fenceToOpen isEqualTo "Land_GateB") then {
 		hint parsetext format["<img size='1' image='CG_Jobs\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>DANE ZMODYFIKOWANE</t><br/> PUNKT DOSTĘPU OSIĄGNIĘTY.",_calcT];
 		_fenceToOpen animate ['GateDoor_3',-1.6];
 	};
 
-	if(typeOf _fenceToOpen == "Land_Gaol_Main") then {
+	if(typeOf _fenceToOpen isEqualTo "Land_Gaol_Main") then {
 
 		hint parsetext format["<img size='1' image='CG_Jobs\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>POŚREDNI MODUŁ ZŁAMANY</t><br/> PRZYZNANO PEŁNY DOSTĘP.",_calcT];
 
@@ -36,7 +36,7 @@ _fencetoopen = cursorobject;
 	};
 
 
-	if(typeOf _fenceToOpen == "Land_MainSection") then {
+	if(typeOf _fenceToOpen isEqualTo "Land_MainSection") then {
 
 		playSound3D ["CG_Jobs\sounds\jailbreak\jailAlarm.ogg", _fenceToOpen, false, (getposasl _fenceToOpen), 1.7, 1, 10235];
 		hint parsetext format["<img size='1' image='CG_Jobs\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>GŁÓWNY MODUŁ ZŁAMANY</t><br/> PRZYZNANO PEŁNY DOSTĘP.",_calcT];

@@ -1,6 +1,6 @@
 params["_bankType"];
 
-if(_bankType == 1) exitwith { ["Błąd","Nie masz do tego dostępu!",[255,0,0,1],""] call Client_fnc_showNotification; //hint "Nie masz do tego dostępu!"; };
+if(_bankType isEqualTo 1) exitwith { ["Błąd","Nie masz do tego dostępu!",[255,0,0,1],""] call Client_fnc_showNotification; //hint "Nie masz do tego dostępu!"; };
 
 _amount = parseNumber (ctrlText 1400);
 _player = call compile format["%1",(lbData[1111,(lbCurSel 1111)])];

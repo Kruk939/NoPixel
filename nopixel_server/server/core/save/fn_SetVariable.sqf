@@ -5,11 +5,11 @@ _new = _this select 2;
 if(isNil "_new") exitwith { }; 
  
  
-if(_variable == "usedgarage") exitwith { 
+if(_variable isEqualTo "usedgarage") exitwith { 
 	if(isNil "_new") exitwith {}; 
 	GarageVariableWhore setvariable [_object, _new, false]; 
 }; 
  
-if(_variable == "getunitloadout" && (_object getvariable "sync") == 0) exitwith {}; 
+if(_variable isEqualTo "getunitloadout" && (_object getvariable "sync") isEqualTo 0) exitwith {}; 
  
 _object setvariable [_variable, _new, false]; 

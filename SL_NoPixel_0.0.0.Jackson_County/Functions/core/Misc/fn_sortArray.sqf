@@ -15,12 +15,12 @@ _return = [];
 	_found = false;
 	{
 		_classname = _x select 0;
-			if (_curClass == _classname) then {
+			if (_curClass isEqualTo _classname) then {
 				_found = true;
 			};
 	}forEach _return;
 	if (!(_found)) then {
-		_result = {_x == _curClass} count _array;
+		_result = {_x isEqualTo _curClass} count _array;
 		_return pushBack [_curClass, _result];
 	};
 }forEach _array;

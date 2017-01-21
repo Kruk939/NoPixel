@@ -81,7 +81,7 @@ if(str CurrentCursorTarget find "embarcadero" > -1) then {
 };
 
 
-if(_whatdo == "NEW") then {
+if(_whatdo isEqualTo "NEW") then {
 	_display = findDisplay 1444;
 	_list = _display displayCtrl 1500;
 
@@ -147,7 +147,7 @@ _SELECTEDFINISH = call compile format["%1", _status];
 _SELECTEDFINISH = _SELECTEDFINISH select 0;
 _SELECTEDFINISH = getText(configfile >> "CfgIvoryMaterials" >> _SELECTEDFINISH >> "material");
 
-if(_whatdo == "CAR" || isNil "spawnedvehicle") then {
+if(_whatdo isEqualTo "CAR" || isNil "spawnedvehicle") then {
 	if(!isNil "spawnedvehicle") then {
 		deletevehicle spawnedvehicle;
 	};

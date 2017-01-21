@@ -14,11 +14,11 @@
 params["_unit","_type", "_text", ["_uid", ""]];
 
 if(isNil "_unit" || isNil "_type" || isNil "_text") exitWith {diag_log "InsertLog: nil";}; //Exits on no params given
-if("_type" == "") exitWith {diag_log "InsertLog: empty";}; //Exits on no type given
+if("_type" isEqualTo "") exitWith {diag_log "InsertLog: empty";}; //Exits on no type given
 if(isNull _unit) exitWith {diag_log "InsertLog: null"};
 diag_log format["insertLog:%1 %2 %3",_unit,_type,_text];
 
-if(_uid == "") then {
+if(_uid isEqualTo "") then {
 	_uid = getPlayerUID _unit;
 };
 _cash = _unit getVariable ["wallet",-1];

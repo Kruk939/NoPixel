@@ -142,12 +142,12 @@ client_fnc_restrained = compileFinal
 
 	while{imRestrained} do {
 
-		if (animationstate player != ""Acts_AidlPsitMstpSsurWnonDnon_loop"" && !deadplayer && vehicle player == player) then {
+		if (animationstate player != ""Acts_AidlPsitMstpSsurWnonDnon_loop"" && !deadplayer && vehicle player isEqualTo player) then {
 			[player,""Acts_AidlPsitMstpSsurWnonDnon_loop""] remoteExec [""client_fnc_animSync""];
 			uisleep 1;
 		};
 		if(vehicle player != player) then {
-			if(driver (vehicle player) == player) then {
+			if(driver (vehicle player) isEqualTo player) then {
 				player action[""eject"",vehicle player]
 			};
 		};
@@ -331,11 +331,11 @@ player addEventHandler["put", {
 		_loadout = getunitloadout player;
 		_isPack = getNumber(configFile >> "CfgVehicles" >> (_this select 2) >> "isBackpack");
 		_attempt = isClass (ConfigFile >> "CfgWeapons" >> (_this select 2));
-		if(_attempt || _isPack == 1) then {	[player, "getunitloadout", _loadout] remoteExec ["Server_fnc_setVariable",2]; };
+		if(_attempt || _isPack isEqualTo 1) then {	[player, "getunitloadout", _loadout] remoteExec ["Server_fnc_setVariable",2]; };
 
-		if(uniform player == "" && female) then {
+		if(uniform player isEqualTo "" && female) then {
 		player forceadduniform "vvv_character_protibanador";
-		if(_this select 2 == "vvv_character_protibanador") then {
+		if(_this select 2 isEqualTo "vvv_character_protibanador") then {
 		_container = _this select 1;
 		_thecargo = getitemCargo _container;
 		clearitemcargoglobal _container;

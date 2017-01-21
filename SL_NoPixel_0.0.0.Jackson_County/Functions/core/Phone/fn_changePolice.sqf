@@ -11,7 +11,7 @@ call TFAR_fnc_HideHint;
 ["Jesteś na radiu PD!", false] spawn domsg;
 */
 
-if (myjob =="EMS") then {
+if (myjob isEqualTo"EMS") then {
 	player setvariable["PhoneCallNumber",33.1,true];
 	player setvariable["PhoneID",33.1,true];
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
@@ -23,7 +23,7 @@ if (myjob =="EMS") then {
 	call TFAR_fnc_HideHint;
 	["Jestes na czestotliwosci EMS!", false] spawn domsg;
 };
-if (myjob =="Fire") then {
+if (myjob isEqualTo"Fire") then {
 	player setvariable["PhoneCallNumber",33.2,true];
 	player setvariable["PhoneID",33.2,true];
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
@@ -35,7 +35,7 @@ if (myjob =="Fire") then {
 	call TFAR_fnc_HideHint;
 	["Jestes na czestotliwosci Służby FD!", false] spawn domsg;
 };
-if (myjob =="Cop") then {
+if (myjob isEqualTo"Cop") then {
 	player setvariable["PhoneCallNumber",33.3,true];
 	player setvariable["PhoneID",33.3,true];
 	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;

@@ -3,7 +3,7 @@ if(!taskrunning) exitwith {};
 if(!isNil "vehspawned") then {
 	if(!isNull vehspawned) then {
 		_players = crew (vehspawned);
-		if(count _players == 0) then {
+		if(count _players isEqualTo 0) then {
 
 			{ 
 					detach _x;
@@ -20,13 +20,13 @@ if(!isNil "vehspawned") then {
 
 _jobType = myjob;
 
-if (_jobType == "Mafia") exitwith {
+if (_jobType isEqualTo "Mafia") exitwith {
 	vehspawned = createVehicle ["VVV_Bentley_Arnage", [0,0,(random(500) + 3)], [], 0, "NONE"];	
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
 };
 
-if (_jobType == "Wood Logging") exitwith {
+if (_jobType isEqualTo "Wood Logging") exitwith {
 	vehspawned = createVehicle ["jonzie_log_truck", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[vehspawned, ["white","Glossy"]] remoteexec ["client_fnc_initVehicle",2];
@@ -35,7 +35,7 @@ if (_jobType == "Wood Logging") exitwith {
 	hint "You have some items in the truck, use them!";
 };
 
-if (_jobType == "mail") exitwith {
+if (_jobType isEqualTo "mail") exitwith {
 	vehspawned = createVehicle ["nopixel_fedex", [0,0,(random(500) + 3)], [], 0, "NONE"];	
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
@@ -43,7 +43,7 @@ if (_jobType == "mail") exitwith {
 	hint "You have some items in the truck, use them!";
 };
 
-if (_jobType == "trashman") exitwith {	
+if (_jobType isEqualTo "trashman") exitwith {	
 	vehspawned = createVehicle ["nopixel_garbageTruck", [0,0,(random(500) + 3)], [], 0, "NONE"];	
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
@@ -51,7 +51,7 @@ if (_jobType == "trashman") exitwith {
 	hint "You have some items in the truck, use them!";
 };
 
-if (_jobType == "repairman") exitwith {	
+if (_jobType isEqualTo "repairman") exitwith {	
 	vehspawned = createVehicle ["nopixel_mrfixit", [0,0,(random(500) + 3)], [], 0, "NONE"];	
 	[vehspawned, ["white","Glossy"]] spawn client_fnc_initVehicle;
 	[vehspawned] spawn client_fnc_spawnvehicle;	
@@ -60,7 +60,7 @@ if (_jobType == "repairman") exitwith {
 	hint "You have some items in the truck, use them!";
 };
 
-if (_jobType == "security") exitwith {
+if (_jobType isEqualTo "security") exitwith {
 	vehspawned = createVehicle ["ivory_rs4_security", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
@@ -69,7 +69,7 @@ if (_jobType == "security") exitwith {
 	hint "You have some items in the truck, use them - you can buy a taser from the gun store for this job.";
 };
 
-if (_jobType == "towtruck") exitwith {
+if (_jobType isEqualTo "towtruck") exitwith {
 	vehspawned = createVehicle ["A3L_Towtruck", [0,0,(random(500) + 3)], [], 0, "NONE"];	
 	[vehspawned] spawn client_fnc_spawnvehicle;
 
@@ -78,7 +78,7 @@ if (_jobType == "towtruck") exitwith {
 	hint "You have some items in the truck, use them!";
 };
 
-if (_jobType == "NewsMan") exitwith {	
+if (_jobType isEqualTo "NewsMan") exitwith {	
 	vehspawned = createVehicle ["nopixel_news_van_original", [0,0,(random(500) + 3)], [], 0, "NONE"];	
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	clearmagazinecargoGlobal (vehspawned);
@@ -90,7 +90,7 @@ if (_jobType == "NewsMan") exitwith {
 	hint "You have some items in the truck, use them!";
 };
 
-if (_jobType == "taxi") exitwith {	
+if (_jobType isEqualTo "taxi") exitwith {	
 	vehspawned = createVehicle ["ivory_rs4_taxi", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];

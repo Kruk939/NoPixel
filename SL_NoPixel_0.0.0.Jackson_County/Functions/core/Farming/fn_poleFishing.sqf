@@ -49,7 +49,7 @@ imfishing = true;
 
 	mouseMovement = 1;
 	sleep 0.5;
-	if(mouseMovement == 1) then { mousemovement=2; };
+	if(mouseMovement isEqualTo 1) then { mousemovement=2; };
 
 	_Dir = _Dir - 180; 
 	_vel = velocity _vehicle;
@@ -90,13 +90,13 @@ imfishing = true;
 
 
 
-    if(mouseMovement == 3) then {
+    if(mouseMovement isEqualTo 3) then {
     	_curWep = currentWeapon player;
     	   _chance = round (random 200);
 
 	    	if(_curWep IN ["gold_fishing_rod","platinum_fishing_rod","epic_fishing_rod"]) then { _chance = round (random 202); };
 
-	    	if(_curWep == "legendary_fishing_rod") then { _chance = round (random 240); };
+	    	if(_curWep isEqualTo "legendary_fishing_rod") then { _chance = round (random 240); };
 
 	    	if(vehicle player != player) then { _chance = _chance + 30; };
 
@@ -110,10 +110,10 @@ imfishing = true;
 
 		_chance = round (random 100);
 		if(vehicle player != player) then { _chance = _chance + 10; };
-		if(_curWep == "gold_fishing_rod" && _chance > 80) then { Player additemtobackpack _myFish; };
-		if(_curWep == "platinum_fishing_rod" && _chance > 60) then { Player additemtobackpack _myFish; };
-		if(_curWep == "epic_fishing_rod" && _chance > 40) then { Player additemtobackpack _myFish; };
-		if(_curWep == "legendary_fishing_rod") then { Player additemtobackpack _myFish; };
+		if(_curWep isEqualTo "gold_fishing_rod" && _chance > 80) then { Player additemtobackpack _myFish; };
+		if(_curWep isEqualTo "platinum_fishing_rod" && _chance > 60) then { Player additemtobackpack _myFish; };
+		if(_curWep isEqualTo "epic_fishing_rod" && _chance > 40) then { Player additemtobackpack _myFish; };
+		if(_curWep isEqualTo "legendary_fishing_rod") then { Player additemtobackpack _myFish; };
 
 	} else {
 		hint "Byłeś zbyt wolny.";

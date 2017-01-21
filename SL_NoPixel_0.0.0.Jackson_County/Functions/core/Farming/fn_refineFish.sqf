@@ -13,7 +13,7 @@ _farmingVehicles = ["POP_Speed_yatch","vvv_NewYacht"];
 
 _n = 0;
 {
-	_total = {_x == (_oreArray select _n)} count magazines player;
+	_total = {_x isEqualTo (_oreArray select _n)} count magazines player;
 	_i = _total;
 
 
@@ -46,7 +46,7 @@ _n = 0;
 
 
 
-if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == player) then {
+if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) isEqualTo player) then {
 
 	_thecargo = getmagazineCargo (vehicle player);
 

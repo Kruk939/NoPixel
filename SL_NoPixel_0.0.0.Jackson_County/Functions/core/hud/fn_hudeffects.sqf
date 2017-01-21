@@ -138,19 +138,19 @@ if(myhealth > 0) then { [] spawn client_fnc_hudhealth; [] call client_fnc_hudwor
 					player setFatigue 0;
 					[1] spawn client_fnc_HudElements;
 					_coughtype = round (random 4);
-					if(_coughtype == 1) then
+					if(_coughtype isEqualTo 1) then
 					{
 						playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
-					if(_coughtype == 2) then
+					if(_coughtype isEqualTo 2) then
 					{
 						playSound3D ["cg_sndimg\sounds\cough2.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
-					if(_coughtype == 3) then
+					if(_coughtype isEqualTo 3) then
 					{
 						playSound3D ["cg_sndimg\sounds\cough3.ogg", player, false, getPosASL player, 3, 1, 45];
 					};
-					if(_coughtype == 4) then
+					if(_coughtype isEqualTo 4) then
 					{
 						playSound3D ["cg_sndimg\sounds\cough4.ogg", player, false, getPosASL player, 3, 1, 45];
 					};

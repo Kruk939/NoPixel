@@ -13,14 +13,14 @@ _markers = [];
 		_markers pushBack [_marker,_x];
 	};
 
-	if ( _x in currentcop && driver (vehicle _x) == _x) then {
+	if ( _x in currentcop && driver (vehicle _x) isEqualTo _x) then {
 		_marker = createMarkerLocal [format["%1_PD_UNIT",name _x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorBlue";
 		_marker setMarkerTypeLocal "hd_dot";
 		_marker setMarkerTextLocal format["%1",name _x];
 		_markers pushBack [_marker,_x];
 	};
-	if ( _x in currentems && driver (vehicle _x) == _x) then {
+	if ( _x in currentems && driver (vehicle _x) isEqualTo _x) then {
 		_marker = createMarkerLocal [format["%1_EMS_UNIT",name _x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorGreen";
 		_marker setMarkerTypeLocal "hd_dot";

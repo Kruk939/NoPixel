@@ -1,5 +1,5 @@
 
-if (vehicle player == player) exitwith { hint "Musisz znajdować się w pojeździe!"; };
+if (vehicle player isEqualTo player) exitwith { hint "Musisz znajdować się w pojeździe!"; };
 _PROCESS = vehicle player;
 _civilianVehicle = [
 	["Jonzie_XB",1900],
@@ -68,7 +68,7 @@ if(typeof _PROCESS IN ["ADM_1964_Impala","ADM_1969_Charger","ADM_1969_Camaro","A
 
 	_typeof = TYPEOF (_PROCESS) splitString "_1" joinString "_";
 	_typeof = _typeof splitString "_2" joinString "_";
-	{ if(_typeof == _x select 0) then { _price = (_x select 1) * 0.25; }; } foreach _civilianVehicle;
+	{ if(_typeof isEqualTo _x select 0) then { _price = (_x select 1) * 0.25; }; } foreach _civilianVehicle;
 };
 
 
@@ -85,21 +85,21 @@ _newVehicle = _vehicle;
 
 if(_reprocess) then {
 
-		if(_vehicle == "ADM_1964_Impala") exitwith { _attempt = true; _newVehicle = format["%1_1",_vehicle]; };
-		if(_vehicle == "ADM_1964_Impala_1") exitwith { _attempt = true; _newVehicle = "ADM_1964_Impala_2"; };
-		if(_vehicle == "ADM_1964_Impala_2") exitwith { _attempt = false; };
+		if(_vehicle isEqualTo "ADM_1964_Impala") exitwith { _attempt = true; _newVehicle = format["%1_1",_vehicle]; };
+		if(_vehicle isEqualTo "ADM_1964_Impala_1") exitwith { _attempt = true; _newVehicle = "ADM_1964_Impala_2"; };
+		if(_vehicle isEqualTo "ADM_1964_Impala_2") exitwith { _attempt = false; };
 
-		if(_vehicle == "ADM_1969_Charger") exitwith { _attempt = true; _newVehicle = format["%1_1",_vehicle]; };
-		if(_vehicle == "ADM_1969_Charger_1") exitwith { _attempt = true; _newVehicle = "ADM_1969_Charger_2"; };
-		if(_vehicle == "ADM_1969_Charger_2") exitwith { _attempt = false; };
+		if(_vehicle isEqualTo "ADM_1969_Charger") exitwith { _attempt = true; _newVehicle = format["%1_1",_vehicle]; };
+		if(_vehicle isEqualTo "ADM_1969_Charger_1") exitwith { _attempt = true; _newVehicle = "ADM_1969_Charger_2"; };
+		if(_vehicle isEqualTo "ADM_1969_Charger_2") exitwith { _attempt = false; };
 
-		if(_vehicle == "ADM_1969_Camaro") exitwith { _attempt = true; _newVehicle = format["%1_1",_vehicle]; };
-		if(_vehicle == "ADM_1969_Camaro_1") exitwith { _attempt = true; _newVehicle = "ADM_1969_Camaro_2"; };
-		if(_vehicle == "ADM_1969_Camaro_2") exitwith { _attempt = false; };		
+		if(_vehicle isEqualTo "ADM_1969_Camaro") exitwith { _attempt = true; _newVehicle = format["%1_1",_vehicle]; };
+		if(_vehicle isEqualTo "ADM_1969_Camaro_1") exitwith { _attempt = true; _newVehicle = "ADM_1969_Camaro_2"; };
+		if(_vehicle isEqualTo "ADM_1969_Camaro_2") exitwith { _attempt = false; };		
 
 } else {
 
-	if (_vehicle find "_2" == -1 && _vehicle find "_1" == -1) then {
+	if (_vehicle find "_2" isEqualTo -1 && _vehicle find "_1" isEqualTo -1) then {
 
 			_newVehicle = format["%1_1",_vehicle];
 			_attempt = isClass (ConfigFile >> "CfgVehicles" >> _newVehicle);

@@ -6,7 +6,7 @@ hint "Kupuję...";
 _typebuy = _this select 0;
 
 _index = lbCurSel (9001);
-if (_index == -1) exitWith {};
+if (_index isEqualTo -1) exitWith {};
 _status = lbData[9001, _index];
 _status = call compile format["%1", _status];
 
@@ -26,14 +26,14 @@ _cost = call compile format["%1", (_status select 2)];
 
 _totalprice = _cost * _Quantity;
 
-if(_totalprice == 0 || _totalprice < 0) exitwith { hint "Nie mozesz kupic przedmiotu, który kosztuje $0"; };
+if(_totalprice isEqualTo 0 || _totalprice < 0) exitwith { hint "Nie mozesz kupic przedmiotu, który kosztuje $0"; };
 _error = false;
 
-if(_typebuy == "fish") then {
+if(_typebuy isEqualTo "fish") then {
 	_rarefish = {_x IN ["Fish_Mackerel_7", "Fish_Tuna_7", "Fish_Trout_Rare", "Fish_Shark_Rare"]} count magazines player;
 	if(_rarefish < _totalprice) exitwith { hint "Za malo ryb!"; _error = true; };
 };
-if(_typebuy == "standard") then {
+if(_typebuy isEqualTo "standard") then {
 	_cash = player getVariable "wallet";
 	if(_cash < _totalprice) exitwith { hint "Za malo pieniędzy."; _error = true; };
 };
@@ -61,14 +61,14 @@ switch (_type) do {
     case 4: { shopholder addBackpackCargoGlobal [_item,_quantity]; };   
 };
 
-if(_typebuy == "fish") then {
-	_rarefish1 = {_x == "Fish_Trout_Rare"} count magazines player;
-	_rarefish2 = {_x == "Fish_Shark_Rare"} count magazines player;
-	_rarefish3 = {_x == "Fish_Mackerel_7"} count magazines player;
-	_rarefish4 = {_x == "Fish_Tuna_7"} count magazines player;
+if(_typebuy isEqualTo "fish") then {
+	_rarefish1 = {_x isEqualTo "Fish_Trout_Rare"} count magazines player;
+	_rarefish2 = {_x isEqualTo "Fish_Shark_Rare"} count magazines player;
+	_rarefish3 = {_x isEqualTo "Fish_Mackerel_7"} count magazines player;
+	_rarefish4 = {_x isEqualTo "Fish_Tuna_7"} count magazines player;
 
 	while { _rarefish1 > 0 } do {
-		if(_totalprice == 0) exitwith {};
+		if(_totalprice isEqualTo 0) exitwith {};
 		player removeitem "Fish_Trout_Rare";
 		_rarefish1 = _rarefish1 - 1;
 		_totalprice = _totalprice - 1;
@@ -76,7 +76,7 @@ if(_typebuy == "fish") then {
 	};
 
 	while { _rarefish2 > 0 } do {
-		if(_totalprice == 0) exitwith {};
+		if(_totalprice isEqualTo 0) exitwith {};
 		_rarefish1 = _rarefish1 - 1;
 		_totalprice = _totalprice - 1;	
 		player removeitem "Fish_Shark_Rare";	
@@ -84,7 +84,7 @@ if(_typebuy == "fish") then {
 	};
 
 	while { _rarefish3 > 0 } do {
-		if(_totalprice == 0) exitwith {};
+		if(_totalprice isEqualTo 0) exitwith {};
 		_rarefish1 = _rarefish1 - 1;
 		_totalprice = _totalprice - 1;	
 		player removeitem "Fish_Mackerel_7";	
@@ -92,7 +92,7 @@ if(_typebuy == "fish") then {
 	};
 
 	while { _rarefish4 > 0 } do {
-		if(_totalprice == 0) exitwith {};
+		if(_totalprice isEqualTo 0) exitwith {};
 		_rarefish1 = _rarefish1 - 1;
 		_totalprice = _totalprice - 1;	
 		player removeitem "Fish_Tuna_7";	
@@ -101,11 +101,11 @@ if(_typebuy == "fish") then {
 
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL player, 5, 1, 45];
 };
-if(_typebuy == "standard") then {
+if(_typebuy isEqualTo "standard") then {
 	_lostprice = _status select 5;
 	if(_lostprice > 0) then {
 		if(isNil "taxpayments") then { taxpayments = 0; };
-		if(taxpayments == 0) then { taxpayments = taxpayments + _lostprice;	[_lostprice] spawn client_fnc_payMayor; } else { taxpayments = taxpayments + _lostprice; };
+		if(taxpayments isEqualTo 0) then { taxpayments = taxpayments + _lostprice;	[_lostprice] spawn client_fnc_payMayor; } else { taxpayments = taxpayments + _lostprice; };
 	};
 
 	[_totalPrice] call Client_fnc_removeCash;

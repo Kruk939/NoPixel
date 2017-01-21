@@ -3,7 +3,7 @@
 	_haltphone = false;
 	_radios = player call TFAR_fnc_radiosList;
 	if(count _radios > 0) then {
-		if(_type == 1) then {
+		if(_type isEqualTo 1) then {
 			if( phoneDisabled ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["Połączenie od %1 zostało zapisane w rejestrze! (Telefon wyłączony)","Anonymous"], false] spawn domsg; };	
 			if( callInProgress || PhonesRinging ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["Połączenie od %1 zostało zapisane w rejestrze! (Zajęte) ","Anonymous"], false] spawn domsg; };	
 			if( client_battery < 5 ) exitwith { _haltphone = true; currentCaller remoteExec ["fnc_busyAnswer",currentCaller]; [format["Połączenie od %1 zostało zapisane w rejestrze! (Niski poziom baterii) ","Anonymous"], false] spawn domsg; };
@@ -17,7 +17,7 @@
 		if(_haltphone) exitwith {};
 		while{PhonesRinging} do {
 			playSound "cgphone_call";
-			if(_type == 1) then {
+			if(_type isEqualTo 1) then {
 				[format["Polaczenie przychodzące od %1!","Numer zastrzezony"], false] spawn domsg; 
 			} else {
 				[format["Polaczenie przychodzące od %1!",name currentcaller], false] spawn domsg; 

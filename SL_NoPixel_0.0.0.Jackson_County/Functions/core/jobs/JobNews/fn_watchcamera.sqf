@@ -50,7 +50,7 @@ cam camSetFov 0.5;
 
 		_dive = (_vy1 atan2 _vz1) + 35;  
 		 
-		if ((sin _dive) == 0) then {_dive = _dive +1}; 
+		if ((sin _dive) isEqualTo 0) then {_dive = _dive +1}; 
 		_tz = ((1 / sin _dive) * cos _dive);   
 
 		cam attachTo [neck,[-0.18,0.08,0.05]]; 
@@ -116,7 +116,7 @@ cam2 camSetFov 0.5;
 
 		_dive = (_vy1 atan2 _vz1) + 35;  
 		 
-		if ((sin _dive) == 0) then {_dive = _dive +1}; 
+		if ((sin _dive) isEqualTo 0) then {_dive = _dive +1}; 
 		_tz = ((1 / sin _dive) * cos _dive);   
 
 		cam2 attachTo [neck,[-0.18,0.08,0.05]]; 
@@ -213,7 +213,7 @@ cam camSetFov 0.25;
 
 		_dive = (_vy1 atan2 _vz1) + 35;  
 		 
-		if ((sin _dive) == 0) then {_dive = _dive +1}; 
+		if ((sin _dive) isEqualTo 0) then {_dive = _dive +1}; 
 		_tz = ((1 / sin _dive) * cos _dive);   
 
 		sometarget attachTo [neck,[0,-1,0.05]];

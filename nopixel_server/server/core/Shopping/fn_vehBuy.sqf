@@ -24,7 +24,7 @@ _information set [8, (getPlayerUID _buyer)];
 _garageArray = _buyer getvariable "garage";
 _garageArray pushback _information;
 
-{if (getplayeruid _x == _carowner) exitwith { _player = _x; }; } foreach playableunits;
+{if (getplayeruid _x isEqualTo _carowner) exitwith { _player = _x; }; } foreach playableunits;
 
 ["garage",_information] remoteExec ["client_fnc_setVariable", _buyer];
 [_price, _veh] remoteExec["client_fnc_vehSold", _player];

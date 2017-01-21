@@ -1,5 +1,5 @@
 _currentitemindex = lbCurSel 9001;
-if (_currentitemindex == -1) exitWith { hint "Error"; closedialog 0; };
+if (_currentitemindex isEqualTo -1) exitWith { hint "Error"; closedialog 0; };
 _amount = lbData [9001, _currentitemindex];
 _amount = call compile format["%1",_amount];
 

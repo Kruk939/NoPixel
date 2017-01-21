@@ -15,7 +15,7 @@ if(!taskrunning) then {
 		taskrunning = true;
 
 		_warnings = 0;
-		while{taskrunning && myjob == "Repairman"} do {
+		while{taskrunning && myjob isEqualTo "Repairman"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
 				hint "Nie masz obecnie żadnych zleceń. Wypatruj obiekty które możesz naprawić!";
@@ -35,7 +35,7 @@ if(!taskrunning) then {
 				};
 			};
 		};
-		if(myjob == "Repairman") then { [] call client_fnc_jobEnd; };
+		if(myjob isEqualTo "Repairman") then { [] call client_fnc_jobEnd; };
 	};
 };
 

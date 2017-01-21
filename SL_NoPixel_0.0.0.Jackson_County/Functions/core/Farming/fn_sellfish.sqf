@@ -17,7 +17,7 @@ _localProtection = 0;
 _n = 0;
 _cashTotal = 0;
 {
-	_total = {_x == (_barArray select _n)} count magazines player;
+	_total = {_x isEqualTo (_barArray select _n)} count magazines player;
 	_i = _total;
 
 	while{ _i > 0 } do {

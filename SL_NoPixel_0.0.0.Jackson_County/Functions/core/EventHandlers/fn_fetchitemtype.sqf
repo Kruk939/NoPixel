@@ -18,7 +18,7 @@
 	*/
 	private["_entity","_cfg","_ret","_type","_acc_p","_acc_o","_acc_m","_scope","_displayName","_picture","_config","_itemInfo","_muzzles","_magazines","_desc"];
 	_entity = _this select 0;
-	if(_entity == "") exitWith {[]};
+	if(_entity isEqualTo "") exitWith {[]};
 	if(isNil "_entity") exitWith {[]};
 	_cfg = if(isNil {_this select 1}) then
 	{
@@ -40,7 +40,7 @@
 	_ret = [];
 	if(typeName _cfg != "STRING") exitWith {[]}; //Not a config
 	if(!isClass (configFile >> _cfg >> _entity)) exitWith {[]};
-	if(_cfg == "") exitWith {[]}; //Not a config, who is passing bad data?
+	if(_cfg isEqualTo "") exitWith {[]}; //Not a config, who is passing bad data?
 
 	_config = configFile >> _cfg >> _entity;
 	_displayName = getText(_config >> "displayName");

@@ -8,9 +8,9 @@ params[["_type","basic"]];
 
 
 [player, myjob, format["Wyciagnal wyposazenie - %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
-if(myjob == "Cop") exitwith {
+if(myjob isEqualTo "Cop") exitwith {
 
-	if(_type == "basic") then {
+	if(_type isEqualTo "basic") then {
 		removeAllWeapons player;
 		removeAllItems player;
 		removeAllAssignedItems player;
@@ -122,8 +122,8 @@ if(myjob == "Cop") exitwith {
 };
 
 
-//if(typeof currentcursortarget == "Land_buildingshospital1") exitwith {
-if(myjob == "EMS") exitwith {
+//if(typeof currentcursortarget isEqualTo "Land_buildingshospital1") exitwith {
+if(myjob isEqualTo "EMS") exitwith {
 
 	removeAllWeapons player;
 	removeAllItems player;
@@ -152,8 +152,8 @@ if(myjob == "EMS") exitwith {
 
 };
 
-//if(typeof currentcursortarget == "Land_buildingsfiredept1") exitwith {
-	if(myjob == "Fire") exitwith {
+//if(typeof currentcursortarget isEqualTo "Land_buildingsfiredept1") exitwith {
+	if(myjob isEqualTo "Fire") exitwith {
 removeAllWeapons player;
 removeAllItems player;
 removeAllAssignedItems player;
@@ -184,7 +184,7 @@ player linkItem "ItemGPS";
 
 };
 
-if(myjob == "Mafia") exitwith {
+if(myjob isEqualTo "Mafia") exitwith {
 	_level = player getVariable "Mafia";
 	player forceadduniform "vvv_traje_mafioso_F_1";
 };

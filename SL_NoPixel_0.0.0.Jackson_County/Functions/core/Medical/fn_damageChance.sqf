@@ -13,7 +13,7 @@ if(_currentHitLocation IN _injuryArray) then {
 	if(_injuryLevel > 4) then { _injuryLevel = 4; };
 	_myInjuries set [_currentHitNumber, _injuryLevel];
 
-	if(_currentHitLocation == "Body") then {
+	if(_currentHitLocation isEqualTo "Body") then {
 		_chance = round (random 50);
 		if(_chance < 3) then {
 			_organDamage = round (random 4);

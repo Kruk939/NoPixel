@@ -34,7 +34,7 @@ switch (_code) do
 			_locked = locked _veh;
 			if(_veh in current_cars && player distance _veh < 8) then {
 
-				if(_locked == 2) then {
+				if(_locked isEqualTo 2) then {
 					
 					if(local _veh) then {
 						_veh lock 0;
@@ -67,12 +67,12 @@ switch (_code) do
 
 	case 16:
 	{
-		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then 
+		if(myJob isEqualTo "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then 
 		{
 			[2] spawn client_fnc_rotateLight;
 		};
 
-		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then 
+		if( (myJob isEqualTo "EMS" || myJob isEqualTo "Fire") && typeof vehicle player isEqualTo "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then 
 		{
 			[] spawn client_fnc_raisebasket;
 		};	
@@ -80,11 +80,11 @@ switch (_code) do
 
 	case 18:
 	{
-		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then 
+		if(myJob isEqualTo "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then 
 		{
 			[1] spawn client_fnc_rotateLight;
 		};
-		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then 
+		if( (myJob isEqualTo "EMS" || myJob isEqualTo "Fire") && typeof vehicle player isEqualTo "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then 
 		{
 			[] spawn client_fnc_lowerbasket;
 		};	
@@ -93,14 +93,14 @@ switch (_code) do
 	//Map Key
 	case 50:
 	{
-		if(myJob == "EMS" || myJob == "Fire") then 
+		if(myJob isEqualTo "EMS" || myJob isEqualTo "Fire") then 
 		{
 			[] spawn client_fnc_mapMarkers;
 		} else {
 			[] spawn client_fnc_playermapMarkers;
 		};
 
-		if(myJob == "Cop") then 
+		if(myJob isEqualTo "Cop") then 
 		{
 			[] spawn client_fnc_copmapMarkers;
 		};
@@ -141,7 +141,7 @@ switch (_code) do
 	                            currenltyUpdating = false;	                                                      
 	                        };                     
 	                    };
-	                    if(vehicle player == player) exitwith {};
+	                    if(vehicle player isEqualTo player) exitwith {};
 	                    sleep 0.05;
 	                };
 
@@ -157,8 +157,8 @@ switch (_code) do
 	{
 
 
-		if (_ctrlKey && myjob == "Cop") then {
-			if(handgunweapon player == "taser") then {
+		if (_ctrlKey && myjob isEqualTo "Cop") then {
+			if(handgunweapon player isEqualTo "taser") then {
 				_weapon = handgunweapon player;
 				player removeweapon _weapon; player additemtobackpack _weapon;
 				[] spawn { 
@@ -203,7 +203,7 @@ switch (_code) do
 				player additem "CG_Spikes_Collapsed";
 		};
 
-		if(mouseMovement == 1) exitwith { mouseMovement = 3; _handle = true; };
+		if(mouseMovement isEqualTo 1) exitwith { mouseMovement = 3; _handle = true; };
 		if(!busyPlayer) then {
 			[] call Client_fnc_openInteraction;
 			[] spawn client_fnc_keyBusyPlayer;
@@ -255,7 +255,7 @@ switch (_code) do
 					player additem "CG_Spikes_Collapsed";
 			};
 
-			if(mouseMovement == 1) exitwith { mouseMovement = 3; _handle = true; };
+			if(mouseMovement isEqualTo 1) exitwith { mouseMovement = 3; _handle = true; };
 			if(!busyPlayer) then {
 				[] call Client_fnc_openInteraction;
 				[] spawn client_fnc_keyBusyPlayer;

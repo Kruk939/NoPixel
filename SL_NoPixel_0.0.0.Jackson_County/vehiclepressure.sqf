@@ -4,7 +4,7 @@ currentlyUpdating = false;
 [] spawn { (findDisplay 46) displayAddEventHandler["KeyDown","
  
     _currentKey = _this select 1;
-    if(_currentKey == 17 && !currentlyUpdating) then {
+    if(_currentKey isEqualTo 17 && !currentlyUpdating) then {
         if(vehicle player != player) then {
             currentlyUpdating = true;
             Gearphase = (vehicle player) animationSourcePhase ""gear"";
@@ -47,7 +47,7 @@ currentlyUpdating = false;
  
 
     _currentKey = _this select 1;
-    if(_currentKey == 17 && currentlyUpdating) then {
+    if(_currentKey isEqualTo 17 && currentlyUpdating) then {
         if(vehicle player != player) then {
             if(vehiclePressure > 4) then {
                 vehiclePressure = 0;
@@ -59,7 +59,7 @@ currentlyUpdating = false;
                 vehicle player animate[""backfire"", 0];                
             };
 
-            if(vehiclePressure == 3) then {
+            if(vehiclePressure isEqualTo 3) then {
                 vehiclePressure = 0;
                 currenltyUpdating = false;
                 playsound ""cgturbo2"";
@@ -70,7 +70,7 @@ currentlyUpdating = false;
                 vehicle player animate[""backfire"", 0];               
             };
 
-            if(vehiclePressure == 2) then {
+            if(vehiclePressure isEqualTo 2) then {
                 vehiclePressure = 0;
                 currenltyUpdating = false;
                 playsound ""cgturbo3"";
@@ -81,7 +81,7 @@ currentlyUpdating = false;
                 vehicle player animate[""backfire"", 0];               
             };
 
-            if(vehiclePressure == 1) then {
+            if(vehiclePressure isEqualTo 1) then {
                 vehiclePressure = 0;
                 currenltyUpdating = false;
                 playSound3D [""CG_turbo\sounds\turbo2.ogg"", vehicle player, false, getPosasl (vehicle player), 0.8, 1, 45];

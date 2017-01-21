@@ -26,7 +26,7 @@ if (isNil "carPosition") then {
 {
     _nearc = nearestObjects[getPos _x, ["Man"], 55];
 
-    if (((count _nearc) == 0 && (count crew _x) == 0 && isNull driver vehicle _x && isNull attachedTo _x) || getdammage _x == 1) then {
+    if (((count _nearc) isEqualTo 0 && (count crew _x) isEqualTo 0 && isNull driver vehicle _x && isNull attachedTo _x) || getdammage _x isEqualTo 1) then {
         if (_x in carArray) then {
             _pia = cararray FIND _x;
             _location = carposition SELECT _pia;
@@ -58,7 +58,7 @@ _list = (allMissionObjects "WeaponHolder") +
 
 {
     _nearestc = _x nearEntities["man", 50];
-    if (((count _nearestc) == 0)) then {
+    if (((count _nearestc) isEqualTo 0)) then {
         deleteVehicle _x;
     };
 }

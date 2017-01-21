@@ -6,13 +6,13 @@ if(animationState player != "Acts_carFixingWheel") then {
 	player disableAI "anim"; 
 };
 
-if(requiredOutput == _required) then { 
+if(requiredOutput isEqualTo _required) then { 
 	hint "Zadziałało! Produkt nie stracił na wartości!"; 
 	totalskills = totalskills - 10;
-	if(_required == "Acetone" || _required == "Pseudo") then { playSound3D ["CG_Jobs\sounds\meth\drugAdd.ogg", player, false, getPosasl player, 2, 1, 15]; };
-	if(_required == "Cool") then { playSound3D ["CG_Jobs\sounds\meth\drugCool.ogg", player, false, getPosasl player, 2, 1, 15]; };
-	if(_required == "Heat") then { playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 2, 1, 15]; };
-	if(_required == "Release") then { playSound3D ["CG_Jobs\sounds\meth\drugPressure.ogg", player, false, getPosasl player, 2, 1, 15]; };
+	if(_required isEqualTo "Acetone" || _required isEqualTo "Pseudo") then { playSound3D ["CG_Jobs\sounds\meth\drugAdd.ogg", player, false, getPosasl player, 2, 1, 15]; };
+	if(_required isEqualTo "Cool") then { playSound3D ["CG_Jobs\sounds\meth\drugCool.ogg", player, false, getPosasl player, 2, 1, 15]; };
+	if(_required isEqualTo "Heat") then { playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 2, 1, 15]; };
+	if(_required isEqualTo "Release") then { playSound3D ["CG_Jobs\sounds\meth\drugPressure.ogg", player, false, getPosasl player, 2, 1, 15]; };
 } else { 
 	myDrugValue = myDrugValue - 10; 
 	hint "Źle.. miejmy nadzieję że uda się zapobiec eksplozji";

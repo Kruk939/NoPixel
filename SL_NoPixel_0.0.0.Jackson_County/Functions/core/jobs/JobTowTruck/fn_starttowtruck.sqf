@@ -17,7 +17,7 @@ if(!taskrunning) then {
 		taskrunning = true;
 
 		_warnings = 0;
-		while{taskrunning && myjob == "towtruck"} do {
+		while{taskrunning && myjob isEqualTo "towtruck"} do {
 			uisleep 3;
 			if(playertasks isequalto []) then {
 				hint "Nie masz obecnie żadnych zleceń. Wypatruj pojazdów które wymagają holowania!";
@@ -37,7 +37,7 @@ if(!taskrunning) then {
 				};
 			};
 		};
-		if(myjob == "towtruck") then { [] call client_fnc_jobEnd; };
+		if(myjob isEqualTo "towtruck") then { [] call client_fnc_jobEnd; };
 	};
 };
 

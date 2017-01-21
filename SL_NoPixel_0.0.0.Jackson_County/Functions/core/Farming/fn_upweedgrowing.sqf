@@ -6,7 +6,7 @@ if(animationState player != "Acts_carFixingWheel") then {
 	player disableAI "anim"; 
 };
 
-if(requiredOutput2 == _required) then { 
+if(requiredOutput2 isEqualTo _required) then { 
 	hint "To chyba podziałało!"; 
 	totalskills = totalskills - 1;
 	playSound3D ["CG_Jobs\sounds\woodchop\woodchop1.ogg", player, false, getPosasl player, 2, 1, 15];

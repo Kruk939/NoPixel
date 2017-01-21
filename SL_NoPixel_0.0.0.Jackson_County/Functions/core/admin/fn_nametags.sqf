@@ -1,5 +1,5 @@
-#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)}) //Quick macro for creating a constant variable
-#define __GETC__(var) (call var) //Quick clean macro for getting a value of a constant / compileFinal variable. i.e if(__GETC__(numberone) == 1) then {}
+#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 isEqualTo "STRING") then {var2} else {str(var2)}) //Quick macro for creating a constant variable
+#define __GETC__(var) (call var) //Quick clean macro for getting a value of a constant / compileFinal variable. i.e if(__GETC__(numberone) isEqualTo 1) then {}
 #define __SUB__(var1,var2) var1 = var1 - var2
 
 //Control Macros
@@ -36,7 +36,7 @@ if(isNull _ui) then {
 	
 	_isAdmin = _x getVariable ["st_hide", false];
 	
-	if(count _sPos > 1 && isPlayer _x && _distance < 14 && !adminESP && _x != player && vehicle player == player && currentweapon player == "" && !_isAdmin) then {
+	if(count _sPos > 1 && isPlayer _x && _distance < 14 && !adminESP && _x != player && vehicle player isEqualTo player && currentweapon player isEqualTo "" && !_isAdmin) then {
 		if(_x isKindOf "Man") then {
 			_text = format["<t color='#FFFFFF' font='puristaMedium'>%1</t>",_name];
 		} else {

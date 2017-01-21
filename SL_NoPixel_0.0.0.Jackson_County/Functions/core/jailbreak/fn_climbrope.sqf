@@ -13,7 +13,7 @@ while{true} do {
 
 	player setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + 4]; 
 
-	if(player distance endPoint < 5 || _timer == 0 || (_height select 2) > 15) exitwith {};
+	if(player distance endPoint < 5 || _timer isEqualTo 0 || (_height select 2) > 15) exitwith {};
 	_timer = _timer - 1;
 };
 

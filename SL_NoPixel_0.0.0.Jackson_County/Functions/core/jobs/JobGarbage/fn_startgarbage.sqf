@@ -25,7 +25,7 @@ taskrunning = true;
 _markername = format["job%1",getPlayerUID player];
 _warnings = 0;
 _garbageLevel = 0;
-while{taskrunning  && myjob == "TrashMan" } do {
+while{taskrunning  && myjob isEqualTo "TrashMan" } do {
 
 	if(playertasks isequalTO []) then {
 
@@ -56,7 +56,7 @@ while{taskrunning  && myjob == "TrashMan" } do {
 
 		if(player distance ((playertasks select 0) select 0) < 15 && vehicle player != player && player distance vehspawned < 10) then {
 
-			if(((playertasks select 0) select 1) == "bin") then {
+			if(((playertasks select 0) select 1) isEqualTo "bin") then {
 				["bin"] spawn client_fnc_collectGarbage;
 				_warnings = 0;
 				paycheck = paycheck + 130;
@@ -64,14 +64,14 @@ while{taskrunning  && myjob == "TrashMan" } do {
 				_garbagelevel = _garbagelevel + 1;
 			};
 
-			if(((playertasks select 0) select 1) == "dump") then {
+			if(((playertasks select 0) select 1) isEqualTo "dump") then {
 				["dump"] spawn client_fnc_collectGarbage;
 				_warnings = 0;
 				paycheck = paycheck + 250;
 				playertasks deleteat 0;
 			};
 
-			if(((playertasks select 0) select 1) == "player") then {
+			if(((playertasks select 0) select 1) isEqualTo "player") then {
 				//create function here to pick up player dropped garbage then pay the user.
 				hint "Zbierz śmieci znajdujące się w pobliżu.";
 				_garbagelevel = _garbagelevel + 1;
@@ -83,6 +83,6 @@ while{taskrunning  && myjob == "TrashMan" } do {
 	};
 };
 
-if(myjob == "TrashMan") then { [] call client_fnc_jobEnd; };
+if(myjob isEqualTo "TrashMan") then { [] call client_fnc_jobEnd; };
 
 

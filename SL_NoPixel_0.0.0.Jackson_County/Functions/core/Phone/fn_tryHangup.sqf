@@ -8,7 +8,7 @@ if(tryingCall) exitwith {
 	["Koncze polaczenie.", false] spawn domsg; 
 	[] call client_fnc_resetcall;
 };
-if(myCallOwner == player) exitwith {
+if(myCallOwner isEqualTo player) exitwith {
 	["Koncze polaczenie.", false] spawn domsg; 
 	[] call client_fnc_resetcall;	
 };

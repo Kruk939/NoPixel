@@ -18,7 +18,7 @@ if(_chance > 80) then {
 
 	if(isNil "modifier") then { modifier = 0 };
 
-	if(modifier == 0) then { 
+	if(modifier isEqualTo 0) then { 
 				
 
 
@@ -26,7 +26,7 @@ if(_chance > 80) then {
 
 		while {true} do {
 
-			if(modifier == 0) exitwith { hint "Twój szał rabowania dobiegł końca"; };
+			if(modifier isEqualTo 0) exitwith { hint "Twój szał rabowania dobiegł końca"; };
 			uisleep 20;
 			modifier = modifier - 1;
 

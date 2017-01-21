@@ -16,7 +16,7 @@ vehspawned = createVehicle ["ivory_r34", getpos player, [], 0, "NONE"];
 _cashcheck = [2,2000] call client_fnc_checkmoney;
 if!(_cashCheck) exitwith { hint "Nie masz pieniędzy!"; };
 _currentitemindex = lbCurSel 1500;
-if (_currentitemindex == -1) exitWith {};
+if (_currentitemindex isEqualTo -1) exitWith {};
 _car = lbData [1500, _currentitemindex];
 lbDelete [1500, _currentitemindex];
 

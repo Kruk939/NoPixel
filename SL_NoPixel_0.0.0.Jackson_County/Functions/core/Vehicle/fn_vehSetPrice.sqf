@@ -32,7 +32,7 @@ _pos = [
 ];
 
 if(_price <= 0) exitWith { ["Cena nie zgadza się!", true] spawn domsg; }; //Za mala cena
-if(count _carsInShop == count _pos) exitWith { ["W salonie nie ma miejsca!", true] spawn domsg; }; //Nie ma miejsca w salonie
+if(count _carsInShop isEqualTo count _pos) exitWith { ["W salonie nie ma miejsca!", true] spawn domsg; }; //Nie ma miejsca w salonie
 if(isNull _veh) exitWith {}; //Nie ma takiego pojazdu
 if(!(_veh isKindOf "Car")) exitWith {}; //To nie jest samochod
 if(player distance _shop > 40) exitWith { ["Jesteś za daleko!", true] spawn domsg; }; //Jestes za daleko

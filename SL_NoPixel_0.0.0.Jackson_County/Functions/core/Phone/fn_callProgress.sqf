@@ -3,7 +3,7 @@ callInProgress = true;
 if(isNil "trackedby") then { trackedby = []; };
 
 if(count trackedby > 0) then {
-	if(str CurrentCursorTarget find "cabinatelefonica" == -1) then {
+	if(str CurrentCursorTarget find "cabinatelefonica" isEqualTo -1) then {
 		[mycallowner,player] remoteexec ["client_fnc_trackedcall",trackedby];
 	};
 };

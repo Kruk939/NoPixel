@@ -14,7 +14,7 @@
  private["_updateStr"];
 
 if(isNil "_playerUID" || isNil "_type") exitWith {diag_log "fn_connected.sqf: nil (1)";}; 
-if("_type" == "") exitWith {diag_log "fn_connected.sqf: _type empty (2)";}; 
+if("_type" isEqualTo "") exitWith {diag_log "fn_connected.sqf: _type empty (2)";}; 
 //if(isNull _playerUID || isNull "_type") exitWith {diag_log "fn_connected.sqf: _playerUID is null (3)"};
  
  

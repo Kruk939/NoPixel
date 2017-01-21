@@ -1,8 +1,8 @@
 params["_input"];
 
-if(_input == 3) exitwith { paintballing = false; };
+if(_input isEqualTo 3) exitwith { paintballing = false; };
 if(isNil "paintballscore") then { paintballscore = 0; };
-if(_input == 2) exitwith { paintballscore = paintballscore + 1; player say "racebeep1"; };
+if(_input isEqualTo 2) exitwith { paintballscore = paintballscore + 1; player say "racebeep1"; };
 
 private ["_spawnpoints","_midpos"];
 
@@ -30,7 +30,7 @@ removeHeadgear player;
 removeGoggles player;
 
 
-if(_input == 1) then {
+if(_input isEqualTo 1) then {
 
 	_guns = ["Weapon_angel_F","Weapon_angel_rasta_F","Weapon_egosl_F","Weapon_angel_kitty_F","Weapon_invert_mini_dye_F","Weapon_tippmann_x7_F","Weapon_tippmann_x7_UMP_F"];
 	_gun = _guns call BIS_fnc_selectRandom;
@@ -93,7 +93,7 @@ paintballhit = false;
 [_amount] call Client_fnc_addCash;
 [format["Wygrałeś %1 dolarów!",_amount],false] spawn domsg;
 
-if(client_energy == 0) then {
+if(client_energy isEqualTo 0) then {
 	player enablefatigue true;
 	player enablestamina true;
 };

@@ -21,18 +21,18 @@ switch(typeName _colorBody) do {
 	};
 };
 
-if(_texture != "" && _colorBodyTexture == "") then { _colorBodyTexture=_texture; };
+if(_texture != "" && _colorBodyTexture isEqualTo "") then { _colorBodyTexture=_texture; };
 
 _colorBodyTexture = getText(configfile >> "CfgIvoryTextures" >> _colorBodyTexture >> "texture");
 
 
 _colorBodyMaterial = getText(configfile >> "CfgIvoryMaterials" >> _colorBodyMaterial >> "material");
-if(_colorBodyMaterial == "") then { 
+if(_colorBodyMaterial isEqualTo "") then { 
 	_colorBodyMaterial = "ivory_data\data\metallic.rvmat"; 
 };
 
 _colorRims = getText(configfile >> "CfgIvoryTextures" >> _colorRims >> "texture");
-if(_colorRims == "") then { 
+if(_colorRims isEqualTo "") then { 
 	_defaultRims = getArray(configfile >> "CfgVehicles" >> (typeOf _car) >> "hiddenSelectionsTextures");
 	_colorRims = _defaultRims select 1;
 };

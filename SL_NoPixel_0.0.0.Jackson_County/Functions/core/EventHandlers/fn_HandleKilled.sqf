@@ -7,7 +7,7 @@ disableSerialization;
 if(deadplayer) exitwith {};
 deadPlayer = true;
 
-if(vehicle player == player) then {
+if(vehicle player isEqualTo player) then {
 	player playmove "deadstate";
 };
 
@@ -43,7 +43,7 @@ if(_fuck != _you) then {
 		shooting_death = false;
 	} else {
 		[getpos player, "News", "Shooting"] remoteexec ["server_fnc_giveTask",2];
-		if(_headshot == 1) then { [format["%1 headshot %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 downed %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
+		if(_headshot isEqualTo 1) then { [format["%1 headshot %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 downed %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
 		client_kcCamera  = "CAMERA" camCreate (getPosATL _killer); 
 		showCinemaBorder false;    
 		client_kcCamera cameraEffect ["EXTERNAL", "BACK"];  
@@ -82,7 +82,7 @@ client_deathCamera camCommit 0;
 
 
 createdialog "deathscreen";
-(findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == (_this select 1)) then {true}"];
+(findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) isEqualTo (_this select 1)) then {true}"];
 
 
 _unit spawn
@@ -116,7 +116,7 @@ player setdamage 0;
 [] spawn {
 	while{true} do {
 		sleep 1;
-		if( vehicle player == player && animationstate player != "deadstate" ) then {  player playmove "deadstate"; };
+		if( vehicle player isEqualTo player && animationstate player != "deadstate" ) then {  player playmove "deadstate"; };
 		if( vehicle player != player && animationstate player != "KIA_commander_MRAP_03" ) then { player action ["Eject", vehicle player]; player playmove "KIA_commander_MRAP_03"; };
 
 		player setOxygenRemaining 1;

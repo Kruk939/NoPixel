@@ -7,19 +7,19 @@ _Cop = player getvariable "Cop";
 _Fire = player getvariable "Fire";
 _Mafia = player getvariable "Mafia";
 _legal = player getvariable "legal";
-if(myJob == "Cop" && _Cop < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
-if(myJob == "EMS" && _EMS < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
-if(myJob == "Fire" && _Fire < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
-if(myJob == "Mafia" && _Mafia < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob isEqualTo "Cop" && _Cop < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob isEqualTo "EMS" && _EMS < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob isEqualTo "Fire" && _Fire < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob isEqualTo "Mafia" && _Mafia < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 
-if((myJob == "Judge" || myJob == "Lawyer") && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if((myJob isEqualTo "Judge" || myJob isEqualTo "Lawyer") && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 
 
-if(myJob == "Cop") then { _max = _Cop; };
-if(myJob == "EMS") then { _max = _EMS; };
-if(myJob == "Fire") then { _max = _Fire; };
-if(myJob == "Mafia") then { _max = _Mafia; };
-if(myJob == "Judge" || myJob == "Lawyer") then { _max = _legal; };
+if(myJob isEqualTo "Cop") then { _max = _Cop; };
+if(myJob isEqualTo "EMS") then { _max = _EMS; };
+if(myJob isEqualTo "Fire") then { _max = _Fire; };
+if(myJob isEqualTo "Mafia") then { _max = _Mafia; };
+if(myJob isEqualTo "Judge" || myJob isEqualTo "Lawyer") then { _max = _legal; };
 
 createdialog "promotion";
 
@@ -32,7 +32,7 @@ lbClear _list;
 _i = 0;
 
 while{_i < _max} do {
-	if(_i == 0) then { 
+	if(_i isEqualTo 0) then { 
 		_list lbAdd "Usun";
 	} else {
 		_list lbAdd format["RANGA: %1", _i];

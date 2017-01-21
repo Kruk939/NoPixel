@@ -7,7 +7,7 @@ if(globalProtection != 0) exitwith { hint "Już przerabiam"; };
 _localProtection = 0;
 
 
-_total = {_x == "CG_DrugBrick"} count magazines player;
+_total = {_x isEqualTo "CG_DrugBrick"} count magazines player;
 _i = _total;
 
 playSound3D ["CG_Jobs\sounds\meth\drugBoil.ogg", player, false, getPosasl player, 31, 1, 15];

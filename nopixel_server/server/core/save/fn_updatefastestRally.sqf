@@ -25,7 +25,7 @@ if (_winner) then {
  
 _position = _position + 1; 
  
-if(_position == 1) then { 
+if(_position isEqualTo 1) then { 
 _new2 = rallyracetimes select 1; 
 _updatestr = format ["updateRaceTimeRally:%1:%2:%3",(_new2 select 1),(_new2 select 2),2]; 
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 

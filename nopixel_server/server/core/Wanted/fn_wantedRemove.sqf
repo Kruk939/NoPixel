@@ -2,7 +2,7 @@ _caseID = _this select 0;
 _caseID = _caseID select 0; 
 _status = _this select 1;
 
-if (_status == 0) then { 
+if (_status isEqualTo 0) then { 
  
 _updatestr = format ["updateCrime:%1:%2:%3", _status, 0, _caseID]; 
 _del = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 

@@ -34,7 +34,7 @@ if (str _jobtype find "Mafia" > -1) exitwith {
 	publicvariable "currentMafia";
 };
 
-if(str _jobtype find "doughnuts" > -1 || str _jobtype == "doughnuts") exitWith {
+if(str _jobtype find "doughnuts" > -1 || str _jobtype isEqualTo "doughnuts") exitWith {
 	[] spawn client_fnc_startDoughnuts;
 	currentDoughnuts pushback _player;
 	publicVariable "currentDoughnuts";
@@ -60,19 +60,19 @@ if (str _jobtype find "Fire Dispatch" > -1) exitwith {
 	publicvariable "currentFireDispatch";	
 };
 
-if (str _jobtype find "mail" > -1 || str _jobtype == "mail") exitwith {
+if (str _jobtype find "mail" > -1 || str _jobtype isEqualTo "mail") exitwith {
 	[] spawn client_fnc_mailSystem;
 	currentMailmen pushback _player;
 	publicvariable "currentMailmen";	
 };
 
-if (str _jobtype find "taxi" > -1 || str _jobtype == "taxi") exitwith {
+if (str _jobtype find "taxi" > -1 || str _jobtype isEqualTo "taxi") exitwith {
 	[] spawn client_fnc_startTaxi;
 	currentTaxiDrivers pushback _player;
 	publicvariable "currentTaxiDrivers";
 };
 
-if (str _jobtype find "security" > -1 || str _jobtype == "security") exitwith {
+if (str _jobtype find "security" > -1 || str _jobtype isEqualTo "security") exitwith {
 	[] spawn client_fnc_startSecurity;
 	currentsecurity pushback _player;
 	publicvariable "currentSecurity";	
@@ -102,19 +102,19 @@ if (str _jobtype find "Tow Truck Driver" > -1) exitwith {
 	publicvariable "currentTowTruckDrivers";
 };
 
-if (str _jobtype find "trashman" > -1 || str _jobtype == "trashman") exitwith {
+if (str _jobtype find "trashman" > -1 || str _jobtype isEqualTo "trashman") exitwith {
 	[] spawn client_fnc_startGarbage;
 	currentTrashMan pushback _player;
 	publicvariable "currentTrashman";	
 };
 
-if (str _jobtype find "reporter" > -1 || str _jobtype == "reporter") exitwith {
+if (str _jobtype find "reporter" > -1 || str _jobtype isEqualTo "reporter") exitwith {
 	[] spawn client_fnc_startNews;	
 	currentNewsMan pushback _player;
 	publicvariable "currentNewsMan";
 };
 
-if (str _jobtype find "repairman" > -1 || str _jobtype == "repairman") exitwith {	
+if (str _jobtype find "repairman" > -1 || str _jobtype isEqualTo "repairman") exitwith {	
 	[] spawn client_fnc_startRepair;
 	currentRepairmen pushback _player;
 	publicvariable "currentRepairmen";	

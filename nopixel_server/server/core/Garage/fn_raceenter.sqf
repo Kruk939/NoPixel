@@ -10,7 +10,7 @@ if (raceprogress) exitwith {
     "Race already in progress, sorry!"
     remoteexec["hint", _player];
 };
-if (racecount == 24) exitwith {
+if (racecount isEqualTo 24) exitwith {
     "Race is full, sorry!"
     remoteexec["hint", _player];
 };
@@ -27,7 +27,7 @@ racecount = racecount + 1;
 
 
 
-if (racecount == 1) then {
+if (racecount isEqualTo 1) then {
     "A F1 is starting in 3 minutes"
     remoteexec["hint", -2];
     uisleep 60;

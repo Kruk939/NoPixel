@@ -16,7 +16,7 @@ _nearc = nearestObjects[getPos player,["plp_ct_woodboxlightbig"],55];
 if(count _nearc > 0) exitwith { hint "Nie mozesz tego zrobic, kiedy skrzynia jest na zewnatrz."; };
 
 _toDo = _this select 1;
-if(_toDo == "nameUpdate") exitwith {
+if(_toDo isEqualTo "nameUpdate") exitwith {
 	if ((closetime + 180) > time) exitwith {hint "Musisz odczekac 3 minuty.";};
 	_newName = ctrlText 8331;
 	hint format ["Nowa nazwa: %1",_newName];
@@ -25,13 +25,13 @@ if(_toDo == "nameUpdate") exitwith {
 	deleteMarkerLocal "SklepZamknięty";
 	sklepotw = 1;
 };
-if(_toDo == "finishUpdate") exitwith {
+if(_toDo isEqualTo "finishUpdate") exitwith {
 	if ((closetime + 180) > time) exitwith {hint "Musisz odczekac 3 minuty.";};
 	hint "Zmiany zostały zachowane w bazie danych, gracze będą teraz widzieć nowe ceny.";
 	[player,shopcontent] remoteExec ["server_fnc_finishStoreUpdate",2];
 };
 
-if(_toDo == "start") then {
+if(_toDo isEqualTo "start") then {
 	if(dialog) then {	
 		closedialog 0; 
 		createdialog "shop_update"; 
@@ -50,9 +50,9 @@ shopcontent = _this select 0;
 
 
 
-if(_toDo == "update") then {
+if(_toDo isEqualTo "update") then {
 	_index = lbCurSel (9001);
-	if (_index == -1) exitWith {};
+	if (_index isEqualTo -1) exitWith {};
 	_status = lbData[9001, _index];
 	_status = call compile format["%1", _status];
 	_currentShop = (_status select 0);

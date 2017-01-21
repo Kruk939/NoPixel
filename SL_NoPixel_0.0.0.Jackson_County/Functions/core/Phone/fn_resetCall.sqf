@@ -1,5 +1,5 @@
-if(myjob == "Cop") exitwith { [] call client_fnc_ChangePolice; };
-if(myjob == "EMS" || myjob == "Fire") exitwith { [] call client_fnc_ChangePolice; };
+if(myjob isEqualTo "Cop") exitwith { [] call client_fnc_ChangePolice; };
+if(myjob isEqualTo "EMS" || myjob isEqualTo "Fire") exitwith { [] call client_fnc_ChangePolice; };
 playSound "cgphone_hangup";
 player setvariable["PhoneCallNumber",0,true];
 player setvariable["PhoneID",0,true];

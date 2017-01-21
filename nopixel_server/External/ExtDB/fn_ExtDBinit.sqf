@@ -26,7 +26,7 @@ if ( isNil {uiNamespace getVariable "extDB_SQL_CUSTOM_ID"}) then
 _result = "extdb2" callExtension "9:VERSION"; 
  
 diag_log format ["extdb2: Version: %1", _result]; 
-if(_result == "") exitWith {diag_log "extdb2: Failed to Load"; false}; 
+if(_result isEqualTo "") exitWith {diag_log "extdb2: Failed to Load"; false}; 
  
  
  

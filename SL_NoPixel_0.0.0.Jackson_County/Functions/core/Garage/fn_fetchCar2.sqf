@@ -14,7 +14,7 @@ vehspawned = createVehicle ["ivory_r34", getpos player, [], 0, "NONE"];
 */
 
 _currentitemindex = lbCurSel 1500;
-if (_currentitemindex == -1) exitWith {};
+if (_currentitemindex isEqualTo -1) exitWith {};
 _car = lbData [1500, _currentitemindex];
 
 _car = call compile format["%1", _car]; 

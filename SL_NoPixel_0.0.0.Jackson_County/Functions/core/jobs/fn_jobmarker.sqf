@@ -7,4 +7,4 @@ _marker setMarkerTypelocal "hd_dot";
 _marker setMarkerColorlocal "ColorOrange";
 _marker setMarkerTextlocal "Tasked Location";
 
-if(myjob == "Cop") then { [_pos,"Rabunek sklepu","Job"] spawn client_fnc_hudHelper; } else { [_pos,"Job Task","Job"] spawn client_fnc_hudHelper;};
+if(myjob isEqualTo "Cop") then { [_pos,"Rabunek sklepu","Job"] spawn client_fnc_hudHelper; } else { [_pos,"Job Task","Job"] spawn client_fnc_hudHelper;};
