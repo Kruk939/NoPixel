@@ -14,7 +14,8 @@
 _price = _this select 0;
 _veh = _this select 1;
 _buyer = _this select 2;
-_information = _this select 3;
+_information = _veh getVariable ["information",[]];
+if(count _information isEqualTo 0) exitWith { [_buyer, "car", format ["Nie mogl kupic samochodu i stracil: $%1",_price]] spawn Server_fnc_insertLog; };
 
 _player = objNull;
 
@@ -26,8 +27,14 @@ _garageArray pushback _information;
 
 {if (getplayeruid _x isEqualTo _carowner) exitwith { _player = _x; }; } foreach playableunits;
 
-["garage",_information] remoteExec ["client_fnc_setVariable", _buyer];
-[_price, _veh] remoteExec["client_fnc_vehSold", _player];
- 
-_updatestr = format ["updateVehOwner:%1:%2", _information select 0, getPlayerUID _buyer]; 
-_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+if(isNull _player) then {
+	_updatestr = format ["updateVehOwnerPay:%1:%2", _price, _carowner]; 
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+} else {
+	["garage",_information] remoteExec ["client_fnc_setVariable", _buyer];
+	[_price, _veh] remoteExec["client_fnc_vehSold", _player];
+	 
+	_updatestr = format ["updateVehOwner:%1:%2", _information select 0, getPlayerUID _buyer]; 
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+};
+deleteVehicle _veh;

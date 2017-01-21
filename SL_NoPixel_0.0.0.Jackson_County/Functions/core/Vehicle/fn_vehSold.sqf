@@ -20,4 +20,3 @@ player setVariable ["atm", _price,false];
 _pia = Current_Cars find _veh;
 Current_Cars deleteAt _pia;
 [getPlayerUID player, "usedgarage", current_cars] remoteExec ["Server_fnc_setVariable",2];
-deleteVehicle _veh;

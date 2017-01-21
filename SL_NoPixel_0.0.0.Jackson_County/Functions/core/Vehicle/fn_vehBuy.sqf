@@ -20,7 +20,6 @@ if(_cash < _price) exitWith {
 ["Nie masz wystarczającej ilosci pieniędzy.", true] spawn domsg;
 }; //Nie masz pieniedzy
 [_price] call Client_fnc_removeCash;
-_infomation = _veh getVariable ["information",[]];
 
 
 
@@ -34,5 +33,5 @@ _infomation = _veh getVariable ["information",[]];
 _shop setVariable ["CarsToBuy", _carsInShop, true];
 
 
-[_price, _veh, player, _infomation] remoteExec ["Server_fnc_vehBuy",2];
+[_price, _veh, player] remoteExec ["Server_fnc_vehBuy",2];
 ["Pojazd zostanie dostarczony do Twojego garażu.", true] spawn domsg;
