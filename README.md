@@ -37,8 +37,7 @@
     1. Sukces - ["Sukces","Tekst",[0,255,0,1],""] call Client_fnc_showNotification;
     2. Błąd - ["Błąd","Tekst",[255,0,0,1],""] call Client_fnc_showNotification;
     3. Ostrzeżenie - ["Ostrzeżenie","Tekst",[255,255,0,1],""] call Client_fnc_showNotification;
-    
-* ["Tytuł","Tekst",[R,G,B,A],"Dźwięk"] call Client_fnc_showNotification;
+    4. Ogólny szablon -  ["Tytuł","Tekst",[R,G,B,A],"Dźwięk"] call Client_fnc_showNotification;
 
 
 <hr>
