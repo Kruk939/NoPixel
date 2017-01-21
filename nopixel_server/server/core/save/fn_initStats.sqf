@@ -83,6 +83,7 @@ if (_booli) then {
 
 	_player setVariable ["housecontent", _housecontent, false];
 	_player setVariable ["shopcontent", _shopcontent, false];
+	_player setVariable ["shopname", _shopname, false];
 
 	_inUseVehicles = [];
 	_mycarinfo = [];

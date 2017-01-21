@@ -16,6 +16,7 @@ _holder = createVehicle ["plp_ct_woodboxlightbig", _player modeltoworld[0,2,1], 
 ["You can change prices once the items are stored in a few minutes.", false] remoteExec ["domsg",_player];
  
 _shopcontent = _player getVariable "shopcontent"; 
+_shopname = _player getVariable "shopname";
  
 _myweapons = (_shopcontent select 0);  
 _mymagazines = (_shopcontent select 1);  
@@ -147,7 +148,7 @@ deleteVehicle _holder;
  
 if(getmarkerpos format["%1",getPlayerUID _player] isEqualTo [0,0,0]) then { deletemarker format["%1",getPlayerUID _player]; }; 
  
-if(_shopcontent isequalto [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]) then { 
+if(_shopcontent isEqualTo [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]) then { 
 _marker = createMarkerLocal [getPlayerUID player, getpos _player]; 
 _marker setMarkerShapeLocal "ICON"; 
 _marker setMarkerTypeLocal "hd_dot"; 
@@ -156,11 +157,16 @@ _marker setMarkerTextLocal format["%1 - ZAMKNIĘTY", _shopname];
 _marker = createMarker [getPlayerUID player, getpos _player]; 
 _marker setMarkerShape "ICON"; 
 _marker setMarkerType "hd_dot"; 
-if!(_shopname isEqualTo "") then{
-	_marker setMarkerText format["%1", _shopname]; 
-	} else {
-	_msg = "Nie nazwałem sklepu";
-	_marker setMarkerText format["%1", _msg]; 
+if (isNil _shopname) then {
+	_text = "Nie nazwałem sklepu";
+	_marker setMarkerText format["%1", _text]; 
 };
+if (_shopname isEqualTo "") then {
+	_text = "Nie nazwałem sklepu";
+	_marker setMarkerText format["%1", _text];
+} else {
+	_marker setMarkerText format["%1", _shopname];
+};
+
 
 }; 
