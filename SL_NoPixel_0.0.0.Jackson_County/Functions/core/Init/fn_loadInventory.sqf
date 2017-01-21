@@ -263,4 +263,5 @@ if(client_energy > 0) then {
 	player enablestamina false;
 };
 [player, "connection", "Gracz wszedl serwer"] remoteExec ["Server_fnc_insertLog", 2];
-[player,"1"] remoteExec ["Server_fnc_connected", 2];
+_playerUID = getPlayerUID player;
+[_playerUID, "1"] remoteExec ["Server_fnc_connected", 2];
