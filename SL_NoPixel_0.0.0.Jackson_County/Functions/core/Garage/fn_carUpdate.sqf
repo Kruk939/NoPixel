@@ -75,7 +75,6 @@ if(typeof _PROCESS IN ["ADM_1964_Impala","ADM_1969_Charger","ADM_1969_Camaro","A
 _cashcheck = [2,_price] call client_fnc_checkmoney;
 if!(_cashCheck) exitwith { hint format["$%1 - Nie masz wystarczająco dużo pieniędzy!",_price]; };
 
-[_price] call Client_fnc_removebank;
 
 _vehicle = _PROCESS;
 _oldveh = _vehicle;
@@ -133,7 +132,7 @@ if(_attempt && _oldveh in current_cars) then {
 	deletevehicle _oldveh;
 
 	[_garage,_numberPlate,_newVehicle,player,getPlayerUID player,Current_Cars] remoteexec ["server_fnc_upgradeVehicle",2];
-	[_price] call Client_fnc_removeCash;
+	[_price] call Client_fnc_removebank;
 
 } else {
 	hint "Ten pojazd został już ulepszony, albo nie może być ulepszony w ogóle!";
