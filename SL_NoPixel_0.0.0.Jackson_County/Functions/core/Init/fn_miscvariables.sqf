@@ -4,6 +4,7 @@ closetime = time;
 sklepotw = 0;
 lastsync = time;
 lastforcesync = time;
+lastInvsync = time;
 bankrobber = 1;
 myjob = "none";
 fires = [];

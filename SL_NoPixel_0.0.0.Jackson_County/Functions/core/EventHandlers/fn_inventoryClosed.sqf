@@ -1,9 +1,14 @@
+/*
+	Author: Kajetan "Kruk" Mruk
+	Date: 22.01.2017 (Non-retard Units)
+	
+	Params: none
+	Description: Function that sends request to the server to save player inventory
+	Return: nothing
+*/
 private["_container","_unit","_time"];
-_unit = _this select 0;
-_container = _this select 1;
 _time = time;
-if(lastInvsync - _time < 120) exitWith {};
+if(_time - lastInvsync < 120) exitWith {};
 
-
-[player, getPlayerUID player] remoteExec ["Server_fnc_invSave",2];
+[player, getPlayerUID player] remoteExec ["Server_fnc_invSave", 2];
 lastInvsync = _time;
