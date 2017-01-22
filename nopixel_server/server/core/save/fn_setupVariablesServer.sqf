@@ -24,7 +24,8 @@ currentTowTruckDrivers = [];
 currentTrashMan = []; 
 currentNewsMan = []; 
 currentRepairmen = []; 
-currentTaxiDrivers = []; 
+currentTaxiDrivers = [];
+currentDoughnuts = [];
  
 MafiaHoldings = 0; 
  
@@ -35,6 +36,7 @@ MafiaLoan2 = [];
 publicvariable "currentMedicDispatch"; 
 publicvariable "currentPoliceDispatch"; 
 publicvariable "currentFireDispatch"; 
+publicVariable "currentDoughnuts";
  
 publicvariable "currentJudges"; 
 publicvariable "currentLawyers"; 
