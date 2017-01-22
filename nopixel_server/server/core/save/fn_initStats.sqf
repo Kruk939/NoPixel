@@ -97,6 +97,7 @@ if (_booli) then {
 	_garage deleteAt _pia;
 	} foreach _inUseVehicles;
 	};
+	if(isNil "currentMayor") then { currentMayor = ""; };
 	_mayor = false;
 	if(_uid == currentMayor) then {
 		_mayor = true;
