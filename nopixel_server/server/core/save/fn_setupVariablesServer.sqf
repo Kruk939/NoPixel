@@ -1,5 +1,5 @@
  
- 
+currentMayor = "";
 activecrates = []; 
 activeshopcrates = []; 
  
