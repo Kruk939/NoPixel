@@ -7,7 +7,7 @@
 	Return: nothing
 */
 private["_myDT","_action"];
-if((count weedPlantArray) > 7) exitwith { ["Nie możesz posadzić więcej niż 7 krzaczków!",false] spawn domsg; };
+if((count weedPlantArray) > 6) exitwith { ["Nie możesz posadzić więcej niż 7 krzaczków!",false] spawn domsg; };
 if(surfacetype getpos player != "#k_rock") exitwith { ["Musisz być na brązowej glebie żeby to posadzić!",false] spawn domsg; };
 ["NP_GrowingPlot",0] spawn client_fnc_removeitem;
 
