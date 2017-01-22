@@ -15,6 +15,7 @@
 * Naprawić pracę dziennikarza
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 * Pożary dla strażaków (importnant)
+* Naprawić znikanie ubrań
 
 <hr>
 #DONE
