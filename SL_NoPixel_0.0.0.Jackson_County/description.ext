@@ -393,6 +393,7 @@ class CfgFunctions
 			class HandleDisconnect {};
 			class fetchitemtype {};
 			class inventoryOpened {};
+			class inventoryClosed {};
 			class removeitem {};
 			class fuckyoucgandprorpandothershitmods {};
 		};
