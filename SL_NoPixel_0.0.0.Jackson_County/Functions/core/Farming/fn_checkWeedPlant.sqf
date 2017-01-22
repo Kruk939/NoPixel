@@ -14,7 +14,7 @@ _requiredAction = _object getVariable ["requiredOutput",""];
 
 if(_checkFinish) exitWith {["Roślina wygląda wporządku.", false] spawn domsg;};
 
-_waterArray = ["UWAGA: Liście opadly!","UWAGA: Roslina zwiedla!"];
+_waterArray = ["UWAGA: Liście opadly!","UWAGA: Roslina zwiedla!", "UWAGA: Gleba jest sucha"];
 _pruneArray = ["UWAGA: Roslina chyba jest za duza!","UWAGA: Roślina wygląda na przerośniętą!"];
 _coolArray = ["UWAGA: Na liściach widać brązowe plamy!","UWAGA: Roślina ma za dużą temperaturę!"];
 _heatArray = ["UWAGA: Roslina gnije!", "UWAGA: Gleba jest zbyt wilgotna!"];
