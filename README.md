@@ -67,5 +67,48 @@
 * \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
 <hr>
-#POMYSLY
-* Zwiekszenie ceny za crafting lockpick'a. Ale wtedy dac mozliwosc sprzedazy auta dla kazdego.
+#ZMIENNE PUBLICZNE
+```
+currentCop - aktualni policjanci * count currentCop (liczba policjantów)
+currentEMS - aktualni medycy * count currentEMS (liczba medyków)
+currentMafia - aktualna mafia * count currentMafia (liczba mafiozów)
+currentFire - aktualni strażacy * count currentFire (liczba strażaków)
+
+currentMedicDispatch - ludzie zapisani na centralę medyczną
+currentPoliceDispatch - ludzie zapisani na centralę policyjną
+currentFireDispatch - ludzie zapisani na centralę strażacką
+
+currentJudges - aktualni sędziowie
+currentLawyers - aktualni adwokaci
+
+currentMailmen - aktualni listonosze
+currentsecurity - aktualni ochroniarze
+currentTowTruckDrivers - aktualni drwale
+currentTrashMan - aktualni smieciarze
+currentNewsMan - aktualni dziennikarze
+currentRepairmen - aktualni mechanicy
+currentTaxiDrivers - aktualni taksówkarze
+currentDoughnuts - aktualni pracujący w firmie Doughnuts 
+```
+
+<hr>
+#ZMIENNE GRACZA (DO OPISANIA)
+```
+wallet
+atm
+bankAccount
+cop
+ems
+mafia
+fire
+legal
+garage
+doughnuts
+phoneBackgorund
+messages
+statuses
+houselevel
+housecontent
+shopcontent
+shopname
+```
