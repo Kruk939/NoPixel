@@ -1,15 +1,30 @@
-detach myDT2;
-growingweed = true;
-player removeAction myDrugAction2;
-hint "Twoja sadzonka została zasadzona!";
-myActionStart2 = myDT2 addAction [ "Start Growing", {  
-	[] spawn client_fnc_weedgrowing;
+/*
+	Author: Unknown edit Kajetan "Kruk" Mruk
+	Date: 22.01.2017 (Non-retard Units)
+	
+	Params:
+		0 - Object - weed plant object
+		1 - Number - ID of the action
+	Description: Function plants the weed and addActions to the weed plant.
+	Return: nothing
+*/
+params["_player","_caller","_action","_myDT"];
+detach _myDT;
+_player removeAction _action;
+
+["Twoja sadzonka została zasadzona!",true] spawn domsg;
+
+
+_action = _myDT addAction [ "Posadź", { 
+	params["_target", "_caller", "_id"];
+	[_target] spawn client_fnc_weedgrowing;
 	myDrugValue2 = 4;
 	totalskills = 4;
-	myDT2 removeaction myActionStart2;
-	myAction12 = myDT2 addAction [ "Podlej rosline", { ["Water"] call client_fnc_upweedgrowing; } ];
-	myAction22 = myDT2 addAction [ "Przytnij rosline", { ["Prune"] call client_fnc_upweedgrowing; } ];
-	myAction32 = myDT2 addAction [ "Ochlodz rosline", { ["Cool"] call client_fnc_upweedgrowing; } ];
-	myAction42 = myDT2 addAction [ "Ogrzej rosline", { ["Heat"] call client_fnc_upweedgrowing; } ];
-	myAction52 = myDT2 addAction [ "Kultywatorowanie", { ["Turnover"] call client_fnc_upweedgrowing; } ];
+	_target removeAction _id;
+	_target addAction [ "Podlej rosline", { ["Water", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	_target addAction [ "Przytnij rosline", { ["Prune", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	_target addAction [ "Ochlodz rosline", { ["Cool", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	_target addAction [ "Ogrzej rosline", { ["Heat", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	_target addAction [ "Kultywatorowanie", { ["Turnover", (_this select 0)] call client_fnc_upweedgrowing; } ];
 } ];
+weedPlantArray pushBack _myDT;

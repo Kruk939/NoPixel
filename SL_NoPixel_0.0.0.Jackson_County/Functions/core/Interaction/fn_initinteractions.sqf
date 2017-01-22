@@ -456,6 +456,15 @@ NoPixel_InteractionMenuItems = [
 		["(typeof CurrentCursorTarget) IN [""Land_buildingCommercial1"",""Land_buildingCommercial2""]"],
 		["Przeglądaj sklep", "[typeof CurrentCursorTarget,player] remoteExec [""server_fnc_retreiveStoreShopper"",2]",3]
 	],
+	
+	[
+		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget in weedPlantArray && player distance CurrentCursorTarget < 3"],
+		["Sprawdz roślinę", "[CurrentCursorTarget] call client_fnc_checkWeedPlant",3]
+	],
+	[
+		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget getVariable [""growing"",false] && CurrentCursorTarget getVariable [""ready"",false] && player distance CurrentCursorTarget < 3"],
+		["Zetnij roślinę", "[CurrentCursorTarget] call client_fnc_cutDownWeedPlant",3]
+	],
 
 	[
 		//["(player distance myshop < 3) && ("""" != player getvariable ""shop"");"],

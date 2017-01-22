@@ -79,6 +79,7 @@ paycheck = 0;
 //admins
 jesteadmine = 0;
 //if (getplayerUID player IN [""]) then { jesteadmine=1; };
+weedPlantArray = [];
 							//arthur			//danio				//egtu
 if (getplayerUID player IN ["76561198028980508","76561198082441969","76561198013757235"]) then { jesteadmine=2; };
 							//raf				//sid				//dzoka				//teddy
