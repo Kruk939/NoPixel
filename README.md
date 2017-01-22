@@ -16,7 +16,7 @@
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 * Pożary dla strażaków (importnant)
 * Naprawić znikanie ubrań
-* Naprawić zabieranie pieniędzy (opcja podczas gdy jest skutym + zabierający nie dostaje kasy)
+* Naprawić zabieranie pieniędzy (brak opcji zabrania podczas gdy jest skutym + zabierający nie dostaje kasy)
 
 <hr>
 #DONE
