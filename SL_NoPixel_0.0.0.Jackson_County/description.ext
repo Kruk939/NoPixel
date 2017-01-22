@@ -375,6 +375,8 @@ class CfgFunctions
 			class sellore {};
 			class searchCrates {};
 			class sellfish {};
+			class checkWeedPlant {};
+			class cutDownWeedPlant {};
 
 		};
 		class EventHandlers
