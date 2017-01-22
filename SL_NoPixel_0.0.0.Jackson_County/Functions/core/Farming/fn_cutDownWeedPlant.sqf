@@ -19,7 +19,7 @@ if(player distance [1409.98,5740.65,0.00143814] < 400) then {
 };
 
 _msg = format["Sciąłeś %1 paczek zioła!",_randomValue];
-[_msg, false] spawn domsg;
+["Sukces", _msg, [0,255,0,1],""] call Client_fnc_showNotification;
 while {_randomValue > 0} do { player additem _item; _randomValue = _randomValue - 1; };
 _point = weedPlantArray find _object;
 

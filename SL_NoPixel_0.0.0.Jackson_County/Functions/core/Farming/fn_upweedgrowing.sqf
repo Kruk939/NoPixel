@@ -14,7 +14,7 @@ _checkFinish = _object getVariable["checkFinish",false];
 if(_checkFinish) exitwith { ["Nie tak szybko!", false] spawn domsg; };
 
 if(_requiredOutput == _usedAction) then { 
-	hint "To chyba podziałało!";
+	["To chyba podziałało!", false] spawn domsg;
 	playSound3D ["CG_Jobs\sounds\woodchop\woodchop1.ogg", player, false, getPosasl player, 2, 1, 15];
 } else {
 	_quality = _object getVariable ["quality",0];
