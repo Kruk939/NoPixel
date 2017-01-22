@@ -15,6 +15,7 @@ private["_chance"];
 
 priceArrayOre = [30,45,75,10,115];
 publicVariable "priceArrayOre";
+diag_log "SERWER: Pomyślnie ustawiłem startowe ceny surowców";
 
 while {true} do {
     sleep 180;
@@ -22,10 +23,10 @@ while {true} do {
 
     _chance = random(4);
     switch (_chance) do {
-        case 0: {priceArrayOre set [0, 85]; publicVariable "priceArrayOre"; ["Górnicy robią strajk, w zakładach brakuje brązu do produkcji!", false] remoteExec ["domsg",-2]; };
-         case 1: {priceArrayOre set [1, 90]; publicVariable "priceArrayOre"; ["Naukowcy udowodnili że w ciągu kilku miesięcy dostępność wydobywcza żelaza spadnie to 10%!", false] remoteExec ["domsg",-2];};
-        case 2: {priceArrayOre set [2, 105]; publicVariable "priceArrayOre"; ["Kobiety zakochały się w srebnej biżuterii! Producenci biżuterii wskupują duże ilości srebra!", false] remoteExec ["domsg",-2];};
-        case 3: {priceArrayOre set [3, 60]; publicVariable "priceArrayOre"; ["Wzrósł popyt na meble! Firmy produkcyjne mają problem z dostępnością surowca!", false] remoteExec ["domsg",-2];};
-        case 4: {priceArrayOre set [4, 330]; publicVariable "priceArrayOre"; ["Inwestorzy zawachali rynkiem oraz cena za baryłkę oleju wzrosła trzykrotnie!", false] remoteExec ["domsg",-2];};
+        case 0: {priceArrayOre set [0, 85]; publicVariable "priceArrayOre"; ["Górnicy robią strajk, w zakładach brakuje brązu do produkcji!", false] remoteExec ["domsg",-2]; diag_log "SERWER: Pomyślnie wykonano economyEvent: Copper"; };
+         case 1: {priceArrayOre set [1, 90]; publicVariable "priceArrayOre"; ["Naukowcy udowodnili że w ciągu kilku miesięcy dostępność wydobywcza żelaza spadnie to 10%!", false] remoteExec ["domsg",-2]; diag_log "SERWER: Pomyślnie wykonano economyEvent: Iron";};
+        case 2: {priceArrayOre set [2, 105]; publicVariable "priceArrayOre"; ["Kobiety zakochały się w srebnej biżuterii! Producenci biżuterii wskupują duże ilości srebra!", false] remoteExec ["domsg",-2]; diag_log "SERWER: Pomyślnie wykonano economyEvent: Silver";};
+        case 3: {priceArrayOre set [3, 60]; publicVariable "priceArrayOre"; ["Wzrósł popyt na meble! Firmy produkcyjne mają problem z dostępnością surowca!", false] remoteExec ["domsg",-2]; diag_log "SERWER: Pomyślnie wykonano economyEvent: Wood";};
+        case 4: {priceArrayOre set [4, 330]; publicVariable "priceArrayOre"; ["Inwestorzy zawachali rynkiem oraz cena za baryłkę oleju wzrosła trzykrotnie!", false] remoteExec ["domsg",-2]; diag_log "SERWER: Pomyślnie wykonano economyEvent: Oil";};
     };
 };
