@@ -14,6 +14,7 @@
 * Panic button'y dla COP, EMS
 * Naprawić pracę dziennikarza
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
+* Pożary dla strażaków (importnant)
 
 <hr>
 #DONE
