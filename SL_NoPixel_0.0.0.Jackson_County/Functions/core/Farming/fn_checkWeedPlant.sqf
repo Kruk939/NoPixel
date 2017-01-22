@@ -12,7 +12,7 @@ params["_object"];
 _checkFinish = _object getVariable["checkFinish",false];
 _requiredAction = _object getVariable ["requiredOutput",""];
 
-if(_checkFinish) exitWith {hint "Roślina wygląda wporządku.";};
+if(_checkFinish) exitWith {["Roślina wygląda wporządku.", false] spawn domsg;};
 
 _waterArray = ["UWAGA: Liście opadly!","UWAGA: Roslina zwiedla!"];
 _pruneArray = ["UWAGA: Roslina chyba jest za duza!","UWAGA: Roślina wygląda na przerośniętą!"];
