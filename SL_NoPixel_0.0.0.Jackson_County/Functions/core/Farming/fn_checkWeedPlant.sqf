@@ -17,8 +17,8 @@ if(_checkFinish) exitWith {["Roślina wygląda wporządku.", false] spawn domsg;
 _waterArray = ["UWAGA: Liście opadly!","UWAGA: Roslina zwiedla!"];
 _pruneArray = ["UWAGA: Roslina chyba jest za duza!","UWAGA: Roślina wygląda na przerośniętą!"];
 _coolArray = ["UWAGA: Na liściach widać brązowe plamy!","UWAGA: Roślina ma za dużą temperaturę!"];
-_heatArray = ["UWAGA: Roslina gnije!"];
-_turnoverArray = ["UWAGA: Trzeba przerzucić glebę!"];
+_heatArray = ["UWAGA: Roslina gnije!", "UWAGA: Gleba jest zbyt wilgotna!"];
+_turnoverArray = ["UWAGA: Trzeba przerzucić glebę!", "UWAGA: Trzeba napowietrzyć glebę!"];
 _message = "";
 
 switch(_requiredAction) do {
