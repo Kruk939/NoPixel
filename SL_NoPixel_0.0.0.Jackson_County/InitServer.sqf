@@ -1,6 +1,4 @@
 ["rpframework", "SQL_CUSTOM_V2", "rpframework"] spawn ExternalS_fnc_ExtDBinit;
-[] remoteExec ["Server_fnc_resetConnected", 2];
-//[] remoteExec ["Server_fnc_mafiabank",2];
 
 _nearc = nearestObject[[9907.22, 3532.38, 0.00143814], "Land_Gate_C "];
 _newgatepos = getpos _nearc;
@@ -72,7 +70,10 @@ _newgate setdir _newgatedir;
 [] spawn server_fnc_mayorsetup;
 [] spawn server_fnc_racetimes;
 [] spawn server_fnc_rallyracetimes;
-[] spawn server_fnc_mafiabank;
+
+[] remoteExec ["server_fnc_mafiabank", 2]; //Ustawia zmienną z kwotą w bankomacie mafii
+[] remoteExec ["Server_fnc_resetConnected", 2]; //Przy włączeniu serwera zmienia w bazie danych connected=1 na connected=0
+[] remoteExec ["Server_fnc_economyEvents", 2]; //Uruchamia własne eventy dotyczące zachowań rynku
 
 [server_fnc_addJob, 120] execFSM "\NoPixel_server\call.fsm";
 [Server_fnc_cleanup, 1800] execFSM "\NoPixel_server\call.fsm";
