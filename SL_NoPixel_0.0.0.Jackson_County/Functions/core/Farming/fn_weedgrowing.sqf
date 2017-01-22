@@ -1,42 +1,36 @@
-WaterArray = ["UWAGA: Liście opadly!","UWAGA: Roslina zwiedla!"];
-PruneArray = ["UWAGA: Roslina chyba jest za duza!","UWAGA: Roślina wygląda na przerośniętą!"];
-CoolArray2 = ["UWAGA: Na liściach widać brązowe plamy!","UWAGA: Roślina ma za dużą temperaturę!"];
-HeatArray2 = ["UWAGA: Roslina gnije!"];
-TurnoverArray = ["UWAGA: Trzeba przerzucić glebę!"];
-private["_stage1","_stage2"];
+params["_object"];
+
+_waterArray = ["UWAGA: Liście opadly!","UWAGA: Roslina zwiedla!"];
+_pruneArray = ["UWAGA: Roslina chyba jest za duza!","UWAGA: Roślina wygląda na przerośniętą!"];
+_coolArray = ["UWAGA: Na liściach widać brązowe plamy!","UWAGA: Roślina ma za dużą temperaturę!"];
+_heatArray = ["UWAGA: Roslina gnije!"];
+_turnoverArray = ["UWAGA: Trzeba przerzucić glebę!"];
+
 _count = 0;
-checkFinish2 = false;
-while{_count < 10 && growingweed} do {
-	checkFinish2 = true;
+_object setVariable ["checkFinish", false];
+while{_count < 10 && (_object getVariable ["growing",false])} do {
+	_object setVariable ["checkFinish", true];
 	sleep 10;
-	checkFinish2 = false;
+	_object setVariable ["checkFinish", false];
 	_randomValue = round(random 5);
-	if(_randomValue == 1 || _randomvalue == 0) then { requiredOutput2 = "Water"; _message = waterArray call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue == 2) then { requiredOutput2 = "Prune"; _message = PruneArray call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue == 3) then { requiredOutput2 = "Cool"; _message = CoolArray2 call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue == 4) then { requiredOutput2 = "Heat"; _message = HeatArray2 call BIS_fnc_selectRandom; hint _message; };
-	if(_randomValue == 5) then { requiredOutput2 = "Turnover"; _message = TurnoverArray call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 1 || _randomvalue == 0) then { _object setVariable["requiredOutput", "Water"]; _message = _waterArray call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 2) then { _object setVariable["requiredOutput", "Prune"]; _message = _pruneArray call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 3) then { _object setVariable["requiredOutput", "Cool"]; _message = _coolArray call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 4) then { _object setVariable["requiredOutput", "Heat"]; _message = _heatArray call BIS_fnc_selectRandom; hint _message; };
+	if(_randomValue == 5) then { _object setVariable["requiredOutput", "Turnover"]; _message = _turnoverArray call BIS_fnc_selectRandom; hint _message; };
 	sleep 20;	
 	_count = _count + 1;
-	MYDT2 setpos [(getpos mydt2 select 0),(getpos mydt2 select 1),(getpos mydt2 select 2)+0.15];
+	_object setpos [(getpos _object select 0),(getpos _object select 1),(getpos _object select 2)+0.15];
 };
-
-mydrugvalue = mydrugvalue - totalskills;
-
-player removeaction myAction12;
-player removeaction myAction22;
-player removeaction myAction32;
-player removeaction myAction42;
-player removeaction myAction52;
-player removeaction myActionPack2;
-
-if(isNull mydt2) exitwith {};
-
+removeAllActions _object;
+if(isNull _object) exitwith {};
 _randomValue = round(random 3) + 1;
+_quality = _object getVariable["quality",0];
 
-if(myDrugValue2 < 0) then { myDrugValue2 = 1; };
 
-_item = format["CG_WeedBag%1", myDrugValue2];
+if(_quality < 0) then { _quality = 1; };
+
+_item = format["CG_WeedBag%1", _quality];
 
 if(player distance [1409.98,5740.65,0.00143814] < 400) then { 
 	_randomValue = round(random 2) * 2;
@@ -45,6 +39,8 @@ if(player distance [1409.98,5740.65,0.00143814] < 400) then {
 hint format["Wychodowałeś %1 paczek zioła!",_randomValue];
 
 while {_randomValue > 0} do { player additem _item; _randomValue = _randomValue - 1; };
+_point = weedPlantArray find _object;
+if(_point >= 0) then {weedPlantArray deleteAt _point };
 
-deletevehicle myDT2;
+deletevehicle _object;
 player additem "NP_GrowingPlot";
