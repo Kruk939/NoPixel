@@ -10,13 +10,8 @@
 */
 params["_usedAction","_object"];
 _requiredOutput = _object getVariable["requiredOutput",""];
-_checkFinis = _object getVariable["checkFinish",false];
-if(_checkFinis) exitwith { hint "Nie tak szybko!"; };
-
-if(animationState player != "Acts_carFixingWheel") then {
-	player playmovenow "Acts_carFixingWheel";  
-	player disableAI "anim"; 
-};
+_checkFinish = _object getVariable["checkFinish",false];
+if(_checkFinish) exitwith { ["Nie tak szybko!", false] spawn domsg; };
 
 if(_requiredOutput == _usedAction) then { 
 	hint "To chyba podziałało!";
@@ -24,13 +19,15 @@ if(_requiredOutput == _usedAction) then {
 } else {
 	_quality = _object getVariable ["quality",0];
 	_object setVariable ["quality",(_quality - 1)];
-	hint "To nie był dobry wybór..!";
+	["To nie był dobry wybór..!", false] spawn domsg;
 	_randomValue = random 30;
 	if(_randomValue < 5) exitwith { 
-		hint "No cóż... schrzaniłeś!";
-		_object setVariable ["growing",false];
+		["No cóż... schrzaniłeś!", false] spawn domsg;
+		_object setVariable ["growing",false,true];
 		removeAllActions _object;
 		deleteVehicle _object;
 	};
 };
+
+_object setVariable ["actionPerformed", true];
 _object setVariable ["checkFinish",true];

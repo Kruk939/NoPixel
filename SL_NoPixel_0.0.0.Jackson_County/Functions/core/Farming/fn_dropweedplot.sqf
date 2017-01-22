@@ -8,17 +8,14 @@
 	Description: Function plants the weed and addActions to the weed plant.
 	Return: nothing
 */
-params["_myDT","_action"];
+params["_player","_caller","_action","_myDT"];
 detach _myDT;
-player removeAction _action;
+_player removeAction _action;
 
-_myDT setVariable ["growing",true];
-_myDT setVariable ["count",0];
-_myDT setVariable ["quality",2];
 ["Twoja sadzonka została zasadzona!",true] spawn domsg;
 
 
-_action = _myDT addAction [ "Start Growing", { 
+_action = _myDT addAction [ "Posadź", { 
 	params["_target", "_caller", "_id"];
 	[_target] spawn client_fnc_weedgrowing;
 	myDrugValue2 = 4;
