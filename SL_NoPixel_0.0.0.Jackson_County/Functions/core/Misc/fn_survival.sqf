@@ -3,7 +3,7 @@ Survival Koil
 */
 if(isNil "paycheck") then { paycheck = 0; };
 	
-	if(paycheck > 280) then { paycheck = 280; };
+if(paycheck > 500) then { paycheck = 280; };
 
 if(!taskrunning) then {
 	_str = format["Wlasnie otrzymales $35 z %1 w bonusach",paycheck];
