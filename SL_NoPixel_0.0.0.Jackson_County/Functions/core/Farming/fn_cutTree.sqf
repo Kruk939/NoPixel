@@ -33,7 +33,8 @@ if (str _tree find ": t_" > -1) then {
 		if(!isnil "vehspawned") then {
 			[] call client_fnc_packLogs;
 		} else {
-			hint "Musisz się zatrudnić jako drwal by ścinać drzewa!";
+			["Błąd","Musisz się zatrudnić jako drwal by ścinać drzewa!",[255,0,0,1],""] call Client_fnc_showNotification;
+			//hint "Musisz się zatrudnić jako drwal by ścinać drzewa!";
 		};
 	};
 };

@@ -9,7 +9,7 @@ if (count fires > 0) then {
 
     {
 
-        if (_obj distance(_x select 1) < 35 && _chance > 90) then {
+        if (_obj distance(_x select 1) < 40 && _chance > 90) then {
             [(_x select 1)] remoteexec["client_fnc_fireDelete", -2];
             paycheck = paycheck + 250;
         };

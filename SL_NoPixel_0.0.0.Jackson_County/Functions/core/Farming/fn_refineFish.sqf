@@ -37,7 +37,8 @@ _n = 0;
 		playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosasl player, 5, 1, 5];
 		sleep 0.25;
 		if(dialog) then { closedialog 0; };
-		hint "Your fish is being filleted, stay still!";
+		["Sukces","Twoje ryby są filetowane, poczekaj chwilę!",[0,255,0,1],""] call Client_fnc_showNotification;
+		//hint "Your fish is being filleted, stay still!";
 	};
 
 	_n = _n + 1;

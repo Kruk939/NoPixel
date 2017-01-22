@@ -22,7 +22,9 @@ while {_num > 0 } do {
 	_ps setParticleParams [["\a3\data_f\ParticleEffects\Universal\Universal.p3d", 8, 3, 1], "", "Billboard", 1, 8, [0, 0, 0], [0, 0, _moveVel], 0, 10, 7.9, _size2, [1, 3, 6], [[0.5, 0.5, 0.5, 0.15], [0.75, 0.75, 0.75, 0.075], [1, 1, 1, 0]], [0.125], 1, 0, "", "", _location];  
 	_ps setDropInterval 0.05; 
 
-	FIRES PUSHBACK [_PS,_location];
+	"test_EmptyObjectForFireBig" createVehicleLocal _location;
+
+	fires PUSHBACK [_PS,_location];
 	_num = _num - 1;
 	
 };

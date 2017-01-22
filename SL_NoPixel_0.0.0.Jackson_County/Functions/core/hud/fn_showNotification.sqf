@@ -44,4 +44,8 @@ _ctrlText ctrlCommit 1;
 _ctrlStrip ctrlSetPosition [0.0055 * safezoneW + safezoneX, (ctrlPosition _ctrlStrip) select 1, (ctrlPosition _ctrlStrip) select 2, ctrlTextHeight _ctrlText];
 _ctrlStrip ctrlCommit 1;
 
-if (_sound != "") then {playSound _sound};
+if (_sound != "") then {
+	playSound _sound
+} else {
+	player say "slideout";
+};
