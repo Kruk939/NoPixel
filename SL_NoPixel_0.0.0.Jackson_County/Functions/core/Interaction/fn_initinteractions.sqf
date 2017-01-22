@@ -246,7 +246,7 @@ NoPixel_InteractionMenuItems = [
 
 
 	[
-		["(getpos player) distance [1055,3660,0.014] < 20 && (player getvariable ""Mafia"") > 0 "],
+		["myJob == ""Mafia"" && (getpos player) distance [1055,3660,0.014] < 20"],
 		["Sprzedaj pojazd", " ['Sprzedawanie',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",2]
 	],
 
