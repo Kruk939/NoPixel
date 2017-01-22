@@ -7,7 +7,7 @@ _Cop = player getvariable "Cop";
 _Fire = player getvariable "Fire";
 _Mafia = player getvariable "Mafia";
 _legal = player getvariable "legal";
-if(myJob isEqualTo "Cop" && _Cop < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob isEqualTo "Cop" && _Cop < 8) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "EMS" && _EMS < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "Fire" && _Fire < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "Mafia" && _Mafia < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
