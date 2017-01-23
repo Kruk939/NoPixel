@@ -20,6 +20,7 @@
 * Dodanie pracy kierowcy autobusu.
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 * Naprawić znikanie ubrań - przy syncu reload ubrań
+* Przeszukiwanie sklepu / domu dla policji
 
 
 <hr>
