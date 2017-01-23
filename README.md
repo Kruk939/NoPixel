@@ -10,6 +10,7 @@
 * Napady na sklep
 * Napady na bank
 * Sprawdzić więzienie
+* Sprawdzanie właścicela sklepu
 * Pożary dla strażaków (importnant)
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
