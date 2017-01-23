@@ -550,7 +550,7 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
-		["Pączkowe ubranka", "closedialog 0; createdialog ""GeneralStore_Menu""; [""doughnuts_general""] spawn client_fnc_LoadStore;",3]
+		["Pączkowe ubranka", "closedialog 0; createdialog ""Clothing_Menu""; [""doughnuts_general""] spawn client_fnc_LoadStore;",3]
 	],
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
