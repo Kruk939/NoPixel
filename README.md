@@ -15,8 +15,8 @@
 * Naprawić pracę dziennikarza
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 * Pożary dla strażaków (importnant)
-* Naprawić znikanie ubrań
-* Naprawić zabieranie pieniędzy (brak opcji zabrania podczas gdy jest skuty + zabierający nie dostaje kasy)
+* Naprawić znikanie ubrań - przy syncu reload ubrań
+* Naprawić zabieranie pieniędzy (brak opcji zabrania podczas gdy jest skuty + zabierający nie dostaje kasy) - do sprawdzenia czy działa
 
 <hr>
 #DONE
@@ -34,6 +34,7 @@
 * Panel gracza pod nową misję
 * Naprawiono bankomat mafii
 * Przygotowano misję pod system odszkodowań (w bazie danych czy osoba jest połączona z serwerem ; resetuje się przy restarcie)
+* Zbieranie marichuany - zwiększona ilość, naprawione hodowanie oraz zwiększony czas
 
 <hr>
 #DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
@@ -49,7 +50,7 @@
 ```
 /*
  	Author: XYZ
- 	Date: XYZ (Non-retard Units)
+ 	Date: XYZ
  	
  	Params:
  		1 - Object - XYZ
