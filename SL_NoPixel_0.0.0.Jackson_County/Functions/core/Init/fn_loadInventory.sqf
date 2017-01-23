@@ -36,11 +36,6 @@ _doughnuts = _this select 26;
 
 _higherup = false;
 
-if(_mayor) then { 
-	[] spawn client_fnc_mayorsetup; 
-	_house = getpos nearestObject [[9949.03,3732.87,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
 
 if(_mafia == 10) then {
 	//format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];
@@ -91,6 +86,10 @@ if(_legal == 8) then {
 	_house = getpos nearestObject [[8984.55,3274.12,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
+if(_mayor) then { 
+	[] spawn client_fnc_mayorsetup; 
+	_house = getpos nearestObject [[9949.03,3732.87,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
+};
 
 //[8984.55,3274.12,0.00143814]
 
