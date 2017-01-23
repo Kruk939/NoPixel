@@ -81,8 +81,8 @@ paycheck = 0;
 jesteadmine = 0;
 //if (getplayerUID player IN [""]) then { jesteadmine=1; };
 weedPlantArray = [];
-							//arthur			//danio				//egtu
-if (getplayerUID player IN ["76561198028980508","76561198082441969","76561198013757235"]) then { jesteadmine=2; };
+							//arthur			//danio				//egtu				//zielu
+if (getplayerUID player IN ["76561198028980508","76561198082441969","76561198013757235","76561198105547836"]) then { jesteadmine=2; };
 							//raf				//sid				//dzoka				//teddy
 if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998091289","76561198150573190"]) then { jesteadmine=3; };
 							//katekarin			//kifkick			//dorian
