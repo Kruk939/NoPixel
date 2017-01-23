@@ -71,9 +71,9 @@ _newgate setdir _newgatedir;
 [] spawn server_fnc_racetimes;
 [] spawn server_fnc_rallyracetimes;
 
-[] remoteExec ["server_fnc_mafiabank", 2]; //Ustawia zmienną z kwotą w bankomacie mafii
-[] remoteExec ["Server_fnc_resetConnected", 2]; //Przy włączeniu serwera zmienia w bazie danych connected=1 na connected=0
-[] remoteExec ["Server_fnc_economyEvents", 2]; //Uruchamia własne eventy dotyczące zachowań rynku
+[] spawn server_fnc_mafiabank; //Ustawia zmienną z kwotą w bankomacie mafii
+[] spawn server_fnc_resetConnected; //Przy włączeniu serwera zmienia w bazie danych connected=1 na connected=0
+[] spawn server_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku
 
 [server_fnc_addJob, 120] execFSM "\NoPixel_server\call.fsm";
 [Server_fnc_cleanup, 1800] execFSM "\NoPixel_server\call.fsm";
