@@ -14,7 +14,7 @@ _veh = _this select 1;
 
 _atm = player getVariable ["atm", 0];
 _atm = _atm + _price;
-player setVariable ["atm", _price,false];
+player setVariable ["atm", _atm,false];
 [format["Twój samochód sprzedał się za: $%1!", _price], true] spawn domsg;
 
 _pia = Current_Cars find _veh;

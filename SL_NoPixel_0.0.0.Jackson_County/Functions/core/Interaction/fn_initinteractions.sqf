@@ -550,7 +550,7 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
-		["Pączkowe ubranka", "closedialog 0; createdialog ""GeneralStore_Menu""; [""doughnuts_general""] spawn client_fnc_LoadStore;",3]
+		["Pączkowe ubranka", "closedialog 0; createdialog ""Clothing_Menu""; [""doughnuts_general""] spawn client_fnc_LoadStore;",3]
 	],
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
@@ -761,12 +761,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") && player getvariable ""cop"" > 7 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") && player getvariable ""cop"" > 6 "],
 		["Ekwipunek SWAT", "[""riot""] spawn client_fnc_setGear",4]
 	],
 	
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 6 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 5 "],
 		["ARSENAL", "[cursorobject] spawn client_fnc_vars"]
 	],
 	
