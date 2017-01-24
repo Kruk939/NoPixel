@@ -30,4 +30,6 @@ while{_currentShop < 4} do {
 	};
 	_currentShop = _currentShop + 1;
 };
-[format["Otworzyłeś sklep gracza: %1", name _player], false] spawn domsg;
+if(player getVariable ["cop",0] > 5 && myjob == "Cop") then {
+	[format["Otworzyłeś sklep gracza: %1", name _player], false] spawn domsg;
+};
