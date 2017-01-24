@@ -503,6 +503,7 @@ class CfgFunctions
 			class vehBuy {};
 			class vehSetPrice {};
 			class vehSold {};
+			class vehGetInfo {};
 		};
 	};
 };

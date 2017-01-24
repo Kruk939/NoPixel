@@ -504,7 +504,7 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 40 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0"],
-		["Sprawdz cenę", "hint format [""Cena pojazdu:\n$%1"",cursorTarget getVariable[""vehPrice"",0]];",3]
+		["Sprawdz ofertę", "[cursorTarget] spawn client_fnc_vehGetInfo;",3]
 	],
 	
 	[
