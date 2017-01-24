@@ -76,4 +76,4 @@
 <hr>
 #POMYSLY
 * Zwiekszenie ceny za crafting lockpick'a. Ale wtedy dac mozliwosc sprzedazy auta dla kazdego.
-* Kupowalne budynki (stacje benzynowe) http://stanlakeside.pl/index.php?/topic/10379-ożywienie-stacji-benzynowych/&do=findComment&comment=45468
+* Kupowalne budynki (stacje benzynowe)[http://stanlakeside.pl/index.php?/topic/10379-ożywienie-stacji-benzynowych/&do=findComment&comment=45468]
