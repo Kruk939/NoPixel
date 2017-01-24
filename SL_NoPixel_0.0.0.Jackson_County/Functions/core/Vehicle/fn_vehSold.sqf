@@ -12,10 +12,10 @@
 _price = _this select 0;
 _veh = _this select 1;
 
-_atm = player getVariable ["atm", 0];
-_atm = _atm + _price;
-player setVariable ["atm", _atm,false];
+[_price] call Client_fnc_addBank;
+player setVariable ["atm", _add, false];
 [format["Twój samochód sprzedał się za: $%1!", _price], true] spawn domsg;
+[player, "car", format["Gracz %1 dostal $%2 za sprzedaz samochodu."], name player, _price] remoteExec ["Server_fnc_insertLog", 2];
 
 _pia = Current_Cars find _veh;
 Current_Cars deleteAt _pia;
