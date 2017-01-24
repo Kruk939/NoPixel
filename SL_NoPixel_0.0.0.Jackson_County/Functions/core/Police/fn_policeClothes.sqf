@@ -114,6 +114,13 @@ _availableMagazine = [
 	"RH_16Rnd_40cal_usp",
 	"nonlethal_swing"
 ];
+
+if (player getvariable ["cop", 0] > 2) then {
+_availableMagazine pushBack "CUP_15Rnd_9x19_M9";
+};
+/*if (player getvariable ["cop", 0] > 3) then {
+_availableMagazine pushBack "";
+};*/
  
 _availableWeapon = [
 	"RH_ttracker_g",
@@ -122,6 +129,13 @@ _availableWeapon = [
 	"cg_baton",
 	"cg_torch"
 ];
+
+if (player getvariable ["cop", 0] > 2) then {
+_availableWeapon pushBack "CUP_hgun_M9";
+};
+/*if (player getvariable ["cop", 0] > 3) then {
+_availableWeapon pushBack "RH_g17";
+};*/
 
 _availableAttachments = [
 	"cg_atf_bandage_i",
