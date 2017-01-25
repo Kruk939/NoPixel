@@ -1,21 +1,3 @@
-**"vehPrice"** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_initinteractions
-
-
-
-**CarsToBuy** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_vehSetPrice
-
-		client_fnc_vehBuy
-
-
-
 **actionPerformed** - *prywatna*
 
 	Występowanie:
@@ -51,6 +33,16 @@
 	Występowanie:
 
 		client_fnc_loadInventory
+
+
+
+**CarsToBuy** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_vehSetPrice
+
+		client_fnc_vehBuy
 
 
 
@@ -363,6 +355,8 @@
 	Występowanie:
 
 		client_fnc_vehSetPrice
+
+		client_fnc_initinteractions
 
 
 
