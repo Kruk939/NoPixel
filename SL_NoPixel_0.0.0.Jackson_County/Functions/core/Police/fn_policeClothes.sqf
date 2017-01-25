@@ -115,10 +115,10 @@ _availableMagazine = [
 	"nonlethal_swing"
 ];
 
-if (player getvariable ["cop", 0] > 2) then {
+/*if (player getvariable ["cop", 0] > 2) then {
 _availableMagazine pushBack "CUP_15Rnd_9x19_M9";
 };
-/*if (player getvariable ["cop", 0] > 3) then {
+if (player getvariable ["cop", 0] > 3) then {
 _availableMagazine pushBack "";
 };*/
  
@@ -130,10 +130,10 @@ _availableWeapon = [
 	"cg_torch"
 ];
 
-if (player getvariable ["cop", 0] > 2) then {
+/*if (player getvariable ["cop", 0] > 2) then {
 _availableWeapon pushBack "CUP_hgun_M9";
 };
-/*if (player getvariable ["cop", 0] > 3) then {
+if (player getvariable ["cop", 0] > 3) then {
 _availableWeapon pushBack "RH_g17";
 };*/
 
