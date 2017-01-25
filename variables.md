@@ -40,8 +40,6 @@
 
 	Występowanie:
 
-		client_fnc_vehSetPrice
-
 		client_fnc_vehBuy
 
 
@@ -96,14 +94,6 @@
 
 
 
-**dead** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_HandleKilled
-
-
-
 **doughnuts** - *prywatna*
 
 	Występowanie:
@@ -149,16 +139,6 @@
 		client_fnc_fetchCar
 
 		client_fnc_carUpdate
-
-
-
-**growing** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
-
-		client_fnc_upweedgrowing
 
 
 
@@ -210,14 +190,6 @@
 
 
 
-**mapVisible** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_medicRequest
-
-
-
 **messages** - *prywatna*
 
 	Występowanie:
@@ -231,8 +203,6 @@
 	Występowanie:
 
 		client_fnc_healTime
-
-		client_fnc_doInjuriesUpdate
 
 		client_fnc_loadInventory
 
@@ -257,14 +227,6 @@
 		client_fnc_weedgrowing
 
 		client_fnc_upweedgrowing
-
-
-
-**ready** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
 
 
 
@@ -379,6 +341,56 @@
 	Występowanie:
 
 		client_fnc_IvoryInitVehicle
+
+
+
+**CarsToBuy** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_vehSetPrice
+
+
+
+**dead** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_HandleKilled
+
+
+
+**growing** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_weedgrowing
+
+		client_fnc_upweedgrowing
+
+
+
+**mapVisible** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_medicRequest
+
+
+
+**playerInjuries** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_doInjuriesUpdate
+
+
+
+**ready** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_weedgrowing
 
 
 
