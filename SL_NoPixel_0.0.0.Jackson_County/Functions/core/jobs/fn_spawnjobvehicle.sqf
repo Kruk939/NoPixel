@@ -91,7 +91,7 @@ if (_jobType == "NewsMan") exitwith {
 };
 
 if (_jobType == "taxi") exitwith {	
-	vehspawned = createVehicle ["ivory_rs4_taxi", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	vehspawned = createVehicle ["ivory_190e_taxi", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
