@@ -24,6 +24,7 @@
 * Cykl dnia / nocy
 * Zastąpienie samochodów taksówkarskich na słabsze
 * Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
+* Informacja dla policjantów ze dostają informację o włamie na więzienie
 
 
 <hr>
