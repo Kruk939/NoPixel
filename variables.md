@@ -1,3 +1,5 @@
+##Zmienne publiczne
+
 **CarsToBuy** - *publiczna*
 
 	Występowanie:
@@ -49,6 +51,8 @@
 		client_fnc_weedgrowing
 
 
+
+##Zmienne prywatne
 
 **actionPerformed** - *prywatna*
 
