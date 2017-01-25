@@ -188,11 +188,11 @@
 
 **checkFinish** - *prywatna*
 	Występowanie:
-		client_fnc_weedgrowing
+		*client_fnc_weedgrowing*
 
 **requiredOutput** - *prywatna*
 	Występowanie:
-		client_fnc_weedgrowing
+		*client_fnc_weedgrowing*
 
 **ready** - *prywatna*
 	Występowanie:
