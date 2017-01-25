@@ -14,6 +14,8 @@
 
 		client_fnc_deathscreen
 
+		client_fnc_mapmarkers
+
 		client_fnc_HandleKilled
 
 
@@ -21,6 +23,8 @@
 **growing** - *publiczna*
 
 	Występowanie:
+
+		client_fnc_initinteractions
 
 		client_fnc_weedgrowing
 
@@ -65,62 +69,6 @@
 <hr>
 
 ##Zmienne prywatne
-
-**"dead** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_initinteractions
-
-
-
-**"growing** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_initinteractions
-
-
-
-**"houselevel** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_initinteractions
-
-
-
-**"Mafia** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_initinteractions
-
-
-
-**"RSC_DOMSG7** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_miscvariables
-
-
-
-**"vehPrice** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_initinteractions
-
-
-
-**"wallet** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_initinteractions
-
-
 
 **actionPerformed** - *prywatna*
 
@@ -270,7 +218,7 @@
 
 	Występowanie:
 
-		client_fnc_mapmarkers
+		client_fnc_initinteractions
 
 
 
@@ -360,6 +308,8 @@
 
 	Występowanie:
 
+		client_fnc_initinteractions
+
 		client_fnc_loadInventory
 
 
@@ -421,6 +371,8 @@
 		client_fnc_setOwed
 
 		client_fnc_promotionstart
+
+		client_fnc_initinteractions
 
 		client_fnc_loadInventory
 
@@ -581,6 +533,14 @@
 
 
 **RSC_DOMSG6** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_miscvariables
+
+
+
+**RSC_DOMSG7** - *prywatna*
 
 	Występowanie:
 
@@ -767,6 +727,8 @@
 		client_fnc_PatDown
 
 		client_fnc_rentoffice
+
+		client_fnc_initinteractions
 
 		client_fnc_loadInventory
 
