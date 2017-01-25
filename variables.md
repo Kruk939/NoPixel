@@ -1,6 +1,6 @@
 **loaded** - *prywatna* 
 Występowanie:
-	**
+	*InitLocal.sqf*
 **information** - *prywatna* 
 Występowanie:
 	*client_fnc_vehSetPrice*
