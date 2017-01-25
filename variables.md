@@ -6,7 +6,7 @@
 
 	Występowanie:
 
-		*client_fnc_vehSetPrice
+		- client_fnc_vehSetPrice
 
 
 
@@ -14,11 +14,11 @@
 
 	Występowanie:
 
-		*client_fnc_deathscreen
+		- client_fnc_deathscreen
 
-		*client_fnc_mapmarkers
+		- client_fnc_mapmarkers
 
-		*client_fnc_HandleKilled
+		- client_fnc_HandleKilled
 
 
 
@@ -26,11 +26,11 @@
 
 	Występowanie:
 
-		*client_fnc_initinteractions
+		- client_fnc_initinteractions
 
-		*client_fnc_weedgrowing
+		- client_fnc_weedgrowing
 
-		*client_fnc_upweedgrowing
+		- client_fnc_upweedgrowing
 
 
 
@@ -38,7 +38,7 @@
 
 	Występowanie:
 
-		*client_fnc_medicRequest
+		- client_fnc_medicRequest
 
 
 
@@ -46,17 +46,17 @@
 
 	Występowanie:
 
-		*client_fnc_spreaddisease
+		- client_fnc_spreaddisease
 
-		*client_fnc_medicUpdater
+		- client_fnc_medicUpdater
 
-		*client_fnc_healTime
+		- client_fnc_healTime
 
-		*client_fnc_givedisease
+		- client_fnc_givedisease
 
-		*client_fnc_fixProblem
+		- client_fnc_fixProblem
 
-		*client_fnc_doInjuriesUpdate
+		- client_fnc_doInjuriesUpdate
 
 
 
@@ -64,7 +64,7 @@
 
 	Występowanie:
 
-		*client_fnc_weedgrowing
+		- client_fnc_weedgrowing
 
 
 
@@ -76,9 +76,9 @@
 
 	Występowanie:
 
-		*client_fnc_weedgrowing
+		- client_fnc_weedgrowing
 
-		*client_fnc_upweedgrowing
+		- client_fnc_upweedgrowing
 
 
 
@@ -86,7 +86,7 @@
 
 	Występowanie:
 
-		*client_fnc_addcashmayor
+		- client_fnc_addcashmayor
 
 
 
@@ -94,37 +94,37 @@
 
 	Występowanie:
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_insertLog
+		- server_fnc_insertLog
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*server_fnc_paymayor
+		- server_fnc_paymayor
 
-		*client_fnc_ticketresult
+		- client_fnc_ticketresult
 
-		*client_fnc_removeBank
+		- client_fnc_removeBank
 
-		*client_fnc_checkMoney
+		- client_fnc_checkMoney
 
-		*client_fnc_addcashmayor
+		- client_fnc_addcashmayor
 
-		*client_fnc_addBank
+		- client_fnc_addBank
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
-		*client_fnc_wallet
+		- client_fnc_wallet
 
-		*client_fnc_openATM
+		- client_fnc_openATM
 
-		*client_fnc_atmTransfer
+		- client_fnc_atmTransfer
 
 
 
@@ -132,15 +132,15 @@
 
 	Występowanie:
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
-		*client_fnc_openATM
+		- client_fnc_openATM
 
 
 
@@ -148,7 +148,7 @@
 
 	Występowanie:
 
-		*client_fnc_vehBuy
+		- client_fnc_vehBuy
 
 
 
@@ -156,11 +156,11 @@
 
 	Występowanie:
 
-		*client_fnc_weedgrowing
+		- client_fnc_weedgrowing
 
-		*client_fnc_upweedgrowing
+		- client_fnc_upweedgrowing
 
-		*client_fnc_checkWeedPlant
+		- client_fnc_checkWeedPlant
 
 
 
@@ -168,9 +168,9 @@
 
 	Występowanie:
 
-		*client_fnc_nametags
+		- client_fnc_nametags
 
-		*client_fnc_adminESP
+		- client_fnc_adminESP
 
 
 
@@ -178,19 +178,19 @@
 
 	Występowanie:
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_openShop
+		- client_fnc_openShop
 
-		*client_fnc_setGear
+		- client_fnc_setGear
 
-		*client_fnc_promotionstart
+		- client_fnc_promotionstart
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -198,23 +198,23 @@
 
 	Występowanie:
 
-		*client_fnc_mayorsetup
+		- client_fnc_mayorsetup
 
-		*client_fnc_startlegalaid
+		- client_fnc_startlegalaid
 
-		*client_fnc_startlawyer
+		- client_fnc_startlawyer
 
-		*client_fnc_startjudge
+		- client_fnc_startjudge
 
-		*client_fnc_startmafia
+		- client_fnc_startmafia
 
-		*client_fnc_startfire
+		- client_fnc_startfire
 
-		*client_fnc_startems
+		- client_fnc_startems
 
-		*client_fnc_startcop
+		- client_fnc_startcop
 
-		*client_fnc_jobend
+		- client_fnc_jobend
 
 
 
@@ -222,7 +222,7 @@
 
 	Występowanie:
 
-		*client_fnc_weedgrowing
+		- client_fnc_weedgrowing
 
 
 
@@ -230,7 +230,7 @@
 
 	Występowanie:
 
-		*client_fnc_watchcamera
+		- client_fnc_watchcamera
 
 
 
@@ -238,7 +238,7 @@
 
 	Występowanie:
 
-		*client_fnc_watchcamera
+		- client_fnc_watchcamera
 
 
 
@@ -246,7 +246,7 @@
 
 	Występowanie:
 
-		*client_fnc_initinteractions
+		- client_fnc_initinteractions
 
 
 
@@ -254,11 +254,11 @@
 
 	Występowanie:
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_startdoughnuts
+		- client_fnc_startdoughnuts
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -266,9 +266,9 @@
 
 	Występowanie:
 
-		*client_fnc_loadstore
+		- client_fnc_loadstore
 
-		*client_fnc_startdoughnuts
+		- client_fnc_startdoughnuts
 
 
 
@@ -276,17 +276,17 @@
 
 	Występowanie:
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_setGear
+		- client_fnc_setGear
 
-		*client_fnc_promotionstart
+		- client_fnc_promotionstart
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -294,7 +294,7 @@
 
 	Występowanie:
 
-		*client_fnc_tazed
+		- client_fnc_tazed
 
 
 
@@ -302,7 +302,7 @@
 
 	Występowanie:
 
-		*server_fnc_ExtDBinit
+		- server_fnc_ExtDBinit
 
 
 
@@ -310,17 +310,17 @@
 
 	Występowanie:
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_setGear
+		- client_fnc_setGear
 
-		*client_fnc_promotionstart
+		- client_fnc_promotionstart
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -328,29 +328,29 @@
 
 	Występowanie:
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*server_fnc_platechange
+		- server_fnc_platechange
 
-		*client_fnc_addafuckingcar
+		- client_fnc_addafuckingcar
 
-		*client_fnc_setvariable
+		- client_fnc_setvariable
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
-		*client_fnc_storeCar
+		- client_fnc_storeCar
 
-		*client_fnc_openGarage
+		- client_fnc_openGarage
 
-		*client_fnc_openCarYard
+		- client_fnc_openCarYard
 
-		*client_fnc_fetchCar
+		- client_fnc_fetchCar
 
-		*client_fnc_carUpdate
+		- client_fnc_carUpdate
 
 
 
@@ -358,11 +358,11 @@
 
 	Występowanie:
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
 
 
@@ -370,7 +370,7 @@
 
 	Występowanie:
 
-		*client_fnc_weedgrowing
+		- client_fnc_weedgrowing
 
 
 
@@ -378,15 +378,15 @@
 
 	Występowanie:
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
 
 
@@ -394,17 +394,17 @@
 
 	Występowanie:
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*server_fnc_retreiveHouse
+		- server_fnc_retreiveHouse
 
 
 
@@ -412,19 +412,19 @@
 
 	Występowanie:
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_initinteractions
+		- client_fnc_initinteractions
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -432,17 +432,17 @@
 
 	Występowanie:
 
-		*server_fnc_vehBuy
+		- server_fnc_vehBuy
 
-		*server_fnc_updateCarStatus
+		- server_fnc_updateCarStatus
 
-		*client_fnc_vehSetPrice
+		- client_fnc_vehSetPrice
 
-		*client_fnc_vehGetInfo
+		- client_fnc_vehGetInfo
 
-		*client_fnc_vehBuy
+		- client_fnc_vehBuy
 
-		*client_fnc_storeCar
+		- client_fnc_storeCar
 
 
 
@@ -450,7 +450,7 @@
 
 	Występowanie:
 
-		*client_fnc_jobend
+		- client_fnc_jobend
 
 
 
@@ -458,15 +458,15 @@
 
 	Występowanie:
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_promotionstart
+		- client_fnc_promotionstart
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -474,15 +474,15 @@
 
 	Występowanie:
 
-		*InitLocal.sqf
+		- InitLocal.sqf
 
-		*client_fnc_playerselectfinish
+		- client_fnc_playerselectfinish
 
-		*client_fnc_initinteractions
+		- client_fnc_initinteractions
 
-		*client_fnc_miscvariables
+		- client_fnc_miscvariables
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -490,21 +490,21 @@
 
 	Występowanie:
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_setGear
+		- client_fnc_setGear
 
-		*client_fnc_setOwed
+		- client_fnc_setOwed
 
-		*client_fnc_promotionstart
+		- client_fnc_promotionstart
 
-		*client_fnc_initinteractions
+		- client_fnc_initinteractions
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -512,17 +512,17 @@
 
 	Występowanie:
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -530,9 +530,9 @@
 
 	Występowanie:
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
 
 
@@ -540,15 +540,15 @@
 
 	Występowanie:
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
 
 
@@ -556,15 +556,15 @@
 
 	Występowanie:
 
-		*client_fnc_hangUp
+		- client_fnc_hangUp
 
-		*client_fnc_entertappedcall
+		- client_fnc_entertappedcall
 
-		*client_fnc_checkCall
+		- client_fnc_checkCall
 
-		*client_fnc_callProgress
+		- client_fnc_callProgress
 
-		*client_fnc_answerCall
+		- client_fnc_answerCall
 
 
 
@@ -572,7 +572,7 @@
 
 	Występowanie:
 
-		*client_fnc_currentCallMenu
+		- client_fnc_currentCallMenu
 
 
 
@@ -580,7 +580,7 @@
 
 	Występowanie:
 
-		*client_fnc_fadePhone
+		- client_fnc_fadePhone
 
 
 
@@ -588,7 +588,7 @@
 
 	Występowanie:
 
-		*client_fnc_hudeffects
+		- client_fnc_hudeffects
 
 
 
@@ -596,11 +596,11 @@
 
 	Występowanie:
 
-		*client_fnc_damageChance
+		- client_fnc_damageChance
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
-		*client_fnc_hudeffects
+		- client_fnc_hudeffects
 
 
 
@@ -608,13 +608,13 @@
 
 	Występowanie:
 
-		*client_fnc_medicUpdater
+		- client_fnc_medicUpdater
 
-		*client_fnc_givedisease
+		- client_fnc_givedisease
 
-		*client_fnc_doInjuriesUpdate
+		- client_fnc_doInjuriesUpdate
 
-		*client_fnc_damageChance
+		- client_fnc_damageChance
 
 
 
@@ -622,11 +622,11 @@
 
 	Występowanie:
 
-		*client_fnc_weedgrowing
+		- client_fnc_weedgrowing
 
-		*client_fnc_upweedgrowing
+		- client_fnc_upweedgrowing
 
-		*client_fnc_cutDownWeedPlant
+		- client_fnc_cutDownWeedPlant
 
 
 
@@ -634,7 +634,7 @@
 
 	Występowanie:
 
-		*client_fnc_adminESP
+		- client_fnc_adminESP
 
 
 
@@ -642,11 +642,11 @@
 
 	Występowanie:
 
-		*client_fnc_weedgrowing
+		- client_fnc_weedgrowing
 
-		*client_fnc_upweedgrowing
+		- client_fnc_upweedgrowing
 
-		*client_fnc_checkWeedPlant
+		- client_fnc_checkWeedPlant
 
 
 
@@ -654,7 +654,7 @@
 
 	Występowanie:
 
-		*client_fnc_copmapmarkers
+		- client_fnc_copmapmarkers
 
 
 
@@ -662,7 +662,7 @@
 
 	Występowanie:
 
-		*client_fnc_miscvariables
+		- client_fnc_miscvariables
 
 
 
@@ -670,7 +670,7 @@
 
 	Występowanie:
 
-		*client_fnc_miscvariables
+		- client_fnc_miscvariables
 
 
 
@@ -678,7 +678,7 @@
 
 	Występowanie:
 
-		*client_fnc_miscvariables
+		- client_fnc_miscvariables
 
 
 
@@ -686,7 +686,7 @@
 
 	Występowanie:
 
-		*client_fnc_miscvariables
+		- client_fnc_miscvariables
 
 
 
@@ -694,7 +694,7 @@
 
 	Występowanie:
 
-		*client_fnc_miscvariables
+		- client_fnc_miscvariables
 
 
 
@@ -702,7 +702,7 @@
 
 	Występowanie:
 
-		*client_fnc_miscvariables
+		- client_fnc_miscvariables
 
 
 
@@ -710,7 +710,7 @@
 
 	Występowanie:
 
-		*client_fnc_miscvariables
+		- client_fnc_miscvariables
 
 
 
@@ -718,9 +718,9 @@
 
 	Występowanie:
 
-		*client_fnc_doTask2
+		- client_fnc_doTask2
 
-		*client_fnc_doTask
+		- client_fnc_doTask
 
 
 
@@ -728,7 +728,7 @@
 
 	Występowanie:
 
-		*client_fnc_showNotification
+		- client_fnc_showNotification
 
 
 
@@ -736,23 +736,23 @@
 
 	Występowanie:
 
-		*server_fnc_storeUpdateName
+		- server_fnc_storeUpdateName
 
-		*server_fnc_shopPurchase
+		- server_fnc_shopPurchase
 
-		*server_fnc_retreiveStoreShopper
+		- server_fnc_retreiveStoreShopper
 
-		*server_fnc_closeshop
+		- server_fnc_closeshop
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
 
 
@@ -760,23 +760,23 @@
 
 	Występowanie:
 
-		*server_fnc_shopPurchase
+		- server_fnc_shopPurchase
 
-		*server_fnc_retreiveStoreShopper
+		- server_fnc_retreiveStoreShopper
 
-		*server_fnc_retreiveStore
+		- server_fnc_retreiveStore
 
-		*server_fnc_finishStoreUpdate
+		- server_fnc_finishStoreUpdate
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
 
 
@@ -784,11 +784,11 @@
 
 	Występowanie:
 
-		*server_fnc_retreiveStore
+		- server_fnc_retreiveStore
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -796,9 +796,9 @@
 
 	Występowanie:
 
-		*client_fnc_nametags
+		- client_fnc_nametags
 
-		*client_fnc_adminexecute
+		- client_fnc_adminexecute
 
 
 
@@ -806,21 +806,21 @@
 
 	Występowanie:
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_sustain
+		- client_fnc_sustain
 
-		*client_fnc_doHealth
+		- client_fnc_doHealth
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
 
 
@@ -828,9 +828,9 @@
 
 	Występowanie:
 
-		*client_fnc_surrender
+		- client_fnc_surrender
 
-		*client_fnc_HandleKeys
+		- client_fnc_HandleKeys
 
 
 
@@ -838,13 +838,13 @@
 
 	Występowanie:
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
 
 
@@ -852,19 +852,19 @@
 
 	Występowanie:
 
-		*client_fnc_resetCall
+		- client_fnc_resetCall
 
-		*client_fnc_karmaphoneinit
+		- client_fnc_karmaphoneinit
 
-		*client_fnc_entertappedcall
+		- client_fnc_entertappedcall
 
-		*client_fnc_changePolice
+		- client_fnc_changePolice
 
-		*client_fnc_answerCall
+		- client_fnc_answerCall
 
-		*client_fnc_setLevel
+		- client_fnc_setLevel
 
-		*client_fnc_karmaPhoneInit
+		- client_fnc_karmaPhoneInit
 
 
 
@@ -872,15 +872,15 @@
 
 	Występowanie:
 
-		*client_fnc_successKO
+		- client_fnc_successKO
 
-		*client_fnc_startFresh
+		- client_fnc_startFresh
 
-		*client_fnc_fullHeal
+		- client_fnc_fullHeal
 
-		*client_fnc_revived
+		- client_fnc_revived
 
-		*client_fnc_HandleKilled
+		- client_fnc_HandleKilled
 
 
 
@@ -888,9 +888,9 @@
 
 	Występowanie:
 
-		*client_fnc_strTracking
+		- client_fnc_strTracking
 
-		*client_fnc_disTracking
+		- client_fnc_disTracking
 
 
 
@@ -898,9 +898,9 @@
 
 	Występowanie:
 
-		*client_fnc_strTracking
+		- client_fnc_strTracking
 
-		*client_fnc_disTracking
+		- client_fnc_disTracking
 
 
 
@@ -908,9 +908,9 @@
 
 	Występowanie:
 
-		*client_fnc_strTracking
+		- client_fnc_strTracking
 
-		*client_fnc_disTracking
+		- client_fnc_disTracking
 
 
 
@@ -918,7 +918,7 @@
 
 	Występowanie:
 
-		*client_fnc_playermapmarkers
+		- client_fnc_playermapmarkers
 
 
 
@@ -926,7 +926,7 @@
 
 	Występowanie:
 
-		*client_fnc_watchcamera
+		- client_fnc_watchcamera
 
 
 
@@ -934,13 +934,13 @@
 
 	Występowanie:
 
-		*client_fnc_vehSetPrice
+		- client_fnc_vehSetPrice
 
-		*client_fnc_vehGetInfo
+		- client_fnc_vehGetInfo
 
-		*client_fnc_vehBuy
+		- client_fnc_vehBuy
 
-		*client_fnc_initinteractions
+		- client_fnc_initinteractions
 
 
 
@@ -948,55 +948,55 @@
 
 	Występowanie:
 
-		*server_fnc_shopPurchase
+		- server_fnc_shopPurchase
 
-		*server_fnc_steppedSync
+		- server_fnc_steppedSync
 
-		*server_fnc_statSaveLoop
+		- server_fnc_statSaveLoop
 
-		*server_fnc_statSaveDisconnect
+		- server_fnc_statSaveDisconnect
 
-		*server_fnc_statSave
+		- server_fnc_statSave
 
-		*server_fnc_insertLog
+		- server_fnc_insertLog
 
-		*server_fnc_initStats
+		- server_fnc_initStats
 
-		*client_fnc_vehBuy
+		- client_fnc_vehBuy
 
-		*client_fnc_purchaseAI
+		- client_fnc_purchaseAI
 
-		*client_fnc_purchase
+		- client_fnc_purchase
 
-		*client_fnc_returnwallet
+		- client_fnc_returnwallet
 
-		*client_fnc_removeCash
+		- client_fnc_removeCash
 
-		*client_fnc_checkMoney
+		- client_fnc_checkMoney
 
-		*client_fnc_addCash
+		- client_fnc_addCash
 
-		*client_fnc_trackPlayer
+		- client_fnc_trackPlayer
 
-		*client_fnc_startFresh
+		- client_fnc_startFresh
 
-		*client_fnc_PatDown
+		- client_fnc_PatDown
 
-		*client_fnc_rentoffice
+		- client_fnc_rentoffice
 
-		*client_fnc_initinteractions
+		- client_fnc_initinteractions
 
-		*client_fnc_loadInventory
+		- client_fnc_loadInventory
 
-		*client_fnc_carshopbuy
+		- client_fnc_carshopbuy
 
-		*client_fnc_HandleDisconnect
+		- client_fnc_HandleDisconnect
 
-		*client_fnc_wallet
+		- client_fnc_wallet
 
-		*client_fnc_openMafiaATM
+		- client_fnc_openMafiaATM
 
-		*client_fnc_openATM
+		- client_fnc_openATM
 
 
 
@@ -1004,7 +1004,7 @@
 
 	Występowanie:
 
-		*client_fnc_IvoryInitVehicle
+		- client_fnc_IvoryInitVehicle
 
 
 
