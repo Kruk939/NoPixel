@@ -10,7 +10,6 @@
 * Napady na sklep
 * Napady na bank
 * Sprawdzić więzienie
-* Sprawdzanie właścicela sklepu
 * Pożary dla strażaków (importnant)
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
@@ -42,6 +41,7 @@
 * Przygotowano misję pod system odszkodowań (w bazie danych czy osoba jest połączona z serwerem ; resetuje się przy restarcie)
 * Zbieranie marichuany - zwiększona ilość, naprawione hodowanie oraz zwiększony czas
 * Naprawić zabieranie pieniędzy (brak opcji zabrania podczas gdy jest skuty + zabierający nie dostaje kasy)
+* Sprawdzanie właścicela sklepu
 
 <hr>
 #DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
