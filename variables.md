@@ -1,3 +1,55 @@
+**CarsToBuy** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_vehSetPrice
+
+
+
+**dead** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_HandleKilled
+
+
+
+**growing** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_weedgrowing
+
+		client_fnc_upweedgrowing
+
+
+
+**mapVisible** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_medicRequest
+
+
+
+**playerInjuries** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_healTime
+
+		client_fnc_doInjuriesUpdate
+
+
+
+**ready** - *publiczna*
+
+	Występowanie:
+
+		client_fnc_weedgrowing
+
+
+
 **actionPerformed** - *prywatna*
 
 	Występowanie:
@@ -202,8 +254,6 @@
 
 	Występowanie:
 
-		client_fnc_healTime
-
 		client_fnc_loadInventory
 
 
@@ -341,56 +391,6 @@
 	Występowanie:
 
 		client_fnc_IvoryInitVehicle
-
-
-
-**CarsToBuy** - *publiczna*
-
-	Występowanie:
-
-		client_fnc_vehSetPrice
-
-
-
-**dead** - *publiczna*
-
-	Występowanie:
-
-		client_fnc_HandleKilled
-
-
-
-**growing** - *publiczna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
-
-		client_fnc_upweedgrowing
-
-
-
-**mapVisible** - *publiczna*
-
-	Występowanie:
-
-		client_fnc_medicRequest
-
-
-
-**playerInjuries** - *publiczna*
-
-	Występowanie:
-
-		client_fnc_doInjuriesUpdate
-
-
-
-**ready** - *publiczna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
 
 
 
