@@ -1,5 +1,5 @@
 # NoPixel
-1. Każdy plik podpisany moim imieniem i nazwiskiem dalej zwany **plikiem** jest moją własnością intelektualną.
+1. Każdy plik podpisany moim imieniem i nazwiskiem bądź pseudonimem dalej zwany **plikiem** jest moją własnością intelektualną.
 2. Każdy plik podpisany frazą "stanlakeside.pl" również zwany **plikiem** jest własnością intelektualną stanlakeside.pl.
 3. **Plik** można wykorzystać wyłącznie w celach edukacyjnych.
 4. **Plik** nie może być udostępniany bez mojej zgody.
