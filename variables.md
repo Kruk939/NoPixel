@@ -231,8 +231,3 @@
 **st_hide** - *prywatna*
 	Występowanie:
 		client_fnc_adminexecute
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> origin/master
