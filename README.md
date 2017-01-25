@@ -22,7 +22,6 @@
 * Przeszukiwanie sklepu / domu dla policji
 * Naprawić arsenał dla medyków
 * Cykl dnia / nocy
-* Zastąpienie samochodów taksówkarskich na słabsze
 * Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
 * Informacja dla policjantów ze dostają informację o włamie na więzienie
 
@@ -86,3 +85,4 @@
 * dodać gps dla cywili (maybe crafting?)
 * jesli osoba zostanie postrzelona jakos mocniej i jest nie przytomna to by medycy mieli coraz mniejszy % szans na podniesienie .Np  dostal gdzie blisko serca i podczas pomocy nagle zaczyna sie krwotok wewnetrzny jakis i jest tylko 10% szans.
 * Dodanie dla wszystkich kabure do craftu sab_wwiplanes_pilot_holster https://i.imgur.com/SFWbtPi.jpg
+* Samochody taksówkarskie z szansą na pojawienie się ivory_rs4_taxi 25% / ivory_190e_taxi 75%
