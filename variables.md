@@ -1,24 +1,8 @@
-**loaded** - *prywatna*
+**"vehPrice"** - *prywatna*
 
 	Występowanie:
 
-		InitLocal.sqf
-
-
-
-**information** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_vehSetPrice
-
-
-
-**vehPrice** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_vehSetPrice
+		client_fnc_initinteractions
 
 
 
@@ -32,11 +16,13 @@
 
 
 
-**loaded** - *prywatna*
+**actionPerformed** - *prywatna*
 
 	Występowanie:
 
-		client_fnc_playerselectfinish
+		client_fnc_weedgrowing
+
+		client_fnc_upweedgrowing
 
 
 
@@ -56,89 +42,33 @@
 
 		client_fnc_addBank
 
-
-
-**surrender** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_surrender
+		client_fnc_loadInventory
 
 
 
-**tf_voiceVolume** - *prywatna*
+**bankAccount** - *prywatna*
 
 	Występowanie:
 
-		client_fnc_successKO
-
-		client_fnc_startFresh
+		client_fnc_loadInventory
 
 
 
-**garage** - *prywatna*
+**checkFinish** - *prywatna*
 
 	Występowanie:
 
-		client_fnc_setvariable
+		client_fnc_weedgrowing
+
+		client_fnc_upweedgrowing
 
 
 
-**mapVisible** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_medicRequest
-
-
-
-**statuses** - *prywatna*
+**cop** - *prywatna*
 
 	Występowanie:
 
-		client_fnc_sustain
-
-		client_fnc_doHealth
-
-
-
-**tf_voiceVolume** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_fullHeal
-
-		client_fnc_revived
-
-
-
-**playerInjuries** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_healTime
-
-		client_fnc_doInjuriesUpdate
-
-
-
-**playerInjuriesToUpdate** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_medicUpdater
-
-		client_fnc_givedisease
-
-		client_fnc_damageChance
-
-
-
-**doughnutsLevel** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_startdoughnuts
+		client_fnc_loadInventory
 
 
 
@@ -166,39 +96,23 @@
 
 
 
-**"vehPrice"** - *prywatna*
+**count** - *prywatna*
 
 	Występowanie:
 
-		client_fnc_initinteractions
+		client_fnc_weedgrowing
 
 
 
-**loaded** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_initinteractions
-
-		client_fnc_miscvariables
-
-
-
-**wallet** - *prywatna*
+**dead** - *prywatna*
 
 	Występowanie:
 
-		client_fnc_removeCash
-
-		client_fnc_addCash
-
-		client_fnc_startFresh
-
-		client_fnc_loadInventory
+		client_fnc_HandleKilled
 
 
 
-**atm** - *prywatna*
+**doughnuts** - *prywatna*
 
 	Występowanie:
 
@@ -206,19 +120,11 @@
 
 
 
-**bankAccount** - *prywatna*
+**doughnutsLevel** - *prywatna*
 
 	Występowanie:
 
-		client_fnc_loadInventory
-
-
-
-**cop** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_loadInventory
+		client_fnc_startdoughnuts
 
 
 
@@ -238,51 +144,29 @@
 
 
 
-**mafia** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_loadInventory
-
-
-
-**legal** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_loadInventory
-
-
-
-**doughnuts** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_loadInventory
-
-
-
 **garage** - *prywatna*
 
 	Występowanie:
 
+		client_fnc_setvariable
+
 		client_fnc_loadInventory
 
+		client_fnc_storeCar
+
+		client_fnc_fetchCar
+
+		client_fnc_carUpdate
 
 
-**messages** - *prywatna*
+
+**growing** - *prywatna*
 
 	Występowanie:
 
-		client_fnc_loadInventory
+		client_fnc_weedgrowing
 
-
-
-**statuses** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_loadInventory
+		client_fnc_upweedgrowing
 
 
 
@@ -294,15 +178,15 @@
 
 
 
-**shopname** - *prywatna*
+**information** - *prywatna*
 
 	Występowanie:
 
-		client_fnc_loadInventory
+		client_fnc_vehSetPrice
 
 
 
-**playerInjuries** - *prywatna*
+**legal** - *prywatna*
 
 	Występowanie:
 
@@ -314,7 +198,127 @@
 
 	Występowanie:
 
+		InitLocal.sqf
+
+		client_fnc_playerselectfinish
+
+		client_fnc_initinteractions
+
+		client_fnc_miscvariables
+
 		client_fnc_loadInventory
+
+
+
+**mafia** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_loadInventory
+
+
+
+**mapVisible** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_medicRequest
+
+
+
+**messages** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_loadInventory
+
+
+
+**playerInjuries** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_healTime
+
+		client_fnc_doInjuriesUpdate
+
+		client_fnc_loadInventory
+
+
+
+**playerInjuriesToUpdate** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_medicUpdater
+
+		client_fnc_givedisease
+
+		client_fnc_damageChance
+
+
+
+**quality** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_weedgrowing
+
+		client_fnc_upweedgrowing
+
+
+
+**ready** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_weedgrowing
+
+
+
+**requiredOutput** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_weedgrowing
+
+
+
+**shopname** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_loadInventory
+
+
+
+**st_hide** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_adminexecute
+
+
+
+**statuses** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_sustain
+
+		client_fnc_doHealth
+
+		client_fnc_loadInventory
+
+
+
+**surrender** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_surrender
+
+		client_fnc_HandleKeys
 
 
 
@@ -338,131 +342,49 @@
 
 
 
+**tf_voiceVolume** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_successKO
+
+		client_fnc_startFresh
+
+		client_fnc_fullHeal
+
+		client_fnc_revived
+
+		client_fnc_HandleKilled
+
+
+
+**vehPrice** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_vehSetPrice
+
+
+
+**wallet** - *prywatna*
+
+	Występowanie:
+
+		client_fnc_removeCash
+
+		client_fnc_addCash
+
+		client_fnc_startFresh
+
+		client_fnc_loadInventory
+
+
+
 **windowTint** - *prywatna*
 
 	Występowanie:
 
 		client_fnc_IvoryInitVehicle
-
-
-
-**garage** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_storeCar
-
-		client_fnc_fetchCar
-
-		client_fnc_carUpdate
-
-
-
-**growing** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
-
-
-
-**count** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
-
-
-
-**checkFinish** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
-
-
-
-**requiredOutput** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
-
-
-
-**ready** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
-
-
-
-**quality** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
-
-		client_fnc_upweedgrowing
-
-
-
-**growing** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_upweedgrowing
-
-
-
-**actionPerformed** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_weedgrowing
-
-		client_fnc_upweedgrowing
-
-
-
-**checkFinish** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_upweedgrowing
-
-
-
-**tf_voiceVolume** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_HandleKilled
-
-
-
-**dead** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_HandleKilled
-
-
-
-**surrender** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_HandleKeys
-
-
-
-**st_hide** - *prywatna*
-
-	Występowanie:
-
-		client_fnc_adminexecute
 
 
 
