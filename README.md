@@ -21,6 +21,9 @@
 * Naprawić znikanie ubrań - przy syncu reload ubrań
 * Przeszukiwanie sklepu / domu dla policji
 * Naprawić arsenał dla medyków
+* Cykl dnia / nocy
+* Zastąpienie samochodów taksówkarskich na słabsze
+* Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
 
 
 <hr>
@@ -79,3 +82,5 @@
 * Zwiekszenie ceny za crafting lockpick'a. Ale wtedy dac mozliwosc sprzedazy auta dla kazdego.
 * Kupowalne budynki ([stacje benzynowe](http://stanlakeside.pl/index.php?/topic/10379-ożywienie-stacji-benzynowych/&do=findComment&comment=45468))
 * [Nowe prace](http://stanlakeside.pl/index.php?/topic/10376-drobne-modyfikacje-oraz-dodanie-nowej-pracy/)
+* dodać gps dla cywili (maybe crafting?)
+* jesli osoba zostanie postrzelona jakos mocniej i jest nie przytomna to by medycy mieli coraz mniejszy % szans na podniesienie .Np  dostal gdzie blisko serca i podczas pomocy nagle zaczyna sie krwotok wewnetrzny jakis i jest tylko 10% szans.
