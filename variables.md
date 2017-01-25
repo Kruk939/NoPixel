@@ -92,6 +92,20 @@
 
 	Występowanie:
 
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_insertLog
+
+		server_fnc_initStats
+
+		server_fnc_paymayor
+
 		client_fnc_ticketresult
 
 		client_fnc_removeBank
@@ -115,6 +129,12 @@
 **bankAccount** - *prywatna*
 
 	Występowanie:
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
 
 		client_fnc_loadInventory
 
@@ -155,6 +175,12 @@
 **cop** - *prywatna*
 
 	Występowanie:
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
 
 		client_fnc_openShop
 
@@ -226,6 +252,8 @@
 
 	Występowanie:
 
+		server_fnc_initStats
+
 		client_fnc_startdoughnuts
 
 		client_fnc_loadInventory
@@ -246,6 +274,12 @@
 
 	Występowanie:
 
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
+
 		client_fnc_setGear
 
 		client_fnc_promotionstart
@@ -262,9 +296,23 @@
 
 
 
+**extDB_SQL_CUSTOM_ID** - *prywatna*
+
+	Występowanie:
+
+		server_fnc_ExtDBinit
+
+
+
 **fire** - *prywatna*
 
 	Występowanie:
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
 
 		client_fnc_setGear
 
@@ -277,6 +325,14 @@
 **garage** - *prywatna*
 
 	Występowanie:
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
+
+		server_fnc_platechange
 
 		client_fnc_addafuckingcar
 
@@ -296,6 +352,18 @@
 
 
 
+**getunitloadout** - *prywatna*
+
+	Występowanie:
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+
+
 **growing** - *prywatna*
 
 	Występowanie:
@@ -304,9 +372,53 @@
 
 
 
+**house** - *prywatna*
+
+	Występowanie:
+
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
+
+
+
+**housecontent** - *prywatna*
+
+	Występowanie:
+
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
+
+		server_fnc_retreiveHouse
+
+
+
 **houselevel** - *prywatna*
 
 	Występowanie:
+
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
 
 		client_fnc_initinteractions
 
@@ -317,6 +429,10 @@
 **information** - *prywatna*
 
 	Występowanie:
+
+		server_fnc_vehBuy
+
+		server_fnc_updateCarStatus
 
 		client_fnc_vehSetPrice
 
@@ -339,6 +455,12 @@
 **legal** - *prywatna*
 
 	Występowanie:
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
 
 		client_fnc_promotionstart
 
@@ -366,6 +488,12 @@
 
 	Występowanie:
 
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
+
 		client_fnc_setGear
 
 		client_fnc_setOwed
@@ -382,7 +510,43 @@
 
 	Występowanie:
 
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
+
 		client_fnc_loadInventory
+
+
+
+**office** - *prywatna*
+
+	Występowanie:
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+
+
+**phoneBackground** - *prywatna*
+
+	Występowanie:
+
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
 
 
 
@@ -566,9 +730,61 @@
 
 
 
+**shop** - *prywatna*
+
+	Występowanie:
+
+		server_fnc_storeUpdateName
+
+		server_fnc_shopPurchase
+
+		server_fnc_retreiveStoreShopper
+
+		server_fnc_closeshop
+
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
+
+
+
+**shopcontent** - *prywatna*
+
+	Występowanie:
+
+		server_fnc_shopPurchase
+
+		server_fnc_retreiveStoreShopper
+
+		server_fnc_retreiveStore
+
+		server_fnc_finishStoreUpdate
+
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
+
+
+
 **shopname** - *prywatna*
 
 	Występowanie:
+
+		server_fnc_retreiveStore
+
+		server_fnc_initStats
 
 		client_fnc_loadInventory
 
@@ -588,6 +804,16 @@
 
 	Występowanie:
 
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_initStats
+
 		client_fnc_sustain
 
 		client_fnc_doHealth
@@ -603,6 +829,20 @@
 		client_fnc_surrender
 
 		client_fnc_HandleKeys
+
+
+
+**sync** - *prywatna*
+
+	Występowanie:
+
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
 
 
 
@@ -705,6 +945,20 @@
 **wallet** - *prywatna*
 
 	Występowanie:
+
+		server_fnc_shopPurchase
+
+		server_fnc_steppedSync
+
+		server_fnc_statSaveLoop
+
+		server_fnc_statSaveDisconnect
+
+		server_fnc_statSave
+
+		server_fnc_insertLog
+
+		server_fnc_initStats
 
 		client_fnc_vehBuy
 
