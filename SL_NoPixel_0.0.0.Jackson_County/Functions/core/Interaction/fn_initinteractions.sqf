@@ -721,13 +721,16 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["((typeof CursorTarget) IN shopNameList) && ((time - (CursorTarget getVariable[""lastRobbed"",0])) > 600) && (player distance cursorTarget < 8) && (currentWeapon player != """")"],
+		["Okradnij sklep", "[""Okradam sklep"",90,client_fnc_robShop,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 	
 	[
 		["myjob == ""Cop"" && (typeof CursorTarget) == ""Land_Suitcase_F"""],
+		["Zbierz dowody", "[""Zbieram dowody"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 	[
 		["(typeof CursorTarget) == ""Land_Suitcase_F"""],
+		["Zniszcz dowody", "[""Niszcze dowody"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 //	[
