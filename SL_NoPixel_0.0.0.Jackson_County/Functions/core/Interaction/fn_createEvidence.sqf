@@ -5,22 +5,11 @@ private["_curTarget","_suspect","_victim","_crime"];
 _suspect = param [0,ObjNull,[ObjNull]];
 _victim = param [1,ObjNull,[ObjNull]];
 _crime = param [2];
-_vehicle = createVehicle ["Land_Suitcase_F", (player), [], 0, "NONE"];
 
 /*
-if(_crime == "187") then {
-	_vehicle setVariable ["evidence", [_suspect, _victim, "187"], true];
+_vehicle = createVehicle ["Land_Suitcase_F", (player), [], 0, "NONE"];
+
 };
-if(_crime == "211") then {
-	_vehicle setVariable ["evidence", [_suspect, _victim, "211"], true];
-};
-if(_crime == "487") then {
-	_vehicle setVariable ["evidence", [_suspect, _victim, "487"], true];
-};
-if(_crime == "334") then {
-	_vehicle setVariable ["evidence", [_suspect, _victim, "334"], true];
-};
-*/
 
 _vehicle setVariable ["evidence", [_suspect, _victim, _crime], true];
 _vehicle enablesimulation false;
@@ -33,3 +22,4 @@ _vehicle attachTo [_obj,[0,0,0]];
 uiSleep 1200;
 deletevehicle _obj;
 deletevehicle _vehicle;
+*/

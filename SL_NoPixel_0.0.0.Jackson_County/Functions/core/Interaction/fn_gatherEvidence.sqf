@@ -2,8 +2,8 @@
 File: gather evidence
 */
 private["_curTarget","_unit","_victim","_crime","_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title"];
-_curTarget = cursorTarget;
-_target = cursorTarget;
+_curTarget = currentEvidence;
+_target = currentEvidence;
 
 ["Zbieram dowody... Zajmie to okolo 10 sekund", false] spawn domsg;
 
