@@ -908,7 +908,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Repairman"""],
-		["Napraw obiekt", "[""Repairing Object"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Napraw obiekt", "[""Naprawiam obiekt"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+	],
+	
+	[
+		["typeof CurrentCursorTarget IN shopNameList && (time - (CurrentCursorTarget getVariable[lastRobbed,0]) > 600)"],
+		["Okradnij sklep", "[""Okradam"",90,client_fnc_robShop,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[

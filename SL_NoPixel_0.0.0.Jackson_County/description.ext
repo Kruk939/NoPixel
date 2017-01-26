@@ -215,6 +215,7 @@ class CfgFunctions
 			class loadstore {};
 			class purchase {};
 			class closeshop {};
+			class robShop {};
 		};
 		class JobMeth {
 			file = "Functions\core\Jobs\JobMeth";
