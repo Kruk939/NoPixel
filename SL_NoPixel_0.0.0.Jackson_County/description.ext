@@ -135,7 +135,7 @@ class CfgFunctions
 		};
 
 		class Wanted {
-			file = "Functions\core\wanted";
+			file = "Functions\core\Wanted";
 			class revokesend {};
 			class revokeupdate {};
 			class revoke {};

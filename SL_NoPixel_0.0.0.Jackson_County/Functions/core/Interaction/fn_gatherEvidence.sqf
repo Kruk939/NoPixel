@@ -16,7 +16,7 @@ _bad = 0;
 
 
 
-[format["Zebrales dowody na %1 do za %2.", name _suspect, _crime], false] spawn domsg;
+[format["Zebrales dowody na %1 za %2.", name _suspect, _crime], false] spawn domsg;
 /*
 if(_crime == "187") then {
 	[getPlayerUID _suspect,_suspect getVariable["realname",name _suspect],"187"] remoteExec ["life_fnc_wantedAdd",2];

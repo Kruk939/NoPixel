@@ -718,6 +718,17 @@ NoPixel_InteractionMenuItems = [
 		["!busyPlayer && !imrestrained && !clientarrested && player distance myhouse < 30"],
 		["Craft Menu", "createdialog ""client_Craft_Menu""",4]
 	],
+	
+	[
+		["((typeof CursorTarget) IN shopNameList) && ((time - (CursorTarget getVariable[""lastRobbed"",0])) > 600) && (player distance cursorTarget < 8) && (currentWeapon player != """")"],
+	],
+	
+	[
+		["myjob == ""Cop"" && (typeof CursorTarget) == ""Land_Suitcase_F"""],
+	],
+	[
+		["(typeof CursorTarget) == ""Land_Suitcase_F"""],
+	],
 
 //	[
 //		["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
@@ -910,20 +921,6 @@ NoPixel_InteractionMenuItems = [
 	[
 		["myjob == ""Repairman"""],
 		["Napraw obiekt", "[""Naprawiam obiekt"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
-	],
-	
-	[
-		["typeof CurrentCursorTarget IN shopNameList && (time - (CurrentCursorTarget getVariable[lastRobbed,0]) > 600)"],
-		["Okradnij sklep", "[""Okradam sklep"",90,client_fnc_robShop,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
-	],
-	
-	[
-		["myjob == ""Cop"" && typeof CurrentCursorTarget == ""Land_Suitcase_F"""],
-		["Zbierz dowody", "[""Zbieram dowody"",30,client_fnc_gatherEvidence,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
-	],
-	[
-		["typeof CurrentCursorTarget == ""Land_Suitcase_F"""],
-		["Zniszcz dowody", "[""Niszcze dowody"",60,client_fnc_destroyEvidence,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 

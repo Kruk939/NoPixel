@@ -7,6 +7,7 @@ _victim = param [1,ObjNull,[ObjNull]];
 _crime = param [2];
 _vehicle = createVehicle ["Land_Suitcase_F", (player), [], 0, "NONE"];
 
+/*
 if(_crime == "187") then {
 	_vehicle setVariable ["evidence", [_suspect, _victim, "187"], true];
 };
@@ -19,6 +20,9 @@ if(_crime == "487") then {
 if(_crime == "334") then {
 	_vehicle setVariable ["evidence", [_suspect, _victim, "334"], true];
 };
+*/
+
+_vehicle setVariable ["evidence", [_suspect, _victim, _crime], true];
 _vehicle enablesimulation false;
 _vehicle setPos [getPos _vehicle select 0, getPos _vehicle select 1, (getPos _vehicle select 2) + 0.5];
 

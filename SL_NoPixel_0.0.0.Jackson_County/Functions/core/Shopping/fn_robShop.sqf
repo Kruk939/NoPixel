@@ -7,8 +7,11 @@ if(typeOf _shop in shopNameList) then {
 	[_amount] spawn client_fnc_addCash;
 	[format["Okradłeś sklep, zabrałeś $%1", _amount], false] call domsg;
 	_chance = random(100);
-	if(_chance < 80) then {
-		[player] spawn client_fnc_robberyCall;
+	if(_chance < 90) then {
+		[player] remoteExec ["server_fnc_robberyCall", 2];
 	};
-	_shop setVariable ["lastRobbed",time, true];
+	if(_chance < 95) then {
+		[player, _shop, "napad na sklep"] spawn client_fnc_createEvidence;
+	};
+	_shop setVariable ["lastRobbed", time, true];
 };
