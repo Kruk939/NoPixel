@@ -7,9 +7,6 @@
 
 <hr>
 #TODO
-* Napady na sklep
-* Napady na bank
-* Sprawdzić więzienie
 * Pożary dla strażaków (importnant)
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
@@ -23,7 +20,6 @@
 * Naprawić arsenał dla medyków
 * Cykl dnia / nocy
 * Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
-* Informacja dla policjantów ze dostają informację o włamie na więzienie
 
 
 <hr>
@@ -45,6 +41,10 @@
 * Zbieranie marichuany - zwiększona ilość, naprawione hodowanie oraz zwiększony czas
 * Naprawić zabieranie pieniędzy (brak opcji zabrania podczas gdy jest skuty + zabierający nie dostaje kasy)
 * Sprawdzanie właścicela sklepu
+* Napady na sklep
+* Napady na bank
+* Sprawdzić więzienie
+* Informacja dla policjantów ze dostają informację o włamie na więzienie - dźwięk straszny i na całą mapę wystarczy?
 
 <hr>
 #DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
