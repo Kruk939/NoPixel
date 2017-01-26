@@ -353,6 +353,9 @@ class CfgFunctions
 			class initInteractions {};
 			class interactionAction {};
 			class openInteraction {};
+			class createEvidence {};
+			class destroyEvidence {};
+			class gatherEvidence {};
 		};
 		class Farming
 		{

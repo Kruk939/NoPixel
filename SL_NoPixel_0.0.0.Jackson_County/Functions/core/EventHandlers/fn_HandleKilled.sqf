@@ -41,6 +41,7 @@ if(_fuck != _you) then {
 
 		[format["%1 is severely hurt!", _you], false] spawn domsg; 
 		shooting_death = false;
+		[_killer, player, "187"] spawn client_fnc_createEvidence;
 	} else {
 		[getpos player, "News", "Shooting"] remoteexec ["server_fnc_giveTask",2];
 		if(_headshot == 1) then { [format["%1 headshot %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 downed %2 at a distance of %3 with weapon: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
@@ -54,6 +55,7 @@ if(_fuck != _you) then {
 		client_kcCamera camCommit 0;
 		_playerkill = true;
 		shooting_death = true;
+		[_killer, player, "188"] spawn client_fnc_createEvidence;
 	};
 	[player, "killed", format["Gracz zostal zabity przez %1 (%2) z odleglosci %3 z broni %4",_fuck, getPlayerUID _killer, _killdistance, _killweapon]] remoteExec ["Server_fnc_insertLog", 2];
 } else {

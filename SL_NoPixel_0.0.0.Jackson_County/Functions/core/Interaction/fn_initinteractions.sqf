@@ -616,7 +616,7 @@ NoPixel_InteractionMenuItems = [
 		["count attachedObjects player == 0 && !attachedcar, str CurrentCursorTarget find ""embarcadero"" > -1 && player distance currentcursortarget < 20"], 
 		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3] 
 	],
-
+	
 	[
 		["((player distance (getMarkerPos ""houseUpgrades"")) < 30)"],
 		["Ulepsz dom (125k)", "[] spawn client_fnc_UpgradeHouse",3]
@@ -818,6 +818,7 @@ NoPixel_InteractionMenuItems = [
 		["myjob == ""Judge"" || myjob == ""Lawyer"""],
 		["Zakończ pracę", "[] call client_fnc_jobEnd",4]
 	],
+	
 
 	[
 		["myjob == ""none"" && (player getvariable ""mafia"") > 0 && player distance myhouse < 30"],
@@ -913,8 +914,18 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["typeof CurrentCursorTarget IN shopNameList && (time - (CurrentCursorTarget getVariable[lastRobbed,0]) > 600)"],
-		["Okradnij sklep", "[""Okradam"",90,client_fnc_robShop,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
+		["Okradnij sklep", "[""Okradam sklep"",90,client_fnc_robShop,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
 	],
+	
+	[
+		["myjob == ""Cop"" && typeof CurrentCursorTarget == ""Land_Suitcase_F"""],
+		["Zbierz dowody", "[""Zbieram dowody"",30,client_fnc_gatherEvidence,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
+	],
+	[
+		["typeof CurrentCursorTarget == ""Land_Suitcase_F"""],
+		["Zniszcz dowody", "[""Niszcze dowody"",60,client_fnc_destroyEvidence,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
+	],
+
 
 	[
 		["jesteadmine>=1"],
