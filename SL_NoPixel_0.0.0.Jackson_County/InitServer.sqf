@@ -74,8 +74,8 @@ _newgate setdir _newgatedir;
 [] spawn server_fnc_rallyracetimes;
 [] spawn server_fnc_mafiabank;
 
-[server_fnc_addJob, 120] execFSM "\NoPixel_server\call.fsm";
-[Server_fnc_cleanup, 1800] execFSM "\NoPixel_server\call.fsm";
+[server_fnc_addJob, 120] execFSM "\nopixel_server\call.fsm";
+[Server_fnc_cleanup, 1800] execFSM "\nopixel_server\call.fsm";
 GarageVariableWhore = "Flag_US_F" createVehicle [0,1,0];
 
 _vehicle = "ivory_wrx" createvehicle [0,0,0];

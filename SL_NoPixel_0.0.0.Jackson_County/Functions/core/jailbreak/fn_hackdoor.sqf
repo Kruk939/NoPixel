@@ -3,8 +3,8 @@ if(jailHacking) exitwith {};
 jailHacking = true;
 
 
-if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main"]) then { ;
-_fencetoopen = cursorobject;
+if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "Land_buildingsJailCellBlock1"]) then {
+	_fencetoopen = cursorobject;
 	hint parsetext "<img size='1' image='CG_Jobs\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>ROZPOCZYNAM SEKWENCJĘ ŁAMANIA KODU</t><br/> PUNKT DOSĘPU ZOSTAŁ NARUSZONY.";
 
 	playSound3D ["CG_Jobs\sounds\jailbreak\hacking.ogg", player, false, (getposasl player), 1, 1, 25];
@@ -45,6 +45,16 @@ _fencetoopen = cursorobject;
 		{
 			_fencetoopen animate [_x,1];
 		} foreach _doors;
+
+	};
+	if(typeOf _fenceToOpen == "Land_buildingsJailCellBlock1") then {
+
+		playSound3D ["CG_Jobs\sounds\jailbreak\jailAlarm.ogg", _fenceToOpen, false, (getposasl _fenceToOpen), 1.7, 1, 10235];
+		hint parsetext format["<img size='1' image='CG_Jobs\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>GŁÓWNY MODUŁ ZŁAMANY</t><br/> PRZYZNANO PEŁNY DOSTĘP.",_calcT];
+		_doors2 = ["doorcell0","doorcell00","doorcell4","doorcell1","doorcell2","doorcell3"];
+		_doors = ["door1","door2","door3","door4"];
+		{ _fencetoopen animate [_x,1]; } forEach _doors;
+		{ _fencetoopen animate [_x,0]; } forEach _doors2;
 
 	};
 };

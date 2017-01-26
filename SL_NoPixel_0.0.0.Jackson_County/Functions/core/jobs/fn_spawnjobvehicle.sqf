@@ -16,7 +16,7 @@ if(!isNil "vehspawned") then {
 };
 
 [10] call Client_fnc_removeBank;
-["You have been charged $10 for renting a Job Vehicle.", true] spawn doquickmsg;
+["Zostałeś obciażony kwota $10 dolarów za wypożyczenie pojazdu służbowego.", true] spawn doquickmsg;
 
 _jobType = myjob;
 
