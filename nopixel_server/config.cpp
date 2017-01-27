@@ -47,6 +47,7 @@ class CfgFunctions {
             class finishStoreUpdate {};
 			class closeshop {};
 			class vehBuy {};
+            class economyEvents {};
         };
         class Wanted {
             file = "NoPixel_Server\server\core\Wanted";

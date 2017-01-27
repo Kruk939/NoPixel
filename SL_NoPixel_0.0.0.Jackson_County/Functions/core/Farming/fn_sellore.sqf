@@ -5,7 +5,8 @@ petroleo < string to object
 private["_n","_i","_localProtection"];
 
 _barArray = ["np_copperbar1","np_ironbar1","np_silverbar1","NP_Wood","CG_OilCanister"];
-_priceArray = [30,45,75,10,115];
+//priceArrayOre = [30,45,75,10,115];
+//publicVariable priceArrayOre;
 
 if(isNil "globalProtection") then { globalProtection = 0; };
 if(globalProtection != 0) exitwith { hint "Już przetwarzam"; };
@@ -25,7 +26,7 @@ _cashTotal = 0;
 		if(_localProtection != globalProtection) exitwith { [1,"Selling Ore Script"] spawn client_fnc_anticheat; };
 
 		player removeitem (_barArray select _n);
-		_value = (_priceArray select _n);
+		_value = (priceArrayOre select _n);
 		[_value] call Client_fnc_addCash;
 		_cashTotal = _cashTotal + _value;
 		_i = _i - 1;

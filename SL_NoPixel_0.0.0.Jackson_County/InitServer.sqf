@@ -1,4 +1,5 @@
 ["rpframework", "SQL_CUSTOM_V2", "rpframework"] spawn ExternalS_fnc_ExtDBinit;
+
 [] remoteExec ["Server_fnc_resetConnected", 2];
 
 	//usunięcie bram w willach
@@ -15,13 +16,17 @@
 	_obj hideObjectGlobal true;
 
 
+
 [] call server_fnc_setupVariablesServer;
 [] call Server_fnc_handleDisconnect;
 
 [] spawn server_fnc_mayorsetup;
 [] spawn server_fnc_racetimes;
 [] spawn server_fnc_rallyracetimes;
-[] spawn server_fnc_mafiabank;
+
+[] spawn server_fnc_mafiabank; //Ustawia zmienną z kwotą w bankomacie mafii
+[] spawn server_fnc_resetConnected; //Przy włączeniu serwera zmienia w bazie danych connected=1 na connected=0
+[] spawn server_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku
 
 [server_fnc_addJob, 120] execFSM "\nopixel_server\call.fsm";
 [Server_fnc_cleanup, 1800] execFSM "\nopixel_server\call.fsm";

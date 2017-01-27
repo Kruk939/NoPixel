@@ -80,6 +80,8 @@
 * \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
 <hr>
+
+=======
 #POMYSLY
 * Zwiekszenie ceny za crafting lockpick'a. Ale wtedy dac mozliwosc sprzedazy auta dla kazdego.
 * Kupowalne budynki ([stacje benzynowe](http://stanlakeside.pl/index.php?/topic/10379-ożywienie-stacji-benzynowych/&do=findComment&comment=45468))
@@ -88,3 +90,4 @@
 * jesli osoba zostanie postrzelona jakos mocniej i jest nie przytomna to by medycy mieli coraz mniejszy % szans na podniesienie .Np  dostal gdzie blisko serca i podczas pomocy nagle zaczyna sie krwotok wewnetrzny jakis i jest tylko 10% szans.
 * Dodanie dla wszystkich kabure do craftu sab_wwiplanes_pilot_holster https://i.imgur.com/SFWbtPi.jpg
 * Samochody taksówkarskie z szansą na pojawienie się ivory_rs4_taxi 25% / ivory_190e_taxi 75%
+
