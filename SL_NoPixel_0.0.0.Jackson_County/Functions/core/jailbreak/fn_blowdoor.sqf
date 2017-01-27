@@ -11,4 +11,7 @@ if(typeof cursorobject == "Land_zac_prison_wall_gate") then {
 	_door allowdamage true;
 	_door animate ["door_1",5];
 	[(getpos player)] remoteexec ["server_fnc_firestart",2];
+	
+	[getpos _door] remoteexec ["client_fnc_jobMarker", currentCop];
+	["911: URUCHOMIŁ SIĘ ALARM, WYWAŻONO GŁÓWNE DRZWI DO WIĘZIENIA!", false] remoteExec ["domsg", currentCop]; 
 };

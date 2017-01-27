@@ -1,20 +1,20 @@
 _chance = random 100;
 
-if (_chance > 50) then {
-    "A Silverlake Bank has received a money shipment"
-    remoteexec["hint", -2];
+if (_chance > 20) then {
+    ["Informacja","Jeden z banków właśnie otrzymał dostawę pieniędzy.",[255,69,0,1],""] remoteExec ["Client_fnc_showNotification", -2];
+    //"Jeden z banków właśnie otrzymał dostawę pieniędzy." remoteexec["hint", -2];
     _mybank = banks call BIS_fnc_selectRandom;
-    _thebankcontainer = "plp_ct_HighSecMediumBlack"
-    createvehicle getpos player;
+    _thebankcontainer = "plp_ct_HighSecMediumBlack" createvehicle [9794,978,0.0014];
     _pos = getpos _mybank;
     _thebankcontainer setdir(getdir _mybank) - 89;
     _containerpos = _mybank getrelpos[-3, 0];
     _thebankcontainer setpos _containerpos;
     _newpos = _thebankcontainer getrelpos[-1.2, 0];
     _thebankcontainer setpos[(_newpos select 0), (_newpos select 1), (_newpos select 2) + 4];
+	diag_log format ["Bank pos - %1", _pos];
 };
 
-
+/*
 if (isNil "carArray") then {
     carArray = [];
 };
@@ -25,7 +25,6 @@ if (isNil "carPosition") then {
 
 {
     _nearc = nearestObjects[getPos _x, ["Man"], 55];
-
     if (((count _nearc) == 0 && (count crew _x) == 0 && isNull driver vehicle _x && isNull attachedTo _x) || getdammage _x == 1) then {
         if (_x in carArray) then {
             _pia = cararray FIND _x;
@@ -39,11 +38,8 @@ if (isNil "carPosition") then {
             cararray pushback _x;
             carposition pushback getpos _x;
         };
-
     };
-    uisleep 0.1;
-}
-foreach vehicles;
+} foreach vehicles;
 
 
 _list = (allMissionObjects "WeaponHolder") +
@@ -63,3 +59,5 @@ _list = (allMissionObjects "WeaponHolder") +
     };
 }
 forEach _list;
+*/
+diag_log "server_fnc_cleanup";

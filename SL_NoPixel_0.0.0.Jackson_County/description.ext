@@ -5,16 +5,29 @@ disabledAI = 1;
 author = "Koil";
 onLoadName = "Silverlake by StanLakeside";
 onLoadMission = "Powered on NoPixel Mod by Koil";
+loadScreen =  "loading\load.paa";
 respawndelay = 1;
 
-wreckLimit = 2;
-wreckRemovalMaxTime = 300;
+wreckLimit = 5;
+wreckRemovalMaxTime = 600;
 wreckRemovalMinTime = 10;
 
 class Header {
     gameType = RPG;
     minPlayers = 1;
     maxPlayers = 120;
+};
+
+showHUD[] = {
+	1,
+	1,
+	1,
+	1,
+	1,
+	0,
+	0,
+	1,
+	0
 };
 
 #include "dialogs\Dialogs.hpp"
@@ -135,7 +148,7 @@ class CfgFunctions
 		};
 
 		class Wanted {
-			file = "Functions\core\wanted";
+			file = "Functions\core\Wanted";
 			class revokesend {};
 			class revokeupdate {};
 			class revoke {};
@@ -215,6 +228,7 @@ class CfgFunctions
 			class loadstore {};
 			class purchase {};
 			class closeshop {};
+			class robShop {};
 		};
 		class JobMeth {
 			file = "Functions\core\Jobs\JobMeth";
@@ -276,6 +290,7 @@ class CfgFunctions
 			class sendrevive {};		
 			class revived {};
 			class medicClothes {};
+			class openHealMenu {};
 		};
 		class Mayor
 		{
@@ -352,6 +367,9 @@ class CfgFunctions
 			class initInteractions {};
 			class interactionAction {};
 			class openInteraction {};
+			class createEvidence {};
+			class destroyEvidence {};
+			class gatherEvidence {};
 		};
 		class Farming
 		{
@@ -483,6 +501,7 @@ class CfgFunctions
 			class giveCashSubmit {};
 			class removeBank {};
 			class removeCash {};
+			class takeDrill {};
 		};
 		class Vehicle
 		{
@@ -503,6 +522,7 @@ class CfgFunctions
 			class vehBuy {};
 			class vehSetPrice {};
 			class vehSold {};
+			class vehGetInfo {};
 		};
 	};
 };

@@ -16,7 +16,7 @@ if(!isNil "vehspawned") then {
 };
 
 [10] call Client_fnc_removeBank;
-["You have been charged $10 for renting a Job Vehicle.", true] spawn doquickmsg;
+["Zostałeś obciażony kwota $10 dolarów za wypożyczenie pojazdu służbowego.", true] spawn doquickmsg;
 
 _jobType = myjob;
 
@@ -91,12 +91,19 @@ if (_jobType == "NewsMan") exitwith {
 };
 
 if (_jobType == "taxi") exitwith {	
-	vehspawned = createVehicle ["ivory_rs4_taxi", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	_taxichance = random (10);
+	if(_taxichance > 9) then 
+	{
+		vehspawned = createVehicle ["ivory_rs4_taxi", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	}else
+	{
+		vehspawned = createVehicle ["ivory_190e_taxi", [0,0,(random(500) + 3)], [], 0, "NONE"];
+	};
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["np_shirt_8",1];
-	hint "You have some items in the truck, use them!";
+	hint "Masz jakieś rzeczy w bagażniku, użyj ich!";
 };
 
 

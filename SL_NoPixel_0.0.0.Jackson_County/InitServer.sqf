@@ -1,67 +1,20 @@
 ["rpframework", "SQL_CUSTOM_V2", "rpframework"] spawn ExternalS_fnc_ExtDBinit;
 
-_nearc = nearestObject[[9907.22, 3532.38, 0.00143814], "Land_Gate_C "];
-_newgatepos = getpos _nearc;
-_newgatedir = getdir _nearc;
-_nearc hideobjectglobal true;
-_newgate = "Land_Gate_C_Mafia "createvehicle _newgatepos;
-_newgate allowdamage false;
-_newgate setpos _newgatepos;
-_newgte setdir _newgatedir;
-_nearc = nearestObject[[9800.93, 3488.48, 0.00143814], "Land_Gate_C "];
-_newgatepos = getpos _nearc;
-_newgatedir = getdir _nearc;
-_nearc hideobjectglobal true;
-_newgate = "Land_Gate_C_Mafia "createvehicle _newgatepos;
-_newgate allowdamage false;
-_newgate setpos _newgatepos;
-_newgate setdir _newgatedir;
+[] remoteExec ["Server_fnc_resetConnected", 2];
 
-_nearc = nearestObject[[9375.49, 3283.32, 0.00143814], "Land_Gate_C "];
-_newgatepos = getpos _nearc;
-_newgatedir = getdir _nearc;
-_nearc hideobjectglobal true;
-_newgate = "Land_Gate_C_ems " createvehicle _newgatepos;
-_newgate allowdamage false;
-_newgate setpos _newgatepos;
-_newgate setdir _newgatedir;
+	//usunięcie bram w willach
+	_obj = [9585.29, 3385.69, 0.00143814] nearestObject 166437; 
+	_obj enableSimulationGlobal false;
+	_obj hideObjectGlobal true;
 
-_nearc = nearestObject[[9479.88, 3334.92, 0.00143814], "Land_Gate_C "];
-_newgatepos = getpos _nearc;
-_newgatedir = getdir _nearc;
-_nearc hideobjectglobal true;
-_newgate = "Land_Gate_C_ems "createvehicle _newgatepos;
-_newgate allowdamage false;
-_newgate setpos _newgatepos;
-_newgate setdir _newgatedir;
+	_obj = [9694.59, 3437.44, 0.00143814] nearestObject 166434; 
+	_obj enableSimulationGlobal false;
+	_obj hideObjectGlobal true;
 
-_nearc = nearestObject[[9265.62, 3237.3, 0.00143814], "Land_Gate_C "];
-_newgatepos = getpos _nearc;
-_newgatedir = getdir _nearc;
-_nearc hideobjectglobal true;
-_newgate = "Land_Gate_C_legal "createvehicle _newgatepos;
-_newgate allowdamage false;
-_newgate setpos _newgatepos;
-_newgate setdir _newgatedir;
+	_obj = [10017.60, 3585.74, 0.00143814] nearestObject 165573; 
+	_obj enableSimulationGlobal false;
+	_obj hideObjectGlobal true;
 
-
-_nearc = nearestObject[[9154.75, 3186.59, 0.00143814], "Land_Gate_C "];
-_newgatepos = getpos _nearc;
-_newgatedir = getdir _nearc;
-_nearc hideobjectglobal true;
-_newgate = "Land_Gate_C_legal " createvehicle _newgatepos;
-_newgate allowdamage false;
-_newgate setpos _newgatepos;
-_newgate setdir _newgatedir;
-
-_nearc = nearestObject[[9052.42, 3134.66, 0.00143814], "Land_Gate_C "];
-_newgatepos = getpos _nearc;
-_newgatedir = getdir _nearc;
-_nearc hideobjectglobal true;
-_newgate = "Land_Gate_C_legal "createvehicle _newgatepos;
-_newgate allowdamage false;
-_newgate setpos _newgatepos;
-_newgate setdir _newgatedir;
 
 
 [] call server_fnc_setupVariablesServer;
@@ -75,8 +28,8 @@ _newgate setdir _newgatedir;
 [] spawn server_fnc_resetConnected; //Przy włączeniu serwera zmienia w bazie danych connected=1 na connected=0
 [] spawn server_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku
 
-[server_fnc_addJob, 120] execFSM "\NoPixel_server\call.fsm";
-[Server_fnc_cleanup, 1800] execFSM "\NoPixel_server\call.fsm";
+[server_fnc_addJob, 120] execFSM "\nopixel_server\call.fsm";
+[Server_fnc_cleanup, 1800] execFSM "\nopixel_server\call.fsm";
 GarageVariableWhore = "Flag_US_F" createVehicle [0,1,0];
 
 _vehicle = "ivory_wrx" createvehicle [0,0,0];
@@ -86,6 +39,7 @@ _vehicle = "ivory_wrx" createvehicle [0,0,0];
 uisleep 0.05;
 deletevehicle _vehicle;
 
+setTimeMultiplier 24;
 setDate [2015, 3, 3, 06, 0];
 0 setovercast 0;
 0 setrain 0;

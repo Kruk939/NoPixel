@@ -18,12 +18,12 @@ imfishing = true;
 	sleep 2.5;
 
 	if!(surfaceIsWater (getpos _vehicle)) exitwith {
-		hint "You lost your bait!";
+		hint "Zgubiłeś przynętę!";
 		deletevehicle _vehicle;
 		imfishing = false;
 	};
 
-	hint "Successful Cast";
+	hint "Dobry rzut!";
 	playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosASL _vehicle, 25, 1, 85];
 
 	_timeOut = 0;

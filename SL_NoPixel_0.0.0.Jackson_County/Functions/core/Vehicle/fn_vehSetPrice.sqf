@@ -7,13 +7,9 @@
 	Description: Function that get price from GUI and sets vehicle variable. TODO: attachTo car dealer building - it was not working correctly
 	Return: nothing
 */
-
-
 //if(!dialog) exitWith {};
 
 _display = findDisplay 7001;
-
-
 _price = parseNumber(ctrlText 4202);
 _shop = nearestObject [getPos player, "Land_ModernShowroom"];
 _veh = cursorTarget;
@@ -31,7 +27,6 @@ _pos = [
 	[6,[-26.5,-17,1.4], 130]
 ];
 
-
 if(_price <= 0) exitWith { ["Cena nie zgadza się!", true] spawn domsg; }; //Za mala cena
 if(count _carsInShop == count _pos) exitWith { ["W salonie nie ma miejsca!", true] spawn domsg; }; //Nie ma miejsca w salonie
 if(isNull _veh) exitWith {}; //Nie ma takiego pojazdu
@@ -39,7 +34,6 @@ if(!(_veh isKindOf "Car")) exitWith {}; //To nie jest samochod
 if(count _information isEqualTo 0) exitWith {}; //Coś jest nie tak
 if(player distance _shop > 40) exitWith { ["Jesteś za daleko!", true] spawn domsg; }; //Jestes za daleko
 if(_carowner != getPlayerUID player) exitWith { ["Nie jesteś właścicielem pojazdu!", true] spawn domsg; }; //To nie jest Twoj samochod
-
 
 
 _veh setVariable ["information",_information, true];

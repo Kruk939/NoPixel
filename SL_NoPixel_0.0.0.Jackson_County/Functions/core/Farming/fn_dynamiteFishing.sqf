@@ -21,7 +21,7 @@ pole fishing by koil
 	};
 
 	_catchPos = (getpos _vehicle);
-	hint "Successful Throw - Stand Back!";
+	hint "Dobry rzut - Lepiej się odsuń!";
 	
 	sleep 8;
 	"R_60mm_HE" createvehicle [(getpos _vehicle select 0)-2,(getpos _vehicle select 1)+1,(getpos _vehicle select 2)-3];

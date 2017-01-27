@@ -5,6 +5,10 @@ _marker = createMarkerlocal [_markername, _pos];
 _marker setMarkerShapelocal "ICON";
 _marker setMarkerTypelocal "hd_dot";
 _marker setMarkerColorlocal "ColorOrange";
-_marker setMarkerTextlocal "Tasked Location";
+_marker setMarkerTextlocal "Miejsce zadania";
 
-if(myjob == "Cop") then { [_pos,"Rabunek sklepu","Job"] spawn client_fnc_hudHelper; } else { [_pos,"Job Task","Job"] spawn client_fnc_hudHelper;};
+if(myjob == "Cop") then {
+	[_pos,"Uruchomiony alarm!","Job"] spawn client_fnc_hudHelper;
+} else {
+	[_pos,"Zadanie","Job"] spawn client_fnc_hudHelper;
+};

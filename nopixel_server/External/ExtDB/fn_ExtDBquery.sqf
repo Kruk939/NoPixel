@@ -1,4 +1,3 @@
- 
 private ["_querstr", "_quer", "_array"]; 
 params ["_mode", "_query"]; 
  

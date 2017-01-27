@@ -2,11 +2,11 @@ private["_display","_list","_i","_EMS","_Cop","_Fire","_Mafia","_legal"];
 //Cop - EMS - Mafia - Fire
 disableSerialization;
 _max = 0;
-_EMS = player getvariable "EMS";
-_Cop = player getvariable "Cop";
-_Fire = player getvariable "Fire";
-_Mafia = player getvariable "Mafia";
-_legal = player getvariable "legal";
+_EMS = player getVariable ["EMS",0];
+_Cop = player getVariable ["Cop",0];
+_Fire = player getVariable ["Fire",0];
+_Mafia = player getVariable ["Mafia",0];
+_legal = player getVariable ["legal",0];
 if(myJob isEqualTo "Cop" && _Cop < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "EMS" && _EMS < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "Fire" && _Fire < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
@@ -20,7 +20,7 @@ if(myJob isEqualTo "Cop") then { _max = _Cop; };
 if(myJob isEqualTo "EMS") then { _max = _EMS; };
 if(myJob isEqualTo "Fire") then { _max = _Fire; };
 if(myJob isEqualTo "Mafia") then { _max = _Mafia; };
-if(myJob isEqualTo "Judge") then { _max = _Mafia; };
+if(myJob isEqualTo "Judge") then { _max = _legal; };
 if(myJob isEqualTo "Lawyer") then { _max = _legal; };
 
 createdialog "promotion";

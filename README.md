@@ -1,5 +1,5 @@
 # NoPixel
-1. Każdy plik podpisany moim imieniem i nazwiskiem dalej zwany **plikiem** jest moją własnością intelektualną.
+1. Każdy plik podpisany moim imieniem i nazwiskiem bądź pseudonimem dalej zwany **plikiem** jest moją własnością intelektualną.
 2. Każdy plik podpisany frazą "stanlakeside.pl" również zwany **plikiem** jest własnością intelektualną stanlakeside.pl.
 3. **Plik** można wykorzystać wyłącznie w celach edukacyjnych.
 4. **Plik** nie może być udostępniany bez mojej zgody.
@@ -7,10 +7,6 @@
 
 <hr>
 #TODO
-* Napady na sklep
-* Napady na bank
-* Sprawdzić więzienie
-* Sprawdzanie właścicela sklepu
 * Pożary dla strażaków (importnant)
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
@@ -20,7 +16,10 @@
 * Dodanie pracy kierowcy autobusu.
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 * Naprawić znikanie ubrań - przy syncu reload ubrań
-* Naprawić zabieranie pieniędzy (brak opcji zabrania podczas gdy jest skuty + zabierający nie dostaje kasy) - do sprawdzenia czy działa
+* Przeszukiwanie sklepu / domu dla policji
+* Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
+* Automatyczne upuszczanie aut po 15 sekundach od wyciagniecia
+
 
 <hr>
 #DONE
@@ -39,6 +38,14 @@
 * Naprawiono bankomat mafii
 * Przygotowano misję pod system odszkodowań (w bazie danych czy osoba jest połączona z serwerem ; resetuje się przy restarcie)
 * Zbieranie marichuany - zwiększona ilość, naprawione hodowanie oraz zwiększony czas
+* Naprawić zabieranie pieniędzy (brak opcji zabrania podczas gdy jest skuty + zabierający nie dostaje kasy)
+* Sprawdzanie właścicela sklepu
+* Napady na sklep
+* Napady na bank
+* Sprawdzić więzienie
+* Informacja dla policjantów ze dostają informację o włamie na więzienie - dźwięk straszny i na całą mapę wystarczy?
+* Naprawić arsenał dla medyków
+* Cykl dnia / nocy
 
 <hr>
 #DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
@@ -46,6 +53,7 @@
     Sukces - ["Sukces","Tekst",[0,255,0,1],""] call Client_fnc_showNotification;
     Błąd - ["Błąd","Tekst",[255,0,0,1],""] call Client_fnc_showNotification;
     Ostrzeżenie - ["Ostrzeżenie","Tekst",[255,255,0,1],""] call Client_fnc_showNotification;
+	Informacja - ["Informacja","Tekst",[255,69,0,1],""] call Client_fnc_showNotification;
     Ogólny szablon -  ["Tytuł","Tekst",[R,G,B,A],"Dźwięk"] call Client_fnc_showNotification;
 ```
 
@@ -72,48 +80,14 @@
 * \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
 <hr>
-#ZMIENNE PUBLICZNE
-```
-currentCop - aktualni policjanci * count currentCop (liczba policjantów)
-currentEMS - aktualni medycy * count currentEMS (liczba medyków)
-currentMafia - aktualna mafia * count currentMafia (liczba mafiozów)
-currentFire - aktualni strażacy * count currentFire (liczba strażaków)
 
-currentMedicDispatch - ludzie zapisani na centralę medyczną
-currentPoliceDispatch - ludzie zapisani na centralę policyjną
-currentFireDispatch - ludzie zapisani na centralę strażacką
+=======
+#POMYSLY
+* Zwiekszenie ceny za crafting lockpick'a. Ale wtedy dac mozliwosc sprzedazy auta dla kazdego.
+* Kupowalne budynki ([stacje benzynowe](http://stanlakeside.pl/index.php?/topic/10379-ożywienie-stacji-benzynowych/&do=findComment&comment=45468))
+* [Nowe prace](http://stanlakeside.pl/index.php?/topic/10376-drobne-modyfikacje-oraz-dodanie-nowej-pracy/)
+* dodać gps dla cywili (maybe crafting?)
+* jesli osoba zostanie postrzelona jakos mocniej i jest nie przytomna to by medycy mieli coraz mniejszy % szans na podniesienie .Np  dostal gdzie blisko serca i podczas pomocy nagle zaczyna sie krwotok wewnetrzny jakis i jest tylko 10% szans.
+* Dodanie dla wszystkich kabure do craftu sab_wwiplanes_pilot_holster https://i.imgur.com/SFWbtPi.jpg
+* Samochody taksówkarskie z szansą na pojawienie się ivory_rs4_taxi 25% / ivory_190e_taxi 75%
 
-currentJudges - aktualni sędziowie
-currentLawyers - aktualni adwokaci
-
-currentMailmen - aktualni listonosze
-currentsecurity - aktualni ochroniarze
-currentTowTruckDrivers - aktualni drwale
-currentTrashMan - aktualni smieciarze
-currentNewsMan - aktualni dziennikarze
-currentRepairmen - aktualni mechanicy
-currentTaxiDrivers - aktualni taksówkarze
-currentDoughnuts - aktualni pracujący w firmie Doughnuts 
-```
-
-<hr>
-#ZMIENNE GRACZA (DO OPISANIA)
-```
-wallet
-atm
-bankAccount
-cop
-ems
-mafia
-fire
-legal
-garage
-doughnuts
-phoneBackgorund
-messages
-statuses
-houselevel
-housecontent
-shopcontent
-shopname
-```

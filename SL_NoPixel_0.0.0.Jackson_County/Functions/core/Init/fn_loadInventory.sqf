@@ -48,13 +48,13 @@ if(_mafia == 9) then {
 };
 
 if(_cop == 10) then {
-	player setvariable ["coplevel",10,false];
+	//player setvariable ["coplevel",10,false];
 	//format["The Police Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9626,3578.7,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
 if(_cop == 9) then {
-	player setvariable ["coplevel",9,false];
+	//player setvariable ["coplevel",9,false];
 	//format["The Police Captain has entered the City! %1", name player] remoteexec ["hint",-2];
 	_house = getpos nearestObject [[9516.43,3526.09,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
