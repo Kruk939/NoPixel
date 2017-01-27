@@ -13,7 +13,7 @@ if (_chance > 20) then {
 	diag_log format ["Bank pos - %1", _pos];
 };
 
-
+/*
 if (isNil "carArray") then {
     carArray = [];
 };
@@ -58,5 +58,5 @@ _list = (allMissionObjects "WeaponHolder") +
     };
 }
 forEach _list;
-
+*/
 diag_log "server_fnc_cleanup";
