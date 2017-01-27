@@ -31,7 +31,7 @@ NoPixel_InteractionMenuItems = [
 
 	[ 
 		[" bankrobber == 4 "], 
-		["Zbierz pieniądze", " ['Taking Money',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5] 
+		["Zbierz pieniądze", " ['Pakuję pieniądze',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5] 
 	],
 
 	[ 
@@ -153,6 +153,11 @@ NoPixel_InteractionMenuItems = [
 		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Cop"" && (player distance getmarkerpos ""fbiHQ"" < 30 || player distance getmarkerpos ""policeHQ"" < 30) "],
 		["Szukaj pluskwy", " [currentcursortarget] spawn client_fnc_disTracking; ",1]
 	],
+	
+	[
+		[" player distance theDrill < 5"],
+		["Zabierz wiertło", " ['Pakowanie wiertła',30,client_fnc_takeDrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",1]
+	],
 
 	[
 		[" player distance getmarkerpos ""rally_1"" < 80 "],
@@ -193,7 +198,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[""],
-		["Ulecz", "createdialog ""FindPlayer_Menu"";",1]
+		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
 	],
 
 	[

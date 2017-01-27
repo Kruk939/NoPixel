@@ -6,6 +6,7 @@ lastsync = time;
 lastforcesync = time;
 lastInvsync = time;
 bankrobber = 1;
+theDrill = objNull;
 myjob = "none";
 fires = [];
 adminESP = false;

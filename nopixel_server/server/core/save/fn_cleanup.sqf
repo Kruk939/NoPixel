@@ -1,6 +1,6 @@
 _chance = random 100;
 
-if (_chance > 50) then {
+if (_chance > 20) then {
     "Jeden z banków właśnie otrzymał dostawę pieniędzy." remoteexec["hint", -2];
     _mybank = banks call BIS_fnc_selectRandom;
     _thebankcontainer = "plp_ct_HighSecMediumBlack" createvehicle [9794,978,0.0014];
