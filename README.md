@@ -17,8 +17,6 @@
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 * Naprawić znikanie ubrań - przy syncu reload ubrań
 * Przeszukiwanie sklepu / domu dla policji
-* Naprawić arsenał dla medyków
-* Cykl dnia / nocy
 * Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
 * Automatyczne upuszczanie aut po 15 sekundach od wyciagniecia
 
@@ -46,6 +44,8 @@
 * Napady na bank
 * Sprawdzić więzienie
 * Informacja dla policjantów ze dostają informację o włamie na więzienie - dźwięk straszny i na całą mapę wystarczy?
+* Naprawić arsenał dla medyków
+* Cykl dnia / nocy
 
 <hr>
 #DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
