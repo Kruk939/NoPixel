@@ -277,6 +277,7 @@ class CfgFunctions
 			class sendrevive {};		
 			class revived {};
 			class medicClothes {};
+			class openHealMenu {};
 		};
 		class Mayor
 		{
@@ -487,6 +488,7 @@ class CfgFunctions
 			class giveCashSubmit {};
 			class removeBank {};
 			class removeCash {};
+			class takeDrill {};
 		};
 		class Vehicle
 		{
