@@ -8,7 +8,7 @@ _marker setMarkerColorlocal "ColorOrange";
 _marker setMarkerTextlocal "Miejsce zadania";
 
 if(myjob == "Cop") then {
-	[_pos,"Rabunek sklepu","Job"] spawn client_fnc_hudHelper;
+	[_pos,"Uruchomiony alarm!","Job"] spawn client_fnc_hudHelper;
 } else {
-	[_pos,"Job Task","Job"] spawn client_fnc_hudHelper;
+	[_pos,"Zadanie","Job"] spawn client_fnc_hudHelper;
 };

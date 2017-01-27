@@ -1,7 +1,8 @@
 _chance = random 100;
 
 if (_chance > 20) then {
-    "Jeden z banków właśnie otrzymał dostawę pieniędzy." remoteexec["hint", -2];
+    ["Informacja","Jeden z banków właśnie otrzymał dostawę pieniędzy.",[255,69,0,1],""] remoteExec ["Client_fnc_showNotification", -2];
+    //"Jeden z banków właśnie otrzymał dostawę pieniędzy." remoteexec["hint", -2];
     _mybank = banks call BIS_fnc_selectRandom;
     _thebankcontainer = "plp_ct_HighSecMediumBlack" createvehicle [9794,978,0.0014];
     _pos = getpos _mybank;

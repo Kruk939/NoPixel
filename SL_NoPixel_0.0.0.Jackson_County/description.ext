@@ -5,16 +5,29 @@ disabledAI = 1;
 author = "Koil";
 onLoadName = "Silverlake by StanLakeside";
 onLoadMission = "Powered on NoPixel Mod by Koil";
+loadScreen =  "loading\load.paa";
 respawndelay = 1;
 
-wreckLimit = 2;
-wreckRemovalMaxTime = 300;
+wreckLimit = 5;
+wreckRemovalMaxTime = 600;
 wreckRemovalMinTime = 10;
 
 class Header {
     gameType = RPG;
     minPlayers = 1;
     maxPlayers = 120;
+};
+
+showHUD[] = {
+	1,
+	1,
+	1,
+	1,
+	1,
+	0,
+	0,
+	1,
+	0
 };
 
 #include "dialogs\Dialogs.hpp"

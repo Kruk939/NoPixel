@@ -6,7 +6,6 @@ _crate = _this select 0;
  
  
 _availableHeadgear = [
-	"ALE_H_Calot",
 	"AM_PatrolHat",
 	"TAC_SF10H",
 	"BHD_Protec_helmet",
@@ -102,12 +101,16 @@ _availableMagazine = [
 	"RH_33Rnd_9x19_g18",
 	"RH_19Rnd_9x19_g18",
 	"RH_19Rnd_9x19_g18",
-	"CUP_5Rnd_762x51_M24",
 	"30Rnd_556x45_Stanag",
 	"CUP_8Rnd_B_Beneli_74Slug",
 	"CUP_8Rnd_B_Beneli_74Pellets",
 	"CUP_30Rnd_9x19_MP5"
 ];
+
+if (player getvariable ["cop", 0] > 8) then {
+_availableMagazine pushBack "RH_18Rnd_9x19_gsh";
+_availableMagazine pushBack "RH_7Rnd_50_AE";
+};
  
 _availableWeapon = [
 	"RH_m9",
@@ -127,22 +130,37 @@ _availableWeapon = [
 	"RH_m1911",
 	"Taser",
 	"RH_mateba",
-	"RH_mp412",
-	//"CUP_srifle_M24_wdl",
-	"CUP_arifle_M4A1_black",
-	"CUP_sgun_M1014",
-	"CUP_arifle_M16A4_Base",
-	"CUP_smg_MP5A5"
+	"RH_mp412"
 ];
+if (player getvariable ["cop", 0] > 5) then {
+_availableWeapon pushBack "RH_g18";
+};
+if (player getvariable ["cop", 0] > 6) then {
+_availableWeapon pushBack "CUP_arifle_M4A1_black";
+_availableWeapon pushBack "CUP_sgun_M1014";
+_availableWeapon pushBack "CUP_arifle_M16A4_Base";
+_availableWeapon pushBack "CUP_smg_MP5A5";
+_availableWeapon pushBack "CUP_hgun_BallisticShield_Armed";
+_availableWeapon pushBack "Rangefinder";
+};
+if (player getvariable ["cop", 0] > 8) then {
+_availableWeapon pushBack "RH_gsh18";
+_availableWeapon pushBack "RH_Deaglem";
+};
 
 _availableAttachments = [
 	"CUP_optic_LeupoldMk4_10x40_LRT_Woodland",
-	"CUP_optic_HoloBlack",
-	"CUP_optic_CompM2_Black",
-	"CUP_optic_CompM4",
 	"RH_X300",
 	"acc_flashlight"
 ];
+if (player getvariable ["cop", 0] > 4) then {
+_availableAttachments pushBack "RH_docter";
+};
+if (player getvariable ["cop", 0] > 6) then {
+_availableAttachments pushBack "CUP_optic_HoloBlack";
+_availableAttachments pushBack "CUP_optic_CompM2_Black";
+_availableAttachments pushBack "CUP_optic_CompM4";
+};
  
 _availableItems = [
 	"tf_anprc148jem"

@@ -1,17 +1,3 @@
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 private["_string","_array"]; 
  
 _string = (_this select 0); 

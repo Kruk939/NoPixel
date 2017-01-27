@@ -1,16 +1,3 @@
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 private["_database","_protocol","_protocol_options","_return","_result","_random_number","_extDB_SQL_CUSTOM_ID"]; 
  
 _database = [_this,0,"",[""]] call BIS_fnc_param; 
