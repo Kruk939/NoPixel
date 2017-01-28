@@ -62,8 +62,8 @@ _civilianVehicle = [
 	["ivory_lfa",85000],
 	["ivory_mp4",95000],
 	["vvv_Cadillac_XLR_V",95000],
-	["ivory_911",100000],
 	["ivory_r8", 120000],
+	["ivory_911",100000],
 	["vvv_Aston_Martin_DB9", 120000],
 	["vvv_audi_r8", 120000],
 	["ivory_r8_spyder", 140000],
@@ -73,9 +73,33 @@ _civilianVehicle = [
 	["ivory_rev", 220000],
 	["ivory_ccx", 240000],
 	["ivory_f1",250000],
-	["ivory_veyron",300000]
+	["ivory_veyron",300000],
+	["vvv_man_obras_negro", 35000],
+	["shounka_buggy", 35000],
+	["vvv_man_obras_negro", 35000],
+	["VVV_cazafantasmas_civ", 35000],
+	["devon_gtx", 50000],
+	["vvv_DOD_RamSRT_civ", 25000],
+	["vvv_dumper", 50000],
+	["Jonzie_Forklift", 25000],
+	["vvv_formula1_twitch", 100000],
+	["vvv_formula1", 100000],
+	["vvv_formula1_noshpegan", 100000],
+	["vvv_formula1_redbull", 100000],
+	["vvv_formula1_ferrari", 100000],
+	["vvv_formula1_Mclaren", 100000],
+	["C_Offroad_02_unarmed_F", 50000],
+	["New_Holland_TC590_civ", 25000],
+	["vvv_Ponsse_Buffalo_Forwarder_civ", 30000],
+	["B_T_LSV_01_unarmed_F", 100000],
+	["vvv_SeatLeon_2014_WEBER", 100000],
+	["vvv_SeatLeon_2014_BRICHE_BLUE", 100000],
+	["vvv_SeatLeon_2014_FOGLIO", 100000],
+	["vvv_SeatLeon_2014_font", 100000],
+	["shelbycobra_car_azul", 100000],
+	["ivory_supra_topsecret", 100000],
+	["vvv_steyrmulti_civ", 25000]
 ];
-
 if(_owner IN _owedPlayers) then {
 
 	_pia = _owedplayers FIND _owner;

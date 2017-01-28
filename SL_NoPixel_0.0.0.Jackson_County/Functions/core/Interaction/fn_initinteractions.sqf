@@ -527,6 +527,11 @@ NoPixel_InteractionMenuItems = [
 		["str CurrentCursorTarget find ""embarcadero"" > -1"], 
 		["Sklep z łodziami", "createdialog ""buycar"";",3] 
 	],
+	
+	[ 
+		["(typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Sklep z samolotami", "createdialog ""buycar"";",3] 
+	],
 
 	[
 		["currentcursortarget == fishTrader"],
@@ -606,7 +611,7 @@ NoPixel_InteractionMenuItems = [
 
 
 	[ 
-		["count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""]"], 
+		["count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
 		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3] 
 	],
 
@@ -618,7 +623,7 @@ NoPixel_InteractionMenuItems = [
 
 
 	[ 
-		["count attachedObjects player == 0 && !attachedcar, str CurrentCursorTarget find ""embarcadero"" > -1 && player distance currentcursortarget < 20"], 
+		["count attachedObjects player == 0 && !attachedcar && str CurrentCursorTarget find ""embarcadero"" > -1 && player distance currentcursortarget < 20"], 
 		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3] 
 	],
 	

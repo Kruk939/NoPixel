@@ -483,5 +483,7 @@ upgradeVehicleList = [
 	"ivory_gt500_tuned3",
 	"ivory_supra_tuned3",
 	"ivory_gti_tuned3",
-	"ivory_wrx_tuned3"
+	"ivory_wrx_tuned3",
+	"ivory_supra_topsecret_tuned1",
+	"ivory_supra_topsecret_tuned2"
 ];

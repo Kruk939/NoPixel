@@ -7,7 +7,7 @@ _textures = ["airforceblue", "aliceblue", "alizarincrimson", "almond", "amaranth
 _finishes = [["Glossy",0], ["Metallic",500], ["Matte",2500], ["Chrome",5000]];
 
 _farmingVehicles = ["ADM_GMC_Vandura","Jonzie_Transit","ADM_Ford_F100","Jonzie_Raptor"];
-
+_doughnuts = player getVariable ["doughnutsLevel", 0];
 //remember to use this array in the mafia selling script & ALSO THE CAR UPDATE SCRIPT.
 _civilianVehicle = [
 	["Jonzie_XB",1900],
@@ -73,7 +73,54 @@ _civilianVehicle = [
 	["ivory_f1",250000],
 	["ivory_veyron",300000]
 ];
-
+if(_doughnuts > 0) then {
+	_ret = [
+		["1967_Shelby_Mustang_GT500", 20000],
+		["ADM_Monte_Carlo", 15000],
+		["VVV_Aston_Martin_1964_DB5", 40000]
+	];
+	_civilianVehicle = _civilianVehicle + _ret;
+};
+if(_doughnuts > 1) then {
+	_ret = [
+		["vvv_man_obras_negro", 35000],
+		["shounka_buggy", 35000],
+		["vvv_man_obras_negro", 35000],
+		["VVV_cazafantasmas_civ", 35000]
+	];
+	_civilianVehicle = _civilianVehicle + _ret;
+};
+if(_doughnuts > 2) then {
+	_ret = [
+		["devon_gtx", 50000],
+		["vvv_DOD_RamSRT_civ", 25000],
+		["vvv_dumper", 50000],
+		["Jonzie_Forklift", 25000]
+	];
+	_civilianVehicle = _civilianVehicle + _ret;
+};
+if(_doughnuts > 3) then {
+	_ret = [
+		["vvv_formula1", 100000],
+		["C_Offroad_02_unarmed_F", 50000]
+	];
+	_civilianVehicle = _civilianVehicle + _ret;
+};
+if(_doughnuts > 4) then {
+	_ret = [
+		["New_Holland_TC590_civ", 25000],
+		["vvv_Ponsse_Buffalo_Forwarder_civ", 30000],
+		["B_T_LSV_01_unarmed_F", 100000],
+		["vvv_SeatLeon_2014_font", 100000],
+		["shelbycobra_car_azul", 100000],
+		["ivory_supra_topsecret", 100000],
+		["vvv_steyrmulti_civ", 25000],
+		["1967_Shelby_Mustang_GT500", 20000],
+		["ADM_Monte_Carlo", 15000],
+		["VVV_Aston_Martin_1964_DB5", 40000]
+	];
+	_civilianVehicle = _civilianVehicle + _ret;
+};
 // police "C_Boat_Civil_01_F"
 //boatshop
 if(str CurrentCursorTarget find "embarcadero" > -1) then {
@@ -86,6 +133,22 @@ if(str CurrentCursorTarget find "embarcadero" > -1) then {
 		["Mattaust_Fisher",350000]
 	];
 };
+if((typeOF cursorTarget) find "Hangar_F" > -1) then {
+	_type = "PLANE";
+	_civilianVehicle = [
+		["sab_albatrosb2_civ",15000],
+		["sab_albatrosd2",160000],
+		["C_Plane_Civil_01_F", 200000],
+		["sab_piper", 200000],
+		["Sab_an22", 300000],
+		["sab_do228", 600000],
+		["Sab_an22", 600000],
+		["Sab_an12",700000],
+		["sab_falcon", 1000000],
+		["B_T_VTOL_01_infantry_F", 2000000]
+	];
+};
+
 
 
 if(_whatdo == "NEW") then {
@@ -128,7 +191,7 @@ if(_whatdo == "NEW") then {
 		_class = _x select 0;
 		_cost = _x select 1;	
 		_FinishDisplayName = getText(configFile >> "CfgIvoryMaterials" >> _class >> "displayName");
-		_list lbAdd format["COST: $%2 - %1",_FinishDisplayName,_cost];
+		_list lbAdd format["Cena: $%2 - %1",_FinishDisplayName,_cost];
 		_list lbSetdata [(lbSize _list)-1,str([_class, _cost])];
 	} foreach _finishes;
 
@@ -175,6 +238,13 @@ if(_whatdo == "CAR" || isNil "spawnedvehicle") then {
 		spawnedvehicle setdir _dir;
 	};
 
+	if(_SELECTEDVEHICLE iskindof "air") then {
+		spawnedvehicle = _SELECTEDVEHICLE createvehiclelocal [2879.1,892.441,0.01];
+		spawnedvehicle setpos [2879.1,892.441,0.01];
+		_dir = 180;
+		spawnedvehicle setdir _dir;
+	};
+	
 	client_kcCamera camSetTarget spawnedvehicle;
 	client_kcCamera camSetRelPos [2.7,1,0.25];
 	client_kcCamera camSetFOV .99;

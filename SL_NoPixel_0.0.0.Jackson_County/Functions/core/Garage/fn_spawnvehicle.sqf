@@ -21,3 +21,8 @@ clearItemCargoGlobal _vehicle;
 _vehicle setvariable ["tracker1",objNull,true];
 _vehicle setvariable ["tracker2",objNull,true];
 _vehicle setvariable ["tracker3",objNull,true];
+
+while { attachedcar } do {
+	uisleep 0.1;
+	if(vehicle player != player) exitWith { [] spawn client_fnc_detach; };
+};
