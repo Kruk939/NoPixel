@@ -7,12 +7,11 @@
 
 <hr>
 #TODO
-* Pożary dla strażaków (importnant)
+* 
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Panic button'y dla COP, EMS
-* Naprawić pracę dziennikarza
 * Dodanie pracy kierowcy autobusu.
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 * Naprawić znikanie ubrań - przy syncu reload ubrań
@@ -46,6 +45,8 @@
 * Informacja dla policjantów ze dostają informację o włamie na więzienie - dźwięk straszny i na całą mapę wystarczy?
 * Naprawić arsenał dla medyków
 * Cykl dnia / nocy
+* Pożary dla strażaków (importnant)
+* Naprawić pracę dziennikarza
 
 <hr>
 #DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
