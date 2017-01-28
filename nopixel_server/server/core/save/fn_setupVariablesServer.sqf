@@ -58,5 +58,7 @@ publicvariable "currentRepairmen";
 publicvariable "currentTaxiDrivers";
 publicvariable "mafiaBank";
 
+priceArrayOre = [30,45,75,10,115];
 publicVariable "priceArrayOre";
+diag_log "SERWER: Pomyślnie ustawiłem startowe ceny surowców";
 //publicVariable "TaxRate";

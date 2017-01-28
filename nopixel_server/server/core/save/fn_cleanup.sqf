@@ -12,6 +12,8 @@ if (_chance > 20) then {
     _newpos = _thebankcontainer getrelpos[-1.2, 0];
     _thebankcontainer setpos[(_newpos select 0), (_newpos select 1), (_newpos select 2) + 4];
 	diag_log format ["Bank pos - %1", _pos];
+
+    [] spawn server_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku
 };
 _fireLocations = [
 	[7078.03,2458.97,0.00143814],
@@ -32,6 +34,7 @@ _fireLocations = [
 ];
 _fire = _fireLocations call bis_fnc_selectRandom;
 [_fire] spawn server_fnc_fireStart;
+
 
 
 
