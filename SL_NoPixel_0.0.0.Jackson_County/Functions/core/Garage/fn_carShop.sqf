@@ -73,6 +73,15 @@ _civilianVehicle = [
 	["ivory_f1",250000],
 	["ivory_veyron",300000]
 ];
+_harleys = [
+	["Acj_Harley_Davidson_Sons_Of_Anarchy",15000],
+	["Acj_HarleyDavidson_Sholvehead",20000],
+	["vvv_HarleyDavidson_CustomBobber1",25000],
+	["Acj_BMWR_75",35000]
+];
+_civilianVehicle = _civilianVehicle + _harleys;
+
+
 if(_doughnuts > 0) then {
 	_ret = [
 		["1967_Shelby_Mustang_GT500", 20000],
