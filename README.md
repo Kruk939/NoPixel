@@ -7,7 +7,6 @@
 
 <hr>
 #TODO
-* 
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
@@ -49,6 +48,11 @@
 * Samochody taksówkarskie z szansą na pojawienie się ivory_rs4_taxi 10% / ivory_190e_taxi 90%
 * Automatyczne upuszczanie pojazdów po wejściu do innego
 * Sklep z samolotami
+* Eventy, które władają ekonomią serwera
+* Przerobiono system rzadkich skór kangura (dodano drop GPS)
+* Dodano sklep z samolotami
+* Dodano sklep z Harleyami
+
 
 <hr>
 #DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
@@ -86,10 +90,8 @@
 
 =======
 #POMYSLY
-* Zwiekszenie ceny za crafting lockpick'a. Ale wtedy dac mozliwosc sprzedazy auta dla kazdego.
 * Kupowalne budynki ([stacje benzynowe](http://stanlakeside.pl/index.php?/topic/10379-ożywienie-stacji-benzynowych/&do=findComment&comment=45468))
 * [Nowe prace](http://stanlakeside.pl/index.php?/topic/10376-drobne-modyfikacje-oraz-dodanie-nowej-pracy/)
-* dodać gps dla cywili (maybe crafting?)
 * jesli osoba zostanie postrzelona jakos mocniej i jest nie przytomna to by medycy mieli coraz mniejszy % szans na podniesienie .Np  dostal gdzie blisko serca i podczas pomocy nagle zaczyna sie krwotok wewnetrzny jakis i jest tylko 10% szans.
 * Dodanie dla wszystkich kabure do craftu sab_wwiplanes_pilot_holster https://i.imgur.com/SFWbtPi.jpg
 * Dodanie do craftu dla wszystkich gps + lornetke, oraz do wielobranżowego za odpowiednie ceny - żeby taniej było craftować

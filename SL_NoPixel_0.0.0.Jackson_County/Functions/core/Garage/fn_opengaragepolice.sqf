@@ -49,11 +49,11 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"VVV_dodge_charger_medic",
 				"VVV_DodgeDurango_medic",
 				"ivory_suburban_ems",
-				"A3L_ExplorerEMS_P",
+				"SL_MCP",
 				"A3PL_Engine",
 				"A3PL_Ladder",
-				"nopixel_guardacostas",
-				"A3PL_Rescue"
+				"A3PL_Rescue",
+				"nopixel_guardacostas"
 			];
 };
 if(myJob == "Mafia") then {
