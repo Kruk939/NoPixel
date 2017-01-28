@@ -386,6 +386,20 @@ turboVehicleList = [
 ];
 
 upgradeVehicleList = [
+	"ivory_r8_tuned1",
+	"ivory_r8_tuned2",
+	"ivory_r8_spyder_tuned1",
+	"ivory_r8_spyder_tuned2",
+	"vvv_audi_r8_tuned1",
+	"vvv_audi_r8_tuned2",
+	"vvv_audi_tt_rs_coupe_tuned1",
+	"vvv_audi_tt_rs_coupe_tuned2",
+	"ivory_ccx_tuned1",
+	"ivory_ccx_tuned2",
+	"ivory_lp560_tuned1",
+	"ivory_lp560_tuned2",
+	"ivory_rev_tuned1",
+	"ivory_rev_tuned2",
 	"vvv_Abarth_500_tuned1",
 	"vvv_Abarth_500_tuned2",
 	"vvv_Alfa_Romeo_59_tuned1",
