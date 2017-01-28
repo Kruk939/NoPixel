@@ -4,7 +4,7 @@ if(isNil "peltProtection") then { peltProtection = 0; };
 
 if ("NP_kPelt" IN (magazines player)) then {
 	peltProtection = peltProtection + 1;
-	_chance = round(random(100));
+	_chance = random(100);
 	player removeitem "np_kpelt";
 	["Znalazłem to pudło, przeszukaj je!",false] spawn domsg;
 	_luckisaskill = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
