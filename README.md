@@ -17,7 +17,6 @@
 * Naprawić znikanie ubrań - przy syncu reload ubrań
 * Przeszukiwanie sklepu / domu dla policji
 * Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
-* Automatyczne upuszczanie aut po 15 sekundach od wyciagniecia
 
 
 <hr>
@@ -48,6 +47,8 @@
 * Pożary dla strażaków (importnant)
 * Naprawić pracę dziennikarza
 * Samochody taksówkarskie z szansą na pojawienie się ivory_rs4_taxi 10% / ivory_190e_taxi 90%
+* Automatyczne upuszczanie pojazdów po wejściu do innego
+* Sklep z samolotami
 
 <hr>
 #DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
