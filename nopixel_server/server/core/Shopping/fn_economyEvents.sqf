@@ -15,6 +15,7 @@
 
 private["_numbers","_selected","_debug"];
 
+diag_log "Uruchomiono economyEvents!";
 _debug = 0;
 
 if (_debug == 1) then {diag_log "Udało mi się wykonać while {true}!";};
