@@ -21,19 +21,19 @@ if ("NP_kPelt" IN (magazines player)) then {
 	if(_chance > 85 && _chance <= 87) then {
 		_rods = [["CUP_arifle_RPK74M","CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"],["CUP_arifle_Sa58V","CUP_30Rnd_Sa58_M"],["CUP_arifle_FNFAL_OSW","CUP_20Rnd_762x51_FNFAL_M"],["arifle_mas_ww2_sten", "30Rnd_mas_ww2_sten"],["arifle_mas_ww2_tommy", "30Rnd_mas_ww2_tommy"],["arifle_mas_ww2_mp40_o", "30Rnd_mas_ww2_mp40"],["brotherhood_1", "30Rnd_mas_ww2_mp40"]];
 		_myrod = _rods call BIS_FNC_SELECTRANDOM;
-		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),2];
+		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),1];
 		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),10];
 	};
 	if(_chance > 87 && _chance <= 94) then {
 		_rods = [["SMG_05_F", "30Rnd_9x21_Mag_SMG_02"],["hgun_PDW2000_F", "30Rnd_9x21_Mag"]];
 		_myrod = _rods call BIS_FNC_SELECTRANDOM;
-		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),2];
+		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),1];
 		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),10];
 	};
 	if(_chance > 94 && _chance <= 99) then {
-		_rods = [["CUP_arifle_FNFAL_OSW","CUP_20Rnd_762x51_FNFAL_M"],["CUP_arifle_Sa58V", "CUP_30Rnd_Sa58_M"],["CUP_arifle_RPK74M","CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"],["SG553", "30Rnd_556x45_Stanag"],["CUP_arifle_L85A2","CUP_30Rnd_556x45_Stanag"]];
+		_rods = [["SG553", "30Rnd_556x45_Stanag"],["CUP_arifle_L85A2","CUP_30Rnd_556x45_Stanag"]];
 		_myrod = _rods call BIS_FNC_SELECTRANDOM;
-		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),2];
+		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),1];
 		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),10];
 	};
 	if(_chance > 99) then {
