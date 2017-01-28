@@ -39,5 +39,5 @@
     if (_houseLevel == 3) then {
         tier3housing pushback _house;
     };
-
+	diag_log "server_fnc_statSaveLoop";
 } forEach allPlayers;
