@@ -1,4 +1,4 @@
-_shop = cursorObject;
+_shop = currentCursorTarget;
 _time = time;
 if(typeOf _shop in shopNameList) then {
 	_lastRobbed = _shop getVariable ["lastRobbed",0];
@@ -11,7 +11,7 @@ if(typeOf _shop in shopNameList) then {
 		[player] remoteExec ["server_fnc_robberyCall", 2];
 	};
 	if(_chance < 95) then {
-		[player, _shop, "napad na sklep"] spawn client_fnc_createEvidence;
+		[player, _shop, "storeRobbery"] spawn client_fnc_createEvidence;
 	};
 	_shop setVariable ["lastRobbed", time, true];
 };

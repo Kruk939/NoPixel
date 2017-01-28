@@ -730,11 +730,11 @@ NoPixel_InteractionMenuItems = [
 	],
 	
 	[
-		["myjob == ""Cop"" && (typeof CursorTarget) == ""Land_Suitcase_F"""],
+		["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
 		["Zbierz dowody", "[""Zbieram dowody"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 	[
-		["(typeof CursorTarget) == ""Land_Suitcase_F"""],
+		["CurrentCursorTarget != objNull"],
 		["Zniszcz dowody", "[""Niszcze dowody"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 

@@ -2,24 +2,39 @@
 File: create evidence
 */
 private["_curTarget","_suspect","_victim","_crime"];
-_suspect = param [0,ObjNull,[ObjNull]];
-_victim = param [1,ObjNull,[ObjNull]];
-_crime = param [2];
+params ["_suspect","_victim", "_crime"];
 
-/*
-_vehicle = createVehicle ["Land_Suitcase_F", (player), [], 0, "NONE"];
+_evidence = _victim getVariable ["evidence",[]];
+_msg = "";
 
+switch("_crime") do {
+	case "bankRobbery": {
+		_msg = format["%1 okradł bank.", name _suspect];
+	};
+	case "storeRobbery": {
+		_msg = format["%1 napadł na sklep.", name _suspect];
+	};
+	case "personRobbery": {
+		_msg = format["%1 napadł na osobę.", name _suspect];
+	};
+	case "carRobbery": {
+		_msg = format["%1 okradł pojazd.", name _suspect];
+	};
+	case "killAtempt": {
+		_msg = format["%1 usiłował zabić osobę.", name _suspect];
+	};
+	case "kill": {
+		_msg = format["%1 zabił osobę.", name _suspect];
+	};
+	case "vehicleKill": {
+		_msg = format["%1 zabił osobę przy użyciu pojazdu.", name _suspect];
+	};
 };
 
-_vehicle setVariable ["evidence", [_suspect, _victim, _crime], true];
-_vehicle enablesimulation false;
-_vehicle setPos [getPos _vehicle select 0, getPos _vehicle select 1, (getPos _vehicle select 2) + 0.5];
 
-_obj = "Land_ClutterCutter_small_F" createVehicle (getPos _vehicle);
-_obj setPos (getPos _vehicle);
-_vehicle attachTo [_obj,[0,0,0]];
 
-uiSleep 1200;
-deletevehicle _obj;
-deletevehicle _vehicle;
-*/
+
+
+
+_evidence pushBack [_suspect, getPlayerUID _suspect, _crime, _msg];
+_victim setVariable ["evidence",_evidence,true];

@@ -25,13 +25,13 @@ player assignitem "cg_tabletd";
 
 closedialog 0;
 
-
 [] spawn { 
 	sleep 3; 
 	im_dead = false;
 	player setVariable ["wallet", 0, false];
 	player setvariable["playerInjuries",[0,0,0,0,0,0,0,0,0,0,0],true];
-	player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false]; 
+	player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false];
+	player setVariable ["evidence",[],true];
 	[player,""] remoteExec ["client_fnc_animSync"];
 	["set",0] call Client_Fnc_DoHealth;
 	player setVariable ["tf_voiceVolume", 1, true];
