@@ -196,11 +196,11 @@ disableSerialization;
 
 _allJobs = [
 
-	["Police Dispatch",currentPoliceDispatch],
-	["Medic Dispatch",currentMedicDispatch],
-	["Fire Dispatch",currentFireDispatch],
-	["Ochrona",currentSecurity],
+	["Policja",currentPoliceDispatch],
+	["Medycy",currentMedicDispatch],
+	["Strażacy",currentFireDispatch],
 
+	["Ochrona",currentSecurity],
 	["Mechanik",currentRepairmen],
 	["Sedzia",currentJudges],
 	["Adwokaci",currentLawyers],

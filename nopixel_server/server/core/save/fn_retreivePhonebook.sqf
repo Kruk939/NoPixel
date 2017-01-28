@@ -16,9 +16,9 @@ _information = [
 ["News Worker",currentNewsMan], 
 ["Taxi",currentTaxiDrivers] 
  */
-	["Police Dispatch",currentPoliceDispatch],
-	["Medic Dispatch",currentMedicDispatch],
-	["Fire Dispatch",currentFireDispatch],
+	["Policja",currentPoliceDispatch],
+	["Medycy",currentMedicDispatch],
+	["Strażacy",currentFireDispatch],
 	["Ochrona",currentSecurity],
 	["Legal Aid",currentLegalAid],
 	["Mechanik",currentRepairmen],

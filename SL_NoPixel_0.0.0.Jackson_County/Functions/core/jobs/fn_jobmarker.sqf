@@ -10,5 +10,9 @@ _marker setMarkerTextlocal "Miejsce zadania";
 if(myjob == "Cop") then {
 	[_pos,"Uruchomiony alarm!","Job"] spawn client_fnc_hudHelper;
 } else {
-	[_pos,"Zadanie","Job"] spawn client_fnc_hudHelper;
+	if(myjob == "Fire") then {
+		[_pos,"Pożar!","Job"] spawn client_fnc_hudHelper;
+	} else {
+		[_pos,"Zadanie","Job"] spawn client_fnc_hudHelper;
+	};
 };

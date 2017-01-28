@@ -64,7 +64,7 @@ if (_player IN currentFire) exitwith {
     _pia = currentFire find _player;
     currentFire deleteAt _pia;
     publicvariable "currentFire";
-    currentFire = "";
+    //currentFire = "";
 };
 
 if (_player IN currentMafia) exitwith {

@@ -58,6 +58,7 @@ class CfgFunctions {
             class wantedAdd {};
             class jailsetup {};
             class robberyCall {};
+            class robberyCallBank {};
         };
         class Housing {
             file = "NoPixel_Server\server\core\Housing";

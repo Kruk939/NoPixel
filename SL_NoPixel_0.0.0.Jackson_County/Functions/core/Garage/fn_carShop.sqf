@@ -145,7 +145,7 @@ if(str CurrentCursorTarget find "embarcadero" > -1) then {
 if((typeOF cursorTarget) find "Hangar_F" > -1) then {
 	_type = "PLANE";
 	_civilianVehicle = [
-		["sab_albatrosb2_civ",15000],
+		["sab_albatrosb2_civ",150000],
 		["sab_albatrosd2",160000],
 		["C_Plane_Civil_01_F", 200000],
 		["sab_piper", 200000],

@@ -9,7 +9,7 @@ _markers = [];
 		_marker = createMarkerLocal [format["%1_NAMIERZONY_PRZESTĘPCA_BANK",name _x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorRed";
 		_marker setMarkerTypeLocal "hd_dot";
-		_marker setMarkerTextLocal "Bank Robbery";
+		_marker setMarkerTextLocal "NAMIERZONY WŁAMYWACZ DO BANKU";
 		_markers pushBack [_marker,_x];
 	};
 
