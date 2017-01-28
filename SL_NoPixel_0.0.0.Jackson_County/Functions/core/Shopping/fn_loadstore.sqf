@@ -51,14 +51,12 @@ if(_condition == "rarefish") then {
 
 			//clothes
 			["U_B_Wetsuit",nil,1,3,1],
-
 			["cg_horsehead",nil,12,3,5],
 			["cg_horsehead_2",nil,12,3,5],
 			["cg_horsehead_blk",nil,12,3,5],
 			["cg_horsehead_pnk",nil,12,3,5],
 
 			//hats
-
 			["BL_eimer_hat",nil,12,3,5],
 			["BL_mask2_hat",nil,12,3,5],
 			["BL_us_hat",nil,12,3,5],
@@ -77,7 +75,6 @@ if(_condition == "rarefish") then {
 			["vvv_monor_hat",nil,12,3,5],
 			["vvv_SkullMask_hat",nil,12,3,5],
 			["vvv_slasher_hat",nil,12,3,5],
-
 
 			["H_ShrekMask",nil,12,3,5],
 			["H_MickeyMask",nil,12,3,5],
@@ -108,7 +105,6 @@ if(_condition == "rarefish") then {
 			["H_BushMask",nil,12,3,5],
 			["H_ObamaMask",nil,12,3,5],
 			["H_FranklinMask",nil,12,3,5],
-
 
 			["Masque_Alien1",nil,12,3,5],
 			["Masque_Anonymous",nil,12,3,5],
@@ -146,7 +142,6 @@ if(_condition == "rarefish") then {
 			["Masque_Hoxton",nil,12,3,5],
 			["Masque_Incendiaire",nil,12,3,5],
 			["Masque_Dallas",nil,12,3,5],
-
 
 			["Gorb_Santa_White",nil,12,3,5],
 			["Gorb_Santa_Tan",nil,12,3,5],
@@ -460,6 +455,30 @@ if(_condition == "clothing") then {
 		["vvv_elena_fisher14",nil,200,3,1],
 		["vvv_elena_fisher15",nil,200,3,1],
 		["vvv_elena_fisher16",nil,200,3,1],
+		
+		["vvv_traje_motox_02_7",nil,500,3,1],
+		["vvv_traje_motox_02",nil,500,3,1],
+		["vvv_traje_motox_02_8",nil,500,3,1],
+		["vvv_traje_motox_02_4",nil,500,3,1],
+		["vvv_traje_motox_02_5",nil,500,3,1],
+		["vvv_traje_motox_02_2",nil,500,3,1],
+		["sons_1",nil,1000,3,1],
+		["Sons_10",nil,1000,3,1],
+		["sons_2to4",nil,1000,3,1],
+		["Sons_5",nil,1000,3,1],
+		["Sons_6",nil,1000,3,1],
+		["Sons_7",nil,1000,3,1],
+		["Sons_8",nil,1000,3,1],
+		["Sons_9",nil,1000,3,1],
+		["brotherhood_1",nil,1000,3,1],
+		["brotherhood_10",nil,1000,3,1],
+		["brotherhood_2to4",nil,1000,3,1],
+		["brotherhood_5",nil,1000,3,1],
+		["brotherhood_6",nil,1000,3,1],
+		["brotherhood_7",nil,1000,3,1],
+		["brotherhood_8",nil,1000,3,1],
+		["brotherhood_9",nil,1000,3,1],
+		["acj_chaleco_motero",nil,2000,3,1],
 
 		["U_Cloth01_FS",nil,200,3,1],
 		["vvv_character_wandelina",nil,200,3,1],
@@ -696,17 +715,71 @@ if(_condition == "head") then {
 			["H_Cap_grn_BI",nil,120,3,5],
 			["H_Cap_blk_Raven",nil,120,3,5],
 			["H_Cap_blk_ION",nil,120,3,5],
+			
+			["Gorb_AngryGingerbread1",nil,120,3,5],
+			["Gorb_AngryGingerbreadSwirl2",nil,120,3,5],
+			["CUP_H_C_Beanie_01",nil,120,3,5],
+			["CUP_H_C_Beanie_02",nil,120,3,5],
+			["CUP_H_ChDKZ_Beanie",nil,120,3,5],
+			["H_Beret_blk",nil,120,3,5],
+			["CUP_H_C_Beret_01",nil,120,3,5],
+			["CUP_H_C_Beret_02",nil,120,3,5],
+			["H_BobaMask",nil,120,3,5],
+			["BL_eimer_Hat",nil,120,3,5],
+			
+			["CUP_H_PMC_Cap_Burberry",nil,120,3,5],
+			["CUP_H_PMC_Cap_Grey",nil,120,3,5],
+			["CUP_H_PMC_Cap_Back_Grey",nil,120,3,5],
+			["CUP_H_PMC_Cap_Back_Burberry",nil,120,3,5],
+			["Gorb_PuddingHat",nil,120,3,5],
+			["Gorb_FestiveHat6",nil,120,3,5],
+			["Gorb_FestiveHat8",nil,120,3,5],
+			["BL_mask_Hat",nil,120,3,5],
+			["Gorb_HolidayBaseballHat1",nil,120,3,5],
+			["Gorb_HolidayBaseballHat2",nil,120,3,5],
+			
+			["Gorb_HolidayBaseballHat3",nil,120,3,5],
+			["Gorb_HolidayBaseballHat4",nil,120,3,5],
+			["Gorb_HolidayBaseballHat5",nil,120,3,5],
+			["Gorb_HolidayBaseballHat6",nil,120,3,5],
+			["Gorb_PlaidHat1",nil,120,3,5],
+			["Gorb_PlaidHat2",nil,120,3,5],
+			["Gorb_PlaidHat3",nil,120,3,5],
+			["Gorb_PlaidHat4",nil,120,3,5],
+			["cg_horsehead",nil,120,3,5],
+			["cg_horsehead_2",nil,120,3,5],
+			
+			["cg_horsehead_blk",nil,120,3,5],
+			["cg_horsehead_pnk",nil,120,3,5],
+			["H_Hat_brown",nil,120,3,5],
+			["H_Hat_tan",nil,120,3,5],
+			["H_Hat_camo",nil,120,3,5],
+			["H_Hat_checker",nil,120,3,5],
+			["H_KermitMask",nil,120,3,5],
+			["sab_wwiplanes_ger_cap",nil,120,3,5],
+			["sab_wwiplanes_fr_cap",nil,120,3,5],
+			["CUP_H_SLA_TankerHelmet",nil,120,3,5],
+			
+			["acj_casco_ammerica",nil,120,3,5],
+			["acj_casco_calavera",nil,120,3,5],
+			["acj_casco_camo",nil,120,3,5],
+			["acj_casco_espider",nil,120,3,5],
+			["acj_casco_germani",nil,120,3,5],
+			["acj_casco_gris",nil,120,3,5],
+			["acj_casco_negro",nil,120,3,5],
+			["acj_casco_rojo",nil,120,3,5],
+			["Casque_Moto",nil,120,3,5],
+			["H_RacingHelmet_1_white_F",nil,120,3,5],
 
-
-		//head items
-		["EF_Long_wig_B",nil,120,3,5],
-		["EF_Long_wig_BL",nil,120,3,5],
-		["EF_Long_wig_BW",nil,120,3,5],
-		["EF_Long_wig_GL",nil,120,3,5],
-		["EF_Punk_wig_B",nil,120,3,5],
-		["EF_Punk_wig_BL",nil,120,3,5],
-		["EF_Punk_wig_BW",nil,120,3,5],
-		["EF_Punk_wig_GL",nil,120,3,5]
+			//head items
+			["EF_Long_wig_B",nil,120,3,5],
+			["EF_Long_wig_BL",nil,120,3,5],
+			["EF_Long_wig_BW",nil,120,3,5],
+			["EF_Long_wig_GL",nil,120,3,5],
+			["EF_Punk_wig_B",nil,120,3,5],
+			["EF_Punk_wig_BL",nil,120,3,5],
+			["EF_Punk_wig_BW",nil,120,3,5],
+			["EF_Punk_wig_GL",nil,120,3,5]
 
 	];
 
@@ -727,6 +800,7 @@ if(_condition == "doughnuts_general") then {
 			["vvv_traje_dallas",nil,300,3,1],
 			["NP_traje_test",nil,300,3,1],
 			["NP_traje_test10",nil,300,3,1],
+			["sab_wwiplanes_pilot_holster",nil,300,3,1],
 			["CUP_B_ACRPara_m95",nil,600,4,2],
 			["CUP_B_GER_Pack_Flecktarn",nil,400,4,2],
 			["B_Bergen_tna_F",nil,3500,4,2],
@@ -740,7 +814,12 @@ if(_condition == "doughnuts_general") then {
 			["vvv_azgt_hat",nil,300,3,5],
 			["vvv_azteca_hat",nil,300,3,5],
 			["vvv_bolsa_hat",nil,300,3,5],
-			["vvv_monor_hat",nil,300,3,5]
+			["vvv_monor_hat",nil,300,3,5],
+			["H_VenomMask",nil,300,3,5],
+			["CUP_H_TKI_Lungee_Open_01",nil,300,3,5],
+			["CUP_H_TKI_Lungee_Open_04",nil,300,3,5],
+			["CUP_H_TKI_Lungee_01",nil,300,3,5],
+			["CUP_H_TKI_Lungee_02",nil,300,3,5]
 		];
 		_additional = _additional + _ret;
 	};
@@ -778,6 +857,11 @@ if(_condition == "doughnuts_general") then {
 			["CUP_U_B_CZ_WDL_TShirt",nil,300,3,1],
 			["CUP_B_USMC_Navy_Blue",nil,300,3,1],
 			["U_I_C_Soldier_Bandit_2_F",nil,300,3,1],
+			["CUP_V_OI_TKI_Jacket1_04",nil,300,3,1],
+			["CUP_V_OI_TKI_Jacket1_06",nil,300,3,1],
+			["CUP_V_OI_TKI_Jacket1_05",nil,300,3,1],
+			["CUP_V_OI_TKI_Jacket1_03",nil,300,3,1],
+			["CUP_V_O_TK_OfficerBelt",nil,300,3,1],
 			["U_C_man_sport_2_F",nil,300,3,1],
 			["vvv_hazmat",nil,1200,3,1],
 			["KAEL_SUITS_BR_F16",nil,300,3,1],
@@ -786,7 +870,12 @@ if(_condition == "doughnuts_general") then {
 			["H_ALFR_Metal_Facemask_gry",nil,1000,3,5],
 			["H_ALFR_Metal_Facemask_oli",nil,1000,3,5],
 			["H_ALFR_Metal_Facemask_blk",nil,1000,3,5],
-			["H_ALFR_OVERKILL_II",nil,10000,3,5]
+			["H_ALFR_OVERKILL_II",nil,10000,3,5],
+			["Gorb_TreeMask1",nil,300,3,5],
+			["Gorb_TreeMask2",nil,300,3,5],
+			["Gorb_TreeMask3",nil,300,3,5],
+			["TRYK_Kio_Balaclava",nil,300,3,5],
+			["TRYK_ESS_CAP",nil,300,3,5]
 		];
 		_additional = _additional + _ret;
 	};
@@ -804,7 +893,13 @@ if(_condition == "doughnuts_general") then {
 			["H_ALFR_Sheep_Mask",nil,300,3,5],
 			["H_ALFR_Heist_Mask_3",nil,300,3,5],
 			["H_PatriotMask",nil,500,3,5],
-			["H_ALFR_OVERKILL_III",nil,10000,3,5]
+			["H_ALFR_OVERKILL_III",nil,10000,3,5],
+			["Masque_Fish",nil,300,3,5],
+			["Masque_Gombo",nil,300,3,5],
+			["vvv_VAMPIRO_hat",nil,300,3,5],
+			["Masque_Hockey",nil,300,3,5],
+			["Masque_Optimiste",nil,300,3,5],
+			["Masque_Smiley",nil,300,3,5]
 		];
 		_additional = _additional + _ret;
 	};
@@ -817,6 +912,8 @@ if(_condition == "doughnuts_general") then {
 			["CUP_U_C_Labcoat_02",nil,300,3,1],
 			["CUP_U_I_GUE_Flecktarn3",nil,300,3,1],
 			["vvv_character_batman",nil,1000,3,1],
+			["CUP_V_I_Guerilla_Jacket",nil,1000,3,1],
+			["V_mas_ww2_vest_gerB",nil,1000,3,1],
 			["B_Bergen_tna_F",nil,1500,4,2],
 			["TRYK_Winter_pack",nil,1000,4,2],
 			["BL_mask2_Hat",nil,300,3,5],
@@ -842,54 +939,73 @@ if(_condition == "doughnuts_gun") then {
 	_additional = [];
 	if(_doughnuts > 0) then {
 		_ret = [
-			["hgun_mas_ww2_bhp_F",nil,5000,1],
-			["RH_python",nil,9000,1],
-			["CUP_hgun_Phantom",nil,8000,1],
-			["RH_fn57_t",nil,8000,1]
+			["hgun_Pistol_heavy_01_F",nil,5000,1],
+			["muzzle_snds_acp",nil,2000,1],
+			["optic_MRD",nil,1000,1],
+			["11Rnd_45ACP_Mag",nil,50,1],
+			["RH_m9",nil,4000,1],
+			["RH_15Rnd_9x19_M9",nil,50,1],
+			["RH_m9qd",nil,1000,1],
+			["RH_m9c",nil,4000,1],
+			["CUP_hgun_Phantom",nil,4000,1],
+			["CUP_18Rnd_9x19_Phantom",nil,50,1],
+			["RH_fn57_t",nil,5000,1],
+			["RH_20Rnd_57x28_FN",nil,50,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 1) then {
 		_ret = [
-		    ["CUP_hgun_Glock17",nil,5000,1],
-			["RH_g18",nil,8000,1],
-			["RH_kimber",nil,8000,1],
-			["RH_kimber_nw",nil,8000,1],
-			["CUP_hgun_Makarov",nil,5000,1],
-			["sab_mauser96_handgun",nil,5000,1]
+		    ["RH_python",nil,6000,1],
+			["RH_6Rnd_357_Mag",nil,50,1],
+			["RH_fnp45",nil,5000,1],
+			["RH_gemtech45",nil,2000,1],
+			["RH_docter",nil,1000,1],
+			["RH_15Rnd_45cal_fnp",nil,50,1],
+			["RH_fnp45t",nil,5000,1],
+			["RH_g18",nil,6000,1],
+			["RH_19Rnd_9x19_g18",nil,50,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 2) then {
 		_ret = [
-		    ["hgun_P07_khk_F",nil,5000,1],
-			["CUP_hgun_PB6P9",nil,5000,1],
-			["hgun_Pistol_Signal_F",nil,2000,1],
-			["hgun_Pistol_01_F",nil,5000,1],
-			["hgun_Rook40_F",nil,5000,1],
-			["RH_mp412",nil,6000,1]
+		    ["RH_g19",nil,5000,1],
+			["RH_17Rnd_9x19_g17",nil,50,1],
+			["RH_g19t",nil,5000,1],
+			["RH_tec9",nil,7000,1],
+			["RH_tecsd",nil,2000,1],
+			["RH_32Rnd_9x19_tec",nil,50,1],
+			["RH_kimber",nil,5000,1],
+			["RH_7Rnd_45cal_m1911",nil,50,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 3) then {
 		_ret = [
-		    ["CUP_hgun_TaurusTracker455_gold",nil,12000,1],
-			["CUP_hgun_TaurusTracker455",nil,7000,1],
-			["RH_usp",nil,6000,1],
-			["RH_tt33",nil,5000,1],
-			["RH_vp70",nil,5000,1],
-			["RH_vz61",nil,12000,1]
+		    ["CUP_hgun_MicroUzi",nil,7000,1],
+			["CUP_muzzle_snds_MicroUzi",nil,2000,1],
+			["CUP_30Rnd_9x19_UZI",nil,50,1],
+			["CUP_hgun_TaurusTracker455_gold",nil,6000,1],
+			["CUP_6Rnd_45ACP_M",nil,50,1],
+			["RH_bull",nil,6000,1],
+			["RH_6Rnd_454_Mag",nil,50,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 4) then {
 		_ret = [
-		    ["CUP_srifle_CZ550",nil,40000,1],
-			["CUP_smg_bizon",nil,35000,1],
-			["CUP_smg_MP5A5",nil,35000,1],
-			["hgun_PDW2000",nil,30000,1],
-			["SMG_02_F",nil,35000,1],
-			["arifle_mas_ww2_tommy",nil,45000,1]
+		    ["RH_deagle",nil,10000,1],
+			["RH_Deagleg",nil,15000,1],
+			["RH_7Rnd_50_AE",nil,50,1],
+			["CUP_srifle_CZ550",nil,25000,1],
+			["CUP_5x_22_LR_17_HMR_M",nil,1000,1],
+			["hgun_PDW2000_F",nil,20000,1],
+			["30Rnd_9x21_Mag",nil,50,1],
+			["arifle_mas_ww2_ppsh",nil,25000,1],
+			["71Rnd_mas_ww2_ppsh",nil,50,1],
+			["CUP_smg_bizon",nil,25000,1],
+			["CUP_64Rnd_9x19_Bizon_M",nil,50,1]
 		];
 		_additional = _additional + _ret;
 	};
