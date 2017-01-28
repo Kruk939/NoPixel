@@ -39,7 +39,7 @@ _vehicle = "ivory_wrx" createvehicle [0,0,0];
 uisleep 0.05;
 deletevehicle _vehicle;
 
-setTimeMultiplier 24;
+setTimeMultiplier 8;
 setDate [2015, 3, 3, 06, 0];
 0 setovercast 0;
 0 setrain 0;
