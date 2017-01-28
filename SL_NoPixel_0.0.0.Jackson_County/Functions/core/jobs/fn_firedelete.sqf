@@ -9,7 +9,7 @@ _delete = [];
 		(_x select 0) setdamage 1;
 		deletevehicle (_x select 0); 
 	};
-}foreach fires;
+} foreach fires;
 
 { if (typeOf _x == "#particlesource") then { _x setdamage 1; deleteVehicle _x; } } forEach (_location nearObjects 40);  
 

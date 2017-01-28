@@ -291,6 +291,7 @@ class CfgFunctions
 			class revived {};
 			class medicClothes {};
 			class openHealMenu {};
+			class putoutfire {};
 		};
 		class Mayor
 		{

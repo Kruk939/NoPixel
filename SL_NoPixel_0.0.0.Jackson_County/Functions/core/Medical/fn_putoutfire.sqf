@@ -1,5 +1,6 @@
 _personas = _this nearEntities["Man", 10];
 _obj = _this;
+diag_log _obj;
 
 vehicle player setVehicleAmmo 1;
 
@@ -31,8 +32,7 @@ if ((count _personas) != 0) then {
     foreach _personas;
 
     if ((count _notstunned) > 0) then {
-        "deadstate"
-        remoteExec["client_fnc_playAnim", _notStunned];
+        "deadstate"  remoteExec["client_fnc_playAnim", _notStunned];
     };
     sleep 5;
     _removeStun = []; {
