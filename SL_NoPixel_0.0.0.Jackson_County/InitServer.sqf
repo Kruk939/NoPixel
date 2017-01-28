@@ -1,6 +1,5 @@
 ["rpframework", "SQL_CUSTOM_V2", "rpframework"] spawn ExternalS_fnc_ExtDBinit;
 
-[] remoteExec ["Server_fnc_resetConnected", 2];
 
 	//usunięcie bram w willach
 	_obj = [9585.29, 3385.69, 0.00143814] nearestObject 166437; 
@@ -15,18 +14,12 @@
 	_obj enableSimulationGlobal false;
 	_obj hideObjectGlobal true;
 
-
-
 [] call server_fnc_setupVariablesServer;
-[] call Server_fnc_handleDisconnect;
+[] call server_fnc_handleDisconnect;
 
 [] spawn server_fnc_mayorsetup;
 [] spawn server_fnc_racetimes;
 [] spawn server_fnc_rallyracetimes;
-
-[] spawn server_fnc_mafiabank; //Ustawia zmienną z kwotą w bankomacie mafii
-[] spawn server_fnc_resetConnected; //Przy włączeniu serwera zmienia w bazie danych connected=1 na connected=0
-[] spawn server_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku
 
 [server_fnc_addJob, 120] execFSM "\nopixel_server\call.fsm";
 [Server_fnc_cleanup, 1800] execFSM "\nopixel_server\call.fsm";
@@ -81,3 +74,10 @@ skiptime 1;
 };
 
 setDate [2016, 2, 25, 13, 45];
+
+[] call server_fnc_mafiabank; //Ustawia zmienną z kwotą w bankomacie mafii
+[] call server_fnc_resetConnected; //Przy włączeniu serwera zmienia w bazie danych connected=1 na connected=0
+
+//initEconomy = 0;
+//publicVariable "initEconomy";
+[] call server_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku

@@ -59,4 +59,5 @@ publicvariable "currentTaxiDrivers";
 publicvariable "mafiaBank";
 
 publicVariable "priceArrayOre";
+
 //publicVariable "TaxRate";
