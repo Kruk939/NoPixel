@@ -57,10 +57,6 @@ if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "La
 		{ _fencetoopen animate [_x,0]; } forEach _doors2;
 
 	};
+	[player, _door, "hackDoor"] spawn client_fnc_createEvidence;
 };
 jailHacking = false;
-
-
-
-
-//plp_ctm_contshippinggreen

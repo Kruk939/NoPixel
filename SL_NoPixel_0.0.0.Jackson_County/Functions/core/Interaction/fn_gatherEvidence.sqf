@@ -5,7 +5,7 @@ private["_curTarget","_unit","_victim","_crime","_target","_revivable","_targetN
 _curTarget = CurrentCursorTarget;
 _evidence = _curTarget getVariable ["evidence",[]];
 if((count _evidence) == 0) exitWith { ["Nie znalazłeś żadnych dowodów", false] spawn domsg; };
-_index = (count _evidence - 1);
+_index = (count _evidence) - 1;
 _lastEvidence = _evidence select _index;
 
 _suspect = _lastEvidence select 0;

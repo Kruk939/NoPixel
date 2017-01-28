@@ -6,6 +6,10 @@ theDrill = "itemsvaultdrill1" createvehicle getpos player;
 theDrill attachTo [_thebankcontainer, [0, -0.9, 0] ];
 player removeitem "NP_drillitem";
 
+[player, theDrill, "bankDrill"] spawn client_fnc_createEvidence;
+[player, _theBankContainer, "vaultBreach"] spawn client_fnc_createEvidence;
+
+
 bankrobber = 3;
 
 while {true} do {

@@ -1,5 +1,6 @@
 if(typeof cursorobject == "Land_zac_prison_wall_gate") then {
 	_door = cursorobject;
+	[player, _door, "blowDoor"] spawn client_fnc_createEvidence;
 	player playmove "vvv_anim_lockpick";
 	playSound3D ["CG_Jobs\sounds\exp\exp.ogg", player, false, getPosASL _door, 5, 1, 35]; 
 	uisleep 5;
