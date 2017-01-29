@@ -43,7 +43,7 @@ NoPixel_InteractionMenuItems = [
 	[ 
 		//[" (lastforcesync + 1) < time && ( myjob != ""Cop"" && myjob != ""EMS"" && myjob != ""Fire"" ) "], 
 		[" (lastforcesync + 300) < time "], 
-		["Sync Data (5min CD)", "	_new = player getVariable ""wallet"";	[player, ""wallet"", _new] remoteExec [""Server_fnc_setVariable"",2]; _loadout = getunitloadout player; [player,1,getplayeruid player,name player,_loadout] remoteExec [""server_fnc_steppedsync"",2]; lastforcesync = time; hint ""Pomyślnie zapisano!"";  [player, ""sync"", ""Synchronizacja""] remoteExec [""Server_fnc_insertLog"", 2];",5] 
+		["Sync Data (5min CD)", " [] spawn client_fnc_syncData; ",5] 
 	],
 
 	[ 
@@ -218,7 +218,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"""],
-		["Szukaj pluskwy", "[] spawn client_fnc_disabletrackingme;",1]
+		["Szukaj pluskwy", "['Szukanie pluskwy',60,client_fnc_disabletrackingme,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",1]
 	],
 
 	// vehicles
@@ -252,12 +252,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myJob == ""Mafia"" && (getpos player) distance [1055,3660,0.014] < 20"],
-		["Sprzedaj pojazd", " ['Sprzedawanie',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask ",2]
+		["Sprzedaj pojazd", "['Sprzedawanie',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\repair.ogg"",0] spawn client_fnc_dotask;",2]
 	],
 
 	[
 		["CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat' "],
-		["Napraw", "['Naprawianie',30,client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask",2]
+		["Napraw", "['Naprawianie',30,client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",2]
 	],
 
 	[
