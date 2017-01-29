@@ -6,7 +6,7 @@ _class5 = ["CG_MethBag80","CG_WeedBag3"];
 _class6 = ["CG_MethBag70","CG_WeedBag2"]; 
 _class7 = ["CG_MethBag60"]; 
 _class8 = ["CG_MethBag50","CG_WeedBag1"]; 
-
+_mafia = player getVariable ["Mafia",0];
 _total = 0;
 _cashout = 0;
 
@@ -23,7 +23,8 @@ _cashout = 0;
 
 } forEach magazines player;
 
-if(myjob == "Mafia") then { _cashout = _cashout * 2.25 };
+if(myjob == "Mafia" && _mafia > 2 && _mafia < 5) then { _cashout = _cashout * 1.75 };
+if(myjob == "Mafia" && _mafia >= 5) then { _cashout = _cashout * 2.25 };
 
 [_cashout] call Client_fnc_addCash;
 

@@ -138,13 +138,8 @@ NoPixel_InteractionMenuItems = [
 		["Namierz rozmowy", " [] spawn client_fnc_tracecall; ",1]
 	],
 
-//	[
-//		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && myJob == ""Mafia"" "],
-//		["Pluskwa ($250)", " ['Tracking',3,client_fnc_trackplayer,player,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
-//	],
-
 	[
-		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Mafia"" "],
+		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Mafia"" && player getVariable [""Mafia"",0] > 5 "],
 		//[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && (myJob == ""Mafia"" || (myJob == ""Cop"" && player getvariable ""cop"" > 7 )) "],
 		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTracking; ",1]
 	],
