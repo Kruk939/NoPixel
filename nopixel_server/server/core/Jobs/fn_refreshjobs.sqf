@@ -10,7 +10,7 @@ _pia = currentPoliceDispatch FIND objNull;
 currentPoliceDispatch deleteAT _pia;  
 };
 
-if!(_old isEqualTo currentpolicedispatch) then { publicvariable "currentMedicDispatch"; };
+if!(_old isEqualTo currentpolicedispatch) then { publicvariable "currentPoliceDispatch"; };
 
 
 
@@ -23,7 +23,7 @@ _pia =  currentMedicDispatch FIND objNull;
 currentMedicDispatch deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentMedicDispatch) then { publicvariable "currentMedicDispatch"; };
+if!(_old isEqualTo currentMedicDispatch) then { publicvariable "currentMedicDispatch"; };
 
 
 
@@ -34,7 +34,7 @@ _pia =  currentFireDispatch FIND objNull;
 currentFireDispatch deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentFireDispatch) then { publicvariable "currentFireDispatch"; };
+if!(_old isEqualTo currentFireDispatch) then { publicvariable "currentFireDispatch"; };
 
 
 
@@ -45,7 +45,7 @@ _pia =  currentCop FIND objNull;
 currentCop deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentCop) then { publicvariable "currentCop"; };
+if!(_old isEqualTo currentCop) then { publicvariable "currentCop"; };
 
 
 
@@ -56,7 +56,7 @@ _pia =  currentEMS FIND objNull;
 currentEMS deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentEMS) then { publicvariable "currentEMS"; };
+if!(_old isEqualTo currentEMS) then { publicvariable "currentEMS"; };
 
 
 _old =  currentFire;
@@ -66,7 +66,7 @@ _pia =  currentFire FIND objNull;
 currentFire deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentFire) then { publicvariable "currentFire"; };
+if!(_old isEqualTo currentFire) then { publicvariable "currentFire"; };
 
 
 
@@ -77,7 +77,7 @@ _pia =  currentMafia FIND objNull;
 currentMafia deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentMafia) then { publicvariable "currentMafia"; };
+if!(_old isEqualTo currentMafia) then { publicvariable "currentMafia"; };
 
 
 
@@ -88,7 +88,7 @@ _pia =  currentLawyers FIND objNull;
 currentLawyers deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentLawyers) then { publicvariable "currentLawyers"; };
+if!(_old isEqualTo currentLawyers) then { publicvariable "currentLawyers"; };
 
 
 
@@ -99,7 +99,7 @@ _pia =  currentJudges FIND objNull;
 currentJudges deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentJudges) then { publicvariable "currentJudges"; };
+if!(_old isEqualTo currentJudges) then { publicvariable "currentJudges"; };
 
 
 
@@ -112,7 +112,7 @@ _pia =  currentMailmen FIND objNull;
 currentMailmen deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentMailmen) then { publicvariable "currentMailmen"; };
+if!(_old isEqualTo currentMailmen) then { publicvariable "currentMailmen"; };
 
 
 
@@ -124,7 +124,7 @@ _pia =  currentsecurity FIND objNull;
 currentsecurity deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentsecurity) then { publicvariable "currentsecurity"; };
+if!(_old isEqualTo currentsecurity) then { publicvariable "currentsecurity"; };
 
 
 
@@ -135,7 +135,7 @@ _pia =  currentTowTruckDrivers FIND objNull;
 currentTowTruckDrivers deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentTowTruckDrivers) then { publicvariable "currentTowTruckDrivers"; };
+if!(_old isEqualTo currentTowTruckDrivers) then { publicvariable "currentTowTruckDrivers"; };
 
 
 _old =  currentRepairmen;
@@ -145,7 +145,7 @@ _pia =  currentRepairmen FIND objNull;
 currentRepairmen deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentRepairmen) then { publicvariable "currentRepairmen"; };
+if!(_old isEqualTo currentRepairmen) then { publicvariable "currentRepairmen"; };
 
 
 _old =  currentNewsMan;
@@ -155,7 +155,7 @@ _pia =  currentNewsMan FIND objNull;
 currentNewsMan deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentNewsMan) then { publicvariable "currentNewsMan"; };
+if!(_old isEqualTo currentNewsMan) then { publicvariable "currentNewsMan"; };
 
 _old =  currentTrashMan;
 
@@ -164,7 +164,7 @@ _pia =  currentTrashMan FIND objNull;
 currentTrashMan deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentTrashMan) then { publicvariable "currentTrashMan"; };
+if!(_old isEqualTo currentTrashMan) then { publicvariable "currentTrashMan"; };
 
 
 _old =  currentmailmen;
@@ -174,7 +174,7 @@ _pia =  currentmailmen FIND objNull;
 currentmailmen deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentmailmen) then { publicvariable "currentmailmen"; };
+if!(_old isEqualTo currentmailmen) then { publicvariable "currentmailmen"; };
 
 
 
@@ -185,7 +185,7 @@ _pia =  currentTaxiDrivers FIND objNull;
 currentTaxiDrivers deleteAT _pia;  
 };
 
-if!(_old isEqualTo  currentTaxiDrivers) then { publicvariable "currentTaxiDrivers"; };
+if!(_old isEqualTo currentTaxiDrivers) then { publicvariable "currentTaxiDrivers"; };
 
 _old =  currentlegalaid;
 

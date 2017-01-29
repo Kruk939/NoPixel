@@ -9,21 +9,21 @@ if (_player IN currentPoliceDispatch) then {
     _pia = currentPoliceDispatch find _player;
     currentPoliceDispatch deleteAt _pia;
     publicvariable "";
-//	currentPoliceDispatch =  "";
+	//currentPoliceDispatch =  "";
 };
 
 if (_player IN currentMedicDispatch) then {
     _pia = currentMedicDispatch find _player;
     currentMedicDispatch deleteAt _pia;
     publicvariable "";
-//    currentMedicDispatch = "";
+	//currentMedicDispatch = "";
 };
 
 if (_player IN currentFireDispatch) then {
     _pia = currentFireDispatch find _player;
     currentFireDispatch deleteAt _pia;
     publicvariable "";
-//    currentFireDispatch = "";
+	//currentFireDispatch = "";
 };
 */
 
@@ -40,9 +40,9 @@ if (_player IN currentMedicDispatch) then {
 };
 
 if (_player IN currentFireDispatch) then { 
-	_pia = currentFireDispatch find _player;	
+	_pia = currentFireDispatch find _player;
 	currentFireDispatch deleteAt _pia;
-	publicvariable "currentFireDispatch"; 
+	publicvariable "currentFireDispatch";
 };
 
 
@@ -50,14 +50,14 @@ if (_player IN currentCop) exitwith {
     _pia = currentCop find _player;
     currentCop deleteAt _pia;
     publicvariable "currentCop";
-//    currentCop ="";
+	//currentCop ="";
 };
 
 if (_player IN currentEMS) exitwith {
     _pia = currentEMS find _player;
     currentEMS deleteAt _pia;
     publicvariable "currentEMS";
-//    currentEMS ="";
+   //currentEMS ="";
 };
 
 if (_player IN currentFire) exitwith {
@@ -71,21 +71,21 @@ if (_player IN currentMafia) exitwith {
     _pia = currentMafia find _player;
     currentMafia deleteAt _pia;
     publicvariable "currentMafia";
-//    currentMafia = "";
+	//currentMafia = "";
 };
 
 if (_player IN currentLawyers) exitwith {
     _pia = currentLawyers find _player;
     currentLawyers deleteAt _pia;
     publicvariable "currentLawyers";
-//    currentLawyers ="";
+	//currentLawyers ="";
 };
 
 if (_player IN currentJudges) exitwith {
     _pia = currentJudges find _player;
     currentJudges deleteAt _pia;
     publicvariable "currentJudges";
-//    currentJudges ="";
+	//currentJudges ="";
 };
 
 

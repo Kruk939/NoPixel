@@ -4,8 +4,6 @@ myjob = "Fire";
 taskrunning = true;
 [] call client_fnc_hudwork;
 
-_cop = player getvariable "Fire";
-//player setVariable ["coplevel", _cop, false];
 player setVariable ["coplevel", 1, false];
 
 _items = getunitloadout player;

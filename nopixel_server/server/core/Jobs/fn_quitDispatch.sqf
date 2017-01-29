@@ -13,7 +13,7 @@ if (_player IN currentMedicDispatch) then {
 };
 
 if (_player IN currentFireDispatch) then { 
-	_pia = currentFireDispatch find _player;	
+	_pia = currentFireDispatch find _player;
 	currentFireDispatch deleteAt _pia;
-	publicvariable "currentFireDispatch"; 
+	publicvariable "currentFireDispatch";
 };
