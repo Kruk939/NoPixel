@@ -1,20 +1,20 @@
 ["rpframework", "SQL_CUSTOM_V2", "rpframework"] spawn ExternalS_fnc_ExtDBinit;
 
-[] remoteExec ["Server_fnc_resetConnected", 2];
+[] spawn server_fnc_resetConnected;
+player addEventHandler["HandleDisconnect",{ _this spawn Client_fnc_HandleDisconnect; }];
 
-	//usunięcie bram w willach
-	_obj = [9585.29, 3385.69, 0.00143814] nearestObject 166437; 
-	_obj enableSimulationGlobal false;
-	_obj hideObjectGlobal true;
+//usunięcie bram w willach
+_obj = [9585.29, 3385.69, 0.00143814] nearestObject 166437; 
+_obj enableSimulationGlobal false;
+_obj hideObjectGlobal true;
 
-	_obj = [9694.59, 3437.44, 0.00143814] nearestObject 166434; 
-	_obj enableSimulationGlobal false;
-	_obj hideObjectGlobal true;
+_obj = [9694.59, 3437.44, 0.00143814] nearestObject 166434; 
+_obj enableSimulationGlobal false;
+_obj hideObjectGlobal true;
 
-	_obj = [10017.60, 3585.74, 0.00143814] nearestObject 165573; 
-	_obj enableSimulationGlobal false;
-	_obj hideObjectGlobal true;
-
+_obj = [10017.60, 3585.74, 0.00143814] nearestObject 165573; 
+_obj enableSimulationGlobal false;
+_obj hideObjectGlobal true;
 
 
 [] call server_fnc_setupVariablesServer;

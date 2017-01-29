@@ -17,7 +17,7 @@ currentCop = [];
 currentEMS = []; 
 currentMafia = []; 
 currentFire = []; 
- 
+fires = [];
 currentMailmen = []; 
 currentsecurity = []; 
 currentTowTruckDrivers = []; 

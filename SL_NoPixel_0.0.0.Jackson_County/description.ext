@@ -477,6 +477,7 @@ class CfgFunctions
 			class tazed {};
 			class sharphit {};
 			class blunthit {};
+			class syncData {};
 		};
 		class Money
 		{
