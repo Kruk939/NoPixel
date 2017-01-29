@@ -52,6 +52,7 @@
 * Przerobiono system rzadkich skór kangura (dodano drop GPS)
 * Dodano sklep z samolotami
 * Dodano sklep z Harleyami
+* Naprawiono błąd currentFire w skryptach od sync'a
 
 
 <hr>
