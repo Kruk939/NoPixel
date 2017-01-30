@@ -11,12 +11,15 @@ _licenseNumericArray 	= ["0","1","2","3","4","5","6","7","8","9"];
 _licenseSelections = [];
 
 if(_vehType == "ivory") then {
-	_licenseSelections = [4,5,6,7,8,9,10];
+	//_licenseSelections = [4,5,6,7,8,9,10];
+	_licenseSelections = [4,6,8,10,12,14,16];
 };
 
 if(_vehType == "jonzie") then {
 	_licenseSelections = [1,2,3,4,5,6,7];
 };
+diag_log str(_licenseSelections);
+diag_log str(_license);
 
 if (_license == "") then 
 {
@@ -32,6 +35,7 @@ if (_license == "") then
 } else {
 	_licenseArr = _license splitString "";
 	_licenseArr resize 7;
+	diag_log str(_licenseArr);
 	{
 		_licenseChar = _licenseArr select _forEachIndex;
 		if(isNil{_licenseChar}) then { _licenseChar = ""; };
