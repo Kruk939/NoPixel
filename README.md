@@ -54,6 +54,7 @@
 * Dodano sklep z samolotami
 * Dodano sklep z Harleyami
 * Naprawiono błąd currentFire w skryptach od sync'a
+* Naprawiono wyświetlanie rejestracji
 
 
 <hr>
