@@ -11,7 +11,7 @@ if (_type == 1) then {
     drugcount = drugcount - _number;
 };
 
-if (drugcount > 75) then {
+if (drugcount > 150) then {
 
     _roll = random(100);
 
