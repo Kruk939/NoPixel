@@ -8,6 +8,7 @@
 <hr>
 #TODO
 * Naprawić komputer policji(wantedlista - dodawanie)
+* Malowanie pojazdów
 * Firmy
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Panic button'y dla COP, EMS
