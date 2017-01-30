@@ -12,13 +12,9 @@ if (_type == 1) then {
 };
 
 if (drugcount > 150) then {
-
     _roll = random(100);
-
-
+	drugcount = 0;
     if (_roll > 50) then {
-
-        drugcount = 0;
 
         if (_pos distance[3177.83, 971.563, 0.00144196] > _pos distance[3687.34, 6884.69, 0.00143814]) then {
 
