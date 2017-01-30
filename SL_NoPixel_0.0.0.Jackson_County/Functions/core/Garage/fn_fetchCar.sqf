@@ -31,7 +31,7 @@ if((_this select 0) == 1) exitwith {
 };
 
 _numberPlate = _car select 0;
-_className = _car select 1;
+_className = toLower(_car select 1);
 _carColor = _car select 2;
 _carFinish = _car select 3;
 _wheelColor = _car select 4;
@@ -78,7 +78,12 @@ if (_vehicle isKindOf "Car") then {
 		[_vehicle, [_carColor,_carFinish]] remoteexec ["client_fnc_initVehicle",2];
 	};
 	if (str _className find "vv_" > -1 ) then {
-		[_vehicle, [_carColor,_carFinish]] remoteexec ["client_fnc_initVehicle",2];
+		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] remoteexec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
+	};
+	if (str _className find "adilac_" > -1 ) then {
+		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] remoteexec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
 	};
 
 };
