@@ -11,12 +11,48 @@ _lastEvidence = _evidence select _index;
 _suspect = _lastEvidence select 0;
 _suspectUID = _lastEvidence select 1;
 _crime = _lastEvidence select 2;
-_msg = _lastEvidence select 3;
+_scrambledUID = _lastEvidence select 3;
+_messageArray = [];
 
 
-
+switch(_crime) do {
+	case "bankRobbery": {
+		_messageArray = [""];
+	};
+	case "bankDrill": {
+		_messageArray = ["Na wiertle widać odciski palców, które mogły należeć do: "];
+	};
+	case "vaultBreach": {
+		_messageArray = ["Na sejfie widać odciski palców, które mogły należeć do: "];
+	};
+	case "blowDoor": {
+		_messageArray = ["Na bramie pozostały strzępki ubrań, które mogły należeć do: "];
+	};
+	case "hackDoor": {
+		_messageArray = ["Na drzwiach można dostrzec niewielkie odciski palców, które mogły należeć do: "];
+	};
+	case "storeRobbery": {
+		_messageArray = ["Sprzedawca w sklepie mówi, że napastnik mógł wyglądać jak: "];
+	};
+	case "personRobbery": {
+		_messageArray = ["Poszkodowany twierdzi, że napastnik mógł wyglądać jak: "];
+	};
+	case "carRobbery": {
+		_messageArray = ["Na samochodzie widać dowody, które mogą wskazywać na: "];
+	};
+	case "killAtempt": {
+		_messageArray = ["Na ciele widać dowody, które mogą wskazywać na: "];
+	};
+	case "kill": {
+		_messageArray = ["Na ciele widać dowody, które mogą wskazywać na: "];
+	};
+	case "vehicleKill": {
+		_messageArray = ["Na ciele widać dowody, które mogą wskazywać na: "];
+	};
+};
+_msg = _messageArray call BIS_fnc_selectRandom;
 
 
 _evidence deleteAt _index;
 _curTarget setVariable ["evidence", _evidence, true];
-[_msg, false] spawn domsg;
+[_msg + _scrambledUID, false] spawn domsg;
