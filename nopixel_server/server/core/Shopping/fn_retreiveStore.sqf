@@ -77,10 +77,8 @@ _count = _count + 1;
 }; 
  
 _time = time + 30;  
- 
-waitUntil {  
-time > _time  
-};  
+
+waitUntil { time > _time };  
  
  
  

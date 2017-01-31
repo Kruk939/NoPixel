@@ -10,6 +10,7 @@ theDrill = objNull;
 myjob = "none";
 fires = [];
 adminESP = false;
+client_canSync = true;
 attachedbarrier = false;
 attachedfurniture = false;
 paintballhit = false;

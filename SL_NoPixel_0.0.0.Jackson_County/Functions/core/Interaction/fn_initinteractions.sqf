@@ -41,8 +41,7 @@ NoPixel_InteractionMenuItems = [
 
 
 	[ 
-		//[" (lastforcesync + 1) < time && ( myjob != ""Cop"" && myjob != ""EMS"" && myjob != ""Fire"" ) "], 
-		[" (lastforcesync + 300) < time "], 
+		[" ((lastforcesync + 300) < time) && client_canSync "], 
 		["Sync Data (5min CD)", " [] spawn client_fnc_syncData; ",5] 
 	],
 
@@ -316,7 +315,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 1 )) && player distance getpos currentcursortarget < 20 && !attachedfurniture "],
-		["Podnieś mebel", " createdialog ""placefurniture"" ",2]
+		["Wybierz mebel", " createdialog ""placefurniture"" ",2]
 	],
 
 
@@ -444,7 +443,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance myshop < 3"],
-		["Wyposażenie sklepu", "hint ""Twoja skrzynia zniknie w ciągu 5 minut - ludzie nie mogą używać do tego czasu Twojego sklepu!""; [player] remoteExec [""server_fnc_retreiveStore"",2]",3]
+		["Wyposażenie sklepu", "[""shop""] spawn client_fnc_retreiveCargo;",3]
 	],
 
 	[
@@ -657,7 +656,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance myhouse < 10"],
-		["Otwórz wyposażenie domu", "hint ""Skrzynka zniknie w ciągu 2 minut!""; [player] remoteExec [""server_fnc_retreivehouse"",2]",4]
+		["Otwórz wyposażenie domu", "[""house""] spawn client_fnc_retreiveCargo;",4]
 	],
 	
 //	[

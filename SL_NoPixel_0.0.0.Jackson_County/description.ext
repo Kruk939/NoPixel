@@ -478,6 +478,7 @@ class CfgFunctions
 			class sharphit {};
 			class blunthit {};
 			class syncData {};
+			class retreiveCargo {};
 		};
 		class Money
 		{
