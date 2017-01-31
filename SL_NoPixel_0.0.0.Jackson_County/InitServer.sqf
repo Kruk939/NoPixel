@@ -38,8 +38,8 @@ _vehicle = "ivory_wrx" createvehicle [0,0,0];
 uisleep 0.05;
 deletevehicle _vehicle;
 
-setTimeMultiplier 4;
-setDate [2015, 3, 3, 06, 0];
+setTimeMultiplier 6;
+setDate [2015, 2, 25, 11, 0];
 0 setovercast 0;
 0 setrain 0;
 0 setRainbow 0;
@@ -78,5 +78,3 @@ skiptime 1;
 	uisleep 30;
 	["seagull"] remoteExec ["client_fnc_createvehicle",-2];
 };
-
-setDate [2016, 2, 25, 13, 45];
