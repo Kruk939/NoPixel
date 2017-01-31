@@ -113,7 +113,7 @@ _PricesPistolClasses = [
 _PistolMags = [2,1,0,0,0];
 
 
-if(myJob == "Mafia" && player getVariable ["Mafia",0] > 3) then {
+if(myJob == "Mafia" && player getVariable ["Mafia",0] > 4) then {
 
 	_iMafiaClasses = [
 		//small auto

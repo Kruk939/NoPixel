@@ -108,7 +108,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" myJob == ""Mafia"" "],
+		[" myJob == ""Mafia"" && (player getVariable ""Mafia"") > 5 "],
 		["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
 	],
 
@@ -133,8 +133,8 @@ NoPixel_InteractionMenuItems = [
 //	],
 
 	[
-		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" "],
-		["Namierz rozmowy", " [] spawn client_fnc_tracecall; ",1]
+		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && (player getVariable ""Mafia"") > 5 "],
+		[" Namierz telefon ", " [] spawn client_fnc_tracecall; ",1]
 	],
 
 	[

@@ -1,5 +1,4 @@
-[player] remoteexec ["client_fnc_trackedby",currentcursortarget];
-
 if(isNil "TracingPlayers") then { TracingPlayers = []; };
-
-TracingPlayers pushback currentcursortarget;
+if(CurrentCursorTarget in TracingPlayers) exitWith {};
+[player] remoteexec ["client_fnc_trackedby",CurrentCursorTarget];
+TracingPlayers pushback CurrentCursorTarget;

@@ -187,4 +187,5 @@ player linkItem "ItemGPS";
 if(myjob == "Mafia") exitwith {
 	_level = player getVariable "Mafia";
 	player forceadduniform "vvv_traje_mafioso_F_1";
+	player addHeadgear "H_Hat_brown";
 };
