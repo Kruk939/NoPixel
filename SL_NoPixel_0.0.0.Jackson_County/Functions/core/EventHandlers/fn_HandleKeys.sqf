@@ -41,7 +41,7 @@ switch (_code) do
 					} else {
 						[_veh,0] remoteExecCall ["client_fnc_lock",_veh];
 					};
-					["unlocked", false] spawn doquickmsg; 
+					["Otworzono pojazd", false] spawn doquickmsg; 
 
 					playSound3D ["cg_mission_files\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
 
@@ -53,7 +53,7 @@ switch (_code) do
 						[_veh,2] remoteExecCall ["client_fnc_lock",_veh];
 					};	
 
-					["locked", false] spawn doquickmsg; 
+					["Zamknięto pojazd", false] spawn doquickmsg; 
 
 					playSound3D ["cg_mission_files\sounds\lockunlock.ogg", player, false, getPosASL player, 3, 1.1, 25];
 				};
@@ -199,7 +199,7 @@ switch (_code) do
 					spikeAntispam = false;
 				};	
 				deletevehicle _spikeStrips;
-				["You picked up some spike strips!", false] spawn domsg; 
+				["Podniosłeś kolczatkę!", false] spawn domsg; 
 				player additem "CG_Spikes_Collapsed";
 		};
 
@@ -219,13 +219,13 @@ switch (_code) do
 			if (!client_fadeSound) then 
 			{
 				1 fadeSound 0.1;
-				["Your sound has been lowered.", false] spawn domsg;
+				["Poziom głośności został obniżony.", false] spawn domsg;
 				client_fadesound = true;
 			}
 			else
 			{
 				1 fadeSound 1;
-				["Your sound has returned to normal.", false] spawn domsg;
+				["Poziom głośności wrócił do normy.", false] spawn domsg;
 				client_fadesound = false;
 			};
 	        _handle = true;
@@ -251,7 +251,7 @@ switch (_code) do
 						spikeAntispam = false;
 					};	
 					deletevehicle _spikeStrips;
-					["You picked up some spike strips!", false] spawn domsg; 
+					["Podniosłeś kolczatkę!", false] spawn domsg; 
 					player additem "CG_Spikes_Collapsed";
 			};
 
