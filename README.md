@@ -7,6 +7,7 @@
 
 <hr>
 #TODO
+* Zablkowanie SYNCDATA podczas otwierania skrzynek w domku i w sklepie!!!
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Malowanie pojazdów
 * Firmy
