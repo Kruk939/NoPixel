@@ -49,7 +49,6 @@ if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "La
 	};
 	if(typeOf _fenceToOpen == "Land_buildingsJailCellBlock1") then {
 
-		playSound3D ["CG_Jobs\sounds\jailbreak\jailAlarm.ogg", _fenceToOpen, false, (getposasl _fenceToOpen), 1.7, 1, 10235];
 		hint parsetext format["<img size='1' image='CG_Jobs\icons\info.paa'/> <t color='#FFCC00'><t size='0.75'>GŁÓWNY MODUŁ ZŁAMANY</t><br/> PRZYZNANO PEŁNY DOSTĘP.",_calcT];
 		_doors2 = ["doorcell0","doorcell00","doorcell4","doorcell1","doorcell2","doorcell3"];
 		_doors = ["door1","door2","door3","door4"];

@@ -3,23 +3,18 @@ Interaction Menus
 */
 
 NoPixel_InteractionButtons = [
-
 	1600, 1601, 1602, 1603, 1604, 1605, 1606, 1607, 1608,
 	1609, 1610, 1611, 1612, 1613, 1614, 1615, 1616, 1617, 
 	1618, 1619, 1620, 1621, 1622, 1623, 1624, 1625, 1626,
-
 	16001, 16011, 16021, 16031, 16041, 16051, 16061, 16071, 16081,
 	16091, 16101, 16111, 16121, 16131, 16141, 16151, 16161, 16171, 
 	16181, 16191, 16201, 16211, 16221, 16231, 16241, 16251, 16261,
-
 	16002, 16012, 16022, 16032, 16042, 16052, 16062, 16072, 16082,
 	16092, 16102, 16112, 16122, 16132, 16142, 16152, 16162, 16172, 
 	16182, 16192, 16202, 16212, 16222, 16232, 16242, 16252, 16262,
-
 	16003, 16013, 16023, 16033, 16043, 16053, 16063, 16073, 16083,
 	16093, 16103, 16113, 16123, 16133, 16143, 16153, 16163, 16173, 
 	16183, 16193, 16203, 16213, 16223, 16233, 16243, 16253, 16263
-
 ];
 
 NoPixel_InteractionMenuItems = [
@@ -725,7 +720,7 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["((typeof CursorTarget) IN shopNameList) && ((time - (CursorTarget getVariable[""lastRobbed"",0])) > 600) && (player distance cursorTarget < 8) && (currentWeapon player != """")"],
-		["Okradnij sklep", "[""Okradam sklep"",90,client_fnc_robShop,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+		["Okradnij sklep", " [] spawn client_fnc_robShop; ",4]
 	],
 	
 	[

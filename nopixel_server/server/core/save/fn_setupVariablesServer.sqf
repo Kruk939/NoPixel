@@ -1,23 +1,23 @@
- 
 currentMayor = "";
-activecrates = []; 
-activeshopcrates = []; 
- 
-activeJobs = []; 
- 
-currentMedicDispatch = []; 
-currentPoliceDispatch = []; 
-currentFireDispatch = []; 
- 
-currentJudges = []; 
-currentLawyers = []; 
-currentLegalAid = []; 
- 
-currentCop = []; 
-currentEMS = []; 
-currentMafia = []; 
-currentFire = []; 
+activecrates = [];
+activeshopcrates = [];
+activeJobs = [];
+
+currentMedicDispatch = [];
+currentPoliceDispatch = [];
+currentFireDispatch = [];
+currentJudges = [];
+currentLawyers = [];
+currentLegalAid = [];
+currentCop = [];
+currentEMS = [];
+currentMafia = [];
+currentFire = [];
+
 fires = [];
+currentBanks = 0;
+
+
 currentMailmen = []; 
 currentsecurity = []; 
 currentTowTruckDrivers = []; 
@@ -28,9 +28,7 @@ currentTaxiDrivers = [];
 currentDoughnuts = [];
 
 priceArrayOre = [];
- 
 MafiaHoldings = 0; 
- 
 MafiaLoan1 = []; 
 MafiaLoan2 = []; 
 //TaxRate = TaxRate2; 

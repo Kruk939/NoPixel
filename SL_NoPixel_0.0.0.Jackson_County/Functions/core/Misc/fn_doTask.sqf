@@ -11,7 +11,6 @@ _actions = _this select 5;
 _sound = _this select 6;
 _success = true;
 _error = "Success";
-currentEvidence = cursorTarget;
 
 _factor = 1;
 if(karma_level != 0) then { _factor = karma_level / 4; };

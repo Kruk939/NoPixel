@@ -1,7 +1,12 @@
 if(typeof cursortarget != "plp_ct_HighSecMediumBlack") exitwith { hint "Musisz tego uzyc na czarnej skrzyni"; };
 if(bankrobber != 1) exitwith { hint "W toku, lub niedawno obrabowane"; };
-
-[player] remoteExec ["server_fnc_robberyCallBank",2];
+[] spawn {
+	_bank = nearestObject [player, "Land_CommonwealthBank"];
+	uiSleep 30;
+	playSound3D [MISSION_ROOT + "sounds\bankAlarm.ogg", _bank, false, getPosASL _bank, 2, 1, 150]; 
+	uiSleep 150;
+	[player] remoteExec ["server_fnc_robberyCallBank",2];
+};
 _thebankcontainer = cursortarget;
 theDrill = "itemsvaultdrill1" createvehicle getpos player;
 theDrill attachTo [_thebankcontainer, [0, -0.9, 0] ];

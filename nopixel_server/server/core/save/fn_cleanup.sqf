@@ -1,6 +1,5 @@
 _chance = random 100;
-
-if (_chance < 20) then {
+if (_chance < 20 && currentBanks < 2) then {
     ["Informacja","Jeden z banków właśnie otrzymał dostawę pieniędzy.",[255,69,0,1],""] remoteExec ["Client_fnc_showNotification", -2];
     //"Jeden z banków właśnie otrzymał dostawę pieniędzy." remoteexec["hint", -2];
     _mybank = banks call BIS_fnc_selectRandom;
@@ -12,7 +11,7 @@ if (_chance < 20) then {
     _newpos = _thebankcontainer getrelpos[-1.2, 0];
     _thebankcontainer setpos[(_newpos select 0), (_newpos select 1), (_newpos select 2) + 4];
 	diag_log format ["Bank pos - %1", _pos];
-
+	currentBanks = currentBanks + 1;
 };
 _fireLocations = [
 	[7078.03,2458.97,0.00143814],

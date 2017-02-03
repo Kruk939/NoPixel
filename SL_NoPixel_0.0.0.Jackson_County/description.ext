@@ -687,6 +687,26 @@ class CfgSounds {
         };
         titles[] = {};
     };
+	
+    class bankAlarm {
+        name = "bankAlarm";
+        sound[] = {
+            "sounds\bankAlarm.ogg",
+            1,
+            1
+        };
+        titles[] = {};
+    };
+	
+    class shopAlarm {
+        name = "shopAlarm";
+        sound[] = {
+            "sounds\shopAlarm.ogg",
+            1,
+            1
+        };
+        titles[] = {};
+    };
 
     class npmsg {
         name = "npmsg";
