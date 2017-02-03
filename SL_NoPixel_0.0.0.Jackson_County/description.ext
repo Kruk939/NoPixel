@@ -409,7 +409,6 @@ class CfgFunctions
 			class forceFPS {};
 			class HandleKeys {};
 			class HandleKeysUp {};
-			class HandleDisconnect {};
 			class fetchitemtype {};
 			class inventoryOpened {};
 			class inventoryClosed {};

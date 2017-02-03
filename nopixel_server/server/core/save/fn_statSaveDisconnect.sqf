@@ -1,11 +1,12 @@
 params ["_player", "_id", "_uid", "_name","_items"];
-
-diag_log ["%1 %2 %3 %4", _player, _id, _uid, _name];
+if(isNull _player) exitWith { diag_log "Stat save Disconnect - player null"; };
+diag_log format ["Stat save Disconnect %1 %2 %3 %4", _player, _id, _uid, _name];
+[_player, "disconnect", "Gracz opuscil serwer", _uid] call Server_fnc_insertLog;
 
 _statuses = _player getVariable "statuses";
 if(isNil "_statuses") exitwith { };
 
-_items = _player getVariable "getunitloadout";
+_items = getunitloadout _player;
 
 _phoneBackground = _player getVariable "phoneBackground";
 _messages = _player getVariable "messages";
@@ -20,13 +21,13 @@ shops pushback _shop;
 _houselevel = _player getVariable "houselevel";
 
 if(_houseLevel == 1) then {
-tier1housing pushback _house;
+	tier1housing pushback _house;
 };
 if(_houseLevel == 2) then {
-tier2housing pushback _house;
+	tier2housing pushback _house;
 };
 if(_houseLevel == 3) then {
-tier3housing pushback _house;
+	tier3housing pushback _house;
 };
 
 
@@ -46,19 +47,34 @@ _syncInfo = _player getVariable "sync";
 if(isNil "_syncInfo") then { _syncinfo = 1; };
 _exit = false;
 
-if(_syncInfo == 0 || _player in CurrentCop || _player in currentEMS || _player in currentFire) then {
-_updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];
-_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
-_exit = true;
-} else {
+if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player in currentFire) then { 
+	//_updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid]; 
+	//_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+	
+	_updatestr = format ["updatePlayerInfoNoGearNoMoneyNoShop:%1:%2:%3:%4:%5:%6", _position, _messages, _statuses, _phonebackground, _houselevel, _uid];
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+	
+	_updatestr = format ["updatePlayerShop:%1:%2:%3", _housecontent, _shopcontent, _uid];
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+	
+	_updatestr = format ["updatePlayerMoney:%1:%2:%3", _cash, _bank, _uid];
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+} else { 
+	//_updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid]; 
+	//_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+	
+	_updatestr = format ["updatePlayerInfoNoGearNoMoneyNoShop:%1:%2:%3:%4:%5:%6", _position, _messages, _statuses, _phonebackground, _houselevel, _uid];
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+	
+	_updatestr = format ["updatePlayerShop:%1:%2:%3", _housecontent, _shopcontent, _uid];
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+	
+	_updatestr = format ["updatePlayerMoney:%1:%2:%3", _cash, _bank, _uid];
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+	
+	[_player, _uid] call server_fnc_invSave;
+}; 
 
-_updatestr = format ["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];
-_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
-if(!isNil "theMayor") then { if(_player == theMayor) then { TaxRate = 0; publicVariable "TaxRate"; }; };
-
-};
-
-if (_exit) exitwith { deleteVehicle _player; };
 
 if(_houseLevel == 1) then {
 tier1housing pushback _house;
@@ -122,3 +138,4 @@ _player setVariable ["shop", nil, false];
 
 
 //[_player, "save", "Zapisano gracza"] call Server_fnc_insertLog;
+if (_exit) exitwith { deleteVehicle _player; };

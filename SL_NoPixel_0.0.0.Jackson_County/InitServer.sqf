@@ -1,7 +1,6 @@
 ["rpframework", "SQL_CUSTOM_V2", "rpframework"] spawn ExternalS_fnc_ExtDBinit;
 
 [] spawn server_fnc_resetConnected;
-player addEventHandler["HandleDisconnect",{ _this spawn Client_fnc_HandleDisconnect; }];
 
 //usunięcie bram w willach
 _obj = [9585.29, 3385.69, 0.00143814] nearestObject 166437; 
