@@ -371,6 +371,7 @@ class CfgFunctions
 			class createEvidence {};
 			class destroyEvidence {};
 			class gatherEvidence {};
+            class escInterupt {};
 		};
 		class Farming
 		{
@@ -692,7 +693,7 @@ class CfgSounds {
     class bankAlarm {
         name = "bankAlarm";
         sound[] = {
-            "sounds\bankAlarm.ogg",
+            "@kif_client\sounds\bankAlarm.ogg",
             1,
             1
         };
@@ -702,7 +703,7 @@ class CfgSounds {
     class shopAlarm {
         name = "shopAlarm";
         sound[] = {
-            "sounds\shopAlarm.ogg",
+            "@kif_client\sounds\shopAlarm.ogg",
             1,
             1
         };

@@ -20,7 +20,7 @@ _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_f
 while{true} do {
 	uisleep 1;
 	_timeLeft = _timeLeft - 1;
-	if(_timeLeft == 75) then { playSound3D [MISSION_ROOT + "sounds\shopAlarm.ogg", _shop, false, getPosASL _shop, 5, 1, 150];  };
+	if(_timeLeft == 75) then { playSound3D ["kif_client\sounds\shopAlarm.ogg", _shop, false, getPosASL _shop, 5, 1, 150];  };
 	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
 	if(_timeLeft == 0) exitwith {};
 	if(DeadPlayer) exitwith { _success = false; _error = "Dead Player"; };	

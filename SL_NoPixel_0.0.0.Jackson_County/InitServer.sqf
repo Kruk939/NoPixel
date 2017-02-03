@@ -17,7 +17,7 @@ _obj hideObjectGlobal true;
 
 
 [] call server_fnc_setupVariablesServer;
-[] call Server_fnc_handleDisconnect;
+//[] call Server_fnc_handleDisconnect;
 
 [] spawn server_fnc_mayorsetup;
 [] spawn server_fnc_racetimes;

@@ -5,7 +5,6 @@
 	Description:
 	Starts the tazed animation and broadcasts out what it needs to.
 */
-private["_curWep","_curMags","_attach"];
 params [["_unit", objNull, [objNull]], ["_shooter", objNull, [objNull]]];
 if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; client_istazed = false;};
 _sleeptime = 25;

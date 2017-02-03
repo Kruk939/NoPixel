@@ -29,7 +29,7 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 		};
 		if ( _x in currentfire && driver (vehicle _x) == _x) then {
 			_marker = createMarkerLocal [format["%1_FD_UNIT",name _x],visiblePosition _x];
-			_marker setMarkerColorLocal "ColorRed";
+			_marker setMarkerColorLocal "ColorYellow";
 			_marker setMarkerTypeLocal "hd_dot";
 			_marker setMarkerTextLocal format["%1",name _x];
 			_markers pushBack [_marker,_x];

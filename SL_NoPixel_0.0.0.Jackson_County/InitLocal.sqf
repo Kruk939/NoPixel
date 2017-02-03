@@ -54,5 +54,6 @@ client_seatwarn = false;
 client_seatbelt = false;
 [] spawn client_fnc_seatbelts;
 [] spawn client_fnc_gunholster;
+[] spawn client_fnc_escInterupt;
 
 ["Klawisz Windows lub shift + 5 otwiera menu interakcji.", true] spawn domsg;
