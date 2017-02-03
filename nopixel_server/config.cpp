@@ -37,6 +37,7 @@ class CfgFunctions {
             class rallyracetimes {};
 			class insertLog {};
 			class invSave {};
+			class updateVehicleColor {};
         };
         class Shopping {
             file = "NoPixel_Server\server\core\Shopping";

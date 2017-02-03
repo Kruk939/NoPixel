@@ -1,7 +1,7 @@
 
 _car = param [0, objNull, [objNull]];
 _colorBody = param [1, ["",""], [[],""]];
-_colorRims = "";
+_colorRims = param [2, "", ["",""]];
 _tintWindows = param [3, 0, [0]];
 _tintLights = param [4, 0, [0]];
  
@@ -36,8 +36,8 @@ if(_colorRims == "") then {
 	_defaultRims = getArray(configfile >> "CfgVehicles" >> (typeOf _car) >> "hiddenSelectionsTextures");
 	_colorRims = _defaultRims select 1;
 };
-_tintWindows = 0.1+_tintWindows*0.8;
-_tintLights = 0.1+_tintLights*0.8;
+_tintWindows = _tintWindows * 0.1;
+_tintLights = _tintLights * 0.1;
 
 if (_tintWindows < 0.1) then { _tintWindows = 0.1 };
 if (_tintWindows > 0.9) then { _tintWindows = 0.9 };

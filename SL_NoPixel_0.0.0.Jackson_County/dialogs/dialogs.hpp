@@ -39,3 +39,4 @@
 
 
 #include "vehSetPrice.hpp"
+#include "vehicle_colors.hpp"

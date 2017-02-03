@@ -525,6 +525,7 @@ class CfgFunctions
 			class vehSetPrice {};
 			class vehSold {};
 			class vehGetInfo {};
+			class vehChangeColorMenu {};
 		};
 	};
 };

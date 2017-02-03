@@ -492,6 +492,11 @@ NoPixel_InteractionMenuItems = [
 	],
 	
 	[
+		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 20 && currentCursorTarget in Current_Cars && (count (currentCursorTarget getVariable[""information"",[]]) != 0)"],
+		["Przemaluj pojazd", " [] spawn client_fnc_vehChangeColorMenu; ",3]
+	],
+	
+	[
 		["cursorTarget getVariable[""vehPrice"",0] > 0 && cursorTarget in Current_Cars"],
 		["Usuń cenę", "cursorTarget setVariable[""vehPrice"",0,true]",3]
 	],
