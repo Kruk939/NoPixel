@@ -23,8 +23,8 @@ _cashout = 0;
 
 } forEach magazines player;
 
-if(myjob == "Mafia" && _mafia > 2 && _mafia < 5) then { _cashout = _cashout * 2.25 };
-if(myjob == "Mafia" && _mafia >= 4) then { _cashout = _cashout * 3 };
+if(myjob == "Mafia" && _mafia > 2 && _mafia < 5) then { _cashout = _cashout * 2.0 };
+if(myjob == "Mafia" && _mafia >= 4) then { _cashout = _cashout * 2.25 };
 
 [_cashout] call Client_fnc_addCash;
 
