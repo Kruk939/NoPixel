@@ -7,9 +7,9 @@
 
 <hr>
 #TODO
-* Zablkowanie SYNCDATA podczas otwierania skrzynek w domku i w sklepie!!!
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Malowanie pojazdów
+* Poprawić bank i napady na sklep
 * Firmy
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Panic button'y dla COP, EMS
@@ -56,6 +56,7 @@
 * Dodano sklep z Harleyami
 * Naprawiono błąd currentFire w skryptach od sync'a
 * Naprawiono wyświetlanie rejestracji
+* Zablkowanie SYNCDATA podczas otwierania skrzynek w domku i w sklepie
 
 
 <hr>
