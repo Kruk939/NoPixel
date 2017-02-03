@@ -102,11 +102,11 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 		_windows = _information select 5;
 		_lights = _information select 6;
 		_price = 0;
-		_changedColor = true;
+		_changedColor = false;
 		_index = lbCurSel (1501);
 		_status = lbData[1501, _index];
 		_selectedColor = call compile format["%1", _status];
-		if(_selectedColor != _color) then { _price = _price + 2000; _changedColor = false; };
+		if(_selectedColor != _color) then { _price = _price + 2000; _changedColor = true; };
 		_selectedColor = getText(configfile >> "CfgIvoryTextures" >> _selectedColor >> "texture");
 		
 		_index = lbCurSel (1505);
@@ -118,7 +118,7 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 		_index = lbCurSel (1502);
 		_status = lbData[1502, _index];
 		_selectedFinish = call compile format["%1", _status];
-		if(_changedColor) then { _price = _price + (_selectedFinish select 1); }
+		if(_changedColor || (_finish != (_selectedFinish select 0))) then { _price = _price + (_selectedFinish select 1); };
 		_selectedFinish = _selectedFinish select 0;
 		_selectedFinish = getText(configfile >> "CfgIvoryMaterials" >> _selectedFinish >> "material");
 		
@@ -162,27 +162,22 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_index = lbCurSel (1501);
 		_status = lbData[1501, _index];
 		_selectedColor = call compile format["%1", _status];
-		if(_selectedColor != _color) then { _price = _price + 2000; };
 		
 		_index = lbCurSel (1505);
 		_status = lbData[1505, _index];
 		_selectedRims = call compile format["%1", _status];
-		if(_selectedRims != _rims) then { _price = _price + 1000; };
 		
 		_index = lbCurSel (1502);
 		_status = lbData[1502, _index];
 		_selectedFinish = call compile format["%1", _status];
-		_price = _price + (_selectedFinish select 1);
 		_selectedFinish = _selectedFinish select 0;
 		
 		_index = lbCurSel (1503);
 		_selectedLights = parseNumber(lbData[1503, _index]);
-		if(_selectedLights != _lights) then { _price = _price + (_selectedLights * 100); };
 		
 		_index = lbCurSel (1504);
 		_selectedWindows = parseNumber(lbData[1504, _index]);
-		if(_selectedWindows != _windows) then { _price = _price + (_selectedWindows * 100); };
-		
+		_price = parseNumber((ctrlText 1001) select [7]);
 		if !([1,_price] call client_fnc_checkMoney) exitWith { ["Nie masz wystarczającej ilości pieniędzy.", false] spawn domsg; };
 		[_price] call client_fnc_removeCash;
 		
