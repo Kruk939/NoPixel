@@ -1,3 +1,17 @@
+/*
+    Author: Kajetan "Kruk" Mruk
+    Date: 03.02.2017
+
+    Params:
+        0 - String - name of color
+        1 - String - name of finish
+        2 - String - name of rims color
+        3 - Number - lights shadowing
+        4 - Number - window shadowing
+        5 - String - license plate
+    Description: Updates vehicle colors
+    Return: nothing
+ */
 _selectedColor = _this select 0;
 _selectedFinish = _this select 1;
 _selectedRims = _this select 2;

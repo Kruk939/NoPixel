@@ -10,7 +10,7 @@ _booli = (_check select 0) select 0;
 diag_log format ["license change - %1 - %2", _player, plate]; 
  
 if(_booli) then { 
-	"That plate already exists" remoteexec ["hint",_player]; 
+	["Taka tablica już istnieje!", false] remoteexec ["domsg",_player]; 
 } else { 
  
 _checkstr = format ["updateLicense:%1:%2", _plate, _oldPlate]; 

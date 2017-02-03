@@ -1,12 +1,10 @@
 /*
 	Author: Kajetan "Kruk" Mruk
 	For: stanlakeside.pl
-	Date: 19.01.2017 (Non-retard Units)
+	Date: 03.02.2017 (Non-retard Units)
 	
-	Params:
-		0 - Number - price of vehicle
-		1 - Object - vehicle object
-	Description: Function that gives money to the seller and removes car from his array.
+	Params: none
+	Description: Function that creates dialog and other functions;
 	Return: nothing
 */
 disableSerialization;

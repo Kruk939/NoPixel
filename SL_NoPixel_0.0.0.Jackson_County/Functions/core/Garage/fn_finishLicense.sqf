@@ -1,5 +1,5 @@
 _garage = _this select 0;
-hint "License change was successful!";
+["Udało się podmienić tablicę!", false] spawn domsg;
 
 {
 	_carcheck = _x;
