@@ -8,8 +8,6 @@
 <hr>
 #TODO
 * Naprawić komputer policji(wantedlista - dodawanie)
-* Malowanie pojazdów
-* Poprawić bank i napady na sklep
 * Firmy
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Panic button'y dla COP, EMS
@@ -57,6 +55,8 @@
 * Naprawiono błąd currentFire w skryptach od sync'a
 * Naprawiono wyświetlanie rejestracji
 * Zablkowanie SYNCDATA podczas otwierania skrzynek w domku i w sklepie
+* Malowanie pojazdów
+* Poprawić bank i napady na sklep
 
 
 <hr>
@@ -77,8 +77,8 @@
  	Date: XYZ
  	
  	Params:
- 		1 - Object - XYZ
- 		2 - String - XYZ
+ 		0 - Object - XYZ
+ 		1 - String - XYZ
  	Description: XYZ
  	Return: XYZ
  */
