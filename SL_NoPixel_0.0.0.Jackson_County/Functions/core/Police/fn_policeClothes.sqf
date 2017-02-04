@@ -29,8 +29,10 @@ _availableHeadgear = [
 	"TRYK_H_woolhat"
 ];
 if (player getvariable ["cop", 0] > 5) then {
-_availableHeadgear pushBack "CUP_NVG_PVS7";
-_availableHeadgear pushBack "TRYK_Headset_NV";
+    _availableHeadgear pushBack [
+        "CUP_NVG_PVS7",
+        "TRYK_Headset_NV"
+        ];
 };
 
  
@@ -73,192 +75,194 @@ _availableUniforms = [
 	"nopixel_character_swat"
 ];
 if (player getvariable ["cop", 0] > 5) then {
-_availableUniforms pushBack "TRYK_U_B_BLK_Tshirt";
-_availableUniforms pushBack "TRYK_U_B_BLKBLK_R_CombatUniform";
-_availableUniforms pushBack "TRYK_U_B_BLKBLK_CombatUniform";
-_availableUniforms pushBack "TRYK_OVERALL_SAGE_BLKboots_nk_blk";
-_availableUniforms pushBack "np_shirt_1";
-_availableUniforms pushBack "np_shirt_4";
-_availableUniforms pushBack "np_shirt_7";
-_availableUniforms pushBack "EF_suit_6";
-_availableUniforms pushBack "B_Uniform_hunter_l";
-_availableUniforms pushBack "G_Uniform_hunter_l";
-_availableUniforms pushBack "CUP_U_C_Rocker_02";
-_availableUniforms pushBack "U_BG_Guerilla2_1";
-_availableUniforms pushBack "TRYK_U_B_BLOD_T";
-_availableUniforms pushBack "TRYK_U_B_ODTAN_Tshirt";
-_availableUniforms pushBack "TRYK_U_B_BLK_TAN_2";
-_availableUniforms pushBack "TRYK_OVERALL_SAGE_BLKboots_nk_blk";
-_availableUniforms pushBack "TRYK_U_B_PCUGs_BLK_R";
-_availableUniforms pushBack "TRYK_shirts_DENIM_BL";
-_availableUniforms pushBack "TRYK_U_denim_jersey_blu";
-_availableUniforms pushBack "TRYK_U_B_Denim_T_BG_BK";
-_availableUniforms pushBack "CUP_U_C_Villager_03";
-_availableUniforms pushBack "CUP_U_C_Woodlander_04";
-_availableUniforms pushBack "U_C_Poloshirt_redwhite";
-_availableUniforms pushBack "U_C_Poloshirt_tricolour";
-_availableUniforms pushBack "U_B_Wetsuit";
-_availableUniforms pushBack "CUP_O_TKI_Khet_Jeans_01";
-_availableUniforms pushBack "CUP_O_TKI_Khet_Jeans_02";
-_availableUniforms pushBack "CUP_O_TKI_Khet_Jeans_03";
-_availableUniforms pushBack "CUP_O_TKI_Khet_Jeans_04";
- 
-_availableUniforms pushBack "CUP_U_C_Citizen_01";
-_availableUniforms pushBack "CUP_U_C_Citizen_02";
-_availableUniforms pushBack "CUP_U_C_Citizen_03";
-_availableUniforms pushBack "CUP_U_C_Citizen_04";
- 
-_availableUniforms pushBack "CUP_O_TKI_Khet_Partug_01";
-_availableUniforms pushBack "CUP_O_TKI_Khet_Partug_02";
-_availableUniforms pushBack "CUP_O_TKI_Khet_Partug_03";
-_availableUniforms pushBack "CUP_O_TKI_Khet_Partug_04";
-_availableUniforms pushBack "CUP_O_TKI_Khet_Partug_05";
- 
-_availableUniforms pushBack "CUP_U_C_Profiteer_01";
-_availableUniforms pushBack "CUP_U_C_Profiteer_02";
-_availableUniforms pushBack "CUP_U_C_Profiteer_03";
-_availableUniforms pushBack "CUP_U_C_Profiteer_04";
- 
-_availableUniforms pushBack "CUP_U_I_GUE_Anorak_03";
-_availableUniforms pushBack "CUP_U_I_GUE_Anorak_02";
-   
-_availableUniforms pushBack "TRYK_U_B_PCUGs_BLK_R";
-_availableUniforms pushBack "TRYK_U_B_PCUGs_gry_R";
-_availableUniforms pushBack "TRYK_U_B_PCUGs_OD_R";
-_availableUniforms pushBack "TRYK_U_B_wh_blk_Rollup_CombatUniform";
-_availableUniforms pushBack "TRYK_shirts_DENIM_BK";
-_availableUniforms pushBack "TRYK_shirts_DENIM_BL";
-_availableUniforms pushBack "TRYK_shirts_DENIM_BWH";
-_availableUniforms pushBack "TRYK_shirts_DENIM_R";
-_availableUniforms pushBack "TRYK_shirts_DENIM_RED2";
-_availableUniforms pushBack "TRYK_shirts_DENIM_WHB";
-_availableUniforms pushBack "TRYK_shirts_DENIM_ylb";
-_availableUniforms pushBack "TRYK_U_denim_hood_blk";
-_availableUniforms pushBack "TRYK_U_taki_G_BLK";
-_availableUniforms pushBack "TRYK_U_taki_G_COY";
-_availableUniforms pushBack "TRYK_U_pad_j";
- 
-_availableUniforms pushBack "EF_suit_1";
-_availableUniforms pushBack "EF_suit_2";
-_availableUniforms pushBack "EF_suit_3";
-_availableUniforms pushBack "EF_suit_4";
-_availableUniforms pushBack "EF_suit_5";
-_availableUniforms pushBack "EF_suit_6";
- 
-_availableUniforms pushBack "CUP_U_C_Worker_01";
-_availableUniforms pushBack "CUP_U_C_Worker_02";
-_availableUniforms pushBack "CUP_U_C_Worker_03";
-_availableUniforms pushBack "CUP_U_C_Worker_04";
- 
-_availableUniforms pushBack "B_Uniform_worker_l";
-_availableUniforms pushBack "R_Uniform_worker_l";
-_availableUniforms pushBack "G_Uniform_worker_l";
- 
-_availableUniforms pushBack "vvv_character_rock1";
-_availableUniforms pushBack "vvv_character_rock2";
-_availableUniforms pushBack "vvv_character_rock3";
-_availableUniforms pushBack "vvv_character_rock4";
-   
-_availableUniforms pushBack "vvv_ropa_comun_f_1";
-_availableUniforms pushBack "vvv_ropa_comun_f_2";
-_availableUniforms pushBack "vvv_ropa_comun_f_3";
-_availableUniforms pushBack "vvv_ropa_comun_f_4";
-_availableUniforms pushBack "vvv_ropa_comun_f_5";
-_availableUniforms pushBack "vvv_ropa_comun_f_6";
-_availableUniforms pushBack "vvv_ropa_comun_f_7";
-_availableUniforms pushBack "vvv_ropa_comun_f_8";
-_availableUniforms pushBack "vvv_ropa_comun_f_9";
-_availableUniforms pushBack "vvv_ropa_comun_f_10";
- 
- 
-_availableUniforms pushBack "KAEL_SUITS_BR_F14";
-_availableUniforms pushBack "KAEL_SUITS_BR_F12";
-_availableUniforms pushBack "KAEL_SUITS_BR_F3";
-_availableUniforms pushBack "KAEL_SUITS_BR_F";
-_availableUniforms pushBack "KAEL_SUITS_BR_F35";
-_availableUniforms pushBack "KAEL_SUITS_BR_F34";
-   
-_availableUniforms pushBack "vvv_traje_motox_02";
-_availableUniforms pushBack "vvv_traje_motox_02_2";
-_availableUniforms pushBack "vvv_traje_motox_02_3";
-_availableUniforms pushBack "vvv_traje_motox_02_4";
-_availableUniforms pushBack "vvv_traje_motox_02_5";
-_availableUniforms pushBack "vvv_traje_motox_02_6";
-_availableUniforms pushBack "vvv_traje_motox_02_7";
-_availableUniforms pushBack "vvv_traje_motox_02_8";
- 
- 
-_availableUniforms pushBack "CUP_U_C_Villager_01";
-_availableUniforms pushBack "CUP_U_C_Villager_02";
-_availableUniforms pushBack "CUP_U_C_Villager_03";
-_availableUniforms pushBack "CUP_U_C_Villager_04";
- 
-_availableUniforms pushBack "eaglkes_wwi_ind_pilot_cloth";
-_availableUniforms pushBack "eaglkes_wwi_ger_pilot_cloth";
- 
-_availableUniforms pushBack "CUP_U_C_Priest_01";
- 
-_availableUniforms pushBack "TRYK_HRP_USMC";
-_availableUniforms pushBack "TRYK_HRP_khk";
-_availableUniforms pushBack "U_mas_ww2_B_CombatUniform_us";
- 
-_availableUniforms pushBack "CUP_U_C_Mechanic_01";
-_availableUniforms pushBack "CUP_U_C_Mechanic_02";
-_availableUniforms pushBack "CUP_U_C_Mechanic_03";
- 
-_availableUniforms pushBack "CUP_U_O_SLA_Overalls_Pilot";
-_availableUniforms pushBack "CUP_U_O_SLA_Overalls_Tank";
- 
-_availableUniforms pushBack "CUP_U_O_SLA_Green";
-_availableUniforms pushBack "CUP_U_O_SLA_MixedCamo";
- 
-_availableUniforms pushBack "CUP_U_C_Suit_01";
-_availableUniforms pushBack "CUP_U_C_Suit_02";
- 
-_availableUniforms pushBack "np_shirt_1";
-_availableUniforms pushBack "np_shirt_2";
-_availableUniforms pushBack "np_shirt_3";
-_availableUniforms pushBack "np_shirt_4";
-_availableUniforms pushBack "np_shirt_5";
-_availableUniforms pushBack "np_shirt_6";
-_availableUniforms pushBack "np_shirt_7";
-_availableUniforms pushBack "np_shirt_8";
- 
-_availableUniforms pushBack "np_traje_test";
-_availableUniforms pushBack "np_traje_test2";
-_availableUniforms pushBack "np_traje_test3";
-_availableUniforms pushBack "np_traje_test4";
-_availableUniforms pushBack "np_traje_test5";
-_availableUniforms pushBack "np_traje_test6";
-_availableUniforms pushBack "np_traje_test7";
-_availableUniforms pushBack "np_traje_test8";
-_availableUniforms pushBack "np_traje_test9";
-_availableUniforms pushBack "np_traje_test10";
- 
- 
-_availableUniforms pushBack "vvv_traje_jackoy";
-_availableUniforms pushBack "vvv_traje_jackoy2";
-_availableUniforms pushBack "vvv_traje_jackoy3";
-_availableUniforms pushBack "vvv_traje_jackoy4";
-_availableUniforms pushBack "vvv_traje_jackoy5";
-_availableUniforms pushBack "vvv_traje_jackoy6";
-_availableUniforms pushBack "vvv_traje_jackoy7";
-_availableUniforms pushBack "vvv_traje_jackoy8";
- 
-_availableUniforms pushBack "vvv_character_agente_47";
-_availableUniforms pushBack "vvv_character_agente_472";
-_availableUniforms pushBack "vvv_character_agente_474";
-_availableUniforms pushBack "vvv_character_agente_475";
- 
- 
-_availableUniforms pushBack "vvv_traje_ejecutivo_1";
-_availableUniforms pushBack "vvv_character_messi";
- 
-_availableUniforms pushBack "U_I_G_resistanceLeader_F";
-_availableUniforms pushBack "U_I_C_Soldier_Bandit_3_F";
-_availableUniforms pushBack "U_I_C_Soldier_Para_1_F";
-_availableUniforms pushBack "U_B_GEN_Soldier_F";
-_availableUniforms pushBack "U_B_GEN_Commander_F"
+    _availableHeadgear pushBack [
+              "TRYK_U_B_BLK_Tshirt",
+              "TRYK_U_B_BLKBLK_R_CombatUniform",
+              "TRYK_U_B_BLKBLK_CombatUniform",
+              "TRYK_OVERALL_SAGE_BLKboots_nk_blk",
+              "np_shirt_1",
+              "np_shirt_4",
+              "np_shirt_7",
+              "EF_suit_6",
+              "B_Uniform_hunter_l",
+              "G_Uniform_hunter_l",
+              "CUP_U_C_Rocker_02",
+              "U_BG_Guerilla2_1",
+              "TRYK_U_B_BLOD_T",
+              "TRYK_U_B_ODTAN_Tshirt",
+              "TRYK_U_B_BLK_TAN_2",
+              "TRYK_OVERALL_SAGE_BLKboots_nk_blk",
+              "TRYK_U_B_PCUGs_BLK_R",
+              "TRYK_shirts_DENIM_BL",
+              "TRYK_U_denim_jersey_blu",
+              "TRYK_U_B_Denim_T_BG_BK",
+              "CUP_U_C_Villager_03",
+              "CUP_U_C_Woodlander_04",
+              "U_C_Poloshirt_redwhite",
+              "U_C_Poloshirt_tricolour",
+              "U_B_Wetsuit",
+              "CUP_O_TKI_Khet_Jeans_01",
+              "CUP_O_TKI_Khet_Jeans_02",
+              "CUP_O_TKI_Khet_Jeans_03",
+              "CUP_O_TKI_Khet_Jeans_04",
+
+              "CUP_U_C_Citizen_01",
+              "CUP_U_C_Citizen_02",
+              "CUP_U_C_Citizen_03",
+              "CUP_U_C_Citizen_04",
+
+              "CUP_O_TKI_Khet_Partug_01",
+              "CUP_O_TKI_Khet_Partug_02",
+              "CUP_O_TKI_Khet_Partug_03",
+              "CUP_O_TKI_Khet_Partug_04",
+              "CUP_O_TKI_Khet_Partug_05",
+
+              "CUP_U_C_Profiteer_01",
+              "CUP_U_C_Profiteer_02",
+              "CUP_U_C_Profiteer_03",
+              "CUP_U_C_Profiteer_04",
+
+              "CUP_U_I_GUE_Anorak_03",
+              "CUP_U_I_GUE_Anorak_02",
+
+              "TRYK_U_B_PCUGs_BLK_R",
+              "TRYK_U_B_PCUGs_gry_R",
+              "TRYK_U_B_PCUGs_OD_R",
+              "TRYK_U_B_wh_blk_Rollup_CombatUniform",
+              "TRYK_shirts_DENIM_BK",
+              "TRYK_shirts_DENIM_BL",
+              "TRYK_shirts_DENIM_BWH",
+              "TRYK_shirts_DENIM_R",
+              "TRYK_shirts_DENIM_RED2",
+              "TRYK_shirts_DENIM_WHB",
+              "TRYK_shirts_DENIM_ylb",
+              "TRYK_U_denim_hood_blk",
+              "TRYK_U_taki_G_BLK",
+              "TRYK_U_taki_G_COY",
+              "TRYK_U_pad_j",
+
+              "EF_suit_1",
+              "EF_suit_2",
+              "EF_suit_3",
+              "EF_suit_4",
+              "EF_suit_5",
+              "EF_suit_6",
+
+              "CUP_U_C_Worker_01",
+              "CUP_U_C_Worker_02",
+              "CUP_U_C_Worker_03",
+              "CUP_U_C_Worker_04",
+
+              "B_Uniform_worker_l",
+              "R_Uniform_worker_l",
+              "G_Uniform_worker_l",
+
+              "vvv_character_rock1",
+              "vvv_character_rock2",
+              "vvv_character_rock3",
+              "vvv_character_rock4",
+
+              "vvv_ropa_comun_f_1",
+              "vvv_ropa_comun_f_2",
+              "vvv_ropa_comun_f_3",
+              "vvv_ropa_comun_f_4",
+              "vvv_ropa_comun_f_5",
+              "vvv_ropa_comun_f_6",
+              "vvv_ropa_comun_f_7",
+              "vvv_ropa_comun_f_8",
+              "vvv_ropa_comun_f_9",
+              "vvv_ropa_comun_f_10",
+
+
+              "KAEL_SUITS_BR_F14",
+              "KAEL_SUITS_BR_F12",
+              "KAEL_SUITS_BR_F3",
+              "KAEL_SUITS_BR_F",
+              "KAEL_SUITS_BR_F35",
+              "KAEL_SUITS_BR_F34",
+
+              "vvv_traje_motox_02",
+              "vvv_traje_motox_02_2",
+              "vvv_traje_motox_02_3",
+              "vvv_traje_motox_02_4",
+              "vvv_traje_motox_02_5",
+              "vvv_traje_motox_02_6",
+              "vvv_traje_motox_02_7",
+              "vvv_traje_motox_02_8",
+
+
+              "CUP_U_C_Villager_01",
+              "CUP_U_C_Villager_02",
+              "CUP_U_C_Villager_03",
+              "CUP_U_C_Villager_04",
+
+              "eaglkes_wwi_ind_pilot_cloth",
+              "eaglkes_wwi_ger_pilot_cloth",
+
+              "CUP_U_C_Priest_01",
+
+              "TRYK_HRP_USMC",
+              "TRYK_HRP_khk",
+              "U_mas_ww2_B_CombatUniform_us",
+
+              "CUP_U_C_Mechanic_01",
+              "CUP_U_C_Mechanic_02",
+              "CUP_U_C_Mechanic_03",
+
+              "CUP_U_O_SLA_Overalls_Pilot",
+              "CUP_U_O_SLA_Overalls_Tank",
+
+              "CUP_U_O_SLA_Green",
+              "CUP_U_O_SLA_MixedCamo",
+
+              "CUP_U_C_Suit_01",
+              "CUP_U_C_Suit_02",
+
+              "np_shirt_1",
+              "np_shirt_2",
+              "np_shirt_3",
+              "np_shirt_4",
+              "np_shirt_5",
+              "np_shirt_6",
+              "np_shirt_7",
+              "np_shirt_8",
+
+              "np_traje_test",
+              "np_traje_test2",
+              "np_traje_test3",
+              "np_traje_test4",
+              "np_traje_test5",
+              "np_traje_test6",
+              "np_traje_test7",
+              "np_traje_test8",
+              "np_traje_test9",
+              "np_traje_test10",
+
+
+              "vvv_traje_jackoy",
+              "vvv_traje_jackoy2",
+              "vvv_traje_jackoy3",
+              "vvv_traje_jackoy4",
+              "vvv_traje_jackoy5",
+              "vvv_traje_jackoy6",
+              "vvv_traje_jackoy7",
+              "vvv_traje_jackoy8",
+
+              "vvv_character_agente_47",
+              "vvv_character_agente_472",
+              "vvv_character_agente_474",
+              "vvv_character_agente_475",
+
+
+              "vvv_traje_ejecutivo_1",
+              "vvv_character_messi",
+
+              "U_I_G_resistanceLeader_F",
+              "U_I_C_Soldier_Bandit_3_F",
+              "U_I_C_Soldier_Para_1_F",
+              "U_B_GEN_Soldier_F",
+              "U_B_GEN_Commander_F"
+        ];
 };
 
  
@@ -266,11 +270,13 @@ _availableVests = [
 	"V_RebreatherB"
 ];
 if (player getvariable ["cop", 0] > 3) then {
-_availableVests pushBack "EF_BS";
-_availableVests pushBack "EF_BLT_M1";
-_availableVests pushBack "EF_BLT_F1";
-_availableVests pushBack "EF_BLT_M1B";
-_availableVests pushBack "V_RebreatherB";
+_availableVests pushBack [
+            "EF_BS",
+            "EF_BLT_M1",
+            "EF_BLT_F1",
+            "EF_BLT_M1B",
+            "V_RebreatherB"
+            ];
 };
  
 _availableBackpacks = [
@@ -286,16 +292,24 @@ _availableMagazine = [
 ];
 
 if (player getvariable ["cop", 0] > 2) then {
-_availableMagazine pushBack "RH_15Rnd_9x19_M9";
-_availableMagazine pushBack "RH_16Rnd_9x19_CZ";
+_availableMagazine pushBack [
+    "RH_15Rnd_9x19_M9",
+    "RH_16Rnd_9x19_CZ"
+    ];
 };
+
 if (player getvariable ["cop", 0] > 3) then {
-_availableMagazine pushBack "RH_17Rnd_9x19_g17";
+    _availableMagazine pushBack [
+    "RH_17Rnd_9x19_g17"
+    ];
 };
+
 if (player getvariable ["cop", 0] > 4) then {
-_availableMagazine pushBack "RH_15Rnd_45cal_fnp";
-_availableMagazine pushBack "RH_20Rnd_57x28_FN";
-_availableMagazine pushBack "RH_7Rnd_45cal_m1911";
+    _availableMagazine pushBack [
+        "RH_15Rnd_45cal_fnp",
+        "RH_20Rnd_57x28_FN",
+        "RH_7Rnd_45cal_m1911"
+    ];
 };
  
 _availableWeapon = [
@@ -307,38 +321,56 @@ _availableWeapon = [
 ];
 
 if (player getvariable ["cop", 0] > 2) then {
-_availableWeapon pushBack "CUP_hgun_M9";
-_availableWeapon pushBack "RH_cz75";
+_availableWeapon pushBack [
+    "CUP_hgun_M9",
+    "RH_cz75"
+    ];
 };
+
 if (player getvariable ["cop", 0] > 3) then {
-_availableWeapon pushBack "RH_g17";
-_availableWeapon pushBack "RH_g19";
+    _availableWeapon pushBack [
+        "RH_g17",
+        "RH_g19"
+    ];
 };
+
 if (player getvariable ["cop", 0] > 4) then {
-_availableWeapon pushBack "RH_fnp45";
-_availableWeapon pushBack "RH_fn57";
-_availableWeapon pushBack "RH_kimber_nw";
+    _availableWeapon pushBack [
+        "RH_fnp45",
+        "RH_fn57";,
+        "RH_kimber_nw"
+    ];
 };
 
 _availableAttachments = [
-	"cg_atf_bandage_i",
-	"CG_wheel",
-	"acc_flashlight",
-	"cg_torchbattery",
-	"RH_X300"
-];
+        "cg_atf_bandage_i",
+        "CG_wheel",
+        "acc_flashlight",
+        "cg_torchbattery",
+        "RH_X300"
+    ];
 if (player getvariable ["cop", 0] > 4) then {
-_availableAttachments pushBack "RH_docter";
+_availableAttachments pushBack [
+        "RH_docter"
+    ];
 };
  
 _availableItems = [
-	"ItemMap",
-	"ItemCompass",
-	"Itemwatch",
-	"cg_tabletd_2",
-	"ItemGPS",
-	"TRYK_Headset_NV"
-];
+        "ItemMap",
+        "ItemCompass",
+        "Itemwatch",
+        "cg_tabletd_2",
+        "ItemGPS",
+        "TRYK_Headset_NV",
+        "NP_8mPoliceLine",
+        "NP_4mPoliceLine",
+        "NP_1mPoliceLine",
+        "NP_PoliceBarrierL",
+        "NP_PoliceBarrierS",
+        "CG_Spikes_Collapsed",
+        "CG_wheel",
+        "cg_atf_bandage_i"
+    ];
 
 
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
