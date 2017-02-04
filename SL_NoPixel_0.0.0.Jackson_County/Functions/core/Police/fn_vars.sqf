@@ -152,7 +152,7 @@ _availableWeapon pushBack [
 };
 if (player getvariable ["cop", 0] > 8) then {
 _availableWeapon pushBack [
-        "RH_gsh18";
+        "RH_gsh18",
         "RH_Deaglem"
         ];
 };
