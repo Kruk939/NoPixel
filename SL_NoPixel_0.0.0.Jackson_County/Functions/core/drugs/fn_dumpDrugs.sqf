@@ -28,7 +28,8 @@ if(myjob == "Mafia" && _mafia >= 4) then { _cashout = _cashout * 2.25 };
 
 [_cashout] call Client_fnc_addCash;
 
-hint format["Zarobiłeś $%1.",_cashout];
+["Sukces",format["Sprzedałeś narkotyki za: $%1", _cashout],[0,255,0,1],""] call Client_fnc_showNotification;
+//hint format["Zarobiłeś $%1.",_cashout];
 
 
 

@@ -41,4 +41,5 @@ _cashTotal = 0;
 
 globalProtection = 0;
 
-hint format["Zarobiłeś $%1",_cashTotal];
+["Sukces",format["Sprzedałeś surowce za: $%1", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
+//hint format["Zarobiłeś $%1",_cashTotal];

@@ -60,18 +60,20 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
 	_updatestr = format ["updatePlayerMoney:%1:%2:%3", _cash, _bank, _uid];
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 } else { 
-	//_updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid]; 
+	_updatestr = format ["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid]; 
+	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+	
+	//_updatestr = format ["updatePlayerInfoNoGearNoMoneyNoShop:%1:%2:%3:%4:%5:%6", _position, _messages, _statuses, _phonebackground, _houselevel, _uid];
 	//_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 	
-	_updatestr = format ["updatePlayerInfoNoGearNoMoneyNoShop:%1:%2:%3:%4:%5:%6", _position, _messages, _statuses, _phonebackground, _houselevel, _uid];
-	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+	//_updatestr = format ["updatePlayerShop:%1:%2:%3", _housecontent, _shopcontent, _uid];
+	//_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 	
-	_updatestr = format ["updatePlayerShop:%1:%2:%3", _housecontent, _shopcontent, _uid];
-	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
-	
-	_updatestr = format ["updatePlayerMoney:%1:%2:%3", _cash, _bank, _uid];
-	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
-	[_player, _uid] call server_fnc_invSave;
+	//_updatestr = format ["updatePlayerMoney:%1:%2:%3", _cash, _bank, _uid];
+	//_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+
+	//_updatestr = format ["updatePlayerInv:%1:%2", _items, _uid];
+	//_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 }; 
 
 

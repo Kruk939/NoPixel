@@ -1,6 +1,7 @@
 detach myDT;
 cookingMeth = true;
 player removeAction myDrugAction;
+player removeAction myDrugAction2;
 hint "Możesz zacząć gotować!";
 myActionStart = myDT addAction [ "Zacznij gotować", {  
 	[] spawn client_fnc_methCooking;
