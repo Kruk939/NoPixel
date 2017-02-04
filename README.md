@@ -16,6 +16,7 @@
 * Naprawić znikanie ubrań - przy syncu reload ubrań
 * Przeszukiwanie sklepu / domu dla policji
 * Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
+* Skuwanie osób nieprzytomnych nie działa do końca (skuć da, lecz po odrodzeniu osoba nie jest skuta)
 
 
 <hr>
@@ -54,7 +55,7 @@
 * Dodano sklep z Harleyami
 * Naprawiono błąd currentFire w skryptach od sync'a
 * Naprawiono wyświetlanie rejestracji
-* Zablkowanie SYNCDATA podczas otwierania skrzynek w domku i w sklepie
+* Zablokowanie SYNCDATA podczas otwierania skrzynek w domku i w sklepie
 * Malowanie pojazdów
 * Poprawić bank i napady na sklep
 
@@ -92,7 +93,7 @@
 * \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
 <hr>
-RPT LOCAL:
+#RPT LOCAL ERROR:
 
 ```
 23:40:58 Error in expression < call compile format["%1", _status];

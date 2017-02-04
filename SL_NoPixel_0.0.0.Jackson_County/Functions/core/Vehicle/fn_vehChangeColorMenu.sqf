@@ -176,7 +176,8 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_index = lbCurSel (1504);
 		_selectedWindows = parseNumber(lbData[1504, _index]);
 		_price = parseNumber((ctrlText 1001) select [7]);
-		if !([1,_price] call client_fnc_checkMoney) exitWith { ["Nie masz wystarczającej ilości pieniędzy.", false] spawn domsg; };
+		_haveCash = [1,_price] call client_fnc_checkmoney;
+		if !(_haveCash) exitWith { ["Nie masz wystarczającej ilości pieniędzy.", false] spawn domsg; };
 		[_price] call client_fnc_removeCash;
 		
 		_information set [2,_selectedColor];

@@ -683,7 +683,7 @@ class CfgSounds {
     class carlock {
         name = "carlock";
         sound[] = {
-            "sounds\carlock.ogg",
+            "@kif_client\sounds\carlock.ogg",
             1,
             1
         };
@@ -704,6 +704,16 @@ class CfgSounds {
         name = "shopAlarm";
         sound[] = {
             "@kif_client\sounds\shopAlarm.ogg",
+            1,
+            1
+        };
+        titles[] = {};
+    };
+
+    class fireAlarm {
+        name = "fireAlarm";
+        sound[] = {
+            "@kif_client\sounds\fireAlarm.ogg",
             1,
             1
         };

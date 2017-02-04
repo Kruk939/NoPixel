@@ -27,7 +27,7 @@ if (_item IN
 if (_item IN ["np_ugroceries"] ) then { ["add","drink",100] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["add","unhealthiness",6] call client_fnc_sustain;  [_item,80] spawn client_fnc_removeitem; closeDialog 0; };
 
 
-if (_item == "NP_drillitem") then { [] spawn client_fnc_bankrobbery; closeDialog 0; };
+if (_item == "NP_drillitem") then {_cops = (count currentcop); if(_cops < 5) exitwith { hint "Za mało policjantów - 5+"; }; [] spawn client_fnc_bankrobbery; closeDialog 0; };
 
 if (_item == "CG_C4") then {_cops = (count currentcop); if(_cops < 3) exitwith { hint "Za mało policjantów - 3+"; }; [] spawn client_fnc_blowdoor; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 

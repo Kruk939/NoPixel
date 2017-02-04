@@ -13,6 +13,7 @@ if(myjob == "Cop") then {
 	if(myjob == "Fire") then {
 		[_pos,"Pożar!","Job"] spawn client_fnc_hudHelper;
 		_marker setMarkerTextlocal "911: LOKALIZACJA POŻARU!";
+		if (true) then {playSound "fireAlarm";}forEach currentFire;
 	} else {
 		[_pos,"Zadanie","Job"] spawn client_fnc_hudHelper;
 		_marker setMarkerTextlocal "Miejsce zadania";
