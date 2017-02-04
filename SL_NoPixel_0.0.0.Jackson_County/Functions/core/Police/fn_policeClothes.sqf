@@ -28,6 +28,12 @@ _availableHeadgear = [
 	"TRYK_H_PASGT_BLK",
 	"TRYK_H_woolhat"
 ];
+if (player getvariable ["cop", 0] > 2) then {
+    _availableHeadgear pushBack [
+    	"CUP_NVG_PVS7",
+        "TRYK_Headset_NV"
+    ];
+};
 if (player getvariable ["cop", 0] > 5) then {
     _availableHeadgear pushBack [
         "CUP_H_NAPA_Fedora",
@@ -146,9 +152,6 @@ if (player getvariable ["cop", 0] > 5) then {
         "EF_Punk_wig_BL",
         "EF_Punk_wig_BW",
         "EF_Punk_wig_GL"
-
-        "CUP_NVG_PVS7",
-        "TRYK_Headset_NV"
         ];
 };
 
