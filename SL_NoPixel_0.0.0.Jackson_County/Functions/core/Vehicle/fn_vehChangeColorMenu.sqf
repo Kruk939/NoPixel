@@ -186,8 +186,16 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_index = lbCurSel (1504);
 		_selectedWindows = parseNumber(lbData[1504, _index]);
 		_price = parseNumber((ctrlText 1001) select [7]);
+
 		_haveCash = [1,_price] call client_fnc_checkmoney;
 		if !(_haveCash) exitWith { ["Nie masz wystarczającej ilości pieniędzy.", false] spawn domsg; };
+
+		if (isNil _selectedColor) exitWith {hint "Selected color is nil, contanct admin/developer! Tell about car and selected options!"};
+		if (isNil _selectedFinish) exitWith {hint "Selected finish is nil, contanct admin/developer! Tell about car and selected options!"};
+		if (isNil _selectedRims) exitWith {hint "Selected rims is nil, contanct admin/developer! Tell about car and selected options!"};
+		if (isNil _selectedWindows) exitWith {hint "Selected windows is nil, contanct admin/developer! Tell about car and selected options!"};
+		if (isNil _selectedLights) exitWith {hint "Selected lights is nil, contanct admin/developer! Tell about car and selected options!"};
+
 		[_price] call client_fnc_removeCash;
 		
 		_information set [2,_selectedColor];
