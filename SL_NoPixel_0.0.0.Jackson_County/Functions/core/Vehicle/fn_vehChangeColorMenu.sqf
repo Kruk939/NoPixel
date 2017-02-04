@@ -21,6 +21,11 @@ _textures = ["airforceblue", "aliceblue", "alizarincrimson", "almond", "amaranth
 _finishes = [["Glossy",0], ["Metallic",500], ["Matte",2500], ["Chrome",5000]];
 
 _information = spawnedVehicle getVariable ["information", []];
+if(count _information == 0) exitWith {};
+if(isNull spawnedVehicle) exitWith {};
+vehChangeColorMenuLoaded = false;
+
+
 _color = _information select 2;
 _finish = _information select 3;
 _rims = _information select 4;
@@ -81,9 +86,11 @@ for "_i" from 1 to 9 do {
 	if(_i == _windows) then { _selected = _i; };
 };
 lbSetCurSel [1504, _selected];
+vehChangeColorMenuLoaded = true;
 
 if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 	client_fnc_vehChangeColorOnLbChange = {
+		if !(vehChangeColorMenuLoaded) exitWith {};
 		disableSerialization;
 		_display = findDisplay 70001;
 		_priceCtrl = _display displayCtrl 1001;
@@ -139,7 +146,10 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 };
 if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 	client_fnc_vehChangeColorButtonAccept = {
+		if(isNull spawnedVehicle) exitWith {};
 		_information = spawnedVehicle getVariable ["information", []];
+		if(count _information == 0) exitWith {};
+		if !(vehChangeColorMenuLoaded) exitWith {};
 		_license = _information select 0;
 		_color = _information select 2;
 		_finish = _information select 3;
@@ -193,5 +203,6 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		
 		[spawnedVehicle] call client_fnc_storeCar;
 		spawnedVehicle = objNull;
+		vehChangeColorMenuLoaded = nil;
 	};
 };
