@@ -71,8 +71,9 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
 	
 	_updatestr = format ["updatePlayerMoney:%1:%2:%3", _cash, _bank, _uid];
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
-	
-	[_player, _uid] call server_fnc_invSave;
+	if(count _items != 0) {
+		[_player, _uid] call server_fnc_invSave;
+	};
 }; 
 
 
