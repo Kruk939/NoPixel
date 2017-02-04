@@ -36,12 +36,12 @@ _item = format["CG_MethBag%1", myDrugValue];
 _msg = format["Ugotowałeś %1 worków metamfetaminy",_randomvalue];
 [_msg, true] spawn domsg;
 //hint format["Ugotowałeś %1 worków metamfetaminy!",_randomvalue];
+player additem "NP_DrugTable";
 
 while {_randomValue > 0} do { player additem _item; _randomValue = _randomValue - 1; };
 
 deletevehicle myDT;
 
-player additem "NP_DrugTable";
 
 /*
 
