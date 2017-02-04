@@ -29,13 +29,14 @@ _availableHeadgear = [
 	"TRYK_H_woolhat"
 ];
 if (player getvariable ["cop", 0] > 2) then {
-    _availableHeadgear pushBack [
+    _availableHeadgearTwo = [
     	"CUP_NVG_PVS7",
         "TRYK_Headset_NV"
     ];
+    _availableHeadgear = _availableHeadgear + _availableHeadgearTwo;
 };
 if (player getvariable ["cop", 0] > 5) then {
-    _availableHeadgear pushBack [
+    _availableHeadgearFive = [
         "CUP_H_NAPA_Fedora",
         "ALE_H_Calot",
         "ALE_H_Cowboy_White",
@@ -43,7 +44,7 @@ if (player getvariable ["cop", 0] > 5) then {
         "ALE_H_Cowboy_Brown",
         "ALE_H_NewEra_Monster",
         "ALE_H_NewEra_Rouge",
-        "ALE_H_NewEra_Superman",nil,12,3,5],
+        "ALE_H_NewEra_Superman",
         "ALE_H_NewEra_Cyan",
         "ALE_H_NewEra_Black",
         "ALE_H_NewEra_Lakers",
@@ -153,6 +154,7 @@ if (player getvariable ["cop", 0] > 5) then {
         "EF_Punk_wig_BW",
         "EF_Punk_wig_GL"
         ];
+        _availableHeadgear = _availableHeadgear + _availableHeadgearFive;
 };
 
  
@@ -176,7 +178,7 @@ _availableGoggles = [
 	"TAC_PMC_ID_W2"
 ];
 if (player getvariable ["cop", 0] > 5) then {
-    _availableGoggles pushBack [
+    _availableGogglesFive = [
         "G_Shades_Black",
         "G_Shades_Blue",
         "G_Sport_Blackred",
@@ -234,6 +236,7 @@ if (player getvariable ["cop", 0] > 5) then {
         "TRYK_Beard_BW4",
         "TRYK_Beard_Gr4"
     ];
+    _availableGoggles = _availableGoggles + _availableGogglesFive;
 };
 
  
@@ -256,7 +259,7 @@ _availableUniforms = [
 	"nopixel_character_swat"
 ];
 if (player getvariable ["cop", 0] > 5) then {
-    _availableHeadgear pushBack [
+    _availableUniformsFive = [
               "TRYK_U_B_BLK_Tshirt",
               "TRYK_U_B_BLKBLK_R_CombatUniform",
               "TRYK_U_B_BLKBLK_CombatUniform",
@@ -444,6 +447,7 @@ if (player getvariable ["cop", 0] > 5) then {
               "U_B_GEN_Soldier_F",
               "U_B_GEN_Commander_F"
         ];
+        _availableUniforms = _availableUniforms + _availableUniformsFive;
 };
 
  
@@ -452,13 +456,14 @@ _availableVests = [
 ];
 
 if (player getvariable ["cop", 0] > 3) then {
-_availableVests pushBack [
+_availableVestsThree = [
             "EF_BS",
             "EF_BLT_M1",
             "EF_BLT_F1",
             "EF_BLT_M1B",
             "V_RebreatherB"
             ];
+            _availableVests = _availableVests + _availableVestsThree;
 };
  
 _availableBackpacks = [
@@ -474,24 +479,27 @@ _availableMagazine = [
 ];
 
 if (player getvariable ["cop", 0] > 2) then {
-_availableMagazine pushBack [
+_availableMagazineTwo = [
     "RH_15Rnd_9x19_M9",
     "RH_16Rnd_9x19_CZ"
     ];
+    _availableMagazine = _availableMagazine + _availableMagazineTwo;
 };
 
 if (player getvariable ["cop", 0] > 3) then {
-    _availableMagazine pushBack [
+    _availableMagazineThree = [
     "RH_17Rnd_9x19_g17"
     ];
+    _availableMagazine = _availableMagazine + _availableMagazineThree;
 };
 
 if (player getvariable ["cop", 0] > 4) then {
-    _availableMagazine pushBack [
+    _availableMagazineFour = [
         "RH_15Rnd_45cal_fnp",
         "RH_20Rnd_57x28_FN",
         "RH_7Rnd_45cal_m1911"
     ];
+    _availableMagazine = _availableMagazine + _availableMagazineFour;
 };
  
 _availableWeapon = [
@@ -503,25 +511,28 @@ _availableWeapon = [
 ];
 
 if (player getvariable ["cop", 0] > 2) then {
-_availableWeapon pushBack [
+_availableWeaponTwo = [
     "CUP_hgun_M9",
     "RH_cz75"
     ];
+    _availableWeapon = _availableWeapon + _availableWeaponTwo;
 };
 
 if (player getvariable ["cop", 0] > 3) then {
-    _availableWeapon pushBack [
+    _availableWeaponThree = [
         "RH_g17",
         "RH_g19"
     ];
+    _availableWeapon = _availableWeapon + _availableWeaponThree;
 };
 
 if (player getvariable ["cop", 0] > 4) then {
-    _availableWeapon pushBack [
+    _availableWeaponFour = [
         "RH_fnp45",
         "RH_fn57",
         "RH_kimber_nw"
     ];
+    _availableWeapon = _availableWeapon + _availableWeaponFour;
 };
 
 _availableAttachments = [
@@ -532,9 +543,10 @@ _availableAttachments = [
         "RH_X300"
     ];
 if (player getvariable ["cop", 0] > 4) then {
-_availableAttachments pushBack [
+_availableAttachmentsFour = [
         "RH_docter"
     ];
+    _availableAttachments = _availableAttachments + _availableAttachmentsFour;
 };
  
 _availableItems = [

@@ -108,10 +108,11 @@ _availableMagazine = [
 ];
 
 if (player getvariable ["cop", 0] > 8) then {
-    _availableMagazine pushBack [
+    _availableMagazineEight = [
         "RH_18Rnd_9x19_gsh",
         "RH_7Rnd_50_AE"
     ];
+	_availableMagazine = _availableMagazine + _availableMagazineEight;
 };
  
 _availableWeapon = [
@@ -136,12 +137,13 @@ _availableWeapon = [
 ];
 
 if (player getvariable ["cop", 0] > 5) then {
-_availableWeapon pushBack [
+_availableWeaponFive = [
     "RH_g18"
     ];
+	_availableWeapon = _availableWeapon + _availableWeaponFive;
 };
 if (player getvariable ["cop", 0] > 6) then {
-_availableWeapon pushBack [
+_availableWeaponSix =[
             "CUP_arifle_M4A1_black",
             "CUP_sgun_M1014",
             "CUP_arifle_M16A4_Base",
@@ -149,6 +151,7 @@ _availableWeapon pushBack [
             "CUP_hgun_BallisticShield_Armed",
             "Rangefinder"
         ];
+	_availableWeapon = _availableWeapon + _availableWeaponSix;
 };
 if (player getvariable ["cop", 0] > 8) then {
 _availableWeapon pushBack [
@@ -164,17 +167,19 @@ _availableAttachments = [
 ];
 
 if (player getvariable ["cop", 0] > 4) then {
-_availableAttachments pushBack [ 
+_availableAttachmentsFour = [ 
     "RH_docter"
     ];
+	_availableAttachments = _availableAttachments + _availableAttachmentsFour;
 };
 
 if (player getvariable ["cop", 0] > 6) then {
-_availableAttachments pushBack [
+_availableAttachmentsSix = [
           "CUP_optic_HoloBlack",
           "CUP_optic_CompM2_Black",
           "CUP_optic_CompM4"
     ];
+	_availableAttachments = _availableAttachments + _availableAttachmentsSix;
 };
  
 _availableItems = [
