@@ -30,6 +30,123 @@ _availableHeadgear = [
 ];
 if (player getvariable ["cop", 0] > 5) then {
     _availableHeadgear pushBack [
+        "CUP_H_NAPA_Fedora",
+        "ALE_H_Calot",
+        "ALE_H_Cowboy_White",
+        "ALE_H_Cowboy_Black",
+        "ALE_H_Cowboy_Brown",
+        "ALE_H_NewEra_Monster",
+        "ALE_H_NewEra_Rouge",
+        "ALE_H_NewEra_Superman",nil,12,3,5],
+        "ALE_H_NewEra_Cyan",
+        "ALE_H_NewEra_Black",
+        "ALE_H_NewEra_Lakers",
+        "ALE_H_NewEra_Redsox",
+
+        "H_Beret_blk",
+        "H_Booniehat_khk",
+        "H_Booniehat_oli",
+        "H_Booniehat_tan",
+
+        "TRYK_H_woolhat_WH",
+        "TRYK_H_woolhat_tan",
+        "TRYK_H_woolhat_CW",
+        "TRYK_H_woolhat_cu",
+        "TRYK_H_woolhat_br",
+        "TRYK_H_woolhat",
+        "TRYK_r_cap_tan_Glasses",
+        "TRYK_r_cap_od_Glasses",
+        "TRYK_r_cap_blk_Glasses",
+        "TRYK_R_CAP_OD_US",
+        "TRYK_R_CAP_TAN",
+        "TRYK_R_CAP_BLK",
+        "TRYK_H_pakol2",
+        "TRYK_H_headsetcap",
+        "TRYK_H_headsetcap_od",
+        "TRYK_H_headsetcap_blk",
+        "TRYK_H_headsetcap_blk_Glasses",
+        "TRYK_H_headsetcap_Glasses",
+        "TRYK_H_LHS_HEL_G",
+        "TRYK_H_Bandana_wig_g",
+        "TRYK_H_Bandana_wig",
+        "TRYK_H_Bandana_H",
+        "TRYK_Kio_Balaclava",
+
+        "H_Cap_tan",
+        "H_Cap_blk",
+        "H_Cap_blk_CMMG",
+        "H_Cap_brn_SPECOPS",
+        "H_Cap_tan_specops_US",
+        "H_Cap_khaki_specops_UK",
+        "H_Cap_grn",
+        "H_Cap_grn_BI",
+        "H_Cap_blk_Raven",
+        "H_Cap_blk_ION",
+
+        "Gorb_AngryGingerbread1",
+        "Gorb_AngryGingerbreadSwirl2",
+        "CUP_H_C_Beanie_01",
+        "CUP_H_C_Beanie_02",
+        "CUP_H_ChDKZ_Beanie",
+        "H_Beret_blk",
+        "CUP_H_C_Beret_01",
+        "CUP_H_C_Beret_02",
+        "H_BobaMask",
+        "BL_eimer_Hat",
+
+        "CUP_H_PMC_Cap_Burberry",
+        "CUP_H_PMC_Cap_Grey",
+        "CUP_H_PMC_Cap_Back_Grey",
+        "CUP_H_PMC_Cap_Back_Burberry",
+        "Gorb_PuddingHat",
+        "Gorb_FestiveHat6",
+        "Gorb_FestiveHat8",
+        "BL_mask_Hat",
+        "Gorb_HolidayBaseballHat1",
+        "Gorb_HolidayBaseballHat2",
+
+        "Gorb_HolidayBaseballHat3",
+        "Gorb_HolidayBaseballHat4",
+        "Gorb_HolidayBaseballHat5",
+        "Gorb_HolidayBaseballHat6",
+        "Gorb_PlaidHat1",
+        "Gorb_PlaidHat2",
+        "Gorb_PlaidHat3",
+        "Gorb_PlaidHat4",
+        "cg_horsehead",
+        "cg_horsehead_2",
+
+        "cg_horsehead_blk",
+        "cg_horsehead_pnk",
+        "H_Hat_brown",
+        "H_Hat_tan",
+        "H_Hat_camo",
+        "H_Hat_checker",
+        "H_KermitMask",
+        "sab_wwiplanes_ger_cap",
+        "sab_wwiplanes_fr_cap",
+        "CUP_H_SLA_TankerHelmet",
+
+        "acj_casco_ammerica",
+        "acj_casco_calavera",
+        "acj_casco_camo",
+        "acj_casco_espider",
+        "acj_casco_germani",
+        "acj_casco_gris",
+        "acj_casco_negro",
+        "acj_casco_rojo",
+        "Casque_Moto",
+        "H_RacingHelmet_1_white_F",
+
+        "EF_Long_wig_B",
+        "EF_Long_wig_BL",
+        "EF_Long_wig_BW",
+        "EF_Long_wig_GL",
+        "EF_Punk_wig_B",
+        "EF_Punk_wig_BL",
+        "EF_Punk_wig_BW",
+        "EF_Punk_wig_GL"
+
         "CUP_NVG_PVS7",
         "TRYK_Headset_NV"
         ];
@@ -55,6 +172,67 @@ _availableGoggles = [
 	"TAC_PMC_ID_B2",
 	"TAC_PMC_ID_W2"
 ];
+if (player getvariable ["cop", 0] > 5) then {
+    _availableGoggles pushBack [
+        "G_Shades_Black",
+        "G_Shades_Blue",
+        "G_Sport_Blackred",
+        "G_Sport_Checkered",
+        "G_Sport_Blackyellow",
+        "G_Sport_BlackWhite",
+        "G_Squares",
+        "G_Aviator",
+        "G_Lady_Mirror",
+        "G_Lady_Dark",
+        "G_Lady_Blue",
+        "G_Lowprofile",
+        "G_Combat",
+
+        "EF_ACC1",
+        "EF_ACC2",
+        "EF_ACC3",
+        "EF_AC1",
+        "EF_AC2",
+        "EF_AC3",
+        "SFG_Tac_smallBeardB",
+        "SFG_Tac_smallBeardD",
+        "SFG_Tac_smallBeardG",
+        "SFG_Tac_smallBeardO",
+        "SFG_Tac_BeardB",
+        "SFG_Tac_BeardD",
+        "SFG_Tac_BeardG",
+        "SFG_Tac_BeardO",
+        "SFG_Tac_chinlessbB",
+        "SFG_Tac_chinlessbD",
+        "SFG_Tac_chinlessbG",
+        "SFG_Tac_chinlessbO",
+        "SFG_Tac_moustacheB",
+        "SFG_Tac_moustacheD",
+        "SFG_Tac_moustacheG",
+        "SFG_Tac_moustacheO",
+        "SFG_Tac_ChopsB",
+        "SFG_Tac_ChopsD",
+        "SFG_Tac_ChopsG",
+        "SFG_Tac_ChopsO",
+        "TRYK_Beard_BK",
+        "TRYK_Beard",
+        "TRYK_Beard_BW",
+        "TRYK_Beard_Gr",
+        "TRYK_Beard_BK2",
+        "TRYK_Beard2",
+        "TRYK_Beard_BW2",
+        "TRYK_Beard_Gr2",
+        "TRYK_Beard_BK3",
+        "TRYK_Beard3",
+        "TRYK_Beard_BW3",
+        "TRYK_Beard_Gr3",
+        "TRYK_Beard_BK4",
+        "TRYK_Beard4",
+        "TRYK_Beard_BW4",
+        "TRYK_Beard_Gr4"
+    ];
+};
+
  
 _availableUniforms = [
 	"silver_lake_fbi",
@@ -269,6 +447,7 @@ if (player getvariable ["cop", 0] > 5) then {
 _availableVests = [
 	"V_RebreatherB"
 ];
+
 if (player getvariable ["cop", 0] > 3) then {
 _availableVests pushBack [
             "EF_BS",
@@ -337,7 +516,7 @@ if (player getvariable ["cop", 0] > 3) then {
 if (player getvariable ["cop", 0] > 4) then {
     _availableWeapon pushBack [
         "RH_fnp45",
-        "RH_fn57";,
+        "RH_fn57",
         "RH_kimber_nw"
     ];
 };
