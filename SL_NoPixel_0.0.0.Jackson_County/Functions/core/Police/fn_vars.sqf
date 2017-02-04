@@ -108,8 +108,10 @@ _availableMagazine = [
 ];
 
 if (player getvariable ["cop", 0] > 8) then {
-_availableMagazine pushBack "RH_18Rnd_9x19_gsh";
-_availableMagazine pushBack "RH_7Rnd_50_AE";
+    _availableMagazine pushBack [
+        "RH_18Rnd_9x19_gsh",
+        "RH_7Rnd_50_AE"
+    ];
 };
  
 _availableWeapon = [
@@ -132,20 +134,27 @@ _availableWeapon = [
 	"RH_mateba",
 	"RH_mp412"
 ];
+
 if (player getvariable ["cop", 0] > 5) then {
-_availableWeapon pushBack "RH_g18";
+_availableWeapon pushBack [
+    "RH_g18"
+    ];
 };
 if (player getvariable ["cop", 0] > 6) then {
-_availableWeapon pushBack "CUP_arifle_M4A1_black";
-_availableWeapon pushBack "CUP_sgun_M1014";
-_availableWeapon pushBack "CUP_arifle_M16A4_Base";
-_availableWeapon pushBack "CUP_smg_MP5A5";
-_availableWeapon pushBack "CUP_hgun_BallisticShield_Armed";
-_availableWeapon pushBack "Rangefinder";
+_availableWeapon pushBack [
+            "CUP_arifle_M4A1_black",
+            "CUP_sgun_M1014",
+            "CUP_arifle_M16A4_Base",
+            "CUP_smg_MP5A5",
+            "CUP_hgun_BallisticShield_Armed",
+            "Rangefinder"
+        ];
 };
 if (player getvariable ["cop", 0] > 8) then {
-_availableWeapon pushBack "RH_gsh18";
-_availableWeapon pushBack "RH_Deaglem";
+_availableWeapon pushBack [
+        "RH_gsh18";
+        "RH_Deaglem"
+        ];
 };
 
 _availableAttachments = [
@@ -153,17 +162,37 @@ _availableAttachments = [
 	"RH_X300",
 	"acc_flashlight"
 ];
+
 if (player getvariable ["cop", 0] > 4) then {
-_availableAttachments pushBack "RH_docter";
+_availableAttachments pushBack [ 
+    "RH_docter"
+    ];
 };
+
 if (player getvariable ["cop", 0] > 6) then {
-_availableAttachments pushBack "CUP_optic_HoloBlack";
-_availableAttachments pushBack "CUP_optic_CompM2_Black";
-_availableAttachments pushBack "CUP_optic_CompM4";
+_availableAttachments pushBack [
+          "CUP_optic_HoloBlack",
+          "CUP_optic_CompM2_Black",
+          "CUP_optic_CompM4"
+    ];
 };
  
 _availableItems = [
-	"tf_anprc148jem"
+	"TFAR_anprc152"
+    "ItemMap",
+    "ItemCompass",
+    "Itemwatch",
+    "cg_tabletd_2",
+    "ItemGPS",
+    "TRYK_Headset_NV",
+    "NP_8mPoliceLine",
+    "NP_4mPoliceLine",
+    "NP_1mPoliceLine",
+    "NP_PoliceBarrierL",
+    "NP_PoliceBarrierS",
+    "CG_Spikes_Collapsed",
+    "CG_wheel",
+    "cg_atf_bandage_i"
 ];
 
 
