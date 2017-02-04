@@ -17,6 +17,7 @@ _obj hideObjectGlobal true;
 
 
 [] call server_fnc_setupVariablesServer;
+[] call Server_fnc_handleDisconnect;
 
 [] spawn server_fnc_mayorsetup;
 [] spawn server_fnc_racetimes;
@@ -37,7 +38,7 @@ uisleep 0.05;
 deletevehicle _vehicle;
 
 setTimeMultiplier 6;
-setDate [2015, 2, 25, 11, 0];
+setDate [2016, 6, 25, 6, 0];
 0 setovercast 0;
 0 setrain 0;
 0 setRainbow 0;

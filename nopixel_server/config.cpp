@@ -19,6 +19,7 @@ class CfgFunctions {
             class promote {};
             class connected {};
             class resetConnected {};
+            class handleDisconnect {};
             class setupVariablesServer {};
             class initStats {};
             class steppedSync {};

@@ -183,7 +183,7 @@ _availableAttachmentsSix = [
 };
  
 _availableItems = [
-	"TFAR_anprc152"
+	"TFAR_anprc152",
     "ItemMap",
     "ItemCompass",
     "Itemwatch",

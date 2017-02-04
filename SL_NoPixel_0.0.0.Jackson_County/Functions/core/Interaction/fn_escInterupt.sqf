@@ -47,7 +47,7 @@ while {true} do
 {
 	waitUntil{!isNull (findDisplay 49)};
 	_abortButton = (findDisplay 49) displayCtrl 104;
-	_abortButton buttonSetAction "[player, 0, getplayeruid player, 0] remoteexec [""Server_fnc_statSaveDisconnect"",2]";
+	//_abortButton buttonSetAction "[player, 0, getplayeruid player, 0] remoteexec [""Server_fnc_statSaveDisconnect"",2]";
 	_respawnButton = (findDisplay 49) displayCtrl 1010;
 	_fieldManual = (findDisplay 49) displayCtrl 122;
 	
