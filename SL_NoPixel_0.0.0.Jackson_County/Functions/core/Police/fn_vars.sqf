@@ -252,17 +252,17 @@ _availableGoggles = [
     };
  
 _availableUniforms = [
-    "silver_lake_fbi",
-    "silver_lake_police",
-    "silver_lake_sheriff",
-    "silver_lake_statepolice",
-    "EF_FEM_3_3",   
+	"silver_lake_fbi",
+	"silver_lake_police",
+	"silver_lake_sheriff",
+	"silver_lake_statepolice",
+	"EF_FEM_3_3",   
 	"EF_FEM_3_3G",
 	"EF_FEM_4_2",
 	"EF_FEM_4_2G",
 	"EF_HMP_1",
 	"EF_HMSRF_1",
-    "female_highway",
+	"female_highway",
 	"female_police",
 	"female_police1",
 	"female_police2",
@@ -501,8 +501,7 @@ _availableVests = [
             "EF_BS",
             "EF_BLT_M1",
             "EF_BLT_F1",
-            "EF_BLT_M1B",
-            "V_RebreatherB"
+            "EF_BLT_M1B"
             ];
     _availableVests = _availableVests + _availableVestsThree;
     };
@@ -552,32 +551,32 @@ _availableMagazine = [
 	"RH_19Rnd_9x19_g18",
 	"RH_19Rnd_9x19_g18",
 	"30Rnd_556x45_Stanag",
-    "RH_18Rnd_9x19_gsh"
+	"RH_18Rnd_9x19_gsh",
 	"CUP_8Rnd_B_Beneli_74Slug",
 	"CUP_8Rnd_B_Beneli_74Pellets",
-    "RH_14Rnd_9x19_sw",
+	"RH_14Rnd_9x19_sw",
 	"CUP_30Rnd_9x19_MP5",
-    "RH_16Rnd_40cal_usp",
-    "nonlethal_swing",
-    "RH_12Rnd_45cal_usp",
-    "CUP_8Rnd_B_Beneli_74Slug",
-    "CUP_8Rnd_B_Beneli_74Pellets",
-    "RH_7Rnd_50_AE"
+	"RH_16Rnd_40cal_usp",
+	"nonlethal_swing",
+	"RH_12Rnd_45cal_usp",
+	"CUP_8Rnd_B_Beneli_74Slug",
+	"CUP_8Rnd_B_Beneli_74Pellets",
+	"RH_7Rnd_50_AE"
 ];
 
  
 _availableWeapon = [
-    "RH_ttracker_g",
+	"RH_ttracker_g",
 	"RH_uspm",
 	"Binocular",
 	"cg_baton",
 	"cg_torch",
-    "RH_m9",
-    "RH_cz75",
-    "Taser",
-    "RH_sw659",
-    "RH_g17",
-    "RH_g19"
+	"RH_m9",
+	"RH_cz75",
+	"Taser",
+	"RH_sw659",
+	"RH_g17",
+	"RH_g19"
 ];
 
     if (player getvariable ["cop", 0] > 4) then {
@@ -643,41 +642,36 @@ _availableAttachments = [
 	"CUP_optic_LeupoldMk4_10x40_LRT_Woodland",
 	"RH_X300",
 	"acc_flashlight",
-    "cg_atf_bandage_i",
-    "CG_wheel",
-    "acc_flashlight",
-    "cg_torchbattery",
-    "RH_fhusp",
-    "CUP_optic_HoloBlack",
-    "CUP_optic_CompM2_Black",
-    "CUP_optic_CompM4",
-    "RH_6Rnd_454_Mag"
-    "RH_demz",
-    "optic_Yorris"
+	"cg_atf_bandage_i",
+	"CG_wheel",
+	"acc_flashlight",
+	"cg_torchbattery",
+	"RH_fhusp",
+	"CUP_optic_HoloBlack",
+	"CUP_optic_CompM2_Black",
+	"CUP_optic_CompM4",
+	"RH_6Rnd_454_Mag"
+	"RH_demz",
+	"optic_Yorris",
+	"RH_docter"
 ];
-    if (player getvariable ["cop", 0] > 4) then {
-        _availableAttachmentsFour = [
-        "RH_docter"
-    ];
-    _availableAttachments = _availableAttachments + _availableAttachmentsFour;
-};
 
 _availableItems = [
-    "tf_anprc152",
-    "ItemMap",
-    "ItemCompass",
-    "Itemwatch",
-    "cg_tabletd_2",
-    "ItemGPS",
-    "TRYK_Headset_NV",
-    "NP_8mPoliceLine",
-    "NP_4mPoliceLine",
-    "NP_1mPoliceLine",
-    "NP_PoliceBarrierL",
-    "NP_PoliceBarrierS",
-    "CG_Spikes_Collapsed",
-    "CG_wheel",
-    "cg_atf_bandage_i"
+	"tf_anprc152",
+	"ItemMap",
+	"ItemCompass",
+	"Itemwatch",
+	"cg_tabletd_2",
+	"ItemGPS",
+	"TRYK_Headset_NV",
+	"NP_8mPoliceLine",
+	"NP_4mPoliceLine",
+	"NP_1mPoliceLine",
+	"NP_PoliceBarrierL",
+	"NP_PoliceBarrierS",
+	"CG_Spikes_Collapsed",
+	"CG_wheel",
+	"cg_atf_bandage_i"
 ];
 
 
