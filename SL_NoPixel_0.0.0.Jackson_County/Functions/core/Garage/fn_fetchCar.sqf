@@ -92,6 +92,8 @@ if (_vehicle isKindOf "Car") then {
 _vehicle allowdamage true;
 Current_Cars pushBack _vehicle;
 [getPlayerUID player, "usedgarage", Current_Cars] remoteExec ["Server_fnc_setVariable",2];
+_vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
+[player,2,format ["%1 wyciagnal pojazd %2", name player, _vehicleName],"",_className,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
 
 _vehicle setvariable ["tracker1",objNull,true];
 _vehicle setvariable ["tracker2",objNull,true];

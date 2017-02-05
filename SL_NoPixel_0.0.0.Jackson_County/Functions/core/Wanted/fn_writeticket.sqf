@@ -13,4 +13,5 @@ _ctrl = _display displayCtrl 1402;
 _reason = ctrlText _ctrl; 
 
 [_amount, _officerSignature, _reason,player] remoteExec ["client_fnc_taketicket",CurrentCursorTarget];
+[player,currentcursortarget,3,format ["%1 wystawił mandat dla %2 na kwotę %3 z powodem %4", name player, name currentcursortarget, _amount, _reason],_amount] remoteExec ["server_fnc_copLog", 2];
 closedialog 0;

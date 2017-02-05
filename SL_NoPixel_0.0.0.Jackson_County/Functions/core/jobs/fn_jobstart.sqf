@@ -10,6 +10,7 @@ if (str _jobtype find "Cop" > -1) exitwith {
 	currentCop pushback _player;
 	publicvariable "currentCop";
 	["basic"] spawn client_fnc_setGear;
+	[player,"",10,format ["%1 rozpoczął służbę", name player],""] remoteExec ["server_fnc_copLog", 2];
 };
 
 if (str _jobtype find "EMS" > -1) exitwith {

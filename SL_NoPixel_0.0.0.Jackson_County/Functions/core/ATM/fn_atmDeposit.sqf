@@ -18,6 +18,7 @@ if (_amount > 0) then
 			[_amount] call Client_fnc_addBank;
 			["Sukces","Pomyślnie wpłacono pieniądze",[0,255,0,1],""] call Client_fnc_showNotification;
 			[player, "ATMDeposit", format["Gracz wplacil %1",_amount]] remoteExec ["Server_fnc_insertLog", 2];
+			[player,"",3,format ["%1 wpłacił %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
 			//hint "Pomyślnie wpłacono pieniądze";
 			
 		} else {
@@ -36,6 +37,7 @@ if (_amount > 0) then
 			[_amount] call Client_fnc_removeCash;
 			["Sukces","Pomyślnie wpłacono pieniądze",[0,255,0,1],""] call Client_fnc_showNotification;
 			[player, "MafiaATMDeposit", format["Gracz wplacil %1",_amount]] remoteExec ["Server_fnc_insertLog", 2];
+			[player,"",4,format ["%1 wpłacił %2", name player, _amount],_amount] remoteExec ["server_fnc_moneyLog", 2];
 			//hint "Pomyślnie wpłacono pieniądze!";
 			
 		} else {

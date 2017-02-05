@@ -16,4 +16,7 @@ _information = _ct getVariable "information";
 	
 };
 
+_className = typeOf _ct;
 deleteVehicle _ct;
+_vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
+[player,3,format ["%1 schowal pojazd %2", name player, _vehicleName],"",_className,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];

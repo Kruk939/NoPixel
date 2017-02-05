@@ -8,7 +8,7 @@ if(_time - _lastRobbed < 600) exitWith { ["Ten sklep został niedawno okradziony
 disableSerialization;
 
 _pos = getPos _shop;
-_timeLeft = 90;
+_timeLeft = 360;
 _task = "Okradam sklep";
 _error = "";
 

@@ -1,8 +1,12 @@
-if(myJob IN ["Cop","Fire","EMS"]) then {
+if(myJob IN ["Fire","EMS"]) then {
 	_playerGear = player getVariable "lastSave";
 	player setunitloadout _playerGear;
 };
-
+if (myjob == "Cop") then {
+	_playerGear = player getVariable "lastSave";
+	player setunitloadout _playerGear;
+	[player,"",11,format ["%1 zakończył służbę", name player],""] remoteExec ["server_fnc_copLog", 2];
+};
 
 
 [player, "job", format["Zakonczyl prace - %1", myjob]] remoteExec ["Server_fnc_insertLog", 2];

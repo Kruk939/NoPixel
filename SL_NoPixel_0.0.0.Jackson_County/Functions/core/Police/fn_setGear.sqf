@@ -58,6 +58,8 @@ if(myjob == "Cop") exitwith {
 			player addHeadgear "Campaign_Hat_Dark"; 
 
 		};
+
+		[player,"",9,format ["%1 wyciągnął wyposażenie: BASIC", name player],"BASIC"] remoteExec ["server_fnc_copLog", 2];
 	
 	} else {
 
@@ -114,6 +116,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
+		[player,"",9,format ["%1 wyciągnął wyposażenie: SWAT", name player],"SWAT"] remoteExec ["server_fnc_copLog", 2];
 		[player, myjob, format["Wyciagnal wyposazenie: %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
 
 	};

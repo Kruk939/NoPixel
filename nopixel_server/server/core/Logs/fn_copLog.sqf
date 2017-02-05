@@ -38,27 +38,20 @@ if (_unit == "") then {
 };
 
 switch (_type) do {
-    case 1: {_type = "Eskorta";};
-    case 2: {_type = "WrzucenieDoPojazdu";};
-    case 3: {_type = "WorekNaGłowę";};
-    case 4: {_type = "WorekZGłowy";};
-    case 5: {_type = "Skucie";};
-    case 6: {_type = "Rozkucie";};
-    case 7: {_type = "OkradniecieZKasy";};
-    case 8: {_type = "Przeszukanie";};
-    case 9: {_type = "Reanimacja";};
-    case 10: {_type = "ZabranieWiertła";};
-    case 11: {_type = "NamierzenieRozmowy";};
-    case 12: {_type = "Nasikanie";};
-    case 13: {_type = "Synchronizacja";};
-    case 14: {_type = "NaprawienieWiertła";};
-    case 15: {_type = "UkradniecieKasyZBanku";};
-    case 16: {_type = "ZabezpieczeniePieniedzyWBanku";};
-    case 17: {_type = "OkradniecieZKasyFail";};
-    case 18: {_type = "Wytrych";};
-    //case 19: {_type = "";};
+    case 1: {_type = "Skucie";};
+    case 2: {_type = "Rozkucie";};
+    case 3: {_type = "Mandat";};
+    case 4: {_type = "Areszt";};
+    case 5: {_type = "ZabranieLicencji";};
+    case 6: {_type = "Awans";};
+    case 7: {_type = "Kolczatka";};
+    case 8: {_type = "Dowody";};
+    case 9: {_type = "Wyposażenie";};
+    case 10: {_type = "SłużbaStart";};
+    case 11: {_type = "SłużbaStop";};
+    //case 12: {_type = "";};
 };
 
 
-_insertstr = format ["actionLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _playerUID, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _amount];
+_insertstr = format ["copLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _playerUID, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _amount];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;

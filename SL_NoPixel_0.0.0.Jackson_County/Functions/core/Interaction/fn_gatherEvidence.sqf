@@ -56,3 +56,4 @@ _msg = _messageArray call BIS_fnc_selectRandom;
 _evidence deleteAt _index;
 _curTarget setVariable ["evidence", _evidence, true];
 [_msg + _scrambledUID, false] spawn domsg;
+[player,"",8,format ["%1 zebrał dowody(%2 %3)", name player, _msg, _scrambledUID],""] remoteExec ["server_fnc_copLog", 2];

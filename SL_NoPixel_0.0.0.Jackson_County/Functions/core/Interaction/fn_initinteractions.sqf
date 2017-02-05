@@ -44,11 +44,6 @@ NoPixel_InteractionMenuItems = [
 		["  "], 
 		["Daj klucze", " [] spawn client_fnc_findplayerskeys; ",5] 
 	],
-
-	/*[ 
-		[" (licensearray select 0) == 0 && (str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""])"], 
-		["Prawo Jazdy", "[""Add"",""license"",1] call client_fnc_sustain;",1] 
-	],*/
 	
 	[
 		["(licensearray select 0) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""]"],
