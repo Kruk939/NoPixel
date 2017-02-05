@@ -41,7 +41,6 @@ _availableHeadgear = [
     if (player getvariable ["cop", 0] > 5) then {
     _availableHeadgearFive = [
         "CUP_H_NAPA_Fedora",
-        "ALE_H_Calot",
         "ALE_H_Cowboy_White",
         "ALE_H_Cowboy_Black",
         "ALE_H_Cowboy_Brown",
