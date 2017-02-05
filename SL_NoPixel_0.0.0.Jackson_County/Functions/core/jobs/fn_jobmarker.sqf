@@ -12,7 +12,7 @@ if(myjob == "Cop") then {
 } else {
 	if(myjob == "Fire") then {
 		[_pos,"Pożar!","Job"] spawn client_fnc_hudHelper;
-		if (true) then {playSound "fireAlarm";}forEach currentFire;
+		if (myjob == "Fire") then {playSound "fireAlarm";};
 	} else {
 		[_pos,"Zadanie","Job"] spawn client_fnc_hudHelper;
 	};

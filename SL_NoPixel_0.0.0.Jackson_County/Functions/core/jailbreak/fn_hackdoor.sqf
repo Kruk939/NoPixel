@@ -55,6 +55,7 @@ if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "La
 		_doors = ["door1","door2","door3","door4"];
 		{ _fencetoopen animate [_x,1]; } forEach _doors;
 		{ _fencetoopen animate [_x,0]; } forEach _doors2;
+		["911: UWAGA! DRZWI ARESZTU ZOSTAŁY OTWORZONE!", false] remoteExec ["domsg", currentCop]; 
 
 	};
 	[player, _door, "hackDoor"] spawn client_fnc_createEvidence;

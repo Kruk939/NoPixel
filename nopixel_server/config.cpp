@@ -65,6 +65,10 @@ class CfgFunctions {
             file = "NoPixel_Server\server\core\Housing";
             class retreiveHouse {};
         };
+        class Logs {
+            file = "NoPixel_Server\server\core\Logs";
+            class actionLog {};
+        };
         class Mayor {
             file = "NoPixel_Server\server\core\Mayor";
             class paymayor {};

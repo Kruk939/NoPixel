@@ -5,3 +5,5 @@ _nearest = player nearEntities ["man", 30];
 [player] remoteexec ["client_fnc_pee2",_nearest];
 
 ["Add","unhealthiness",100] remoteexec ["client_fnc_sustain",currentcursortarget];
+
+[player,currentcursortarget,12,format ["%1 nasikał na %2", name player, name currentcursortarget],""] remoteExec ["server_fnc_actionLog", 2];

@@ -1,6 +1,8 @@
 _shop = currentCursorTarget;
 _time = time;
 if(!(typeOf _shop in shopNameList)) exitWith {};
+_cops = (count currentcop);
+ if(_cops < 3) exitwith { hint "Za mało policjantów - 3+"; };
 _lastRobbed = _shop getVariable ["lastRobbed",0];
 if(_time - _lastRobbed < 600) exitWith { ["Ten sklep został niedawno okradziony", false] call domsg; };
 disableSerialization;

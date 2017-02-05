@@ -4,7 +4,6 @@ if(bankrobber != 1) exitwith { hint "W toku, lub niedawno obrabowane"; };
 	_bank = nearestObject [player, "Land_CommonwealthBank"];
 	uiSleep 30;
 	playSound3D ["kif_client\sounds\bankAlarm.ogg", _bank, false, getPosASL _bank, 2, 1, 150]; 
-	uiSleep 150;
 	[player] remoteExec ["server_fnc_robberyCallBank",2];
 };
 _thebankcontainer = cursortarget;
