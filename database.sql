@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-02-05 05:38:54
+Date: 2017-02-05 05:42:56
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -68,7 +68,7 @@ CREATE TABLE `logs` (
   `pos` varchar(50) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=52151 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=52153 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for mafiaatm
@@ -107,30 +107,30 @@ CREATE TABLE `messages` (
 -- ----------------------------
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
-  `uid` varchar(50) CHARACTER SET latin1 DEFAULT NULL,
-  `name` varchar(50) CHARACTER SET latin1 DEFAULT NULL,
-  `items` varchar(1500) CHARACTER SET latin1 NOT NULL,
+  `uid` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `name` varchar(50) CHARACTER SET utf8 DEFAULT NULL,
+  `items` varchar(1500) CHARACTER SET utf8 NOT NULL,
   `cash` int(13) NOT NULL,
   `bank` int(13) NOT NULL,
   `cop` int(13) NOT NULL,
   `ems` int(13) NOT NULL,
-  `position` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `position` varchar(50) CHARACTER SET utf8 NOT NULL,
   `bankaccount` int(11) NOT NULL AUTO_INCREMENT,
-  `phoneBackground` varchar(50) CHARACTER SET latin1 NOT NULL,
-  `messages` varchar(5000) CHARACTER SET latin1 NOT NULL,
-  `statuses` text CHARACTER SET latin1 NOT NULL,
-  `houselevel` enum('1','2','3') CHARACTER SET latin1 NOT NULL DEFAULT '1',
-  `housecontent` varchar(1500) CHARACTER SET latin1 NOT NULL,
-  `shopcontent` varchar(1500) CHARACTER SET latin1 NOT NULL,
-  `shopname` varchar(32) CHARACTER SET latin1 NOT NULL,
-  `mafia` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET latin1 NOT NULL DEFAULT '0',
-  `fire` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET latin1 NOT NULL DEFAULT '0',
-  `legal` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET latin1 NOT NULL DEFAULT '0',
+  `phoneBackground` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `messages` varchar(5000) CHARACTER SET utf8 NOT NULL,
+  `statuses` text CHARACTER SET utf8 NOT NULL,
+  `houselevel` enum('1','2','3') CHARACTER SET utf8 NOT NULL DEFAULT '1',
+  `housecontent` varchar(1500) CHARACTER SET utf8 NOT NULL,
+  `shopcontent` varchar(1500) CHARACTER SET utf8 NOT NULL,
+  `shopname` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `mafia` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '0',
+  `fire` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '0',
+  `legal` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `prison` tinyint(1) NOT NULL DEFAULT '0',
-  `prisonreason` varchar(32) CHARACTER SET latin1 NOT NULL,
-  `mayor` enum('0','1') CHARACTER SET latin1 NOT NULL DEFAULT '0',
-  `doughnuts` enum('0','1','2','3','4','5') CHARACTER SET latin1 NOT NULL DEFAULT '0',
-  `connected` enum('0','1') CHARACTER SET latin1 NOT NULL DEFAULT '0',
+  `prisonreason` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `mayor` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
+  `doughnuts` enum('0','1','2','3','4','5') CHARACTER SET utf8 NOT NULL DEFAULT '0',
+  `connected` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   PRIMARY KEY (`bankaccount`),
   UNIQUE KEY `uid` (`uid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=620 DEFAULT CHARSET=utf8mb4;
