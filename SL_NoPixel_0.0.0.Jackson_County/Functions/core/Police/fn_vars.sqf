@@ -579,11 +579,11 @@ _availableWeapon = [
 ];
 
     if (player getvariable ["cop", 0] > 4) then {
-    _availableWeaponFour = [
+		_availableWeaponFour = [
             "RH_usp",
             "CUP_sgun_M1014",
             "RH_bull",
-            "RH_bullb"
+            "RH_bullb",
             "RH_gsh18",
             "RH_python",
             "RH_fn57",

@@ -70,8 +70,8 @@ if(bankrobber != 1) then {
 	hint "Obrabowales bank - sprawdz skrzynie!";
 	bankrobber = 4;
 	uisleep 300;
-
-	bankrobber = 1;
-	deletevehicle theDrill;
 	deletevehicle _thebankcontainer;
+	deletevehicle theDrill;
+	uisleep 1500;
+	bankrobber = 1;
 };
