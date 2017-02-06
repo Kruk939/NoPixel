@@ -6,14 +6,14 @@ if (_currentitemindex == -1) exitWith {};
 _status = lbData [911, _currentitemindex];
 _charges = ctrlText 1116;
 currentcursortarget = call compile format ["%1",currentcursortarget];
-//_suspectID = [name currentcursortarget, getplayeruid currentcursortarget];
-//_officerID = [name player, getplayeruid player];
-_suspectID = name currentcursortarget;
-_Suid = getplayeruid currentcursortarget;
-_officerID = name player;
+
+_suspectName = name currentcursortarget;
+_suspectUID = getplayeruid currentcursortarget;
+_officerUID = getplayeruid player;
+_officerName = name player;
 _evidence = []; // lodged later.
 _active = 1; // enabled instantly
 
-[_suspectID,_Suid,_officerID,_charges,_status,_evidence,_active] remoteexec ["server_fnc_addcriminal",2];
+[_suspectName, _suspectUID, _officerName, _officerUID, _charges, _status, _evidence, _active] remoteexec ["server_fnc_addcriminal",2];
 
 closedialog 0;

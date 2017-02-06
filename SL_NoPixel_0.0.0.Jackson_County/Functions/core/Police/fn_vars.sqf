@@ -649,7 +649,7 @@ _availableAttachments = [
 	"CUP_optic_HoloBlack",
 	"CUP_optic_CompM2_Black",
 	"CUP_optic_CompM4",
-	"RH_6Rnd_454_Mag"
+	"RH_6Rnd_454_Mag",
 	"RH_demz",
 	"optic_Yorris",
 	"RH_docter"

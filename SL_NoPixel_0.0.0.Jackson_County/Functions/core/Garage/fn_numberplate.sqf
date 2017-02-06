@@ -21,7 +21,7 @@ if (_license == "") then
 {
 	{ 
 		_licenseRandom = _licenseAlphaArray;
-		if (_x > 6) then { _licenseRandom = _licenseNumericArray; };
+		if (_forEachIndex > 3) then { _licenseRandom = _licenseNumericArray; };
 		
 		_licenseRandom = _licenseRandom call BIS_fnc_selectRandom;
 		_car setObjectTextureGlobal [_x, format["ivory_data\license\%1.paa", _licenseRandom]];

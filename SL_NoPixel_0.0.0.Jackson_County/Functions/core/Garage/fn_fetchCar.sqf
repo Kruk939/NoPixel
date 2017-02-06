@@ -24,7 +24,19 @@ _car = call compile format["%1", _car];
 if((_this select 0) == 1) exitwith { 
 	_vehicle = _car createvehicle getpos player; 
 	_vehicle allowdamage false;
-	//[_vehicle, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
+	_className = toLower(_car);
+	if (str _className find "vory_" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+	};
+	if (str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 ) then {
+		[_vehicle, "", "jonzie"] remoteexec ["client_fnc_numberPlate",2];
+	};
+	if (str _className find "vv_" > -1 ) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+	};
+	if (str _className find "adilac_" > -1 ) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+	};
 	[_vehicle] call client_fnc_spawnvehicle;
 	_vehicle allowdamage true;
 	Current_Cars pushBack _vehicle;
