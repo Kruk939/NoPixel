@@ -11,6 +11,7 @@ disableSerialization;
 spawnedVehicle = CurrentCursorTarget;
 createDialog "vehicle_colors";
 _display = findDisplay 70001;
+waitUntil{dialog};
 _priceCtrl = _display displayCtrl 1001;
 _colorsCtrl = _display displayCtrl 1501;
 _finishCtrl = _display displayCtrl 1502;
@@ -90,6 +91,7 @@ vehChangeColorMenuLoaded = true;
 
 if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 	client_fnc_vehChangeColorOnLbChange = {
+		if(!dialog) exitWith {};
 		if !(vehChangeColorMenuLoaded) exitWith {};
 		disableSerialization;
 		_display = findDisplay 70001;
@@ -146,6 +148,7 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 };
 if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 	client_fnc_vehChangeColorButtonAccept = {
+		if(!dialog) exitWith {};
 		if(isNull spawnedVehicle) exitWith {};
 		_information = spawnedVehicle getVariable ["information", []];
 		if(count _information == 0) exitWith {};
