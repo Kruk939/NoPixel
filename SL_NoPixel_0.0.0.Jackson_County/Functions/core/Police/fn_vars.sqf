@@ -56,7 +56,7 @@ _availableHeadgear = [
         "H_Booniehat_khk",
         "H_Booniehat_oli",
         "H_Booniehat_tan",
-
+	"H_Beret_gen_F",
         "TRYK_H_woolhat_WH",
         "TRYK_H_woolhat_tan",
         "TRYK_H_woolhat_CW",
