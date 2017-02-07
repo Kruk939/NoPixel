@@ -85,7 +85,6 @@
  */
  ```
 
-
 <hr>
 #WAŻNE PLIKI
 * \Functions\core\Police\fn_vars.sqf - ARSENAL
@@ -93,7 +92,18 @@
 * \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
 <hr>
+#PRZYDATNE CLASSNAME
+#PRZEDMIOTY
+```
+kif_GasCooker
+kif_Pseudo
+kif_Acetone
+kif_BrickStack
+kif_MetalStack
+kif_Grinder
+```
 
+<hr>
 =======
 #POMYSLY
 * Kupowalne budynki ([stacje benzynowe](http://stanlakeside.pl/index.php?/topic/10379-ożywienie-stacji-benzynowych/&do=findComment&comment=45468))
