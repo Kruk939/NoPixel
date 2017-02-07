@@ -93,18 +93,6 @@
 * \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
 <hr>
-#RPT LOCAL ERROR:
-
-```
-23:40:58 Error in expression < call compile format["%1", _status];
-if(_selectedRims != _rims) then { _price = >
-23:40:58   Error position: <_selectedRims != _rims) then { _price = >
-23:40:58   Error Undefined variable in expression: _selectedrims
-23:40:58 File mpmissions\__CUR_MP.Jackson_County\Functions\core\Vehicle\fn_vehChangeColorMenu.sqf, line 113
-```
-
-
-<hr>
 
 =======
 #POMYSLY
