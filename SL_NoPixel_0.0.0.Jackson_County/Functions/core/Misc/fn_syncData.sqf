@@ -10,5 +10,5 @@ _nil = uniform player; //może zadziala
 
 hint "Pomyślnie zapisano!"; 
 lastforcesync = time;
-[player,"",13,format ["%1 wykonał synchronizacje", name player],""] remoteExec ["server_fnc_actionLog", 2];
+[player,,13,format ["%1 wykonał synchronizacje", name player],""] remoteExec ["server_fnc_actionLog", 2];
 [player, "sync", "Synchronizacja"] remoteExec ["Server_fnc_insertLog", 2];

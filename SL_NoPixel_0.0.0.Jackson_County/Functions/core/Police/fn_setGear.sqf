@@ -59,7 +59,7 @@ if(myjob == "Cop") exitwith {
 
 		};
 
-		[player,"",9,format ["%1 wyciągnął wyposażenie: BASIC", name player],"BASIC"] remoteExec ["server_fnc_copLog", 2];
+		[player,,9,format ["%1 wyciągnął wyposażenie: BASIC", name player],"BASIC"] remoteExec ["server_fnc_copLog", 2];
 	
 	} else {
 
