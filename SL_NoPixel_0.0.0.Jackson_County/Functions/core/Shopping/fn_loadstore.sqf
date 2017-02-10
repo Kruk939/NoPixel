@@ -940,56 +940,43 @@ if(_condition == "doughnuts_gun") then {
 	if(_doughnuts > 0) then {
 		_ret = [
 			["hgun_Pistol_heavy_01_F",nil,5000,1],
-			["muzzle_snds_acp",nil,2000,1],
-			["optic_MRD",nil,1000,1],
-			["11Rnd_45ACP_Mag",nil,50,1],
+			["muzzle_snds_acp",nil,2000,3],
+			["optic_MRD",nil,1000,3],
 			["RH_m9",nil,4000,1],
-			["RH_15Rnd_9x19_M9",nil,50,1],
-			["RH_m9qd",nil,1000,1],
-			["RH_m9c",nil,4000,1],
+			["RH_m9qd",nil,1000,3],
+			["RH_m9c",nil,4000,3],
 			["CUP_hgun_Phantom",nil,4000,1],
-			["CUP_18Rnd_9x19_Phantom",nil,50,1],
-			["RH_fn57_t",nil,5000,1],
-			["RH_20Rnd_57x28_FN",nil,50,1]
+			["RH_fn57_t",nil,5000,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 1) then {
 		_ret = [
 		    ["RH_python",nil,6000,1],
-			["RH_6Rnd_357_Mag",nil,50,1],
 			["RH_fnp45",nil,5000,1],
 			["RH_gemtech45",nil,2000,1],
 			["RH_docter",nil,1000,1],
-			["RH_15Rnd_45cal_fnp",nil,50,1],
 			["RH_fnp45t",nil,5000,1],
-			["RH_g18",nil,6000,1],
-			["RH_19Rnd_9x19_g18",nil,50,1]
+			["RH_g18",nil,6000,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 2) then {
 		_ret = [
 		    ["RH_g19",nil,5000,1],
-			["RH_17Rnd_9x19_g17",nil,50,1],
 			["RH_g19t",nil,5000,1],
 			["RH_tec9",nil,7000,1],
-			["RH_tecsd",nil,2000,1],
-			["RH_32Rnd_9x19_tec",nil,50,1],
-			["RH_kimber",nil,5000,1],
-			["RH_7Rnd_45cal_m1911",nil,50,1]
+			["RH_tecsd",nil,2000,3],
+			["RH_kimber",nil,5000,1]
 		];
 		_additional = _additional + _ret;
 	};
 	if(_doughnuts > 3) then {
 		_ret = [
 		    ["CUP_hgun_MicroUzi",nil,7000,1],
-			["CUP_muzzle_snds_MicroUzi",nil,2000,1],
-			["CUP_30Rnd_9x19_UZI",nil,50,1],
+			["CUP_muzzle_snds_MicroUzi",nil,2000,3],
 			["CUP_hgun_TaurusTracker455_gold",nil,6000,1],
-			["CUP_6Rnd_45ACP_M",nil,50,1],
-			["RH_bull",nil,6000,1],
-			["RH_6Rnd_454_Mag",nil,50,1]
+			["RH_bull",nil,6000,1]
 		];
 		_additional = _additional + _ret;
 	};
@@ -997,15 +984,12 @@ if(_condition == "doughnuts_gun") then {
 		_ret = [
 		    ["RH_deagle",nil,10000,1],
 			["RH_Deagleg",nil,15000,1],
-			["RH_7Rnd_50_AE",nil,50,1],
 			["CUP_srifle_CZ550",nil,25000,1],
 			["CUP_5x_22_LR_17_HMR_M",nil,1000,1],
 			["hgun_PDW2000_F",nil,20000,1],
-			["30Rnd_9x21_Mag",nil,50,1],
 			["arifle_mas_ww2_ppsh",nil,25000,1],
 			["71Rnd_mas_ww2_ppsh",nil,50,1],
-			["CUP_smg_bizon",nil,25000,1],
-			["CUP_64Rnd_9x19_Bizon_M",nil,50,1]
+			["CUP_smg_bizon",nil,25000,1]
 		];
 		_additional = _additional + _ret;
 	};
@@ -1120,17 +1104,19 @@ lbClear _list;
 	_list lbSetdata [(lbSize _list)-1, str([_class,_item select 1, _price,_type,_classtype,_addedprice])];
 	_list lbSetPicture [(lbSize _list)-1,_item select 2];
 
-	if(_condition == "gunstore") then {
-		_magPrice = 50;
-		_addedprice = (_price / 100) * taxRate;
-		_addedprice = round (_addedprice);
-		_price = _addedprice + _price;
-		_magazines = getArray (configFile / "CfgWeapons" / _class / "magazines");
-		_magazine = _magazines select 0;
-		_item = [_magazine] call client_fnc_fetchItemType;
-		_list lbAdd format["$%2 (Tax %%3): %1",_item select 1, _magPrice,taxRate];
-		_list lbSetdata [(lbSize _list)-1, str([_magazine,_item select 1, _magPrice,2,0,_addedprice])];
-		_list lbSetPicture [(lbSize _list)-1,_item select 2];
+	if(_condition == "gunstore" || _condition == "doughnuts_gun") then {
+		if(_type == 1) then {
+			_magPrice = 50;
+			_addedprice = (_price / 100) * taxRate;
+			_addedprice = round (_addedprice);
+			_price = _addedprice + _price;
+			_magazines = getArray (configFile / "CfgWeapons" / _class / "magazines");
+			_magazine = _magazines select 0;
+			_item = [_magazine] call client_fnc_fetchItemType;
+			_list lbAdd format["$%2 (Tax %%3): %1",_item select 1, _magPrice,taxRate];
+			_list lbSetdata [(lbSize _list)-1, str([_magazine,_item select 1, _magPrice,2,0,_addedprice])];
+			_list lbSetPicture [(lbSize _list)-1,_item select 2];
+		};
 	};
 } foreach _storeList;
 

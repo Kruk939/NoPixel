@@ -135,10 +135,10 @@ if(_doughnuts > 4) then {
 if(str CurrentCursorTarget find "embarcadero" > -1) then {
 	_type = "BOAT";
 	_civilianVehicle = [
-		["B_Boat_Transport_01_F",7500],
-		["Lexx_Jetboat_H",22000],
-		["POP_Speed_yatch",35000],
-		["vvv_NewYacht",50000],
+		["B_Boat_Transport_01_F",15000],
+		["Lexx_Jetboat_H",30000],
+		["POP_Speed_yatch",70000],
+		["vvv_NewYacht",200000],
 		["Mattaust_Fisher",350000]
 	];
 };
