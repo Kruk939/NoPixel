@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-02-05 05:42:56
+Date: 2017-02-10 12:26:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -34,7 +34,94 @@ CREATE TABLE `actionlog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5356 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for adminlog
+-- ----------------------------
+DROP TABLE IF EXISTS `adminlog`;
+CREATE TABLE `adminlog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `playerUID` varchar(50) NOT NULL,
+  `playerName` varchar(64) NOT NULL,
+  `playerCash` int(13) NOT NULL,
+  `playerBank` int(13) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `unitUID` varchar(50) NOT NULL,
+  `unitName` varchar(64) NOT NULL,
+  `unitCash` int(13) NOT NULL,
+  `unitBank` int(13) NOT NULL,
+  `amount` varchar(100) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5249 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for coplog
+-- ----------------------------
+DROP TABLE IF EXISTS `coplog`;
+CREATE TABLE `coplog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `playerUID` varchar(50) NOT NULL,
+  `playerName` varchar(64) NOT NULL,
+  `playerCash` int(13) NOT NULL,
+  `playerBank` int(13) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `unitUID` varchar(50) NOT NULL,
+  `unitName` varchar(64) NOT NULL,
+  `unitCash` int(13) NOT NULL,
+  `unitBank` int(13) NOT NULL,
+  `amount` varchar(100) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=655 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for deathlog
+-- ----------------------------
+DROP TABLE IF EXISTS `deathlog`;
+CREATE TABLE `deathlog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `playerUID` varchar(50) NOT NULL,
+  `playerName` varchar(64) NOT NULL,
+  `playerCash` int(13) NOT NULL,
+  `playerBank` int(13) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `unitUID` varchar(50) NOT NULL,
+  `unitName` varchar(64) NOT NULL,
+  `unitCash` int(13) NOT NULL,
+  `unitBank` int(13) NOT NULL,
+  `weapon` varchar(100) NOT NULL,
+  `distance` varchar(100) NOT NULL,
+  PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for economylog
+-- ----------------------------
+DROP TABLE IF EXISTS `economylog`;
+CREATE TABLE `economylog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `playerUID` varchar(50) NOT NULL,
+  `playerName` varchar(64) NOT NULL,
+  `playerCash` int(13) NOT NULL,
+  `playerBank` int(13) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `unitUID` varchar(50) NOT NULL,
+  `unitName` varchar(64) NOT NULL,
+  `unitCash` int(13) NOT NULL,
+  `unitBank` int(13) NOT NULL,
+  `price` varchar(100) NOT NULL,
+  `item` varchar(100) NOT NULL,
+  `quantity` varchar(100) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=4433 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for garage
@@ -68,7 +155,7 @@ CREATE TABLE `logs` (
   `pos` varchar(50) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=52153 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=70555 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for mafiaatm
@@ -103,6 +190,27 @@ CREATE TABLE `messages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
+-- Table structure for moneylog
+-- ----------------------------
+DROP TABLE IF EXISTS `moneylog`;
+CREATE TABLE `moneylog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `playerUID` varchar(50) NOT NULL,
+  `playerName` varchar(64) NOT NULL,
+  `playerCash` int(13) NOT NULL,
+  `playerBank` int(13) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `unitUID` varchar(50) NOT NULL,
+  `unitName` varchar(64) NOT NULL,
+  `unitCash` int(13) NOT NULL,
+  `unitBank` int(13) NOT NULL,
+  `amount` varchar(100) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1214 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
 -- Table structure for users
 -- ----------------------------
 DROP TABLE IF EXISTS `users`;
@@ -133,16 +241,41 @@ CREATE TABLE `users` (
   `connected` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   PRIMARY KEY (`bankaccount`),
   UNIQUE KEY `uid` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=620 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=651 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Table structure for vehiclelog
+-- ----------------------------
+DROP TABLE IF EXISTS `vehiclelog`;
+CREATE TABLE `vehiclelog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `playerUID` varchar(50) NOT NULL,
+  `playerName` varchar(64) NOT NULL,
+  `playerCash` int(13) NOT NULL,
+  `playerBank` int(13) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `vehicleClassname` varchar(255) NOT NULL,
+  `vehicleName` varchar(255) NOT NULL,
+  `amount` varchar(100) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3079 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for wanted
 -- ----------------------------
 DROP TABLE IF EXISTS `wanted`;
 CREATE TABLE `wanted` (
-  `suspectID` varchar(32) CHARACTER SET utf8 NOT NULL,
-  `officerGUID` varchar(32) CHARACTER SET utf8 NOT NULL,
-  `charges` text CHARACTER SET utf8 NOT NULL,
+  `caseID` int(11) NOT NULL AUTO_INCREMENT,
+  `suspectName` varchar(32) NOT NULL,
+  `suspectUID` varchar(30) NOT NULL,
+  `officerName` varchar(255) NOT NULL,
+  `officerUID` varchar(32) NOT NULL,
+  `charges` text NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '0',
-  `evidence` text CHARACTER SET utf8 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `evidence` text NOT NULL,
+  `active` enum('0','1') NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`caseID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
