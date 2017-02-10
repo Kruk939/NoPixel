@@ -1,4 +1,4 @@
-
+if (myjob == "Mafia") then {
 _veh = _this select 0;
 _player = _this select 1;
 if (isNil "_veh") exitwith {};
@@ -30,3 +30,6 @@ if (isNull _tracker1) then
 if (_exit) exitwith {hint "Max sledzacych = 3";};
 
 hint "Pluskwa podlozona";
+} else {
+	hint "Nie jestem w mafii, nie moge tego zrobić!";
+}

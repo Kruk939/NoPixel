@@ -43,6 +43,8 @@ player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed
 
 if(myhealth > 0.99) exitwith {
 	["Zabijanie gracza za battleloga.", true] spawn domsg;
+	[player,objNull,3,format ["%1 został zabity przez Battleloga", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
+	diag_log format["Zabijam %1 za battleloga", player];
 	["Remove",1] call client_fnc_doHealth;
 };
 if(uniform player == "" && female) then {

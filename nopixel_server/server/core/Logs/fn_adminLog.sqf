@@ -38,22 +38,37 @@ if (isNull _unit) then {
 };
 
 switch (_type) do {
-    case 1: {_type = "Skucie";};
-    case 2: {_type = "Rozkucie";};
-    case 3: {_type = "Mandat";};
-    case 4: {_type = "Areszt";};
-    case 5: {_type = "ZabranieLicencji";};
-    case 6: {_type = "Awans";};
-    case 7: {_type = "Kolczatka";};
-    case 8: {_type = "Dowody";};
-    case 9: {_type = "Wyposażenie";};
-    case 10: {_type = "SłużbaStart";};
-    case 11: {_type = "SłużbaStop";};
-    case 12: {_type = "PrzeszukanieDom";};
-    case 13: {_type = "PrzeszukanieSklep";};
-    //case 14: {_type = "";};
+    case 1: {_type = "TeleportTo";};
+    case 2: {_type = "TeleportToMe";};
+    case 3: {_type = "Godmode_ON";};
+    case 4: {_type = "Godmode_OFF";};
+    case 5: {_type = "Invisible_ON";};
+    case 6: {_type = "Invisible_OFF";};
+    case 7: {_type = "KillTarget";};
+    case 8: {_type = "SyncMe";};
+    case 9: {_type = "Freeze";};
+    case 10: {_type = "UnFreeze";};
+    case 11: {_type = "DeleteItems";};
+    case 12: {_type = "FullHealth";};
+    case 13: {_type = "Revive";};
+    case 14: {_type = "MoveInVehicle";};
+    case 15: {_type = "EjectDriver";};
+    case 16: {_type = "EjectAllFromVehicle";};
+    case 17: {_type = "AdminESP_ON";};
+    case 18: {_type = "AdminESP_OFF";};
+    case 19: {_type = "300mCopyLoadout";};
+    case 20: {_type = "300mTeleportToMe";};
+    case 21: {_type = "300mRevive";};
+    case 22: {_type = "ReviveAllOnSvr";};
+    case 23: {_type = "UnlockVehicle";};
+    case 24: {_type = "LockVehicle";};
+    case 25: {_type = "GhostSpectate_ON";};
+    case 26: {_type = "GhostSpectate_OFF";};
+    case 27: {_type = "ToggleTP_ON";};
+    case 28: {_type = "ToggleTP_OFF";};
+    //case 29: {_type = "";};
 };
 
 
-_insertstr = format ["copLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _playerUID, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _amount];
+_insertstr = format ["adminLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _playerUID, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _amount];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;

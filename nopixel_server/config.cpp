@@ -71,8 +71,9 @@ class CfgFunctions {
             class moneyLog {};
             class vehicleLog {};
             class copLog {};
-            class deadthLog {};
+            class deathLog {};
             class economyLog {};
+            class adminLog {};
         };
         class Mayor {
             file = "NoPixel_Server\server\core\Mayor";

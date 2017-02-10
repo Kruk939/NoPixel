@@ -15,7 +15,7 @@ removeuniform player;
 player adduniform "noRP_Jail";
 ClientArrested = true;
 _escaped = false;
-imRestrained = false;
+imrestrained = false;
 _update = 0;
 while{ClientArrested} do {
 	if(getpos player distance [5556.2,6291.29,0.00143433] > 250) exitwith { _escaped = true; };

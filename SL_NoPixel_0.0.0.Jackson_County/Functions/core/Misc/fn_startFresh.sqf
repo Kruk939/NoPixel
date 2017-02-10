@@ -39,4 +39,6 @@ closedialog 0;
 	["add","battery",200] call client_fnc_sustain;
 	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
+	[] spawn client_fnc_syncData;
+	[player,objNull,4,format ["%1 zrespawnił się",name player],"",""] remoteExec ["server_fnc_deathLog", 2];
 };

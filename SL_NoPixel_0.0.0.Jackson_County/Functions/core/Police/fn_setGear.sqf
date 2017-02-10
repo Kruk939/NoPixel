@@ -1,13 +1,6 @@
 params[["_type","basic"]];
 
-
-
-// Edytowałem od linijki 80;
-
-// wrzucic do core/Police po stronie klienta(plik misji)
-
-
-[player, myjob, format["Wyciagnal wyposazenie - %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
+[player, myjob, format["Wyciagnał wyposazenie - %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
 if(myjob == "Cop") exitwith {
 
 	if(_type == "basic") then {
@@ -59,7 +52,7 @@ if(myjob == "Cop") exitwith {
 
 		};
 
-		[player,,9,format ["%1 wyciągnął wyposażenie: BASIC", name player],"BASIC"] remoteExec ["server_fnc_copLog", 2];
+		[player,objNull,9,format ["%1 wyciągnął wyposażenie: BASIC", name player],"BASIC"] remoteExec ["server_fnc_copLog", 2];
 	
 	} else {
 
@@ -72,52 +65,30 @@ if(myjob == "Cop") exitwith {
 		removeHeadgear player;
 		removeGoggles player;
 
-
-		player addWeapon "Binocular";
-		player linkItem "ItemMap";
-		player linkItem "ItemCompass";
-		player linkItem "Itemwatch";
-		player linkItem "ItemGPS";
-		player linkitem "cg_tabletd";
-		
-		/*
-		comment "Add containers";
-		this forceAddUniform "TRYK_U_B_BLKBLK_CombatUniform";
-		for "_i" from 1 to 3 do {this addItemToUniform "vvv_np_magazine_taser";};
-		this addVest "SWAT_FULL_VEST_BLK";
-		for "_i" from 1 to 3 do {this addItemToVest "CUP_30Rnd_556x45_Stanag";};
-		this addBackpack "TRYK_Winter_pack";
-		this addHeadgear "TCG_swathelmet";
-		this addGoggles "TRYK_kio_balaclava_BLK";
-
-
-		comment "Add weapons";
-		this addWeapon "CUP_arifle_M16A4_Base";
-		this addPrimaryWeaponItem "CUP_muzzle_snds_M16";
-		this addPrimaryWeaponItem "optic_Hamr";
-		this addWeapon "taser";
-		*/
 		player forceAddUniform "TRYK_U_B_BLKBLK_CombatUniform";
-		for "_i" from 1 to 3 do {player addItemToUniform "vvv_np_magazine_taser";};
-		for "_i" from 1 to 6 do {player addItemToUniform "CUP_30Rnd_556x45_Stanag";};
-		player addVest "SWAT_FULL_VEST_BLK";
-		for "_i" from 1 to 5 do {player addItemToVest "vvv_np_magazine_taser";};
-		for "_i" from 1 to 5 do {player addItemToVest "CUP_30Rnd_556x45_Stanag";};
+		player addVest "EF_BLT_M1";
+		for "_i" from 1 to 5 do {player addItemToVest "30Rnd_556x45_Stanag";};
+		for "_i" from 1 to 5 do {player addItemToVest "RH_33Rnd_9x19_g18";};
 		player addBackpack "TRYK_Winter_pack";
-		player addHeadgear "TCG_swathelmet";
-		player addGoggles "TRYK_kio_balaclava_BLK";
+		player addHeadgear "TRYK_H_PASGT_BLK";
 
 		{ player additemtobackpack _x; } foreach ["CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag"];
-		player addWeapon "CUP_arifle_M16A4_Base";
+		player addWeapon "CUP_arifle_M4A1_black";
 		player addPrimaryWeaponItem "CUP_muzzle_snds_M16";
-		player addPrimaryWeaponItem "optic_Hamr";
-		player addWeapon "taser";
+		player addPrimaryWeaponItem "CUP_optic_Elcan_reflex";
+		player addWeapon "RH_g18";
+		player addHandgunItem "RH_gemtech9";
+		player addWeapon "Rangefinder";
 
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
-		[player,"",9,format ["%1 wyciągnął wyposażenie: SWAT", name player],"SWAT"] remoteExec ["server_fnc_copLog", 2];
-		[player, myjob, format["Wyciagnal wyposazenie: %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
+		player linkItem "tf_anprc148jem_2";
+		player linkItem "ItemGPS";
+		player linkItem "TRYK_G_bala_ess_NV";
+
+		[player,objNull,9,format ["%1 wyciągnął wyposażenie: SWAT", name player],"SWAT"] remoteExec ["server_fnc_copLog", 2];
+		[player, myjob, format["Wyciagnał wyposazenie: %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
 
 	};
 

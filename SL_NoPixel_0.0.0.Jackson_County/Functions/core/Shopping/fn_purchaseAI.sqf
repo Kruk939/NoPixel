@@ -112,5 +112,5 @@ if(_typebuy == "standard") then {
 };
 
 
-
+[player,objNull,1,format ["%1 kupił %2 w ilości %3 za %4 $", name player, _item, _quantity, _totalPrice],_totalPrice, _item, _quantity] remoteExec ["server_fnc_economyLog", 2];
 [format["Kupiles %1x %2 za $%3 - Sprawdź skrzynkę pod swoimi nogami.",_quantity, _item, _totalprice],true] spawn domsg;

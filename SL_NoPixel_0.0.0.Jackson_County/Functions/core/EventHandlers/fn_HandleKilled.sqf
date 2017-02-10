@@ -20,10 +20,11 @@ params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_lengt
 
 player setVariable ["tf_voiceVolume", 0, true];
 
-_length = 15 - _length;
+
+_length = 20 - _length;
 _length = round(_length);
-if(_length > 11) then { _length = 11; };
-if(_length < 5) then { _length = 5; };
+if(_length > 11) then { _length = 15; };
+if(_length < 5) then { _length = 8; };
 client_respawn_timer = _length;
 
 _unit setVariable["dead",true,true];
@@ -57,11 +58,13 @@ if(_fuck != _you) then {
 		shooting_death = true;
 		[_killer, player, "killAtempt"] spawn client_fnc_createEvidence;
 	};
+	[player,_killer,1,format ["%1 zabił %2 z dystansu %3 używając %4",_fuck, name player, _killdistance, _killweapon],_killweapon, _killdistance] remoteExec ["server_fnc_deathLog", 2];
 	[player, "killed", format["Gracz zostal zabity przez %1 (%2) z odleglosci %3 z broni %4",_fuck, getPlayerUID _killer, _killdistance, _killweapon]] remoteExec ["Server_fnc_insertLog", 2];
 } else {
 	shooting_death = false;
 	[getpos player, "News", "Unknown Death"] remoteexec ["server_fnc_giveTask",2];
 	[format["%1 jest nieprzytomny!", _fuck], false] spawn domsg; 
+	[player,objNull,2,format ["%1 zginął",name player],"",""] remoteExec ["server_fnc_deathLog", 2];
 };
 
 if(_playerkill) then { 
