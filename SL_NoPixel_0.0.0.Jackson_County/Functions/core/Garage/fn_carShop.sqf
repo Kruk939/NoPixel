@@ -11,12 +11,12 @@ _doughnuts = player getVariable ["doughnutsLevel", 0];
 //remember to use this array in the mafia selling script & ALSO THE CAR UPDATE SCRIPT.
 _civilianVehicle = [
 	["Jonzie_XB",1900],
-	["vvv_Chevrolet_Cone0",2000],
 	["ADM_1969_Camaro",2200],
 	["Jonzie_Mini_Cooper",2300],
 	["Jonzie_Ceed",2400],
 	["ADM_1964_Impala",2500],
 	["ivory_190e",2600],
+	["vvv_Chevrolet_Cone0",3000],
 	["jonzie_30CSL",3200],
 	["ADM_1969_Charger",3500],
 	["vvv_Abarth_695",4000],
