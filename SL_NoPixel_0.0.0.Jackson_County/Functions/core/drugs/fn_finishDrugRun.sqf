@@ -46,6 +46,6 @@ _mafiacash = _totalValue * 500;
 
 ["Add",_mafiaCash] remoteexec ["server_fnc_updateMafiaBank",2];
 
-format["Mafia zgarnęła %1 z transportu narkotykowego.",_mafiaCash] remoteexec ["hint",-2];
+//format["Mafia zgarnęła %1 z transportu narkotykowego.",_mafiaCash] remoteexec ["hint",-2];
 
 deletevehicle missionvehicle;
