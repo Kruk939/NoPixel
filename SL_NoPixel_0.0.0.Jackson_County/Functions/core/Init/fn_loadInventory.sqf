@@ -261,6 +261,8 @@ if(client_energy > 0) then {
 	player enablefatigue false;
 	player enablestamina false;
 };
+_housecontentLog = player getVariable ["housecontent",0];
+_shopcontentLog = player getVariable ["shopcontent",0];
+[player,1,format ["%1 połączył się z serwerem", name player],_items,_housecontentLog,_shopcontentLog] remoteExec ["server_fnc_connectionLog", 2];
 [player, "connection", "Gracz wszedl serwer"] remoteExec ["Server_fnc_insertLog", 2];
-_playerUID = getPlayerUID player;
-[_playerUID, "1"] remoteExec ["Server_fnc_connected", 2];
+[getPlayerUID player, "1"] remoteExec ["Server_fnc_connected", 2];

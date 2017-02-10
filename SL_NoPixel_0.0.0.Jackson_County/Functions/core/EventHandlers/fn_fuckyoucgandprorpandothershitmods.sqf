@@ -16,8 +16,11 @@ if (_item IN ["np_sausage","np_chickensoup","np_peasoup","np_psoup","np_beefsoup
 if (_item == "np_groceries") then { ["add","drink",100] call client_fnc_sustain; ["add","food",100] call client_fnc_sustain; ["remove","unhealthiness",1] call client_fnc_sustain; [_item,80] spawn client_fnc_removeitem; closeDialog 0; };
 
 //junky drink
-if (_item IN ["np_beer","np_coke","np_drpepper"]) then { ["add","drink",50] call client_fnc_sustain; ["add","unhealthiness",10] call client_fnc_sustain; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
-
+if (_item IN ["np_coke","np_drpepper"]) then {playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45]; ["add","drink",50] call client_fnc_sustain; ["add","unhealthiness",10] call client_fnc_sustain; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+//intox system
+if (_item IN ["np_beer","plp_bo_inv_BottleTequila"]) then {playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45]; player playmove "vvv_anim_drink"; client_intox = client_intox + 0.02; [] spawn client_fnc_intox; ["add","unhealthiness",1] call client_fnc_sustain; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item IN ["plp_bo_inv_BottleBitters","plp_bo_inv_BottleLiqCream","plp_bo_inv_BottleLiqOrange"]) then {playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45]; player playmove "vvv_anim_drink"; client_intox = client_intox + 0.05; [] spawn client_fnc_intox; ["add","unhealthiness",1] call client_fnc_sustain; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item IN ["plp_bo_inv_BottleBlueCorazol","plp_bo_inv_BottleGin"]) then {playSound3D ["cg_sndimg\sounds\drink.ogg", player, false, getPosASL player, 6, 1, 45]; player playmove "vvv_anim_drink"; client_intox = client_intox + 0.03; [] spawn client_fnc_intox; ["add","unhealthiness",1] call client_fnc_sustain; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 //junkfood&drink
 if (_item IN 
 	["np_hpizza","np_mpizza","np_cpizza","np_spizza","np_vpizza","np_chdonuts","np_jdonuts","np_cdonuts","np_donuts","np_happymeal","np_bigmac","np_mchicken","np_quater","np_cheeseburger","np_hamburger","np_hotdog","np_mhotdog","np_kmhotdog","np_bbqhotdog","np_cheesehotdog"]

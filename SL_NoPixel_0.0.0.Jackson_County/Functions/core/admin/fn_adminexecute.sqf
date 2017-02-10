@@ -194,7 +194,7 @@ if(_statementsent == 25) then {
 if(_statementsent == 26) then {
 	if(isNil "LoggedIn") then { LoggedIn = false; };
 	if(!LoggedIn) exitwith { 
-		onMapSingleClick "if (loggedIn) then {vehicle player setPos _pos};";
+		onMapSingleClick "if (loggedIn) then {vehicle player setPos _pos; [player,objNull,29,format [""%1 przeteleportował się na pozycję %2"",name player, _pos],_pos] remoteExec [""server_fnc_adminLog"", 2];};";
 		LoggedIn = true;
 		[player,objNull,27,format ["%1 włączył toggleTP",name player],""] remoteExec ["server_fnc_adminLog", 2];
 	};

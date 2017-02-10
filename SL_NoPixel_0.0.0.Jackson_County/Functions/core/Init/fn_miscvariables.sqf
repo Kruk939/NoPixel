@@ -74,6 +74,7 @@ client_num = 0;
 client_crazy = 0; 
 client_bonging = false; 
 client_nos_count = 0;
+client_intox = 0.00;
 mytrees = [];
 mymetal = [];
 myoil = [];
@@ -329,7 +330,6 @@ domsg = {
 		sleep 0.05;
 	};
 };
-
 
 player addEventHandler["put", {
 

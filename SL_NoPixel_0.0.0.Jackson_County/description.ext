@@ -361,6 +361,15 @@ class CfgFunctions
 			class cmentarz {};
 		};
 
+        class Intox
+		{
+			file = "Functions\core\Intox";
+			class intoxTestReturn {};
+			class testIntoxClient {};
+			class testIntox {};
+            class intox {};
+		};
+
 		class Interaction
 		{
 			file = "Functions\core\Interaction";

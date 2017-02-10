@@ -50,7 +50,8 @@ _exit = false;
 if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player in currentFire) then { 
 	//_updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid]; 
 	//_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
-	
+	[_player,2,format ["%1 rozłączył się z serwerem", name _player],"Currently in job",_housecontent,_shopcontent] call server_fnc_connectionLog;
+
 	_updatestr = format ["updatePlayerInfoNoGearNoMoneyNoShop:%1:%2:%3:%4:%5:%6", _position, _messages, _statuses, _phonebackground, _houselevel, _uid];
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 	
@@ -59,7 +60,10 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
 	
 	_updatestr = format ["updatePlayerMoney:%1:%2:%3", _cash, _bank, _uid];
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+
 } else { 
+	[_player,2,format ["%1 rozłączył się z serwerem", name _player],_items,_housecontent,_shopcontent] call server_fnc_connectionLog;;
+
 	_updatestr = format ["updatePlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _items, _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 	
