@@ -2,6 +2,7 @@ params[["_type","basic"]];
 
 [player, myjob, format["Wyciagnał wyposazenie - %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
 if(myjob == "Cop") exitwith {
+	[player,objNull,9,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_copLog", 2];
 
 	if(_type == "basic") then {
 		removeAllWeapons player;
@@ -51,8 +52,6 @@ if(myjob == "Cop") exitwith {
 			player addHeadgear "Campaign_Hat_Dark"; 
 
 		};
-
-		[player,objNull,9,format ["%1 wyciągnął wyposażenie: BASIC", name player],"BASIC"] remoteExec ["server_fnc_copLog", 2];
 	
 	} else {
 
@@ -87,8 +86,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "ItemGPS";
 		player linkItem "TRYK_G_bala_ess_NV";
 
-		[player,objNull,9,format ["%1 wyciągnął wyposażenie: SWAT", name player],"SWAT"] remoteExec ["server_fnc_copLog", 2];
-		[player, myjob, format["Wyciagnał wyposazenie: %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
+		//[player, myjob, format["Wyciagnał wyposazenie: %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
 
 	};
 

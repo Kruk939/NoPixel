@@ -14,10 +14,10 @@
 params["_player","_unit","_type","_text","_amount"];
 private["_playerUID","_playerName","_playerCash","_playerBank","_unitUID","_unitName","_unitBank","_unitCash"];
 
-if(isNil "_player" || isNil "_type") exitWith {diag_log "ActionLog: nil (1)";};
-if("_type" == "") exitWith {diag_log "ActionLog: _type is empty (2)";};
-if(isNull _player) exitWith {diag_log "ActionLog: _player is Null (3)";};
-//if(isNull _unit) exitWith {diag_log "ActionLog: _unit is Null (4)";};
+if(isNil "_player" || isNil "_type") exitWith {diag_log "AdminLog: nil (1)";};
+if("_type" == "") exitWith {diag_log "AdminLog: _type is empty (2)";};
+if(isNull _player) exitWith {diag_log "AdminLog: _player is Null (3)";};
+//if(isNull _unit) exitWith {diag_log "AdminLog: _unit is Null (4)";};
 
 if (isNil "_text") then {_text = "";};
 if (isNil "_amount") then {_amount = "";};
@@ -66,7 +66,8 @@ switch (_type) do {
     case 26: {_type = "GhostSpectate_OFF";};
     case 27: {_type = "ToggleTP_ON";};
     case 28: {_type = "ToggleTP_OFF";};
-    //case 29: {_type = "";};
+    case 29: {_type = "ToggleTP_POS";};
+    //case 30: {_type = "";};
 };
 
 
