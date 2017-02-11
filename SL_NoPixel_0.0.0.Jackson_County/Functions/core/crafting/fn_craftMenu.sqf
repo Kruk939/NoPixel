@@ -137,12 +137,12 @@ if(myJob == "Mafia" && player getVariable ["Mafia",0] > 4) then {
 		"arifle_mas_ww2_mos",
 
 		//shotguns & light macs
-		"CUP_sgun_AA12",
+		//"CUP_sgun_AA12", zbyt op broń
 		"CUP_lmg_Mk48_des",
 
 		//launchers
-		"CUP_launch_RPG7V",
-		"CUP_glaunch_6G30"
+		"CUP_launch_RPG7V"
+		//"CUP_glaunch_6G30"
 	];
 
 
@@ -182,12 +182,12 @@ _iPricesMafiaClasses = [
 	[5,2,12,2,25],
 	[5,2,2,12,25],
 
-	[5,5,25,5,35],
+	//[5,5,25,5,35],
 	[5,5,5,25,35],
 
 
-	[5,5,5,5,85],
 	[5,5,5,5,85]
+	//[5,5,5,5,85]
 ];
 _iMafiaMags = [5,2,2,2,2];
 
@@ -636,12 +636,15 @@ if(_error) exitwith {};
 	if(_status IN _ItemList || _status IN _clothing1 || _status IN _clothing2 ) then {
 		shopholder additemCargoGlobal [_status,1];
 		if(_status IN _ItemList ) then {
+			_classStatus = _status;
 			_status = (configfile >> "CfgMagazines" >> _status >> "displayName") call BIS_fnc_getCfgData;
 		} else {
+			_classStatus = _status;
 			_status = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;	
 		};
 	} else {
 		shopholder addWeaponCargoGlobal [_status,1];
+		_classStatus = _status;
 		_status = (configfile >> "CfgWeapons" >> _status >> "displayName") call BIS_fnc_getCfgData;	
 	};
 
@@ -649,6 +652,7 @@ if(_error) exitwith {};
 	shopholder setpos (getposATL player);	
 
 	hint format["You have crafted a %1",_status];
+	[player,1,format ["%1 wycraftował %2", name player, _status],_classStatus,_status] remoteExec ["server_fnc_craftLog", 2];
 	closedialog 0;
 };
 
@@ -696,9 +700,10 @@ if((_this select 0) == "CRAFTMAG") exitwith {
 	_magazines = getArray (configFile / "CfgWeapons" / _status / "magazines");
 	_magazineClass = _magazines select 0; 
 	
-	shopholder addmagazineCargoGlobal [_magazineclass,5];
+	shopholder addmagazineCargoGlobal [_magazineclass,2];
 
-	hint format["You have crafted 5 mags for a %1",_status];
+	hint format["You have crafted 2 mags for a %1",_status];
+	[player,2,format ["%1 wycraftował 2 magazynki dla broni %2", name player, _status],_magazineclass,_status] remoteExec ["server_fnc_craftLog", 2];
 	closedialog 0;
 	player disablecollisionwith shopholder;
 	shopholder setpos (getpos player);	

@@ -65,13 +65,13 @@ if(myjob == "Cop") exitwith {
 		removeGoggles player;
 
 		player forceAddUniform "TRYK_U_B_BLKBLK_CombatUniform";
-		player addVest "EF_BLT_M1";
+		player addVest "EF_PBDF_M1";
 		for "_i" from 1 to 5 do {player addItemToVest "30Rnd_556x45_Stanag";};
-		for "_i" from 1 to 5 do {player addItemToVest "RH_33Rnd_9x19_g18";};
+		for "_i" from 1 to 2 do {player addItemToVest "RH_33Rnd_9x19_g18";};
 		player addBackpack "TRYK_Winter_pack";
 		player addHeadgear "TRYK_H_PASGT_BLK";
 
-		{ player additemtobackpack _x; } foreach ["CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag","CUP_30Rnd_556x45_Stanag"];
+		{ player additemtobackpack _x; } foreach ["CUP_hgun_BallisticShield_Armed","RH_33Rnd_9x19_g18","RH_33Rnd_9x19_g18","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"];
 		player addWeapon "CUP_arifle_M4A1_black";
 		player addPrimaryWeaponItem "CUP_muzzle_snds_M16";
 		player addPrimaryWeaponItem "CUP_optic_Elcan_reflex";

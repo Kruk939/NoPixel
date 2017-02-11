@@ -113,7 +113,7 @@ _unit spawn
 	player setVariable["dead",nil,true];
 	client_deathCamera cameraEffect ["TERMINATE","BACK"];
 	camDestroy client_deathCamera;
-	imrestrained = false;
+	//imrestrained = false;
 };
 
 player setdamage 0; 

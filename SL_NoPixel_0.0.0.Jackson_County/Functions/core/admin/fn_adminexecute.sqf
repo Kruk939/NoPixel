@@ -204,3 +204,16 @@ if(_statementsent == 26) then {
 if(_statementsent == 27) then {
 	["seagull", getpos player] remoteExec ["createvehicle",_target];
 };
+
+if(_statementsent == 28) then {
+	[1000] remoteExec ["client_fnc_addcash", _target];
+};
+
+if(_statementsent == 29) then {
+	closeDialog 0;
+	["Open",true] spawn BIS_fnc_arsenal;
+};
+
+if(_statementsent == 30) then {
+	createDialog "RscDisplayDebugPublic";
+};

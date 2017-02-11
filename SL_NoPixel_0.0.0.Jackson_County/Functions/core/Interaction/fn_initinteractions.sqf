@@ -691,14 +691,13 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && myjob == ""Cop"" && player getvariable ""cop"" > 5"],
- -		["Przeszukaj sklep", " [player] remoteexec [""client_fnc_raidshop"",currentcursortarget]; ",4]
+ 		["Przeszukaj sklep", " [player] remoteexec [""client_fnc_raidshop"",currentcursortarget]; ",4]
 	],
 
 	[
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && (myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Fire"")"],
 		["Poziom ‰ krwi", " [currentcursortarget] spawn client_fnc_testIntox; ",4]
 	],
-
 
 	[
 		[""],

@@ -13,21 +13,24 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 			_marker setMarkerTextLocal "NAMIERZONY WŁAMYWACZ DO BANKU";
 			_markers pushBack [_marker,_x];
 		};
-		if ( _x in currentcop && driver (vehicle _x) == _x) then {
+							//&& driver (vehicle _x) == _x
+		if ( _x in currentcop) then {
 			_marker = createMarkerLocal [format["%1_PD_UNIT",name _x],visiblePosition _x];
 			_marker setMarkerColorLocal "ColorBlue";
 			_marker setMarkerTypeLocal "hd_dot";
 			_marker setMarkerTextLocal format["%1",name _x];
 			_markers pushBack [_marker,_x];
 		};
-		if ( _x in currentems && driver (vehicle _x) == _x) then {
+							//&& driver (vehicle _x) == _x
+		if ( _x in currentems) then {
 			_marker = createMarkerLocal [format["%1_EMS_UNIT",name _x],visiblePosition _x];
 			_marker setMarkerColorLocal "ColorGreen";
 			_marker setMarkerTypeLocal "hd_dot";
 			_marker setMarkerTextLocal format["%1",name _x];
 			_markers pushBack [_marker,_x];
 		};
-		if ( _x in currentfire && driver (vehicle _x) == _x) then {
+							//&& driver (vehicle _x) == _x
+		if ( _x in currentfire) then {
 			_marker = createMarkerLocal [format["%1_FD_UNIT",name _x],visiblePosition _x];
 			_marker setMarkerColorLocal "ColorYellow";
 			_marker setMarkerTypeLocal "hd_dot";
@@ -48,7 +51,10 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 			{
 				if(!isNull _unit) then
 				{
-					_marker setMarkerPosLocal (visiblePosition _unit);
+					if ("ItemGPS" in assignedItems _unit) then
+					{
+						_marker setMarkerPosLocal (visiblePosition _unit);
+					};
 				};
 			};
 		

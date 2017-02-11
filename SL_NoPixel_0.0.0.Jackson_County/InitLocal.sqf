@@ -59,3 +59,4 @@ client_seatbelt = false;
 [] spawn client_fnc_escInterupt;
 
 ["Klawisz Windows lub shift + 5 otwiera menu interakcji.", true] spawn domsg;
+[] call client_fnc_initWelcome;

@@ -359,6 +359,7 @@ class CfgFunctions
 			class miscVariables {};
 			class karmaPhoneInit {};
 			class cmentarz {};
+            class initWelcome {};
 		};
 
         class Intox

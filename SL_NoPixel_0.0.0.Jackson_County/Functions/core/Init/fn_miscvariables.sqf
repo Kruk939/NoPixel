@@ -89,8 +89,10 @@ weedPlantArray = [];
 if (getplayerUID player IN ["76561198028980508","76561198082441969","76561198013757235"]) then { jesteadmine=2; };
 							//raf				//sid				//dzoka				//teddy
 if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998091289","76561198150573190"]) then { jesteadmine=3; };
-							//katekarin			//kifkick			//dorian
-if (getplayerUID player IN ["76561198041834190","76561198201987250","76561198253273755"]) then { jesteadmine=4; };
+							//katekarin			//dorian
+if (getplayerUID player IN ["76561198041834190","76561198253273755"]) then { jesteadmine=4; };
+							//kifkick
+if (getplayerUID player IN ["76561198201987250"]) then { jesteadmine=5; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "
