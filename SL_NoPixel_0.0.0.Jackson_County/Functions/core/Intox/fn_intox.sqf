@@ -17,25 +17,25 @@ if(client_intox <= 0.08) exitWith {};
         "dynamicBlur" ppEffectCommit 1;
 		uiSleep 5;
 		if(client_intox > 0.15) then {
-			_chance = round (random 50);
+			_chance = round (random 70);
    			if(_chance < 3) then {
    				[] spawn KK_fnc_forceRagdoll;
    			};
 		};
 		if(client_intox > 0.25) then {
-			_chance = round (random 50);
+			_chance = round (random 70);
    			if(_chance < 5) then {
    				[] spawn KK_fnc_forceRagdoll;
    			};
 		};
 		if(client_intox > 0.35) then {
-			_chance = round (random 50);
+			_chance = round (random 70);
    			 	if(_chance < 7) then {
    				  	[] spawn KK_fnc_forceRagdoll;
    				};
 		};
 		if(client_intox > 0.45) then {
-			_chance = round (random 50);
+			_chance = round (random 70);
    			if(_chance < 9) then {
    				[] spawn KK_fnc_forceRagdoll;
    			};

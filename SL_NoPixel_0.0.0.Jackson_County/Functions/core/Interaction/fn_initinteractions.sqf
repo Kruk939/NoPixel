@@ -266,12 +266,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["CurrentCursorTarget in Current_Cars", "myhouse distance getpos player > 50"],
-		["Schowaj do garażu", "['Storing Vehicle ($10)',30, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",10] spawn client_fnc_dotask",2]
+		["Schowaj do garażu", "['Chowam pojazd do garażu ($10)',30, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",10] spawn client_fnc_dotask",2]
 	],
 
 	[
 		["CurrentCursorTarget in Current_Cars", "myhouse distance getpos player < 50"],
-		["Schowaj do garażu", "['Storing Vehicle',10, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
+		["Schowaj do garażu", "['Chowam pojazd do garażu',10, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
 	],
 
 
@@ -665,7 +665,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(str CurrentCursorTarget find ""gymbench"" > -1 || str CurrentCursorTarget find ""gymrack"" > -1)"],
-		["Ćwicz", "[""Masa, masa i jeszcze raz czeska meta"",60,client_fnc_workout,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
+		["Ćwicz", "[""Na rozgrzewkę są podskoki, skłony w dół i na boki!"",60,client_fnc_workout,player,'AmovPercMstpSnonWnonDnon_exercisekneeBendA',player,0] spawn client_fnc_dotask; ",4]
 	],
 
 	[
