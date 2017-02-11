@@ -98,8 +98,8 @@ _list lbSetdata [(lbSize _list)-1,str(14)];
 _list lbAdd format["%1", "Revive All Dead"];
 _list lbSetdata [(lbSize _list)-1,str(22)];
 
-_list lbAdd format["%1", "Kick Target"];
-_list lbSetdata [(lbSize _list)-1,str(27)];
+_list lbAdd format["%1", "Kick Player"];
+_list lbSetdata [(lbSize _list)-1,str(26)];
 };
 
 if (jesteadmine == 4) then {
@@ -176,14 +176,11 @@ _list lbSetdata [(lbSize _list)-1,str(23)];
 _list lbAdd format["%1", "Ghost Spectate"];
 _list lbSetdata [(lbSize _list)-1,str(24)];
 
-_list lbAdd format["%1", "Kick All"];
+_list lbAdd format["%1", "Toggle TP"];
 _list lbSetdata [(lbSize _list)-1,str(25)];
 
-_list lbAdd format["%1", "Toggle TP"];
+_list lbAdd format["%1", "Kick Player"];
 _list lbSetdata [(lbSize _list)-1,str(26)];
-
-_list lbAdd format["%1", "Kick Target"];
-_list lbSetdata [(lbSize _list)-1,str(27)];
 };
 
 if (jesteadmine == 5) then {
@@ -260,21 +257,33 @@ _list lbSetdata [(lbSize _list)-1,str(23)];
 _list lbAdd format["%1", "Ghost Spectate"];
 _list lbSetdata [(lbSize _list)-1,str(24)];
 
-_list lbAdd format["%1", "Kick All"];
+_list lbAdd format["%1", "Toggle TP"];
 _list lbSetdata [(lbSize _list)-1,str(25)];
 
-_list lbAdd format["%1", "Toggle TP"];
+_list lbAdd format["%1", "Kick Player"];
 _list lbSetdata [(lbSize _list)-1,str(26)];
 
-_list lbAdd format["%1", "Kick Target"];
+_list lbAdd format["%1", "Give 1000$"];
 _list lbSetdata [(lbSize _list)-1,str(27)];
 
-_list lbAdd format["%1", "Give 1000$"];
+_list lbAdd format["%1", "Arsenal"];
 _list lbSetdata [(lbSize _list)-1,str(28)];
 
-_list lbAdd format["%1", "Arsenal"];
+_list lbAdd format["%1", "Debug Console"];
 _list lbSetdata [(lbSize _list)-1,str(29)];
 
-_list lbAdd format["%1", "Debug Console"];
+_list lbAdd format["%1", "Add Food"];
 _list lbSetdata [(lbSize _list)-1,str(30)];
+
+_list lbAdd format["%1", "Add Water"];
+_list lbSetdata [(lbSize _list)-1,str(31)];
+
+_list lbAdd format["%1", "Remove Unhealthiness"];
+_list lbSetdata [(lbSize _list)-1,str(32)];
+
+_list lbAdd format["%1", "Add Phone Battery"];
+_list lbSetdata [(lbSize _list)-1,str(33)];
+
+/*_list lbAdd format["%1", "Kick Player"];
+_list lbSetdata [(lbSize _list)-1,str(34)];*/
 };

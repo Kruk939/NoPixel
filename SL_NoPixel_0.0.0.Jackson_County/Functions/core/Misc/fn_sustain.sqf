@@ -35,7 +35,7 @@ if(_type == "Karma") then {
 };
 
 if(_type == "Food") then {
-	if(_adjust == "Add") then { [format["+%1 Odzywienia",_amount],true] spawn domsg; client_hunger = client_hunger + _amount; if (vehicle player == player) then { player playmove "vvv_anim_eat"; }; };
+	if(_adjust == "Add") then { [format["+%1 Odżywienia",_amount],true] spawn domsg; client_hunger = client_hunger + _amount; if (vehicle player == player) then { player playmove "vvv_anim_eat"; }; };
 	if(_adjust == "Remove") then { client_hunger = client_hunger - _amount; };
 	if(client_hunger > 100) then {client_hunger = 100;};
 	if(client_hunger < 0) then {client_hunger = 0;};
@@ -75,8 +75,8 @@ if(_type == "Poop") then {
 //health is 5
 
 if(_type == "unhealthiness") then {
-	if(_adjust == "Add") then { [format["+%1 Niezdrowie",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness + _amount; };
-	if(_adjust == "Remove") then { [format["-%1 Niezdrowie",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness - _amount; };
+	if(_adjust == "Add") then { [format["+%1 Choroby",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness + _amount; };
+	if(_adjust == "Remove") then { [format["-%1 Choroby",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness - _amount; };
 	if(client_unhealthiness > 100) then { client_unhealthiness = 100;};
 	if(client_unhealthiness < 0) then { client_unhealthiness = 0;};	
 	if(client_unhealthiness > 60) then {

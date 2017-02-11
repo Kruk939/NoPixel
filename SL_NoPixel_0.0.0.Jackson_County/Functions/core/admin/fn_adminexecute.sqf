@@ -187,11 +187,6 @@ if(_statementsent == 24) then {
 };
 
 if(_statementsent == 25) then {
-	["seagull", getpos player] remoteExec ["createvehicle",-2];
-};
-
-
-if(_statementsent == 26) then {
 	if(isNil "LoggedIn") then { LoggedIn = false; };
 	if(!LoggedIn) exitwith { 
 		onMapSingleClick "if (loggedIn) then {vehicle player setPos _pos; [player,objNull,29,format [""%1 przeteleportował się na pozycję %2"",name player, _pos],_pos] remoteExec [""server_fnc_adminLog"", 2];};";
@@ -201,19 +196,41 @@ if(_statementsent == 26) then {
 	if(LoggedIn) exitwith { LoggedIn = False; [player,objNull,28,format ["%1 wyłączył toggleTP",name player],""] remoteExec ["server_fnc_adminLog", 2];};
 };
 
-if(_statementsent == 27) then {
-	["seagull", getpos player] remoteExec ["createvehicle",_target];
+if(_statementsent == 26) then {
+	[player,_target,31,format ["%1 wyrzucił z gry %2",name player,name _target],""] remoteExec ["server_fnc_adminLog", 2];
+	["Kicked",false,true] remoteExec ["BIS_fnc_endMission", _target];
 };
 
-if(_statementsent == 28) then {
+if(_statementsent == 27) then {
 	[1000] remoteExec ["client_fnc_addcash", _target];
 };
 
-if(_statementsent == 29) then {
+if(_statementsent == 28) then {
 	closeDialog 0;
 	["Open",true] spawn BIS_fnc_arsenal;
 };
 
-if(_statementsent == 30) then {
+if(_statementsent == 29) then {
+	closeDialog 0;
 	createDialog "RscDisplayDebugPublic";
 };
+
+if(_statementsent == 30) then {
+	["add","food",100] remoteExec ["client_fnc_sustain", _target];
+};
+
+if(_statementsent == 31) then {
+	["add","drink",100] remoteExec ["client_fnc_sustain", _target];
+};
+
+if(_statementsent == 32) then {
+	["remove","unhealthiness",100] remoteExec ["client_fnc_sustain", _target];
+};
+
+if(_statementsent == 33) then {
+	["add","battery",200] remoteExec ["client_fnc_sustain", _target];
+};
+
+/*if(_statementsent == 34) then {
+	["Kicked",false,true] remoteExec ["BIS_fnc_endMission", _target];
+};*/

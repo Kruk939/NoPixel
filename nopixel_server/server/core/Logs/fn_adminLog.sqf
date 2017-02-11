@@ -67,7 +67,8 @@ switch (_type) do {
     case 27: {_type = "ToggleTP_ON";};
     case 28: {_type = "ToggleTP_OFF";};
     case 29: {_type = "ToggleTP_POS";};
-    //case 30: {_type = "";};
+    case 30: {_type = "KickPlayer";};
+    //case 31: {_type = "";};
 };
 
 

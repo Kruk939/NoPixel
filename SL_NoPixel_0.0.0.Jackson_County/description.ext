@@ -1440,6 +1440,19 @@ class CfgDebriefing {
             1
         };
     };
+    class Kicked {
+        title = "Zostałeś wyrzucony z gry";
+        subtitle = "";
+        description = "Zostałeś wyrzucony z gry przed administratora!";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {
+            0,
+            0.3,
+            0.6,
+            1
+        };
+    };
 };
 
 class CfgNotifications {
