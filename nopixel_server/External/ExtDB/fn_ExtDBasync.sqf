@@ -8,6 +8,9 @@ if (!params [
  
 _key = "extdb2" callExtension format["%1:%2:%3",_mode, (call extDB_SQL_CUSTOM_ID), _queryStmt]; 
 if(_mode isEqualTo 1) exitWith {true}; 
+
+diag_log "ExtDB ASYNC:"; 
+diag_log _queryStmt; 
  
 _key = call compile format["%1",_key]; 
 _key = _key select 1; 
@@ -48,4 +51,5 @@ _queryResult = call compile _queryResult;
  
 if ((_queryResult select 0) isEqualTo 0) exitWith {diag_log format ["extdb2: Protocol Error: %1", _queryResult]; []}; 
 _return = (_queryResult select 1); 
+diag_log _return;
 _return; 

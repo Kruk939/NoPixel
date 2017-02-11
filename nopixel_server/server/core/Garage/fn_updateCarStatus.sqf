@@ -13,6 +13,12 @@ if (_status isEqualTo 0) then {
 	 _carowner = _information select 8;
 	 _className = typeOf _object;
 	 _vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
+	 if (isNil "_license") then {
+	 } else {
+		 _fuel = fuel _object;
+	 	[0,_fuel,_license] remoteExec ["server_fnc_fuelVehicle", 2];
+	 	uiSleep 0.5;
+	 };
 	 [_player,4,format ["%1 zezlomowal %2", name _player, _vehicleName],"",_className,_vehicleName] call server_fnc_vehiclelog;
 	 if (isNil "_carowner") exitwith {_exit = true;};
 	 {if (getplayeruid _x isEqualTo _carowner) exitwith { _player = _x; }; } foreach playableunits;

@@ -352,6 +352,12 @@ class CfgFunctions
 			class carshopbuy {};
 		};
 
+        class GarageFuel
+		{
+			file = "Functions\core\Garage\Fuel";
+			class setFuel {};
+		};
+
 		class Init
 		{
 			file = "Functions\core\Init";
