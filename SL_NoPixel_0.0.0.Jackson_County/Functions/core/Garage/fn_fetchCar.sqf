@@ -103,6 +103,8 @@ if (_vehicle isKindOf "Car") then {
 [_vehicle] call client_fnc_spawnvehicle;
 _vehicle allowdamage true;
 Current_Cars pushBack _vehicle;
+[1,_vehicle,_numberPlate,player] remoteExec ["server_fnc_fuelVehicle", 2];
+
 [getPlayerUID player, "usedgarage", Current_Cars] remoteExec ["Server_fnc_setVariable",2];
 _vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
 [player,2,format ["%1 wyciagnał pojazd %2", name player, _vehicleName],"",_className,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
