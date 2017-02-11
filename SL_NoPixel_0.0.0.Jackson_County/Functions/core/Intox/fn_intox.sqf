@@ -10,7 +10,7 @@
 		};
 };
 if(client_intox <= 0.08) exitWith {};
-	while{client_intox > 0.08} do
+	while{client_intox > 0.09} do
 	{
  		"dynamicBlur" ppEffectEnable true;
     	"dynamicBlur" ppEffectAdjust [0.5];

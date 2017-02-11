@@ -1442,8 +1442,8 @@ class CfgDebriefing {
     };
     class Kicked {
         title = "Zostałeś wyrzucony z gry";
-        subtitle = "";
-        description = "Zostałeś wyrzucony z gry przed administratora!";
+        subtitle = "Zostałeś wyrzucony z gry przed administratora!";
+        description = "";
         pictureBackground = "";
         picture = "";
         pictureColor[] = {
