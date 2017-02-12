@@ -144,7 +144,7 @@ class vehicle_colors {
 			w = 0.0464062 * safezoneW;
 			h = 0.033 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
-			action = "closeDialog 0;";
+			action = "[] spawn client_fnc_resetColor; closeDialog 0;";
 		};
 	};
 };

@@ -2,8 +2,8 @@ enableDebugConsole = 1;
 
 respawn = "BASE";
 disabledAI = 1;
-author = "Koil";
-onLoadName = "Silverlake by StanLakeside";
+author = "STANLAKESIDE.PL Developers";
+onLoadName = "Silverlake by StanLakeside.pl";
 onLoadMission = "Powered on NoPixel Mod by Koil";
 loadScreen =  "loading\load.paa";
 respawndelay = 1;
@@ -543,6 +543,7 @@ class CfgFunctions
 			class vehSold {};
 			class vehGetInfo {};
 			class vehChangeColorMenu {};
+            class resetColor {};
 		};
 	};
 };
