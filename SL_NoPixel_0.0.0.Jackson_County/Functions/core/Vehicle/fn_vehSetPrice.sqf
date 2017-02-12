@@ -51,4 +51,7 @@ for "_i" from 0 to (count _pos) do {
 _carsInShop pushBack [_newPos select 0, _price, _veh];
 _shop setVariable ["CarsToBuy",_carsInShop,true];
 _veh setVariable ["vehPrice", _price, true];
+_className = typeOf _veh;
+_vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
+[player,5,format ["%1 ustawił cenę sprzedaży %2 na kwotę %3",name player,_vehicleName,_price],_price,_className,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
 closeDialog 0;

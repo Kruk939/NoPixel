@@ -40,3 +40,6 @@
 
 #include "vehSetPrice.hpp"
 #include "vehicle_colors.hpp"
+
+//admin dialogs
+#include "adminDialogs.hpp"

@@ -77,6 +77,10 @@ class CfgFunctions {
             class connectionLog {};
             class craftLog {};
         };
+        class Admin {
+            file = "NoPixel_Server\server\core\Admin";
+            class rconServerCommand {};
+        };
         class Mayor {
             file = "NoPixel_Server\server\core\Mayor";
             class paymayor {};

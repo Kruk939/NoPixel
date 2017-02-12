@@ -188,7 +188,7 @@ if(_statementsent == 24) then {
 
 if(_statementsent == 25) then {
 	[player,_target,31,format ["%1 wyrzucił z gry wszystkich graczy",name player],""] remoteExec ["server_fnc_adminLog", 2];
-	["Kicked",false,true] remoteExec ["BIS_fnc_endMission", allPlayers];
+	["Kicked",false,true] remoteExec ["BIS_fnc_endMission", playableunits];
 };
 
 
@@ -235,4 +235,14 @@ if(_statementsent == 33) then {
 
 if(_statementsent == 34) then {
 	["add","battery",200] remoteExec ["client_fnc_sustain", _target];
+};
+
+if(_statementsent == 35) then {
+	closeDialog 0;
+	[] call BIS_fnc_camera;
+};
+
+if(_statementsent == 36) then {
+	closeDialog 0;
+	createDialog "adminMessage";
 };

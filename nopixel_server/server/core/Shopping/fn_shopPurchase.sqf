@@ -1,8 +1,3 @@
- 
- 
- 
- 
- 
 private["_ERROR","_itemcount","_price","_newcount","_totalprice","_newcount","_quantity","_cash","_player","_shopplayer","_type","_item","_type"]; 
 _player = _this select 0; 
 _item = _this select 1; 

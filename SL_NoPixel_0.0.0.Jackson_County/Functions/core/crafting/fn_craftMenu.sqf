@@ -138,7 +138,7 @@ if(myJob == "Mafia" && player getVariable ["Mafia",0] > 4) then {
 
 		//shotguns & light macs
 		//"CUP_sgun_AA12", zbyt op broń
-		"CUP_lmg_Mk48_des",
+		//"CUP_lmg_Mk48_des",
 
 		//launchers
 		"CUP_launch_RPG7V"
@@ -183,10 +183,10 @@ _iPricesMafiaClasses = [
 	[5,2,2,12,25],
 
 	//[5,5,25,5,35],
-	[5,5,5,25,35],
+	//[5,5,5,25,35],
 
 
-	[5,5,5,5,85]
+	[5,5,5,15,85]
 	//[5,5,5,5,85]
 ];
 _iMafiaMags = [5,2,2,2,2];

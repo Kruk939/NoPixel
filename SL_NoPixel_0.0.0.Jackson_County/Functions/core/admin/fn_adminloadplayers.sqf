@@ -100,6 +100,9 @@ _list lbSetdata [(lbSize _list)-1,str(22)];
 
 _list lbAdd format["%1", "Kick Player"];
 _list lbSetdata [(lbSize _list)-1,str(27)];
+
+_list lbAdd format["%1", "Message All"];
+_list lbSetdata [(lbSize _list)-1,str(36)];
 };
 
 if (jesteadmine == 4) then {
@@ -184,6 +187,9 @@ _list lbSetdata [(lbSize _list)-1,str(26)];
 
 _list lbAdd format["%1", "Kick Player"];
 _list lbSetdata [(lbSize _list)-1,str(27)];
+
+_list lbAdd format["%1", "Message All"];
+_list lbSetdata [(lbSize _list)-1,str(36)];
 };
 
 if (jesteadmine == 5) then {
@@ -289,4 +295,10 @@ _list lbSetdata [(lbSize _list)-1,str(33)];
 
 _list lbAdd format["%1", "Add Phone Battery"];
 _list lbSetdata [(lbSize _list)-1,str(34)];
+
+_list lbAdd format["%1", "Camera"];
+_list lbSetdata [(lbSize _list)-1,str(35)];
+
+_list lbAdd format["%1", "Message All"];
+_list lbSetdata [(lbSize _list)-1,str(36)];
 };

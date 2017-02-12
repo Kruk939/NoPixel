@@ -134,6 +134,7 @@ class CfgFunctions
 			class adminupdateplayer {};
 			class adminESP {};
 			class nametags {};
+            class adminMessage {};
 		};		
 
 		class police {
@@ -1443,7 +1444,7 @@ class CfgDebriefing {
     };
     class Kicked {
         title = "Zostałeś wyrzucony z gry";
-        subtitle = "Zostałeś wyrzucony z gry przed administratora!";
+        subtitle = "Zostałeś wyrzucony z gry przez administratora!";
         description = "";
         pictureBackground = "";
         picture = "";

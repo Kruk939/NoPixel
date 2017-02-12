@@ -39,7 +39,9 @@ if (isNull _unit) then {
 
 switch (_type) do {
     case 1: {_type = "Zakup";};
-    //case 2: {_type = "";};
+    case 2: {_type = "UlepszenieDomu";};
+    case 3: {_type = "Sprzedaż";};
+    //case 3: {_type = "";};
 };
 
 

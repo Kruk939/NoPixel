@@ -1,5 +1,4 @@
- 
-private ["_weapons","_magazines","_items","_backpacks"];  
+ private ["_weapons","_magazines","_items","_backpacks"];  
 _player = _this select 0; 
 ["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player]; 
 _uid = getPlayerUID _player; 

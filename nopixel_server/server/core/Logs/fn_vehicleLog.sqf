@@ -32,7 +32,9 @@ switch (_type) do {
     case 2: {_type = "Wyciagniecie";};
     case 3: {_type = "Schowanie";};
     case 4: {_type = "Zlomowanie";};
-    //case 5: {_type = "";};
+    case 5: {_type = "UstalenieCenySprzedaży";};
+    case 6: {_type = "KupieniePojazdu";};
+    //case 7: {_type = "";};
 };
 
 

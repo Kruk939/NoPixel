@@ -38,6 +38,7 @@ if(_error == "") then {
 	_amount = round(random(500)) + 200;
 	[_amount] spawn client_fnc_addCash;
 	[format["Okradłeś sklep, zabrałeś $%1", _amount], false] call domsg;
+	[player,objNull,19,format ["%1 okradł sklep na kwotę %2", name player, _amount],_amount] remoteExec ["server_fnc_actionLog", 2];
 	_chance = random(100);
 	if(_chance < 90) then {
 		[player] remoteExec ["server_fnc_robberyCall", 2];

@@ -43,4 +43,5 @@ _cashTotal = 0;
 globalProtection = 0;
 
 ["Sukces",format["Sprzedałeś ryby za: $%1", _cashTotal],[0,255,0,1],""] call Client_fnc_showNotification;
+[player,objNull,3,format ["%1 sprzedał RYBY w ilości %3 za %4 $", name player, _total, _cashTotal],_cashTotal, "RYBY", _total] remoteExec ["server_fnc_economyLog", 2];
 //hint format["Zarobiłeś $%1",_cashTotal];

@@ -38,4 +38,7 @@ if(isNull _player) then {
 ["garage",_information] remoteExec ["client_fnc_setVariable", _buyer];
 _updatestr = format ["updateVehOwner:%1:%2", getPlayerUID _buyer, _information select 0]; 
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+_className = typeOf _veh;
+_vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
+[player,6,format ["%1 kupił pojazd %2 na kwotę %3 od gracza %4",name player,_vehicleName,name _player],_price,_className,_vehicleName] call server_fnc_vehicleLog;
 deleteVehicle _veh;

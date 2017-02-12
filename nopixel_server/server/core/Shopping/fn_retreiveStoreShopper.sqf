@@ -1,7 +1,3 @@
- 
- 
- 
- 
 private ["_shop","_unit","_shopplayer","_shopcontent"];  
  
 _shop = _this select 0; 
