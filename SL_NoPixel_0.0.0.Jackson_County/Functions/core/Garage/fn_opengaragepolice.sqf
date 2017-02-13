@@ -53,6 +53,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"A3PL_Engine",
 				"A3PL_Ladder",
 				"A3PL_Rescue",
+				"AM_Rescue",
 				"nopixel_guardacostas"
 			];
 };

@@ -45,8 +45,9 @@ if(_statementsent == 7) then {
 };
 
 if(_statementsent == 8) then {
-	[] remoteExec ["server_fnc_statsaveloop", 2]; 
-	[player,objNull,8,format ["%1 zsynchronizował się",name player],""] remoteExec ["server_fnc_adminLog", 2];
+	[] remoteExec ["server_fnc_statsaveloop", 2];
+	["Wykonałeś synchronizację wszystkich graczy!", true] spawn domsg;
+	[player,objNull,8,format ["%1 wykonał synchronizację graczy",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 9) then {
