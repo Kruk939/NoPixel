@@ -225,6 +225,6 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		
 		[spawnedVehicle] call client_fnc_storeCar;
 		spawnedVehicle = objNull;
-		vehChangeColorMenuLoaded = nil;
+		vehChangeColorMenuLoaded = false;
 	};
 };

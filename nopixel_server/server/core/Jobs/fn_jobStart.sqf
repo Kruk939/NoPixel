@@ -1,6 +1,3 @@
- 
- 
- 
 _player = _this select 0; 
 _jobtype = _this select 1; 
  
@@ -8,7 +5,7 @@ diag_log ["job starting %1 - %2", _player,_jobtype];
  
 if (str _jobtype find "Cop" > -1) exitwith {    
 if(count currentCop < 10) then { 
-[_player, 0, getplayeruid _player, 0] call Server_fnc_statSave; 
+[_player, getUnitLoadout _player] call Server_fnc_statSave; 
 [] remoteExec ["client_fnc_startCop",_player]; 
 _player setvariable ["sync",0,false]; 
 currentCop pushback _player; 
@@ -20,8 +17,8 @@ publicvariable "currentCop";
 }; 
  
 if (str _jobtype find "EMS" > -1) exitwith {   
-if(count currentEMS < 5) then { 
-[_player, 0, getplayeruid _player, 0] call Server_fnc_statSave;   
+if(count currentEMS < 10) then { 
+[_player, getUnitLoadout _player] call Server_fnc_statSave;   
 [] remoteExec ["client_fnc_startEMS",_player]; 
 _player setvariable ["sync",0,false]; 
 currentEMS pushback _player; 
@@ -33,8 +30,8 @@ publicvariable "currentEMS";
 }; 
  
 if (str _jobtype find "Fire" > -1) exitwith {   
-if(count currentFire < 5) then { 
-[_player, 0, getplayeruid _player, 0] call Server_fnc_statSave;   
+if(count currentFire < 10) then { 
+[_player, getUnitLoadout _player] call Server_fnc_statSave;   
 [] remoteExec ["client_fnc_startFire",_player]; 
 _player setvariable ["sync",0,false]; 
 currentFire pushback _player; 
@@ -147,6 +144,4 @@ if (str _jobtype find "Repairman" > -1) exitwith {
 currentRepairmen pushback _player; 
 publicvariable "currentRepairmen"; 
  
-}; 
- 
- 
+};
