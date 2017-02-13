@@ -14,11 +14,10 @@
 * Dodanie pracy kierowcy autobusu.
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 * Naprawić znikanie ubrań - przy syncu reload ubrań
-* Przeszukiwanie sklepu / domu dla policji
 * Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
 * Skuwanie osób nieprzytomnych nie działa do końca (skuć da, lecz po odrodzeniu osoba nie jest skuta)
 * Ograniczenie rejestracji do 7 znaków (misja + wyeliminowanie większych tablic w bazie danych)
-* Dispatch dla strażaków nie działa
+* Zapisywanie przez strażaków na dispatcher
 
 
 <hr>
@@ -60,6 +59,7 @@
 * Zablokowanie SYNCDATA podczas otwierania skrzynek w domku i w sklepie
 * Malowanie pojazdów
 * Poprawić bank i napady na sklep
+* Przeszukiwanie sklepu / domu dla policji
 
 
 <hr>
