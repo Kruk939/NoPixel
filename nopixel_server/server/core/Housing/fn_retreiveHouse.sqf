@@ -21,35 +21,35 @@ if (_houselevel == 1) then {
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 2) then {
-    _holder = createVehicle["kif_storage_suitcase", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
+    _holder = createVehicle["kif_storage_cartondarkmedium", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 3) then {
-    _holder = createVehicle["kif_storage_metalcase", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
+    _holder = createVehicle["kif_storage_travelbag", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 4) then {
-    _holder = createVehicle["kif_storage_woodencrate", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
+    _holder = createVehicle["kif_storage_suitcase", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 5) then {
-    _holder = createVehicle["kif_storage_wood", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
+    _holder = createVehicle["kif_storage_cartonlightbig", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 6) then {
-    _holder = createVehicle["kif_storage_woodencrate3", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
+    _holder = createVehicle["kif_storage_wood", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 7) then {
-    _holder = createVehicle["kif_storage_woodencrate5", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
+    _holder = createVehicle["kif_storage_woodbarrel", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 8) then {
-    _holder = createVehicle["kif_storage_cargobox", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
+    _holder = createVehicle["kif_storage_woodbox", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
 if (_houselevel == 9) then {
-    _holder = createVehicle["kif_storage_woodbox", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
+    _holder = createVehicle["kif_storage_cargobox", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
 

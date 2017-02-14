@@ -5,7 +5,7 @@ disabledAI = 1;
 author = "STANLAKESIDE.PL Developers";
 onLoadName = "Silverlake by StanLakeside.pl";
 onLoadMission = "Powered on NoPixel Mod by Koil";
-loadScreen =  "loading\load.paa";
+loadScreen =  "kif_client\textures\loading\load.paa";
 respawndelay = 1;
 
 wreckLimit = 5;
