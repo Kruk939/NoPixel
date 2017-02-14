@@ -178,8 +178,8 @@ if(_prisontime > 0) then {
 	_houselevel = 2;
 };
 if(_doughnuts > 2) then {
-	_houselevel = 3;
-};*/
+	_houselevel = 3;*/
+};
 player setpos [7639.87,2553.39,0.00143814];
 
 if(_higherup) exitwith { player setpos _house};
