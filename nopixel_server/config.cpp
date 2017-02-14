@@ -38,6 +38,7 @@ class CfgFunctions {
 			class insertLog {};
 			class invSave {};
 			class updateVehicleColor {};
+            class deleteDeadPlayers {};
         };
         class Shopping {
             file = "NoPixel_Server\server\core\Shopping";

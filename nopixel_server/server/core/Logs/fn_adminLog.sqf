@@ -45,7 +45,7 @@ switch (_type) do {
     case 5: {_type = "Invisible_ON";};
     case 6: {_type = "Invisible_OFF";};
     case 7: {_type = "KillTarget";};
-    case 8: {_type = "SyncMe";};
+    case 8: {_type = "SyncAll";};
     case 9: {_type = "Freeze";};
     case 10: {_type = "UnFreeze";};
     case 11: {_type = "DeleteItems";};

@@ -1,7 +1,11 @@
-params ["_player", "_id", "_uid", "_name","_loadout"];
-_player setVariable ["getunitloadout",_loadout,false];
-_statuses = _player getVariable "statuses"; 
-if(isNil "_statuses") exitwith { }; 
+params["_player","_items"];
+if(isNull _player) exitWith { diag_log "stepped sync - player null"; };
+_player setVariable ["getunitloadout",_items,false];
+_statuses = _player getVariable "statuses";
+_uid = getPlayerUID _player;
+if(isNil "_statuses") exitwith { };
+
+//_items = getunitloadout _player;
  
 _phoneBackground = _player getVariable "phoneBackground"; 
 _messages = _player getVariable "messages"; 
@@ -12,15 +16,33 @@ _shop = _player getVariable "shop";
 shops pushback _shop;  
 _houselevel = _player getVariable "houselevel"; 
 
-if(_houseLevel == 1) then {
-	tier1housing pushback _house;
-};
-if(_houseLevel == 2) then {
-	tier2housing pushback _house;
-};
-if(_houseLevel == 3) then {
-	tier3housing pushback _house;
-};
+	if (_houseLevel == 1) then {
+        tier1housing pushback _house;
+    };
+    if (_houseLevel == 2) then {
+        tier1housing pushback _house;
+    };
+    if (_houseLevel == 3) then {
+        tier1housing pushback _house;
+    };
+    if (_houseLevel == 4) then {
+        tier2housing pushback _house;
+    };
+    if (_houseLevel == 5) then {
+        tier2housing pushback _house;
+    };
+    if (_houseLevel == 6) then {
+        tier2housing pushback _house;
+    };
+    if (_houseLevel == 7) then {
+        tier3housing pushback _house;
+    };
+    if (_houseLevel == 8) then {
+        tier3housing pushback _house;
+    };
+    if (_houseLevel == 9) then {
+        tier3housing pushback _house;
+    };
 
 _housecontent = _player getVariable "housecontent";
 _shopcontent = _player getVariable "shopcontent";

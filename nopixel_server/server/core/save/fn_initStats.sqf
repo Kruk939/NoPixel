@@ -117,11 +117,41 @@ if (_booli) then {
 	tier1housing deleteAt _pia;
 	};
 	if(_houseLevel == 2) then {
+	_house = tier1housing call BIS_fnc_selectRandom;
+	_pia = tier1housing find _house;
+	tier1housing deleteAt _pia;
+	};
+	if(_houseLevel == 3) then {
+	_house = tier1housing call BIS_fnc_selectRandom;
+	_pia = tier1housing find _house;
+	tier1housing deleteAt _pia;
+	};
+	if(_houseLevel == 4) then {
 	_house = tier2housing call BIS_fnc_selectRandom;
 	_pia = tier2housing find _house;
 	tier2housing deleteAt _pia;
 	};
-	if(_houseLevel == 3) then {
+	if(_houseLevel == 5) then {
+	_house = tier2housing call BIS_fnc_selectRandom;
+	_pia = tier2housing find _house;
+	tier2housing deleteAt _pia;
+	};
+	if(_houseLevel == 6) then {
+	_house = tier2housing call BIS_fnc_selectRandom;
+	_pia = tier2housing find _house;
+	tier2housing deleteAt _pia;
+	};
+	if(_houseLevel == 7) then {
+	_house = tier3housing call BIS_fnc_selectRandom;
+	_pia = tier3housing find _house;
+	tier3housing deleteAt _pia;
+	};
+	if(_houseLevel == 8) then {
+	_house = tier3housing call BIS_fnc_selectRandom;
+	_pia = tier3housing find _house;
+	tier3housing deleteAt _pia;
+	};
+	if(_houseLevel == 9) then {
 	_house = tier3housing call BIS_fnc_selectRandom;
 	_pia = tier3housing find _house;
 	tier3housing deleteAt _pia;
