@@ -6,8 +6,7 @@
  		weapons[] = {};
  		requiredVersion = 0.1;
 		requiredAddons[]= {
-			"A3_Data_F",
-			"plp_containers"
+			"A3_Data_F"
 		};
  	};
  };
@@ -32,7 +31,7 @@ class CfgMagazines
 			disabled=1;
 		};
 	};
-	/*class kif_BrickStack: ItemCore
+	class kif_BrickStack: ItemCore
 	{
 		scope=2;
 		displayName="Bricks";
@@ -41,7 +40,7 @@ class CfgMagazines
 		model="\A3\structures_f\civ\constructions\Bricks_V1_F";
 		allowedSlots[]={901};
 		mass=45;
-	};*/
+	};
 	class kif_MetalStack: ItemCore
 	{
 		scope=2;
@@ -91,109 +90,6 @@ class CfgMagazines
 		model="\A3\structures_f_epa\items\Medical\DisinfectantSpray_F";
 		allowedSlots[]={901,801,701};
 		mass=15;
-	};
-};
-class CfgVehicles {
-	class ReammoBox;
-	class ThingX;
-	class kif_chest_base: ThingX
-	{
-		animated=0;
-		scope=0;
-		scopeCurator=0;
-		editorCategory="EdCat_Supplies";
-		editorSubcategory="EdSubcat_Storage";
-		icon="iconCrate";
-		model="\A3\Weapons_f\dummyweapon.p3d";
-		accuracy=0.2;
-		typicalCargo[]={};
-		vehicleClass="plp_containers";
-		destrType="DestructNo";
-		class DestructionEffects
-		{
-		};
-		maximumLoad=500;
-		transportMaxWeapons=5;
-		transportMaxMagazines=100;
-		transportMaxBackpacks=2;
-		transportAmmo=0;
-		transportRepair=0;
-		transportFuel=0;
-		supplyRadius=1.4;
-		cost=0;
-		armor=200;
-		mapSize=2;
-		waterLinearDampingCoefY=1;
-		waterAngularDampingCoef=0.1;
-	};
-class kif_storage_metalcase: kif_chest_base
-	{
-		scope=2;
-		scopeCurator=2;
-		displayName="Metal Case";
-		model="a3\structures_f_heli\items\luggage\metalcase_01_large_f.p3d";
-		transportFuel=1300;
-		maximumLoad=1300;
-	};
-	class kif_storage_woodencrate: kif_chest_base
-	{
-		scope=2;
-		scopeCurator=2;
-		displayName="Wooden crate";
-		model="a3\props_f_exp\commercial\market\woodencrate_01_f.p3d";
-		transportFuel=1700;
-		maximumLoad=1700;
-	};
-	class kif_storage_woodencrate3: kif_chest_base
-	{
-		scope=2;
-		scopeCurator=2;
-		displayName="Wooden crate x3";
-		model="a3\props_f_exp\commercial\market\woodencrate_01_stack_x3_f.p3d";
-		transportFuel=2400;
-		maximumLoad=2400;
-	};
-	class kif_storage_woodencrate5: kif_chest_base
-	{
-		scope=2;
-		scopeCurator=2;
-		displayName="Wooden crate x5";
-		model="a3\props_f_exp\commercial\market\woodencrate_01_stack_x5_f.p3d";
-		transportFuel=2800;
-		maximumLoad=2800;
-	};
-	class kif_storage_cargobox: kif_chest_base
-	{
-		scope=2;
-		scopeCurator=2;
-		displayName="Cargo Box";
-		model="a3\structures_f\ind\cargo\cargobox_v1_f.p3d";
-		transportFuel=3200;
-		maximumLoad=3200;
-	};
-	class plp_ct_Sack;
-	class kif_storage_sack: plp_ct_Sack
-	{
-		transportFuel=500;
-		maximumLoad=500;
-	};
-	class plp_ct_SuitcaseBigBlack;
-	class kif_storage_suitcase: plp_ct_SuitcaseBigBlack
-	{
-		transportFuel=750;
-		maximumLoad=750;
-	};
-	class plp_ct_woodboxlightmedium;
-	class kif_storage_wood: plp_ct_woodboxlightmedium
-	{
-		transportFuel=2100;
-		maximumLoad=2100;
-	};
-	class plp_ct_woodboxlightbig;
-	class kif_storage_woodbox: plp_ct_woodboxlightbig
-	{
-		transportFuel=3600;
-		maximumLoad=3600;
 	};
 };
 #include "\kif_client\cfgSounds.hpp"

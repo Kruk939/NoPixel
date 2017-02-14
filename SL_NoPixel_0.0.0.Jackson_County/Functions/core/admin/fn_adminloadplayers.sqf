@@ -39,7 +39,7 @@ _list lbSetdata [(lbSize _list)-1,str(3)];
 _list lbAdd format["%1", "God Mode Off"];
 _list lbSetdata [(lbSize _list)-1,str(4)];
 
-_list lbAdd format["%1", "Sync All Players"];
+_list lbAdd format["%1", "Sync Data"];
 _list lbSetdata [(lbSize _list)-1,str(8)];
 
 _list lbAdd format["%1", "Ghost Spectate"];
@@ -71,7 +71,7 @@ _list lbSetdata [(lbSize _list)-1,str(3)];
 _list lbAdd format["%1", "God Mode Off"];
 _list lbSetdata [(lbSize _list)-1,str(4)];
 
-_list lbAdd format["%1", "Sync All Players"];
+_list lbAdd format["%1", "Sync Data"];
 _list lbSetdata [(lbSize _list)-1,str(8)];
 
 _list lbAdd format["%1", "Ghost Spectate"];
@@ -86,7 +86,7 @@ _list lbSetdata [(lbSize _list)-1,str(2)];
 _list lbAdd format["%1", "Toggle TP"];
 _list lbSetdata [(lbSize _list)-1,str(26)];
 
-_list lbAdd format["%1", "Sync All Players"];
+_list lbAdd format["%1", "Sync Data"];
 _list lbSetdata [(lbSize _list)-1,str(8)];
 
 _list lbAdd format["%1", "Full Heal"];
@@ -128,7 +128,7 @@ _list lbSetdata [(lbSize _list)-1,str(6)];
 _list lbAdd format["%1", "Kill Target"];
 _list lbSetdata [(lbSize _list)-1,str(7)];
 
-_list lbAdd format["%1", "Sync All Players"];
+_list lbAdd format["%1", "Sync Data"];
 _list lbSetdata [(lbSize _list)-1,str(8)];
 
 _list lbAdd format["%1", "Freeze"];
@@ -215,7 +215,7 @@ _list lbSetdata [(lbSize _list)-1,str(6)];
 _list lbAdd format["%1", "Kill Target"];
 _list lbSetdata [(lbSize _list)-1,str(7)];
 
-_list lbAdd format["%1", "Sync All Players"];
+_list lbAdd format["%1", "Sync Data"];
 _list lbSetdata [(lbSize _list)-1,str(8)];
 
 _list lbAdd format["%1", "Freeze"];

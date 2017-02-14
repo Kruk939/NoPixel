@@ -4,7 +4,9 @@
 private ["_n","_shopcontent","_shop","_loop","_currentShop"];
 disableSerialization;
 
-[player, getUnitLoadout player] remoteExec ["server_fnc_steppedsync",2]; 
+_loadout = getunitloadout player;
+
+[player,1,getplayeruid player,name player,_loadout] remoteExec ["server_fnc_steppedsync",2]; 
 
 lastforcesync = time;
 

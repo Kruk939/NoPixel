@@ -1,10 +1,9 @@
-params["_player","_items"];
-if(isNull _player) exitWith { diag_log "Stat save - player null"; };
-_statuses = _player getVariable "statuses";
-_uid = getPlayerUID _player;
-if(isNil "_statuses") exitwith { };
+params ["_player", "_id", "_uid", "_name","_items"];
 
-//_items = getunitloadout _player;
+diag_log ["%1 %2 %3 %4", _player, _id, _uid, _name];
+
+_statuses = _player getVariable "statuses";
+if(isNil "_statuses") exitwith { };
 
 _items = _player getVariable "getunitloadout";
 
@@ -20,33 +19,15 @@ shops pushback _shop;
 
 _houselevel = _player getVariable "houselevel";
 
-if (_houseLevel == 1) then {
-        tier1housing pushback _house;
-    };
-    if (_houseLevel == 2) then {
-        tier1housing pushback _house;
-    };
-    if (_houseLevel == 3) then {
-        tier1housing pushback _house;
-    };
-    if (_houseLevel == 4) then {
-        tier2housing pushback _house;
-    };
-    if (_houseLevel == 5) then {
-        tier2housing pushback _house;
-    };
-    if (_houseLevel == 6) then {
-        tier2housing pushback _house;
-    };
-    if (_houseLevel == 7) then {
-        tier3housing pushback _house;
-    };
-    if (_houseLevel == 8) then {
-        tier3housing pushback _house;
-    };
-    if (_houseLevel == 9) then {
-        tier3housing pushback _house;
-    };
+if(_houseLevel == 1) then {
+tier1housing pushback _house;
+};
+if(_houseLevel == 2) then {
+tier2housing pushback _house;
+};
+if(_houseLevel == 3) then {
+tier3housing pushback _house;
+};
 
 
 
@@ -79,33 +60,17 @@ if(!isNil "theMayor") then { if(_player == theMayor) then { TaxRate = 0; publicV
 
 if (_exit) exitwith { deleteVehicle _player; };
 
-    if (_houseLevel == 1) then {
-        tier1housing pushback _house;
-    };
-    if (_houseLevel == 2) then {
-        tier1housing pushback _house;
-    };
-    if (_houseLevel == 3) then {
-        tier1housing pushback _house;
-    };
-    if (_houseLevel == 4) then {
-        tier2housing pushback _house;
-    };
-    if (_houseLevel == 5) then {
-        tier2housing pushback _house;
-    };
-    if (_houseLevel == 6) then {
-        tier2housing pushback _house;
-    };
-    if (_houseLevel == 7) then {
-        tier3housing pushback _house;
-    };
-    if (_houseLevel == 8) then {
-        tier3housing pushback _house;
-    };
-    if (_houseLevel == 9) then {
-        tier3housing pushback _house;
-    };
+if(_houseLevel == 1) then {
+tier1housing pushback _house;
+};
+
+if(_houseLevel == 2) then {
+tier2housing pushback _house;
+};
+
+if(_houseLevel == 3) then {
+tier3housing pushback _house;
+};
 
 [] spawn server_fnc_refreshjobs;
 

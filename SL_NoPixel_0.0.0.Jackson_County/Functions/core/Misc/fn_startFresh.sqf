@@ -28,7 +28,6 @@ closedialog 0;
 [] spawn { 
 	sleep 3; 
 	im_dead = false;
-	imrestrained = false;
 	player setVariable ["wallet", 0, false];
 	player setvariable["playerInjuries",[0,0,0,0,0,0,0,0,0,0,0],true];
 	player setvariable["playerInjuriesToUpdate",[0,0,0,0,0,0,0,0,0,0,0],false];

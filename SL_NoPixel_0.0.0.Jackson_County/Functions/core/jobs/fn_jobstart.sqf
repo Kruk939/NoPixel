@@ -5,7 +5,7 @@ _jobtype = _this select 1;
 
 [player, "job", format["Rozpoczal prace - %1", _jobtype]] remoteExec ["Server_fnc_insertLog", 2];
 if (str _jobtype find "Cop" > -1) exitwith {
-	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];	
+	[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];	
 	[] spawn client_fnc_startCop;
 	currentCop pushback _player;
 	publicvariable "currentCop";
@@ -14,7 +14,7 @@ if (str _jobtype find "Cop" > -1) exitwith {
 };
 
 if (str _jobtype find "EMS" > -1) exitwith {
-	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
+	[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];		
 	[] spawn client_fnc_startEMS;
 	currentEMS pushback _player;
 	publicvariable "currentEMS";
@@ -22,7 +22,7 @@ if (str _jobtype find "EMS" > -1) exitwith {
 };
 
 if (str _jobtype find "Fire" > -1) exitwith {
-	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
+	[_player, 0, getplayeruid _player, 0] remoteexec ["Server_fnc_statSave",2];		
 	[] spawn client_fnc_startFire;
 	currentFire pushback _player;
 	publicvariable "currentFire";	
