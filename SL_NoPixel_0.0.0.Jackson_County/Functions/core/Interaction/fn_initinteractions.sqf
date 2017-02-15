@@ -617,7 +617,7 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["((player distance (getMarkerPos ""houseUpgrades"")) < 30)"],
-		["Ulepsz dom (125k)", "[] spawn client_fnc_UpgradeHouse",3]
+		["Ulepsz dom (50k)", "[] spawn client_fnc_UpgradeHouse",3]
 	],
 
 	[
