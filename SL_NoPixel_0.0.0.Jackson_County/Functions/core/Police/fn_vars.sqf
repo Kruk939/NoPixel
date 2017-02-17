@@ -14,7 +14,7 @@ _availableHeadgear = [
 	"Campaign_Hat_Light",
 	"TRYK_H_PASGT_BLK",
 	"TRYK_H_woolhat",
-    "AM_PatrolHat",
+    	"AM_PatrolHat",
 	"Campaign_Hat_Light",
 	"Campaign_Hat_Dark",
 	"Campaign_Hat_Tan",
@@ -40,6 +40,7 @@ _availableHeadgear = [
     
     if (player getvariable ["cop", 0] > 5) then {
     _availableHeadgearFive = [
+    	"G_Spectacles_Tinted",
         "CUP_H_NAPA_Fedora",
         "ALE_H_Cowboy_White",
         "ALE_H_Cowboy_Black",
@@ -534,7 +535,16 @@ _availableBackpacks = [
 	"TAC_BP_KAR_L",
 	"TRYK_B_BAF_BAG_BLK"
 ];
- 
+
+    if (player getvariable ["cop", 0] > 5) then {
+    _availableBackpacksFive = [
+            "CUP_B_ACRPara_m95",
+	    "CUP_B_HikingPack_Civ",
+	    "TRYK_Winter_pack"
+        ];
+        _availableBackpacks = _availableBackpacks + _availableBackpacksFive;
+    };
+
 _availableMagazine = [
 	"RH_15Rnd_9x19_M9",
 	"RH_16Rnd_9x19_CZ",
@@ -560,7 +570,9 @@ _availableMagazine = [
 	"RH_12Rnd_45cal_usp",
 	"CUP_8Rnd_B_Beneli_74Slug",
 	"CUP_8Rnd_B_Beneli_74Pellets",
-	"RH_7Rnd_50_AE"
+	"RH_7Rnd_50_AE",
+	"16Rnd_9x21_Mag",
+	"sab_wwiplanes_6rnd_mauser_mag"
 ];
 
  
@@ -631,7 +643,9 @@ _availableWeapon = [
 
     if (player getvariable ["cop", 0] == 10) then {
     _availableWeaponTen = [
-            "RH_Deaglem"
+            "RH_Deaglem",
+	    "hgun_mas_ww2_lug_F",
+	    "sab_mauser96_handgun"
             ];
         _availableWeapon = _availableWeapon + _availableWeaponTen;
     };
