@@ -96,7 +96,6 @@ if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998
 if (getplayerUID player IN ["76561198041834190","76561198253273755"]) then { jesteadmine=4; };
 							//kifkick
 if (getplayerUID player IN ["76561198201987250"]) then { jesteadmine=5; };
-
 /*
 	DTU
 */
