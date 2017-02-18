@@ -10,8 +10,8 @@ if (myjob isEqualTo "cop" && !(ClientArrested) && !(client_istazed)) then {
 if (myjob isEqualTo "ems" && !(ClientArrested) && !(client_istazed)) then {
     ["Uruchomiłeś panic button!",false] spawn domsg;
     [format["911 PANIC BUTTON: MEDYK %1 JEST W NIEBEZPIECZEŃSTWIE!", name _player], true] remotexec ["domsg",currentCop];
-    [format["911 PANIC BUTTON: STRAŻAK %1 JEST W NIEBEZPIECZEŃSTWIE!", name _player], true] remotexec ["domsg",currentEMS];
-    [format["911 PANIC BUTTON: STRAŻAK %1 JEST W NIEBEZPIECZEŃSTWIE!", name _player], true] remotexec ["domsg",currentFire];
+    [format["911 PANIC BUTTON: MEDYK %1 JEST W NIEBEZPIECZEŃSTWIE!", name _player], true] remotexec ["domsg",currentEMS];
+    [format["911 PANIC BUTTON: MEDYK %1 JEST W NIEBEZPIECZEŃSTWIE!", name _player], true] remotexec ["domsg",currentFire];
     _player setVariable["pbsee",true,true];
     sleep 300;
     _player setVariable["pbsee",nil,true];

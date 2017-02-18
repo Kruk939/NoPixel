@@ -20,6 +20,14 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 			_marker setMarkerTextLocal "NAMIERZONY PANIC BUTTON";
 			_markers pushBack [_marker,_x];
 		};
+
+		if ( _x getVariable["tracking",FALSE]  ) then {
+		_marker = createMarkerLocal [format["%1_TRACKING",name _x],visiblePosition _x];
+		_marker setMarkerColorLocal "ColorRed";
+		_marker setMarkerTypeLocal "loc_Hospital";
+		_marker setMarkerTextLocal format["%1_TRACKING",name _x];
+		_markers pushBack [_marker,_x];
+		};
 		if ("ItemGPS" in assignedItems _x) then {
 								//&& driver (vehicle _x) == _x
 			if ( _x in currentcop) then {
@@ -47,6 +55,19 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 			};
 		};
 	} foreach PlayableUnits;
+
+
+{  
+	if( _x getVariable["tracking",FALSE] ) then  
+	{	 
+		_rand = round (random(999));
+		_marker = createMarkerLocal [format["%1_TRACKING",_rand],visiblePosition _x];
+		_marker setMarkerColorLocal "ColorRed";
+		_marker setMarkerTypeLocal "loc_Hospital";
+		_marker setMarkerTextLocal format["%1_TRACKING",(typeof _x)];
+		_markers pushBack [_marker,_x];	
+	};   
+} foreach vehicles;
 
 
 	while {visibleMap || visibleGPS} do
