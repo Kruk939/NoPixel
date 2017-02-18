@@ -10,7 +10,9 @@ if (_amount > 0) then
 	{
 	
 		[_amount] call Client_fnc_removeCash;
+		[_giver, getUnitLoadout _giver] call Server_fnc_statSave; 
 		[_amount] remoteexec ["Client_fnc_addCash", _target];
+		[_target, getUnitLoadout _target] call Server_fnc_statSave; 
 		_text = format ["%1 dal Ci %2 $", _giver, _amount];
 		[_text, false] remoteExec ["domsg",_target];
 		[_giver,_target,5,format ["%1 dał %2 dla", name _giver, _amount, name _target],_amount] remoteExec ["server_fnc_moneyLog", 2];

@@ -62,6 +62,11 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
    handle;
 };
 
+if (!(myjob IN ["cop","ems","fire"]) && ("tf_anprc152" in (vestItems player + uniformItems player + backpackItems player + assignedItems player))) exitWith {
+		["tf_anprc152",0] spawn client_fnc_removeitem;
+		["cg_tabletd",0] spawn client_fnc_addItem;
+};
+
 
 
 [] spawn

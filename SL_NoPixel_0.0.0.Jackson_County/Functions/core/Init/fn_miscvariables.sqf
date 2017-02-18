@@ -74,6 +74,7 @@ client_num = 0;
 client_crazy = 0; 
 client_bonging = false; 
 client_nos_count = 0;
+client_can_use_nos = true;
 client_intox = 0.00;
 mytrees = [];
 mymetal = [];
@@ -83,8 +84,10 @@ taskrunning = false;
 paycheck = 0;
 //admins
 jesteadmine = 0;
+client_dtu_actions = 0;
 //if (getplayerUID player IN [""]) then { jesteadmine=1; };
 weedPlantArray = [];
+adminInteractions = 0;
 							//danio				//farmer
 if (getplayerUID player IN ["76561198082441969","76561198131854921"]) then { jesteadmine=2; };
 							//raf				//sid				//dzoka				//teddy				//arthur
@@ -93,6 +96,12 @@ if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998
 if (getplayerUID player IN ["76561198041834190","76561198253273755"]) then { jesteadmine=4; };
 							//kifkick
 if (getplayerUID player IN ["76561198201987250"]) then { jesteadmine=5; };
+
+/*
+	DTU
+*/
+if (getplayerUID player IN ["",""]) then { client_dtu_actions=1; };
+if (getplayerUID player IN ["76561198022486899","76561198035513087","76561197998091289","76561197982469013"]) then { client_dtu_actions=2; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "

@@ -8,7 +8,7 @@ onLoadMission = "Powered on NoPixel Mod by Koil";
 loadScreen =  "kif_client\textures\loading\load.paa";
 respawndelay = 1;
 
-wreckLimit = 5;
+wreckLimit = 10;
 wreckRemovalMaxTime = 600;
 wreckRemovalMinTime = 10;
 
@@ -125,6 +125,7 @@ class CfgFunctions
 			class hudunhealthiness {};
 			class hudwork {};
 			class showNotification {};
+            class hudgopro {};
 		};
 
 		class admin {
@@ -496,6 +497,7 @@ class CfgFunctions
 			class blunthit {};
 			class syncData {};
 			class retreiveCargo {};
+            class checkRadio {};
 		};
 		class Money
 		{
@@ -545,6 +547,19 @@ class CfgFunctions
 			class vehGetInfo {};
 			class vehChangeColorMenu {};
             class resetColor {};
+		};
+        class Functions
+		{
+			file = "Functions\core\Functions";
+			class addItem {};
+			class playSound {};
+		};
+        class Items
+		{
+			file = "Functions\core\Items";
+			class itemPanicButton {};
+            class itemNOS {};
+            class itemGoPro {};
 		};
 	};
 };

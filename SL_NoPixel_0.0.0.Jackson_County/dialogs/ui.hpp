@@ -520,7 +520,7 @@ class HUDWork
 	idd=426;
 	movingEnable=0;
   	fadein=1;
-	duration = 999999;
+	duration = 999999999;
   	fadeout=1;
 	name="HUDWork";
 	onLoad="uiNamespace setVariable ['HUDWork',_this select 0]";
@@ -541,6 +541,111 @@ class HUDWork
 			H = 0.1;
 			sizeEx=0.01;
 			size=0.01;
+			font="PuristaLight";
+			colorBackground[]={0,0,0,0};
+			colorText[] = { 1 , 1 , 1 , 1 };
+			shadow=0;
+			text = "\np_dialogs1\icons\np_work.paa";
+		};
+	};
+};
+
+class HUDGoPro
+   	{
+	idd=427;
+	movingEnable=0;
+  	fadein=1;
+	duration = 999999999;
+  	fadeout=1;
+	name="HUDGoPro";
+	onLoad="uiNamespace setVariable ['HUDGoPro',_this select 0]";
+	objects[]={};
+		
+	class controls
+	{
+		class hud7
+		{
+			type = 0;
+			style = 2096;			
+			idc=42569;
+			fadein=1;
+		  	fadeout=1;
+			x = 0.42 * safezoneW + safezoneX;
+			y = 0.93 * safezoneH + safezoneY;
+			w = 0.1;
+			H = 0.1;
+			sizeEx=0.01;
+			size=0.01;
+			font="PuristaLight";
+			colorBackground[]={0,0,0,0};
+			colorText[] = { 1 , 1 , 1 , 1 };
+			shadow=0;
+			text = "\np_dialogs1\icons\np_work.paa";
+		};
+	};
+};
+
+class HUDNos
+   	{
+	idd=428;
+	movingEnable=0;
+  	fadein=1;
+	duration = 999999999;
+  	fadeout=1;
+	name="HUDNos";
+	onLoad="uiNamespace setVariable ['HUDNos',_this select 0]";
+	objects[]={};
+		
+	class controls
+	{
+		class hud8
+		{
+			type = 0;
+			style = 2096;			
+			idc=42569;
+			fadein=1;
+		  	fadeout=1;
+			x = 0.967 * safezoneW + safezoneX;
+			y = 0.4 * safezoneH + safezoneY;
+			w = 0.75; 
+			h = 0.5;
+			sizeEx=0.035;
+			size=0.035;
+			font="PuristaLight";
+			colorBackground[]={0,0,0,0};
+			colorText[] = { 1 , 1 , 1 , 1 };
+			shadow=0;
+			text = "\np_dialogs1\icons\np_work.paa";
+		};
+	};
+};
+
+class HUDNothing
+   	{
+	idd=429;
+	movingEnable=0;
+  	fadein=1;
+	duration = 999999999;
+  	fadeout=1;
+	name="HUDNothing";
+	onLoad="uiNamespace setVariable ['HUDNothing',_this select 0]";
+	objects[]={};
+		
+	class controls
+	{
+		class hud9
+		{
+			type = 0;
+			style = 2096;			
+			idc=42569;
+			fadein=1;
+		  	fadeout=1;
+			x = 0.967 * safezoneW + safezoneX;
+			y = 0.45 * safezoneH + safezoneY;
+			w = 0.75; 
+			h = 0.5;
+			sizeEx=0.035;
+			size=0.035;
 			font="PuristaLight";
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
@@ -1032,6 +1137,66 @@ class HUDenergy
 				colorBackground[]={0,0,0,0};
 				colorText[] = { 1 , 1 , 1 , 1 };
 				shadow=1;
+				text="";
+			};
+
+			class kif_nos
+			{
+				type=CT_STRUCTURED_TEXT;
+				fadein=1;
+			  	fadeout=1;
+				idc=444440;
+				style=ST_LEFT;
+				x = 0.967 * safezoneW + safezoneX;
+				y = 0.35 * safezoneH + safezoneY;
+				w = 0.75; 
+				h = 0.5;
+				sizeEx=0.035;
+				size=0.035;
+				font="PuristaLight";
+				colorBackground[]={0,0,0,0};
+				colorText[] = { 1 , 1 , 1 , 1 };
+				shadow=false;
+				text="";
+			};
+
+			class kif_1
+			{
+				type=CT_STRUCTURED_TEXT;
+				idc=444441;
+				fadein=1;
+			  	fadeout=1;
+				style=ST_LEFT;
+				x = 0.967 * safezoneW + safezoneX;
+				y = 0.4 * safezoneH + safezoneY;
+				w = 0.75; 
+				h = 0.5;
+				sizeEx=0.035;
+				size=0.035;
+				font="PuristaLight";
+				colorBackground[]={0,0,0,0};
+				colorText[] = { 1 , 1 , 1 , 1 };
+				shadow=false;
+				text="";
+			};
+
+			class kif_2
+			{
+				type=CT_STRUCTURED_TEXT;
+				idc=444442;
+				fadein=1;
+			  	fadeout=1;
+				style=ST_LEFT;
+				x = 0.967 * safezoneW + safezoneX;
+				y = 0.45 * safezoneH + safezoneY;
+				w = 0.75; 
+				h = 0.5;
+				sizeEx=0.035;
+				size=0.035;
+				font="PuristaLight";
+				colorBackground[]={0,0,0,0};
+				colorText[] = { 1 , 1 , 1 , 1 };
+				shadow=false;
 				text="";
 			};	
 		};   

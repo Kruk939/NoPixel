@@ -32,6 +32,7 @@ closedialog 0;
 [player, "car", format["Kupil samochod - %1 za %2", _class, _price]] remoteExec ["Server_fnc_insertLog", 2];
 _vehicleName = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
 [player,1,format ["%1 kupił pojazd %2 za kwote %3", name player, _vehicleName, _price],_price,_class,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
+[player, getUnitLoadout player] call Server_fnc_statSave; 
 ["Pojazd zostanie dostarczony do Twojego garażu.", true] spawn domsg;
 
 _player = player;

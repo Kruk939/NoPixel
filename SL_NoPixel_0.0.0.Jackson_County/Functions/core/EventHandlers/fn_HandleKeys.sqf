@@ -24,7 +24,12 @@ switch (_code) do
 		};
 
 	};
-
+	case 19:
+	{
+		if(_shift && (driver (vehicle player) isEqualTo player) && (vehicle player) != player) then {
+		[] spawn client_fnc_itemNOS;
+		};
+	};
 	//U Key
 	case 22:
 	{

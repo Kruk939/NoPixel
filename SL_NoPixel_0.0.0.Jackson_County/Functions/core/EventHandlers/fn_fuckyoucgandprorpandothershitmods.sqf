@@ -36,7 +36,7 @@ if (_item == "NP_drillitem") then {_cops = (count currentcop); if(_cops < 5) exi
 
 if (_item == "CG_C4") then {_cops = (count currentcop); if(_cops < 3) exitwith { hint "Za mało policjantów - 3+"; }; [] spawn client_fnc_blowdoor; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
-if (_item == "CG_Dynamite") then { [] spawn client_fnc_dynamiteFishing; [_item,82] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item == "CG_Dynamite") then { [] spawn client_fnc_dynamiteFishing; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
 if (_item == "CG_HackingTool") then { [] spawn client_fnc_hackdoor; closeDialog 0; };
 
@@ -46,35 +46,41 @@ if (_item == "CG_Lockpick") then { ["Wytrychuję",120,client_fnc_lockpick,player
 
 if (_item == "cg_atf_bandage_i") then {  ["Leczę",5,client_fnc_dohealth,player,0,["Add",100],0] spawn client_fnc_dotask2;  [_item,0] spawn client_fnc_removeitem;  closeDialog 0; };
 
-if (_item == "CG_MethBag100") then { ["meth",18] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
+if (_item == "CG_MethBag100") then { ["meth",18] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
-if (_item == "CG_MethBag90") then { ["meth",15] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
+if (_item == "CG_MethBag90") then { ["meth",15] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
-if (_item == "CG_MethBag80") then { ["meth",12] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
+if (_item == "CG_MethBag80") then { ["meth",12] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
-if (_item == "CG_MethBag70") then { ["meth",9] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
+if (_item == "CG_MethBag70") then { ["meth",9] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
-if (_item == "CG_MethBag60") then { ["meth",6] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
+if (_item == "CG_MethBag60") then { ["meth",6] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
-if (_item == "CG_MethBag50") then { ["meth",3] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
+if (_item == "CG_MethBag50") then { ["meth",3] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
-if (_item == "CG_WeedBag4") then { ["marijuana",20] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item == "CG_WeedBag4") then { ["marijuana",20] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
-if (_item == "CG_WeedBag3") then { ["marijuana",16] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item == "CG_WeedBag3") then { ["marijuana",16] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
-if (_item == "CG_WeedBag2") then { ["marijuana",12] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item == "CG_WeedBag2") then { ["marijuana",12] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
-if (_item == "CG_WeedBag1") then { ["marijuana",5] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; closeDialog 0; };
+if (_item == "CG_WeedBag1") then { ["marijuana",5] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
-if (_item == "CG_heroin") then { ["heroin",30] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
+if (_item == "CG_heroin") then { ["heroin",30] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
-if (_item == "CG_cocaine") then { ["cocaine",10] spawn client_fnc_useDrug; [_item,70] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
+if (_item == "CG_cocaine") then { ["cocaine",10] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
 if (_item == "np_energydrink") then { ["energy",3] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
 if (_item IN ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS"] && myjob IN ["Cop","Fire","EMS"]) then { [_item] spawn client_fnc_useBarrier; closeDialog 0; };
 
 if (_item == "CG_Spikes_Collapsed") then { [] spawn client_fnc_spikestrip; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
+
+if (_item == "CG_Pro_Item_i") then { [] spawn client_fnc_itemGoPro; [] call client_fnc_hudgopro; closeDialog 0; };
+
+//if (_item == "panicbutton") then { [player] spawn client_fnc_itemPanicButton; closeDialog 0; };
+
+//if (_item == "nos") then { client_nos_count = client_nos_count + 3; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
 false
 
