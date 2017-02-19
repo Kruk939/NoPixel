@@ -102,6 +102,7 @@ class CfgFunctions {
         class Admin {
             file = "NoPixel_Server\server\core\Admin";
             class rconServerCommand {};
+            class rconExtdb {};
         };
         class Mayor {
             file = "NoPixel_Server\server\core\Mayor";

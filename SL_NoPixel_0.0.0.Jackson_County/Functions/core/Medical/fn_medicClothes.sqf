@@ -12,87 +12,87 @@ _crate = _this select 0;
  
  
 _availableHeadgear = [
-"CUP_H_C_Fireman_Helmet_01"
+    "CUP_H_C_Fireman_Helmet_01"
 ];
  
 _availableGoggles = [
-"G_Lady_Blue",
-"EF_FG1",
-"EF_FG2",
-"G_Diving",
-"G_Spectacles",
-"G_Aviator",
-"G_Sport_BlackWhite",
-"G_Shades_Black",
-"G_Sport_Blackred",
-"TAC_shoulder_armorC_BK",
-"TRYK_headset_Glasses",
-"TRYK_Spset_PHC1_Glasses",
-"TRYK_Spset_PHC2_Glasses",
-"TRYK_TAC_EARMUFF_SHADE_Gs",
-"TAC_SF10"
+    "G_Lady_Blue",
+    "EF_FG1",
+    "EF_FG2",
+    "G_Diving",
+    "G_Spectacles",
+    "G_Aviator",
+    "G_Sport_BlackWhite",
+    "G_Shades_Black",
+    "G_Sport_Blackred",
+    "TAC_shoulder_armorC_BK",
+    "TRYK_headset_Glasses",
+    "TRYK_Spset_PHC1_Glasses",
+    "TRYK_Spset_PHC2_Glasses",
+    "TRYK_TAC_EARMUFF_SHADE_Gs",
+    "TAC_SF10"
 ];
  
 _availableUniforms = [
-"vvv_traje_bombero_2",
-"vvv_traje_bombero",
-"vvv_traje_doctor",
-"CG_EMS2",
-"CG_EMS1",
-"CG_EMS9",
-"CG_EMS3",
-"CG_EMS4",
-"CG_EMS10",
-"CG_EMS7",
-"CG_EMS8",
-"CG_EMS5",
-"CG_EMS6",
-"CUP_U_C_Rescuer_01",
-"U_BasicBody_FS",
-"female_ems3",
-"female_ems2",
-"female_ems1",
-"female_ems4",
-"female_ems7",
-"female_ems6",
-"female_ems9",
-"female_ems8",
-"female_ems5",
-"female_ems",
-"CUP_U_C_Fireman_01"
+    "vvv_traje_bombero_2",
+    "vvv_traje_bombero",
+    "vvv_traje_doctor",
+    "CG_EMS2",
+    "CG_EMS1",
+    "CG_EMS9",
+    "CG_EMS3",
+    "CG_EMS4",
+    "CG_EMS10",
+    "CG_EMS7",
+    "CG_EMS8",
+    "CG_EMS5",
+    "CG_EMS6",
+    "CUP_U_C_Rescuer_01",
+    "U_BasicBody_FS",
+    "female_ems3",
+    "female_ems2",
+    "female_ems1",
+    "female_ems4",
+    "female_ems7",
+    "female_ems6",
+    "female_ems9",
+    "female_ems8",
+    "female_ems5",
+    "female_ems",
+    "CUP_U_C_Fireman_01"
 ];
  
 _availableVests = [
-"CUP_V_B_LHDVest_Blue",
-"CUP_V_B_LHDVest_Brown",
-"CUP_V_B_LHDVest_Green",
-"CUP_V_B_LHDVest_Red",
-"CUP_V_B_LHDVest_Violet",
-"CUP_V_B_LHDVest_White",
-"CUP_V_B_LHDVest_Yellow"
+    "CUP_V_B_LHDVest_Blue",
+    "CUP_V_B_LHDVest_Brown",
+    "CUP_V_B_LHDVest_Green",
+    "CUP_V_B_LHDVest_Red",
+    "CUP_V_B_LHDVest_Violet",
+    "CUP_V_B_LHDVest_White",
+    "CUP_V_B_LHDVest_Yellow"
 ];
  
 _availableBackpacks = [
-"TRYK_B_Medbag_ucp",
-"TRYK_B_Medbag_OD",
-"TRYK_B_Medbag_BK",
-"TRYK_B_Medbag",
-"TRYK_B_Kitbag_blk",
-"TAC_BP_Butt_B",
-"B_FieldPack_blk",
-"B_AssaultPack_blk",
-"CUP_B_SLA_Medicbag",
-"TAC_LBT_LEGAB_BK"
+    "TRYK_B_Medbag_ucp",
+    "TRYK_B_Medbag_OD",
+    "TRYK_B_Medbag_BK",
+    "TRYK_B_Medbag",
+    "TRYK_B_Kitbag_blk",
+    "TAC_BP_Butt_B",
+    "B_FieldPack_blk",
+    "B_AssaultPack_blk",
+    "CUP_B_SLA_Medicbag",
+    "TAC_LBT_LEGAB_BK"
  
 ];
  
 _availableMagazine = [
-"Manguera_magazine"
+    "Manguera_magazine"
 ];
  
 _availableWeapon = [
-"fireextinguisher",
-"Binocular"
+    "fireextinguisher",
+    "Binocular"
 ];
 
 _availableAttachments = [
@@ -100,12 +100,13 @@ _availableAttachments = [
 ];
  
 _availableItems = [
-"ItemMap",
-"ItemCompass",
-"Itemwatch",
-"cg_tabletd",
-"ItemGPS",
-"TRYK_Headset_NV"
+    "tf_anprc152",
+    "ItemMap",
+    "ItemCompass",
+    "Itemwatch",
+    "cg_tabletd",
+    "ItemGPS",
+    "TRYK_Headset_NV"
 ];
 
 
