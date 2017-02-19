@@ -43,7 +43,8 @@ switch (_type) do {
     case 3: {_type = "Wplata";};
     case 4: {_type = "WplataMafia";};
     case 5: {_type = "DalKase";};
-    //case 6: {_type = "";};
+    case 6: {_type = "Transfer";};
+    //case 7: {_type = "";};
 };
 
 
