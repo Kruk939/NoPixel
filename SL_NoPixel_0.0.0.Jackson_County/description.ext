@@ -498,6 +498,7 @@ class CfgFunctions
 			class syncData {};
 			class retreiveCargo {};
             class checkRadio {};
+            class playermapmarkers {};
 		};
 		class Money
 		{
@@ -531,7 +532,6 @@ class CfgFunctions
 			class strTracking {};
 			class disTracking2 {};
 			class disTracking {};
-			class playermapmarkers {};
 			class trackingme {};
 			class disabletrackingme {};
 			class dorace {};
