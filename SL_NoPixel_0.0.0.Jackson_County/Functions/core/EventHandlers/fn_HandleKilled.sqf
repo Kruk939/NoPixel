@@ -12,6 +12,8 @@ if(vehicle player == player) then {
 };
 
 if(vehicle player != player) then {
+	[] spawn KK_fnc_forceRagdoll;
+	uisleep 3;
 	player playmove "KIA_commander_MRAP_03";
 };
 
