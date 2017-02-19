@@ -9,7 +9,7 @@
     Description: Function that generates an evidence on object.
     Return: nothing
  */
-private["_curTarget","_suspect","_victim","_crime"];
+//private["_suspect","_victim","_crime"];
 params ["_suspect","_victim", "_crime"];
 
 _evidence = _victim getVariable ["evidence",[]];
