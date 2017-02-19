@@ -438,7 +438,6 @@ class CfgFunctions
 		class Misc
 		{
 			file = "Functions\core\Misc";
-			class closedialogs {};
 			class robfinish {};
 			class trackPlayer {};
 			class sellvehicle {};
@@ -456,33 +455,21 @@ class CfgFunctions
 			class destroyGroundHolders {};
 			class promote {};
 			class promotionstart {};
-			class hideobjectnear {};
-			class createvehicle {};
 			class setvariable {};
-			class medicRequest {};
 			class requestMedic {};
 			class surrender {};
-			class fullHeal {};
-			class startFresh {};
 			class getMagazineName {};
 			class getWeaponName {};
 			class deathscreen {};
 			class getVehicleName {};
-			class hintMP {};
 			class nearMarker {};
-			class playAnim {};
-			class playSound {};
 			class sortArray {};
 			class doHealth {};
 			class hudElements {};
 			class survival {};
 			class sustain {};
 			class setLevel {};
-			class doTask2 {};
-			class doTask {};
 			class repair {};
-			class attach {};
-			class detach {};
 			class PatDown {};		
 			class putincar {};
 			class restrain {};
@@ -495,9 +482,7 @@ class CfgFunctions
 			class tazed {};
 			class sharphit {};
 			class blunthit {};
-			class syncData {};
 			class retreiveCargo {};
-            class checkRadio {};
             class playermapmarkers {};
             class gag {};
             class gagged {};
@@ -556,6 +541,21 @@ class CfgFunctions
 			file = "Functions\core\Functions";
 			class addItem {};
 			class playSound {};
+            class playSound3D {};
+            class attach {};
+			class detach {};
+            class doTask {};
+			class doTask2 {};
+            class checkRadio {};
+            class fullHeal {};
+            class syncData {};
+            class closedialogs {};
+            class hideobjectnear {};
+            class createvehicle {};
+            class startFresh {};
+            class hintMP {};
+            class playAnim {};
+            class setGuiColor {};
 		};
         class Items
 		{
