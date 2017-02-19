@@ -499,6 +499,9 @@ class CfgFunctions
 			class retreiveCargo {};
             class checkRadio {};
             class playermapmarkers {};
+            class gag {};
+            class gagged {};
+            class ungag {};
 		};
 		class Money
 		{
