@@ -21,23 +21,23 @@ if(isNull _civ) exitWith {};
 		if(!(imRestrained)) exitwith {
 			player setVariable["gagged", nil, true];
 			player setVariable ["tf_voiceVolume", 1, true];
-			["Udalo Ci sie wypluc skarpete!", false] spawn domsg;
+			["Udało Ci się wypluć skarpetę!", false] spawn domsg;
 		};
 	};
 };
 
-["Wlozono Ci skarpete do buzi.",true] spawn domsg;
+["Włożono Ci skarpetę do mordy.",true] spawn domsg;
 player setVariable ["tf_voiceVolume", 0, true];
 while { true } do
 {	
 	if(!(player getvariable ["gagged", false])) exitWith {
-		["Wyjeto Ci skarpete z buzi.",true] spawn domsg;
+		["Wyjeto Ci skarpete z mordy.",true] spawn domsg;
 		player setVariable ["tf_voiceVolume", 1, true];
 		player setVariable ["gagged", nil, true];
 	};
 	if(deadPlayer) exitWith
 	{
-		["Wyjeto skarpete z buzi.",true] spawn domsg;
+		["Wyjeto skarpete z mordy.",true] spawn domsg;
 		player setVariable ["tf_voiceVolume", 1, true];
 		player setVariable ["gagged", nil, true];
 	};

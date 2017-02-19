@@ -6,7 +6,7 @@ if(player isEqualTo _unit) exitWith {};
 if(!isPlayer _unit) exitWith {};
 //Broadcast!
 
-["Wkladam skarpete.. prosze czekac", false] spawn domsg;
+["Wkładam skarpetę.. proszę czekać!", false] spawn domsg;
 playSound3D ["cg_sndimg\sounds\blindfold.ogg", cursortarget, false, getPosASL player, 1, 1, 125];
 _cme = 1;
 _myposy = getPos player;
