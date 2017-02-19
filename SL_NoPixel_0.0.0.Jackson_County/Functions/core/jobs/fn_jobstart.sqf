@@ -39,8 +39,6 @@ if(str _jobtype find "doughnuts" > -1 || str _jobtype == "doughnuts") exitWith {
 	publicVariable "currentDoughnuts";
 };
 
-
-
 if (str _jobtype find "Police Dispatch" > -1 || str _jobtype == "Police Dispatch") exitwith {   
 	[] spawn client_fnc_startDispatch;
 	currentPoliceDispatch pushback _player;
