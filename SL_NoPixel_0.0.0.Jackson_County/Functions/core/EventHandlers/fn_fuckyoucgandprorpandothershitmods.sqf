@@ -78,7 +78,7 @@ if (_item == "CG_Spikes_Collapsed") then { [] spawn client_fnc_spikestrip; [_ite
 
 if (_item == "CG_Pro_Item_i") then { [] spawn client_fnc_itemGoPro; [] call client_fnc_hudgopro; closeDialog 0; };
 
-//if (_item == "panicbutton") then { [player] spawn client_fnc_itemPanicButton; closeDialog 0; };
+//if (_item == "panicbutton") then { [player] spawn client_fnc_itemPanicButton; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
 //if (_item == "nos") then { client_nos_count = client_nos_count + 3; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
