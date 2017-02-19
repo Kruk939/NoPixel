@@ -1,10 +1,8 @@
-
-
 _player = _this select 0;
 _jobtype = _this select 1;
 
 [player, "job", format["Rozpoczal prace - %1", _jobtype]] remoteExec ["Server_fnc_insertLog", 2];
-if (str _jobtype find "Cop" > -1) exitwith {
+if (str _jobtype find "Cop" > -1 || str _jobtype == "Cop") exitwith {
 	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];	
 	[] spawn client_fnc_startCop;
 	currentCop pushback _player;
@@ -13,7 +11,7 @@ if (str _jobtype find "Cop" > -1) exitwith {
 	[player,objNull,10,format ["%1 rozpoczął służbę", name player],""] remoteExec ["server_fnc_copLog", 2];
 };
 
-if (str _jobtype find "EMS" > -1) exitwith {
+if (str _jobtype find "EMS" > -1 || str _jobtype == "EMS") exitwith {
 	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
 	[] spawn client_fnc_startEMS;
 	currentEMS pushback _player;
@@ -21,7 +19,7 @@ if (str _jobtype find "EMS" > -1) exitwith {
 	["basic"] spawn client_fnc_setGear;
 };
 
-if (str _jobtype find "Fire" > -1) exitwith {
+if (str _jobtype find "Fire" > -1 || str _jobtype == "Fire") exitwith {
 	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
 	[] spawn client_fnc_startFire;
 	currentFire pushback _player;
@@ -29,7 +27,7 @@ if (str _jobtype find "Fire" > -1) exitwith {
 	["basic"] spawn client_fnc_setGear;
 };
 
-if (str _jobtype find "Mafia" > -1) exitwith {
+if (str _jobtype find "Mafia" > -1 || str _jobtype == "Mafia") exitwith {
 	[] spawn client_fnc_startMafia;
 	currentMafia pushback _player;
 	publicvariable "currentMafia";
@@ -43,19 +41,19 @@ if(str _jobtype find "doughnuts" > -1 || str _jobtype == "doughnuts") exitWith {
 
 
 
-if (str _jobtype find "Police Dispatch" > -1) exitwith {   
+if (str _jobtype find "Police Dispatch" > -1 || str _jobtype == "Police Dispatch") exitwith {   
 	[] spawn client_fnc_startDispatch;
 	currentPoliceDispatch pushback _player;
 	publicvariable "currentPoliceDispatch";
 };
 
-if (str _jobtype find "Medic Dispatch" > -1) exitwith {
+if (str _jobtype find "Medic Dispatch" > -1 || str _jobtype == "Medic Dispatch") exitwith {
 	[] spawn client_fnc_startDispatch;
 	currentMedicDispatch pushback _player;
 	publicvariable "currentMedicDispatch";	
 };
 
-if (str _jobtype find "Fire Dispatch" > -1) exitwith {
+if (str _jobtype find "Fire Dispatch" > -1 || str _jobtype == "Fire Dispatch") exitwith {
 	[] spawn client_fnc_startDispatch;
 	currentFireDispatch pushback _player;
 	publicvariable "currentFireDispatch";	
@@ -79,25 +77,25 @@ if (str _jobtype find "security" > -1 || str _jobtype == "security") exitwith {
 	publicvariable "currentSecurity";	
 };
 
-if (str _jobtype find "Legal Aid" > -1) exitwith {
+if (str _jobtype find "Legal Aid" > -1 || str _jobtype == "Legal Aid") exitwith {
 	[] spawn client_fnc_startLegalAid;
 	currentlegalaid pushback _player;
 	publicvariable "currentLegalAid";	
 };
 
-if (str _jobtype find "Lawyer" > -1) exitwith {
+if (str _jobtype find "Lawyer" > -1  || str _jobtype == "Lawyer") exitwith {
 	[] spawn client_fnc_startLawyer;
 	currentlawyers pushback _player;
 	publicvariable "currentLawyers";
 };
 
-if (str _jobtype find "Judge" > -1) exitwith {
+if (str _jobtype find "Judge" > -1  || str _jobtype == "Judge") exitwith {
 	[] spawn client_fnc_startJudge;	
 	currentJudges pushback _player;
 	publicvariable "currentJudges";
 };
 
-if (str _jobtype find "Tow Truck Driver" > -1) exitwith {
+if (str _jobtype find "Tow Truck Driver" > -1  || str _jobtype == "Tow Truck Driver") exitwith {
 	[] spawn client_fnc_startTowTruck;
 	currentTowTruckDrivers pushback _player;
 	publicvariable "currentTowTruckDrivers";

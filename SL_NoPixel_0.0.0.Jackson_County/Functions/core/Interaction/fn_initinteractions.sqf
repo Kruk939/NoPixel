@@ -769,10 +769,10 @@ NoPixel_InteractionMenuItems = [
 		["Zniszcz dowody", "[""Niszcze dowody"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 
-//	[
-//		["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
-//		["Zapis strażacka centrala", "[player,""Fire Dispatch""] spawn client_fnc_jobstart;",4]
-//	],
+	[
+		["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
+		["Zapis strażacka centrala", "[player,""Fire Dispatch""] spawn client_fnc_jobstart;",4]
+	],
 
 	[
 		[" myjob == ""Cop"" && !dispatch && (player getvariable ""cop"") > 0 "],
