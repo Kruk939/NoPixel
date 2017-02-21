@@ -6,5 +6,6 @@
 	Description: Function that sends request to the server to save player inventory
 	Return: nothing
 */
-
-[player, getPlayerUID player] remoteExec ["Server_fnc_invSave", 2];
+if !(myjob IN ["cop","ems","fire"]) then {
+[player, getunitloadout player, getPlayerUID player] remoteExec ["Server_fnc_invSave", 2];
+};

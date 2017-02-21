@@ -22,6 +22,7 @@ class CfgFunctions {
             class statSaveLoop {};
             class steppedSync {};
             class statSave {};
+            class syncMoney {};
         };
         class Mafia {
             file = "NoPixel_Server\server\core\Mafia";

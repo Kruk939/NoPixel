@@ -7,5 +7,6 @@ if (_new < 0) then {
 } else {
 	player setVariable ["atm", _new, false];
 	[player, "atm", _new] remoteExec ["Server_fnc_setVariable",2];
+	["2",_new,_new,getplayeruid player] remoteExec ["server_fnc_syncmoney",2];
 	_return = true;
 };

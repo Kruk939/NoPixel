@@ -18,7 +18,7 @@ _escaped = false;
 imrestrained = false;
 _update = 0;
 while{ClientArrested} do {
-	if(getpos player distance [5556.2,6291.29,0.00143433] > 250) exitwith { _escaped = true; };
+	if(getpos player distance [5556.2,6291.29,0.00143433] > 350) exitwith { _escaped = true; };
 	uisleep 1;
 	secondsLeft = secondsLeft - 1;
 	_update = _update + 1;
@@ -48,6 +48,7 @@ _status = 5;
 _evidence = []; // lodged later.
 _active = 1; // enabled instantly
 
-[_suspectID,_Suid,_officerID,_charges,_status,_evidence,_active] remoteexec ["server_fnc_addcriminal",2];
+[_suspectID, _Suid, _officerID, "", _charges, _status, _evidence, _active] remoteexec ["server_fnc_addcriminal",2];
+//[_suspectID,_Suid,_officerID,_charges,_status,_evidence,_active] remoteexec ["server_fnc_addcriminal",2];
 };
 
