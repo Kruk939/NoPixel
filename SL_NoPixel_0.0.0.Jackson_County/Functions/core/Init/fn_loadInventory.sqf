@@ -32,6 +32,7 @@ _prisontime = _this select 23;
 _prisonreason = _this select 24;
 _mayor = _this select 25;
 _doughnuts = _this select 26;
+_phonering = _this select 27;
 
 
 _higherup = false;
@@ -115,6 +116,7 @@ player setVariable ["legal", _legal, false];
 player setVariable ["doughnuts", _doughnuts, false];
 
 player setVariable ["garage", _garage, false];
+player setVariable ["phonering", _phonering, false];
 player setVariable ["messages", _messages, false];
 player setVariable ["statuses", _statuses, false];
 

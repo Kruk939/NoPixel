@@ -16,7 +16,22 @@
 		_endme = 0;
 		if(_haltphone) exitwith {};
 		while{PhonesRinging} do {
-			playSound "cgphone_call";
+			_phonering = player getVariable["phonering",0];
+			switch (_phonering) do {
+				case "0": {playSound3D ["kif_client\sounds\phonerings\0.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "1": {playSound3D ["kif_client\sounds\phonerings\1.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "2": {playSound3D ["kif_client\sounds\phonerings\2.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "3": {playSound3D ["kif_client\sounds\phonerings\3.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "4": {playSound3D ["kif_client\sounds\phonerings\4.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "5": {playSound3D ["kif_client\sounds\phonerings\5.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "6": {playSound3D ["kif_client\sounds\phonerings\6.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "7": {playSound3D ["kif_client\sounds\phonerings\7.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "8": {playSound3D ["kif_client\sounds\phonerings\8.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "9": {playSound3D ["kif_client\sounds\phonerings\9.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				case "10": {playSound3D ["kif_client\sounds\phonerings\10.ogg", player, false, getPosASL player, 1, 1, 5]; };
+				default: {playSound3D ["kif_client\sounds\phonerings\0.ogg", player, false, getPosASL player, 1, 1, 5]; };
+			};
+			//playSound "cgphone_call";
 			if(_type == 1) then {
 				[format["Polaczenie przychodzące od %1!","Numer zastrzezony"], false] spawn domsg; 
 			} else {
