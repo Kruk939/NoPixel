@@ -58,7 +58,7 @@ if(_toDo == "update") then {
 	_newPrice = ctrlText 9331;
 	_newprice = parsenumber _newprice;
 	if(_newPrice < 0) then { _newprice = "0"; };
-	if(_newPrice > 999999) then { _newprice = 999999; hint "Cena MAX = 999 999 $";};
+	if(_newPrice > 1000000) then { _newprice = 1000000; hint "Cena MAX = 1 000 000 $";};
 	((shopcontent select _currentShop) select 2) set [_n,_newPrice];
 };
 
