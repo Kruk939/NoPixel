@@ -36,4 +36,18 @@ class CfgSounds
 		{"\kif_client\sounds\blindfold.ogg",1,1,100};
 		titles[] = {0,""};
 	};
+	class speedbombexplode
+	{
+		name="speedbombexplode";
+		sound[]=
+		{"\kif_client\sounds\speedbombExplode.ogg",1,1,100};
+		titles[] = {0,""};
+	};
+	class bombhasbeenplanted
+	{
+		name="bombhasbeenplanted";
+		sound[]=
+		{"\kif_client\sounds\bombhasbeenplanted.ogg",1,1,100};
+		titles[] = {0,""};
+	};
 };

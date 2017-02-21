@@ -53,6 +53,7 @@ if(client_nos_count > 0 && _vehicle isKindOf "Car") then {
 		uiSleep 0.1;
 		deleteVehicle _lightleft;
 		uiSleep 3;
+		[] call client_fnc_hudnos;
 
         sleep 300;
         client_can_use_nos = true;
