@@ -39,7 +39,7 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 10 do {player addItemToBackPack "vvv_np_magazine_taser"; };
 		for "_i" from 1 to 2 do {player addItemToBackPack "nonlethal_swing"; };
 
-		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i"];
+		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","kif_gopro","kif_panicbutton"];
 
 		if(female) then { player forceAddUniform "female_police"; player addHeadgear "EF_Fcap_P"; } else { 
 
@@ -71,7 +71,7 @@ if(myjob == "Cop") exitwith {
 		player addBackpack "TRYK_Winter_pack";
 		player addHeadgear "TRYK_H_PASGT_BLK";
 
-		{ player additemtobackpack _x; } foreach ["CUP_hgun_BallisticShield_Armed","RH_33Rnd_9x19_g18","RH_33Rnd_9x19_g18","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"];
+		{ player additemtobackpack _x; } foreach ["CUP_hgun_BallisticShield_Armed","RH_33Rnd_9x19_g18","RH_33Rnd_9x19_g18","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","kif_gopro","kif_panicbutton"];
 		player addWeapon "CUP_arifle_M4A1_black";
 		player addPrimaryWeaponItem "CUP_muzzle_snds_M16";
 		player addPrimaryWeaponItem "CUP_optic_Elcan_reflex";
@@ -120,7 +120,7 @@ if(myjob == "EMS") exitwith {
 	if(female) then { player forceAddUniform "female_ems"; } else { player forceAddUniform "CUP_U_C_Rescuer_01"; };
 	
 	player addBackpack "CUP_B_SLA_Medicbag";
-	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i"];
+	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","kif_gopro","kif_panicbutton"];
 
 };
 
@@ -149,7 +149,7 @@ player linkItem "ItemGPS";
 	player addBackpack "TAC_LBT_LEGAB_BK";
 	player addgoggles "TAC_SF10";
 	player addHeadgear "CUP_H_C_Fireman_Helmet_01";
-	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i"];
+	{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","kif_gopro","kif_panicbutton"];
 
 	for "_i" from 1 to 10 do {player addItemToBackPack "Manguera_magazine";};
 	player addweapon "fireextinguisher";

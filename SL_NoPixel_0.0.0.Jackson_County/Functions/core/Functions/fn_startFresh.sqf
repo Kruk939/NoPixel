@@ -14,12 +14,12 @@ removeHeadgear player;
 deadPlayer = false;
 godmode = false;
 
-player setpos [7639.87,2553.39,0.00143814];
+player setpos [7641.1,2555.71,0.00143623];
 
 //hospital
 //player setpos [9588.23,4136.39,0.00143814];
 
-player setdir 210;
+//player setdir 210;
 
 player adduniform "U_C_TeeSurfer_shorts_1";
 player linkItem "ItemMap";

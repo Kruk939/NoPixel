@@ -126,6 +126,7 @@ class CfgFunctions
 			class hudwork {};
 			class showNotification {};
             class hudgopro {};
+            class hudnos {};
 		};
 
 		class admin {

@@ -227,5 +227,6 @@ class CfgVehicles {
 		maximumLoad=3650;
 	};
 	#include "\kif_client\cfgVVV.hpp"
+	#include "\kif_client\cfgPoliceVehicles.hpp"
 };
 #include "\kif_client\cfgSounds.hpp"

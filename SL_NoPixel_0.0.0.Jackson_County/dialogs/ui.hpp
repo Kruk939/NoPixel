@@ -572,7 +572,7 @@ class HUDGoPro
 		  	fadeout=1;
 			x = 0.967 * safezoneW + safezoneX;
 			y = 0.35 * safezoneH + safezoneY;
-			w = 0.07; 
+			w = 0.075; 
 			h = 0.1;
 			sizeEx=0.01;
 			size=0.01;
@@ -607,8 +607,8 @@ class HUDNos
 			fadein=1;
 		  	fadeout=1;
 			x = 0.967 * safezoneW + safezoneX;
-			y = 0.45 * safezoneH + safezoneY;
-			w = 0.07; 
+			y = 0.41 * safezoneH + safezoneY;
+			w = 0.075; 
 			h = 0.1;
 			sizeEx=0.01;
 			size=0.01;
@@ -644,10 +644,10 @@ class HUDNothing
 		  	fadeout=1;
 			x = 0.967 * safezoneW + safezoneX;
 			y = 0.45 * safezoneH + safezoneY;
-			w = 0.75; 
-			h = 0.5;
-			sizeEx=0.035;
-			size=0.035;
+			w = 0.075; 
+			h = 0.1;
+			sizeEx=0.01;
+			size=0.01;
 			font="PuristaLight";
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
