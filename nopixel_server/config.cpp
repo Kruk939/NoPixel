@@ -11,34 +11,56 @@ class CfgFunctions {
         class Save {
             file = "NoPixel_Server\server\core\Save";
             class autolock {};
-            class paintball {};
-            class updatemafiabank {};
-            class mafiabank {};
-            class updateMafiaOwed {};
-            class MafiaOwed {};
-            class promote {};
-            class connected {};
-            class resetConnected {};
-            class handleDisconnect {};
-            class setupVariablesServer {};
             class initStats {};
-            class steppedSync {};
-            class statSave {};
+            class SetVariable {};
+			class insertLog {};
+        };
+        class Sync {
+            file = "NoPixel_Server\server\core\Sync";
+            class invSave {};
             class statSaveDisconnect {};
             class statSaveLoop {};
+            class steppedSync {};
+            class statSave {};
+            class syncMoney {};
+        };
+        class Mafia {
+            file = "NoPixel_Server\server\core\Mafia";
+            class updateMafiaOwed {};
+            class updatemafiabank {};
+            class mafiabank {};
+            class MafiaOwed {};
+        };
+        class EventHandlers {
+            file = "NoPixel_Server\server\core\EventHandlers";
+            class handleDisconnect {};
+            class connected {};
             class cleanup {};
-            class SetVariable {};
-            class sendMessage {};
-            class sendMail {};
-            class retreivePhonebook {};
+        };
+        class Init {
+            file = "NoPixel_Server\server\core\Init";
+            class setupVariablesServer {};
+            class resetConnected {};
+            class cleanup {};
+        };
+        class Race {
+            file = "NoPixel_Server\server\core\Race";
             class updatefastest {};
             class updatefastestRally {};
             class racetimes {};
             class rallyracetimes {};
-			class insertLog {};
-			class invSave {};
-			class updateVehicleColor {};
+        };
+        class Misc {
+            file = "NoPixel_Server\server\core\Misc";
             class deleteDeadPlayers {};
+            class promote {};
+            class paintball {};
+        };
+        class Phone {
+            file = "NoPixel_Server\server\core\Phone";
+            class sendMessage {};
+            class sendMail {};
+            class retreivePhonebook {};
         };
         class Shopping {
             file = "NoPixel_Server\server\core\Shopping";
@@ -81,6 +103,7 @@ class CfgFunctions {
         class Admin {
             file = "NoPixel_Server\server\core\Admin";
             class rconServerCommand {};
+            class rconExtdb {};
         };
         class Mayor {
             file = "NoPixel_Server\server\core\Mayor";
@@ -101,6 +124,7 @@ class CfgFunctions {
             class raceenter {};
 			class srvholmsg {};
             class fuelVehicle {};
+			class updateVehicleColor {};
         };
         class Jobs {
             file = "NoPixel_Server\server\core\Jobs";

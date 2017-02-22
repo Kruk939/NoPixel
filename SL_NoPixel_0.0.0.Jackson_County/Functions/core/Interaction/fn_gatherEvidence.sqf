@@ -1,7 +1,7 @@
 /*
 File: gather evidence
 */
-private["_curTarget","_unit","_victim","_crime","_target","_revivable","_targetName","_ui","_progressBar","_titleText","_cP","_title"];
+private["_curTarget","_crime","_suspect","_suspectUID","_scrambledUID","_evidence","_index","_lastEvidence","_msg"];
 _curTarget = CurrentCursorTarget;
 _evidence = _curTarget getVariable ["evidence",[]];
 if((count _evidence) == 0) exitWith { ["Nie znalazłeś żadnych dowodów", false] spawn domsg; };

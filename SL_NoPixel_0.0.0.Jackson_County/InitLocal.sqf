@@ -1,9 +1,12 @@
+if(!hasInterface) exitWith {}; //This is a headless client, he doesn't need to do anything but keep being headless..
 Np_ProfileVars = profilenamespace getvariable "Nopix_Profile";
 if(isnil "Np_ProfileVars") then {
 	profilenamespace setvariable ["Nopix_Profile",[[["Witamy na Silverlake ","Witamy", "Verizon"]],[["Witamy","Witamy na Silverlake", "Poczta"]]]];
 };
 
 { _x setFuelCargo 0; } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_fs_feed_F"], 20000]);
+
+[] spawn client_fnc_setGuiColor;
 
 waitUntil {sleep 0.05; !(isNil {player}) && player == player && alive player};
 
@@ -57,6 +60,7 @@ client_seatbelt = false;
 [] spawn client_fnc_seatbelts;
 [] spawn client_fnc_gunholster;
 [] spawn client_fnc_escInterupt;
+[] spawn client_fnc_checkRadio;
 
 ["Klawisz Windows lub shift + 5 otwiera menu interakcji.", true] spawn domsg;
 [] call client_fnc_initWelcome;

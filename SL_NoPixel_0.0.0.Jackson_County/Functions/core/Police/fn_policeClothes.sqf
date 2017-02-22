@@ -553,7 +553,7 @@ _availableItems = [
         "ItemMap",
         "ItemCompass",
         "Itemwatch",
-        "cg_tabletd_2",
+        "cg_tabletd",
         "ItemGPS",
         "TRYK_Headset_NV",
         "NP_8mPoliceLine",

@@ -95,10 +95,6 @@ if(_statementsent == 15) then {
 	};
 };
 
-/*if(_statementsent == 16) then {
-	[_target] remoteExec ["client_fnc_revived", _target]; 
-};*/
-
 if(_statementsent == 16) then {
 	_target = driver (vehicle _target);
 	[_target] remoteExec ["client_fnc_pulloutVeh", _target]; 
@@ -188,6 +184,7 @@ if(_statementsent == 24) then {
 };
 
 if(_statementsent == 25) then {
+	["Wyrzuciłeś wszystkich graczy z serwera!", true] spawn domsg;
 	[player,_target,31,format ["%1 wyrzucił z gry wszystkich graczy",name player],""] remoteExec ["server_fnc_adminLog", 2];
 	["Kicked",false,true] remoteExec ["BIS_fnc_endMission", playableunits];
 };
@@ -246,4 +243,17 @@ if(_statementsent == 35) then {
 if(_statementsent == 36) then {
 	closeDialog 0;
 	createDialog "adminMessage";
+};
+
+if(_statementsent == 37) then {
+	if (jesteadmine<=4) then {
+		adminInteractions = 1;
+	};
+	if (jesteadmine==5) then {
+		adminInteractions = 2;
+	};
+};
+
+if(_statementsent == 38) then {
+	adminInteractions = 0;
 };

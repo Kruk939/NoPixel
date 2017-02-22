@@ -40,6 +40,6 @@ if(currentWeapon _unit IN ["vvv_fishing_rod","epic_fishing_rod","platinum_fishin
 	[] spawn client_fnc_poleFishing;
 };
 
-if(vehicle player == player) then {
+//if(vehicle player == player) then {
 //	[] call client_fnc_forceFPS;
-};
+//};

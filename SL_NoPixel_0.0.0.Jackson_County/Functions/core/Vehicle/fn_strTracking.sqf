@@ -1,4 +1,4 @@
-if (myjob == "Mafia") then {
+if (myjob in ["Mafia","Cop"]) then {
 _veh = _this select 0;
 _player = _this select 1;
 if (isNil "_veh") exitwith {};
@@ -30,6 +30,9 @@ if (isNull _tracker1) then
 if (_exit) exitwith {hint "Max sledzacych = 3";};
 
 hint "Pluskwa podlozona";
+if (myjob == "cop") then {
+[player,objnull,15,format ["%1 podłożył pluskwę", name player],""] remoteExec ["server_fnc_copLog", 2];
+};
 } else {
 	hint "Nie jestem w mafii, nie moge tego zrobić!";
 }

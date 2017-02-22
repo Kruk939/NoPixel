@@ -58,7 +58,7 @@ if (_booli) then {
 	_mafia = _res select 14;
 	_fire = _res select 15;
 	_legal = _res select 16;
-	_prison = _res select 17;
+	_prisontime = _res select 17;
 	_prisonreason = _res select 18;
 	_doughnuts = _res select 19;
 
@@ -167,8 +167,8 @@ if (_booli) then {
 	_house setVariable ["house", _player, false];
 	_shop setVariable ["shop", _player, false];
 
-	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prison, _prisonreason, _mayor, _doughnuts];																																																																																																																																																													//,_mayor
-	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prison, _prisonreason, _mayor, _doughnuts] remoteexec ["Client_fnc_loadInventory", _player];
+	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prisontime, _prisonreason, _mayor, _doughnuts];																																																																																																																																																													//,_mayor
+	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prisontime, _prisonreason, _mayor, _doughnuts] remoteexec ["Client_fnc_loadInventory", _player];
 } else {
 	_name = name _player;
 	_items = getunitloadout _player;
@@ -179,7 +179,7 @@ if (_booli) then {
 	_mafia = 0;
 	_fire = 0;
 	_legal = 0;
-	_prison = 0;
+	_prisontime = 0;
 	_mayor = false;
 	_prisonreason = "none";
 	_position = [0,0,0];
@@ -190,18 +190,18 @@ if (_booli) then {
 	_housecontent = [[[],[]],[[],[]],[[],[]],[[],[]]];
 	_shopcontent = [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]];
 
-	_shopname = format["Shop %1", _name];
-	_insertstr = format ["insertPlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:%18:%19:%20", _uid, _name, _items, _cash, _bank, _cop, _ems, _position, _phoneBackground, _messages, _statuses, _houselevel, _housecontent, _shopcontent, _shopname, _mafia, _fire, _legal, _prison, _prisonreason];
+	_shopname = format["Sklep %1", _name];
+	_insertstr = format ["insertPlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:%18:%19:%20", _uid, _name, _items, _cash, _bank, _cop, _ems, _position, _phoneBackground, _messages, _statuses, _houselevel, _housecontent, _shopcontent, _shopname, _mafia, _fire, _legal, _prisontime, _prisonreason];
 	_insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
 
 	sleep 0.15;
 
-	_insertstr = format ["insertMail:%1:%2:%3:%4", "Hi, this is your first mail message, welcome to Silver Lake!", format ["Dear %1", name _player], "Silver Lake Government", getplayeruid _player];
+	_insertstr = format ["insertMail:%1:%2:%3:%4", "Witaj, to jest twoj pierwszy powitalny list! Witamy w Silver Lake!", format ["Drogi %1", name _player], "Silver Lake Urzad Miasta", getplayeruid _player];
 	_insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
 
 	sleep 0.15;
 
-	_insertstr = format ["insertMessage:%1:%2:%3:%4", "Hi, this is your first text message, welcome to the Silver Lake Verizon network!", format ["Dear %1", name _player], "Verizon", getplayeruid _player];
+	_insertstr = format ["insertMessage:%1:%2:%3:%4", "Witaj, to jest twoj pierwszy SMS! Witamy w Silver Lake Siec Verizon!", format ["Drogi %1", name _player], "Siec Verizon", getplayeruid _player];
 	_insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
 
 	sleep 1;

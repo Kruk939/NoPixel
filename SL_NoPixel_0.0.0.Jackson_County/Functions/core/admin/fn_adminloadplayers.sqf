@@ -301,4 +301,10 @@ _list lbSetdata [(lbSize _list)-1,str(35)];
 
 _list lbAdd format["%1", "Message All"];
 _list lbSetdata [(lbSize _list)-1,str(36)];
+
+_list lbAdd format["%1", "Admin Inter. ON"];
+_list lbSetdata [(lbSize _list)-1,str(37)];
+
+_list lbAdd format["%1", "Admin Inter. OFF"];
+_list lbSetdata [(lbSize _list)-1,str(38)];
 };

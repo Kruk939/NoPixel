@@ -38,4 +38,3 @@ _carowner = _car select 8;
 
 plateChange = _car;
 
-[2000] call Client_fnc_removebank;

@@ -51,7 +51,10 @@ switch (_type) do {
     case 11: {_type = "SłużbaStop";};
     case 12: {_type = "PrzeszukanieDom";};
     case 13: {_type = "PrzeszukanieSklep";};
-    //case 14: {_type = "";};
+    case 14: {_type = "Podsłuch";};
+    case 15: {_type = "Pluskwa";};
+    case 16: {_type = "NamierzenieRozmowy";};
+    //case 17: {_type = "";};
 };
 
 

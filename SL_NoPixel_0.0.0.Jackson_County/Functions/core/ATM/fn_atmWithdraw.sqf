@@ -8,7 +8,7 @@ closeDialog 0;
 
 if (_amount > 0) then 
 {
-
+	if (_amount > 999999) exitWith {hint "Kwota nie może być większa niż 999 999$!";};
 	if(_bankType == 0) then {
 
 		_check = [2, _amount] call Client_fnc_checkMoney;

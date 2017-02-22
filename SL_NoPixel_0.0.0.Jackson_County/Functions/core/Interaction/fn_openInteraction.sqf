@@ -44,7 +44,7 @@ _display = findDisplay 1014;
 	if (_cTrue) then 
 	{
 	
-		if (_index1 < 18) then 
+		if (_index1 < 25) then 
 		{
 			_idc = 1600 + _index1;
 			_index1 = _index1 + 1;

@@ -4,6 +4,10 @@ _plate = _this select 1;
 _player = _this select 2;
 _oldPlate = _vehicle select 0;
 
+_countPlate = count _plate;
+
+if (_countPlate > 7) exitWith {diag_log "License letters have more than 7";};
+
 _checkstr = format ["existLicense:%1", _plate]; 
 _check = [0, _checkstr] call ExternalS_fnc_ExtDBquery; 
 _booli = (_check select 0) select 0; 
