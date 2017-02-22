@@ -124,6 +124,17 @@ class CfgMagazines
 		allowedSlots[]={901,801,701};
 		mass=15;
 	};
+	class kif_panicbutton: ItemCore
+	{
+		scope=2;
+		displayName="Panic Button";
+		author="Extermi111";
+		descriptionShort="I feel dangerously. I will click it!";
+		picture="\kif_client\textures\icons\items\panicbutton.paa";
+		model="\kif_client\models\panicbutton\button.p3d";
+		allowedSlots[]={901,801,701};
+		mass=15;
+	};
 };
 class CfgVehicles {
 	class ReammoBox;

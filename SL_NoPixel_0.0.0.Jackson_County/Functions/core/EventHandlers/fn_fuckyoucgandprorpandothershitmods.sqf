@@ -76,7 +76,7 @@ if (_item IN ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBa
 
 if (_item == "CG_Spikes_Collapsed") then { [] spawn client_fnc_spikestrip; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
-if (_item == "kif_gopro") then { [] spawn client_fnc_itemGoPro; [] call client_fnc_hudgopro; closeDialog 0; };
+if (_item == "kif_gopro") then { [] spawn client_fnc_itemGoPro; /*[] call client_fnc_hudgopro;*/ closeDialog 0; };
 
 //if (_item == "panicbutton") then { [player] spawn client_fnc_itemPanicButton; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 

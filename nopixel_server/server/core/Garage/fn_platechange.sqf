@@ -4,7 +4,7 @@ _plate = _this select 1;
 _player = _this select 2;
 _oldPlate = _vehicle select 0;
 
-_countPlate = str count _plate;
+_countPlate = count _plate;
 
 if (_countPlate > 7) exitWith {diag_log "License letters have more than 7";};
 

@@ -1,4 +1,3 @@
-#define ST_LEFT           0x00
 //yesno box lol
 
 
@@ -566,20 +565,22 @@ class HUDGoPro
 		class hud7
 		{
 			type = 0;
-			style = ST_LEFT;			
+			//style = 0x30 + 0x800;
+			style = 0x30;
 			idc=119870;
 			fadein=1;
 		  	fadeout=1;
 			x = 0.967 * safezoneW + safezoneX;
 			y = 0.35 * safezoneH + safezoneY;
-			w = 0.75; 
-			h = 0.5;
-			sizeEx=0.035;
-			size=0.035;
+			w = 0.07; 
+			h = 0.1;
+			sizeEx=0.01;
+			size=0.01;
 			font="PuristaLight";
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
 			shadow=0;
+			//text = "<img size='2' image='kif_client\textures\icons\record.paa'/>"
 			text = "\kif_client\textures\icons\record.paa";
 		};
 	};
@@ -601,20 +602,21 @@ class HUDNos
 		class hud8
 		{
 			type = 0;
-			style = 2096;			
+			style = 0x30;
 			idc=119871;
 			fadein=1;
 		  	fadeout=1;
 			x = 0.967 * safezoneW + safezoneX;
-			y = 0.4 * safezoneH + safezoneY;
-			w = 0.75; 
-			h = 0.5;
-			sizeEx=0.035;
-			size=0.035;
+			y = 0.45 * safezoneH + safezoneY;
+			w = 0.07; 
+			h = 0.1;
+			sizeEx=0.01;
+			size=0.01;
 			font="PuristaLight";
 			colorBackground[]={0,0,0,0};
 			colorText[] = { 1 , 1 , 1 , 1 };
 			shadow=0;
+			//text = "<img size='2' image='kif_client\textures\icons\nos.paa'/>"
 			text = "\kif_client\textures\icons\nos.paa";
 		};
 	};
@@ -1140,7 +1142,7 @@ class HUDenergy
 				text="";
 			};
 
-			class kif_nos
+			/*class kif_nos
 			{
 				type=CT_STRUCTURED_TEXT;
 				fadein=1;
@@ -1198,7 +1200,7 @@ class HUDenergy
 				colorText[] = { 1 , 1 , 1 , 1 };
 				shadow=false;
 				text="";
-			};	
+			};*/
 		};   
  	};
 

@@ -567,7 +567,7 @@ if(_condition == "general") then {
 		["cg_tabletd",nil,50,3],
 		["cg_atf_bandage_i",nil,45,3],	
 		["CG_ATF_First_Aid_Kit_i",nil,200,3],
-		["kif_gopro",nil,300,3],		
+		//["kif_gopro",nil,300,3],		
 		["CG_wheel",nil,150,3],
 		["ItemMap",nil,1,3],
 		["ItemCompass",nil,10,3],

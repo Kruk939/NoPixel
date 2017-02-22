@@ -128,7 +128,9 @@ if (!isnull _holder) then {
 
     _updatestr = format["updateHouse:%1:%2", _playercontent, getPlayerUID _player];
     _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+    //while !(_holder) do {
 
+    //};
     deleteVehicle _holder;
     _pia = activecrates find _uid;
     activecrates deleteAt _pia;

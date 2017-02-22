@@ -4,7 +4,8 @@ _amount = parseNumber (ctrlText 1401);
 closeDialog 0;
 
 if (_amount > 0) then 
-{
+{	
+	if (_amount > 999999) exitWith {hint "Kwota nie może być większa niż 999 999$!";};
 	_enoughCash = [1, _amount] call Client_fnc_checkMoney;
 	if (_enoughCash) then 
 	{

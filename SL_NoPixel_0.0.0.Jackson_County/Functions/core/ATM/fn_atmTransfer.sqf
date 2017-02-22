@@ -8,7 +8,7 @@ if(isnull _player) exitwith {};
                                                                                    //hint "Nie wybrano gracza!";
 if(isnil "_player") exitwith { ["Błąd","Nie wybrano gracza!",[255,0,0,1],""] call Client_fnc_showNotification;};
 closeDialog 0;
-
+if (_amount > 999999) exitWith {hint "Kwota nie może być większa niż 999 999$!";};
 _check = [2, _amount] call client_fnc_checkMoney;
 if (_check) then {
 

@@ -3,9 +3,11 @@
 if !(client_gopro) then {
     client_gopro = true;
     ["Włączyłeś Go Pro!", false] spawn domsg;
+    427 cutRsc ["HUDGoPro","PLAIN"]; 
 } else {
     client_gopro = false;
     ["Wyłączyłeś Go Pro!", false] spawn domsg;
+    427 cutfadeout 1;
 };
 /*switch (_type) do {
     case 0: {client_gopro = false;};
