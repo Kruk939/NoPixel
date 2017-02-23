@@ -125,7 +125,6 @@ class CfgFunctions
 			class hudunhealthiness {};
 			class hudwork {};
 			class showNotification {};
-            class hudgopro {};
             class hudnos {};
 		};
 

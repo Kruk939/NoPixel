@@ -46,7 +46,7 @@ if(myJob == "Cop") then {
 			"kif_taurus_police",
 			//"kif_taurus_sheriff",
 			//"kif_kawasaki_police",
-			"kif_kawasaki_sheriff",
+			//"kif_kawasaki_sheriff",
 			"ivory_suburban_unmarked",
 			"ivory_suburban_slicktop",
 			"ivory_suburban_marked",

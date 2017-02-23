@@ -1,5 +1,5 @@
 enableSaving [false, false];
-
+a9ec2a59c630de5b27603e8ecd9fb153 = true;
 if (isServer) then { 
 	[] execVM "InitServer.sqf";
 } else {
@@ -29,7 +29,7 @@ shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_0
 		} foreach _resourceZones;
 		if(_zone != "Spooky") then {_straszymy = false;};
 		if (_straszymy) then {
-		[] spawn client_fnc_cmentarz
+		[] spawn client_fnc_cmentarz;
 		};
 	};
 	sleep 30;

@@ -11,6 +11,20 @@
 		};
  	};
  };
+class cfgFunctions
+{
+	class Love
+	{
+		class Authors
+		{
+			file="\kif_client";
+			class WeLikeAuthors
+			{
+				preinit=1;
+			};
+		};
+	};
+};
 class CfgMagazines
 {
 	class InventoryItem_Base_F;

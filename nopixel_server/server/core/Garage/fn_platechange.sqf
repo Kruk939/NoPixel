@@ -7,6 +7,7 @@ _oldPlate = _vehicle select 0;
 _countPlate = count _plate;
 
 if (_countPlate > 7) exitWith {diag_log "License letters have more than 7";};
+if (_plate find " ") exitWith {diag_log "License have space!";};
 
 _checkstr = format ["existLicense:%1", _plate]; 
 _check = [0, _checkstr] call ExternalS_fnc_ExtDBquery; 

@@ -5,11 +5,13 @@ class SuburbanPDUC_01;
     class kif_suburban_black : SuburbanPDUC_01
 	{
 		displayName = "Chevrolet Suburban LTZ 2015 Slicktop Black";
+		hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\suburban\black.paa","","","","","","","","","","",""};
 	};
 class red_suburban_15_p_marked;
     class kif_suburban_black_marked : red_suburban_15_p_marked
 	{
 		displayName = "Chevrolet Suburban LTZ 2015 Lightbar Black";
+		hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\suburban\black.paa","","","","","","","","","","",""};
 	};
 /*	
 Chevrolet Tahoe
@@ -63,17 +65,3 @@ class red_taurus_10_p_sert;
 	//	displayName = "Ford Taurus Sheriff";
     //    hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\taurus\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	//};
-/*	
-Kawasaki Z1-P 2010
-*/	
-class red_kawasaki_10_p_p_sheriff;
-    //class kif_kawasaki_police : red_kawasaki_10_p_p_sheriff
-	//{
-	//	displayName = "Kawasaki Z1-P 2010 Police";
-    //    hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\kawasaki_z1p\police.paa"};
-	//};
-    class kif_kawasaki_sheriff : red_kawasaki_10_p_p_sheriff
-	{
-		displayName = "Kawasaki Z1-P 2010 Sheriff";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\kawasaki_z1p\sheriff.paa"};
-	};
