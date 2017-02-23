@@ -20,7 +20,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
 		player linkItem "ItemGPS";
-		player linkitem "cg_tabletd";
+		player linkitem "tf_anprc152";
 
 		_level = player getVariable "cop";
 
@@ -111,7 +111,7 @@ if(myjob == "EMS") exitwith {
 	player linkItem "ItemMap";
 	player linkItem "ItemCompass";
 	player linkItem "Itemwatch";
-	player linkitem "cg_tabletd";
+	player linkitem "tf_anprc152";
 	player linkItem "ItemGPS";
 
 
@@ -140,7 +140,7 @@ player addWeapon "Binocular";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "Itemwatch";
-player linkitem "cg_tabletd";
+player linkitem "tf_anprc152";
 player linkItem "ItemGPS";
 
 

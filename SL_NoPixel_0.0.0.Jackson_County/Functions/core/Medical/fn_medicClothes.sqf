@@ -101,12 +101,19 @@ _availableAttachments = [
  
 _availableItems = [
     "tf_anprc152",
-    "ItemMap",
-    "ItemCompass",
-    "Itemwatch",
-    "cg_tabletd",
-    "ItemGPS",
-    "TRYK_Headset_NV"
+	"ItemMap",
+	"ItemCompass",
+	"Itemwatch",
+	"cg_tabletd",
+	"ItemGPS",
+	"TRYK_Headset_NV",
+	"NP_8mPoliceLine",
+	"NP_4mPoliceLine",
+	"NP_1mPoliceLine",
+	"NP_PoliceBarrierL",
+	"NP_PoliceBarrierS",
+	"CG_wheel",
+	"cg_atf_bandage_i"
 ];
 
 

@@ -23,6 +23,7 @@ class CfgFunctions {
             class steppedSync {};
             class statSave {};
             class syncMoney {};
+            class PhoneBackgroundSync {};
         };
         class Mafia {
             file = "NoPixel_Server\server\core\Mafia";

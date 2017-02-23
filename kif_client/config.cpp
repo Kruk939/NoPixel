@@ -116,6 +116,36 @@ class CfgMagazines
 		allowedSlots[]={901,801,701};
 		mass=15;
 	};
+	class kif_500k: ItemCore
+	{
+		scope=2;
+		displayName="500 000$";
+		descriptionShort="I hope you know what to do with this!";
+		picture="\kif_client\textures\icons\items\suitcase.paa";
+		model="\A3\structures_f\items\luggage\Suitcase_F";
+		allowedSlots[]={901,801,701};
+		mass=50;
+	};
+	class kif_100k: ItemCore
+	{
+		scope=2;
+		displayName="100 000$";
+		descriptionShort="I hope you know what to do with this!";
+		picture="\kif_client\textures\icons\items\suitcase.paa";
+		model="\A3\structures_f\items\luggage\Suitcase_F";
+		allowedSlots[]={901,801,701};
+		mass=50;
+	};
+	class kif_50k: ItemCore
+	{
+		scope=2;
+		displayName="50 000$";
+		descriptionShort="I hope you know what to do with this!";
+		picture="\kif_client\textures\icons\items\suitcase.paa";
+		model="\A3\structures_f\items\luggage\Suitcase_F";
+		allowedSlots[]={901,801,701};
+		mass=50;
+	};
 	class kif_gopro: ItemCore
 	{
 		scope=2;

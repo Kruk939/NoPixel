@@ -102,6 +102,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
+		["Wypierz pieniądze", " ['Piorę pieniądze',60,client_fnc_dumpMoney,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",1]
+	],
+
+	[
 		[" myJob == ""Mafia"" && (player getVariable ""Mafia"") > 5 "],
 		["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
 	],
@@ -828,6 +833,21 @@ NoPixel_InteractionMenuItems = [
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 1 "],
 		["ARSENAL", "[cursorobject] spawn client_fnc_vars"]
+	],
+
+	[
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 9 "],
+		["TECZKA 500K", "[""kif_500k"",0] spawn client_fnc_additem"]
+	],
+
+	[
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 9 "],
+		["TECZKA 100K", "[""kif_100k"",0] spawn client_fnc_additem"]
+	],
+
+	[
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 9 "],
+		["TECZKA 50K", "[""kif_50k"",0] spawn client_fnc_additem"]
 	],
 	
 	[

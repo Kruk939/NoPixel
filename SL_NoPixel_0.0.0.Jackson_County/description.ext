@@ -556,6 +556,7 @@ class CfgFunctions
             class hintMP {};
             class playAnim {};
             class setGuiColor {};
+            class dumpMoney {};
 		};
         class Items
 		{
@@ -563,6 +564,7 @@ class CfgFunctions
 			class itemPanicButton {};
             class itemNOS {};
             class itemGoPro {};
+            class itemSpeedBomb {};
 		};
 	};
 };

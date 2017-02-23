@@ -10,7 +10,7 @@ if(count currentsecurity > 0) then {
 	//if (myjob == "cop") then {playSound "dbank";};
 } else { 
 	[getpos _target] remoteexec ["client_fnc_jobMarker", currentCop];
-	["911: TRWA NAPAD NA BANK, LOKALIZACJA OZNACZONA NA MAPIE, BRAK DOSTĘPNYCH OCHRONIARZY DO POMOCY!", false] remoteExec ["domsg", currentCop]; 
+	["911: TRWA NAPAD NA BANK, LOKALIZACJA OZNACZONA NA MAPIE, BRAK OCHRONIARZY DO POMOCY!", false] remoteExec ["domsg", currentCop]; 
 	["dbank"] remoteExec ["client_fnc_playSound", currentCop];
 	//if (myjob == "cop") then {playSound "dbank";};
 }; 

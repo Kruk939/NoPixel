@@ -27,8 +27,8 @@ if (myjob == "Fire") then {
 if !(myjob IN ["Cop","EMS","Fire"]) then {
     ["Uruchomiłeś panic button!",false] spawn domsg;
     [format["911: %1 URUCHOMIŁ PANIC BUTTON! GPS PRZEZ 5 MINUT BĘDZIE USTALAŁ JEGO POZYCJĘ!", name _player], false] remoteexec ["domsg",currentCop];
+    ["dpanic"] remoteExec ["client_fnc_playSound", currentCop];
     _player setVariable["pbsee",true,true];
     sleep 300;
     _player setVariable["pbsee",nil,true];
-    ["dpanic"] remoteExec ["client_fnc_playSound", currentCop];
 };

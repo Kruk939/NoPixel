@@ -16,6 +16,9 @@ phoneSkin = _selectedBG;
 
 if(isNil "phoneSkin") exitwith { hint "Błąd zapisu"; };
 
+_bg = [phoneBackground,phoneskin];
+
 [player, "phoneBackground", [phoneBackground,phoneskin]] remoteExec ["Server_fnc_setVariable",2];
+[_bg, getPlayerUID player] remoteExec ["Server_fnc_PhoneBackgroundSync", 2];
 
 [50] call Client_fnc_removeBank;

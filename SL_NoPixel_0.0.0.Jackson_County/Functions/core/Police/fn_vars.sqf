@@ -686,6 +686,14 @@ _availableItems = [
 	"CG_wheel",
 	"cg_atf_bandage_i"
 ];
+    if (player getvariable ["cop", 0] == 10) then {
+    _availableItemsTen = [
+        "kif_500k",
+	    "kif_100k",
+	    "kif_50k"
+    ];
+     _availableItems = _availableItems + _availableItemsTen;
+    };
 
 
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
