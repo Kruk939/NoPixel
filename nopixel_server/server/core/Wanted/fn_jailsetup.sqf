@@ -1,11 +1,6 @@
-_length = _this select 0; 
-_reason = _this select 1; 
-_player = _this select 2; 
-_sendToJail = _this select 3; 
+params["_length","_reason","_player","_sendToJail","_uid"];
  
-_uidplayer = getplayeruid _player; 
- 
-_updatestr = format ["updatePlayerPrisonTimeReason:%1:%2:3", _length, _reason, _uidplayer]; 
+_updatestr = format ["updatePlayerPrisonTimeReason:%1:%2:3", _length, _reason, _uid]; 
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 
 sleep 0.15;
 //_updatestr = format ["updatePrisonReason:%1:%2", _reason, _uidplayer]; 

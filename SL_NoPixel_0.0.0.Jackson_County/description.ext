@@ -758,6 +758,16 @@ class CfgSounds {
         titles[] = {};
     };
 
+    class bombhasbeenplanted {
+        name = "bombhasbeenplanted";
+        sound[] = {
+            "@kif_client\sounds\bombhasbeenplanted.ogg",
+            1,
+            1
+        };
+        titles[] = {};
+    };
+
     class npmsg {
         name = "npmsg";
         sound[] = {

@@ -46,16 +46,6 @@ class CfgMagazines
 			disabled=1;
 		};
 	};
-	class kif_speedbomb: ItemCore
-	{
-		scope=2;
-		model="\a3l_bomb\bomb.p3d";
-		displayName="Trap Bomb";
-		descriptionShort="I like to say BOOM!";
-		picture="\kif_client\textures\icons\items\speedbomb.paa";
-		allowedSlots[]={901};
-		mass=50;
-	};
 	class kif_BrickStack: ItemCore
 	{
 		scope=2;
@@ -176,6 +166,17 @@ class CfgMagazines
 		descriptionShort="I feel dangerously. I will click it!";
 		picture="\kif_client\textures\icons\items\panicbutton.paa";
 		model="\kif_client\models\panicbutton\button.p3d";
+		allowedSlots[]={901,801,701};
+		mass=15;
+	};
+	class kif_speedbomb: ItemCore
+	{
+		scope=2;
+		displayName="Speed bomb";
+		author="Extermi111";
+		descriptionShort="I like cars, i like gunpowder plot.";
+		picture="\kif_client\textures\icons\items\dynamite.paa";
+		model="\kif_client\models\dynamit\dynamit.p3d";
 		allowedSlots[]={901,801,701};
 		mass=15;
 	};
