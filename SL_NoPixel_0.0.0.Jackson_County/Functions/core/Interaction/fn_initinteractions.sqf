@@ -836,17 +836,17 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 9 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
 		["TECZKA 500K", "[""kif_500k"",0] spawn client_fnc_additem"]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 9 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
 		["TECZKA 100K", "[""kif_100k"",0] spawn client_fnc_additem"]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 9 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
 		["TECZKA 50K", "[""kif_50k"",0] spawn client_fnc_additem"]
 	],
 	
