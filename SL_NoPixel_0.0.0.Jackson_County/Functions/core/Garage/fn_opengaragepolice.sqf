@@ -81,7 +81,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"VVV_dodge_charger_medic",
 				"VVV_DodgeDurango_medic",
 				"ivory_suburban_ems",
-				"JM_Wheelchair_black",
+				"sl_impala_fire_fd",
 				"SL_MCP",
 				"A3PL_Engine",
 				"A3PL_Ladder",
