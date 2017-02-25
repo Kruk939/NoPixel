@@ -1,5 +1,6 @@
 params["_bankType"];
-                                                                                        //hint "Nie masz do tego dostępu!";
+if (true) exitWith { ["Błąd","Przelewy są aktualnie wyłączone!",[255,0,0,1],""] call Client_fnc_showNotification; };
+/*                                                                                        //hint "Nie masz do tego dostępu!";
 if(_bankType == 1) exitwith { ["Błąd","Nie masz do tego dostępu!",[255,0,0,1],""] call Client_fnc_showNotification; };
 
 _amount = parseNumber (ctrlText 1400);
@@ -22,4 +23,4 @@ _amount = _amount + _tax;
 } else {
                                                             //hint "Masz za mało pieniędzy!"; 
      ["Błąd","Masz za mało pieniędzy!",[255,0,0,1],""] call Client_fnc_showNotification;  
-};
+};*/
