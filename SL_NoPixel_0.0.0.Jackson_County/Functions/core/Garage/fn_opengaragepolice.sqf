@@ -67,12 +67,21 @@ if(myJob == "Cop") then {
 			"C_Boat_Civil_01_F",
 			"MELB_H6M"
 			];
+			if (client_dtu_actions >= 1) then {
+			_garageMore = [
+				"kif_m3_unmarked_bb",
+				"kif_m3_unmarked_br",
+				"kif_m3_unmarked_rr",
+				"kif_m3_unmarked_rb"
+			];
+			_garage = _garage + _garageMore;
+			};
 	//if(player getvariable "cop" > 7) then { _garage pushback "B_MRAP_01_hmg_F"; };
 };
 if(myJob == "EMS" || myJob == "Fire") then {
 	_garage = [
 				"C_hh60j_unarmed_F",
-				"VVV_dodge_charger_white",
+				"ivory_isf_medic_rr",
 				"NP_Jonzie_Ambulance1",
 				"NP_Jonzie_Ambulance2",
 				"vvv_fire_truck",

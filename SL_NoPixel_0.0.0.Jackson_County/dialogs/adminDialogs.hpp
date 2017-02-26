@@ -38,7 +38,7 @@ class adminMessage {
 		class textEdit : client_RscEdit 
 		{
 			idc = 5202;
-			text = "Wiadomość";
+			text = "";
 			sizeEx = 0.030;
 			x = 0.40; y = 0.30;
 			w = 0.25; h = 0.03;

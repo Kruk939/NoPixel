@@ -7,7 +7,10 @@
  		requiredVersion = 0.1;
 		requiredAddons[]= {
 			"A3_Data_F",
-			"plp_containers"
+			"plp_containers",
+			"ivory_data",
+			"ivory_isf",
+			"ivory_m3"
 		};
  	};
  };
@@ -273,5 +276,7 @@ class CfgVehicles {
 	};
 	#include "\kif_client\cfgVVV.hpp"
 	#include "\kif_client\cfgPoliceVehicles.hpp"
+	#include "\kif_client\cfgMedicVehicles.hpp"
 };
 #include "\kif_client\cfgSounds.hpp"
+#include "\kif_client\cfgIvoryTextures.hpp"

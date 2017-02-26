@@ -65,3 +65,41 @@ class red_taurus_10_p_sert;
 	//	displayName = "Ford Taurus Sheriff";
     //    hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\taurus\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	//};
+/*	
+BMW M3
+*/	
+class ivory_m3_base;
+	class kif_m3_unmarked_bb: ivory_m3_base
+	{
+		author="Ivory";
+		vehicleClass="IvoryExtra";
+        displayName = "BMW M3 Unmarked Black";
+		scope=2;
+		scopeCurator=2;
+		crew="C_man_1";
+		side=3;
+		faction="CIV_F";
+		enginePower=810;
+		peakTorque=1190;
+        emergencySiren = 1;
+		emergencyLightbarType = 1;
+		emergencyLightbarTop = 0;
+		emergencyLightbarFront = 1;
+		emergencyLightbarBack = 1;
+		emergencyCage = 1;
+		emergencyRambar = 0;
+		emergencyRadar = 1;
+		emergencyNumbers = 0;
+	};
+	class kif_m3_unmarked_br : kif_m3_unmarked_bb
+	{
+		displayName = "BMW M3 Unmarked Black Red";
+	};
+	class kif_m3_unmarked_rb : kif_m3_unmarked_bb
+	{
+		displayName = "BMW M3 Unmarked Red Black";
+	};
+	class kif_m3_unmarked_rr : kif_m3_unmarked_bb
+	{
+		displayName = "BMW M3 Unmarked Red Red";
+	};

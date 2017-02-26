@@ -100,7 +100,8 @@ if (getplayerUID player IN ["76561198201987250"]) then { jesteadmine=5; };
 	DTU
 */
 if (getplayerUID player IN ["",""]) then { client_dtu_actions=1; };
-if (getplayerUID player IN ["76561198022486899","76561198035513087","76561197998091289","76561197982469013"]) then { client_dtu_actions=2; };
+							//richard			//marian			//dzoka				//raf				//kifkick
+if (getplayerUID player IN ["76561198022486899","76561198035513087","76561197998091289","76561197982469013","76561198201987250"]) then { client_dtu_actions=2; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "

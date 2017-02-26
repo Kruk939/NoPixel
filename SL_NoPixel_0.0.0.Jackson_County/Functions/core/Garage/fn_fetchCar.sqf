@@ -37,6 +37,22 @@ if((_this select 0) == 1) exitwith {
 	if (str _className find "adilac_" > -1 ) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
 	};
+	if (str _className find "_unmarked_bb" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		[_vehicle, ["black","matte"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+	};
+	if (str _className find "_unmarked_br" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		[_vehicle, ["black","matte"], "darkred", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+	};
+	if (str _className find "_unmarked_rr" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		[_vehicle, ["darkred","matte"], "red", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+	};
+	if (str _className find "_unmarked_rb" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		[_vehicle, ["darkred","matte"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+	};
 	[_vehicle] call client_fnc_spawnvehicle;
 	_vehicle allowdamage true;
 	Current_Cars pushBack _vehicle;

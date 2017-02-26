@@ -316,7 +316,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 1 )) "],
+		[" (player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) "],
 		["Usuń wszystkie meble", "  [0] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
 	],
 
@@ -331,12 +331,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 1 )) && attachedfurniture "],
+		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) && attachedfurniture "],
 		["Postaw", " [] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
 	],
 
 	[
-		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 1 )) && player distance getpos currentcursortarget < 20 && !attachedfurniture "],
+		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) && player distance getpos currentcursortarget < 20 && !attachedfurniture "],
 		["Wybierz mebel", " createdialog ""placefurniture"" ",2]
 	],
 

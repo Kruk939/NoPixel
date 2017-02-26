@@ -12,6 +12,8 @@ wreckLimit = 10;
 wreckRemovalMaxTime = 600;
 wreckRemovalMinTime = 10;
 
+forceRotorLibSimulation = 1;
+
 class Header {
     gameType = RPG;
     minPlayers = 1;
@@ -557,6 +559,7 @@ class CfgFunctions
             class playAnim {};
             class setGuiColor {};
             class dumpMoney {};
+            class forceFirstPerson {};
 		};
         class Items
 		{
@@ -565,6 +568,11 @@ class CfgFunctions
             class itemNOS {};
             class itemGoPro {};
             class itemSpeedBomb {};
+		};
+        class Casino
+		{
+			file = "Functions\core\Casino";
+			class spinSlot {};
 		};
 	};
 };
