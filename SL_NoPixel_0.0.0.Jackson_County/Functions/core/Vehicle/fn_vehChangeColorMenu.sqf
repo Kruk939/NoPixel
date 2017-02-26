@@ -25,6 +25,7 @@ _information = spawnedVehicle getVariable ["information", 0];
 if(count _information == 0) exitWith { hint "Informations about my car is count 0 (1), contact admin!"; closeDialog 0; };
 if(isNull spawnedVehicle) exitWith { hint "My vehicle is null (1), contact admin!"; closeDialog 0; };
 vehChangeColorMenuLoaded = false;
+vahChangeColorMenuLoading = true;
 
 
 _color = _information select 2;
@@ -88,61 +89,64 @@ for "_i" from 1 to 9 do {
 };
 lbSetCurSel [1504, _selected];
 vehChangeColorMenuLoaded = true;
+vahChangeColorMenuLoading = false;
 
 if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 	client_fnc_vehChangeColorOnLbChange = {
 		if(!dialog) exitWith { hint "I can't see dialog (1),store your car and try relogin. If you done relogin and still get this error contact admin!"; closeDialog 0; };
-		if !(vehChangeColorMenuLoaded) exitWith {hint "I can't load color menu (1),store your car and try relogin. If you done relogin and still get this error contact admin!"; closeDialog 0; };
-		disableSerialization;
-		_display = findDisplay 70001;
-		_priceCtrl = _display displayCtrl 1001;
-		_colorsCtrl = _display displayCtrl 1501;
-		_finishCtrl = _display displayCtrl 1502;
-		_lightsCtrl = _display displayCtrl 1503;
-		_windowsCtrl = _display displayCtrl 1504;
-		_rimsCtrl = _display displayCtrl 1505;
-		_information = spawnedVehicle getVariable ["information", 0];
-		_license = _information select 0;
-		_color = _information select 2;
-		_finish = _information select 3;
-		_rims = _information select 4;
-		_windows = _information select 5;
-		_lights = _information select 6;
-		_price = 0;
-		_changedColor = false;
-		_index = lbCurSel (1501);
-		_status = lbData[1501, _index];
-		_selectedColor = call compile format["%1", _status];
-		if(_selectedColor != _color) then { _price = _price + 2000; _changedColor = true; };
-		_selectedColor = getText(configfile >> "CfgIvoryTextures" >> _selectedColor >> "texture");
-		
-		_index = lbCurSel (1505);
-		_status = lbData[1505, _index];
-		_selectedRims = call compile format["%1", _status];
-		if(_selectedRims != _rims) then { _price = _price + 1000; };
-		_selectedRims = getText(configfile >> "CfgIvoryTextures" >> _selectedRims >> "texture");
-		
-		_index = lbCurSel (1502);
-		_status = lbData[1502, _index];
-		_selectedFinish = call compile format["%1", _status];
-		if(_changedColor || (_finish != (_selectedFinish select 0))) then { _price = _price + (_selectedFinish select 1); };
-		_selectedFinish = _selectedFinish select 0;
-		_selectedFinish = getText(configfile >> "CfgIvoryMaterials" >> _selectedFinish >> "material");
-		
-		_index = lbCurSel (1503);
-		_selectedLights = parseNumber(lbData[1503, _index]);
-		if(_selectedLights != _lights) then { _price = _price + (_selectedLights * 100); };
-		
-		_index = lbCurSel (1504);
-		_selectedWindows = parseNumber(lbData[1504, _index]);
-		if(_selectedWindows != _windows) then { _price = _price + (_selectedWindows * 100); };
-		spawnedVehicle setObjectTexture	[0, _selectedColor];
-		spawnedVehicle setObjectMaterial [0, _selectedFinish];
-		spawnedVehicle setObjectTexture	[1, _selectedRims];
-		spawnedVehicle setObjectTexture [2,"#(argb,8,8,3)color(0,0,0," + str (_selectedWindows / 10) + ",ca)"];
-		spawnedVehicle setObjectTexture [3,"#(argb,8,8,3)color(0,0,0," + str (_selectedLights / 10) + ",ca)"];
-		_priceStr = format["Cena: $%1",_price];
-		_priceCtrl ctrlSetText _priceStr;
+		if(vahChangeColorMenuLoading) exitWith {hint "I can't load color menu (1),store your car and try relogin. If you done relogin and still get this error contact admin!"; closeDialog 0; };
+		if(vehChangeColorMenuLoaded) then {
+			disableSerialization;
+			_display = findDisplay 70001;
+			_priceCtrl = _display displayCtrl 1001;
+			_colorsCtrl = _display displayCtrl 1501;
+			_finishCtrl = _display displayCtrl 1502;
+			_lightsCtrl = _display displayCtrl 1503;
+			_windowsCtrl = _display displayCtrl 1504;
+			_rimsCtrl = _display displayCtrl 1505;
+			_information = spawnedVehicle getVariable ["information", 0];
+			_license = _information select 0;
+			_color = _information select 2;
+			_finish = _information select 3;
+			_rims = _information select 4;
+			_windows = _information select 5;
+			_lights = _information select 6;
+			_price = 0;
+			_changedColor = false;
+			_index = lbCurSel (1501);
+			_status = lbData[1501, _index];
+			_selectedColor = call compile format["%1", _status];
+			if(_selectedColor != _color) then { _price = _price + 2000; _changedColor = true; };
+			_selectedColor = getText(configfile >> "CfgIvoryTextures" >> _selectedColor >> "texture");
+			
+			_index = lbCurSel (1505);
+			_status = lbData[1505, _index];
+			_selectedRims = call compile format["%1", _status];
+			if(_selectedRims != _rims) then { _price = _price + 1000; };
+			_selectedRims = getText(configfile >> "CfgIvoryTextures" >> _selectedRims >> "texture");
+			
+			_index = lbCurSel (1502);
+			_status = lbData[1502, _index];
+			_selectedFinish = call compile format["%1", _status];
+			if(_changedColor || (_finish != (_selectedFinish select 0))) then { _price = _price + (_selectedFinish select 1); };
+			_selectedFinish = _selectedFinish select 0;
+			_selectedFinish = getText(configfile >> "CfgIvoryMaterials" >> _selectedFinish >> "material");
+			
+			_index = lbCurSel (1503);
+			_selectedLights = parseNumber(lbData[1503, _index]);
+			if(_selectedLights != _lights) then { _price = _price + (_selectedLights * 100); };
+			
+			_index = lbCurSel (1504);
+			_selectedWindows = parseNumber(lbData[1504, _index]);
+			if(_selectedWindows != _windows) then { _price = _price + (_selectedWindows * 100); };
+			spawnedVehicle setObjectTexture	[0, _selectedColor];
+			spawnedVehicle setObjectMaterial [0, _selectedFinish];
+			spawnedVehicle setObjectTexture	[1, _selectedRims];
+			spawnedVehicle setObjectTexture [2,"#(argb,8,8,3)color(0,0,0," + str (_selectedWindows / 10) + ",ca)"];
+			spawnedVehicle setObjectTexture [3,"#(argb,8,8,3)color(0,0,0," + str (_selectedLights / 10) + ",ca)"];
+			_priceStr = format["Cena: $%1",_price];
+			_priceCtrl ctrlSetText _priceStr;
+		};
 	};
 };
 if(isNil "client_fnc_vehChangeColorButtonAccept") then {
@@ -151,7 +155,8 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		if(!dialog) exitWith { hint "I can't see dialog (2),store your car and try relogin. If you done relogin and still get this error contact admin!"; closeDialog 0; };
 		if(isNull spawnedVehicle) exitWith { hint "My vehicle is null (2), contact admin!"; closeDialog 0; };
 		if(count _information == 0) exitWith { hint "Informations about my car is count 0 (2),store your car and try relogin. If you done relogin and still get this error contact admin!";	closeDialog 0; };
-		if !(vehChangeColorMenuLoaded) exitWith { hint "I can't load color menu (2). If you done relogin and still get this error contact admin!"; closeDialog 0; };
+		if !(vahChangeColorMenuLoading) exitWith { hint "I can't load color menu (2). If you done relogin and still get this error contact admin!"; closeDialog 0; };
+		if(vehChangeColorMenuLoaded) then {
 		_information = spawnedVehicle getVariable ["information", 0];
 		_license = _information select 0;
 		_color = _information select 2;
@@ -218,13 +223,13 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_information set [5,_selectedWindows];
 		_information set [6,_selectedLights];
 		
-		
-		
 		[format["Przemalowałeś pojazd za: $%1. Twój pojazd jest teraz w garażu.", _price], false] spawn domsg;
 		[_selectedColor, _selectedFinish, _selectedRims, _selectedLights, _selectedWindows, _license] remoteExec ["server_fnc_updateVehicleColor", 2];
 		
 		[spawnedVehicle] call client_fnc_storeCar;
 		spawnedVehicle = objNull;
 		vehChangeColorMenuLoaded = false;
+		vehChangeColorMenuLoading = nil;
+		};
 	};
 };
