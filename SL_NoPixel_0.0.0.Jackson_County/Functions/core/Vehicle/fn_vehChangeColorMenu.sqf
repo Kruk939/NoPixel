@@ -94,7 +94,7 @@ vahChangeColorMenuLoading = false;
 if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 	client_fnc_vehChangeColorOnLbChange = {
 		if(!dialog) exitWith { hint "I can't see dialog (1),store your car and try relogin. If you done relogin and still get this error contact admin!"; closeDialog 0; };
-		if(vahChangeColorMenuLoading) exitWith {hint "I can't load color menu (1),store your car and try relogin. If you done relogin and still get this error contact admin!"; closeDialog 0; };
+		if(vahChangeColorMenuLoading) exitWith {};
 		if(vehChangeColorMenuLoaded) then {
 			disableSerialization;
 			_display = findDisplay 70001;
