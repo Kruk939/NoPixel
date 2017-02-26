@@ -10,13 +10,9 @@
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
-* Panic button'y dla COP, EMS
 * Dodanie pracy kierowcy autobusu.
 * Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
-* Naprawić znikanie ubrań - przy syncu reload ubrań
 * Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
-* Skuwanie osób nieprzytomnych nie działa do końca (skuć da, lecz po odrodzeniu osoba nie jest skuta)
-* Ograniczenie rejestracji do 7 znaków (misja + wyeliminowanie większych tablic w bazie danych)
 * Zapisywanie przez strażaków na dispatcher
 
 
@@ -60,6 +56,12 @@
 * Malowanie pojazdów
 * Poprawić bank i napady na sklep
 * Przeszukiwanie sklepu / domu dla policji
+* Panic button'y dla COP, EMS
+* Ograniczenie rejestracji do 7 znaków (misja + wyeliminowanie większych tablic w bazie danych)
+* Skuwanie osób nieprzytomnych nie działa do końca (skuć da, lecz po odrodzeniu osoba nie jest skuta)
+* Naprawić znikanie ubrań - przy syncu reload ubrań
+* GoPro
+* Nitro
 
 
 <hr>
