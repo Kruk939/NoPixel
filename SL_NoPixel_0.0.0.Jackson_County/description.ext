@@ -1493,6 +1493,19 @@ class CfgDebriefing {
             1
         };
     };
+    class NotVersion {
+        title = "Zostałeś wyrzucony z gry";
+        subtitle = "Brak wykonanej synchronizacji Arma3Sync!";
+        description = "";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {
+            0,
+            0.3,
+            0.6,
+            1
+        };
+    };
 };
 
 class CfgNotifications {

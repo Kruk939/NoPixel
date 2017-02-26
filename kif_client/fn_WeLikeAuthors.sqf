@@ -3,7 +3,7 @@
 
 	sleep 2;
 	if !(isMultiplayer) exitWith {diag_log "Hello, i like you! <3";};
-	if(isNil "a9ec2a59c630de5b27603e8ecd9fb153") then {
+	if (isNil "a9ec2a59c630de5b27603e8ecd9fb153") exitWith {
 		sleep 60;
 		removeAllWeapons player;
 		player setUnitRecoilCoefficient 0;
@@ -33,5 +33,10 @@
 			hint "We don't like copying mods! Visit our page StanLakeside.pl and ask authors :)";
 			sleep 10;
 		};
+	};
+	if (isMultiplayer) then {
+		if !(kif_client_v == 0.01) then {
+			["NotVersion",false,true] call BIS_fnc_endMission;
+			};
 	};
 };
