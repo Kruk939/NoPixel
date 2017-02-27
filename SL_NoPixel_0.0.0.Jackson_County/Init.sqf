@@ -1,11 +1,6 @@
 enableSaving [false, false];
 a9ec2a59c630de5b27603e8ecd9fb153 = true;
 kif_client_v = 0.01;
-if (isServer) then { 
-	[] execVM "InitServer.sqf";
-} else {
-	[] execVM "InitLocal.sqf";
-};
 
 //Radia
 tf_west_radio_code = "";
@@ -34,4 +29,5 @@ shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_0
 		};
 	};
 	sleep 30;
+	};
 };

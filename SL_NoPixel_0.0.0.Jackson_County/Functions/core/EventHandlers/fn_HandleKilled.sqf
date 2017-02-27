@@ -7,7 +7,9 @@ disableSerialization;
 if(deadplayer) exitwith {};
 deadPlayer = true;
 
-if(vehicle player == player) then {
+[] spawn KK_fnc_forceRagdoll;
+
+/*if(vehicle player == player) then {
 	player playmove "deadstate";
 };
 
@@ -15,7 +17,7 @@ if(vehicle player != player) then {
 	[] spawn KK_fnc_forceRagdoll;
 	uisleep 3;
 	player playmove "KIA_commander_MRAP_03";
-};
+};*/
 
 im_dead = true;
 params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_length", 0, [0]], ["_headshot", 0, [0]]];
@@ -123,8 +125,8 @@ player setdamage 0;
 [] spawn {
 	while{true} do {
 		sleep 1;
-		if( vehicle player == player && animationstate player != "deadstate" ) then {  player playmove "deadstate"; };
-		if( vehicle player != player && animationstate player != "KIA_commander_MRAP_03" ) then { player action ["Eject", vehicle player]; player playmove "KIA_commander_MRAP_03"; };
+		//if( vehicle player == player && animationstate player != "deadstate" ) then {  player playmove "deadstate"; };
+		//if( vehicle player != player && animationstate player != "KIA_commander_MRAP_03" ) then { player action ["Eject", vehicle player]; player playmove "KIA_commander_MRAP_03"; };
 
 		player setOxygenRemaining 1;
 

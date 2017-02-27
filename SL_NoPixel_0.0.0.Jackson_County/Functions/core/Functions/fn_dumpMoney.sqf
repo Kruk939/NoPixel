@@ -16,6 +16,8 @@ _cashout = 0;
 
 [_cashout] call Client_fnc_addCash;
 
-//["Sukces",format["Sprzedałeś narkotyki za: $%1", _cashout],[0,255,0,1],""] call Client_fnc_showNotification;
+
+[player,objNull,7,format ["%1 wyprał %2", name player, _cashout],_cashout] remoteExec ["server_fnc_moneyLog", 2];
+["Sukces",format["Wyprałeś: $%1", _cashout],[0,255,0,1],""] call Client_fnc_showNotification;
 //[player,objNull,3,format ["%1 sprzedał NARKOTYKI w ilości %2 za %3 $", name player, _total, _cashout],_cashout, "NARKOTYKI", _total] remoteExec ["server_fnc_economyLog", 2];
 //hint format["Zarobiłeś $%1.",_cashout];

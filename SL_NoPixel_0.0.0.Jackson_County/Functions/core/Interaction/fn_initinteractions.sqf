@@ -784,10 +784,10 @@ NoPixel_InteractionMenuItems = [
 		["Zniszcz dowody", "[""Niszcze dowody"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
 	],
 
-	//[
-	//	["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
-	//	["Zapis strażacka centrala", "[player,""Fire Dispatch""] spawn client_fnc_jobstart;",4]
-	//],
+	[
+		["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
+		["Zapis medyczna centrala", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
+	],
 
 	[
 		[" myjob == ""Cop"" && !dispatch && (player getvariable ""cop"") > 0 "],
@@ -837,17 +837,17 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
-		["TECZKA 500K", "[""kif_500k"",0] spawn client_fnc_additem"]
+		["TECZKA 500K", "[1] spawn client_fnc_takeSuitcase"]
 	],
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
-		["TECZKA 100K", "[""kif_100k"",0] spawn client_fnc_additem"]
+		["TECZKA 100K", "[2] spawn client_fnc_takeSuitcase"]
 	],
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
-		["TECZKA 50K", "[""kif_50k"",0] spawn client_fnc_additem"]
+		["TECZKA 50K", "[3] spawn client_fnc_takeSuitcase"]
 	],
 	
 	[

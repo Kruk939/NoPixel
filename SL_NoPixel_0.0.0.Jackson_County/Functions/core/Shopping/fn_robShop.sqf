@@ -26,8 +26,8 @@ while{true} do {
 	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
 	if(_timeLeft == 0) exitwith {};
 	if(DeadPlayer) exitwith { _success = false; _error = "Dead Player"; };	
-	if(player distance2D _pos > 10) exitWith {_error = "Client Interrupted"; };
-	if(currentWeapon player == "") exitWith { _error = "Client Interrupted"; };
+	if(player distance2D _pos > 10) exitWith {_error = "Przerwane przez klienta"; };
+	if(currentWeapon player == "") exitWith { _error = "Przerwane przez klienta"; };
 };
 _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='1'>%2</t>",_task,_error];
 sleep 1;

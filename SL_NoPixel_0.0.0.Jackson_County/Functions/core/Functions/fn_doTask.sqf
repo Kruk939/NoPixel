@@ -41,10 +41,10 @@ while{true} do {
 	if(_timeLeft == 0) exitwith {};
 
 	if( !(_animation isEqualTo 0) && (animationstate player) != _animation) then { player playmove _animation; };
-	if((getposATL player) distance (getposATL _distanceCheck) > 6) exitwith { _success = false; _error = "Movement Error"; };
+	if((getposATL player) distance (getposATL _distanceCheck) > 6) exitwith { _success = false; _error = "Błąd pozycji"; };
 	if(!_success) exitwith {};		
-	if(ClientInterrupted) exitwith { _success = false; _error = "Client Interrupted"; player switchmove ""; };
-	if(DeadPlayer) exitwith { _success = false; _error = "Dead Player"; };	
+	if(ClientInterrupted) exitwith { _success = false; _error = "Przerwane przez klienta"; player switchmove ""; };
+	if(DeadPlayer) exitwith { _success = false; _error = "Martwy gracz"; };	
 
 };
 

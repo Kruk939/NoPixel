@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-02-10 12:26:00
+Date: 2017-02-26 22:07:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -34,7 +34,7 @@ CREATE TABLE `actionlog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5356 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=36331 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for adminlog
@@ -55,7 +55,7 @@ CREATE TABLE `adminlog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5249 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7254 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for coplog
@@ -76,7 +76,25 @@ CREATE TABLE `coplog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=655 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6967 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for craftlog
+-- ----------------------------
+DROP TABLE IF EXISTS `craftlog`;
+CREATE TABLE `craftlog` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `playerUID` varchar(50) NOT NULL,
+  `playerName` varchar(64) NOT NULL,
+  `playerCash` int(13) NOT NULL,
+  `playerBank` int(13) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `classname` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5321 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for deathlog
@@ -98,7 +116,7 @@ CREATE TABLE `deathlog` (
   `weapon` varchar(100) NOT NULL,
   `distance` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2048 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for economylog
@@ -121,14 +139,14 @@ CREATE TABLE `economylog` (
   `item` varchar(100) NOT NULL,
   `quantity` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4433 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=33507 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for garage
 -- ----------------------------
 DROP TABLE IF EXISTS `garage`;
 CREATE TABLE `garage` (
-  `license` varchar(32) NOT NULL,
+  `license` varchar(7) NOT NULL,
   `class` varchar(64) NOT NULL,
   `color` varchar(32) NOT NULL,
   `finish` varchar(32) NOT NULL,
@@ -137,6 +155,7 @@ CREATE TABLE `garage` (
   `statuses` text NOT NULL,
   `windows` int(1) NOT NULL DEFAULT '0',
   `lights` int(1) NOT NULL DEFAULT '0',
+  `fuel` varchar(15) NOT NULL DEFAULT '1',
   PRIMARY KEY (`license`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -155,7 +174,7 @@ CREATE TABLE `logs` (
   `pos` varchar(50) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=70555 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=126984 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for mafiaatm
@@ -208,7 +227,7 @@ CREATE TABLE `moneylog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1214 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13397 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for users
@@ -227,21 +246,21 @@ CREATE TABLE `users` (
   `phoneBackground` varchar(50) CHARACTER SET utf8 NOT NULL,
   `messages` varchar(5000) CHARACTER SET utf8 NOT NULL,
   `statuses` text CHARACTER SET utf8 NOT NULL,
-  `houselevel` enum('1','2','3') CHARACTER SET utf8 NOT NULL DEFAULT '1',
+  `houselevel` enum('1','2','3','4','5','6','7','8','9') CHARACTER SET utf8 NOT NULL DEFAULT '1',
   `housecontent` varchar(1500) CHARACTER SET utf8 NOT NULL,
   `shopcontent` varchar(1500) CHARACTER SET utf8 NOT NULL,
   `shopname` varchar(32) CHARACTER SET utf8 NOT NULL,
   `mafia` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `fire` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `legal` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '0',
-  `prison` tinyint(1) NOT NULL DEFAULT '0',
-  `prisonreason` varchar(32) CHARACTER SET utf8 NOT NULL,
+  `prisontime` varchar(10) NOT NULL DEFAULT '0',
+  `prisonreason` varchar(128) CHARACTER SET utf8 NOT NULL,
   `mayor` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `doughnuts` enum('0','1','2','3','4','5') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `connected` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   PRIMARY KEY (`bankaccount`),
   UNIQUE KEY `uid` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=651 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=784 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for vehiclelog
@@ -260,7 +279,7 @@ CREATE TABLE `vehiclelog` (
   `vehicleName` varchar(255) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3079 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26607 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for wanted
@@ -278,4 +297,4 @@ CREATE TABLE `wanted` (
   `active` enum('0','1') NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`caseID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;

@@ -489,6 +489,7 @@ class CfgFunctions
             class gag {};
             class gagged {};
             class ungag {};
+            class takeSuitcase {};
 		};
 		class Money
 		{

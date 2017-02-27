@@ -8,6 +8,13 @@ class CfgPatches {
 };
 class CfgFunctions {
     class Server {
+        class Init {
+            file = "NoPixel_Server\server\core\Init";
+            class init {};
+            class setupVariablesServer {};
+            class resetConnected {};
+            class cleanup {};
+        };
         class Save {
             file = "NoPixel_Server\server\core\Save";
             class autolock {};
@@ -36,12 +43,6 @@ class CfgFunctions {
             file = "NoPixel_Server\server\core\EventHandlers";
             class handleDisconnect {};
             class connected {};
-            class cleanup {};
-        };
-        class Init {
-            file = "NoPixel_Server\server\core\Init";
-            class setupVariablesServer {};
-            class resetConnected {};
             class cleanup {};
         };
         class Race {

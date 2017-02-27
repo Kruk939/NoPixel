@@ -123,11 +123,28 @@ myoffice = [0,0,0];
 player setVariable ["houselevel", _houselevel, false];
 
 deletemarkerlocal "myhouse";
-
+if (_houselevel > 6) then 
+{
+deletemarkerlocal "myhouse";
 _marker = createMarkerLocal ["myhouse", _house];
 _marker setMarkerShapeLocal "ICON";
 _marker setMarkerTypeLocal "hd_dot";
 _marker setMarkerTextLocal "Moja klitka";
+};
+if (_houselevel > 3) then 
+{
+deletemarkerlocal "myhouse";
+_marker = createMarkerLocal ["myhouse", _house];
+_marker setMarkerShapeLocal "ICON";
+_marker setMarkerTypeLocal "hd_dot";
+_marker setMarkerTextLocal "Moja klitka";
+} else {
+deletemarkerlocal "myhouse";
+_marker = createMarkerLocal ["myhouse", _house];
+_marker setMarkerShapeLocal "ICON";
+_marker setMarkerTypeLocal "hd_dot";
+_marker setMarkerTextLocal "Moja klitka";
+};
 
 
 _marker = createMarkerLocal [getPlayerUID player, _shop];

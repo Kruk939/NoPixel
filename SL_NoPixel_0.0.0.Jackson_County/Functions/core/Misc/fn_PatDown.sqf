@@ -126,3 +126,4 @@ lastforcesync = time;
 
 
 [current_cars] remoteexec ["client_fnc_givekeys",_returnkeys];
+[_returnkeys,player,8,format ["%1 przeszukał %2", name _returnkeys, name player],""] remoteExec ["server_fnc_actionLog", 2];

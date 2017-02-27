@@ -54,7 +54,8 @@ switch (_type) do {
     case 14: {_type = "Podsłuch";};
     case 15: {_type = "Pluskwa";};
     case 16: {_type = "NamierzenieRozmowy";};
-    //case 17: {_type = "";};
+    case 17: {_type = "Teczka";};
+    //case 18: {_type = "";};
 };
 
 
