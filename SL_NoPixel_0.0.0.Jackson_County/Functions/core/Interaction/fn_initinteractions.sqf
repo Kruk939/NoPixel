@@ -849,6 +849,11 @@ NoPixel_InteractionMenuItems = [
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
 		["TECZKA 50K", "[3] spawn client_fnc_takeSuitcase"]
 	],
+
+	[
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
+		["TECZKA 10K", "[4] spawn client_fnc_takeSuitcase"]
+	],
 	
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""cop"" > 10 "],

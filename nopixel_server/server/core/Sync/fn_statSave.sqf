@@ -66,7 +66,7 @@ if(isNil "_syncInfo") then { _syncinfo = 1; };
 //_exit = false;
 
 if(_syncInfo == 0 || _player in CurrentCop || _player in currentEMS || _player in currentFire) then {
-    _updatestr = format ["updatePlayerInfoNoGearNoShopNoHouse:%1:%2:%3:%4:%5:%6:%7", _cash, _bank, _position, _messages, _statuses, _houselevel, _uid]; 
+    _updatestr = format ["updatePlayerInfoNoGearNoShopNoHouse:%1:%2:%3:%4:%5:%6:%7", _cash, _bank, _position, _messages, _houselevel, _statuses, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 
 	//_updatestr = format ["updatePlayerInfoNoGear:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _cash, _bank, _position, _messages, _statuses, _housecontent, _shopcontent, _phonebackground, _houselevel, _uid];

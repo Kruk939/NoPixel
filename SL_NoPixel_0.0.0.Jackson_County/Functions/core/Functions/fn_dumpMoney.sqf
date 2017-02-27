@@ -2,6 +2,7 @@ if (myjob == "Cop" || myjob == "EMS" || myjob == "Fire") exitWith {};
 _class1 = ["kif_500k"];  
 _class2 = ["kif_100k"]; 
 _class3 = ["kif_50k"]; 
+_class4 = ["kif_10k"]; 
 _total = 0;
 _cashout = 0;
 
@@ -10,6 +11,7 @@ _cashout = 0;
 	if(_mag IN _class1) then { _cashout = _cashout + 500000; player removeMagazine _mag; _total = _total + 1; };
 	if(_mag IN _class2) then { _cashout = _cashout + 100000; player removeMagazine _mag; _total = _total + 1; };
 	if(_mag IN _class3) then { _cashout = _cashout + 50000; player removeMagazine _mag; _total = _total + 1; };
+	if(_mag IN _class4) then { _cashout = _cashout + 10000; player removeMagazine _mag; _total = _total + 1; };
 
 } forEach magazines player;
 

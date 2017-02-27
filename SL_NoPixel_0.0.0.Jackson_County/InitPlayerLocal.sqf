@@ -4,6 +4,8 @@ if(isnil "Np_ProfileVars") then {
 	profilenamespace setvariable ["Nopix_Profile",[[["Witamy na Silverlake ","Witamy", "Verizon"]],[["Witamy","Witamy na Silverlake", "Poczta"]]]];
 };
 
+cutText ["", "BLACK"];
+
 { _x setFuelCargo 0; } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_fs_feed_F"], 20000]);
 
 [] spawn client_fnc_setGuiColor;
@@ -13,16 +15,15 @@ waitUntil {sleep 0.05; !(isNil {player}) && player == player && alive player};
 [] call Client_fnc_miscVariables;
 player allowdamage false;
 [player] remoteexec ["Server_fnc_initStats",2];
-
 waituntil {(player getvariable "loaded") == 1};
 player allowdamage true;
 [] call client_fnc_initInteractions;
+[] spawn client_fnc_escInterupt;
 waituntil {(player getvariable "loaded") == 2};
 
 [] call client_fnc_karmaPhoneInit;
 
 player setVariable["loaded", nil, false];
-
 
 waitUntil {!isNull (findDisplay 46)};
 
@@ -42,7 +43,6 @@ player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed
 [Client_fnc_HudEffects, 3] execFSM "call.fsm";
 [Client_fnc_Survival, 300] execFSM "call.fsm";
 
-420 cutRsc ["playerHUD","PLAIN"];
 
 if(myhealth > 0.99) exitwith {
 	["Zabijanie gracza za battleloga.", true] spawn domsg;
@@ -54,14 +54,21 @@ if(uniform player == "" && female) then {
 	player forceadduniform "vvv_character_protibanador";
 };
 player setdamage myHealth;
+437 cutRsc ["HUDLoading","PLAIN"];
 
 client_seatwarn = false;
 client_seatbelt = false;
 [] spawn client_fnc_seatbelts;
 [] spawn client_fnc_gunholster;
-[] spawn client_fnc_escInterupt;
 [] spawn client_fnc_checkRadio;
 //[] spawn client_fnc_forceFirstPerson;
 
-["Klawisz Windows lub shift + 5 otwiera menu interakcji.", true] spawn domsg;
+sleep 5;
+420 cutRsc ["playerHUD","PLAIN"];
+cutText ["","BLACK IN", 10];
+
+sleep 2;
+437 cutfadeout 1;
+
 [] call client_fnc_initWelcome;
+["Klawisz Windows lub shift + 5 otwiera menu interakcji.", true] spawn domsg;

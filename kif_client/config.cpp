@@ -139,6 +139,16 @@ class CfgMagazines
 		allowedSlots[]={901,801,701};
 		mass=50;
 	};
+	class kif_10k: ItemCore
+	{
+		scope=2;
+		displayName="10 000$";
+		descriptionShort="I hope you know what to do with this!";
+		picture="\kif_client\textures\icons\items\suitcase.paa";
+		model="\A3\structures_f\items\luggage\Suitcase_F";
+		allowedSlots[]={901,801,701};
+		mass=50;
+	};
 	class kif_gopro: ItemCore
 	{
 		scope=2;
