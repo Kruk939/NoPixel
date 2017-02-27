@@ -26,8 +26,6 @@ player setVariable["loaded", nil, false];
 
 waitUntil {!isNull (findDisplay 46)};
 
-[] spawn client_fnc_checkVersion;
-
 _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 [_vehicle, ["black","matte"], "black", 1, 1] call client_fnc_IvoryInitVehicle;
 [_vehicle, "FuckYou", "ivory"] call client_fnc_numberPlate;
