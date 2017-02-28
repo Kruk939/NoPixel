@@ -684,7 +684,9 @@ _availableItems = [
 	"NP_PoliceBarrierS",
 	"CG_Spikes_Collapsed",
 	"CG_wheel",
-	"cg_atf_bandage_i"
+	"cg_atf_bandage_i",
+	"kif_gopro",
+	"kif_panicbutton"
 ];
     if (player getvariable ["cop", 0] == 10) then {
     _availableItemsTen = [
