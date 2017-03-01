@@ -53,6 +53,26 @@ if((_this select 0) == 1) exitwith {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
 		[_vehicle, ["darkred","matte"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
 	};
+	if (str _className find "_unmarked_mbb" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		[_vehicle, ["black","metallic"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+	};
+	if (str _className find "_unmarked_gb" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		[_vehicle, ["gray","matte"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+	};
+	if (str _className find "_unmarked_mgb" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		[_vehicle, ["gray","metallic"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+	};
+	if (str _className find "_unmarked_blb" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		[_vehicle, ["darkblue","matte"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+	};
+	if (str _className find "_unmarked_mblb" > -1) then {
+		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		[_vehicle, ["darkblue","metallic"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+	};
 	[_vehicle] call client_fnc_spawnvehicle;
 	_vehicle allowdamage true;
 	Current_Cars pushBack _vehicle;
