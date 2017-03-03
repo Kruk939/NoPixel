@@ -70,9 +70,14 @@ if(myJob == "Cop") then {
 			if (client_dtu_actions >= 1) then {
 			_garageMore = [
 				"kif_m3_unmarked_bb",
+				"kif_m3_unmarked_mbb",
 				"kif_m3_unmarked_br",
 				"kif_m3_unmarked_rr",
-				"kif_m3_unmarked_rb"
+				"kif_m3_unmarked_rb",
+				"kif_m3_unmarked_gb",
+				"kif_m3_unmarked_mgb",
+				"kif_m3_unmarked_blb",
+				"kif_m3_unmarked_mblb"
 			];
 			_garage = _garage + _garageMore;
 			};

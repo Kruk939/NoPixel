@@ -91,6 +91,10 @@ class ivory_m3_base;
 		emergencyRadar = 1;
 		emergencyNumbers = 0;
 	};
+	class kif_m3_unmarked_mbb : kif_m3_unmarked_bb
+	{
+		displayName = "BMW M3 Unmarked Black Metalic";
+	};
 	class kif_m3_unmarked_br : kif_m3_unmarked_bb
 	{
 		displayName = "BMW M3 Unmarked Black Red";
@@ -102,4 +106,20 @@ class ivory_m3_base;
 	class kif_m3_unmarked_rr : kif_m3_unmarked_bb
 	{
 		displayName = "BMW M3 Unmarked Red Red";
+	};
+	class kif_m3_unmarked_gb : kif_m3_unmarked_bb
+	{
+		displayName = "BMW M3 Unmarked Gray Black";
+	};
+	class kif_m3_unmarked_mgb : kif_m3_unmarked_bb
+	{
+		displayName = "BMW M3 Unmarked Gray Black Metalic";
+	};
+	class kif_m3_unmarked_blb : kif_m3_unmarked_bb
+	{
+		displayName = "BMW M3 Unmarked Blue Black";
+	};
+	class kif_m3_unmarked_mblb : kif_m3_unmarked_bb
+	{
+		displayName = "BMW M3 Unmarked Blue Black Metalic";
 	};
