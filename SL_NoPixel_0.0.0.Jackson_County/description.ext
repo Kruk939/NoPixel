@@ -12,7 +12,7 @@ wreckLimit = 10;
 wreckRemovalMaxTime = 600;
 wreckRemovalMinTime = 10;
 
-forceRotorLibSimulation = 1;
+forceRotorLibSimulation = 2;
 
 class Header {
     gameType = RPG;
