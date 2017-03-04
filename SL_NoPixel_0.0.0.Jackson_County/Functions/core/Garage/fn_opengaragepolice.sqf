@@ -96,12 +96,17 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"VVV_DodgeDurango_medic",
 				"ivory_suburban_ems",
 				"sl_impala_fire_fd",
+				"ivory_isf_fd",
 				"SL_MCP",
 				"A3PL_Engine",
 				"A3PL_Ladder",
 				"A3PL_Rescue",
 				"AM_Rescue",
-				"nopixel_guardacostas"
+				"nopixel_guardacostas",
+				"kif_orca_ems",
+				"kif_taru_ems",
+				"kif_mh9_ems",
+				"EC635_SAR"
 			];
 };
 if(myJob == "Mafia") then {

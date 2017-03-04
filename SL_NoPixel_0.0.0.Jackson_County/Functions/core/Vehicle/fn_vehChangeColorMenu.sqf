@@ -44,7 +44,7 @@ if (str _classname find "vory_gt500" > -1) then {
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_lfa" > -1) then {
-		_texturesIvory = ["kif_lfa_deuce","kif_lfa_monty","kif_lfa_nyan","kif_lfa_wb","kif_lfa_tokyos","kif_evox_anon","kif_lfa_spacegrey","kif_lfa_bibc","kif_lfa_speedhunters","kif_lfa_falken","kif_lfa_gready","kif_lfa_hotchkis","kif_lfa_falkentire","kif_lfa_rid","ivory_lfa_neon"];
+		_texturesIvory = ["kif_lfa_deuce","kif_lfa_monty","kif_lfa_nyan","kif_lfa_wb","kif_lfa_tokyos","kif_lfa_spacegrey","kif_lfa_bibc","kif_lfa_speedhunters","kif_lfa_falken","kif_lfa_gready","kif_lfa_hotchkis","kif_lfa_falkentire","kif_lfa_rid","ivory_lfa_neon"];
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_lp560" > -1) then {
@@ -80,7 +80,7 @@ if (str _classname find "vory_elise" > -1) then {
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_r34" > -1) then {
-		_texturesIvory = ["ivory_r34_2fast","ivory_r34_cobaltgray","ivory_r34_majesticpurple","ivory_r34_nitrored","ivory_evox_koyama","kif_evox_anon"];
+		_texturesIvory = ["ivory_r34_2fast","ivory_r34_cobaltgray","ivory_r34_majesticpurple","ivory_r34_nitrored","ivory_evox_koyama"];
 		_texturesBody = _texturesBody + _texturesIvory;
 };
 if (str _classname find "vory_ccx" > -1) then {

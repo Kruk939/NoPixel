@@ -10,7 +10,48 @@ _text = ctrlText 9993;
 
 _countPlate = count _text;
 if (_countPlate > 7) exitWith {["Błąd","Twoja tablica ma więcej niż 7 znaków!",[255,0,0,1],""] call Client_fnc_showNotification;};
-_string = _text splitString " " joinString ""; 
+_string = _text splitString " " joinString "";
+_string = _string splitString "#" joinString "";
+_string = _string splitString "*" joinString "";
+_string = _string splitString "-" joinString "";
+_string = _string splitString "." joinString "";
+_string = _string splitString "/" joinString "";
+_string = _string splitString "\" joinString "";
+_string = _string splitString ">" joinString "";
+_string = _string splitString "<" joinString "";
+_string = _string splitString "_" joinString "";
+_string = _string splitString "?" joinString "";
+_string = _string splitString "!" joinString "";
+_string = _string splitString "," joinString "";
+_string = _string splitString "@" joinString "";
+_string = _string splitString "$" joinString "";
+_string = _string splitString "%" joinString "";
+_string = _string splitString "^" joinString "";
+_string = _string splitString "&" joinString "";
+_string = _string splitString "(" joinString "";
+_string = _string splitString ")" joinString "";
+_string = _string splitString "=" joinString "";
+_string = _string splitString "+" joinString "";
+_string = _string splitString "[" joinString "";
+_string = _string splitString "]" joinString "";
+_string = _string splitString "{" joinString "";
+_string = _string splitString "}" joinString "";
+_string = _string splitString "'" joinString "";
+_string = _string splitString ";" joinString "";
+_string = _string splitString ":" joinString "";
+_string = _string splitString "€" joinString "";
+_string = _string splitString "ł" joinString "";
+_string = _string splitString "ó" joinString "";
+_string = _string splitString "ą" joinString "";
+_string = _string splitString "ć" joinString "";
+_string = _string splitString "ż" joinString "";
+_string = _string splitString "ź" joinString "";
+_string = _string splitString "ć" joinString "";
+_string = _string splitString "ę" joinString "";
+_string = _string splitString "ń" joinString "";
+_string = _string splitString "ś" joinString "";
+
+
 
 [2000] call Client_fnc_removebank;
 

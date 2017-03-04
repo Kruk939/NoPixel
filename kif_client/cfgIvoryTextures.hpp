@@ -6,6 +6,12 @@ class CfgIvoryTextures
 		texture="\kif_client\textures\vehicles\ivory\lexus_isf\rr.paa";
 		car = "isf";
 	};
+	class isf_fd
+	{
+		displayName="Fire Department";
+		texture="\kif_client\textures\vehicles\ivory\lexus_isf\fire_department.paa";
+		car = "isf";
+	};
 	/*
 	VEYRON
 	*/
