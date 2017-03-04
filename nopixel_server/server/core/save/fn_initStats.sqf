@@ -158,6 +158,11 @@ if (_booli) then {
 	_pia = tier3housing find _house;
 	tier3housing deleteAt _pia;
 	};
+	if(_houseLevel == 10) then {
+	_house = tier3housing call BIS_fnc_selectRandom;
+	_pia = tier3housing find _house;
+	tier3housing deleteAt _pia;
+	};
 
 	_shop = shops call BIS_fnc_selectRandom;
 	_pia = shops find _shop;

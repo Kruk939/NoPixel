@@ -38,6 +38,9 @@ _houselevel = _player getVariable "houselevel";
     if (_houseLevel == 9) then {
         tier3housing pushback _house;
     };
+     if (_houseLevel == 10) then {
+        tier3housing pushback _house;
+    };
 
 
 

@@ -255,6 +255,11 @@ if(_higherup) exitwith { player setpos _house};
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
 		player setpos _containerpos;
 	};
+	if(_houselevel == 10) then {
+		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];   
+		_containerpos = (_nobject select 0) getrelpos [15,0];  
+		player setpos _containerpos;
+	};
 
 
 };

@@ -52,6 +52,10 @@ if (_houselevel == 9) then {
     _holder = createVehicle["kif_storage_cargobox", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
 };
+if (_houselevel == 10) then {
+    _holder = createVehicle["kif_storage_cargobox10", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
+	["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
+};
 
 
 _playercontent = _player getVariable "housecontent";

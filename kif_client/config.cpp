@@ -284,6 +284,11 @@ class CfgVehicles {
 		transportFuel=3650;
 		maximumLoad=3650;
 	};
+	class kif_storage_cargobox10: kif_storage_cargobox
+	{
+		transportFuel=10000;
+		maximumLoad=10000;
+	};
 	#include "\kif_client\cfgVVV.hpp"
 	#include "\kif_client\cfgPoliceVehicles.hpp"
 	#include "\kif_client\cfgMedicVehicles.hpp"
