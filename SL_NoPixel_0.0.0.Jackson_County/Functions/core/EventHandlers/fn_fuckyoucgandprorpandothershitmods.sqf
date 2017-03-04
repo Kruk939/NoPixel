@@ -44,7 +44,7 @@ if (_item == "CG_MetalWire") then { [] spawn client_fnc_sendhook; closeDialog 0;
 
 if (_item == "CG_Lockpick") then { ["Wytrychuję",120,client_fnc_lockpick,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,"cg_sndimg\sounds\repair.ogg"] spawn client_fnc_dotask; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 
-if (_item == "cg_atf_bandage_i") then {  ["Leczę",5,client_fnc_dohealth,player,0,["Add",100],0] spawn client_fnc_dotask2;  [_item,0] spawn client_fnc_removeitem;  closeDialog 0; };
+if (_item == "cg_atf_bandage_i") then {  ["Leczę",15,client_fnc_dohealth,player,0,["Add",100],0] spawn client_fnc_dotask2;  [_item,0] spawn client_fnc_removeitem;  closeDialog 0; };
 
 if (_item == "CG_MethBag100") then { ["meth",18] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 

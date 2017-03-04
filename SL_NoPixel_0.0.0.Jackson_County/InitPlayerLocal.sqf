@@ -4,7 +4,6 @@ if(isnil "Np_ProfileVars") then {
 	profilenamespace setvariable ["Nopix_Profile",[[["Witamy na Silverlake ","Witamy", "Verizon"]],[["Witamy","Witamy na Silverlake", "Poczta"]]]];
 };
 
-cutText ["", "BLACK"];
 
 { _x setFuelCargo 0; } forEach (nearestObjects [[6728.31,5269.87,0.56609], ["Land_fs_feed_F"], 20000]);
 
@@ -15,6 +14,7 @@ waitUntil {sleep 0.05; !(isNil {player}) && player == player && alive player};
 [] call Client_fnc_miscVariables;
 player allowdamage false;
 [player] remoteexec ["Server_fnc_initStats",2];
+cutText ["", "BLACK"];
 waituntil {(player getvariable "loaded") == 1};
 player allowdamage true;
 [] call client_fnc_initInteractions;

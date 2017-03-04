@@ -129,7 +129,7 @@ deletemarkerlocal "myhouse";
 _marker = createMarkerLocal ["myhouse", _house];
 _marker setMarkerShapeLocal "ICON";
 _marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal "Moja klitka";
+_marker setMarkerTextLocal "Moja Willa";
 };
 if (_houselevel > 3) then 
 {
@@ -137,13 +137,13 @@ deletemarkerlocal "myhouse";
 _marker = createMarkerLocal ["myhouse", _house];
 _marker setMarkerShapeLocal "ICON";
 _marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal "Moja klitka";
+_marker setMarkerTextLocal "Mój Dom";
 } else {
 deletemarkerlocal "myhouse";
 _marker = createMarkerLocal ["myhouse", _house];
 _marker setMarkerShapeLocal "ICON";
 _marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal "Moja klitka";
+_marker setMarkerTextLocal "Moja Klitka";
 };
 
 

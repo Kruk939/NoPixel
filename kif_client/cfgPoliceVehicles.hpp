@@ -4,12 +4,20 @@ Chevrolet Suburban LTZ 2015
 class SuburbanPDUC_01;
     class kif_suburban_black : SuburbanPDUC_01
 	{
+		maxOmega = 650;
+		enginePower = 700;
+		peakTorque = 1000;
+		maxSpeed = 330;
 		displayName = "Chevrolet Suburban LTZ 2015 Slicktop Black";
 		hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\suburban\black.paa","","","","","","","","","","",""};
 	};
 class red_suburban_15_p_marked;
     class kif_suburban_black_marked : red_suburban_15_p_marked
 	{
+		maxOmega = 650;
+		enginePower = 700;
+		peakTorque = 1000;
+		maxSpeed = 330;
 		displayName = "Chevrolet Suburban LTZ 2015 Lightbar Black";
 		hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\suburban\black.paa","","","","","","","","","","",""};
 	};
@@ -19,6 +27,8 @@ Chevrolet Tahoe
 class TahoeCB_01;
     class kif_tahoe_police : TahoeCB_01
 	{
+		maxSpeed = 330;
+		enginePower = 550;
 		displayName = "Chevrolet Tahoe Police";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
@@ -43,6 +53,7 @@ Ford Mustang
 class kmc_Mustang_510;
     class kif_mustang_police : kmc_Mustang_510
 	{
+		enginePower = 1400;
 		displayName = "Ford Mustang Boss 302 Police";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\mustang\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
@@ -57,6 +68,9 @@ Ford Taurus
 class red_taurus_10_p_sert;
     class kif_taurus_police : red_taurus_10_p_sert
 	{
+		maxOmega = 550;
+		enginePower = 570;
+		peakTorque = 1000;
 		displayName = "Ford Taurus Police";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\taurus\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
@@ -81,6 +95,7 @@ class ivory_m3_base;
 		faction="CIV_F";
 		enginePower=810;
 		peakTorque=1190;
+		maxSpeed = 330;
         emergencySiren = 1;
 		emergencyLightbarType = 1;
 		emergencyLightbarTop = 0;

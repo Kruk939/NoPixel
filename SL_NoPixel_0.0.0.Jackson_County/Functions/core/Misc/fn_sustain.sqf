@@ -176,10 +176,8 @@ if(_type == "MafiaMoney") then {
 	
 };
 
-if((lastsync + 15) < time) then {
-	lastsync = time; 
 	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
-};
+	[_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
 
 
 // experience food drink battery poop health unhealthiness [playerinjuries], [licneses], sex, [4 drug effects], moneyowed

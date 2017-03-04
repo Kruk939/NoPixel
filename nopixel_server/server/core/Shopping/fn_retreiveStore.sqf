@@ -75,7 +75,7 @@ _count = _count + 1;
 } foreach _process;  
 }; 
  
-_time = time + 30;  
+_time = time + 60;  
 
 waitUntil { time > _time };  
  

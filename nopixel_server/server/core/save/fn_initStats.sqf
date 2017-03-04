@@ -4,7 +4,7 @@ _checkstr = format ["existPlayerInfo:%1", _uid];
 _check = [0, _checkstr] call ExternalS_fnc_ExtDBquery;
 _booli = (_check select 0) select 0;
 
-diag_log ["init stats %1", _uid];
+diag_log format["init stats %1 %2", _uid,_booli];
 
 
 if (_booli) then {
@@ -42,7 +42,7 @@ if (_booli) then {
 	_statuses = _res select 9;
 
 
-	if(isNil "_statuses") then { _statuses = [0,100,100,100,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0],0,[0,0,0,0,0],["nobody",0,"no reason","NO DATE"]]; };
+	if(isNil "_statuses") then { _statuses = [0,100,100,100,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0],2,[0,0,0,0,0],["nobody",0,"no reason","NO DATE"]]; };
 
 	_moneyOwed = (_statuses select 11) select 1;
 
@@ -61,6 +61,8 @@ if (_booli) then {
 	_prisontime = _res select 17;
 	_prisonreason = _res select 18;
 	_doughnuts = _res select 19;
+
+	_messages = [];
 
 	_player setvariable ["getunitloadout",_items,false];
 

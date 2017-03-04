@@ -31,6 +31,9 @@ class CfgFunctions {
             class statSave {};
             class syncMoney {};
             class PhoneBackgroundSync {};
+            class syncHouseLevel {};
+            class syncStatuses {};
+            class syncPosition {};
         };
         class Mafia {
             file = "NoPixel_Server\server\core\Mafia";
@@ -43,7 +46,6 @@ class CfgFunctions {
             file = "NoPixel_Server\server\core\EventHandlers";
             class handleDisconnect {};
             class connected {};
-            class cleanup {};
         };
         class Race {
             file = "NoPixel_Server\server\core\Race";
@@ -67,6 +69,7 @@ class CfgFunctions {
         class Shopping {
             file = "NoPixel_Server\server\core\Shopping";
             class retreiveStore {};
+            class retreiveStoreCop {};
             class retreiveStoreShopper {};
             class shopPurchase {};
             class storeUpdateName {};
@@ -89,6 +92,7 @@ class CfgFunctions {
         class Housing {
             file = "NoPixel_Server\server\core\Housing";
             class retreiveHouse {};
+            class retreiveHouseCop {};
         };
         class Logs {
             file = "NoPixel_Server\server\core\Logs";
@@ -99,7 +103,6 @@ class CfgFunctions {
             class deathLog {};
             class economyLog {};
             class adminLog {};
-            class connectionLog {};
             class craftLog {};
         };
         class Admin {
