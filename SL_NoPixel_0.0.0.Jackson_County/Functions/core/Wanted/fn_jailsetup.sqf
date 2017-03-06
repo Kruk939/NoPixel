@@ -27,10 +27,10 @@ while{ClientArrested} do {
 		_update = 0;
 		_time = secondsLeft / 60;
 		_time = round(_time);
-		[_time, _reason,player,false,getPlayerUID player] remoteExec ["server_fnc_jailsetup",2];
+		[_time, _reason,player,false] remoteExec ["server_fnc_jailsetup",2];
 	};
 };
-[0, _reason,player,false,getPlayerUID player] remoteExec ["server_fnc_jailsetup",2];
+[0, _reason,player,false] remoteExec ["server_fnc_jailsetup",2];
 ClientArrested = false;
 //when jail time ends normally
 if(!_escaped) then {

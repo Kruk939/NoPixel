@@ -216,7 +216,7 @@ doquickmsg = compileFinal
 	20 cutRsc [""RSC_DOMSG7"",""PLAIN""];
 	_POPUPCLASS7 = uiNameSpace getVariable [""RSC_DOMSG7"",displayNull];
 	_POPUP = _POPUPCLASS7 displayCtrl 13377;
-	_POPUP ctrlSetStructuredText parseText format[""<t color='#FFFFFF'><t size='0.75'>Status Update</t><br/> %1"",_message];
+	_POPUP ctrlSetStructuredText parseText format[""<t color='#FFFFFF'><t size='0.75'>Status</t><br/> %1"",_message];
 ";
 
 
@@ -231,7 +231,7 @@ domsg = {
 			_POPUPCLASS1 = uiNameSpace getVariable ["RSC_DOMSG1",displayNull];
 			message1_active = true;
 			_POPUP = _POPUPCLASS1 displayCtrl 13371;
-			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status Update</t><br/> %1",_message];
+			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status</t><br/> %1",_message];
 			sleep 8.5;
 			_blah = 20;
 			while{_blah > 0} do {
@@ -250,7 +250,7 @@ domsg = {
 			_POPUPCLASS2 = uiNameSpace getVariable ["RSC_DOMSG2",displayNull];
 			message2_active = true;
 			_POPUP = _POPUPCLASS2 displayCtrl 13372;
-			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status Update</t><br/> %1",_message];
+			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status</t><br/> %1",_message];
 			sleep 8.5;
 			_blah = 20;
 			while{_blah > 0} do {
@@ -269,7 +269,7 @@ domsg = {
 			_POPUPCLASS3 = uiNameSpace getVariable ["RSC_DOMSG3",displayNull];
 			message3_active = true;
 			_POPUP = _POPUPCLASS3 displayCtrl 13373;
-			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status Update</t><br/> %1",_message];
+			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status</t><br/> %1",_message];
 			sleep 8.5;
 			_blah = 20;
 			while{_blah > 0} do {
@@ -288,7 +288,7 @@ domsg = {
 			_POPUPCLASS4 = uiNameSpace getVariable ["RSC_DOMSG4",displayNull];
 			message4_active = true;
 			_POPUP = _POPUPCLASS4 displayCtrl 13374;
-			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status Update</t><br/> %1",_message];
+			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status</t><br/> %1",_message];
 			sleep 8.5;
 			_blah = 20;
 			while{_blah > 0} do {
@@ -307,7 +307,7 @@ domsg = {
 			_POPUPCLASS5 = uiNameSpace getVariable ["RSC_DOMSG5",displayNull];
 			message5_active = true;
 			_POPUP = _POPUPCLASS5 displayCtrl 13375;
-			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status Update</t><br/> %1",_message];
+			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status</t><br/> %1",_message];
 			sleep 8.5;
 			_blah = 20;
 			while{_blah > 0} do {
@@ -326,7 +326,7 @@ domsg = {
 			_POPUPCLASS6 = uiNameSpace getVariable ["RSC_DOMSG6",displayNull];
 			message6_active = true;
 			_POPUP = _POPUPCLASS6 displayCtrl 13376;
-			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status Update</t><br/> %1",_message];
+			_POPUP ctrlSetStructuredText parseText format["<t color='#FFFFFF'><t size='0.75'>Status</t><br/> %1",_message];
 			sleep 8.5;
 			_blah = 20;
 			while{_blah > 0} do {

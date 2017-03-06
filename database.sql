@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-02-26 22:07:06
+Date: 2017-03-06 20:29:21
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -34,7 +34,7 @@ CREATE TABLE `actionlog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=36331 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=50037 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for adminlog
@@ -55,7 +55,7 @@ CREATE TABLE `adminlog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7254 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7777 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for coplog
@@ -76,7 +76,7 @@ CREATE TABLE `coplog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6967 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9556 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for craftlog
@@ -94,7 +94,7 @@ CREATE TABLE `craftlog` (
   `classname` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5321 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5744 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for deathlog
@@ -116,7 +116,7 @@ CREATE TABLE `deathlog` (
   `weapon` varchar(100) NOT NULL,
   `distance` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2048 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2830 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for economylog
@@ -139,7 +139,7 @@ CREATE TABLE `economylog` (
   `item` varchar(100) NOT NULL,
   `quantity` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=33507 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=44638 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for garage
@@ -156,6 +156,7 @@ CREATE TABLE `garage` (
   `windows` int(1) NOT NULL DEFAULT '0',
   `lights` int(1) NOT NULL DEFAULT '0',
   `fuel` varchar(15) NOT NULL DEFAULT '1',
+  `damage` varchar(15) NOT NULL DEFAULT '0',
   PRIMARY KEY (`license`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -174,7 +175,7 @@ CREATE TABLE `logs` (
   `pos` varchar(50) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=126984 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=150118 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for mafiaatm
@@ -227,7 +228,7 @@ CREATE TABLE `moneylog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=13397 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17997 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for users
@@ -246,7 +247,7 @@ CREATE TABLE `users` (
   `phoneBackground` varchar(50) CHARACTER SET utf8 NOT NULL,
   `messages` varchar(5000) CHARACTER SET utf8 NOT NULL,
   `statuses` text CHARACTER SET utf8 NOT NULL,
-  `houselevel` enum('1','2','3','4','5','6','7','8','9') CHARACTER SET utf8 NOT NULL DEFAULT '1',
+  `houselevel` enum('1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '1',
   `housecontent` varchar(1500) CHARACTER SET utf8 NOT NULL,
   `shopcontent` varchar(1500) CHARACTER SET utf8 NOT NULL,
   `shopname` varchar(32) CHARACTER SET utf8 NOT NULL,
@@ -260,7 +261,7 @@ CREATE TABLE `users` (
   `connected` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   PRIMARY KEY (`bankaccount`),
   UNIQUE KEY `uid` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=784 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=849 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for vehiclelog
@@ -279,7 +280,7 @@ CREATE TABLE `vehiclelog` (
   `vehicleName` varchar(255) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=26607 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=36738 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for wanted
@@ -297,4 +298,4 @@ CREATE TABLE `wanted` (
   `active` enum('0','1') NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`caseID`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;

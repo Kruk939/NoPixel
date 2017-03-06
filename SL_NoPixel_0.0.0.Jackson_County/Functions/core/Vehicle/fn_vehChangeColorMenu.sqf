@@ -171,8 +171,9 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 			_lights = _information select 6;
 			_price = 0;
 			_changedColor = false;
-			_index = lbCurSel (1501);
-			_status = lbData[1501, _index];
+			//_index = lbCurSel (1501);
+			//_status = lbData[1501, _index];
+			_status = lbData[1501, (lbCurSel (1501))];
 			_selectedColor = call compile format["%1", _status];
 			if(_selectedColor != _color) then { _price = _price + 2000; _changedColor = true; };
 			//_selectedColor = getText(configfile >> "CfgIvoryTextures" >> _selectedColor >> "texture");
@@ -183,8 +184,8 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 			if(_selectedRims != _rims) then { _price = _price + 1000; };
 			//_selectedRims = getText(configfile >> "CfgIvoryTextures" >> _selectedRims >> "texture");
 			
-			_index = lbCurSel (1502);
-			_status = lbData[1502, _index];
+			//_index = lbCurSel (1502);
+			_status = lbData[1502, (lbCurSel (1502))];
 			_selectedFinish = call compile format["%1", _status];
 			if(_changedColor || (_finish != (_selectedFinish select 0))) then { _price = _price + (_selectedFinish select 1); };
 			_selectedFinish = _selectedFinish select 0;

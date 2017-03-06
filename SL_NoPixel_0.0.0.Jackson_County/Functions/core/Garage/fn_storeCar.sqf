@@ -9,14 +9,18 @@ _information = _ct getVariable "information";
 
 	if(!isnil "_information") then {
 	_license = _information select 0;
+		_fuel = fuel _ct;
+		_damage = damage _ct;
+
+		_information set [9,_fuel];
+		_information set [10,_damage];
 
 	_garage pushBack _information;
 
 	player setVariable ["garage", _garage, false];
 
 	[getPlayerUID player, "usedgarage", current_cars] remoteExec ["Server_fnc_setVariable",2];
-	_fuel = fuel _ct;
-	[0,_fuel,_license] remoteExec ["server_fnc_fuelVehicle", 2];
+	[_fuel,_damage,_license] remoteExec ["server_fnc_updateFuelDamage", 2];
 	uiSleep 0.5;
 	
 };

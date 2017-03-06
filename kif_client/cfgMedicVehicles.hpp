@@ -51,24 +51,6 @@ class O_Heli_Light_02_unarmed_F;
 		};
 	};
 /*	
-TARU
-*/	
-class O_Heli_Transport_04_medevac_F;
-	class kif_taru_ems: O_Heli_Transport_04_medevac_F
-	{
-		displayName="Mi-290 Taru (EMS)";
-		faction="CIV_F";
-		side=3;
-		hiddenSelectionsTextures[]=
-		{
-			"\kif_client\textures\vehicles\ems\helicopters\O_Heli_Transport_04_medevac_F_ems0.paa",
-			"\kif_client\textures\vehicles\ems\helicopters\O_Heli_Transport_04_medevac_F_ems1.paa",
-			"\kif_client\textures\vehicles\ems\helicopters\O_Heli_Transport_04_medevac_F_ems2.paa",
-			"\kif_client\textures\vehicles\ems\helicopters\O_Heli_Transport_04_medevac_F_ems3.paa"
-		};
-		
-	};
-/*	
 MH-9
 */
 class B_Heli_Light_01_F;

@@ -356,12 +356,6 @@ class CfgFunctions
 			class carshopbuy {};
 		};
 
-        class GarageFuel
-		{
-			file = "Functions\core\Garage\Fuel";
-			class setFuel {};
-		};
-
 		class Init
 		{
 			file = "Functions\core\Init";
@@ -561,6 +555,7 @@ class CfgFunctions
             class setGuiColor {};
             class dumpMoney {};
             class forceFirstPerson {};
+            class setFuel {};
 		};
         class Items
 		{
@@ -569,6 +564,7 @@ class CfgFunctions
             class itemNOS {};
             class itemGoPro {};
             class itemSpeedBomb {};
+            class itemFuel {};
 		};
         class Casino
 		{

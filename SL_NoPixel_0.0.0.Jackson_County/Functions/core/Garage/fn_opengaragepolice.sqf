@@ -41,6 +41,7 @@ if(myJob == "Cop") then {
 			"kif_tahoe_police_supervisor",
 			"kif_tahoe_sheriff",
 			"kif_tahoe_sheriff2",
+			"kif_tahoeuc_police",
 			"kif_mustang_police",
 			"kif_mustang_sheriff",
 			"kif_taurus_police",
@@ -104,7 +105,6 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"AM_Rescue",
 				"nopixel_guardacostas",
 				"kif_orca_ems",
-				"kif_taru_ems",
 				"kif_mh9_ems",
 				"EC635_SAR"
 			];

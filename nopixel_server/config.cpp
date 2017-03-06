@@ -128,8 +128,8 @@ class CfgFunctions {
             class lock {};
             class raceenter {};
 			class srvholmsg {};
-            class fuelVehicle {};
 			class updateVehicleColor {};
+            class updateFuelDamage {};
         };
         class Jobs {
             file = "NoPixel_Server\server\core\Jobs";

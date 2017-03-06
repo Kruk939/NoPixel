@@ -132,9 +132,12 @@ if (!isnull _holder) then {
 
     _updatestr = format["updateHouse:%1:%2", _playercontent, getPlayerUID _player];
     _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
-    //while !(_holder) do {
 
-    //};
+    _units = nearestObjects [_holder, ["Man"], 50];
+    {
+		[] remoteExec ["client_fnc_closedialogs",_x];
+	} foreach _units;
+    
     deleteVehicle _holder;
     _pia = activecrates find _uid;
     activecrates deleteAt _pia;

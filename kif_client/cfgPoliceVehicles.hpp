@@ -47,6 +47,14 @@ class TahoeCB_01;
 		displayName = "Chevrolet Tahoe Sheriff 2";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\sheriff2.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
+class TahoePDUC_01;
+	class kif_tahoeuc_police : TahoePDUC_01
+	{
+		maxSpeed = 330;
+		enginePower = 550;
+		displayName = "Chevrolet Tahoe Police UC";
+        hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(0,0,0,1.0,CO)","","","","","","","","","","","","","","","","","","","","","","",""};
+	};
 /*	
 Ford Mustang
 */	
@@ -68,8 +76,9 @@ Ford Taurus
 class red_taurus_10_p_sert;
     class kif_taurus_police : red_taurus_10_p_sert
 	{
+		maxSpeed = 330;
 		maxOmega = 550;
-		enginePower = 570;
+		enginePower = 630;
 		peakTorque = 1000;
 		displayName = "Ford Taurus Police";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\taurus\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};

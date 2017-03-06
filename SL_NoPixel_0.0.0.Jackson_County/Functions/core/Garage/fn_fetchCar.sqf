@@ -39,39 +39,39 @@ if((_this select 0) == 1) exitwith {
 	};
 	if (str _className find "_unmarked_bb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["black","matte"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, ["black","matte"], "black", 9, 9] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_br" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["black","matte"], "darkred", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, ["black","matte"], "darkred", 9, 9] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_rr" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["darkred","matte"], "red", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, ["darkred","matte"], "red", 9, 9] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_rb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["darkred","matte"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, ["darkred","matte"], "black", 9, 9] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_mbb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["black","metallic"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, ["black","metallic"], "black", 9, 9] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_gb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["gray","matte"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, ["gray","matte"], "black", 9, 9] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_mgb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["gray","metallic"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, ["gray","metallic"], "black", 9, 9] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_blb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["darkblue","matte"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, ["darkblue","matte"], "black", 9, 9] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_mblb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["darkblue","metallic"], "black", 9, 9] remoteExec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, ["darkblue","metallic"], "black", 9, 9] call client_fnc_IvoryInitVehicle;
 	};
 	[_vehicle] call client_fnc_spawnvehicle;
 	_vehicle allowdamage true;
@@ -87,6 +87,8 @@ _windowTint = _car select 5;
 _headlightTint = _car select 6;
 _status = _car select 7;
 _carowner = _car select 8;
+_fuel = _car select 9;
+_damage = _car select 10;
 
 
 closeDialog 0;
@@ -113,25 +115,35 @@ _vehicle setvariable ["information",_car,false];
 if (_vehicle isKindOf "Car") then {
 
 	if (str _className find "vory_" > -1) then {
-		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] remoteexec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		_vehicle setFuel _fuel;
+		_vehicle setDamage _damage;
 	};
 
 	if (str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 ) then {
-		[_vehicle, [_carColor,_carFinish]] remoteexec ["client_fnc_initVehicle",2];
+		[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
 		[_vehicle, _numberPlate, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
+		_vehicle setFuel _fuel;
+		_vehicle setDamage _damage;
 	};
 
 	if (str _className find "opixel_" > -1 ) then {
-		[_vehicle, [_carColor,_carFinish]] remoteexec ["client_fnc_initVehicle",2];
+		[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
+		_vehicle setFuel _fuel;
+		_vehicle setDamage _damage;
 	};
 	if (str _className find "vv_" > -1 ) then {
-		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] remoteexec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		_vehicle setFuel _fuel;
+		_vehicle setDamage _damage;
 	};
 	if (str _className find "adilac_" > -1 ) then {
-		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] remoteexec ["client_fnc_IvoryInitVehicle",2];
+		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
+		_vehicle setFuel _fuel;
+		_vehicle setDamage _damage;
 	};
 
 };
@@ -139,7 +151,7 @@ if (_vehicle isKindOf "Car") then {
 [_vehicle] call client_fnc_spawnvehicle;
 _vehicle allowdamage true;
 Current_Cars pushBack _vehicle;
-[1,_vehicle,_numberPlate,player] remoteExec ["server_fnc_fuelVehicle", 2];
+//[1,_vehicle,_vehicle,_numberPlate,player] remoteExec ["server_fnc_fuelVehicle", 2];
 
 [getPlayerUID player, "usedgarage", Current_Cars] remoteExec ["Server_fnc_setVariable",2];
 _vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");

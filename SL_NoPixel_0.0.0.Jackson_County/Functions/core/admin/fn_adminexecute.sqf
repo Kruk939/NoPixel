@@ -75,7 +75,11 @@ if(_statementsent == 11) then {
 };
 
 if(_statementsent == 12) then {
-hint "Function disabled";
+	_units = nearestObjects [player, ["Man"], 300];
+	{
+		[] remoteExec ["client_fnc_restrained",_x];
+	} foreach _units - [player];
+	[player,_target,32,format ["%1 skuł osoby w pobliżu 300m",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 13) then {

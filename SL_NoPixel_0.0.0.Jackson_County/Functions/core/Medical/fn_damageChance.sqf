@@ -14,21 +14,18 @@ if(_currentHitLocation IN _injuryArray) then {
 	_myInjuries set [_currentHitNumber, _injuryLevel];
 
 	if(_currentHitLocation == "Body") then {
-		_chance = round (random 50);
-		if(_chance < 3) then {
+		_chance = round (random 40);
+		if(_chance < 7) then {
 			_organDamage = round (random 4);
 			_myInjuries set [9, _organDamage];
 		};
 	};
 
-	_chance = round (random 1000);
-	if(_chance < 2) then {
+	_chance = round (random 500);
+	if(_chance < 5) then {
 		_disease = round (random 4);
 		_myInjuries set [10, _disease];
 	};
-
-
-
 
 	if(_currentHitLocation IN ["Head","face_hub","neck"] && _source != player) then {
 		["Remove",1,_source,1] spawn Client_Fnc_DoHealth;
@@ -48,9 +45,6 @@ if(_currentHitLocation IN _injuryArray) then {
 	if(myUpdate) then {
 		[] spawn client_fnc_doInjuriesUpdate;
 	};
-
-
-
 };
 
 

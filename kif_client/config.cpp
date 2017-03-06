@@ -109,6 +109,16 @@ class CfgMagazines
 		allowedSlots[]={901,801,701};
 		mass=15;
 	};
+	class kif_Fuel: ItemCore
+	{
+		scope=2;
+		displayName="Carnister of Fuel";
+		descriptionShort="FUEL FUEL FUEL!";
+		picture="\kif_client\textures\icons\items\container.paa";
+		model="\A3\structures_f\Items\Vessels\CanisterPlastic_F";
+		allowedSlots[]={701};
+		mass=130;
+	};
 	class kif_500k: ItemCore
 	{
 		scope=2;

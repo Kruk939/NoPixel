@@ -30,10 +30,8 @@ _myStatuses = player getvariable "statuses";
 _myStatuses set [5, myHealth]; 
 player setVariable ["statuses",_mystatuses,false];
 
-if((lastsync + 120) < time || myhealth > 0.99) then {
-	lastsync = time; 
-	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
-};
+[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
+[_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
 
 if(myHealth > 0.99) exitwith { 
 	if(Myhealth > 1.8) then { myHealth = 1.8; };
