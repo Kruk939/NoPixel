@@ -130,6 +130,7 @@ class CfgFunctions {
 			class srvholmsg {};
 			class updateVehicleColor {};
             class updateFuelDamage {};
+            class removeVehiclesDamage {};
         };
         class Jobs {
             file = "NoPixel_Server\server\core\Jobs";

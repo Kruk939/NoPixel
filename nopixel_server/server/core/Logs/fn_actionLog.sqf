@@ -57,7 +57,8 @@ switch (_type) do {
     case 17: {_type = "OkradniecieZKasyFail";};
     case 18: {_type = "Wytrych";};
     case 19: {_type = "RabunekSklepu";};
-    //case 20: {_type = "";};
+    case 20: {_type = "WynająłBiuro";};
+    //case 21: {_type = "";};
 };
 
 
