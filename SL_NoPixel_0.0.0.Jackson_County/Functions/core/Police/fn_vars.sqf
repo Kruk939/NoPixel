@@ -524,9 +524,9 @@ _availableVests = [
             "TAC_V_tacv1_P",
             "EF_CTV1",
             "TAC_HGB_B",
-            "TAC_V_Sheriff_BA_TB4",
-            "TRYK_V_ArmorVest_Delta",
-            "TRYK_V_ArmorVest_Delta2"
+            "TAC_V_Sheriff_BA_TB4"
+            //"TRYK_V_ArmorVest_Delta",
+            //"TRYK_V_ArmorVest_Delta2"
         ];
     _availableVests = _availableVests + _availableVestsFive;
     };
