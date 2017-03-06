@@ -23,8 +23,8 @@ _texturesBody = _textures;
 _finishes = [["Glossy",250], ["Metallic",500], ["Matte",2500], ["Chrome",5000]];
 
 _information = spawnedVehicle getVariable ["information", 0];
-if((count _information) == 0) exitWith { hint "Informations about my car is count 0 (1), contact admin!"; closeDialog 0; };
-if(isNull spawnedVehicle) exitWith { hint "My vehicle is null (1), contact admin!"; closeDialog 0; };
+if((count _information) == 0) exitWith { hint "Informations about my car is count 0 (1), maybe spawned vehicle?"; closeDialog 0; };
+if(isNull spawnedVehicle) exitWith { hint "My vehicle is null (1), i'm not looking on car?"; closeDialog 0; };
 _classname = typeOf spawnedvehicle;
 
 if (str _classname find "vory_" > -1) then {
@@ -203,11 +203,21 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 			spawnedVehicle setObjectTexture	[1, _selectedRims];
 			spawnedVehicle setObjectTexture [2,"#(argb,8,8,3)color(0,0,0," + str (_selectedWindows / 10) + ",ca)"];
 			spawnedVehicle setObjectTexture [3,"#(argb,8,8,3)color(0,0,0," + str (_selectedLights / 10) + ",ca)"];*/
-			if (str _classname find "vory_" > -1 || str _className find "vv_" > -1 || str _className find "adilac_" > -1) then {
+			if (str _classname find "vory_" > -1 || str _className find "adilac_" > -1) then {
 				[spawnedVehicle, [_selectedColor,_selectedFinish], _selectedRims, _selectedWindows, _selectedLights] call client_fnc_IvoryInitVehicle;
 			};
 			if (str _classname find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1) then {
 				[spawnedVehicle, [_selectedColor,_selectedFinish]] remoteexec ["client_fnc_initVehicle",2];
+			};
+			if (str _classname find "vv_" > -1) then {
+				_selectedColor = getText(configfile >> "CfgIvoryTextures" >> _selectedColor >> "texture");
+				spawnedVehicle setObjectTexture	[0, _selectedColor];
+				_selectedFinish = getText(configfile >> "CfgIvoryMaterials" >> _selectedFinish >> "material");
+				spawnedVehicle setObjectMaterial [0, _selectedFinish];
+				_selectedRims = getText(configfile >> "CfgIvoryTextures" >> _selectedRims >> "texture");
+				spawnedVehicle setObjectTexture	[1, _selectedRims];
+				spawnedVehicle setObjectTexture [2,"#(argb,8,8,3)color(0,0,0," + str (_selectedWindows / 10) + ",ca)"];
+				spawnedVehicle setObjectTexture [3,"#(argb,8,8,3)color(0,0,0," + str (_selectedLights / 10) + ",ca)"];
 			};
 			_priceStr = format["Cena: $%1",_price];
 			_priceCtrl ctrlSetText _priceStr;
@@ -216,8 +226,8 @@ if(isNil "client_fnc_vehChangeColorOnLbChange") then {
 if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 	client_fnc_vehChangeColorButtonAccept = {
 		_information = spawnedVehicle getVariable ["information", 0];
-		if(isNull spawnedVehicle) exitWith { hint "My vehicle is null (2), contact admin!"; closeDialog 0; };
-		if((count _information) == 0) exitWith { hint "Informations about my car is count 0 (2),store your car and try relogin. If you done relogin and still get this error contact admin!";	closeDialog 0; };
+		if(isNull spawnedVehicle) exitWith { hint "My vehicle is null (2), i'm not looking on car?"; closeDialog 0; };
+		if((count _information) == 0) exitWith { hint "Informations about my car is count 0 (2), maybe spawned vehicle?";	closeDialog 0; };
 		_classname = typeOf spawnedvehicle;
 		_information = spawnedVehicle getVariable ["information", 0];
 		_license = _information select 0;
@@ -272,11 +282,11 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 			};
 		};
 
-		if (isNil "_selectedColor") exitWith {hint "Selected color is nil, contanct admin/developer! Tell about car and selected options!"; closeDialog 0; };
-		if (isNil "_selectedFinish") exitWith {hint "Selected finish is nil, contanct admin/developer! Tell about car and selected options!"; closeDialog 0; };
-		if (isNil "_selectedRims") exitWith {hint "Selected rims is nil, contanct admin/developer! Tell about car and selected options!"; closeDialog 0; };
-		if (isNil "_selectedWindows") exitWith {hint "Selected windows is nil, contanct admin/developer! Tell about car and selected options!"; closeDialog 0; };
-		if (isNil "_selectedLights") exitWith {hint "Selected lights is nil, contanct admin/developer! Tell about car and selected options!"; closeDialog 0; };
+		if (isNil "_selectedColor") exitWith {hint "Selected color is nil, maybe not selected options?"; closeDialog 0; };
+		if (isNil "_selectedFinish") exitWith {hint "Selected finish is nil, maybe not selected options?"; closeDialog 0; };
+		if (isNil "_selectedRims") exitWith {hint "Selected rims is nil, maybe not selected options?"; closeDialog 0; };
+		if (isNil "_selectedWindows") exitWith {hint "Selected windows is nil, maybe not selected options?"; closeDialog 0; };
+		if (isNil "_selectedLights") exitWith {hint "Selected lights is nil, maybe not selected options?"; closeDialog 0; };
 
 		[_price] call client_fnc_removeCash;
 		
