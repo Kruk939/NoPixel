@@ -92,10 +92,10 @@ adminInteractions = 0;
 if (getplayerUID player IN ["76561198082441969","76561198131854921"]) then { jesteadmine=2; };
 							//raf				//sid				//dzoka				//teddy				//arthur
 if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998091289","76561198150573190","76561198028980508"]) then { jesteadmine=3; };
-							//katekarin			//dorian
-if (getplayerUID player IN ["76561198041834190","76561198253273755"]) then { jesteadmine=4; };
-							//kifkick
-if (getplayerUID player IN ["76561198201987250"]) then { jesteadmine=5; };
+							//katekarin
+if (getplayerUID player IN ["76561198041834190"]) then { jesteadmine=4; };
+							//kifkick			//dorian
+if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { jesteadmine=5; };
 /*
 	DTU
 */
