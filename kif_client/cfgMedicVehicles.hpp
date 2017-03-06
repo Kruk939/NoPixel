@@ -1,4 +1,12 @@
 /*	
+TAHOE COAST GUARD
+*/	
+	class kif_tahoe_coastguard : kif_tahoe_police
+	{
+		displayName = "Chevrolet Tahoe Coast Guard";
+        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\coastguard.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	};
+/*	
 LEXUS IS-F
 */	
 class ivory_isf_base;

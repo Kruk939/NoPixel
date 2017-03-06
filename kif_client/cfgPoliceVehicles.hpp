@@ -8,6 +8,7 @@ class SuburbanPDUC_01;
 		enginePower = 700;
 		peakTorque = 1000;
 		maxSpeed = 330;
+		brakeIdleSpeed = 1.3;
 		displayName = "Chevrolet Suburban LTZ 2015 Slicktop Black";
 		hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\suburban\black.paa","","","","","","","","","","",""};
 	};
@@ -18,6 +19,7 @@ class red_suburban_15_p_marked;
 		enginePower = 700;
 		peakTorque = 1000;
 		maxSpeed = 330;
+		brakeIdleSpeed = 1.3;
 		displayName = "Chevrolet Suburban LTZ 2015 Lightbar Black";
 		hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\suburban\black.paa","","","","","","","","","","",""};
 	};
@@ -88,6 +90,25 @@ class red_taurus_10_p_sert;
 	//	displayName = "Ford Taurus Sheriff";
     //    hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\taurus\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	//};
+/*	
+Lamborghini Reventon
+*/
+class ivory_rev_marked;
+	class kif_rev_marked: ivory_rev_marked
+	{
+		maxOmega = 1100;
+		enginePower = 1500;
+		peakTorque = 1300;
+		maxSpeed = 450;
+	};
+class ivory_rev_unmarked;
+	class kif_rev_unmarked: ivory_rev_unmarked
+	{
+		maxOmega = 1100;
+		enginePower = 1500;
+		peakTorque = 1300;
+		maxSpeed = 450;
+	};
 /*	
 BMW M3
 */	
