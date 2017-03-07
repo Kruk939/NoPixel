@@ -361,6 +361,8 @@ _availableUniforms = [
               "TRYK_U_B_PCUGs_gry_R",
               "TRYK_U_B_PCUGs_OD_R",
               "TRYK_U_B_wh_blk_Rollup_CombatUniform",
+	      "TRYK_U_denim_hood_nc",
+	      "TRYK_U_denim_hood_mc",
               "TRYK_shirts_DENIM_BK",
               "TRYK_shirts_DENIM_BL",
               "TRYK_shirts_DENIM_BWH",
@@ -368,6 +370,8 @@ _availableUniforms = [
               "TRYK_shirts_DENIM_RED2",
               "TRYK_shirts_DENIM_WHB",
               "TRYK_shirts_DENIM_ylb",
+	      "TRYK_U_denim_jersey_blk",
+	      
               "TRYK_U_denim_hood_blk",
               "TRYK_U_taki_G_BLK",
               "TRYK_U_taki_G_COY",
@@ -501,14 +505,18 @@ _availableUniforms = [
 _availableVests = [
     "V_RebreatherB"
 ];
-    if (player getvariable ["cop", 0] > 3) then {
-        _availableVestsThree = [
+    if (player getvariable ["cop", 0] > 2) then {
+        _availableVestsTwo = [
             "EF_BS",
             "EF_BLT_M1",
             "EF_BLT_F1",
-            "EF_BLT_M1B"
+            "EF_BLT_M1B",
+	    "TAC_V_tacv1LC_P",
+	    "TAC_V_Sheriff_BA_TB7",
+	    "TAC_V_Sheriff_BA_TB3",
+	    "EF_GSG9_2"
         ];
-    _availableVests = _availableVests + _availableVestsThree;
+    _availableVests = _availableVests + _availableVestsTwo;
     };
 
     if (player getvariable ["cop", 0] > 5) then {
@@ -577,7 +585,9 @@ _availableMagazine = [
 	"CUP_8Rnd_B_Beneli_74Pellets",
 	"RH_7Rnd_50_AE",
 	"16Rnd_9x21_Mag",
-	"sab_wwiplanes_6rnd_mauser_mag"
+	"sab_wwiplanes_6rnd_mauser_mag",
+	"RH_18Rnd_9x19_VP",
+	"CUP_6Rnd_45ACP_M"
 ];
 
  
@@ -594,6 +604,13 @@ _availableWeapon = [
 	"RH_g17",
 	"RH_g19"
 ];
+    if (player getvariable ["cop", 0] > 3) then {
+		_availableWeaponThree = [
+        "RH_vp70",
+	"CUP_hgun_TaurusTracker455"
+     ];
+     _availableWeapon = _availableWeapon + _availableWeaponThree;
+    };
 
     if (player getvariable ["cop", 0] > 4) then {
 		_availableWeaponFour = [
@@ -671,7 +688,8 @@ _availableAttachments = [
 	"RH_6Rnd_454_Mag",
 	"RH_demz",
 	"optic_Yorris",
-	"RH_docter"
+	"RH_docter",
+	"RH_vp70stock"
 ];
 
 _availableItems = [
@@ -696,8 +714,8 @@ _availableItems = [
     if (player getvariable ["cop", 0] == 10) then {
     _availableItemsTen = [
         "kif_500k",
-	    "kif_100k",
-	    "kif_50k"
+	"kif_100k",
+	"kif_50k"
     ];
      _availableItems = _availableItems + _availableItemsTen;
     };
