@@ -17,7 +17,7 @@ private["_ui","_units"];
 500 cutText["","PLAIN"];
 if(visibleMap OR {dialog}) exitWith {
 };
-scale = 0.55;
+scale = 0.25;
 _ui = uiNamespace getVariable ["client_HUD_nameTags",displayNull];
 if(isNull _ui) then {
 	500 cutRsc["client_HUD_nameTags","PLAIN"];
@@ -36,7 +36,7 @@ if(isNull _ui) then {
 	
 	_isAdmin = _x getVariable ["st_hide", false];
 	
-	if(count _sPos > 1 && isPlayer _x && _distance < 14 && !adminESP && _x != player && vehicle player == player && currentweapon player == "" && !_isAdmin) then {
+	if(count _sPos > 1 && isPlayer _x && _distance < 2 && !adminESP && _x != player && vehicle player == player && currentweapon player == "" && !_isAdmin) then {
 		if(_x isKindOf "Man") then {
 			_text = format["<t color='#FFFFFF' font='puristaMedium'>%1</t>",_name];
 		} else {
