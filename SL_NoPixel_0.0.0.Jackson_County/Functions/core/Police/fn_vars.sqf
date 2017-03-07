@@ -586,7 +586,8 @@ _availableMagazine = [
 	"RH_7Rnd_50_AE",
 	"16Rnd_9x21_Mag",
 	"sab_wwiplanes_6rnd_mauser_mag",
-	"RH_18Rnd_9x19_VP"
+	"RH_18Rnd_9x19_VP",
+	"CUP_6Rnd_45ACP_M"
 ];
 
  
@@ -688,8 +689,7 @@ _availableAttachments = [
 	"RH_demz",
 	"optic_Yorris",
 	"RH_docter",
-	"RH_vp70stock",
-	"CUP_6Rnd_45ACP_M"
+	"RH_vp70stock"
 ];
 
 _availableItems = [
