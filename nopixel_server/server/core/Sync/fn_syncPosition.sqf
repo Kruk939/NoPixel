@@ -9,7 +9,7 @@
 	Return: nothing
 */
 params ["_position","_uid"];
-if(isNil "_position") exitwith { diag_log "Error in: SyncHouseLevel: statuses is nil"; };
-if (isNil "_uid") exitWith {diag_log "Error in: SyncHouseLevel: uid is nil!";};
+if(isNil "_position") exitwith { diag_log "Error in: SyncPosition: position is nil"; };
+if (isNil "_uid") exitWith {diag_log "Error in: SyncPosition: uid is nil!";};
 _updatestr = format ["updatePlayerPosition:%1:%2", _position, _uid];
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;

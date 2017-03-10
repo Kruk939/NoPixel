@@ -154,14 +154,14 @@ NoPixel_InteractionMenuItems = [
 	[
 		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Mafia"" && player getVariable [""Mafia"",0] > 5 "],
 		//[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && (myJob == ""Mafia"" || (myJob == ""Cop"" && player getvariable ""cop"" > 7 )) "],
-		["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[CurrentCursorTarget,player],"""",0] spawn client_fnc_dotask ",1]
-		//["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTracking; ",1]
+		//["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn client_fnc_dotask ",1]
+		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTracking; ",1]
 	],
 
 	[
 		[" myJob == ""cop"" &&  client_dtu_actions >= 1"],
-		["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[CurrentCursorTarget,player],"""",0] spawn client_fnc_dotask ",1]
-		//["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTracking; ",1]
+		//["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn client_fnc_dotask ",1]
+		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTracking; ",1]
 	],
 	
 	[
@@ -836,22 +836,22 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed == 2 "],
 		["TECZKA 500K", "[1] spawn client_fnc_takeSuitcase"]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 100K", "[2] spawn client_fnc_takeSuitcase"]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 50K", "[3] spawn client_fnc_takeSuitcase"]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" >= 9 "],
+		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 10K", "[4] spawn client_fnc_takeSuitcase"]
 	],
 	

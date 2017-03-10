@@ -58,7 +58,7 @@ switch (_type) do {
     case 1: { shopholder addWeaponCargoGlobal [_item,_quantity]; };
     case 2: { shopholder addMagazineCargoGlobal [_item,_quantity]; };
     case 3: { shopholder addItemCargoGlobal [_item,_quantity]; };
-    case 4: { shopholder addBackpackCargoGlobal [_item,_quantity]; };   
+    case 4: { _backpackitems = backpackItems player; removeBackpack player; player addBackpack _item; {player addItemToBackpack _x} foreach _backpackitems;};   
 };
 
 if(_typebuy == "fish") then {

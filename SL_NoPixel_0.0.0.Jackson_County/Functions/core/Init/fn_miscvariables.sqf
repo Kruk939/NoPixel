@@ -85,6 +85,7 @@ paycheck = 0;
 //admins
 jesteadmine = 0;
 client_dtu_actions = 0;
+teczka_allowed=0;
 //if (getplayerUID player IN [""]) then { jesteadmine=1; };
 weedPlantArray = [];
 adminInteractions = 0;
@@ -103,6 +104,14 @@ if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { jes
 if (getplayerUID player IN ["76561198007690584",""]) then { client_dtu_actions=1; };
 							//rudolf	   		//richard			//marian			//dzoka				//raf				//kifkick
 if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087","76561197998091289","76561197982469013","76561198201987250"]) then { client_dtu_actions=2; };
+
+/*
+	TECZKA ALLOWED
+*/
+							//rudolf	   		//richard			//marian
+if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087"]) then { teczka_allowed=1; };
+							//dzoka				//raf				//kifkick			//dorian
+if (getplayerUID player IN ["76561197998091289","76561197982469013","76561198201987250","76561198253273755"]) then { teczka_allowed=2; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "
