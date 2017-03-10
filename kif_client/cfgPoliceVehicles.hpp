@@ -123,6 +123,7 @@ class ivory_m3_base;
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
+        maxOmega=869.16998;
 		enginePower=810;
 		peakTorque=1190;
 		maxSpeed = 330;
@@ -167,4 +168,186 @@ class ivory_m3_base;
 	class kif_m3_unmarked_mblb : kif_m3_unmarked_bb
 	{
 		displayName = "BMW M3 Unmarked Blue Black Metalic";
+	};
+
+/*	
+Subaru WRX STI
+*/	
+class ivory_wrx_base;
+	class kif_wrx_unmarked_bb: ivory_wrx_base
+	{
+		author="Ivory";
+		vehicleClass="IvoryExtra";
+        displayName = "Subaru WRX STI Unmarked Black";
+		scope=2;
+		scopeCurator=2;
+		crew="C_man_1";
+		side=3;
+		faction="CIV_F";
+        maxOmega=869.16998;
+		enginePower=810;
+		peakTorque=1190;
+		maxSpeed = 330;
+        emergencySiren = 1;
+		emergencyLightbarType = 1;
+		emergencyLightbarTop = 0;
+		emergencyLightbarFront = 1;
+		emergencyLightbarBack = 1;
+		emergencyCage = 1;
+		emergencyRambar = 0;
+		emergencyRadar = 1;
+		emergencyNumbers = 0;
+	};
+	class kif_wrx_unmarked_mbb : kif_wrx_unmarked_bb
+	{
+		displayName = "Subaru WRX STI Unmarked Black Metallic";
+	};
+	class kif_wrx_unmarked_br : kif_wrx_unmarked_bb
+	{
+		displayName = "Subaru WRX STI Unmarked Unmarked Black Red";
+	};
+	class kif_wrx_unmarked_rb : kif_wrx_unmarked_bb
+	{
+		displayName = "Subaru WRX STI Unmarked Unmarked Red Black";
+	};
+	class kif_wrx_unmarked_rr : kif_wrx_unmarked_bb
+	{
+		displayName = "Subaru WRX STI Unmarked Unmarked Red Red";
+	};
+	class kif_wrx_unmarked_gb : kif_wrx_unmarked_bb
+	{
+		displayName = "Subaru WRX STI Unmarked Unmarked Gray Black";
+	};
+	class kif_wrx_unmarked_mgb : kif_wrx_unmarked_bb
+	{
+		displayName = "Subaru WRX STI Unmarked Unmarked Gray Black Metalic";
+	};
+	class kif_wrx_unmarked_blb : kif_wrx_unmarked_bb
+	{
+		displayName = "Subaru WRX STI Unmarked Unmarked Blue Black";
+	};
+	class kif_wrx_unmarked_mblb : kif_wrx_unmarked_bb
+	{
+		displayName = "Subaru WRX STI Unmarked Unmarked Blue Black Metalic";
+	};
+/*	
+Audi RS4
+*/	
+class ivory_rs4_base;
+	class kif_rs4_unmarked_bb: ivory_rs4_base
+	{
+		author="Ivory";
+		vehicleClass="IvoryExtra";
+        displayName = "Audi RS4 Unmarked Black";
+		scope=2;
+		scopeCurator=2;
+		crew="C_man_1";
+		side=3;
+		faction="CIV_F";
+        maxOmega=869.16998;
+		enginePower=810;
+		peakTorque=1190;
+		maxSpeed = 330;
+        emergencySiren = 1;
+		emergencyLightbarType = 1;
+		emergencyLightbarTop = 0;
+		emergencyLightbarFront = 1;
+		emergencyLightbarBack = 1;
+		emergencyCage = 1;
+		emergencyRambar = 0;
+		emergencyRadar = 1;
+		emergencyNumbers = 0;
+	};
+	class kif_rs4_unmarked_mbb : kif_rs4_unmarked_bb
+	{
+		displayName = "Audi RS4 Unmarked Black Metallic";
+	};
+	class kif_rs4_unmarked_br : kif_rs4_unmarked_bb
+	{
+		displayName = "Audi RS4 Unmarked Unmarked Black Red";
+	};
+	class kif_rs4_unmarked_rb : kif_rs4_unmarked_bb
+	{
+		displayName = "Audi RS4 Unmarked Unmarked Red Black";
+	};
+	class kif_rs4_unmarked_rr : kif_rs4_unmarked_bb
+	{
+		displayName = "Audi RS4 Unmarked Unmarked Red Red";
+	};
+	class kif_rs4_unmarked_gb : kif_rs4_unmarked_bb
+	{
+		displayName = "Audi RS4 Unmarked Unmarked Gray Black";
+	};
+	class kif_rs4_unmarked_mgb : kif_rs4_unmarked_bb
+	{
+		displayName = "Audi RS4 Unmarked Unmarked Gray Black Metalic";
+	};
+	class kif_rs4_unmarked_blb : kif_rs4_unmarked_bb
+	{
+		displayName = "Audi RS4 Unmarked Unmarked Blue Black";
+	};
+	class kif_rs4_unmarked_mblb : kif_rs4_unmarked_bb
+	{
+		displayName = "Audi RS4 Unmarked Unmarked Blue Black Metalic";
+	};
+
+/*	
+Lancer Evo
+*/	
+class ivory_evox_base;
+	class kif_evox_unmarked_bb: ivory_evox_base
+	{
+		author="Ivory";
+		vehicleClass="IvoryExtra";
+        displayName = "Mitsubishi Lancer Evo X Unmarked Black";
+		scope=2;
+		scopeCurator=2;
+		crew="C_man_1";
+		side=3;
+		faction="CIV_F";
+        maxOmega=869.16998;
+		enginePower=810;
+		peakTorque=1190;
+		maxSpeed = 330;
+        emergencySiren = 1;
+		emergencyLightbarType = 1;
+		emergencyLightbarTop = 0;
+		emergencyLightbarFront = 1;
+		emergencyLightbarBack = 1;
+		emergencyCage = 1;
+		emergencyRambar = 0;
+		emergencyRadar = 1;
+		emergencyNumbers = 0;
+	};
+	class kif_evox_unmarked_mbb : kif_evox_unmarked_bb
+	{
+		displayName = "Mitsubishi Lancer Evo X Unmarked Black Metallic";
+	};
+	class kif_evox_unmarked_br : kif_evox_unmarked_bb
+	{
+		displayName = "Mitsubishi Lancer Evo X Unmarked Unmarked Black Red";
+	};
+	class kif_evox_unmarked_rb : kif_evox_unmarked_bb
+	{
+		displayName = "Mitsubishi Lancer Evo X Unmarked Unmarked Red Black";
+	};
+	class kif_evox_unmarked_rr : kif_evox_unmarked_bb
+	{
+		displayName = "Mitsubishi Lancer Evo X Unmarked Unmarked Red Red";
+	};
+	class kif_evox_unmarked_gb : kif_evox_unmarked_bb
+	{
+		displayName = "Mitsubishi Lancer Evo X Unmarked Unmarked Gray Black";
+	};
+	class kif_evox_unmarked_mgb : kif_evox_unmarked_bb
+	{
+		displayName = "Mitsubishi Lancer Evo X Unmarked Unmarked Gray Black Metalic";
+	};
+	class kif_evox_unmarked_blb : kif_evox_unmarked_bb
+	{
+		displayName = "Mitsubishi Lancer Evo X Unmarked Unmarked Blue Black";
+	};
+	class kif_evox_unmarked_mblb : kif_evox_unmarked_bb
+	{
+		displayName = "Mitsubishi Lancer Evo X Unmarked Unmarked Blue Black Metalic";
 	};
