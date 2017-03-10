@@ -78,7 +78,35 @@ if(myJob == "Cop") then {
 				"kif_m3_unmarked_gb",
 				"kif_m3_unmarked_mgb",
 				"kif_m3_unmarked_blb",
-				"kif_m3_unmarked_mblb"
+				"kif_m3_unmarked_mblb",
+				"kif_wrx_unmarked_bb",
+				"kif_wrx_unmarked_mbb",
+				"kif_wrx_unmarked_br",
+				"kif_wrx_unmarked_rb",
+				"kif_wrx_unmarked_rr",
+				"kif_wrx_unmarked_gb",
+				"kif_wrx_unmarked_mgb",
+				"kif_wrx_unmarked_blb",
+				"kif_wrx_unmarked_mblb",
+				"kif_rs4_unmarked_bb",
+				"kif_rs4_unmarked_mbb",
+				"kif_rs4_unmarked_br",
+				"kif_rs4_unmarked_rb",
+				"kif_rs4_unmarked_rr",
+				"kif_rs4_unmarked_gb",
+				"kif_rs4_unmarked_mgb",
+				"kif_rs4_unmarked_blb",
+				"kif_rs4_unmarked_mblb",
+				"kif_evox_unmarked_bb",
+				"kif_evox_unmarked_mbb",
+				"kif_evox_unmarked_br",
+				"kif_evox_unmarked_rb",
+				"kif_evox_unmarked_rr",
+				"kif_evox_unmarked_gb",
+				"kif_evox_unmarked_mgb",
+				"kif_evox_unmarked_blb",
+				"kif_evox_unmarked_mblb"
+				
 			];
 			_garage = _garage + _garageMore;
 			};
