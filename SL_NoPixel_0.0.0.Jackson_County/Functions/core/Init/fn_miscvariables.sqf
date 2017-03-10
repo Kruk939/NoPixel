@@ -155,6 +155,7 @@ client_fnc_restrained = compileFinal
 "
 	imRestrained = true;
 	player switchmove """";
+	player setVariable [""tf_unable_to_use_radio"", true];
 	uisleep 0.05;
 	[player,""Acts_AidlPsitMstpSsurWnonDnon_loop""] remoteExec [""client_fnc_animSync""];
 
@@ -178,6 +179,7 @@ client_fnc_unrestrained = compileFinal
 "
 	imRestrained = false;
 	player switchMove """";
+	player setVariable [""tf_unable_to_use_radio"", false];
 ";
 
 KK_fnc_forceRagdoll = compileFinal

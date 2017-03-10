@@ -19,6 +19,8 @@ _car = lbData [1500, _currentitemindex];
 
 lbDelete [1500, _currentitemindex];
 
+closeDialog 0;
+
 _car = call compile format["%1", _car]; 
 
 if((_this select 0) == 1) exitwith { 
@@ -90,8 +92,6 @@ _carowner = _car select 8;
 _fuel = _car select 9;
 _damage = _car select 10;
 
-
-closeDialog 0;
 _garage = player getVariable "garage";
 _pia = _garage find _car;
 _garage deleteAt _pia;
