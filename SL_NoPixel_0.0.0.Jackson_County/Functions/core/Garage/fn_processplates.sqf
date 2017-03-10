@@ -20,6 +20,7 @@ _string = _string splitString "\" joinString "";
 _string = _string splitString ">" joinString "";
 _string = _string splitString "<" joinString "";
 _string = _string splitString "_" joinString "";
+_string = _string splitString "|" joinString "";
 _string = _string splitString "?" joinString "";
 _string = _string splitString "!" joinString "";
 _string = _string splitString "," joinString "";
