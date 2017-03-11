@@ -11,24 +11,28 @@ if(_type == "marijuana") then {
 	player setCustomAimCoef 0;
 	["set",0] call Client_Fnc_DoHealth;
 	["Czujesz się wspaniale i bardzo spokojnie.",false] spawn domsg;
+	["Remove","Karma",20] call client_fnc_sustain;
 };
 
 if(_type == "cocaine") then {
 	client_cocaine = _amount;
 	player setAnimSpeedCoef 1.2;
 	["Czujesz, że mógłbyś przebiec maraton.",false] spawn domsg;
+	["Remove","Karma",20] call client_fnc_sustain;
 };
 
 if(_type == "heroin") then {
 	client_heroin = _amount;
 	player setUnitRecoilCoefficient 0.5;
 	["Celowanie wydaje się teraz o wiele łatwiejsze!",false] spawn domsg;
+	["Remove","Karma",20] call client_fnc_sustain;
 };
 
 
 if(_type == "meth") then {
 	client_meth = _amount;
 	["Czujesz się niezniszczalny.",false] spawn domsg;
+	["Remove","Karma",20] call client_fnc_sustain;
 	//notazepls
 };
 
@@ -37,6 +41,7 @@ if(_type == "energy") then {
 	player enablefatigue false;
 	player enablestamina false;
 	["Czujesz się bardzo lekko!",false] spawn domsg;
+	["Remove","Karma",20] call client_fnc_sustain;
 };
 ["Add","unhealthiness",5] call client_fnc_sustain;
 

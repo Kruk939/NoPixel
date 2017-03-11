@@ -88,10 +88,12 @@ if (_player IN currentJudges) exitwith {
 	//currentJudges ="";
 };
 
-
-
-
-
+if (_player IN currentProsecutor) exitwith {
+    _pia = currentProsecutor find _player;
+    currentProsecutor deleteAt _pia;
+    publicvariable "currentProsecutor";
+	//currentProsecutor ="";
+};
 
 if (_player IN currentMailmen) exitwith {
     _pia = currentMailmen find _player;

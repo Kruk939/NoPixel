@@ -28,16 +28,16 @@ racecount = racecount + 1;
 
 
 if (racecount == 1) then {
-    "A F1 is starting in 3 minutes"
+    "Wyścigi F1 startują za 3 minuty!"
     remoteexec["hint", -2];
     uisleep 60;
-    "A F1 is starting in 2 minutes"
+    "Wyścigi F1 startują za 2 minuty!"
     remoteexec["hint", -2];
     uisleep 60;
-    "A F1 is starting in 1 minutes"
+    "Wyścigi F1 startują za 1 minutę!"
     remoteexec["hint", -2];
     uisleep 60;
-    "A F1 is starting NOW"
+    "Wyścigi F1 startują TERAZ!"
     remoteexec["hint", -2];
 
     [] remoteexec["client_fnc_dorace", racecontestents];

@@ -102,13 +102,14 @@ switch (_code) do
 		{
 			[] spawn client_fnc_mapMarkers;
 		} else {
-			[] spawn client_fnc_playermapMarkers;
+			if(myJob == "Cop") then 
+			{
+				[] spawn client_fnc_copmapMarkers;
+			} else {
+				[] spawn client_fnc_playermapMarkers;
+			};
 		};
 
-		if(myJob == "Cop") then 
-		{
-			[] spawn client_fnc_copmapMarkers;
-		};
 
 	};
 

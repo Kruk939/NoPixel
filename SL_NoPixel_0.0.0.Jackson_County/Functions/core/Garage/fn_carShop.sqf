@@ -148,7 +148,7 @@ if((typeOF cursorTarget) find "Hangar_F" > -1) then {
 		["sab_albatrosb2_civ",150000],
 		["sab_albatrosd2",160000],
 		["C_Plane_Civil_01_F", 200000],
-		["sab_piper", 200000],
+		//["sab_piper", 200000],
 		["Sab_an22", 300000],
 		["sab_do228", 600000],
 		["Sab_an22", 600000],

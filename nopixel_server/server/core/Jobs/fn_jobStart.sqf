@@ -117,6 +117,13 @@ currentJudges pushback _player;
 publicvariable "currentJudges"; 
  
 }; 
+
+if (str _jobtype find "Prosecutor" > -1) exitwith { 
+[] remoteExec ["client_fnc_startProsecutor",_player];  
+currentProsecutor pushback _player; 
+publicvariable "currentProsecutor"; 
+ 
+}; 
  
 if (str _jobtype find "Tow Truck Driver" > -1) exitwith { 
 [] remoteExec ["client_fnc_startTowTruck",_player]; 

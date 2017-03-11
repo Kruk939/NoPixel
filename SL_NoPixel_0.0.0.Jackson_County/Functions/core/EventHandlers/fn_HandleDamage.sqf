@@ -4,6 +4,7 @@ Handle Damage by Koil
 
 if(deadPlayer) exitwith { false };
 if(godMode) exitwith { false };
+if (client_godmode) exitwith { false };
 
 params ["_unit","_selectionName","_damage","_source","_projectile","_hitPartIndex"];
 

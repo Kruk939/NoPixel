@@ -21,6 +21,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 		[] spawn KK_fnc_forceRagdoll;
 
 		disableUserInput true;
+		player setVariable ["tf_voiceVolume", 0, true];
 
 		player playmovenow "DeadState";
 		_sleeptime spawn {
@@ -34,6 +35,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 			client_istazed = false;
 			disableUserInput false;
 			[player,""] remoteExecCall ["client_fnc_animSync"];
+			player setVariable ["tf_voiceVolume", 1, true];
 		};
 	};
 } else {

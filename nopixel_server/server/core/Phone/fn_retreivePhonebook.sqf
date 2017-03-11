@@ -23,6 +23,7 @@ _information = [
 	["Legal Aid",currentLegalAid],
 	["Mechanik",currentRepairmen],
 	["Sędzia",currentJudges],
+	["Prokuratorzy",currentProsecutor],
 	["Adwokaci",currentLawyers],
 	["Listonosze",currentMailmen],
 	["Tow Trucks",currentTowTruckDrivers],

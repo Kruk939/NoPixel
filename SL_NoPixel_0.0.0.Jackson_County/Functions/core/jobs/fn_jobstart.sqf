@@ -93,6 +93,12 @@ if (str _jobtype find "Judge" > -1  || str _jobtype == "Judge") exitwith {
 	publicvariable "currentJudges";
 };
 
+if (str _jobtype find "Prosecutor" > -1  || str _jobtype == "Prosecutor") exitwith {
+	[] spawn client_fnc_startProsecutor;	
+	currentProsecutor pushback _player;
+	publicvariable "currentProsecutor";
+};
+
 if (str _jobtype find "Tow Truck Driver" > -1  || str _jobtype == "Tow Truck Driver") exitwith {
 	[] spawn client_fnc_startTowTruck;
 	currentTowTruckDrivers pushback _player;

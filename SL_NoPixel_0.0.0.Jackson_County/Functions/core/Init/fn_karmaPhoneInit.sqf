@@ -57,5 +57,5 @@ if(karma_level > 80) then {
 	karma_level = 80;
 };
 
-[format["Your reputation level is %1",karma_level], true] spawn domsg;
+[format["Twój poziom reputacji to: %1",karma_level], true] spawn domsg;
 

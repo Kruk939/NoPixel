@@ -14,6 +14,8 @@ player removeitem "NP_drillitem";
 [player, theDrill, "bankDrill"] spawn client_fnc_createEvidence;
 [player, _theBankContainer, "vaultBreach"] spawn client_fnc_createEvidence;
 
+	["Remove","Karma",100] call client_fnc_sustain;
+
 
 bankrobber = 3;
 

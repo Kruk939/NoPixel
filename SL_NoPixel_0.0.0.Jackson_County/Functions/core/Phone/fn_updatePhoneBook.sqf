@@ -98,8 +98,14 @@ disableSerialization;
 
 	if!(_old isEqualTo  currentJudges) then { publicvariable "currentJudges"; };
 
+	_old =  currentProsecutor;
 
+	for "_i" from 0 to 20 step 1 do {
+		_pia =  currentProsecutor FIND objNull;  
+		 currentProsecutor deleteAT _pia;  
+	};
 
+	if!(_old isEqualTo  currentProsecutor) then { publicvariable "currentProsecutor"; };
 
 
 	_old =  currentMailmen;
@@ -202,7 +208,8 @@ _allJobs = [
 
 	["Ochrona",currentSecurity],
 	["Mechanik",currentRepairmen],
-	["Sedzia",currentJudges],
+	["Sędzia",currentJudges],
+	["Prokuratorzy",currentProsecutor],
 	["Adwokaci",currentLawyers],
 	["Listonosze",currentMailmen],
 

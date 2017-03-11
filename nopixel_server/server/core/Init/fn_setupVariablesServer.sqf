@@ -9,6 +9,7 @@ currentFireDispatch = [];
 currentJudges = [];
 currentLawyers = [];
 currentLegalAid = [];
+currentProsecutor = [];
 currentCop = [];
 currentEMS = [];
 currentMafia = [];
@@ -41,6 +42,7 @@ publicVariable "currentDoughnuts";
 publicvariable "currentJudges"; 
 publicvariable "currentLawyers"; 
 publicvariable "currentLegalAid"; 
+publicVariable "currentProsecutor";
  
 publicvariable "currentCop"; 
 publicvariable "currentEMS"; 

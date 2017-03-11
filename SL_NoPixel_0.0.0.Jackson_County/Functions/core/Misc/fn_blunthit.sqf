@@ -16,6 +16,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 		[] spawn KK_fnc_forceRagdoll;
 		client_istazed = true;
 		disableUserInput true;
+		player setVariable ["tf_voiceVolume", 0, true];
 		[] spawn {
 			uiSleep 3;
 			[player,"amovppnemstpsraswrfldnon"] remoteExecCall ["client_fnc_animSync"];
@@ -23,6 +24,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 			client_istazed = false;
 			player allowDamage true;
 			disableUserInput false;
+			player setVariable ["tf_voiceVolume", 1, true];
 		};
 	};
 }

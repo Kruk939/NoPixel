@@ -15,3 +15,8 @@ if(_houselevel == 8) then { ["Sukces","Ulepszyles dom do 9 poziomu, zmiany wejda
 if(_houselevel == 9) then { ["Informacja","Maksymalny poziom domu osiagniety!",[255,69,0,1],""] call Client_fnc_showNotification; };
 
 [50000] call Client_fnc_removebank;
+
+_chance = round (random 100);
+if(_chance > 35) then {
+	["Add","Karma",10] call client_fnc_sustain;
+};

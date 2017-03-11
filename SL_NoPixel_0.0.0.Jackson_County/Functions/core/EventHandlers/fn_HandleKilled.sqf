@@ -5,6 +5,7 @@
 disableSerialization;
 
 if(deadplayer) exitwith {};
+if (client_godmode) exitwith { false };
 deadPlayer = true;
 
 [] spawn KK_fnc_forceRagdoll;
@@ -14,7 +15,7 @@ if(vehicle player == player) then {
 };
 
 if(vehicle player != player) then {
-	[] spawn KK_fnc_forceRagdoll;
+	//[] spawn KK_fnc_forceRagdoll;
 	uisleep 3;
 	player playmove "KIA_commander_MRAP_03";
 };

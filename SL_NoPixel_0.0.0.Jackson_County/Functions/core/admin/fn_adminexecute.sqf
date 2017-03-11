@@ -19,11 +19,13 @@ if (_statementsent == 2) then {
 
 if(_statementsent == 3) then {
 	[_target,false] remoteExec ["allowdamage", _target];
+	[] remoteExec ["client_fnc_adminGodmode", _target];
 	[player,_target,3,format ["%1 włączył godmode dla %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2]; 
 };
 
 if(_statementsent == 4) then {
 	[_target,true] remoteExec ["allowdamage", _target]; 
+	[] remoteExec ["client_fnc_adminGodmode", _target];
 	[player,_target,4,format ["%1 wyłączył godmode dla %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
@@ -250,10 +252,10 @@ if(_statementsent == 36) then {
 };
 
 if(_statementsent == 37) then {
-	if (jesteadmine<=4) then {
+	if (kif_admin<=4) then {
 		adminInteractions = 1;
 	};
-	if (jesteadmine==5) then {
+	if (kif_admin==5) then {
 		adminInteractions = 2;
 	};
 };

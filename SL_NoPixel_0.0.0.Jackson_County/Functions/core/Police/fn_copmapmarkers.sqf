@@ -4,7 +4,6 @@ waituntil{visiblemap};
 
 _markers = [];
 
-if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 	{
 		if ( _x getVariable["robber",FALSE] ) then {
 			_marker = createMarkerLocal [format["%1_NAMIERZONY_PRZESTĘPCA_BANK",name _x],visiblePosition _x];
@@ -25,7 +24,7 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 		_marker = createMarkerLocal [format["%1_TRACKING",name _x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorRed";
 		_marker setMarkerTypeLocal "loc_Hospital";
-		_marker setMarkerTextLocal format["%1_TRACKING",name _x];
+		_marker setMarkerTextLocal format["%1",name _x];
 		_markers pushBack [_marker,_x];
 		};
 		if ("ItemGPS" in assignedItems _x) then {
@@ -64,7 +63,8 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 		_marker = createMarkerLocal [format["%1_TRACKING",_rand],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorRed";
 		_marker setMarkerTypeLocal "loc_Hospital";
-		_marker setMarkerTextLocal format["%1_TRACKING",(typeof _x)];
+		_return = getText(configFile >> "CfgVehicles" >> typeof _x >> "displayName");
+		_marker setMarkerTextLocal format["%1",_return];
 		_markers pushBack [_marker,_x];	
 	};   
 } foreach vehicles;
@@ -93,7 +93,6 @@ if(visibleMap AND "ItemGPS" in assignedItems player || visibleGPS) then {
 		uiSleep 0.05;
 	};
 	{deleteMarkerLocal (_x select 0);} foreach _markers;	
-};
 
 
 

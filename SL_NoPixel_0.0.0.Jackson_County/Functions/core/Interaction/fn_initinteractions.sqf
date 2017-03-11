@@ -211,12 +211,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[""],
+		["(count currentEMS < 3)"],
 		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
 	],
 
 	[
-		[" typeof cursorobject == ""Land_buildingshospital1"""],
+		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 3)"],
 		["Ulecz całkowicie", "[] spawn client_fnc_fullheal;",1]
 	],
 
@@ -449,7 +449,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["CurrentCursorTarget isKindOf 'Man' && (myjob == ""Mafia"" || myjob == ""Fire"" || myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Judge"" || myjob == ""Lawyer"")"],
+		["CurrentCursorTarget isKindOf 'Man' && (myjob == ""Mafia"" || myjob == ""Fire"" || myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Judge"" || myjob == ""Lawyer"" || myjob == ""Prosecutor"")"],
 		["Awansuj", "[CurrentCursorTarget] spawn client_fnc_promotionStart",2]
 	],
 
@@ -891,6 +891,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
+		["Praca prokuratora", "[player,""Prosecutor""] spawn client_fnc_jobstart;",4]
+	],
+
+	[
 		["myjob == ""none"" && (player getvariable ""doughnuts"") > 0"],
 		["Przewoznik paczkow", "[player,""doughnuts""] spawn client_fnc_jobstart;",4]
 	],
@@ -901,7 +906,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Judge"" || myjob == ""Lawyer"""],
+		["myjob == ""Judge"" || myjob == ""Lawyer"" || myjob == ""Prosecutor"" "],
 		["Zakończ pracę", "[] call client_fnc_jobEnd",4]
 	],
 	
@@ -1001,7 +1006,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["jesteadmine>=1"],
+		["kif_admin>=1"],
 		["BAN HAMMER", "closedialog 0; createdialog ""koiladmin""; ",4]
 	]
 ];

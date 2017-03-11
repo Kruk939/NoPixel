@@ -138,6 +138,7 @@ class CfgFunctions
 			class adminESP {};
 			class nametags {};
             class adminMessage {};
+            class adminGodmode {};
 		};		
 
 		class police {
@@ -246,6 +247,7 @@ class CfgFunctions
 			class startLegalAid {};
 			class startJudge {};
 			class startLawyer {};
+            class startProsecutor {};
 		};
 		class JobTaxi {
 			file = "Functions\core\Jobs\JobTaxi";

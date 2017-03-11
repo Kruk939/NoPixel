@@ -76,27 +76,32 @@ client_bonging = false;
 client_nos_count = 0;
 client_can_use_nos = true;
 client_intox = 0.00;
+client_godmode = false;
 mytrees = [];
 mymetal = [];
 myoil = [];
 playertasks = []; 
 taskrunning = false;
 paycheck = 0;
-//admins
-jesteadmine = 0;
+kif_admin = 0;
 client_dtu_actions = 0;
 teczka_allowed=0;
-//if (getplayerUID player IN [""]) then { jesteadmine=1; };
+gun_brothers=0;
 weedPlantArray = [];
 adminInteractions = 0;
+/*
+	BAN HAMMER
+*/
+							//downlad
+if (getplayerUID player IN ["76561198023332238"]) then { kif_admin=1; };
 							//danio				//farmer
-if (getplayerUID player IN ["76561198082441969","76561198131854921"]) then { jesteadmine=2; };
+if (getplayerUID player IN ["76561198082441969","76561198131854921"]) then { kif_admin=2; };
 							//raf				//sid				//dzoka				//teddy				//arthur
-if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998091289","76561198150573190","76561198028980508"]) then { jesteadmine=3; };
+if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998091289","76561198150573190","76561198028980508"]) then { kif_admin=3; };
 							//katekarin
-if (getplayerUID player IN ["76561198041834190"]) then { jesteadmine=4; };
+if (getplayerUID player IN ["76561198041834190"]) then { kif_admin=4; };
 							//kifkick			//dorian
-if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { jesteadmine=5; };
+if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif_admin=5; };
 /*
 	DTU
 */
@@ -104,7 +109,6 @@ if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { jes
 if (getplayerUID player IN ["76561198007690584",""]) then { client_dtu_actions=1; };
 							//rudolf	   		//richard			//marian			//dzoka				//raf				//kifkick
 if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087","76561197998091289","76561197982469013","76561198201987250"]) then { client_dtu_actions=2; };
-
 /*
 	TECZKA ALLOWED
 */
@@ -112,6 +116,11 @@ if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035
 if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087"]) then { teczka_allowed=1; };
 							//dzoka				//raf				//kifkick			//dorian
 if (getplayerUID player IN ["76561197998091289","76561197982469013","76561198201987250","76561198253273755"]) then { teczka_allowed=2; };
+/*
+	Gun Brother's Company
+*/
+							//ramirez	   		//danio				//kifkick
+if (getplayerUID player IN ["76561198030551672","76561198082441969","76561198201987250"]) then { gun_brothers=1; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "

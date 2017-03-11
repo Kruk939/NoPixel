@@ -1,6 +1,7 @@
 /*
 	handle fired
 */
+
 params ["_unit","","","","_ammo","_magazine","_projectile"];
 
 if(_magazine isEqualTo "RPG32_F" || _magazine isEqualTo "RPG32_HE_F") then { [_projectile] spawn client_fnc_sendHook; };
