@@ -211,7 +211,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(count currentEMS < 3)"],
+		["(count currentEMS < 3) && !(myjob == ""EMS"")"],
+		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
+	],
+
+	[
+		["(myjob == ""EMS"")"],
 		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
 	],
 

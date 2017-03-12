@@ -35,7 +35,7 @@
 		};
 	};
 	if (isMultiplayer) then {
-		if !(kif_client_v == 0.06) then {
+		if !(kif_client_v == 0.07) then {
 			["NotVersion",false,true] call BIS_fnc_endMission;
 			};
 	};
