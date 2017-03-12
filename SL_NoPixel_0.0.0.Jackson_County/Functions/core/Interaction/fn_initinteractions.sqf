@@ -161,7 +161,7 @@ NoPixel_InteractionMenuItems = [
 	[
 		[" myJob == ""cop"" &&  client_dtu_actions >= 1"],
 		//["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn client_fnc_dotask ",1]
-		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTracking; ",1]
+		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTrackingCop; ",1]
 	],
 	
 	[

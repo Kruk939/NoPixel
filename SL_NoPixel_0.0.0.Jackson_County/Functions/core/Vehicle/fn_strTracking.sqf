@@ -1,4 +1,4 @@
-if (myjob in ["Mafia","Cop"]) then {
+if (myjob in ["Mafia"]) then {
 	_veh = _this select 0;
 	_player = _this select 1;
 	if (isNil "_veh") exitwith {};

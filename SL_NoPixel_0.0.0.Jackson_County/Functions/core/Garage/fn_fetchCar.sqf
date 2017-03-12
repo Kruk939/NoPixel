@@ -160,3 +160,7 @@ _vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName
 _vehicle setvariable ["tracker1",objNull,true];
 _vehicle setvariable ["tracker2",objNull,true];
 _vehicle setvariable ["tracker3",objNull,true];
+
+_vehicle setvariable ["tracker1c",objNull,true];
+_vehicle setvariable ["tracker2c",objNull,true];
+_vehicle setvariable ["tracker3c",objNull,true];

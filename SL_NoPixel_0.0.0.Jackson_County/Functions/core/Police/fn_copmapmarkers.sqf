@@ -57,7 +57,7 @@ _markers = [];
 
 
 {  
-	if( _x getVariable["tracking",FALSE] ) then  
+	if( _x getVariable["trackingCop",FALSE] ) then  
 	{	 
 		_rand = round (random(999));
 		_marker = createMarkerLocal [format["%1_TRACKING",_rand],visiblePosition _x];

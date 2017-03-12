@@ -517,6 +517,7 @@ class CfgFunctions
 		{
 			file = "Functions\core\Vehicle";
 			class strTracking {};
+            class strTrackingCop {};
 			class disTracking2 {};
 			class disTracking {};
 			class trackingme {};
