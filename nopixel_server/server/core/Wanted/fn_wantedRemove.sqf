@@ -4,7 +4,7 @@ _status = _this select 1;
 
 if (_status == 0) then { 
 	_updatestr = format ["updateCrime:%1:%2:%3", _status, 0, _caseID]; 
-_	del = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 
+	_del = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 
 } else { 
 	_updatestr = format ["updateCrime:%1:%2:%3", _status, 1, _caseID]; 
 	_del = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 
