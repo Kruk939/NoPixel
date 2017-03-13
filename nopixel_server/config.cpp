@@ -14,6 +14,7 @@ class CfgFunctions {
             class setupVariablesServer {};
             class resetConnected {};
             class cleanup {};
+            class resetRespawn {};
         };
         class Save {
             file = "NoPixel_Server\server\core\Save";
@@ -34,6 +35,8 @@ class CfgFunctions {
             class syncHouseLevel {};
             class syncStatuses {};
             class syncPosition {};
+            class syncRespawn {};
+            class statDisconnect {};
         };
         class Mafia {
             file = "NoPixel_Server\server\core\Mafia";

@@ -8,5 +8,5 @@
 */
 private["_updateStr"];
 
- _updateStr = "updateConnectedStartup:0:1";
+ _updateStr = "updateConnectedStartup:0";
  _update = [0, _updateStr] call ExternalS_fnc_ExtDBquery;
