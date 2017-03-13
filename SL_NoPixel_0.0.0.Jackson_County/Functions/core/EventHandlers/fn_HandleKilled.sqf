@@ -26,12 +26,11 @@ params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_lengt
 player setVariable ["tf_voiceVolume", 0, true];
 
 
-/*_length = 20 - _length;
+_length = 20 - _length;
 _length = round(_length);
 if(_length > 11) then { _length = 15; };
 if(_length < 5) then { _length = 8; };
-client_respawn_timer = _length;*/
-client_respawn_timer = 1;
+client_respawn_timer = _length;
 
 _unit setVariable["dead",true,true];
 
