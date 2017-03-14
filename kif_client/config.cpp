@@ -102,3 +102,4 @@ class CfgVehicles {
 };
 #include "\kif_client\cfgSounds.hpp"
 #include "\kif_client\cfgIvoryTextures.hpp"
+#include "\kif_client\cfgMainMenu.hpp"
