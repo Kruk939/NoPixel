@@ -28,6 +28,13 @@ class cfgFunctions
 		};
 	};
 };
+class CfgVehicleClasses
+{
+	class kif_client
+	{
+		displayName = "Stan Lakeside Buildings";
+	};
+};
 class CfgMagazines
 {
 	class InventoryItem_Base_F;
@@ -52,6 +59,9 @@ class CfgMagazines
 	#include "\kif_client\cfgItems.hpp"
 };
 class CfgVehicles {
+	class All{};
+	class Static: All{};
+	class Building: Static{};
 	class ReammoBox;
 	class ThingX;
 	class kif_chest_base: ThingX
@@ -88,6 +98,8 @@ class CfgVehicles {
 	#include "\kif_client\cfgVVV.hpp"
 	#include "\kif_client\cfgPoliceVehicles.hpp"
 	#include "\kif_client\cfgMedicVehicles.hpp"
+	#include "\kif_client\cfgBuildings.hpp"
 };
 #include "\kif_client\cfgSounds.hpp"
 #include "\kif_client\cfgIvoryTextures.hpp"
+#include "\kif_client\cfgMainMenu.hpp"

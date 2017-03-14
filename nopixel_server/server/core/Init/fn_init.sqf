@@ -12,6 +12,7 @@ sleep 3;
 [] spawn server_fnc_mafiabank; //Ustawia zmienną z kwotą w bankomacie mafii
 [] spawn server_fnc_resetConnected; //Przy włączeniu serwera zmienia w bazie danych connected=1 na connected=0
 [] spawn server_fnc_removeVehiclesDamage; //Usuwa pojazdy gdzie damage=1
+[] spawn server_fnc_resetRespawn; //resetuje licznik zgonów do 3
 
 [server_fnc_addJob, 120] execFSM "\nopixel_server\call.fsm";
 [Server_fnc_cleanup, 1800] execFSM "\nopixel_server\call.fsm";

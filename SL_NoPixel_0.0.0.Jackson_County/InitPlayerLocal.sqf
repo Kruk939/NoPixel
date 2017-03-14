@@ -51,6 +51,7 @@ if(myhealth > 0.99) exitwith {
 	diag_log format["Zabijam %1 za battleloga", player];
 	["Remove",1] call client_fnc_doHealth;
 };
+
 if(uniform player == "" && female) then {
 	player forceadduniform "vvv_character_protibanador";
 };
@@ -73,3 +74,8 @@ sleep 2;
 
 [] call client_fnc_initWelcome;
 ["Klawisz Windows lub shift + 5 otwiera menu interakcji.", true] spawn domsg;
+
+_respawn = player getVariable "respawn";
+if (_respawn == 0) then {
+		[] spawn client_fnc_respawnTimer;
+};

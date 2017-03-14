@@ -61,6 +61,7 @@ if (_booli) then {
 	_prisontime = _res select 17;
 	_prisonreason = _res select 18;
 	_doughnuts = _res select 19;
+	_respawn = _res select 20;
 
 	_messages = [];
 
@@ -86,6 +87,8 @@ if (_booli) then {
 	_player setVariable ["housecontent", _housecontent, false];
 	_player setVariable ["shopcontent", _shopcontent, false];
 	_player setVariable ["shopname", _shopname, false];
+
+	_player setVariable ["respawn", _respawn, false];
 
 	_inUseVehicles = [];
 	_mycarinfo = [];
@@ -174,8 +177,8 @@ if (_booli) then {
 	_house setVariable ["house", _player, false];
 	_shop setVariable ["shop", _player, false];
 
-	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prisontime, _prisonreason, _mayor, _doughnuts];																																																																																																																																																													//,_mayor
-	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prisontime, _prisonreason, _mayor, _doughnuts] remoteexec ["Client_fnc_loadInventory", _player];
+	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28 %29",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prisontime, _prisonreason, _mayor, _doughnuts, _respawn];																																																																																																																																																													//,_mayor
+	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prisontime, _prisonreason, _mayor, _doughnuts, _respawn] remoteexec ["Client_fnc_loadInventory", _player];
 } else {
 	_name = name _player;
 	_items = getunitloadout _player;

@@ -104,10 +104,19 @@ _unit spawn
 	maxTime = time + (client_respawn_timer * 60);
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format["Respawn: %1",[(maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; round(maxTime - time) <= 0 OR isNull _this};
-	_RespawnBtn ctrlEnable true;
-	_Timer ctrlSetText "Respawn";
+	_respawn = player getVariable "respawn";
+	if (_respawn > 0) then 
+	{
+		_RespawnBtn ctrlEnable true;
+		_Timer ctrlSetText "Respawn";
+	};
+	if (_respawn == 0) then 
+	{
+		_Timer ctrlSetText "Skończyły Ci się życia! Jeżeli w ciągu 15 minut nie pomoże Ci służba medyczna zostaniesz wyrzucony z serwera!";
+		[] spawn client_fnc_respawnTimer;
+	};
 	if(!deadplayer) exitwith { closedialog 0; };
-	if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; [] call client_fnc_startFresh; };			
+	//if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; [] call client_fnc_startFresh; };			
 };
 
 [_unit] spawn
@@ -126,7 +135,7 @@ player setdamage 0;
 [] spawn {
 	while{true} do {
 		sleep 1;
-		if( vehicle player == player && animationstate player != "deadstate" ) then {  player playmove "deadstate"; };
+		if( vehicle player == player && animationstate player != "deadstate" ) then {  player playmovenow "deadstate"; };
 		//if( vehicle player != player && animationstate player != "KIA_commander_MRAP_03" ) then { player action ["Eject", vehicle player]; player playmove "KIA_commander_MRAP_03"; };
 
 		player setOxygenRemaining 1;

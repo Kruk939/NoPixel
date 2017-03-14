@@ -86,6 +86,7 @@ if(_statementsent == 12) then {
 
 if(_statementsent == 13) then {
 	[] remoteExec ["client_fnc_fullheal", _target]; 
+	[] remoteExec ["client_fnc_bandagetarget", _target]; 
 	[player,_target,12,format ["%1 uzdrowił %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
