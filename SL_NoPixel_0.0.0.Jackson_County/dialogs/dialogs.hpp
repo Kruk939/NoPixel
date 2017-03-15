@@ -43,3 +43,4 @@
 
 //admin dialogs
 #include "adminDialogs.hpp"
+#include "kruk_slpd_computer.hpp"
