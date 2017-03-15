@@ -29,12 +29,14 @@ if (_status isEqualTo 0) then {
 	 ["garage", _information] remoteExec["client_fnc_setVariable", _player];
 	 deleteVehicle _object;
 } else {
+	_license = _information select 0;
 	_information SET[7, 1];
 	_fuel = fuel _object;
 	_damage = damage _object;
 	 if !(_damage == 1) then {
 		_information set [9,_fuel];
 		_information set [10,_damage];
+		[_fuel,_damage,_license] call server_fnc_updateFuelDamage;
 		_currentCars = _player getvariable "usedgarage";
 	 	_currentCars pushback _information;
 	 };

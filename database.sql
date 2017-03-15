@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : lakeside
+Source Server         : StanLakeside
 Source Server Version : 50624
 Source Host           : 149.202.88.94:3306
 Source Database       : nopixel
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-03-06 20:29:21
+Date: 2017-03-15 13:05:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -34,7 +34,7 @@ CREATE TABLE `actionlog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=50037 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=64817 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for adminlog
@@ -55,7 +55,7 @@ CREATE TABLE `adminlog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7777 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8383 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for coplog
@@ -76,7 +76,7 @@ CREATE TABLE `coplog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=9556 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12780 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for craftlog
@@ -94,7 +94,7 @@ CREATE TABLE `craftlog` (
   `classname` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5744 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6350 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for deathlog
@@ -116,7 +116,7 @@ CREATE TABLE `deathlog` (
   `weapon` varchar(100) NOT NULL,
   `distance` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2830 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3684 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for economylog
@@ -139,7 +139,7 @@ CREATE TABLE `economylog` (
   `item` varchar(100) NOT NULL,
   `quantity` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=44638 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=59256 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for garage
@@ -175,7 +175,7 @@ CREATE TABLE `logs` (
   `pos` varchar(50) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=150118 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=176482 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for mafiaatm
@@ -228,7 +228,7 @@ CREATE TABLE `moneylog` (
   `unitBank` int(13) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=17997 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23772 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for users
@@ -259,9 +259,10 @@ CREATE TABLE `users` (
   `mayor` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `doughnuts` enum('0','1','2','3','4','5') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `connected` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
+  `respawn` int(2) NOT NULL DEFAULT '2',
   PRIMARY KEY (`bankaccount`),
   UNIQUE KEY `uid` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=849 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=929 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for vehiclelog
@@ -280,7 +281,7 @@ CREATE TABLE `vehiclelog` (
   `vehicleName` varchar(255) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=36738 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=49067 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for wanted
@@ -298,4 +299,4 @@ CREATE TABLE `wanted` (
   `active` enum('0','1') NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`caseID`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
