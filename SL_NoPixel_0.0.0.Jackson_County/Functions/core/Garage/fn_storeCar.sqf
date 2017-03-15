@@ -12,12 +12,13 @@ _information = _ct getVariable "information";
 		_fuel = fuel _ct;
 		_damage = damage _ct;
 
-		_information set [9,_fuel];
-		_information set [10,_damage];
+		if !(_damage == 1) then {
+			_information set [9,_fuel];
+			_information set [10,_damage];
+			_garage pushBack _information;
+			player setVariable ["garage", _garage, false];
+		};
 
-	_garage pushBack _information;
-
-	player setVariable ["garage", _garage, false];
 
 	[getPlayerUID player, "usedgarage", current_cars] remoteExec ["Server_fnc_setVariable",2];
 	[_fuel,_damage,_license] remoteExec ["server_fnc_updateFuelDamage", 2];
