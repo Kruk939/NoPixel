@@ -680,7 +680,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" myjob == ""Cop"" && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
-		["Komputer Policyjny", "createdialog ""wanted"";",4]
+		["Komputer Policyjny", "createdialog ""kruk_slpd_computer"";",4]
 	],
 
 	[

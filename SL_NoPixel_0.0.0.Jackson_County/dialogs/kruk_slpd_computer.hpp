@@ -3,6 +3,7 @@ class kruk_slpd_computer {
 	name = "kruk_slpd_computer";
 	movingEnable = 0;
 	enableSimulation = 1;
+	onLoad = "[player] remoteExec [""server_fnc_slpdComputerLoad"", 2]";
 	class controls {
 		class edit_search_input: Client_RscEdit
 		{

@@ -25,6 +25,7 @@ class CfgFunctions {
         };
         class kruk {
             file = "NoPixel_Server\server\core\kruk";
+			class slpdComputerLoad {};
         };
         class Sync {
             file = "NoPixel_Server\server\core\Sync";
