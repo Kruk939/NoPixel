@@ -575,7 +575,7 @@ class CfgFunctions
 			file = "Functions\core\Casino";
 			class spinSlot {};
 		};
-		class jobs {
+		class Kruk {
 			file = "Functions\core\kruk";
 		};
 	};
