@@ -1,5 +1,5 @@
 class kruk_slpd_computer {
-	id = 666001;
+	idd = 666001;
 	name = "kruk_slpd_computer";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -8,6 +8,8 @@ class kruk_slpd_computer {
 		class edit_search_input: Client_RscEdit
 		{
 			idc = 1001;
+			text = "";
+			autocomplete = "";
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 13 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -16,6 +18,8 @@ class kruk_slpd_computer {
 		class edit_vehicle: Client_RscEdit
 		{
 			idc = 1002;
+			text = "";
+			autocomplete = "";
 			x = 0 * GUI_GRID_W + GUI_GRID_X;
 			y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
@@ -188,7 +192,7 @@ class kruk_slpd_computer {
 	};
 };
 class kruk_slpd_casefile {
-	id = 666002;
+	idd = 666002;
 	name = "kruk_slpd_casefile";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -196,6 +200,8 @@ class kruk_slpd_casefile {
 		class edit_level: Client_RscEdit
 		{
 			idc = 1001;
+			text = "";
+			autocomplete = "";
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 5.5 * GUI_GRID_W;
@@ -333,7 +339,7 @@ class kruk_slpd_casefile {
 	};
 };
 class kruk_slpd_info{
-	id = 666003;
+	idd = 666003;
 	name = "kruk_slpd_info";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -379,7 +385,7 @@ class kruk_slpd_info{
 	};
 };
 class kruk_slpd_vehicle_add {
-	id = 666003;
+	idd = 666004;
 	name = "kruk_slpd_vehicle_add";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -387,6 +393,8 @@ class kruk_slpd_vehicle_add {
 		class edit_plate: Client_RscEdit
 		{
 			idc = 1001;
+			text = "";
+			autocomplete = "";
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 1.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
@@ -395,6 +403,8 @@ class kruk_slpd_vehicle_add {
 		class edit_level: Client_RscEdit
 		{
 			idc = 1002;
+			text = "";
+			autocomplete = "";
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 3.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
@@ -403,6 +413,8 @@ class kruk_slpd_vehicle_add {
 		class edit_description: Client_RscEdit
 		{
 			idc = 1003;
+			text = "";
+			autocomplete = "";
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 7 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
@@ -411,6 +423,8 @@ class kruk_slpd_vehicle_add {
 		class edit_reason: Client_RscEdit
 		{
 			idc = 1004;
+			text = "";
+			autocomplete = "";
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 12.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
@@ -487,7 +501,7 @@ class kruk_slpd_vehicle_add {
 	};
 };
 class kruk_slpd_criminal_add {
-	id = 666003;
+	idd = 666005;
 	name = "kruk_slpd_criminal_add";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -495,6 +509,8 @@ class kruk_slpd_criminal_add {
 		class edit_reason: Client_RscEdit
 		{
 			idc = 1001;
+			text = "";
+			autocomplete = "";
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 7 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
@@ -503,6 +519,8 @@ class kruk_slpd_criminal_add {
 		class edit_level: Client_RscEdit
 		{
 			idc = 1002;
+			text = "";
+			autocomplete = "";
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 3.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
