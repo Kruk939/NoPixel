@@ -38,6 +38,7 @@ class adminMessage {
 		class textEdit : client_RscEdit 
 		{
 			idc = 5202;
+			autocomplete = "";
 			text = "";
 			sizeEx = 0.030;
 			x = 0.40; y = 0.30;
