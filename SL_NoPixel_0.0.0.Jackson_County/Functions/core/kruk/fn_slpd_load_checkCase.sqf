@@ -71,7 +71,7 @@ if(_type == "plate") exitWith {
 		_owner_name = _vehInfo select 5;
 		_name = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
 		_maxSpeed = getNumber(configFile >> "CfgVehicles" >> _class >> "maxSpeed");
-		_enginePower = getNumber(configFile >> "CfgVehicles" >> _class >> "enginePower") * 1.341;
+		_enginePower = round(getNumber(configFile >> "CfgVehicles" >> _class >> "enginePower") * 1.341);
 		_wantedString = "";
 		if(count _wantedInfo == 0) then { _wantedString = "NIE"; } else {
 			_wantedString = "TAK (ID: ";
@@ -80,7 +80,7 @@ if(_type == "plate") exitWith {
 		};
 		_title = format ["Informacje o pojeździe: %1", _plate];
 		_text_title ctrlSetText _title;
-		_string = format["Numer rejestracyjny: %1\nWłaściciel: %2\nPESEL: %3\nPoszukiwany: %4\nModel: %5\nKolor: %6(%7)\nMoc: %8KM\nPrędkośc maks.: %9", _plate, _owner_name, _owner_uid, _wantedString, _name, _color, _finish, _enginePower, _maxSpeed];
+		_string = format["Numer rejestracyjny: %1\nWłaściciel: %2\nPESEL: %3\nPoszukiwany: %4\nModel: %5\nKolor: %6(%7)\nMoc: %8KM\nPrędkośc maks.: %9kmh/h", _plate, _owner_name, _owner_uid, _wantedString, _name, _color, _finish, _enginePower, _maxSpeed];
 		_text_info ctrlSetText _string;
 	} else { _title = format["Nie znaleziono pojazdu"]; };
 };
