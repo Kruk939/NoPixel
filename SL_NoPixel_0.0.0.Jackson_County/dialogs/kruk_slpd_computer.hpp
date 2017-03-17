@@ -181,7 +181,7 @@ class kruk_slpd_computer {
 			w = 4.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.7};
-			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [""vehicle"", (_data select 0), parseNumber(ctrlText 1002), getPlayerUID player] remoteExec [""server_fnc_slpdCaseUpdate"", 2]; closeDialog 0; [] spawn { uiSleep 0.1; createDialog ""kruk_slpd_computer"";};";
+			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [""vehicle"", (_data select 0), parseNumber(ctrlText 1002), getPlayerUID player] remoteExec [""server_fnc_slpdCaseUpdate"", 2]; closeDialog 0; [] spawn { sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 
 		};
 		class button_case_check: client_RscButtonMenu {
@@ -333,7 +333,7 @@ class kruk_slpd_casefile {
 			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [""personal"", (_data select 0), parseNumber(ctrlText 1001), getPlayerUID player] remoteExec [""server_fnc_slpdCaseUpdate"", 2]; closeDialog 0;  [] spawn {uiSleep 0.1; createDialog ""kruk_slpd_computer"";};";
+			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [""personal"", (_data select 0), parseNumber(ctrlText 1001), getPlayerUID player] remoteExec [""server_fnc_slpdCaseUpdate"", 2]; closeDialog 0;  [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class button_close: client_RscButtonMenu {
 			idc = 1203;
@@ -344,7 +344,7 @@ class kruk_slpd_casefile {
 			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "closeDialog 0; [] spawn {uiSleep 0.1; createDialog ""kruk_slpd_computer"";};";
+			action = "closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class text_title: RscText {
 			idc = -1;
@@ -468,7 +468,7 @@ class kruk_slpd_info{
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 		    sizeEx = 0.02921;
-			action = "kruk_slpd_computer_data remoteExec [""server_fnc_slpdCaseClose"", 2]; closeDialog 0; [] spawn {uiSleep 0.1; createDialog ""kruk_slpd_computer"";};";
+			action = "kruk_slpd_computer_data remoteExec [""server_fnc_slpdCaseClose"", 2]; closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class button_close: client_RscButtonMenu
@@ -479,7 +479,7 @@ class kruk_slpd_info{
 			y = 15.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "closeDialog 0; [] spawn {uiSleep 0.1; createDialog ""kruk_slpd_computer"";};";
+			action = "closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		    sizeEx = 0.02921;
 			colorBackground[] = {0,0,0,0.7};
 		};
@@ -557,7 +557,7 @@ class kruk_slpd_vehicle_add {
 			y = 16.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "[""vehicle""] spawn client_fnc_slpd_add_computerRecord; closeDialog 0; [] spawn {uiSleep 0.1; createDialog ""kruk_slpd_computer"";};";
+			action = "[""vehicle""] spawn client_fnc_slpd_add_computerRecord; closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class button_close: client_RscButtonMenu
 		{
@@ -567,7 +567,7 @@ class kruk_slpd_vehicle_add {
 			y = 16.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "closeDialog 0; [] spawn {uiSleep 0.1; createDialog ""kruk_slpd_computer"";};";
+			action = "closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class text_plate: RscText
 		{
@@ -674,7 +674,7 @@ class kruk_slpd_criminal_add {
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "[""personal"", kruk_slpd_computer_data select 0] spawn client_fnc_slpd_add_computerRecord; closeDialog 0;  [] spawn {uiSleep 0.1; createDialog ""kruk_slpd_computer"";};";
+			action = "[""personal"", kruk_slpd_computer_data select 0] spawn client_fnc_slpd_add_computerRecord; closeDialog 0;  [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class button_close: client_RscButtonMenu
 		{
@@ -684,7 +684,7 @@ class kruk_slpd_criminal_add {
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "closeDialog 0; [] spawn {uiSleep 0.1; createDialog ""kruk_slpd_computer"";};";
+			action = "closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class text_reason: RscText
 		{
