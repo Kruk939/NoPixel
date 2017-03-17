@@ -8,6 +8,7 @@
 		Return: none
 */
 disableSerialization;
+waitUntil{dialog};
 _display = findDisplay 666001;
 _criminals = _this select 0;
 _vehicles = _this select 1;

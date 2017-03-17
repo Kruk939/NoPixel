@@ -13,5 +13,5 @@
 disableSerialization;
 _name = format["Imię i nazwisko: %1", name(kruk_slpd_computer_data select 1)];
 _display = findDisplay 666005;
-_ctr = _display displayCtrl 1301;
+_ctrl = _display displayCtrl 1301;
 _ctrl ctrlSetText _name;
