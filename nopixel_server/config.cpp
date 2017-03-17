@@ -28,6 +28,7 @@ class CfgFunctions {
 			class slpdComputerLoad {};
 			class slpdCheckPlayer {};
 			class slpdCheckCase {};
+			class slpdCheckVehicle {};
 			class slpdCaseClose {};
 			class slpdCaseAdd {};
 			class slpdCaseUpdate {};
