@@ -77,10 +77,10 @@ while{true} do
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 
-                    ["Informacja","Otrzymałeś mandat w wysokosci $15000 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście",[255,69,0,1],""] call Client_fnc_showNotification;
+                    ["Informacja","Otrzymałeś mandat w wysokosci $8000 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście",[255,69,0,1],""] call Client_fnc_showNotification;
 					//["Otrzymałeś mandat w wysokosci $10000 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście", false] spawn domsg;
-					_check = [2, 15000] call Client_fnc_checkMoney;
-					if (_check) then {[15000] call Client_fnc_removeBank;};
+					_check = [2, 8000] call Client_fnc_checkMoney;
+					if (_check) then {[8000] call Client_fnc_removeBank;};
                     ["RemoveQuiet","license",1] call client_fnc_sustain;
 					};
 				};
@@ -134,10 +134,10 @@ while{true} do
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 
-                    ["Informacja","Otrzymałeś $15000 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem",[255,69,0,1],""] call Client_fnc_showNotification;
+                    ["Informacja","Otrzymałeś $8000 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem",[255,69,0,1],""] call Client_fnc_showNotification;
 					//["Otrzymałeś $1500 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem", false] spawn domsg;
-					_check = [2, 15000] call Client_fnc_checkMoney;
-					if (_check) then {[15000] call Client_fnc_removeBank;};
+					_check = [2, 8000] call Client_fnc_checkMoney;
+					if (_check) then {[8000] call Client_fnc_removeBank;};
                     ["RemoveQuiet","license",1] call client_fnc_sustain;
 					};
 
