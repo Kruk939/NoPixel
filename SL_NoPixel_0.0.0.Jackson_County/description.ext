@@ -560,6 +560,7 @@ class CfgFunctions
             class forceFirstPerson {};
             class setFuel {};
             class respawnTimer {};
+            class speedMeters;
 		};
         class Items
 		{

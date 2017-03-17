@@ -1,7 +1,7 @@
 _player = _this select 0;
 _jobtype = _this select 1;
 
-[player, "job", format["Rozpoczal prace - %1", _jobtype]] remoteExec ["Server_fnc_insertLog", 2];
+[player,objNull,3,format ["%1 rozpoczął pracę %2", name player, _jobtype],_jobtype] remoteExec ["server_fnc_jobLog", 2];
 if (str _jobtype find "Cop" > -1 || str _jobtype == "Cop") exitwith {
 	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];	
 	[] spawn client_fnc_startCop;

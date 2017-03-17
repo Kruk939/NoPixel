@@ -34,7 +34,9 @@ switch (_type) do {
     case 4: {_type = "Zlomowanie";};
     case 5: {_type = "UstalenieCenySprzedaży";};
     case 6: {_type = "KupieniePojazdu";};
-    //case 7: {_type = "";};
+    case 7: {_type = "OtrzymanieKasyZSprzedaży";};
+    case 8: {_type = "KupnoSamochoduFail";};
+    //case 9: {_type = "";};
 };
 
 

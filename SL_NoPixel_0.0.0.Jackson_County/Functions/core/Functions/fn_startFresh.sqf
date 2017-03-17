@@ -1,7 +1,7 @@
 /*
 Start Fresh when you completely die
 */
-
+ClientArrested = false;
 
 removeAllItems player;
 removeAllContainers player;

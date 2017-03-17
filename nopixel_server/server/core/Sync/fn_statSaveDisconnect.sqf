@@ -1,4 +1,4 @@
-params["_player","_items"];
+params["_player"];
 if(isNull _player) exitWith { diag_log "Stat save Disconnect - player null"; };
 _uid = getPlayerUID _player;
 
@@ -19,7 +19,7 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
     [_uid,"0"] spawn Server_fnc_connected;
 } else { 
-	_updatestr = format ["updatePlayerInfoNoShopNoHouse:%1:%2:%3:%4:%5:%6", _items, _cash, _bank, _position, _messages, _uid]; 
+	_updatestr = format ["updatePlayerInfoNoGearNoShopNoHouse:%1:%2:%3:%4:%5", _cash, _bank, _position, _messages, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
     [_uid,"0"] spawn Server_fnc_connected;
 }; 

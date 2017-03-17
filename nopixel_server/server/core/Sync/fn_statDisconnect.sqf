@@ -57,10 +57,12 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
 	_updatestr = format ["updatePlayerInfoNoGearNoShopNoHouseNoMoney:%1:%2:%3", _position, _messages, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
     [_uid,"0"] spawn Server_fnc_connected;
+    [_player,objNull,2,format ["%1 rozłączył się z serwerem", name _player],""] call server_fnc_connectionLog;
 } else { 
 	_updatestr = format ["updatePlayerInfoNoShopNoHouseNoMoney:%1:%2:%3:%4", _items, _position, _messages, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
     [_uid,"0"] spawn Server_fnc_connected;
+    [_player,objNull,2,format ["%1 rozłączył się z serwerem", name _player],""] call server_fnc_connectionLog;
 }; 
 
 [] spawn server_fnc_refreshjobs;

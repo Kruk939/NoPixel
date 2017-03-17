@@ -211,7 +211,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["(count currentEMS < 3) && !(myjob == ""EMS"")"],
+		["(count currentEMS < 3) && !(myjob == ""EMS"" || myjob == ""Fire"")"],
 		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
 	],
 
@@ -258,7 +258,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Cop"" && currentcursortarget isKindOf ""Car"""],
+		["(myjob == ""Cop"" && myjob == ""Fire"") && currentcursortarget isKindOf ""Car"""],
 		["Schowaj($20)", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2];  paycheck = paycheck + 20; hint ""Odholowano i doliczono do wypłaty"";",2]
 	],
 

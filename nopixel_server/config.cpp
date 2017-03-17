@@ -21,7 +21,6 @@ class CfgFunctions {
             class autolock {};
             class initStats {};
             class SetVariable {};
-			class insertLog {};
         };
         class SLPD {
             file = "NoPixel_Server\server\core\SLPD";
@@ -117,6 +116,8 @@ class CfgFunctions {
             class economyLog {};
             class adminLog {};
             class craftLog {};
+            class jobLog {};
+            class connectionLog {};
         };
         class Admin {
             file = "NoPixel_Server\server\core\Admin";

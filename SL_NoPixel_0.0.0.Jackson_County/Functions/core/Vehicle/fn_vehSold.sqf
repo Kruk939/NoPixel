@@ -14,7 +14,7 @@ _veh = _this select 1;
 hint format [""];
 [_price] call Client_fnc_addBank;
 [format["Twój samochód sprzedał się za: $%1!", _price], true] spawn domsg;
-[player, "car", format["Gracz %1 dostal $%2 za sprzedaz samochodu."], name player, _price] remoteExec ["Server_fnc_insertLog", 2];
+[player,6,format ["%1 dostał %2 za sprzedaż samochodu",name player,_price],_price,"",""] remoteExec ["server_fnc_vehicleLog", 2];
 
 _pia = Current_Cars find _veh;
 Current_Cars deleteAt _pia;

@@ -66,7 +66,8 @@ if(myJob == "Cop") then {
 			"ivory_rs4_unmarked",
 			"vvv_HarleyDavidson_CustomBobber",
 			"C_Boat_Civil_01_F",
-			"MELB_H6M"
+			"MELB_H6M",
+			"MELB_MH6M"
 			];
 			if (client_dtu_actions >= 1) then {
 			_garageMore = [

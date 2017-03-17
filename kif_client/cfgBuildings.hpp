@@ -5,7 +5,7 @@ class kif_speedcam: Building
 		displayName = "Speed Camera";
 		vehicleclass = "kif_client";
 		placement = "vertical";
-		class Reflectors
+		/*class Reflectors
 		{
 			class Flash
 			{
@@ -33,5 +33,5 @@ class kif_speedcam: Building
 					hardLimitEnd = 200;
 				};
 			};
-		};
+		};*/
 	};

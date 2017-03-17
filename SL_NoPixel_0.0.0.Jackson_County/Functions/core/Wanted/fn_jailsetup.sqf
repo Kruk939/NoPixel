@@ -40,13 +40,13 @@ if(!_escaped) then {
 } else {
 	hint "Uciekłeś z wiezienia!";
 	
-_suspectID = name player;
+//_suspectID = name player;
 _Suid = getplayeruid player;
-_officerID = "Departament Więziennictwa";
+//_officerID = "Departament Więziennictwa";
 _charges = "Ucieczka z wiezienia";
 _status = 5;
-_evidence = []; // lodged later.
-_active = 1; // enabled instantly
+//_evidence = []; // lodged later.
+//_active = 1; // enabled instantly
 
 	_data = [_Suid, "911", _charges, _status];
 	["personal", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];

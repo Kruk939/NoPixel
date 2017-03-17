@@ -3,7 +3,7 @@ private["_name","_markers"];
 waituntil{visiblemap};
 
 _markers = [];
-
+if(visibleMap AND ("ItemGPS" in assignedItems player || "kif_gps" in assignedItems player) || visibleGPS) then {
 	{
 		if ( _x getVariable["robber",FALSE] ) then {
 			_marker = createMarkerLocal [format["%1_NAMIERZONY_PRZESTĘPCA_BANK",name _x],visiblePosition _x];
@@ -93,7 +93,7 @@ _markers = [];
 		uiSleep 0.05;
 	};
 	{deleteMarkerLocal (_x select 0);} foreach _markers;	
-
+};
 
 
 

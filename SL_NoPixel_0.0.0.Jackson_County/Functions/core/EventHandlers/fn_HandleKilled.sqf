@@ -14,11 +14,11 @@ if(vehicle player == player) then {
 	player playmove "deadstate";
 };
 
-if(vehicle player != player) then {
-	//[] spawn KK_fnc_forceRagdoll;
+/*if(vehicle player != player) then {
+	[] spawn KK_fnc_forceRagdoll;
 	uisleep 3;
 	player playmove "KIA_commander_MRAP_03";
-};
+};*/
 
 im_dead = true;
 params [["_unit", objNull, [objNull]], ["_killer", objNull, [objNull]], ["_length", 0, [0]], ["_headshot", 0, [0]]];
@@ -64,7 +64,6 @@ if(_fuck != _you) then {
 		[_killer, player, "killAtempt"] spawn client_fnc_createEvidence;
 	};
 	[player,_killer,1,format ["%1 zabił %2 z dystansu %3 używając %4",_fuck, name player, _killdistance, _killweapon],_killweapon, _killdistance] remoteExec ["server_fnc_deathLog", 2];
-	[player, "killed", format["Gracz zostal zabity przez %1 (%2) z odleglosci %3 z broni %4",_fuck, getPlayerUID _killer, _killdistance, _killweapon]] remoteExec ["Server_fnc_insertLog", 2];
 } else {
 	shooting_death = false;
 	[getpos player, "News", "Unknown Death"] remoteexec ["server_fnc_giveTask",2];

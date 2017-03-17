@@ -1,5 +1,8 @@
 while{true} do
     {
+	if (myjob in ["Cop","EMS","Fire"]) then {
+
+	} else {
 	    _vehicle = vehicle player;
 		if(vehicle player != player && driver (vehicle player) isEqualTo player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike"))) then {
 
@@ -29,7 +32,6 @@ while{true} do
 					_check = [2, 1500] call Client_fnc_checkMoney;
 					if (_check) then {[1500] call Client_fnc_removeBank;};
 					};
-				};
 
 				if(_vel > 139 && _vel < 200) then {
 					"colorCorrections" ppEffectEnable true;
@@ -75,12 +77,13 @@ while{true} do
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 
-                    ["Informacja","Otrzymałeś mandat w wysokosci $10000 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście",[255,69,0,1],""] call Client_fnc_showNotification;
+                    ["Informacja","Otrzymałeś mandat w wysokosci $15000 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście",[255,69,0,1],""] call Client_fnc_showNotification;
 					//["Otrzymałeś mandat w wysokosci $10000 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście", false] spawn domsg;
-					_check = [2, 10000] call Client_fnc_checkMoney;
-					if (_check) then {[10000] call Client_fnc_removeBank;};
-                    ["Remove","license",1] call client_fnc_sustain;
+					_check = [2, 15000] call Client_fnc_checkMoney;
+					if (_check) then {[15000] call Client_fnc_removeBank;};
+                    ["RemoveQuiet","license",1] call client_fnc_sustain;
 					};
+				};
 
 			};
 			if((player distance (getMarkerPos "speed_cam_5")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_10")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30) then {
@@ -131,13 +134,14 @@ while{true} do
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 
-                    ["Informacja","Otrzymałeś $1500 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem",[255,69,0,1],""] call Client_fnc_showNotification;
+                    ["Informacja","Otrzymałeś $15000 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem",[255,69,0,1],""] call Client_fnc_showNotification;
 					//["Otrzymałeś $1500 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem", false] spawn domsg;
-					_check = [2, 1500] call Client_fnc_checkMoney;
+					_check = [2, 15000] call Client_fnc_checkMoney;
 					if (_check) then {[15000] call Client_fnc_removeBank;};
-                    ["Remove","license",1] call client_fnc_sustain;
+                    ["RemoveQuiet","license",1] call client_fnc_sustain;
 					};
 
 				};
 				uiSleep 1;
 			};
+	};

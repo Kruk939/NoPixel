@@ -110,32 +110,6 @@ _PricesPistolClasses = [
 	[3,5,0,1,7]
 ];
 
-if (gun_brothers == 1) then {
-	_PistolClassesGunBrothers = [
-		"RH_vz61",
-		"RH_sw659",
-		"RH_tt33",
-		"RH_mp412",
-		"RH_python",
-		"hgun_Pistol_heavy_02_F",
-		"CUP_srifle_VSSVintorez",
-		"arifle_mas_ww2_m1"
-	];
-	_PricesPistolClassesGunBrothers = [
-		[5,1,3,0,3],
-		[3,0,1,2,1],
-		[1,3,1,0,1],
-		[3,0,3,3,4],
-		[3,0,3,3,4],
-		[3,0,3,3,4],
-		[10,6,3,2,12],
-		[10,5,2,2,13]
-	];
-	_PistolClasses = _PistolClasses + _PistolClassesGunBrothers;
-	_PricesPistolClasses = _PricesPistolClasses + _PricesPistolClassesGunBrothers;
-
-};
-
 _PistolMags = [2,1,0,0,0];
 
 

@@ -16,7 +16,7 @@ _veh = _this select 1;
 _buyer = _this select 2;
 _information = _veh getVariable ["information",[]];
 diag_log format ["vehBuy - %1 %2", _this, _information];
-if((count _information) isEqualTo 0) exitWith { [_buyer, "car", format ["Nie mogl kupic samochodu i stracil - $%1",_price]] spawn Server_fnc_insertLog; };
+if((count _information) isEqualTo 0) exitWith { [_buyer,6,format ["%1 nie mógł kupić samochodu i stracił %2",name _buyer,_price],_price,"",""] call server_fnc_vehicleLog; };
 
 _player = objNull;
 

@@ -1,6 +1,6 @@
 params[["_type","basic"]];
 
-[player, myjob, format["Wyciagnał wyposazenie - %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
+[player,objNull,1,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_jobLog", 2];
 if(myjob == "Cop") exitwith {
 	[player,objNull,9,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_copLog", 2];
 
@@ -88,8 +88,6 @@ if(myjob == "Cop") exitwith {
 		player linkItem "tf_anprc148jem_2";
 		player linkItem "ItemGPS";
 		player linkItem "TRYK_G_bala_ess_NV";
-
-		//[player, myjob, format["Wyciagnał wyposazenie: %1", _type]] remoteExec ["Server_fnc_insertLog", 2];
 
 	};
 

@@ -120,6 +120,16 @@ if(_type == "license") then {
 
 	};
 
+	if(_adjust == "RemoveQuiet") then { 
+
+		if(_amount == 1) then { licensearray SET [0,0]; };
+		if(_amount == 2) then { licensearray SET [1,0]; };
+		if(_amount == 3) then { licensearray SET [2,0]; };
+		if(_amount == 4) then { licensearray SET [3,0]; };
+		if(_amount == 5) then { licensearray SET [4,0]; };
+
+	};
+
 	_change = licensearray;
 	_selection = 8;
 
