@@ -707,7 +707,6 @@ _availableAttachments = [
 	"RH_docter",
 	"RH_vp70stock",
 	"RH_X300",
-	"RH_SFM952V",
 	"RH_M6X",
 	"RH_X2"
 ];
