@@ -26,11 +26,10 @@ if(_type == "vehicle") then {
 	_officer_name = _data select 4;
 	_reason = _data select 5;
 	_wanted_level = _data select 6;
+	kruk_slpd_computer_data = [(_data select 0), "vehicle", getPlayerUID player];
 	
-	_string = format["Numer rejestracyjny: %1\n Opis pojazdu: %2Poziom poszukiwania: %3\n\nPowód: %4\nWystawił: %5\n", _plate, _description, _wanted_level, _reason, _officer_name];
-	
+	_string = format["Numer rejestracyjny: %1\nOpis pojazdu: %2\nPoziom poszukiwania: %3\n\nPowód: %4\nWystawił: %5\n", _plate, _description, _wanted_level, _reason, _officer_name];
 	_text_info ctrlSetText _string;
-
 };
 if(_type == "personal") then {
 	//w.id, w.uid_suspect, s.name, w.uid_officer, o.name, w.charges, w.wanted_level, w.active
@@ -47,7 +46,8 @@ if(_type == "personal") then {
 	_officer_name = _data select 4;
 	_charges = _data select 5;
 	_wanted_level = _data select 6;
+	kruk_slpd_computer_data = [(_data select 0), "personal"];
 	
-	_string = format["Imię i nazwisko: %1\n PESEL: %2\nPoziom poszukiwania: %3\n\nZarzuty: %4\nWystawił: %5", _suspect_name, _suspect_uid, _wanted_level, _charges, _officer_name];
+	_string = format["Imię i nazwisko: %1\nPESEL: %2\nPoziom poszukiwania: %3\n\nZarzuty: %4\nWystawił: %5", _suspect_name, _suspect_uid, _wanted_level, _charges, _officer_name];
 	_text_info ctrlSetText _string;
 };

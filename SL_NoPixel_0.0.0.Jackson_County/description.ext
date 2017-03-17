@@ -581,6 +581,8 @@ class CfgFunctions
 			class slpd_load_computerData {};
 			class slpd_load_personalData {};
 			class slpd_load_checkCase {};
+			class slpd_add_computerRecord {};
+			class slpd_load_criminalAdd {};
 		};
 	};
 };

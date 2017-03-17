@@ -36,6 +36,13 @@ if(count _playerInfo != 0) then {
 	_level_ems = _playerInfo select 3;
 	_level_fire = _playerInfo select 4;
 	_level_legal = _playerInfo select 5;
+	_services = "";
+	if(_level_cop > 0) then { _services = _services + "PD "; };
+	if(_level_ems > 0) then { _services = _services + "EMS "; };
+	if(_level_fire > 0) then { _services = _services + "FD "; };
+	if(_level_legal > 0) then { _services = _services + "LEGAL "; };
+	if(_services == "") then { _services = "BRAK"; };
+	
 	_statuses = _playerInfo select 6;
 	//_cash = _playerInfo select 7;
 	//_bank = _playerInfo select 8;
@@ -87,7 +94,7 @@ if(count _playerInfo != 0) then {
 
 	_string = _string + format["Imię i Nazwisko: %1\nPESEL: %2\n", _playerName, _uid];
 	if(count _activeCases == 0) then { _string = _string + "Poszukiwany: NIE\n"; } else { _string = _string + "Poszukiwany: TAK\n"; };
-	_string = _string + format["Ilość punktów karnych: %1\nLicencje:\n", _points];
+	_string = _string + format["Ilość punktów karnych: %1\nPrzynależność do służb: %2\nLicencje:\n", _points, _services];
 	if(_licenses select 0 == 1) then { _string = _string + "Prawo Jazdy\n"; };
 	if(_licenses select 1 == 1) then { _string = _string + "Licencja na Bron\n"; };
 	if(_licenses select 2 == 1) then { _string = _string + "Licencja Gornika\n"; };
