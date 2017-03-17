@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6532.4321,98.81311,2939.5698};
-		dir[]={0.90854359,-0.28881127,0.30213904};
-		up[]={0.27410132,0.95734775,0.091153949};
-		aside[]={0.31559056,-5.453403e-007,-0.94898868};
+		pos[]={8257.4316,25,2868.6243};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -49,35 +49,35 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item4
 		{
 			className="A3_Supplies_F_Exp";
 			name="Arma 3 Apex - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
@@ -94,14 +94,14 @@ class AddonsMetaData
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item8
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item9
 		{
@@ -153,7 +153,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=321;
+		items=295;
 		class Item0
 		{
 			dataType="Group";
@@ -9351,12 +9351,12 @@ class Mission
 				angles[]={6.2738695,1.3346604,0.001544081};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=404;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.60822105;
 		};
 		class Item235
 		{
@@ -9367,12 +9367,12 @@ class Mission
 				angles[]={6.2738695,1.3346604,0.001544081};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=405;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.58971596;
 		};
 		class Item236
 		{
@@ -9383,12 +9383,12 @@ class Mission
 				angles[]={6.2738695,1.3346604,0.001544081};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=406;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.57155418;
 		};
 		class Item237
 		{
@@ -9399,12 +9399,12 @@ class Mission
 				angles[]={6.2738695,1.3346604,0.001544081};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=407;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.5520153;
 		};
 		class Item238
 		{
@@ -9421,7 +9421,6 @@ class Mission
 			};
 			id=408;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.00017166138;
 		};
 		class Item239
 		{
@@ -9432,12 +9431,12 @@ class Mission
 				angles[]={6.2738695,2.9127731,0.001544081};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=409;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.37973976;
 		};
 		class Item240
 		{
@@ -10097,7 +10096,7 @@ class Mission
 			};
 			id=470;
 			type="Box_NATO_Uniforms_F";
-			atlOffset=0.00010490417;
+			atlOffset=8.7738037e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10987,31 +10986,21 @@ class Mission
 			position[]={7327.8389,3.0922304e+019,2523.5315};
 			name="speed_cam_1";
 			type="Empty";
-			angle=99.172981;
+			angle=99.172974;
 			id=486;
 			atlOffset=3.0922304e+019;
 		};
 		class Item278
 		{
 			dataType="Marker";
-			position[]={6894.2749,3.0543721e+019,2345.842};
-			name="speed_cam_2";
-			type="Empty";
-			angle=99.172981;
-			id=487;
-			atlOffset=3.0543721e+019;
-		};
-		class Item279
-		{
-			dataType="Marker";
 			position[]={6465.0928,1.8173619e-035,2193.54};
 			name="speed_cam_3";
 			type="Empty";
-			angle=99.172981;
+			angle=99.172974;
 			id=488;
 			atlOffset=-25;
 		};
-		class Item280
+		class Item279
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11027,23 +11016,7 @@ class Mission
 			id=490;
 			type="Mattaust_Cam2";
 		};
-		class Item281
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8092.5215,26.424778,2767.1855};
-				angles[]={0,1.3355019,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=495;
-			type="Mattaust_Cam1";
-		};
-		class Item282
+		class Item280
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11059,127 +11032,37 @@ class Mission
 			id=496;
 			type="Mattaust_Cam1";
 		};
-		class Item283
-		{
-			dataType="Marker";
-			position[]={8257.4316,0,2893.6243};
-			name="speed_cam_4";
-			type="Empty";
-			angle=99.172974;
-			id=497;
-			atlOffset=-25;
-		};
-		class Item284
-		{
-			dataType="Marker";
-			position[]={5862.0386,2.8813477,2484.3477};
-			name="speed_cam_6";
-			type="Empty";
-			angle=99.172966;
-			id=499;
-			atlOffset=-24.982248;
-		};
-		class Item285
-		{
-			dataType="Marker";
-			position[]={6847.3057,4.301918,3045.7837};
-			name="speed_cam_7";
-			type="Empty";
-			angle=99.172966;
-			id=500;
-			atlOffset=-24.996201;
-		};
-		class Item286
-		{
-			dataType="Marker";
-			position[]={8454.5566,-0.043560028,3256.781};
-			name="speed_cam_8";
-			type="Empty";
-			angle=99.172966;
-			id=501;
-			atlOffset=-24.995596;
-		};
-		class Item287
-		{
-			dataType="Marker";
-			position[]={9501.5684,1.9441681,3714.5801};
-			name="speed_cam_9";
-			type="Empty";
-			angle=99.172966;
-			id=502;
-			atlOffset=-24.999159;
-		};
-		class Item288
-		{
-			dataType="Marker";
-			position[]={9628.6084,43.923958,6292.1509};
-			name="speed_cam_11";
-			type="Empty";
-			angle=99.172966;
-			id=504;
-			atlOffset=-24.976791;
-		};
-		class Item289
+		class Item281
 		{
 			dataType="Marker";
 			position[]={9722.2168,31.285904,7519.0874};
 			name="speed_cam_12";
 			type="Empty";
-			angle=99.172966;
+			angle=99.172958;
 			id=505;
 			atlOffset=-25.075581;
 		};
-		class Item290
-		{
-			dataType="Marker";
-			position[]={5423.3037,0,1120.5206};
-			name="speed_cam_13";
-			type="Empty";
-			angle=99.172966;
-			id=506;
-			atlOffset=-25;
-		};
-		class Item291
-		{
-			dataType="Marker";
-			position[]={4150.3335,7.2437401,2050.5645};
-			name="speed_cam_14";
-			type="Empty";
-			angle=99.172966;
-			id=507;
-			atlOffset=-25.07914;
-		};
-		class Item292
+		class Item282
 		{
 			dataType="Marker";
 			position[]={5031.8306,-21.479372,2756.7988};
 			name="speed_cam_15";
 			type="Empty";
-			angle=99.172966;
+			angle=99.172958;
 			id=508;
 			atlOffset=-24.986469;
 		};
-		class Item293
-		{
-			dataType="Marker";
-			position[]={5436.6577,10.735344,4070.0776};
-			name="speed_cam_16";
-			type="Empty";
-			angle=99.172966;
-			id=509;
-			atlOffset=-24.98938;
-		};
-		class Item294
+		class Item283
 		{
 			dataType="Marker";
 			position[]={6906.5635,-2.5839844,5438.7793};
 			name="speed_cam_17";
 			type="Empty";
-			angle=99.172966;
+			angle=99.172958;
 			id=510;
 			atlOffset=-25.003929;
 		};
-		class Item295
+		class Item284
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11195,70 +11078,7 @@ class Mission
 			id=513;
 			type="Mattaust_Cam1";
 		};
-		class Item296
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={7323.2559,27.991611,3128.9065};
-				angles[]={0,1.7116659,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=514;
-			type="Mattaust_Cam1";
-		};
-		class Item297
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={7218.9253,28.599369,3138.7288};
-				angles[]={0,4.767931,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=515;
-			type="Mattaust_Cam1";
-		};
-		class Item298
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9776.0137,24.06321,3994.3926};
-				angles[]={0,0.88397068,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=516;
-			type="Mattaust_Cam1";
-		};
-		class Item299
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9727.2617,27.150301,4808.1763};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-			};
-			id=517;
-			type="Mattaust_Cam1";
-		};
-		class Item300
+		class Item285
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11274,22 +11094,7 @@ class Mission
 			id=518;
 			type="Mattaust_Cam1";
 		};
-		class Item301
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8195.6816,26.5,2854.2271};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=519;
-			type="kif_speedcam";
-		};
-		class Item302
+		class Item286
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11305,7 +11110,7 @@ class Mission
 			id=520;
 			type="kif_speedcam";
 		};
-		class Item303
+		class Item287
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11321,39 +11126,7 @@ class Mission
 			id=521;
 			type="kif_speedcam";
 		};
-		class Item304
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6897.729,26.921551,2345.4863};
-				angles[]={0,2.2288136,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=522;
-			type="kif_speedcam";
-			atlOffset=0.42155075;
-		};
-		class Item305
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6892.1582,26.911467,2347.5977};
-				angles[]={0,5.3632679,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=523;
-			type="kif_speedcam";
-			atlOffset=0.4114666;
-		};
-		class Item306
+		class Item288
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11369,24 +11142,7 @@ class Mission
 			id=524;
 			type="kif_speedcam";
 		};
-		class Item307
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5861.5654,29.278278,2455.342};
-				angles[]={0.041244626,2.806654,6.2649512};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=526;
-			type="kif_speedcam";
-			atlOffset=0.0015106201;
-		};
-		class Item308
+		class Item289
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11403,66 +11159,17 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=-0.00016021729;
 		};
-		class Item309
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6865.4692,30.806423,3032.0242};
-				angles[]={6.2773466,3.3962059,6.278018};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=528;
-			type="kif_speedcam";
-		};
-		class Item310
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8452.1875,26.355907,3234.7939};
-				angles[]={0,3.5202971,0.018468013};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=529;
-			type="kif_speedcam";
-			atlOffset=0.000207901;
-		};
-		class Item311
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9534.8193,28.143921,3715.1182};
-				angles[]={6.269557,3.093436,6.2713552};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=530;
-			type="kif_speedcam";
-		};
-		class Item312
+		class Item290
 		{
 			dataType="Marker";
 			position[]={8663.5781,2.9388917e+037,6409.1309};
 			name="speed_cam_10";
 			type="Empty";
-			angle=99.172989;
+			angle=99.172981;
 			id=531;
 			atlOffset=2.9388917e+037;
 		};
-		class Item313
+		class Item291
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11479,24 +11186,7 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=0.00010490417;
 		};
-		class Item314
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9640.7637,71.245552,6284.896};
-				angles[]={0.015667066,2.1763103,0.029914072};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=533;
-			type="kif_speedcam";
-			atlOffset=0.00086212158;
-		};
-		class Item315
+		class Item292
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11513,41 +11203,7 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=0.0095405579;
 		};
-		class Item316
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5421.8794,26.499952,1134.5552};
-				angles[]={0,1.0191982,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=535;
-			type="kif_speedcam";
-			atlOffset=-4.7683716e-005;
-		};
-		class Item317
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4159.8628,31.601513,2071.3469};
-				angles[]={0.063888989,2.0474792,6.2224364};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=536;
-			type="kif_speedcam";
-			atlOffset=0.0058174133;
-		};
-		class Item318
+		class Item293
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11564,24 +11220,7 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=0.0026421547;
 		};
-		class Item319
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={5444.2407,37.022766,4046.8918};
-				angles[]={6.2772956,2.9001095,0.012487104};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=538;
-			type="kif_speedcam";
-			atlOffset=0.00012207031;
-		};
-		class Item320
+		class Item294
 		{
 			dataType="Object";
 			class PositionInfo
