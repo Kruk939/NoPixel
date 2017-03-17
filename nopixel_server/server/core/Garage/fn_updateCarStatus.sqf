@@ -7,6 +7,7 @@ _information = _object getVariable "information";
 
 diag_log format["DEBUG - server_fnc_updateCarStatus: %1",_this];
 
+_exit = false;
 if (_status isEqualTo 0) then {
 	 _license = _information select 0;
 	 _carowner = _information select 8;
@@ -17,10 +18,11 @@ if (_status isEqualTo 0) then {
 	 } else {
 		[_player,4,format ["%1 zezlomowal %2", name _player, _vehicleName],"",_className,_vehicleName] call server_fnc_vehiclelog;
 	 };
-	 if (isNil "_carowner") exitwith {deleteVehicle _object;};
+	 if (isNil "_carowner") exitwith {_exit = true;};
 	 {if (getplayeruid _x isEqualTo _carowner) exitwith { _player = _x; }; } foreach playableunits;
 	 deleteVehicle _object;
 };
+if (_exit) exitwith { deleteVehicle _object; };
 _updatestr = format["updateCarStatus:%1:%2", _status, _license];
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 
