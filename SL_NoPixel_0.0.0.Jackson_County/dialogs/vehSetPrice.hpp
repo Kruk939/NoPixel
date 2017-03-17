@@ -38,6 +38,7 @@ class vehSetPrice {
 		class moneyEdit : client_RscEdit 
 		{
 			idc = 4202;
+			autocomplete = "";
 			text = "1000";
 			sizeEx = 0.030;
 			x = 0.40; y = 0.30;

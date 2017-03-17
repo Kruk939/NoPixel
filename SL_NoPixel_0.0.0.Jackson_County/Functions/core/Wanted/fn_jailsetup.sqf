@@ -48,7 +48,9 @@ _status = 5;
 _evidence = []; // lodged later.
 _active = 1; // enabled instantly
 
-[_suspectID, _Suid, _officerID, "", _charges, _status, _evidence, _active] remoteexec ["server_fnc_addcriminal",2];
+	_data = [_Suid, "911", _charges, _status];
+	["personal", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];
+//[_suspectID, _Suid, _officerID, "", _charges, _status, _evidence, _active] remoteexec ["server_fnc_addcriminal",2];
 //[_suspectID,_Suid,_officerID,_charges,_status,_evidence,_active] remoteexec ["server_fnc_addcriminal",2];
 };
 

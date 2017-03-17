@@ -23,6 +23,16 @@ class CfgFunctions {
             class SetVariable {};
 			class insertLog {};
         };
+        class kruk {
+            file = "NoPixel_Server\server\core\kruk";
+			class slpdComputerLoad {};
+			class slpdCheckPlayer {};
+			class slpdCheckCase {};
+			class slpdCheckVehicle {};
+			class slpdCaseClose {};
+			class slpdCaseAdd {};
+			class slpdCaseUpdate {};
+        };
         class Sync {
             file = "NoPixel_Server\server\core\Sync";
             class invSave {};
