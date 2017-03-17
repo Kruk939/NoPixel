@@ -71,7 +71,7 @@ if(count _playerInfo != 0) then {
 	lbClear _list_vehicles;
 	{
 		//license, class, color, finish, rims, windows, lights, statuses, owner, fuel, damage
-		_plate = _x select 0;
+		_plate = toUpper(_x select 0);
 		_class = _x select 1;
 		_color = _x select 2;
 		_name = getText(configFile >> "CfgVehicles" >> _class >> "displayName");

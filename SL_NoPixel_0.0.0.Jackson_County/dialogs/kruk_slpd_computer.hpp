@@ -5,6 +5,24 @@ class kruk_slpd_computer {
 	enableSimulation = 1;
 	onLoad = "[player] remoteExec [""server_fnc_slpdComputerLoad"", 2]";
 	class controls {
+		class BASE {    
+			shadow = 0;
+			type = 0;
+			style = 2096;
+			sizeEx = 1;
+			font = "PuristaMedium";
+			colorBackground[] = {};
+			colorText[] = {};
+			tooltipColorText[] = {1,1,1,1};
+			tooltipColorBox[] = {1,1,1,1};
+			tooltipColorShade[] = {0,0,0,0.65};
+			idc = -1;
+			text = "\np_dialogs1\Images\wantedMenu.paa";
+			x = -2.5 * GUI_GRID_W + GUI_GRID_X;
+			y = -12 * GUI_GRID_H + GUI_GRID_Y;
+			w = 45 * GUI_GRID_W;
+			h = 45 * GUI_GRID_H;
+		}; 
 		class edit_search_input: Client_RscEdit {
 			idc = 1001;
 			text = "";
@@ -69,6 +87,7 @@ class kruk_slpd_computer {
 			y = 17 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
+			action = "[player, (ctrlText 1001), ""name""] remoteExec [""server_fnc_slpdCheckPlayer""];";
 			colorBackground[] = {0,0,0,0.7};
 		};
 		class button_search_uid: client_RscButtonMenu {
@@ -184,7 +203,7 @@ class kruk_slpd_computer {
 			y = 0 * GUI_GRID_H + GUI_GRID_Y;
 			w = 40 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 		};
 		class text_wanted_criminals: RscText {
 			idc = -1;
@@ -230,6 +249,24 @@ class kruk_slpd_casefile {
 	movingEnable = 0;
 	enableSimulation = 1;
 	class controls {
+		class BASE {    
+			shadow = 0;
+			type = 0;
+			style = 2096;
+			sizeEx = 1;
+			font = "PuristaMedium";
+			colorBackground[] = {};
+			colorText[] = {};
+			tooltipColorText[] = {1,1,1,1};
+			tooltipColorBox[] = {1,1,1,1};
+			tooltipColorShade[] = {0,0,0,0.65};
+			idc = -1;
+			text = "\np_dialogs1\Images\wantedMenu.paa";
+			x = -2.5 * GUI_GRID_W + GUI_GRID_X;
+			y = -12 * GUI_GRID_H + GUI_GRID_Y;
+			w = 45 * GUI_GRID_W;
+			h = 45 * GUI_GRID_H;
+		}; 
 		class edit_level: Client_RscEdit {
 			idc = 1001;
 			text = "";
@@ -316,7 +353,7 @@ class kruk_slpd_casefile {
 			y = 0 * GUI_GRID_H + GUI_GRID_Y;
 			w = 40 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,1};
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 		};
 		class text_info: RscText {
 			idc = 1301;
@@ -382,6 +419,24 @@ class kruk_slpd_info{
 	movingEnable = 0;
 	enableSimulation = 1;
 	class controls {
+		class BASE {    
+			shadow = 0;
+			type = 0;
+			style = 2096;
+			sizeEx = 1;
+			font = "PuristaMedium";
+			colorBackground[] = {};
+			colorText[] = {};
+			tooltipColorText[] = {1,1,1,1};
+			tooltipColorBox[] = {1,1,1,1};
+			tooltipColorShade[] = {0,0,0,0.65};
+			idc = -1;
+			text = "\np_dialogs1\Images\wantedMenu.paa";
+			x = -2.5 * GUI_GRID_W + GUI_GRID_X;
+			y = -12 * GUI_GRID_H + GUI_GRID_Y;
+			w = 45 * GUI_GRID_W;
+			h = 45 * GUI_GRID_H;
+		}; 
 		class text_title: RscText
 		{
 			idc = 1000;
@@ -390,7 +445,7 @@ class kruk_slpd_info{
 			y = 0 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 		};
 		class text_info: RscText
 		{
@@ -436,6 +491,24 @@ class kruk_slpd_vehicle_add {
 	movingEnable = 0;
 	enableSimulation = 1;
 	class controls {
+		class BASE {    
+			shadow = 0;
+			type = 0;
+			style = 2096;
+			sizeEx = 1;
+			font = "PuristaMedium";
+			colorBackground[] = {};
+			colorText[] = {};
+			tooltipColorText[] = {1,1,1,1};
+			tooltipColorBox[] = {1,1,1,1};
+			tooltipColorShade[] = {0,0,0,0.65};
+			idc = -1;
+			text = "\np_dialogs1\Images\wantedMenu.paa";
+			x = -2.5 * GUI_GRID_W + GUI_GRID_X;
+			y = -12 * GUI_GRID_H + GUI_GRID_Y;
+			w = 45 * GUI_GRID_W;
+			h = 45 * GUI_GRID_H;
+		}; 
 		class edit_plate: Client_RscEdit
 		{
 			idc = 1001;
@@ -524,7 +597,7 @@ class kruk_slpd_vehicle_add {
 			y = 0 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 		};
 		class text_reason: RscText
 		{
@@ -555,6 +628,24 @@ class kruk_slpd_criminal_add {
 	enableSimulation = 1;
 	onLoad = "[] spawn client_fnc_slpd_load_criminalAdd;";
 	class controls {
+		class BASE {    
+			shadow = 0;
+			type = 0;
+			style = 2096;
+			sizeEx = 1;
+			font = "PuristaMedium";
+			colorBackground[] = {};
+			colorText[] = {};
+			tooltipColorText[] = {1,1,1,1};
+			tooltipColorBox[] = {1,1,1,1};
+			tooltipColorShade[] = {0,0,0,0.65};
+			idc = -1;
+			text = "\np_dialogs1\Images\wantedMenu.paa";
+			x = -2.5 * GUI_GRID_W + GUI_GRID_X;
+			y = -12 * GUI_GRID_H + GUI_GRID_Y;
+			w = 45 * GUI_GRID_W;
+			h = 45 * GUI_GRID_H;
+		}; 
 		class edit_reason: Client_RscEdit
 		{
 			idc = 1001;
@@ -618,12 +709,12 @@ class kruk_slpd_criminal_add {
 		class text_title: RscText
 		{
 			idc = -1;
-			text = "Dodaj poszukiwanego"; //--- ToDo: Localize;
+			text = "Dodaj sprawę"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 0 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.5};
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 		};
 		class text_info: RscText
 		{
