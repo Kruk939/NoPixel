@@ -575,9 +575,12 @@ class CfgFunctions
 			file = "Functions\core\Casino";
 			class spinSlot {};
 		};
-		class Kruk {
+		class Kruk
+		{
 			file = "Functions\core\kruk";
 			class slpd_load_computerData {};
+			class slpd_load_personalData {};
+			class slpd_load_checkCase {};
 		};
 	};
 };
