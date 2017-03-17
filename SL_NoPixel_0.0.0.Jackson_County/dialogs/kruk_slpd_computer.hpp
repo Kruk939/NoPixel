@@ -557,7 +557,7 @@ class kruk_slpd_vehicle_add {
 			y = 16.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "[""vehicle""] spawn client_fnc_slpd_add_computerRecord; closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
+			action = "[""vehicle""] call client_fnc_slpd_add_computerRecord; closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class button_close: client_RscButtonMenu
 		{
@@ -674,7 +674,7 @@ class kruk_slpd_criminal_add {
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "[""personal"", kruk_slpd_computer_data select 0] spawn client_fnc_slpd_add_computerRecord; closeDialog 0;  [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
+			action = "[""personal"", kruk_slpd_computer_data select 0] call client_fnc_slpd_add_computerRecord; closeDialog 0;  [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class button_close: client_RscButtonMenu
 		{
