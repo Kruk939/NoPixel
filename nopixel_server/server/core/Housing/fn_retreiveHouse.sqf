@@ -8,6 +8,7 @@ diag_log["retreive house: %1", _player];
 
 
 _uid = getPlayerUID _player;
+[_player,objNull,21,format ["%1 otworzył skrzynkę w domu", name _player],""] remoteExec ["server_fnc_actionLog", 2];
 
 if (_uid in activecrates) exitwith {};
 activecrates pushback _uid;
