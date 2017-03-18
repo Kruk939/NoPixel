@@ -123,7 +123,7 @@ while{true} do {
 				_vehName = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
 				_description = format["%1(%2)",_vehName,_color];
 				_uid_officer = "901";
-				_reason = format["Przekroczenie o %1KMh%2",round(_vel),_text];
+				_reason = format["Prędkość %1kmh%2",round(_vel),_text];
 				//plate, description, _uid_officer, _reason, _wanted_level;
 				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
 				["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
