@@ -334,7 +334,7 @@ class kruk_slpd_casefile {
 			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 6.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "kruk_slpd_computer_data = _data; closeDialog 0; createDialog ""kruk_slpd_criminal_add"";";
+			action = "closeDialog 0; createDialog ""kruk_slpd_criminal_add"";";
 		};
 		class button_change: client_RscButtonMenu {
 			idc = 1202;

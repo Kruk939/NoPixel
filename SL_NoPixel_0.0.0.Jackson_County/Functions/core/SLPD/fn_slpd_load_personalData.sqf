@@ -102,7 +102,7 @@ if(count _playerInfo != 0) then {
 	if(_licenses select 3 == 1) then { _string = _string + "Licencja Drwala "; };
 	if(_licenses select 4 == 1) then { _string = _string + "Licencja Rybaka\n"; };
 	_text_info ctrlSetText _string;
-	kruk_slpd_computer_data = [_uid, objNull, _name];
+	kruk_slpd_computer_data = [_uid, objNull, _playerName];
 } else {
 	hint "Nie ma takiego rekordu.";
 };
