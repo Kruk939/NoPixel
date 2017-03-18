@@ -1,4 +1,3 @@
-speedMeter_last_ticket = false;
 while{true} do {
 	if (myjob in ["Cop","EMS","Fire"]) then {} else {
 	    _vehicle = vehicle player;
@@ -115,7 +114,7 @@ while{true} do {
 				};
 				uiSleep 1;
 			};
-			if(_handle && !speedMeter_last_ticket) then {
+			if(_handle) then {
 				_information = _vehicle getVariable ["information",[]];
 				_plate = _information select 0;
 				_class = typeof _vehicle;
@@ -129,11 +128,6 @@ while{true} do {
 				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
 				["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
 				//diag_log format["Działam - koniec %1",_data];
-				speedMeter_last_ticket = true;
-				[] spawn {
-					uiSleep 60;
-					speedMeter_last_ticket = false;
-				};
 			};
 			uiSleep 1;
 		};

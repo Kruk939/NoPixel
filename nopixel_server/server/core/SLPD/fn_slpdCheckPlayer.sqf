@@ -15,8 +15,8 @@ _type = _this select 2;
 if(isNil "_type") then { _type = ""; };
 if(isNull _player) exitWith {};
 if(_type == "name") then {
-	_query = format ["getSLPDplayerInfo_name:%1", _uid];
-	_uid = (([_query,2] call ExternalS_fnc_ExtDBasync) select 0) select 0;
+	_query = format ["getSLPDplayerInfo_name:%1%2%1", "%", _uid];
+	_uid = ([_query,2] call ExternalS_fnc_ExtDBasync) select 0;
 };
 
 _query = format ["getSLPDWanted_uid:%1:1", _uid];

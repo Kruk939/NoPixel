@@ -15,8 +15,8 @@ _vehicles = _this select 1;
 _list_criminals = _display displayCtrl 1101;
 _list_vehicles = _display displayCtrl 1102;
 _list_players = _display displayCtrl 1103;
-//_button_findName = _display displayCtrl 1202;
-//_button_findName ctrlEnable false;
+_button_findName = _display displayCtrl 1202;
+_button_findName ctrlEnable false;
 lbClear _list_criminals;
 {
 	//id, uid_suspect, supect_name, uid_officer, officer_name, charges, wanted_level, active
