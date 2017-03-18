@@ -14,10 +14,10 @@
 params["_player","_unit","_type","_text","_amount"];
 private["_playerUID","_playerName","_playerCash","_playerBank","_unitUID","_unitName","_unitBank","_unitCash"];
 
-if(isNil "_player" || isNil "_type") exitWith {diag_log "ActionLog: nil (1)";};
-if("_type" == "") exitWith {diag_log "ActionLog: _type is empty (2)";};
-if(isNull _player) exitWith {diag_log "ActionLog: _player is Null (3)";};
-//if(isNull _unit) exitWith {diag_log "ActionLog: _unit is Null (4)";};
+if(isNil "_player" || isNil "_type") exitWith {diag_log "CopLog: nil (1)";};
+if("_type" == "") exitWith {diag_log "CopLog: _type is empty (2)";};
+if(isNull _player) exitWith {diag_log "CopLog: _player is Null (3)";};
+//if(isNull _unit) exitWith {diag_log "CopLog: _unit is Null (4)";};
 
 if (isNil "_text") then {_text = "";};
 if (isNil "_amount") then {_amount = "";};
@@ -28,7 +28,7 @@ _playerCash = _player getVariable ["wallet",-1];
 _playerBank = _player getVariable ["atm",-1];
 
 if (isNull _unit) then {
-    diag_log "MoneyLog: unit is not defined";
+    //diag_log "CopLog: unit is not defined";
     _unitUID = ""; _unitName = ""; _unitCash = "0"; _unitBank = "0";
 } else {
     _unitUID = getPlayerUID _unit;

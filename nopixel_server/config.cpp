@@ -113,6 +113,7 @@ class CfgFunctions {
             class craftLog {};
             class jobLog {};
             class connectionLog {};
+            class speedcamLog {};
         };
         class Admin {
             file = "NoPixel_Server\server\core\Admin";

@@ -28,7 +28,7 @@ _playerCash = _player getVariable ["wallet",-1];
 _playerBank = _player getVariable ["atm",-1];
 
 if (isNull _unit) then {
-    diag_log "MoneyLog: unit is not defined";
+    //diag_log "MoneyLog: unit is not defined";
     _unitUID = ""; _unitName = ""; _unitCash = "0"; _unitBank = "0";
 } else {
     _unitUID = getPlayerUID _unit;

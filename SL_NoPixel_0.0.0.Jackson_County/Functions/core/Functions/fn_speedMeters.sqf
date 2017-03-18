@@ -28,9 +28,10 @@ while{true} do
 					"colorCorrections" ppEffectEnable false;
 
                     ["Informacja","Otrzymałeś $1000 mandatu za przekraczanie prędkosci w mieście",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałeś $1500 mandatu za przekraczanie prędkosci w mieście", false] spawn domsg;
+					//["Otrzymałeś $1000 mandatu za przekraczanie prędkosci w mieście", false] spawn domsg;
 					_check = [2, 1000] call Client_fnc_checkMoney;
 					if (_check) then {[1000] call Client_fnc_removeBank;};
+					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości w mieście (+90km/h)", name player, "1000"],"90","1000"] remoteExec ["server_fnc_speedcamLog", 2];
 					};
 
 				if(_vel > 139 && _vel < 200) then {
@@ -53,9 +54,10 @@ while{true} do
 					"colorCorrections" ppEffectEnable false;
 
                     ["Informacja","Otrzymałeś $2500 mandatu za nadmierną predkość w mieście",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałeś $3000 mandatu za nadmierną predkość w mieście", false] spawn domsg;
+					//["Otrzymałeś $2500 mandatu za nadmierną predkość w mieście", false] spawn domsg;
 					_check = [2, 2500] call Client_fnc_checkMoney;
 					if (_check) then {[2500] call Client_fnc_removeBank;};
+					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości w mieście (+140km/h)", name player, "2500"],"140","2500"] remoteExec ["server_fnc_speedcamLog", 2];
 					};
 				if(_vel > 199) then {
 
@@ -77,11 +79,12 @@ while{true} do
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
 
-                    ["Informacja","Otrzymałeś mandat w wysokosci $3800 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałeś mandat w wysokosci $10000 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście", false] spawn domsg;
-					_check = [2, 3800] call Client_fnc_checkMoney;
-					if (_check) then {[3800] call Client_fnc_removeBank;};
+                    ["Informacja","Otrzymałeś mandat w wysokosci $3500 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście",[255,69,0,1],""] call Client_fnc_showNotification;
+					//["Otrzymałeś mandat w wysokosci $3500 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście", false] spawn domsg;
+					_check = [2, 3500] call Client_fnc_checkMoney;
+					if (_check) then {[3500] call Client_fnc_removeBank;};
                     ["RemoveQuiet","license",1] call client_fnc_sustain;
+					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości w mieście (+200km/h)", name player, "3500"],"200","3500"] remoteExec ["server_fnc_speedcamLog", 2];
 					};
 				};
 
@@ -109,9 +112,10 @@ while{true} do
 					"colorCorrections" ppEffectEnable false;
 
                     ["Informacja","Otrzymałes $1500 mandatu za nadmierną predkość",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałes $3000 mandatu za nadmierną predkość", false] spawn domsg;
+					//["Otrzymałes $1500 mandatu za nadmierną predkość", false] spawn domsg;
 					_check = [2, 1500] call Client_fnc_checkMoney;
 					if (_check) then {[1500] call Client_fnc_removeBank;};
+					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości (+160km/h)", name player, "1500"],"160","1500"] remoteExec ["server_fnc_speedcamLog", 2];
 					};
 
 				if(_vel > 225) then {
@@ -135,10 +139,11 @@ while{true} do
 					"colorCorrections" ppEffectEnable false;
 
                     ["Informacja","Otrzymałeś $3500 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałeś $1500 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem", false] spawn domsg;
+					//["Otrzymałeś $3500 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem", false] spawn domsg;
 					_check = [2, 3500] call Client_fnc_checkMoney;
 					if (_check) then {[3500] call Client_fnc_removeBank;};
                     ["RemoveQuiet","license",1] call client_fnc_sustain;
+					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości (+225km/h)", name player, "3500"],"225","3500"] remoteExec ["server_fnc_speedcamLog", 2];
 					};
 
 				};

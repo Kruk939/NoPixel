@@ -28,7 +28,7 @@ _playerCash = _player getVariable ["wallet",-1];
 _playerBank = _player getVariable ["atm",-1];
 
 if (isNull _unit) then {
-    diag_log "jobLog: unit is not defined";
+    //diag_log "jobLog: unit is not defined";
     _unitUID = ""; _unitName = ""; _unitCash = "0"; _unitBank = "0";
 } else {
     _unitUID = getPlayerUID _unit;
@@ -62,5 +62,5 @@ switch (_type) do {
 };
 
 
-_insertstr = format ["JobLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _playerUID, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _amount];
+_insertstr = format ["jobLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _playerUID, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _amount];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
