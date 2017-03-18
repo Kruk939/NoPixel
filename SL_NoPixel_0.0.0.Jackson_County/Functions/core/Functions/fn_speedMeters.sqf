@@ -1,8 +1,5 @@
-while{true} do
-    {
-	if (myjob in ["Cop","EMS","Fire"]) then {
-
-	} else {
+while{true} do {
+	if (myjob in ["Cop","EMS","Fire"]) then {} else {
 	    _vehicle = vehicle player;
 		if(vehicle player != player && driver (vehicle player) isEqualTo player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike"))) then {
 			_target = driver (vehicle player);
@@ -88,7 +85,7 @@ while{true} do
 					//if (_check) then {[3500] call Client_fnc_removeBank;};
                     //["RemoveQuiet","license",1] call client_fnc_sustain;
 					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości w mieście (+200km/h)", name player, "3500"],"200","3500"] remoteExec ["server_fnc_speedcamLog", 2];
-					};
+					//};
 				};
 
 			};
@@ -146,7 +143,7 @@ while{true} do
 					//if (_check) then {[3500] call Client_fnc_removeBank;};
                     //["RemoveQuiet","license",1] call client_fnc_sustain;
 					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości (+225km/h)", name player, "3500"],"225","3500"] remoteExec ["server_fnc_speedcamLog", 2];
-					};
+					//};
 
 				};
 				uiSleep 1;
@@ -164,3 +161,4 @@ while{true} do
 			_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
 			["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
 	};
+};
