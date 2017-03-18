@@ -1,6 +1,5 @@
 while{true} do {
 	if (myjob in ["Cop","EMS","Fire"]) then {} else {
-		diag_log "Działam - początek";
 	    _vehicle = vehicle player;
 		if(vehicle player != player && driver (vehicle player) isEqualTo player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike"))) then {
 			_target = driver (vehicle player);
@@ -124,11 +123,11 @@ while{true} do {
 				_vehName = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
 				_description = format["%1(%2)",_vehName,_color];
 				_uid_officer = "901";
-				_reason = format["Przekroczenie o %1km/h%2",_vel,_text];
+				_reason = format["Przekroczenie o %1KMh%2",round(_vel),_text];
 				//plate, description, _uid_officer, _reason, _wanted_level;
 				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
 				["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
-				diag_log format["Działam - koniec %1",_data];
+				//diag_log format["Działam - koniec %1",_data];
 			};
 			uiSleep 1;
 		};
