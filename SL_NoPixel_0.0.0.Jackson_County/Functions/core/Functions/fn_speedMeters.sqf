@@ -1,11 +1,13 @@
 while{true} do {
 	if (myjob in ["Cop","EMS","Fire"]) then {} else {
+		diag_log "Działam - początek";
 	    _vehicle = vehicle player;
 		if(vehicle player != player && driver (vehicle player) isEqualTo player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike"))) then {
 			_target = driver (vehicle player);
 			_vel = speed _target;
 			_text = "";
 			_wanted_level = 1;
+			_handle = false;
 			if((player distance (getMarkerPos "speed_cam_1")) < 30 || (player distance (getMarkerPos "speed_cam_2")) < 30 || (player distance (getMarkerPos "speed_cam_3")) < 30 || (player distance (getMarkerPos "speed_cam_4")) < 30) then {
 				_text = " w terenie zabudowanym";
 				if(_vel > 90 && _vel < 140) then {
@@ -26,14 +28,8 @@ while{true} do {
 					"colorCorrections" ppEffectCommit 0.05;
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
-
-                    ["Informacja","Otrzymałeś $1000 mandatu za przekraczanie prędkosci w mieście",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałeś $1000 mandatu za przekraczanie prędkosci w mieście", false] spawn domsg;
-					_check = [2, 1000] call Client_fnc_checkMoney;
-					if (_check) then {[1000] call Client_fnc_removeBank;};
-					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości w mieście (+90km/h)", name player, "1000"],"90","1000"] remoteExec ["server_fnc_speedcamLog", 2];
-					};
-
+					_handle = true;
+				};
 				if(_vel > 139 && _vel < 200) then {
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
@@ -52,15 +48,9 @@ while{true} do {
 					"colorCorrections" ppEffectCommit 0.05;
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
-
-                    ["Informacja","Otrzymałeś $2500 mandatu za nadmierną predkość w mieście",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałeś $2500 mandatu za nadmierną predkość w mieście", false] spawn domsg;
-					_check = [2, 2500] call Client_fnc_checkMoney;
-					if (_check) then {[2500] call Client_fnc_removeBank;};
-					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości w mieście (+140km/h)", name player, "2500"],"140","2500"] remoteExec ["server_fnc_speedcamLog", 2];
-					};
+					_handle = true;
+				};
 				if(_vel > 199) then {
-
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
 					"colorCorrections" ppEffectCommit 0;
@@ -78,16 +68,8 @@ while{true} do {
 					"colorCorrections" ppEffectCommit 0.05;
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
-
-                    ["Informacja","Otrzymałeś mandat w wysokosci $3500 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałeś mandat w wysokosci $3500 oraz odebrano Ci prawo jazdy za zapierdalanie po mieście", false] spawn domsg;
-					_//check = [2, 3500] call Client_fnc_checkMoney;
-					//if (_check) then {[3500] call Client_fnc_removeBank;};
-                    //["RemoveQuiet","license",1] call client_fnc_sustain;
-					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości w mieście (+200km/h)", name player, "3500"],"200","3500"] remoteExec ["server_fnc_speedcamLog", 2];
-					//};
+					_handle = true;
 				};
-
 			};
 			if((player distance (getMarkerPos "speed_cam_5")) < 30 || (player distance (getMarkerPos "speed_cam_6")) < 30 || (player distance (getMarkerPos "speed_cam_7")) < 30 || (player distance (getMarkerPos "speed_cam_8")) < 30 || (player distance (getMarkerPos "speed_cam_9")) < 30 || (player distance (getMarkerPos "speed_cam_10")) < 30 || (player distance (getMarkerPos "speed_cam_11")) < 30 || (player distance (getMarkerPos "speed_cam_12")) < 30 || (player distance (getMarkerPos "speed_cam_13")) < 30 || (player distance (getMarkerPos "speed_cam_14")) < 30 || (player distance (getMarkerPos "speed_cam_15")) < 30 || (player distance (getMarkerPos "speed_cam_16")) < 30 || (player distance (getMarkerPos "speed_cam_17")) < 30) then {
 				_text = " poza terenem zabudowanym.";
@@ -109,16 +91,9 @@ while{true} do {
 					"colorCorrections" ppEffectCommit 0.05;
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
-
-                    ["Informacja","Otrzymałes $1500 mandatu za nadmierną predkość",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałes $1500 mandatu za nadmierną predkość", false] spawn domsg;
-					_check = [2, 1500] call Client_fnc_checkMoney;
-					if (_check) then {[1500] call Client_fnc_removeBank;};
-					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości (+160km/h)", name player, "1500"],"160","1500"] remoteExec ["server_fnc_speedcamLog", 2];
-					};
-
+					_handle = true;
+				};
 				if(_vel > 225) then {
-
 					"colorCorrections" ppEffectEnable true;
 					"colorCorrections" ppEffectAdjust [1, 15, 0, [0.5, 0.5, 0.5, 0], [0.0, 0.5, 0.0, 0.6],[0.3, 0.3, 0.3, 0.05]];
 					"colorCorrections" ppEffectCommit 0;
@@ -136,29 +111,26 @@ while{true} do {
 					"colorCorrections" ppEffectCommit 0.05;
 					uiSleep 0.05;
 					"colorCorrections" ppEffectEnable false;
-
-                    ["Informacja","Otrzymałeś $3500 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem",[255,69,0,1],""] call Client_fnc_showNotification;
-					//["Otrzymałeś $3500 mandatu oraz odebrano Ci prawo jazdy za zapierdalnie poza miastem", false] spawn domsg;
-					//_check = [2, 3500] call Client_fnc_checkMoney;
-					//if (_check) then {[3500] call Client_fnc_removeBank;};
-                    //["RemoveQuiet","license",1] call client_fnc_sustain;
-					[player,1,format ["%1 otrzymał mandat w wysokości %2 za przekroczenie prędkości (+225km/h)", name player, "3500"],"225","3500"] remoteExec ["server_fnc_speedcamLog", 2];
-					//};
-
+					_handle = true;
 				};
 				uiSleep 1;
 			};
-			_information = _veh getVariable ["information",[]];
-			_plate = _information select 0;
-			_class = typeof _vehicle;
-			_color = _information select 2;
-			_color = getText(configFile >> "CfgIvoryTextures" >> _color >> "displayName");
-			_vehName = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
-			_description = format["%1(%2)",_vehName,_color];
-			_uid_officer = "901";
-			_reason = format["Przekroczenie o %1km/h%2",_vel,_text];
-			//plate, description, _uid_officer, _reason, _wanted_level;
-			_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
-			["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
+			if(_handle) then {
+				_information = _vehicle getVariable ["information",[]];
+				_plate = _information select 0;
+				_class = typeof _vehicle;
+				_color = _information select 2;
+				_color = getText(configFile >> "CfgIvoryTextures" >> _color >> "displayName");
+				_vehName = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
+				_description = format["%1(%2)",_vehName,_color];
+				_uid_officer = "901";
+				_reason = format["Przekroczenie o %1km/h%2",_vel,_text];
+				//plate, description, _uid_officer, _reason, _wanted_level;
+				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
+				["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
+				diag_log format["Działam - koniec %1",_data];
+			};
+			uiSleep 1;
+		};
 	};
 };
