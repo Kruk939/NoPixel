@@ -76,7 +76,7 @@ class kruk_slpd_computer {
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
 			y = 15.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
-			h = 1.5 * GUI_GRID_H;
+			h = 1.0 * GUI_GRID_H;
 			action = "[player, (ctrlText 1001)] remoteExec [""server_fnc_slpdCheckVehicle""];";
 			colorBackground[] = {0,0,0,0.5};
 		};
@@ -84,9 +84,9 @@ class kruk_slpd_computer {
 			idc = 1202;
 			text = "Szukaj Imię i Nazwisko"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
-			y = 17 * GUI_GRID_H + GUI_GRID_Y;
+			y = 16.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
-			h = 1.5 * GUI_GRID_H;
+			h = 1.0 * GUI_GRID_H;
 			action = "[player, (ctrlText 1001), ""name""] remoteExec [""server_fnc_slpdCheckPlayer""];";
 			colorBackground[] = {0,0,0,0.5};
 		};
@@ -95,9 +95,9 @@ class kruk_slpd_computer {
 			text = "Szukaj PESEL"; //--- ToDo: Localize;
 			action = "[player, (ctrlText 1001)] remoteExec [""server_fnc_slpdCheckPlayer""];";
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
-			y = 18.5 * GUI_GRID_H + GUI_GRID_Y;
+			y = 17.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
-			h = 1.5 * GUI_GRID_H;
+			h = 1 * GUI_GRID_H;
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_close: client_RscButtonMenu {
@@ -115,12 +115,23 @@ class kruk_slpd_computer {
 		class button_search_case: client_RscButtonMenu {
 			idc = 1204;
 		    sizeEx = 0.02921;
-			text = "Szukaj Sprawy"; //--- ToDo: Localize;
+			text = "Szukaj Sprawy(Osoba)"; //--- ToDo: Localize;
 			x = 21 * GUI_GRID_W + GUI_GRID_X;
-			y = 20 * GUI_GRID_H + GUI_GRID_Y;
+			y = 18.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
-			h = 1.5 * GUI_GRID_H;
-			action = "[player, (ctrlText 1001)] remoteExec [""server_fnc_slpdCheckCase""];";
+			h = 1.0 * GUI_GRID_H;
+			action = "[player, (ctrlText 1001), ""personal""] remoteExec [""server_fnc_slpdCheckCase""];";
+			colorBackground[] = {0,0,0,0.5};
+		};
+		class button_search_case_vehicle: client_RscButtonMenu {
+			idc = 1212;
+		    sizeEx = 0.02921;
+			text = "Szukaj Sprawy(Pojazd)"; //--- ToDo: Localize;
+			x = 21 * GUI_GRID_W + GUI_GRID_X;
+			y = 19.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 19 * GUI_GRID_W;
+			h = 1.0 * GUI_GRID_H;
+			action = "[player, (ctrlText 1001), ""vehicle""] remoteExec [""server_fnc_slpdCheckCase""];";
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_vehicle_check: client_RscButtonMenu {
@@ -496,7 +507,7 @@ class kruk_slpd_info{
 		class button_caseClose: client_RscButtonMenu
 		{
 			idc = 1201;
-			text = "Zamknięcie"; //--- ToDo: Localize;
+			text = "Umorzenie sprawy"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 15.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;

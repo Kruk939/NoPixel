@@ -1032,7 +1032,12 @@ if(_condition == "doughnuts_gun") then {
 		    ["CUP_hgun_MicroUzi",nil,7000,1],
 			["CUP_muzzle_snds_MicroUzi",nil,2000,3],
 			["CUP_hgun_TaurusTracker455_gold",nil,6000,1],
-			["RH_bull",nil,6000,1]
+			["RH_bull",nil,6000,1],
+			["hgun_mas_ww2_bhp_F",nil,7000,1],
+			["hgun_mas_ww2_lug_F",nil,7000,1],
+			["sab_mauser96_handgun",nil,7000,1],
+			["arifle_mas_ww2_sten",nil,30000,1],
+			["CUP_hgun_SA61",nil,7000,1]
 		];
 		_additional = _additional + _ret;
 	};
@@ -1045,6 +1050,11 @@ if(_condition == "doughnuts_gun") then {
 			["hgun_PDW2000_F",nil,20000,1],
 			["arifle_mas_ww2_ppsh",nil,25000,1],
 			["71Rnd_mas_ww2_ppsh",nil,50,1],
+			["arifle_mas_ww2_mp40",nil,30000,1],
+			["RH_mk2",nil,30000,1],
+			["arifle_mas_ww2_mp44",nil,30000,1],
+			["arifle_mas_ww2_tommy",nil,30000,1],
+			["SMG_01_F",nil,30000,1],
 			["CUP_smg_bizon",nil,25000,1]
 		];
 		_additional = _additional + _ret;
