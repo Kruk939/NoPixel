@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8257.4316,25,2868.6243};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={7241.4233,107.66592,5581.9785};
+		dir[]={-0.84513676,-0.38356832,-0.37259585};
+		up[]={-0.35099956,0.92341942,-0.15474671};
+		aside[]={-0.4034695,-4.6957575e-007,0.91516805};
 	};
 };
 binarizationWanted=0;
@@ -153,7 +153,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=295;
+		items=292;
 		class Item0
 		{
 			dataType="Group";
@@ -10983,24 +10983,14 @@ class Mission
 		class Item277
 		{
 			dataType="Marker";
-			position[]={7327.8389,3.0922304e+019,2523.5315};
+			position[]={7041.7192,3.0922304e+019,2407.7144};
 			name="speed_cam_1";
 			type="Empty";
-			angle=99.172974;
+			angle=99.172966;
 			id=486;
 			atlOffset=3.0922304e+019;
 		};
 		class Item278
-		{
-			dataType="Marker";
-			position[]={6465.0928,1.8173619e-035,2193.54};
-			name="speed_cam_3";
-			type="Empty";
-			angle=99.172974;
-			id=488;
-			atlOffset=-25;
-		};
-		class Item279
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11016,7 +11006,7 @@ class Mission
 			id=490;
 			type="Mattaust_Cam2";
 		};
-		class Item280
+		class Item279
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11032,7 +11022,7 @@ class Mission
 			id=496;
 			type="Mattaust_Cam1";
 		};
-		class Item281
+		class Item280
 		{
 			dataType="Marker";
 			position[]={9722.2168,31.285904,7519.0874};
@@ -11042,7 +11032,7 @@ class Mission
 			id=505;
 			atlOffset=-25.075581;
 		};
-		class Item282
+		class Item281
 		{
 			dataType="Marker";
 			position[]={5031.8306,-21.479372,2756.7988};
@@ -11052,7 +11042,7 @@ class Mission
 			id=508;
 			atlOffset=-24.986469;
 		};
-		class Item283
+		class Item282
 		{
 			dataType="Marker";
 			position[]={6906.5635,-2.5839844,5438.7793};
@@ -11062,7 +11052,7 @@ class Mission
 			id=510;
 			atlOffset=-25.003929;
 		};
-		class Item284
+		class Item283
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11078,7 +11068,7 @@ class Mission
 			id=513;
 			type="Mattaust_Cam1";
 		};
-		class Item285
+		class Item284
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11094,13 +11084,13 @@ class Mission
 			id=518;
 			type="Mattaust_Cam1";
 		};
-		class Item286
+		class Item285
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7323.3164,26.986263,2523.7266};
-				angles[]={0,5.2495232,0};
+				position[]={7041.7051,26.935757,2407.1208};
+				angles[]={-0,5.2495232,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11110,13 +11100,13 @@ class Mission
 			id=520;
 			type="kif_speedcam";
 		};
-		class Item287
+		class Item286
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7327.4365,26.976162,2523.1555};
-				angles[]={0,1.9517766,0};
+				position[]={7045.7441,26.935757,2408.0471};
+				angles[]={-0,1.9517766,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11126,50 +11116,17 @@ class Mission
 			id=521;
 			type="kif_speedcam";
 		};
-		class Item288
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6480.7632,26.5,2178.3354};
-				angles[]={0,5.392067,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=524;
-			type="kif_speedcam";
-		};
-		class Item289
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={6463.8633,26.49984,2199.1628};
-				angles[]={0,5.4355378,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=527;
-			type="kif_speedcam";
-			atlOffset=-0.00016021729;
-		};
-		class Item290
+		class Item287
 		{
 			dataType="Marker";
 			position[]={8663.5781,2.9388917e+037,6409.1309};
 			name="speed_cam_10";
 			type="Empty";
-			angle=99.172981;
+			angle=99.172974;
 			id=531;
 			atlOffset=2.9388917e+037;
 		};
-		class Item291
+		class Item288
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11186,7 +11143,7 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=0.00010490417;
 		};
-		class Item292
+		class Item289
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11203,7 +11160,7 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=0.0095405579;
 		};
-		class Item293
+		class Item290
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11220,7 +11177,7 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=0.0026421547;
 		};
-		class Item294
+		class Item291
 		{
 			dataType="Object";
 			class PositionInfo
