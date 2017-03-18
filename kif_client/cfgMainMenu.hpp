@@ -1,11 +1,30 @@
+class CfgWorlds
+{
+	// Class of your terrain
+	class Jackson_County
+	{
+		cutscenes[] = {"Jackson_kif"}; // Class names of used scenes. When more than one is present, the system will pick one randomly.
+	};
+};
+class CfgMissions
+{
+	class Cutscenes
+	{
+		class Jackson_kif // Class referenced in 'cutscenes' property in CfgWorlds
+		{
+			directory = "\kif_client\other\intro.Jackson_County"; // Path to scenario with the scene
+		};
+	};
+};
 class RscStandardDisplay;
 class RscDisplayMain: RscStandardDisplay
 {
 	class Spotlight
 	{
+		delete Bootcamp;
 		delete EastWind;
 		delete ApexProtocol;
-		class Bootcamp
+		class StanLakeside
 		{
 			text = "WITAJ NA STANLAKESIDE.PL";
 			textIsQuote = 0;
