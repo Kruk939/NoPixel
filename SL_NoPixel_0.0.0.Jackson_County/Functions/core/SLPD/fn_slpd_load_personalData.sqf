@@ -74,8 +74,9 @@ if(count _playerInfo != 0) then {
 		_plate = toUpper(_x select 0);
 		_class = _x select 1;
 		_color = _x select 2;
+		_color = getText(configFile >> "CfgIvoryTextures" >> _color >> "displayName");
 		_name = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
-		_list_vehicles lbAdd format["Rejestracja: %1; Model: %2; Kolor: %3", _plate, _name, _color];
+		_list_vehicles lbAdd format["Rej: %1; Model: %2; Kol: %3", _plate, _name, _color];
 		_list_vehicles lbSetdata [(lbSize _list_vehicles)-1,str(_x)];
 	} foreach _vehicles;
 
@@ -95,12 +96,13 @@ if(count _playerInfo != 0) then {
 	_string = _string + format["Imię i Nazwisko: %1\nPESEL: %2\n", _playerName, _uid];
 	if(count _activeCases == 0) then { _string = _string + "Poszukiwany: NIE\n"; } else { _string = _string + "Poszukiwany: TAK\n"; };
 	_string = _string + format["Ilość punktów karnych: %1\nPrzynależność do służb: %2\nLicencje:\n", _points, _services];
-	if(_licenses select 0 == 1) then { _string = _string + "Prawo Jazdy\n"; };
+	if(_licenses select 0 == 1) then { _string = _string + "Prawo Jazdy "; };
 	if(_licenses select 1 == 1) then { _string = _string + "Licencja na Bron\n"; };
-	if(_licenses select 2 == 1) then { _string = _string + "Licencja Gornika\n"; };
-	if(_licenses select 3 == 1) then { _string = _string + "Licencja Drwala\n"; };
+	if(_licenses select 2 == 1) then { _string = _string + "Licencja Gornika "; };
+	if(_licenses select 3 == 1) then { _string = _string + "Licencja Drwala "; };
 	if(_licenses select 4 == 1) then { _string = _string + "Licencja Rybaka\n"; };
 	_text_info ctrlSetText _string;
+	kruk_slpd_computer_data = [_uid, objNull, _name];
 } else {
 	hint "Nie ma takiego rekordu.";
 };

@@ -577,6 +577,7 @@ class CfgFunctions
 			class slpd_load_checkCase {};
 			class slpd_add_computerRecord {};
 			class slpd_load_criminalAdd {};
+			class slpd_load_vehicleAdd {};
 		};
 	};
 };

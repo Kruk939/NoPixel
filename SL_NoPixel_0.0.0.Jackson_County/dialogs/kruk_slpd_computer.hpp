@@ -78,7 +78,7 @@ class kruk_slpd_computer {
 			w = 19 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "[player, (ctrlText 1001)] remoteExec [""server_fnc_slpdCheckVehicle""];";
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_search_name: client_RscButtonMenu {
 			idc = 1202;
@@ -88,7 +88,7 @@ class kruk_slpd_computer {
 			w = 19 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "[player, (ctrlText 1001), ""name""] remoteExec [""server_fnc_slpdCheckPlayer""];";
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_search_uid: client_RscButtonMenu {
 			idc = 1202;
@@ -98,7 +98,7 @@ class kruk_slpd_computer {
 			y = 18.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_close: client_RscButtonMenu {
 			idc = 1203;
@@ -110,7 +110,7 @@ class kruk_slpd_computer {
 			w = 9 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "closeDialog 0;";
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0.7,0,0,0.5};
 		};
 		class button_search_case: client_RscButtonMenu {
 			idc = 1204;
@@ -121,7 +121,7 @@ class kruk_slpd_computer {
 			w = 19 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "[player, (ctrlText 1001)] remoteExec [""server_fnc_slpdCheckCase""];";
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_vehicle_check: client_RscButtonMenu {
 			idc = 1205;
@@ -133,7 +133,7 @@ class kruk_slpd_computer {
 			w = 4.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [_data, ""vehicle""] spawn client_fnc_slpd_load_checkCase; diag_log ""Button click"";";
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_check_list: client_RscButtonMenu {
 			idc = 1206;
@@ -145,7 +145,7 @@ class kruk_slpd_computer {
 			w = 4.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "_data = lbData[1103,lbCurSel (1103)]; _data = call compile format[""%1"", _data]; [player, (_data select 0)] remoteExec [""server_fnc_slpdCheckPlayer""];";
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_criminal_add: client_RscButtonMenu {
 			idc = 1207;
@@ -156,7 +156,7 @@ class kruk_slpd_computer {
 			y = 10 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0.325,0.906,0.235,0.5};
 			action = "_data = lbData[1103,lbCurSel (1103)]; _data = call compile format[""%1"", _data]; kruk_slpd_computer_data = _data; closeDialog 0; createDialog ""kruk_slpd_criminal_add"";";
 		};
 		class button_add_vehicle: client_RscButtonMenu {
@@ -168,7 +168,7 @@ class kruk_slpd_computer {
 			y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0.325,0.906,0.235,0.5};
 			action = "closeDialog 0; createDialog ""kruk_slpd_vehicle_add"";";
 		};
 		class button_change: client_RscButtonMenu {
@@ -180,7 +180,7 @@ class kruk_slpd_computer {
 			y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
 			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [""vehicle"", (_data select 0), parseNumber(ctrlText 1002), getPlayerUID player] remoteExec [""server_fnc_slpdCaseUpdate"", 2]; closeDialog 0; [] spawn { sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 
 		};
@@ -194,7 +194,19 @@ class kruk_slpd_computer {
 			w = 9.0 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "_data = lbData[1101,lbCurSel (1101)]; _data = call compile format[""%1"", _data]; [_data, ""personal""] spawn client_fnc_slpd_load_checkCase;";
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
+		};
+		class button_refresh: client_RscButtonMenu {
+			idc = 1211;
+		    sizeEx = 0.02921;
+			style = 2;
+			text = "Odśwież"; //--- ToDo: Localize;
+			x = 21 * GUI_GRID_W + GUI_GRID_X;
+			y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 9 * GUI_GRID_W;
+			h = 1.5 * GUI_GRID_H;
+			action = "closeDialog 0; [] spawn { sleep 0.2; createDialog ""kruk_slpd_computer"";};";
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 		};
 		class text_title: RscText {
 			idc = -1;
@@ -316,7 +328,7 @@ class kruk_slpd_casefile {
 		class button_add: client_RscButtonMenu {
 			idc = 1201;
 		    sizeEx = 0.02921;
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0.325,0.906,0.235,0.5};
 			text = "Dodaj"; //--- ToDo: Localize;
 			x = 33.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
@@ -327,7 +339,7 @@ class kruk_slpd_casefile {
 		class button_change: client_RscButtonMenu {
 			idc = 1202;
 		    sizeEx = 0.02921;
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
 			text = "Zmień"; //--- ToDo: Localize;
 			x = 26.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
@@ -338,13 +350,35 @@ class kruk_slpd_casefile {
 		class button_close: client_RscButtonMenu {
 			idc = 1203;
 		    sizeEx = 0.02921;
-			colorBackground[] = {0,0,0,0.7};
-			text = "Zamknij"; //--- ToDo: Localize;
+			colorBackground[] = {0.7,0,0,0.5};
+			text = "Powrót"; //--- ToDo: Localize;
 			x = 32.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
+		};
+		class button_add_vehicle: client_RscButtonMenu {
+			idc = 1204;
+		    sizeEx = 0.02921;
+			colorBackground[] = {0.325,0.906,0.235,0.5};
+			text = "Dodaj"; //--- ToDo: Localize;
+			x = 12 * GUI_GRID_W + GUI_GRID_X;
+			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 7.5 * GUI_GRID_W;
+			h = 1.5 * GUI_GRID_H;
+			action = "_data = lbData[1104,lbCurSel (1104)]; _data = call compile format[""%1"", _data]; [_data] call client_fnc_slpd_load_vehicleAdd;";
+		};
+		class button_check_vehicle: client_RscButtonMenu {
+			idc = 1205;
+		    sizeEx = 0.02921;
+			colorBackground[] = {0,0,0,0.5};
+			text = "Sprawdź"; //--- ToDo: Localize;
+			x = 4.5 * GUI_GRID_W + GUI_GRID_X;
+			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
+			w = 7.5 * GUI_GRID_W;
+			h = 1.5 * GUI_GRID_H;
+			action = "_data = lbData[1104,lbCurSel (1104)]; _data = call compile format[""%1"", _data]; [player, (_data select 0)] remoteExec [""server_fnc_slpdCheckVehicle""];";
 		};
 		class text_title: RscText {
 			idc = -1;
@@ -462,26 +496,26 @@ class kruk_slpd_info{
 		class button_caseClose: client_RscButtonMenu
 		{
 			idc = 1201;
-			text = "Umorzenie"; //--- ToDo: Localize;
+			text = "Zamknięcie"; //--- ToDo: Localize;
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 15.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 		    sizeEx = 0.02921;
 			action = "kruk_slpd_computer_data remoteExec [""server_fnc_slpdCaseClose"", 2]; closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_close: client_RscButtonMenu
 		{
 			idc = 1202;
-			text = "Zamknij"; //--- ToDo: Localize;
+			text = "Powrót"; //--- ToDo: Localize;
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 15.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
 			action = "closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		    sizeEx = 0.02921;
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0.7,0,0,0.5};
 		};
 	};
 };
@@ -553,6 +587,7 @@ class kruk_slpd_vehicle_add {
 		{
 			idc = 1201;
 			text = "Dodaj"; //--- ToDo: Localize;
+			colorBackground[] = {0.325,0.906,0.235,0.5};
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 16.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
@@ -562,7 +597,8 @@ class kruk_slpd_vehicle_add {
 		class button_close: client_RscButtonMenu
 		{
 			idc = 1202;
-			text = "Zamknij"; //--- ToDo: Localize;
+			text = "Powrót"; //--- ToDo: Localize;
+			colorBackground[] = {0.7,0,0,0.5};
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 16.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
@@ -670,6 +706,7 @@ class kruk_slpd_criminal_add {
 		{
 			idc = 1201;
 			text = "Dodaj"; //--- ToDo: Localize;
+			colorBackground[] = {0.325,0.906,0.235,0.5};
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
@@ -679,7 +716,8 @@ class kruk_slpd_criminal_add {
 		class button_close: client_RscButtonMenu
 		{
 			idc = 1202;
-			text = "Zamknij"; //--- ToDo: Localize;
+			text = "Powrót"; //--- ToDo: Localize;
+			colorBackground[] = {0.7,0,0,0.5};
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;

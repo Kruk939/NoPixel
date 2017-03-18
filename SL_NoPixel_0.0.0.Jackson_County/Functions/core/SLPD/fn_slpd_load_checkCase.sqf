@@ -66,7 +66,9 @@ if(_type == "plate") exitWith {
 		_plate = toUpper(_vehInfo select 0);
 		_class = _vehInfo select 1;
 		_color = _vehInfo select 2;
+		_color = getText(configFile >> "CfgIvoryTextures" >> _color >> "displayName");
 		_finish = _vehInfo select 3;
+		_finish = getText(configFile >> "CfgIvoryMaterials" >> _finish >> "displayName");
 		_owner_uid = _vehInfo select 4;
 		_owner_name = _vehInfo select 5;
 		_name = getText(configFile >> "CfgVehicles" >> _class >> "displayName");

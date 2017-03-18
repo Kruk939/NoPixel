@@ -42,6 +42,6 @@ lbClear _list_players;
 {
 	if(isPlayer _x) then {
 		_list_players lbADD (name _x);
-		_list_players lbSetData [(lbSize _list_players)-1, str([getPlayerUID _x, _x])];
+		_list_players lbSetData [(lbSize _list_players)-1, str([getPlayerUID _x, _x, name _x])];
 	};
 } foreach playableUnits;

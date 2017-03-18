@@ -11,7 +11,9 @@
 */
 _type = _this select 0;
 _id = _this select 1;
-_wanted_level = _this select 2;
+_wanted_level = round(_this select 2);
+if(_wanted_level > 5) then { _wanted_level = 5; };
+if(_wanted_level < 0) then { _wanted_level = 0; };
 _uid = _this select 3;
 _active = 1;
 if(_wanted_level == 0) then { _active = 0; };
