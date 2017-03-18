@@ -22,7 +22,7 @@ _7DamageStates = ["Bez Urazów","Rany cięte biodra (1x Bandaż)","Otarte biodro
 _8DamageStates = ["Bez Urazów","Krwawienie z uszu (1x Bandaż)","Złamany nos (1x Bandaż)","Wybity ząb (1x Apteczka)","Złamana szczęka (1x Apteczka)"];
 _9DamageStates = ["Bez Urazów","Otarcie nogi (1x Bandaż)","Zwichnięte kolano (1x Bandaż)","Zerwany mięsień (1x Apteczka)","Złamana kość udowa (1x Apteczka)"];
 _10DamageStates = ["Bez Urazów","Wewnętrzne otarcia (1x Bandaż)","Uszkodzone nerki (1x Bandaż)","Galopujące serce (1x Apteczka)","Mało krwi (1x Apteczka)"];
-_11DamageStates = ["Bez Urazów","Przeziębienie (Medic / Hospital)","Alergia (Medic / Hospital)","Infekcja (Medic / Hospital)","Nieznana choroba (Medic / Hospital)"];
+_11DamageStates = ["Bez Urazów","Przeziębienie (Tran /Medic / Hospital)","Alergia (Medic / Hospital)","Infekcja (Medic / Hospital)","Nieznana choroba (Medic / Hospital)"];
 
 _Btn1 = _display displayCtrl 6;
 damageAmount = myInjuries select 0;

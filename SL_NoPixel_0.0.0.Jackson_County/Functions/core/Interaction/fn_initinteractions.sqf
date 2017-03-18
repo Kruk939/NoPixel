@@ -946,6 +946,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["client_tran == 1 && ((player distance (getMarkerPos ""fishRefinery"")) < 70) || typeof (vehicle player) IN [""vvv_NewYacht"",""POP_Speed_yatch""] "],
+		["Tran", "closedialog 0; [] spawn client_fnc_refineFishOil",4]
+	],
+
+	[
 		["((player distance (getMarkerPos ""logRefinery"")) < 30)"],
 		["Przetwórz drewno", "closedialog 0; [] spawn client_fnc_refineLogs",4]
 	],

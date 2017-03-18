@@ -505,7 +505,7 @@ class medicHUD
 		class diseaseText1: RscButtonMedicSystem 
 		{
 			idc = 26;
-			text = "Brak ran/urazów";
+			text = "Brak chorób";
 			x = 0.45; 
 			y = 1;
 			w = 0.55; 

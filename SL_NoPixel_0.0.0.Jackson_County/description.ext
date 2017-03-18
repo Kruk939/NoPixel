@@ -284,6 +284,7 @@ class CfgFunctions
 			class findPlayersALL {};
 			class fixProblem {};
 			class healTime {};
+            class healTimeTran {};
 			class medicUpdater {};
 			class totalPain {};	
 			class sendrevive {};		
@@ -406,6 +407,7 @@ class CfgFunctions
 			class sellfish {};
 			class checkWeedPlant {};
 			class cutDownWeedPlant {};
+            class refineFishOil {};
 
 		};
 		class EventHandlers
@@ -563,6 +565,7 @@ class CfgFunctions
             class itemGoPro {};
             class itemSpeedBomb {};
             class itemFuel {};
+            class itemFishOil {};
 		};
         class Casino
 		{

@@ -86,6 +86,7 @@ paycheck = 0;
 kif_admin = 0;
 client_dtu_actions = 0;
 teczka_allowed=0;
+client_tran=0;
 weedPlantArray = [];
 adminInteractions = 0;
 /*
@@ -115,6 +116,11 @@ if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035
 if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087"]) then { teczka_allowed=1; };
 							//dzoka				//raf				//kifkick			//dorian
 if (getplayerUID player IN ["76561197998091289","76561197982469013","76561198201987250","76561198253273755"]) then { teczka_allowed=2; };
+/*
+	TRAN
+*/
+							//wedkarz bogdan	//michael skocik	//kifkick
+if (getplayerUID player IN ["76561198084421746","76561198045378889","76561198201987250"]) then { client_tran=1; };
 
 client_fnc_keyBusyPlayer = compileFinal
 "
