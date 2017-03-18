@@ -11,7 +11,7 @@
     Description: Function that send SQL query to the server inserting logs for inspecting players.
     Return: nothing
  */
-params["_player","_unit","_type","_text","_amount"];
+params["_player","_unit","_type","_text","_uid"];
 private["_playerUID","_playerName","_playerCash","_playerBank","_unitUID","_unitName","_unitBank","_unitCash"];
 
 if(isNil "_player" || isNil "_type") exitWith {diag_log "ConnectionLog: nil (1)";};
@@ -20,9 +20,9 @@ if(isNull _player) exitWith {diag_log "ConnectionLog: _player is Null (3)";};
 //if(isNull _unit) exitWith {diag_log "ConnectionLog: _unit is Null (4)";};
 
 if (isNil "_text") then {_text = "";};
-if (isNil "_amount") then {_amount = "";};
+if (isNil "_uid") then {_amount = "";};
 
-_playerUID = getPlayerUID _player;
+//_playerUID = getPlayerUID _player;
 _playerName = name _player;
 _playerCash = _player getVariable ["wallet",-1];
 _playerBank = _player getVariable ["atm",-1];
@@ -44,5 +44,5 @@ switch (_type) do {
 };
 
 
-_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _playerUID, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _amount];
+_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _uid, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _amount];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;

@@ -44,6 +44,13 @@ player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed
 [Client_fnc_HudEffects, 3] execFSM "call.fsm";
 [Client_fnc_Survival, 300] execFSM "call.fsm";
 
+if(myhealth > 0.99) exitwith {
+	["Zabijanie gracza za battleloga.", true] spawn domsg;
+	[player,objNull,3,format ["%1 został zabity przez Battleloga", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
+	diag_log format["Zabijam %1 za battleloga", player];
+	["Remove",1] call client_fnc_doHealth;
+};
+
 if(uniform player == "" && female) then {
 	player forceadduniform "vvv_character_protibanador";
 };
@@ -58,6 +65,11 @@ client_seatbelt = false;
 //[] spawn client_fnc_forceFirstPerson;
 [] spawn client_fnc_speedMeters;
 
+_respawn = player getVariable "respawn";
+if (_respawn == 0) then {
+		[] spawn client_fnc_respawnTimer;
+};
+
 sleep 5;
 420 cutRsc ["playerHUD","PLAIN"];
 cutText ["","BLACK IN", 10];
@@ -67,14 +79,3 @@ sleep 2;
 
 [] call client_fnc_initWelcome;
 ["Klawisz Windows lub shift + 5 otwiera menu interakcji.", true] spawn domsg;
-
-if(myhealth > 0.99) exitwith {
-	["Zabijanie gracza za battleloga.", true] spawn domsg;
-	[player,objNull,3,format ["%1 został zabity przez Battleloga", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
-	diag_log format["Zabijam %1 za battleloga", player];
-	["Remove",1] call client_fnc_doHealth;
-};
-_respawn = player getVariable "respawn";
-if (_respawn == 0) then {
-		[] spawn client_fnc_respawnTimer;
-};
