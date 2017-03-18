@@ -17,7 +17,7 @@ forceRotorLibSimulation = 2;
 class Header {
     gameType = RPG;
     minPlayers = 1;
-    maxPlayers = 143;
+    maxPlayers = 120;
 };
 
 showHUD[] = {
