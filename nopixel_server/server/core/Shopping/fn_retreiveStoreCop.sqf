@@ -2,7 +2,7 @@
 _player = _this select 0; 
 ["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player]; 
 _uid = getPlayerUID _player; 
-[_player,objNull,24,format ["%1 miał przeszukany sklep przez policję", name _player],""] remoteExec ["server_fnc_actionLog", 2];
+[_player,objNull,24,format ["%1 miał przeszukany sklep przez policję", name _player],""] call server_fnc_actionLog;
  
 diag_log ["store %1", _uid]; 
  

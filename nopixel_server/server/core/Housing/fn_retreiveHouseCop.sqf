@@ -8,7 +8,7 @@ diag_log["retreive house: %1", _player];
 
 
 _uid = getPlayerUID _player;
-[_player,objNull,23,format ["%1 miał przeszukany dom przez policję", name _player],""] remoteExec ["server_fnc_actionLog", 2];
+[_player,objNull,23,format ["%1 miał przeszukany dom przez policję", name _player],""] call server_fnc_actionLog;
 
 if (_uid in activecrates) exitwith {};
 activecrates pushback _uid;
