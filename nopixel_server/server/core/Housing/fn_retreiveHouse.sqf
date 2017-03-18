@@ -130,7 +130,7 @@ if (!isnull _holder) then {
 
     _player setVariable["housecontent", _playercontent, false];
 
-    _updatestr = format["updateHouse:%1:%2", _playercontent, getPlayerUID _player];
+    _updatestr = format["updateHouse:%1:%2", _playercontent, _uid];
     _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 
     _units = nearestObjects [_holder, ["Man"], 50];

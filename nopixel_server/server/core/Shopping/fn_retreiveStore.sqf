@@ -135,7 +135,7 @@ _n = _n + 1;
  
 _shopcontent = [_weapons,_magazines,_items,_backpacks]; 
 _player setVariable ["shopcontent",_shopcontent,false]; 
-_updatestr = format ["updateShop:%1:%2", _shopcontent, getPlayerUID _player]; 
+_updatestr = format ["updateShop:%1:%2", _shopcontent, _uid]; 
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 
 ["Synchronizacja skrzynki zakończona", false] remoteExec ["domsg",_player];
 deleteVehicle _holder;  
@@ -143,15 +143,15 @@ deleteVehicle _holder;
 [_shopcontent,"start"] remoteExec ["client_fnc_updatePrices",_player]; 
  
  
-if(getmarkerpos format["%1",getPlayerUID _player] isEqualTo [0,0,0]) then { deletemarker format["%1",getPlayerUID _player]; }; 
+if(getmarkerpos format["%1",_uid] isEqualTo [0,0,0]) then { deletemarker format["%1",_uid]; }; 
  
 if(_shopcontent isEqualTo [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]]) then { 
-_marker = createMarkerLocal [getPlayerUID player, getpos _player]; 
+_marker = createMarkerLocal [_uid, getpos _player]; 
 _marker setMarkerShapeLocal "ICON"; 
 _marker setMarkerTypeLocal "hd_dot"; 
 _marker setMarkerTextLocal format["%1 - ZAMKNIĘTY", _shopname]; 
 } else { 
-_marker = createMarker [getPlayerUID player, getpos _player]; 
+_marker = createMarker [_uid, getpos _player]; 
 _marker setMarkerShape "ICON"; 
 _marker setMarkerType "hd_dot"; 
 if (isNil _shopname) then {
