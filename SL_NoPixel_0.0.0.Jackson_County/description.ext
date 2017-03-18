@@ -165,18 +165,11 @@ class CfgFunctions
 			class questionPlayer {};
 			class jurycall {};
 			class startJury {};
-			class wantedredirect {};
 			class processJail {};
-			class wantedAdd {};		
-			class wantedLoad {};	
-			class wantedproduce {};	
-			class wantedRemove {};
-			class loadwantedProcessing {};
 			class writeticket {};
 			class ticketresult {};	
 			class taketicket {};	
 			class jailsetup {};
-			class wantedinformationupdate {};
 		};
 
 		class Mail {

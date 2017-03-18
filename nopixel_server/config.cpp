@@ -92,11 +92,6 @@ class CfgFunctions {
         };
         class Wanted {
             file = "NoPixel_Server\server\core\Wanted";
-            class wantedList {};
-            class wantedRemove {};
-			class wantedRemove2 {};
-            class addcriminal {};
-            class wantedAdd {};
             class jailsetup {};
             class robberyCall {};
             class robberyCallBank {};
