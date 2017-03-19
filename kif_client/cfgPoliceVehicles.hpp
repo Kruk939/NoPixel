@@ -1,27 +1,10 @@
 /*	
 Chevrolet Suburban LTZ 2015 
 */	
-class SuburbanPDUC_01;
-    class kif_suburban_black : SuburbanPDUC_01
+class red_suburban_15_p_u_black;
+    class kif_suburban_black : red_suburban_15_p_u_black
 	{
-		maxOmega = 650;
-		enginePower = 700;
-		peakTorque = 1000;
-		maxSpeed = 330;
-		brakeIdleSpeed = 1.3;
 		displayName = "Chevrolet Suburban LTZ 2015 Slicktop Black";
-		hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\suburban\black.paa","","","","","","","","","","",""};
-	};
-class red_suburban_15_p_marked;
-    class kif_suburban_black_marked : red_suburban_15_p_marked
-	{
-		maxOmega = 650;
-		enginePower = 700;
-		peakTorque = 1000;
-		maxSpeed = 330;
-		brakeIdleSpeed = 1.3;
-		displayName = "Chevrolet Suburban LTZ 2015 Lightbar Black";
-		hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\suburban\black.paa","","","","","","","","","","",""};
 	};
 /*	
 Chevrolet Tahoe
@@ -49,6 +32,11 @@ class TahoeCB_01;
 		displayName = "Chevrolet Tahoe Sheriff 2";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\sheriff2.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
+	class kif_tahoe_statetrooper : kif_tahoe_police
+	{
+		displayName = "Chevrolet Tahoe State Trooper";
+        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\statetrooper.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	};
 class TahoePDUC_01;
 	class kif_tahoeuc_police : TahoePDUC_01
 	{
@@ -75,13 +63,13 @@ class kmc_Mustang_510;
 /*	
 Ford Taurus
 */	
-class red_taurus_10_p_sert;
-    class kif_taurus_police : red_taurus_10_p_sert
+class red_taurus_10_p;
+    class kif_taurus_police : red_taurus_10_p
 	{
-		maxSpeed = 330;
-		maxOmega = 550;
-		enginePower = 630;
-		peakTorque = 1000;
+		enginePower = 500;
+		peakTorque = 800;
+		maxOmega = 700;
+
 		displayName = "Ford Taurus Police";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\taurus\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};

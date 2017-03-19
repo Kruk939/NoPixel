@@ -21,7 +21,6 @@ if(isNull _player) exitWith {diag_log "ConnectionLog: _player is Null (3)";};
 
 if (isNil "_text") then {_text = "";};
 if (isNil "_uid") then {_uid = "";};
-if (isNil "_items") then {_items = "";};
 
 //_playerUID = getPlayerUID _player;
 _playerName = name _player;

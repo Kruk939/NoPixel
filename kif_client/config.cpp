@@ -103,3 +103,13 @@ class CfgVehicles {
 #include "\kif_client\cfgSounds.hpp"
 #include "\kif_client\cfgIvoryTextures.hpp"
 #include "\kif_client\cfgMainMenu.hpp"
+
+class cfgWeapons {
+	class ItemCore;
+	class Vest_Camo_Base: ItemCore {};
+	class InventoryItem_Base_F;
+	class VestItem: InventoryItem_Base_F {};
+	class HeadgearItem;
+	#include "\kif_client\cfgPoliceVests.hpp"
+	#include "\kif_client\cfgPoliceCaps.hpp"
+};
