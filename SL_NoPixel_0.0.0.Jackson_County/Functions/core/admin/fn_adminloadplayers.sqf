@@ -97,9 +97,6 @@ _list lbSetdata [(lbSize _list)-1,str(2)];
 _list lbAdd format["%1", "Toggle TP"];
 _list lbSetdata [(lbSize _list)-1,str(26)];
 
-_list lbAdd format["%1", "Sync All Players"];
-_list lbSetdata [(lbSize _list)-1,str(8)];
-
 _list lbAdd format["%1", "Full Heal"];
 _list lbSetdata [(lbSize _list)-1,str(13)];
 
@@ -330,4 +327,7 @@ _list lbSetdata [(lbSize _list)-1,str(37)];
 
 _list lbAdd format["%1", "Admin Inter. OFF"];
 _list lbSetdata [(lbSize _list)-1,str(38)];
+
+_list lbAdd format["%1", "Sync Player"];
+_list lbSetdata [(lbSize _list)-1,str(39)];
 };

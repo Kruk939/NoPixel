@@ -192,7 +192,7 @@ if(_statementsent == 24) then {
 
 if(_statementsent == 25) then {
 	["Wyrzuciłeś wszystkich graczy z serwera!", true] spawn domsg;
-	[player,_target,31,format ["%1 wyrzucił z gry wszystkich graczy",name player],""] remoteExec ["server_fnc_adminLog", 2];
+	[player,objNull,31,format ["%1 wyrzucił z gry wszystkich graczy",name player],""] remoteExec ["server_fnc_adminLog", 2];
 	["Kicked",false,true] remoteExec ["BIS_fnc_endMission", playableunits];
 };
 
@@ -214,37 +214,45 @@ if(_statementsent == 27) then {
 
 if(_statementsent == 28) then {
 	[1000] remoteExec ["client_fnc_addcash", _target];
+	[player,objNull,34,format ["%1 dodał sobie 1000$",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 29) then {
 	closeDialog 0;
 	["Open",true] spawn BIS_fnc_arsenal;
+	[player,objNull,35,format ["%1 otworzył Arsenal",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 30) then {
 	closeDialog 0;
 	createDialog "RscDisplayDebugPublic";
+	[player,objNull,36,format ["%1 otworzył Debug Console",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 31) then {
 	["add","food",100] remoteExec ["client_fnc_sustain", _target];
+	[player,_target,37,format ["%1 nakarmił żołądek %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 32) then {
 	["add","drink",100] remoteExec ["client_fnc_sustain", _target];
+	[player,_target,38,format ["%1 napoił żołądek %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 33) then {
 	["remove","unhealthiness",100] remoteExec ["client_fnc_sustain", _target];
+	[player,_target,39,format ["%1 polepszył poczucie %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 34) then {
 	["add","battery",200] remoteExec ["client_fnc_sustain", _target];
+	[player,_target,40,format ["%1 naładował telefon %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 35) then {
 	closeDialog 0;
 	[] call BIS_fnc_camera;
+	[player,objNull,41,format ["%1 otworzył kamerę",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
 if(_statementsent == 36) then {
@@ -255,12 +263,20 @@ if(_statementsent == 36) then {
 if(_statementsent == 37) then {
 	if (kif_admin<=4) then {
 		adminInteractions = 1;
+		[player,objNull,43,format ["%1 włączył interakcje administratora stopień 1",name player],""] remoteExec ["server_fnc_adminLog", 2];
 	};
 	if (kif_admin==5) then {
 		adminInteractions = 2;
+		[player,objNull,44,format ["%1 włączył interakcje administratora stopień 2",name player],""] remoteExec ["server_fnc_adminLog", 2];
 	};
 };
 
 if(_statementsent == 38) then {
 	adminInteractions = 0;
+	[player,objNull,45,format ["%1 wyłączył interakcje administratora",name player],""] remoteExec ["server_fnc_adminLog", 2];
+};
+
+if(_statementsent == 39) then {
+	[] remoteExec ["client_fnc_syncdata", _target];
+	[player,_target,33,format ["%1 wykonał synchronizację gracza %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };

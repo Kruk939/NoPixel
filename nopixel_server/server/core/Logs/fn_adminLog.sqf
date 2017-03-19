@@ -72,7 +72,20 @@ switch (_type) do {
     case 30: {_type = "KickPlayer";};
     case 31: {_type = "KickAll";};
     case 32: {_type = "300mRestrain";};
-    //case 33: {_type = "";};
+    case 33: {_type = "SyncPlayer";};
+    case 34: {_type = "Add1000$";};
+    case 35: {_type = "Arsenal";};
+    case 36: {_type = "DebugConsole";};
+    case 37: {_type = "AddFood";};
+    case 38: {_type = "AddWater";};
+    case 39: {_type = "AddHealthness";};
+    case 40: {_type = "AddBattery";};
+    case 41: {_type = "Camera";};
+    case 42: {_type = "MessageAll";};
+    case 43: {_type = "AdminInteractionLv1";};
+    case 44: {_type = "AdminInteractionLv2";};
+    case 45: {_type = "AdminInteractionOff";};
+    //case 46: {_type = "";};
 };
 
 
