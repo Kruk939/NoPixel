@@ -43,7 +43,7 @@ if(!_escaped) then {
 //_suspectID = name player;
 _Suid = getplayeruid player;
 //_officerID = "Departament Więziennictwa";
-_charges = "Ucieczka z wiezienia";
+_charges = format["Ucieczka z wiezienia, pozostało: %1 miesięcy", (secondsLeft/60)];
 _status = 5;
 //_evidence = []; // lodged later.
 //_active = 1; // enabled instantly
