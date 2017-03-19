@@ -6,7 +6,7 @@
 5. **Pliki** nie mogą być wykorzystywane na innym serwerze niż na tym, który został utworzony przez [stanlakeside.pl](http://stanlakeside.pl)
 
 <hr>
-#TODO
+# TODO
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
@@ -17,7 +17,7 @@
 
 
 <hr>
-#DONE
+# DONE
 * Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy (EMS, FIRE, COP).
 * Kupowanie licencji na broń (5000$)
 * Ilość dostępnych prac w zależności od ilości osób.
@@ -65,7 +65,7 @@
 
 
 <hr>
-#DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
+# DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
 ```
     Sukces - ["Sukces","Tekst",[0,255,0,1],""] call Client_fnc_showNotification;
     Błąd - ["Błąd","Tekst",[255,0,0,1],""] call Client_fnc_showNotification;
@@ -75,7 +75,7 @@
 ```
 
 <hr>
-#SZABLON DO SKRYPTÓW
+# SZABLON DO SKRYPTÓW
 ```
 /*
  	Author: XYZ
@@ -90,14 +90,14 @@
  ```
 
 <hr>
-#WAŻNE PLIKI
+# WAŻNE PLIKI
 * \Functions\core\Police\fn_vars.sqf - ARSENAL
 * \Functions\core\Init\fn_miscvariables.sqf - VARIABLES - ADMIN'S ID
 * \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
 <hr>
-#PRZYDATNE CLASSNAME
-#PRZEDMIOTY
+# PRZYDATNE CLASSNAME
+# PRZEDMIOTY
 ```
 kif_GasCooker
 kif_Pseudo
@@ -109,7 +109,7 @@ kif_Grinder
 
 <hr>
 =======
-#POMYSLY
+# POMYSLY
 * Kupowalne budynki ([stacje benzynowe](http://stanlakeside.pl/index.php?/topic/10379-ożywienie-stacji-benzynowych/&do=findComment&comment=45468))
 * [Nowe prace](http://stanlakeside.pl/index.php?/topic/10376-drobne-modyfikacje-oraz-dodanie-nowej-pracy/)
 * jesli osoba zostanie postrzelona jakos mocniej i jest nie przytomna to by medycy mieli coraz mniejszy % szans na podniesienie .Np  dostal gdzie blisko serca i podczas pomocy nagle zaczyna sie krwotok wewnetrzny jakis i jest tylko 10% szans.
