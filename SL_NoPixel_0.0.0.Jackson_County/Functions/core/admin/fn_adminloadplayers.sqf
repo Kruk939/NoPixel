@@ -50,6 +50,9 @@ _list lbSetdata [(lbSize _list)-1,str(3)];
 _list lbAdd format["%1", "God Mode Off"];
 _list lbSetdata [(lbSize _list)-1,str(4)];
 
+_list lbAdd format["%1", "Sync Player"];
+_list lbSetdata [(lbSize _list)-1,str(39)];
+
 _list lbAdd format["%1", "Sync All Players"];
 _list lbSetdata [(lbSize _list)-1,str(8)];
 
@@ -81,6 +84,9 @@ _list lbSetdata [(lbSize _list)-1,str(3)];
 
 _list lbAdd format["%1", "God Mode Off"];
 _list lbSetdata [(lbSize _list)-1,str(4)];
+
+_list lbAdd format["%1", "Sync Player"];
+_list lbSetdata [(lbSize _list)-1,str(39)];
 
 _list lbAdd format["%1", "Sync All Players"];
 _list lbSetdata [(lbSize _list)-1,str(8)];
@@ -141,6 +147,9 @@ _list lbSetdata [(lbSize _list)-1,str(6)];
 
 _list lbAdd format["%1", "Kill Target"];
 _list lbSetdata [(lbSize _list)-1,str(7)];
+
+_list lbAdd format["%1", "Sync Player"];
+_list lbSetdata [(lbSize _list)-1,str(39)];
 
 _list lbAdd format["%1", "Sync All Players"];
 _list lbSetdata [(lbSize _list)-1,str(8)];
@@ -235,6 +244,9 @@ _list lbSetdata [(lbSize _list)-1,str(6)];
 _list lbAdd format["%1", "Kill Target"];
 _list lbSetdata [(lbSize _list)-1,str(7)];
 
+_list lbAdd format["%1", "Sync Player"];
+_list lbSetdata [(lbSize _list)-1,str(39)];
+
 _list lbAdd format["%1", "Sync All Players"];
 _list lbSetdata [(lbSize _list)-1,str(8)];
 
@@ -328,6 +340,4 @@ _list lbSetdata [(lbSize _list)-1,str(37)];
 _list lbAdd format["%1", "Admin Inter. OFF"];
 _list lbSetdata [(lbSize _list)-1,str(38)];
 
-_list lbAdd format["%1", "Sync Player"];
-_list lbSetdata [(lbSize _list)-1,str(39)];
 };
