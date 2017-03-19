@@ -12,7 +12,7 @@
     Return: nothing
  */
 params["_player","_unit","_type","_text","_weapon","_distance"];
-private["_playerUID","_playerName","_playerCash","_playerBank","_unitUID","_unitName","_unitBank","_unitCash"];
+private["_playerUID","_playerName","_playerCash","_playerBank","_playerInv","_unitUID","_unitName","_unitBank","_unitCash","_unitInv"];
 
 if(isNil "_player" || isNil "_type") exitWith {diag_log "DeathLog: nil (1)";};
 if("_type" == "") exitWith {diag_log "DeathLog: _type is empty (2)";};
@@ -27,15 +27,17 @@ _playerUID = getPlayerUID _player;
 _playerName = name _player;
 _playerCash = _player getVariable ["wallet",-1];
 _playerBank = _player getVariable ["atm",-1];
+_playerInv = getUnitLoadout _player;
 
 if (isNull _unit) then {
     //diag_log "DeathLog: unit is not defined";
-    _unitUID = ""; _unitName = ""; _unitCash = "0"; _unitBank = "0";
+    _unitUID = ""; _unitName = ""; _unitCash = "0"; _unitBank = "0"; _unitInv = "";
 } else {
     _unitUID = getPlayerUID _unit;
     _unitName = name _unit;
     _unitCash = _unit getVariable ["wallet",-1];
     _unitBank = _unit getVariable ["atm",-1];
+    _unitInv = getUnitLoadout _unit;
 };
 
 switch (_type) do {
@@ -47,5 +49,5 @@ switch (_type) do {
 };
 
 
-_insertstr = format ["deathLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12", _playerUID, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _weapon, _distance];
+_insertstr = format ["deathLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14", _playerUID, _playerName, _playerCash, _playerBank, _playerInv, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _unitInv, _weapon, _distance];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;

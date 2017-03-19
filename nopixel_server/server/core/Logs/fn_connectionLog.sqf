@@ -11,8 +11,8 @@
     Description: Function that send SQL query to the server inserting logs for inspecting players.
     Return: nothing
  */
-params["_player","_unit","_type","_text","_uid"];
-private["_playerUID","_playerName","_playerCash","_playerBank","_unitUID","_unitName","_unitBank","_unitCash"];
+params["_player","_type","_text","_uid"];
+private["_playerUID","_playerName","_playerCash","_playerBank"];
 
 if(isNil "_player" || isNil "_type") exitWith {diag_log "ConnectionLog: nil (1)";};
 if("_type" == "") exitWith {diag_log "ConnectionLog: _type is empty (2)";};
@@ -27,14 +27,6 @@ _playerName = name _player;
 _playerCash = _player getVariable ["wallet",-1];
 _playerBank = _player getVariable ["atm",-1];
 
-if (isNull _unit) then {
-    //diag_log "ConnectionLog: unit is not defined";
-    _unitUID = ""; _unitName = ""; _unitCash = "0"; _unitBank = "0";
-} else {
-    _unitUID = getPlayerUID _unit;
-    _unitName = name _unit;
-    _unitCash = _unit getVariable ["wallet",-1];
-    _unitBank = _unit getVariable ["atm",-1];
 };
 
 switch (_type) do {
@@ -44,5 +36,5 @@ switch (_type) do {
 };
 
 
-_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11", _uid, _playerName, _playerCash, _playerBank, _type, _text, _unitUID, _unitName, _unitCash, _unitBank, _amount];
+_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7", _uid, _playerName, _playerCash, _playerBank, _type, _tex _amount];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;

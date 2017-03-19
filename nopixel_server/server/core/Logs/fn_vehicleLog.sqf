@@ -12,7 +12,7 @@
     Return: nothing
  */
 params["_player","_type","_text","_amount","_vehicleClassname","_vehicleName"];
-private["_playerUID","_playerName","_playerCash","_playerBank","_unitUID","_unitName","_unitBank","_unitCash"];
+private["_playerUID","_playerName","_playerCash","_playerBank","_playerInv"];
 
 if(isNil "_player" || isNil "_type") exitWith {diag_log "VehicleLog: nil (1)";};
 if("_type" == "") exitWith {diag_log "VehicleLog: _type is empty (2)";};
@@ -26,6 +26,7 @@ _playerUID = getPlayerUID _player;
 _playerName = name _player;
 _playerCash = _player getVariable ["wallet",-1];
 _playerBank = _player getVariable ["atm",-1];
+_playerInv = getUnitLoadout _player;
 
 switch (_type) do {
     case 1: {_type = "Kupno";};
@@ -40,5 +41,5 @@ switch (_type) do {
 };
 
 
-_insertstr = format ["vehicleLog:%1:%2:%3:%4:%5:%6:%7:%8:%9", _playerUID, _playerName, _playerCash, _playerBank, _type, _text, _vehicleClassname, _vehicleName, _amount];
+_insertstr = format ["vehicleLog:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10", _playerUID, _playerName, _playerCash, _playerBank, _playerInv, _type, _text, _vehicleClassname, _vehicleName, _amount];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
