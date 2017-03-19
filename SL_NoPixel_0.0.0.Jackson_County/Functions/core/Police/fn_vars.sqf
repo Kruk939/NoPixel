@@ -29,7 +29,9 @@ _availableHeadgear = [
     if (player getvariable ["cop", 0] > 2) then {
     _availableHeadgearTwo = [
     	"CUP_NVG_PVS7",
-        "TRYK_Headset_NV"
+        "TRYK_Headset_NV",
+	"TRYK_G_Shades_Blue_NV",
+	"TRYK_G_Shades_Black_NV"
         ];
     _availableHeadgear = _availableHeadgear + _availableHeadgearTwo;
     };
@@ -71,6 +73,7 @@ _availableHeadgear = [
         "TRYK_H_headsetcap_od",
         "TRYK_H_headsetcap_blk",
         "TRYK_H_headsetcap_blk_Glasses",
+	"TRYK_H_headsetcap_od_Glasses",
         "TRYK_H_headsetcap_Glasses",
         "TRYK_H_LHS_HEL_G",
         "TRYK_H_Bandana_wig_g",
@@ -603,7 +606,9 @@ _availableMagazine = [
 	"16Rnd_9x21_Mag",
 	"sab_wwiplanes_6rnd_mauser_mag",
 	"RH_18Rnd_9x19_VP",
-	"CUP_6Rnd_45ACP_M"
+	"CUP_6Rnd_45ACP_M",
+	"CUP_30Rnd_556x45_Stanag",
+	"CUP_6Rnd_Smoke_M203"
 ];
 
  
@@ -663,6 +668,9 @@ _availableWeapon = [
 
     if (player getvariable ["cop", 0] > 6) then {
     _availableWeaponSix =[
+    	"CUP_glaunch_M32",
+    	"CUP_arifle_CZ805_A1",
+	"CUP_arifle_CZ805_A2",
         "CUP_arifle_M4A1_black",
         "CUP_arifle_M16A4_Base",
         "CUP_smg_MP5A5",
@@ -708,7 +716,8 @@ _availableAttachments = [
 	"RH_vp70stock",
 	"RH_X300",
 	"RH_M6X",
-	"RH_X2"
+	"RH_X2",
+	"muzzle_snds_M"
 ];
 
 _availableItems = [
