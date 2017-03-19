@@ -36,6 +36,8 @@
 
 //policedialogs
 #include "ticket.hpp"
+#include "kruk_slpd_computer.hpp"
+#include "kruk_slpd_ticket.hpp"
 
 
 #include "vehSetPrice.hpp"
@@ -43,4 +45,3 @@
 
 //admin dialogs
 #include "adminDialogs.hpp"
-#include "kruk_slpd_computer.hpp"

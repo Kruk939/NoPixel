@@ -581,6 +581,9 @@ class CfgFunctions
 			class slpd_add_computerRecord {};
 			class slpd_load_criminalAdd {};
 			class slpd_load_vehicleAdd {};
+			class slpd_ticket_action {};
+			class slpd_ticket_give {};
+			class slpd_ticket_recive {};
 		};
 	};
 };

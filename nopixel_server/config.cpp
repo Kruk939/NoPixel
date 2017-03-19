@@ -31,6 +31,7 @@ class CfgFunctions {
 			class slpdCaseClose {};
 			class slpdCaseAdd {};
 			class slpdCaseUpdate {};
+			class slpdTicketAdd {};
         };
         class Sync {
             file = "NoPixel_Server\server\core\Sync";

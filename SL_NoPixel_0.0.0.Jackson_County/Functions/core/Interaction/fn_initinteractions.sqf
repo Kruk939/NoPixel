@@ -460,7 +460,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" myJob == ""Cop"" && CurrentCursorTarget isKindOf 'Man'"],
-		["Wypisz mandat", " createdialog ""np_ticketpolice""; ",2]
+		["Wypisz mandat", " createdialog ""kruk_slpd_ticket_give""; ",2]
 	],
 
 	[

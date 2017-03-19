@@ -26,7 +26,7 @@ _cost = call compile format["%1", (_status select 2)];
 
 _totalprice = _cost * _Quantity;
 
-if(_totalprice == 0 || _totalprice < 0) exitwith { hint "Nie mozesz kupic przedmiotu, który kosztuje $0"; };
+if(_totalprice <= 0) exitwith { hint "Nie mozesz kupic przedmiotu, który kosztuje $0"; };
 _error = false;
 
 if(_typebuy == "fish") then {
