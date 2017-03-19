@@ -38,6 +38,15 @@ _availableHeadgear = [
     
     if (player getvariable ["cop", 0] > 5) then {
     _availableHeadgearFive = [
+    
+    	"jamie_blackhelmet",
+	"jamie_pcapblack",
+	"jamie_pcapblue2",
+	"jamie_pcapblue",
+	"jamie_pcapcorrections",
+	"jamie_pcapgreen",
+	"jamie_pcapgreen2",
+	
     	"G_Spectacles_Tinted",
         "CUP_H_NAPA_Fedora",
         "ALE_H_Cowboy_White",
@@ -246,6 +255,39 @@ _availableGoggles = [
     };
  
 _availableUniforms = [
+
+	"jamie_corrections",
+	"kenny_doc",
+	"jamie_police1"
+	"kenny_police5",
+	"kenny_police2",
+	"kenny_police1",
+	"kenny_police3",
+	"kenny_police4",
+	"jamie_police3_1",
+	"jamie_police3",
+	"jamie_police2",
+	"jamie_police2_2",
+	"jamie_police2_5",
+	"jamie_police2_3",
+	"jamie_police2_4",
+	"jamie_tou",
+	"kenny_sheriff",
+	"kenny_sheriff1",
+	"kenny_sheriff4",
+	"jamie_sheriff",
+	"kenny_sheriff2",
+	"kenny_sheriff3",
+	"NP_W_PD8",
+	"NP_W_PD7",
+	"NP_W_PD9",
+	"NP_W_PD5",
+	"NP_W_PD6",
+	"NP_W_PD1",
+	"NP_W_PD2",
+	"NP_W_PD4",
+	"NP_W_PD3",
+	
 	"silver_lake_fbi",
 	"silver_lake_police",
 	"silver_lake_sheriff",
@@ -525,7 +567,20 @@ _availableUniforms = [
     };
  
 _availableVests = [
-    "V_RebreatherB"
+    	"V_RebreatherB",
+	"jamie_black",
+	"jamie_blacky2",
+	"jamie_black2",
+	"jamie_blue2",
+	"jamie_blue",
+	"jamie_corrections_vest",
+	"kenny_vest_doc",
+	"kenny_vest_detective",
+	"kenny_vest_police",
+	"jamie_reflective",
+	"kenny_vest_Sheriff",
+	"jamie_sheriff_vest",
+	"kenny_vest_traffic"
 ];
     if (player getvariable ["cop", 0] > 2) then {
         _availableVestsTwo = [
