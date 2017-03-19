@@ -19,5 +19,5 @@ _amount = ctrlText _edit_amount;
 _points = ctrlText _edit_points;
 _reason = ctrlText _edit_reason;
 
-[[_amount, _points, _reason],player] remoteExec ["client_fnc_slpd_ticket_recive", _target];
+[[_amount, _points, _reason],player] remoteExec ["client_fnc_slpd_ticket_receive", _target];
 closeDialog 0;

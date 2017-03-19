@@ -9,7 +9,7 @@ _ticket_data = _this select 0;
 _officer = _this select 1;
 disableSerialization;
 _data = _this select 0;
-_ok = createDialog "kruk_slpd_ticket_recive";
+_ok = createDialog "kruk_slpd_ticket_receive";
 if(!_ok) exitWith { hint "Dialog not created"; };
 _display = findDisplay 666007;
 _edit_amount = _display displayCtrl 1001;

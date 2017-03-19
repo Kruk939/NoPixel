@@ -119,9 +119,9 @@ class kruk_slpd_ticket_give {
 		};
 	};
 };
-class kruk_slpd_ticket_recive {
+class kruk_slpd_ticket_receive {
 	idd = 666007;
-	name = "kruk_slpd_ticket_recive";
+	name = "kruk_slpd_ticket_receive";
 	movingEnable = 0;
 	enableSimulation = 1;
 	onLoad = "";

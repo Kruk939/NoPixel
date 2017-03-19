@@ -583,7 +583,7 @@ class CfgFunctions
 			class slpd_load_vehicleAdd {};
 			class slpd_ticket_action {};
 			class slpd_ticket_give {};
-			class slpd_ticket_recive {};
+			class slpd_ticket_receive {};
 		};
 	};
 };
