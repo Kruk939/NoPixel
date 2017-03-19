@@ -11,7 +11,7 @@
     Description: Function that send SQL query to the server inserting logs for inspecting players.
     Return: nothing
  */
-params["_player","_type","_text","_uid"];
+params["_player","_type","_text","_uid","_items"];
 private["_playerUID","_playerName","_playerCash","_playerBank"];
 
 if(isNil "_player" || isNil "_type") exitWith {diag_log "ConnectionLog: nil (1)";};
@@ -20,7 +20,8 @@ if(isNull _player) exitWith {diag_log "ConnectionLog: _player is Null (3)";};
 //if(isNull _unit) exitWith {diag_log "ConnectionLog: _unit is Null (4)";};
 
 if (isNil "_text") then {_text = "";};
-if (isNil "_uid") then {_amount = "";};
+if (isNil "_uid") then {_uid = "";};
+if (isNil "_items") then {_items = "";};
 
 //_playerUID = getPlayerUID _player;
 _playerName = name _player;
@@ -36,5 +37,5 @@ switch (_type) do {
 };
 
 
-_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7", _uid, _playerName, _playerCash, _playerBank, _type, _tex _amount];
+_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7:%8", _uid, _playerName, _playerCash, _playerBank, _items, _type, _tex _amount];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
