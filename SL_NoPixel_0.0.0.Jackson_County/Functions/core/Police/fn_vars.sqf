@@ -40,12 +40,12 @@ _availableHeadgear = [
     _availableHeadgearFive = [
     
     	"jamie_blackhelmet",
-	"jamie_pcapblack",
-	"jamie_pcapblue2",
-	"jamie_pcapblue",
-	"jamie_pcapcorrections",
-	"jamie_pcapgreen",
-	"jamie_pcapgreen2",
+		"jamie_pcapblack",
+		"jamie_pcapblue2",
+		"jamie_pcapblue",
+		"jamie_pcapcorrections",
+		"jamie_pcapgreen",
+		"jamie_pcapgreen2",
 	
     	"G_Spectacles_Tinted",
         "CUP_H_NAPA_Fedora",
@@ -64,7 +64,7 @@ _availableHeadgear = [
         "H_Booniehat_khk",
         "H_Booniehat_oli",
         "H_Booniehat_tan",
-	"H_Beret_gen_F",
+		"H_Beret_gen_F",
         "TRYK_H_woolhat_WH",
         "TRYK_H_woolhat_tan",
         "TRYK_H_woolhat_CW",
@@ -82,7 +82,7 @@ _availableHeadgear = [
         "TRYK_H_headsetcap_od",
         "TRYK_H_headsetcap_blk",
         "TRYK_H_headsetcap_blk_Glasses",
-	"TRYK_H_headsetcap_od_Glasses",
+		"TRYK_H_headsetcap_od_Glasses",
         "TRYK_H_headsetcap_Glasses",
         "TRYK_H_LHS_HEL_G",
         "TRYK_H_Bandana_wig_g",
@@ -258,7 +258,7 @@ _availableUniforms = [
 
 	"jamie_corrections",
 	"kenny_doc",
-	"jamie_police1"
+	"jamie_police1",
 	"kenny_police5",
 	"kenny_police2",
 	"kenny_police1",
