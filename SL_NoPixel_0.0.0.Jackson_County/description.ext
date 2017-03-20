@@ -166,9 +166,6 @@ class CfgFunctions
 			class jurycall {};
 			class startJury {};
 			class processJail {};
-			class writeticket {};
-			class ticketresult {};	
-			class taketicket {};	
 			class jailsetup {};
 		};
 

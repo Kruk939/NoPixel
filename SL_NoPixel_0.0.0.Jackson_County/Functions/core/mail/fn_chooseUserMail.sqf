@@ -8,5 +8,5 @@ _status = call compile format["%1", _status];
 closedialog 0;
 sleep 0.05;
 if(isNil "_status") exitwith { };
-[_status,_message,player] remoteExec ["server_fnc_sendMail",2];
+["personal",_status,_message,player,format["Mail od %1", name player]] remoteExec ["server_fnc_sendMail",2];
 [_message,format["Mail od %1", name player],name player] remoteExec ["client_fnc_sendMail",_status];

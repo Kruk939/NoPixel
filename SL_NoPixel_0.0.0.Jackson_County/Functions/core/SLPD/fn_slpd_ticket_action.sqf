@@ -23,6 +23,7 @@ if(_type == "accept") then {
 	[_amount] call Client_fnc_removeBank;
 	[format["%1 zapłacił mandat w wysokości $%2", _name, _amount]] remoteExec ["domsg", _officer];
 	[_uid_player, _uid_officer, _amount, _reason, _points] remoteExec ["server_fnc_slpdTicketAdd", 2];
+	player playmove "vvv_anim_ticket";
 } else {
 	[format["%1 odmówił zapłacenia mandatu.", _name]] remoteExec ["domsg", _officer];
 };

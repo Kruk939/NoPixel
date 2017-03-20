@@ -35,7 +35,6 @@
 
 
 //policedialogs
-#include "ticket.hpp"
 #include "kruk_slpd_computer.hpp"
 #include "kruk_slpd_ticket.hpp"
 

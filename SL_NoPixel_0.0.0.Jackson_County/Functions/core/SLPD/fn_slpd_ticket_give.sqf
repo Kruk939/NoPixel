@@ -18,6 +18,6 @@ _edit_reason = _display displayCtrl 1003;
 _amount = ctrlText _edit_amount;
 _points = ctrlText _edit_points;
 _reason = ctrlText _edit_reason;
-
+player playmove "vvv_anim_ticket";
 [[_amount, _points, _reason],player] remoteExec ["client_fnc_slpd_ticket_receive", _target];
 closeDialog 0;

@@ -75,10 +75,14 @@ if(_type == "plate") exitWith {
 		_maxSpeed = getNumber(configFile >> "CfgVehicles" >> _class >> "maxSpeed");
 		_enginePower = round(getNumber(configFile >> "CfgVehicles" >> _class >> "enginePower") * 1.341);
 		_wantedString = "";
-		if(count _wantedInfo == 0) then { _wantedString = "NIE"; } else {
-			_wantedString = "TAK (ID: ";
-			{ _wantedString = _wantedString + format["%1 ",_x select 0]; } forEach _wantedInfo;
-			_wantedString = _wantedString + ")";
+		{
+			if((_x select 7) == 1) then {
+				_wantedString = _wantedString + format["%1 ",_x select 0];
+			};
+		} forEach _wantedInfo;
+		
+		if(_wantedString == "") then { _wantedString = "NIE"; } else {
+			_wantedString = format["TAK ( %1 )",_wantedString];
 		};
 		_title = format ["Informacje o pojeździe: %1", _plate];
 		_text_title ctrlSetText _title;
