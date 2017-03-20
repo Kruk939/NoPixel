@@ -107,8 +107,8 @@ if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif
 */
 							//liang	   			//walezy
 if (getplayerUID player IN ["76561198007690584","76561198060193900"]) then { client_dtu_actions=1; };
-							//rudolf	   		//richard			//marian			//dzoka				//raf				//kifkick			//naburo
-if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087","76561197998091289","76561197982469013","76561198201987250","76561197979530109"]) then { client_dtu_actions=2; };
+							//rudolf	   		//richard			//marian			//dzoka				//raf				//kifkick
+if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087","76561197998091289","76561197982469013","76561198201987250"]) then { client_dtu_actions=2; };
 /*
 	TECZKA ALLOWED
 */
