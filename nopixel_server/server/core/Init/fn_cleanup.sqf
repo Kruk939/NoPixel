@@ -34,10 +34,12 @@ _fire = _fireLocations call bis_fnc_selectRandom;
 [_fire] spawn server_fnc_fireStart;
 [] spawn server_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku
 
-
-
-
-
+_dateHour = date select 3;
+if (6 < _dateHour && _dateHour< 18) then {
+    setTimeMultiplier 12;
+} else {
+    setTimeMultiplier 24;
+};
 
 /*
 if (isNil "carArray") then {

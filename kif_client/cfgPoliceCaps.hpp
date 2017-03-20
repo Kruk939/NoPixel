@@ -12,7 +12,7 @@ class H_Cap_blk;
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\kif_client\textures\caps\police_black.paa"
+			"\kif_client\textures\clothing\caps\police_black.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
@@ -32,7 +32,7 @@ class H_Cap_blk;
         displayName="Black Police Cap";
         hiddenSelectionsTextures[]=
 		{
-			"\kif_client\textures\caps\police_blue.paa"
+			"\kif_client\textures\clothing\caps\police_blue.paa"
 		};
     };
     class kif_police_green: kif_police_black
@@ -40,6 +40,6 @@ class H_Cap_blk;
         displayName="Green Police Cap";
         hiddenSelectionsTextures[]=
 		{
-			"\kif_client\textures\caps\police_green.paa"
+			"\kif_client\textures\clothing\caps\police_green.paa"
 		};
     };

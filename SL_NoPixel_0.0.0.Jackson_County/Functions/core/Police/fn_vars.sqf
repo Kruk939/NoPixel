@@ -567,7 +567,7 @@ _availableUniforms = [
     };
  
 _availableVests = [
-    	"V_RebreatherB",
+    "V_RebreatherB",
 	"jamie_black",
 	"jamie_blacky2",
 	"jamie_black2",
@@ -580,14 +580,16 @@ _availableVests = [
 	"jamie_reflective",
 	"kenny_vest_Sheriff",
 	"jamie_sheriff_vest",
-	"kenny_vest_traffic"
+	"kif_traffic_vest",
+	"kif_traffic_sheriff_vest",
+	"kif_slpa_vest"
 ];
     if (player getvariable ["cop", 0] > 2) then {
         _availableVestsTwo = [
-            "EF_BS",
-            "EF_BLT_M1",
-            "EF_BLT_F1",
-            "EF_BLT_M1B",
+        "EF_BS",
+        "EF_BLT_M1",
+        "EF_BLT_F1",
+        "EF_BLT_M1B",
 	    "TAC_V_tacv1LC_P",
 	    "TAC_V_Sheriff_BA_TB7",
 	    "TAC_V_Sheriff_BA_TB3",
