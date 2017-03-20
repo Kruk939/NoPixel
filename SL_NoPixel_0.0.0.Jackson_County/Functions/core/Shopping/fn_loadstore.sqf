@@ -1010,8 +1010,8 @@ if(_condition == "doughnuts_gun") then {
 		_ret = [
 		    ["RH_python",nil,6000,1],
 			["RH_fnp45",nil,5000,1],
-			["RH_gemtech45",nil,2000,1],
-			["RH_docter",nil,1000,1],
+			["RH_gemtech45",nil,2000,3],
+			["RH_docter",nil,1000,3],
 			["RH_fnp45t",nil,5000,1],
 			["RH_g18",nil,6000,1]
 		];
@@ -1045,17 +1045,15 @@ if(_condition == "doughnuts_gun") then {
 		_ret = [
 		    ["RH_deagle",nil,10000,1],
 			["RH_Deagleg",nil,15000,1],
-			["CUP_srifle_CZ550",nil,25000,1],
-			["CUP_5x_22_LR_17_HMR_M",nil,1000,1],
 			["hgun_PDW2000_F",nil,20000,1],
 			["arifle_mas_ww2_ppsh",nil,25000,1],
-			["71Rnd_mas_ww2_ppsh",nil,50,1],
 			["arifle_mas_ww2_mp40",nil,30000,1],
-			["RH_mk2",nil,30000,1],
 			["arifle_mas_ww2_mp44",nil,30000,1],
 			["arifle_mas_ww2_tommy",nil,30000,1],
+			["RH_mk2",nil,5000,1],
 			["SMG_01_F",nil,30000,1],
-			["CUP_smg_bizon",nil,25000,1]
+			["CUP_smg_bizon",nil,25000,1],
+			["CUP_srifle_CZ550",nil,50000,1]
 		];
 		_additional = _additional + _ret;
 	};
