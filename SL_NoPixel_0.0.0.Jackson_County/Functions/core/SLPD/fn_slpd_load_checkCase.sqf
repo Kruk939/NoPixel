@@ -82,7 +82,7 @@ if(_type == "plate") exitWith {
 		} forEach _wantedInfo;
 		
 		if(_wantedString == "") then { _wantedString = "NIE"; } else {
-			_wantedString = format["TAK ( %1 )",_wantedString];
+			_wantedString = format["TAK ( %1)",_wantedString];
 		};
 		_title = format ["Informacje o pojeździe: %1", _plate];
 		_text_title ctrlSetText _title;
