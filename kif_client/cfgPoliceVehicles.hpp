@@ -79,6 +79,14 @@ class red_taurus_10_p;
     //    hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\taurus\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	//};
 /*	
+Ford F350 SWAT z dildo
+*/
+class red_swat_08_p_swat;
+	class kif_ford350_swat: red_swat_08_p_swat
+	{
+		displayName = "Ford F350 SWAT z dilodsem";
+	};
+/*	
 Lamborghini Reventon
 */
 class ivory_rev_marked;

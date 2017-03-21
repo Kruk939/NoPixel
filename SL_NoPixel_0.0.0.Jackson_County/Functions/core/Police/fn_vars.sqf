@@ -303,16 +303,6 @@ _availableUniforms = [
 	"NP_W_PD4",
 	"NP_W_PD3",
 
-	"Sheriff_rang12",
-	"Sheriff_rang11",
-	"Sheriff_rang10",
-	"Sheriff_rang9",
-	"Sheriff_rang7",
-	"Sheriff_rang6",
-	"Sheriff_rang3",
-	"Sheriff_rang2",
-	"Sheriff_rang1",
-
 	"silver_lake_fbi",
 	"silver_lake_police",
 	"silver_lake_sheriff",
@@ -372,7 +362,9 @@ _availableUniforms = [
 			"Sheriff_rang9",
 			"Sheriff_rang10",
 			"Sheriff_rang11",
-			"Sheriff_rang12"
+			"Sheriff_rang12",
+			"sp_rang3",
+			"sp_rang6"
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
@@ -380,7 +372,7 @@ _availableUniforms = [
 			"kif_traffic_sheriff_vest",
 			"TAC_PBDFG2CPSRF_RG_1"
 		];
-		_availableUniforms = _availableUniforms + _temp;
+		_availableVests = _availableVests + _temp;
 		//Czapki
 		_temp = [
 			"jamie_pcapgreen",

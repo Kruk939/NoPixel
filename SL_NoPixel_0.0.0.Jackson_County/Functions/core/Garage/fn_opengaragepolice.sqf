@@ -56,7 +56,9 @@ if(myJob == "Cop") then {
 			"red_kawasaki_10_p",
 			"red_panamera_10_p_u_black",
 			"red_suburban_15_p_f_ia",
-			"red_swat_08_p_swat",
+			"kif_ford350_swat",
+			"red_charger_12_p_swat",
+			"cg_suburban_sert_pol",
 			//"kif_taurus_sheriff",
 			//"kif_kawasaki_police",
 			//"kif_kawasaki_sheriff",
@@ -124,6 +126,12 @@ if(myJob == "Cop") then {
 			];
 			_garage = _garage + _garageMore;
 			};
+			if(getPlayerUID player in ["76561197998091289","76561198201987250","76561197982469013"]) then {
+				_garageMore = [
+				"red_panamera_10_p_u_black"
+			];
+			_garage = _garage + _garageMore;
+			};
 	//if(player getvariable "cop" > 7) then { _garage pushback "B_MRAP_01_hmg_F"; };
 };
 if(myJob == "EMS" || myJob == "Fire") then {
@@ -132,6 +140,9 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"ivory_isf_medic_rr",
 				"NP_Jonzie_Ambulance1",
 				"NP_Jonzie_Ambulance2",
+				"red_ambulance_08_EMS",
+				"red_ambulance_08_FD",
+				"red_ambulance_08_SR",
 				"vvv_fire_truck",
 				"B_Boat_Transport_01_F",
 				"C_Boat_Civil_01_F",
