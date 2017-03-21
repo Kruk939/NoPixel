@@ -13,46 +13,72 @@ if(myjob == "Cop") exitwith {
 		removeBackpack player;
 		removeHeadgear player;
 		removeGoggles player;
-
-
 		player addWeapon "Binocular";
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";
 		player linkItem "Itemwatch";
 		player linkItem "ItemGPS";
 		player linkitem "tf_anprc152";
-
-		_level = player getVariable "cop";
-
-
-
 		player addweapon "cg_baton";
-
 		player addBackpack "AM_PoliceBelt";
-
 		player additemtobackpack "RH_uspm";
-
 		player addweapon "taser";
-
-
 		for "_i" from 1 to 8 do {player addItemToBackpack "RH_16Rnd_40cal_usp"; };
 		for "_i" from 1 to 10 do {player addItemToBackPack "vvv_np_magazine_taser"; };
 		for "_i" from 1 to 2 do {player addItemToBackPack "nonlethal_swing"; };
-
 		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","kif_gopro","kif_panicbutton"];
 
+		_level = player getvariable ["cop", 0];
+		
 		if(female) then { player forceAddUniform "female_police"; player addHeadgear "EF_Fcap_P"; } else { 
-
-			if(player getvariable "coplevel" > 7) then { player forceAddUniform "silver_lake_fbi"; };
-
-			if(player getvariable "coplevel" < 8 && player getvariable "coplevel" > 3) then { player forceAddUniform "silver_lake_fbi"; };
-
-			if(player getvariable "coplevel" < 4) then { player forceAddUniform "silver_lake_police"; };
-			
-			player addHeadgear "Campaign_Hat_Dark"; 
-
+			if(_level == 1) then {
+				player forceAddUniform "jamie_police1";
+				player addVest "jamie_blue";
+				player addHeadgear "kif_police_blue";
+			};
+			if(_level == 2) then {
+				player forceAddUniform "jamie_police2";
+				player addVest "jamie_blue";
+				player addHeadgear "kif_police_blue";
+			};
+			if(_level == 3) then {
+				player forceAddUniform "jamie_police2_2";
+				player addVest "jamie_blue";
+				player addHeadgear "kif_police_blue";
+			};
+			if(_level == 4) then {
+				player forceAddUniform "jamie_police2_3";
+				player addVest "jamie_blue";
+				player addHeadgear "kif_police_blue";
+			};
+			if(_level == 5) then {
+				player forceAddUniform "Sheriff_rang1";
+				player addVest "kenny_vest_Sheriff";
+				player addHeadgear "jamie_pcapgreen";
+			};
+			if(_level == 6) then {
+				player forceAddUniform "police_kevuni7";
+				player addVest "kenny_vest_police";
+				player addHeadgear "jamie_pcapblack";
+			};
+			if(_level == 7) then {
+				player forceAddUniform "police_kevuni4";
+				player addVest "kenny_vest_police";
+				player addHeadgear "KMC_Cap_sert";
+			};
+			if(_level == 8) then {
+				player forceAddUniform "silver_lake_statepolice";
+				player addHeadgear "Campaign_Hat_Dark";
+			};
+			if(_level == 9) then {
+				player forceAddUniform "jamie_police3_1";
+				player addVest "jamie_black2";
+				player addHeadgear "Campaign_Hat_Dark";
+			};
+			if(_level == 10) then {
+				player forceAddUniform "vvv_traje_policia_3";
+			};
 		};
-	
 	} else {
 
 		removeAllWeapons player;

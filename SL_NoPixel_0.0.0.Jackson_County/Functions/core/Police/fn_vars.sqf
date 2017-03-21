@@ -24,7 +24,12 @@ _availableHeadgear = [
 	"CUP_H_FR_Headset",
 	"H_CrewHelmetHeli_B",
 	"H_PilotHelmetHeli_B",
-	"CUP_H_USArmy_Helmet_ECH1_Black"
+	"CUP_H_USArmy_Helmet_ECH1_Black",
+	"kif_police_blue",
+	"jamie_pcapblue2",
+	"jamie_pcapblack",
+	"KMC_Cap_sert"
+	
 ];
     if (player getvariable ["cop", 0] > 2) then {
     _availableHeadgearTwo = [
@@ -372,6 +377,10 @@ _availableUniforms = [
 		];
 		_availableHeadgear = _availableHeadgear + _temp;
 	};
+	
+	
+	
+	
     if (player getvariable ["cop", 0] > 5) then {
         _availableUniformsFive = [
 		"TRYK_U_hood_nc",
