@@ -567,7 +567,7 @@ _availableUniforms = [
     };
  
 _availableVests = [
-    "V_RebreatherB",
+    	"V_RebreatherB",
 	"jamie_black",
 	"jamie_blacky2",
 	"jamie_black2",
@@ -586,34 +586,34 @@ _availableVests = [
 ];
     if (player getvariable ["cop", 0] > 2) then {
         _availableVestsTwo = [
-        "EF_BS",
-        "EF_BLT_M1",
-        "EF_BLT_F1",
-        "EF_BLT_M1B",
-	    "TAC_V_tacv1LC_P",
-	    "TAC_V_Sheriff_BA_TB7",
-	    "TAC_V_Sheriff_BA_TB3",
-	    "EF_GSG9_2"
+		"EF_BS",
+		"EF_BLT_M1",
+		"EF_BLT_F1",
+		"EF_BLT_M1B",
+		"TAC_V_tacv1LC_P",
+		"TAC_V_Sheriff_BA_TB7",
+		"TAC_V_Sheriff_BA_TB3",
+		"EF_GSG9_2"
         ];
     _availableVests = _availableVests + _availableVestsTwo;
     };
 
     if (player getvariable ["cop", 0] > 5) then {
         _availableVestsFive = [
-            "EF_BS",
-            "EF_CTV1",
-            "EF_PBDF_M1",
-            "EF_BLT_M1",
-            "EF_BLT_M1B",
-            "TAC_FS_FO_P",
-            "TAC_Sheriff_BA_OD",
-            "TAC_V_tacv1_SRF",
-            "TAC_V_tacv1_P",
-            "EF_CTV1",
-            "TAC_HGB_B",
-            "TAC_V_Sheriff_BA_TB4"
-            //"TRYK_V_ArmorVest_Delta",
-            //"TRYK_V_ArmorVest_Delta2"
+		"EF_BS",
+		"EF_CTV1",
+		"EF_PBDF_M1",
+		"EF_BLT_M1",
+		"EF_BLT_M1B",
+		"TAC_FS_FO_P",
+		"TAC_Sheriff_BA_OD",
+		"TAC_V_tacv1_SRF",
+		"TAC_V_tacv1_P",
+		"EF_CTV1",
+		"TAC_HGB_B",
+		"TAC_V_Sheriff_BA_TB4"
+		//"TRYK_V_ArmorVest_Delta",
+		//"TRYK_V_ArmorVest_Delta2"
         ];
     _availableVests = _availableVests + _availableVestsFive;
     };
@@ -665,7 +665,9 @@ _availableMagazine = [
 	"RH_18Rnd_9x19_VP",
 	"CUP_6Rnd_45ACP_M",
 	"CUP_30Rnd_556x45_Stanag",
-	"CUP_6Rnd_Smoke_M203"
+	"CUP_6Rnd_Smoke_M203",
+	"CUP_20Rnd_762x51_B_M110",
+	"CUP_5Rnd_86x70_L115A1"
 ];
 
  
@@ -732,7 +734,9 @@ _availableWeapon = [
         "CUP_arifle_M16A4_Base",
         "CUP_smg_MP5A5",
         "CUP_hgun_BallisticShield_Armed",
-        "Rangefinder"
+        "Rangefinder",
+	"CUP_srifle_M110",
+	"CUP_srifle_AWM_wdl"
     ];
      _availableWeapon = _availableWeapon + _availableWeaponSix;
     };
@@ -774,7 +778,12 @@ _availableAttachments = [
 	"RH_X300",
 	"RH_M6X",
 	"RH_X2",
-	"muzzle_snds_M"
+	"muzzle_snds_M",
+	"CUP_optic_LeupoldMk4_MRT_tan",
+	"CUP_muzzle_snds_M110",
+	"CUP_muzzle_snds_AWM",
+	"CUP_optic_Leupold_VX3",
+	"optic_Hamr"
 ];
 
 _availableItems = [
