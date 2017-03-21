@@ -177,7 +177,7 @@ _availableGoggles = [
 	"TAC_PMC_ID_W2",
 	"TRYK_kio_balaclava_BLK",
 	"TRYK_kio_balaclava_ESS",
-        "G_Lady_Blue",
+    "G_Lady_Blue",
 	"EF_FG1",
 	"EF_FG2",
 	"G_Diving",
@@ -207,7 +207,6 @@ _availableGoggles = [
             "G_Lady_Blue",
             "G_Lowprofile",
             "G_Combat",
-
             "EF_ACC1",
             "EF_ACC2",
             "EF_ACC3",
@@ -344,7 +343,35 @@ _availableUniforms = [
 	"U_C_Poloshirt_redwhite",
 	"U_C_Poloshirt_tricolour"
 ];
-    
+
+	//Sheriff Office
+    if (player getvariable ["cop", 0] > 4) then {
+		//Mundury
+		_temp = [
+			"Sheriff_rang1",
+			"Sheriff_rang2",
+			"Sheriff_rang3",
+			"Sheriff_rang6",
+			"Sheriff_rang7",
+			"Sheriff_rang9",
+			"Sheriff_rang10",
+			"Sheriff_rang11",
+			"Sheriff_rang12"
+		];
+		_availableUniforms = _availableUniforms + _temp;
+		//Kamizelki
+		_temp = [
+			"kif_traffic_sheriff_vest",
+			"TAC_PBDFG2CPSRF_RG_1"
+		];
+		_availableUniforms = _availableUniforms + _temp;
+		//Czapki
+		_temp = [
+			"jamie_pcapgreen",
+			"jamie_pcapgreen2"
+		];
+		_availableHeadgear = _availableHeadgear + _temp;
+	};
     if (player getvariable ["cop", 0] > 5) then {
         _availableUniformsFive = [
 		"TRYK_U_hood_nc",
@@ -577,7 +604,7 @@ _availableUniforms = [
     };
  
 _availableVests = [
-    	"V_RebreatherB",
+    "V_RebreatherB",
 	"jamie_black",
 	"jamie_blacky2",
 	"jamie_black2",
@@ -591,7 +618,6 @@ _availableVests = [
 	"kenny_vest_Sheriff",
 	"jamie_sheriff_vest",
 	"kif_traffic_vest",
-	"kif_traffic_sheriff_vest",
 	"kif_slpa_vest"
 ];
     if (player getvariable ["cop", 0] > 2) then {
