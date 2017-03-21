@@ -45,7 +45,7 @@ if((_this select 0) == 1) exitwith {
 	};
 	if (str _className find "_unmarked_br" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["black","matte"], "darkred", 10, 0] call client_fnc_IvoryInitVehicle;
+		[_vehicle, ["wildstrawberry","matte"], "darkred", 10, 0] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_rr" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
@@ -65,7 +65,7 @@ if((_this select 0) == 1) exitwith {
 	};
 	if (str _className find "_unmarked_mgb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["dimgray","metallic"], "black", 10, 0] call client_fnc_IvoryInitVehicle;
+		[_vehicle, ["sunglow","metallic"], "black", 10, 0] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_blb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
@@ -73,7 +73,7 @@ if((_this select 0) == 1) exitwith {
 	};
 	if (str _className find "_unmarked_mblb" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["junglegreen","metallic"], "black", 10, 0] call client_fnc_IvoryInitVehicle;
+		[_vehicle, ["darkjunglegreen","metallic"], "black", 10, 0] call client_fnc_IvoryInitVehicle;
 	};
 	[_vehicle] call client_fnc_spawnvehicle;
 	_vehicle allowdamage true;
