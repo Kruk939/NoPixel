@@ -181,7 +181,6 @@ class cfgVehicles
 		fireResistance=5;
 		armor=32;
 		cost=50000;
-		enginePower = 500;
 		transportMaxBackpacks=3;
 		transportSoldier=3;
 		extCameraPosition[]={0,1,-7.5};
