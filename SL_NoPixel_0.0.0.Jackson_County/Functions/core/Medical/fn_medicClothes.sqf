@@ -16,21 +16,22 @@ _availableHeadgear = [
 ];
  
 _availableGoggles = [
-    "G_Lady_Blue",
-    "EF_FG1",
-    "EF_FG2",
-    "G_Diving",
-    "G_Spectacles",
-    "G_Aviator",
-    "G_Sport_BlackWhite",
-    "G_Shades_Black",
-    "G_Sport_Blackred",
-    "TAC_shoulder_armorC_BK",
-    "TRYK_headset_Glasses",
-    "TRYK_Spset_PHC1_Glasses",
-    "TRYK_Spset_PHC2_Glasses",
-    "TRYK_TAC_EARMUFF_SHADE_Gs",
-    "TAC_SF10"
+	"Masque_Chirurgical",
+	"G_Lady_Blue",
+	"EF_FG1",
+	"EF_FG2",
+	"G_Diving",
+	"G_Spectacles",
+	"G_Aviator",
+	"G_Sport_BlackWhite",
+	"G_Shades_Black",
+	"G_Sport_Blackred",
+	"TAC_shoulder_armorC_BK",
+	"TRYK_headset_Glasses",
+	"TRYK_Spset_PHC1_Glasses",
+	"TRYK_Spset_PHC2_Glasses",
+	"TRYK_TAC_EARMUFF_SHADE_Gs",
+	"TAC_SF10"
 ];
  
 _availableUniforms = [
