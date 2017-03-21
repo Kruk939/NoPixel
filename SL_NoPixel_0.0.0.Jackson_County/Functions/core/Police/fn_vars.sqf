@@ -15,6 +15,7 @@ _availableHeadgear = [
 	"TRYK_H_PASGT_BLK",
 	"TRYK_H_woolhat",
     	"AM_PatrolHat",
+        "ALE_H_Cowboy_Black",
 	"Campaign_Hat_Dark",
 	"Campaign_Hat_Tan",
 	"Campaign_Hat_Washed",
@@ -182,7 +183,7 @@ _availableGoggles = [
 	"TAC_PMC_ID_W2",
 	"TRYK_kio_balaclava_BLK",
 	"TRYK_kio_balaclava_ESS",
-    	"G_Lady_Blue",
+	"G_Lady_Blue",
 	"EF_FG1",
 	"EF_FG2",
 	"G_Diving",
@@ -311,7 +312,7 @@ _availableUniforms = [
 	"Sheriff_rang3",
 	"Sheriff_rang2",
 	"Sheriff_rang1",
-	
+
 	"silver_lake_fbi",
 	"silver_lake_police",
 	"silver_lake_sheriff",
@@ -459,7 +460,7 @@ _availableUniforms = [
 		"TRYK_U_B_PCUGs_BLK_R",
 		"TRYK_U_denim_jersey_blu",
 		"TRYK_U_B_Denim_T_BG_BK",
-		
+
 		"CUP_U_C_Villager_03",
 		"CUP_U_C_Woodlander_04",
 		"U_C_Poloshirt_redwhite",
@@ -623,7 +624,7 @@ _availableUniforms = [
     };
  
 _availableVests = [
-    "V_RebreatherB",
+	"V_RebreatherB",
 	"jamie_black",
 	"jamie_blacky2",
 	"jamie_black2",
@@ -652,12 +653,18 @@ _availableVests = [
         ];
     _availableVests = _availableVests + _availableVestsTwo;
     };
+    
+    if (player getvariable ["cop", 0] > 3) then {
+        _availableVestsThree = [
+		"EF_PBDF_M1"
+        ];
+    _availableVests = _availableVests + _availableVestsThree;
+    };
 
-    if (player getvariable ["cop", 0] > 5) then {
-        _availableVestsFive = [
+	if (player getvariable ["cop", 0] > 5) then {
+	_availableVestsFive = [
 		"EF_BS",
 		"EF_CTV1",
-		"EF_PBDF_M1",
 		"EF_BLT_M1",
 		"EF_BLT_M1B",
 		"TAC_FS_FO_P",
@@ -669,13 +676,13 @@ _availableVests = [
 		"TAC_V_Sheriff_BA_TB4"
 		//"TRYK_V_ArmorVest_Delta",
 		//"TRYK_V_ArmorVest_Delta2"
-        ];
-    _availableVests = _availableVests + _availableVestsFive;
-    };
+	];
+	_availableVests = _availableVests + _availableVestsFive;
+	};
 
 
 _availableBackpacks = [
-    "AM_PoliceBelt",
+	"AM_PoliceBelt",
 	"TRYK_Winter_pack",
 	"TAC_BP_Butt_B2",
 	"TAC_BP_Butt_B",
@@ -684,12 +691,12 @@ _availableBackpacks = [
 ];
 
     if (player getvariable ["cop", 0] > 5) then {
-    _availableBackpacksFive = [
-	"CUP_B_ACRPara_m95",
-	"CUP_B_HikingPack_Civ",
-	"TRYK_Winter_pack"
-    ];
-    _availableBackpacks = _availableBackpacks + _availableBackpacksFive;
+	    _availableBackpacksFive = [
+		"CUP_B_ACRPara_m95",
+		"CUP_B_HikingPack_Civ",
+		"TRYK_Winter_pack"
+	    ];
+	    _availableBackpacks = _availableBackpacks + _availableBackpacksFive;
     };
 
 _availableMagazine = [
@@ -741,7 +748,7 @@ _availableWeapon = [
 ];
     if (player getvariable ["cop", 0] > 3) then {
 		_availableWeaponThree = [
-        "RH_vp70",
+	"RH_vp70",
 	"CUP_hgun_TaurusTracker455"
      ];
      _availableWeapon = _availableWeapon + _availableWeaponThree;
@@ -749,47 +756,47 @@ _availableWeapon = [
 
     if (player getvariable ["cop", 0] > 4) then {
 		_availableWeaponFour = [
-        "RH_usp",
-        "CUP_sgun_M1014",
-        "RH_bull",
-        "RH_bullb",
-        "RH_gsh18",
-        "RH_python",
-        "RH_fn57",
-        "RH_fn57_t",
-        "RH_fn57_g",
-        "RH_fnp45",
-        "RH_fnp45t",
-        "hgun_Pistol_heavy_01_F",
-        "RH_g17",
-        "RH_g19",
-        "RH_g19t",
-        "RH_kimber",
-        "RH_kimber_nw",
-        "RH_m1911",
-        "RH_mateba",
-        "RH_mp412"
+	"RH_usp",
+	"CUP_sgun_M1014",
+	"RH_bull",
+	"RH_bullb",
+	"RH_gsh18",
+	"RH_python",
+	"RH_fn57",
+	"RH_fn57_t",
+	"RH_fn57_g",
+	"RH_fnp45",
+	"RH_fnp45t",
+	"hgun_Pistol_heavy_01_F",
+	"RH_g17",
+	"RH_g19",
+	"RH_g19t",
+	"RH_kimber",
+	"RH_kimber_nw",
+	"RH_m1911",
+	"RH_mateba",
+	"RH_mp412"
      ];
      _availableWeapon = _availableWeapon + _availableWeaponFour;
     };
 
     if (player getvariable ["cop", 0] > 5) then {
     _availableWeaponFive = [
-        "RH_g18"
+	"RH_g18"
     ];
     _availableWeapon = _availableWeapon + _availableWeaponFive;
     };
 
     if (player getvariable ["cop", 0] > 6) then {
     _availableWeaponSix =[
-    	"CUP_glaunch_M32",
-    	"CUP_arifle_CZ805_A1",
+	"CUP_glaunch_M32",
+	"CUP_arifle_CZ805_A1",
 	"CUP_arifle_CZ805_A2",
-        "CUP_arifle_M4A1_black",
-        "CUP_arifle_M16A4_Base",
-        "CUP_smg_MP5A5",
-        "CUP_hgun_BallisticShield_Armed",
-        "Rangefinder",
+	"CUP_arifle_M4A1_black",
+	"CUP_arifle_M16A4_Base",
+	"CUP_smg_MP5A5",
+	"CUP_hgun_BallisticShield_Armed",
+	"Rangefinder",
 	"CUP_srifle_M110",
 	"CUP_srifle_AWM_wdl"
     ];
@@ -798,7 +805,7 @@ _availableWeapon = [
 
     if (player getvariable ["cop", 0] > 8) then {
     _availableWeaponEight = [
-         "RH_Deagle"
+	"RH_Deagle"
     ];
     _availableWeapon = _availableWeapon + _availableWeaponEight;
     };
