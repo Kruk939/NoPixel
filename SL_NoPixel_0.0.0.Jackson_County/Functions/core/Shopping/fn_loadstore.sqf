@@ -971,7 +971,6 @@ if(_condition == "doughnuts_general") then {
 			["CUP_V_I_Guerilla_Jacket",nil,1000,3,1],
 			["V_mas_ww2_vest_gerB",nil,1000,3,1],
 			["B_Bergen_tna_F",nil,1500,4,2],
-			["TRYK_Winter_pack",nil,1000,4,2],
 			["BL_mask2_Hat",nil,300,3,5],
 			["CUP_H_C_Policecap_01",nil,500,3,5],
 			["Gorb_RoughSantaClaus1",nil,300,3,5],

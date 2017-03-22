@@ -12,7 +12,9 @@ _information = _ct getVariable "information";
 		_fuel = fuel _ct;
 		_damage = damage _ct;
 
-		if !(_damage == 1) then {
+		if (_damage > 0.99) then {
+			//nothing
+		} else {
 			_information set [9,_fuel];
 			_information set [10,_damage];
 			_garage pushBack _information;

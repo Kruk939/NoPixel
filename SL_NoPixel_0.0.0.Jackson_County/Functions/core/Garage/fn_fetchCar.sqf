@@ -97,6 +97,8 @@ _pia = _garage find _car;
 _garage deleteAt _pia;
 player setVariable ["garage", _garage, false];
 
+if (_damage > 0.99) exitWith {["Informacja","Mój pojazd jest doszczętnie rozwalony!",[255,69,0,1],""] call Client_fnc_showNotification; };
+
 _vehicle = _classname createVehicle [(getpos player) select 0,(getpos player) select 1,((getpos player) select 2) + 100];
 
 waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
@@ -117,35 +119,26 @@ if (_vehicle isKindOf "Car") then {
 	if (str _className find "vory_" > -1) then {
 		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		_vehicle setFuel _fuel;
-		_vehicle setDamage _damage;
 	};
 
 	if (str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 ) then {
 		[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
 		[_vehicle, _numberPlate, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
-		_vehicle setFuel _fuel;
-		_vehicle setDamage _damage;
 	};
 
 	if (str _className find "opixel_" > -1 ) then {
 		[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
-		_vehicle setFuel _fuel;
-		_vehicle setDamage _damage;
 	};
 	if (str _className find "vv_" > -1 ) then {
 		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		_vehicle setFuel _fuel;
-		_vehicle setDamage _damage;
 	};
 	if (str _className find "adilac_" > -1 ) then {
 		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		_vehicle setFuel _fuel;
-		_vehicle setDamage _damage;
 	};
-
+_vehicle setFuel _fuel;
+_vehicle setDamage _damage;
 };
 
 [_vehicle] call client_fnc_spawnvehicle;

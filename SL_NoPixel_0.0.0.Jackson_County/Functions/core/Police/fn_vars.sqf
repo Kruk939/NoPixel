@@ -675,7 +675,6 @@ _availableVests = [
 
 _availableBackpacks = [
 	"AM_PoliceBelt",
-	"TRYK_Winter_pack",
 	"TAC_BP_Butt_B2",
 	"TAC_BP_Butt_B",
 	"TAC_BP_KAR_L",
@@ -685,8 +684,7 @@ _availableBackpacks = [
     if (player getvariable ["cop", 0] > 5) then {
 	    _availableBackpacksFive = [
 		"CUP_B_ACRPara_m95",
-		"CUP_B_HikingPack_Civ",
-		"TRYK_Winter_pack"
+		"CUP_B_HikingPack_Civ"
 	    ];
 	    _availableBackpacks = _availableBackpacks + _availableBackpacksFive;
     };
