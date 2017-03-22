@@ -12,6 +12,7 @@ client_fnc_towvehicle = {
 	if (typeOf _car == "red_kawasaki_10_p_ems") then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
 	if (typeOf _car == "A3L_Stretcher_F") then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
 	if (typeOf _car == "Mrshounka_ducati_police_p") then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
+	if (typeOf _car == "C_Scooter_Transport_01_F) then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
 	
 	if (_memes == 0) exitWith {hint "This vehicle is not an ATV/Motorcycle/Stretcher!"};
 	 
