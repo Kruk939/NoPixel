@@ -57,7 +57,7 @@ if(myJob == "Cop") then {
 			"red_panamera_10_p_u_black",
 			"red_suburban_15_p_f_ia",
 			"kif_ford350_swat",
-			"red_charger_12_p_swat",
+			"kif_charger12_swat",
 			"cg_suburban_sert_pol",
 			//"kif_taurus_sheriff",
 			//"kif_kawasaki_police",

@@ -1356,8 +1356,8 @@ class cfgVehicles
 		centreBias=2.5;
 		clutchStrength=55;
 		maxOmega=549.78003;
-		enginePower=370;
-		peakTorque=800;
+		enginePower=670;
+		peakTorque=1500;
 		dampingRateFullThrottle=0.029999999;
 		dampingRateZeroThrottleClutchEngaged=0.34999999;
 		dampingRateZeroThrottleClutchDisengaged=0.050000001;
@@ -1584,6 +1584,32 @@ class cfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
+		};
+	};
+	class sl_test_1: red_charger_15_p_u_base
+	{
+		scope=2;
+		displayName="2015 Dodge Charger R/T TEST";
+		crew="C_man_1";
+		side=3;
+		faction="CIV_F";
+		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
+		hiddenSelectionsTextures[]=
+		{
+			"red_config\red_charger_15_pu\skins\statetrooper"
+		};
+	};
+	class sl_charger_pu_so: red_charger_15_p_u_base
+	{
+		scope=2;
+		displayName="SHERIFF OFFICE 2015 Dodge Charger R/T ";
+		crew="C_man_1";
+		side=3;
+		faction="CIV_F";
+		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
+		hiddenSelectionsTextures[]=
+		{
+			"red_config\red_charger_15_pu\skins\sheriff"
 		};
 	};
 };

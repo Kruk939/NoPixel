@@ -329,7 +329,7 @@ class cfgVehicles
 		wheelDestroyRadiusCoef=0.40000001;
 		maxFordingDepth=0.5;
 		waterResistance=1;
-		crewCrashProtection=0.25;
+		crewCrashProtection=0.05;
 		driverLeftHandAnimName="drivewheel";
 		driverRightHandAnimName="drivewheel";
 		class Turrets
@@ -1311,40 +1311,20 @@ class cfgVehicles
 				};
 			};
 		};
-		thrustDelay=0.1;
+		thrustDelay=0.0;
 		brakeIdleSpeed=1.78;
-		maxSpeed=350;
-		fuelCapacity=45;
+		maxSpeed=450;
+		fuelCapacity=100;
 		wheelCircumference=2.277;
 		antiRollbarForceCoef=2.4000001;
 		antiRollbarForceLimit=2;
 		antiRollbarSpeedMin=20;
 		antiRollbarSpeedMax=80;
-		idleRpm=900;
-		redRpm=6400;
+		idleRpm=800;
+		redRpm=7000;
 		class complexGearbox
 		{
-			GearboxRatios[]=
-			{
-				"R1",
-				-2.882,
-				"N",
-				0,
-				"D1",
-				4.4840002,
-				"D2",
-				2.872,
-				"D3",
-				1.842,
-				"D4",
-				1.414,
-				"D5",
-				1,
-				"D6",
-				0.74199998,
-				"D7",
-				0.37
-			};
+			GearboxRatios[]    = {"R3",-5.970,"R2",-5.870,"R1",-4.231,"N",0,"D1",2.462,"D2",1.870,"D3",1.241,"D4",0.970,"D5",0.711};
 			TransmissionRatios[]=
 			{
 				"High",
@@ -1358,32 +1338,22 @@ class cfgVehicles
 			transmissionDelay=0.0099999998;
 		};
 		simulation="carx";
-		dampersBumpCoef=0.0099999998;
+		dampersBumpCoef=0.0;
 		differentialType="rear_limited";
 		frontRearSplit=0.30000001;
 		frontBias=1.5;
 		rearBias=1.5;
 		centreBias=2.5;
 		clutchStrength=55;
-		maxOmega=670.21002;
-		enginePower=672;
-		peakTorque=1140;
+		maxOmega=800;
+		enginePower=5772;
+		peakTorque=5500;
 		dampingRateFullThrottle=0.079999998;
 		dampingRateZeroThrottleClutchEngaged=0.34999999;
-		dampingRateZeroThrottleClutchDisengaged=0.050000001;
-		torqueCurve[]=
-		{
-			{0,0},
-			{0.2,0.64999998},
-			{0.30000001,0.80000001},
-			{0.40000001,0.94999999},
-			{0.60000002,1},
-			{0.69999999,0.94999999},
-			{0.89999998,0.89999998},
-			{1,0.5}
-		};
+		dampingRateZeroThrottleClutchDisengaged=0.35;
+                torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
 		changeGearMinEffectivity[]={0.94999999,0.15000001,0.94999999,0.94999999,0.94999999,0.94999999,0.94999999,0.94999999,0.94999999};
-		switchTime=0.2;
+		switchTime=0.01;
 		latency=0.80000001;
 		class Wheels
 		{
@@ -1396,7 +1366,7 @@ class cfgVehicles
 				boundary="wheel_1_1_bound";
 				mass=20;
 				MOI=5.3000002;
-				maxBrakeTorque=5000;
+				maxBrakeTorque=8000;
 				suspTravelDirection[]={0,-1,0};
 				suspForceAppPointOffset="wheel_1_1_axis";
 				tireForceAppPointOffset="wheel_1_1_axis";
@@ -1537,10 +1507,10 @@ class cfgVehicles
 				innerAngle=50;
 				outerAngle=80;
 				coneFadeCoef=10;
-				intensity=4;
+				intensity=250;
 				useFlare="true";
 				dayLight="false";
-				flareSize=1;
+				flareSize=2;
 			};
 			class LightCarHeadS02: LightCarHeadS01
 			{
@@ -1620,6 +1590,88 @@ class cfgVehicles
 		side = 3;
 		faction = "CIV_F";
 		hiddenSelectionsTextures[] = {"red_config\red_explorer_16_p\skins\sheriff.paa"};
+		maxOmega=800;
+		enginePower=600;
+		peakTorque=2500;
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[]={1550,1550,2000};
+				ambient[]={5,5,5};
+				position="LightCarHeadL01";
+				direction="LightCarHeadL01_end";
+				hitpoint="Light_L";
+				selection="Light_L";
+				size=1;
+				innerAngle=100;
+				outerAngle=179;
+				coneFadeCoef=10;
+				intensity=1;
+				useFlare="true";
+				dayLight="false";
+				flareSize=0.5;
+				class Attenuation
+				{
+					start=1;
+					constant=0;
+					linear=0;
+					quadratic=0.25;
+					hardLimitStart=30;
+					hardLimitEnd=60;
+				};
+			};
+			class LightCarHeadR01: LightCarHeadL01
+			{
+				position="LightCarHeadR01";
+				direction="LightCarHeadR01_end";
+				hitpoint="Light_R";
+				selection="Light_R";
+			};
+			class LightCarHeadS01
+			{
+				color[]={1900,1800,2000};
+				ambient[]={5,5,5};
+				position="LightCarHeadS01";
+				direction="LightCarHeadS01_end";
+				hitpoint="Light_S";
+				selection="Light_S";
+				size=1;
+				innerAngle=50;
+				outerAngle=80;
+				coneFadeCoef=10;
+				intensity=250;
+				useFlare="true";
+				dayLight="false";
+				flareSize=2;
+			};
+			class LightCarHeadS02: LightCarHeadS01
+			{
+				position="LightCarHeadS02";
+				direction="LightCarHeadS02_end";
+				hitpoint="Light_S2";
+				selection="Light_S2";
+			};
+		};
+		aggregateReflectors[]=
+		{
+			
+			{
+				"LightCarHeadL01"
+			},
+			
+			{
+				"LightCarHeadR01"
+			},
+			
+			{
+				"LightCarHeadS01"
+			},
+			
+			{
+				"LightCarHeadS02"
+			}
+		};
 	};
 };
 class cfgMods

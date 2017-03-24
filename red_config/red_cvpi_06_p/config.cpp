@@ -1506,8 +1506,8 @@ class cfgVehicles
 		centreBias=2.5;
 		clutchStrength=55;
 		maxOmega=497.42001;
-		enginePower=475;
-		peakTorque=883;
+		enginePower=800;
+		peakTorque=1500;
 		dampingRateFullThrottle=0.029999999;
 		dampingRateZeroThrottleClutchEngaged=0.34999999;
 		dampingRateZeroThrottleClutchDisengaged=0.050000001;

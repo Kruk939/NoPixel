@@ -1456,10 +1456,10 @@ class cfgVehicles
 			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
 		};
 	};
-	class red_kawasaki_10_p_ems: red_kawasaki_10_p_p_base
+	class sl_kawasaki_so: red_kawasaki_10_p_p_base
 	{
 		scope=2;
-		displayName="2010 Kawasaki Z1-P (EMS)";
+		displayName="2010 Kawasaki Z1-P SHERIFF";
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
@@ -1467,7 +1467,7 @@ class cfgVehicles
 		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
 		hiddenSelectionsTextures[]=
 		{
-			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
+			"red_config\red_kawasaki_10_p\skins\sheriff"
 		};
 	};
 };

@@ -87,6 +87,18 @@ class red_swat_08_p_swat;
 		displayName = "Ford F350 SWAT z dilodsem";
 	};
 /*	
+Dodge Charger 2012
+*/
+class red_charger_12_p;
+	class kif_charger12_swat: red_charger_12_p
+	{
+		displayName = "2012 Dodge Charger SRT8 (SWAT)";
+		hiddenSelectionsTextures[]=
+		{
+			"\kif_client\textures\vehicles\charger12\swat.paa"
+		};
+	};
+/*	
 Lamborghini Reventon
 */
 class ivory_rev_marked;

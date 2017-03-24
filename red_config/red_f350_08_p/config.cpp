@@ -1344,8 +1344,8 @@ class cfgVehicles
 		centreBias=2.5;
 		clutchStrength=55;
 		maxOmega=523.59998;
-		enginePower=800;
-		peakTorque=1195;
+		enginePower=1200;
+		peakTorque=2595;
 		dampingRateFullThrottle=0.029999999;
 		dampingRateZeroThrottleClutchEngaged=0.34999999;
 		dampingRateZeroThrottleClutchDisengaged=0.050000001;
@@ -1361,7 +1361,7 @@ class cfgVehicles
 			{1,0.5}
 		};
 		changeGearMinEffectivity[]={0.94999999,0.15000001,0.94999999,0.94999999,0.94999999,0.94999999,0.94999999,0.94999999,0.94999999};
-		switchTime=0.2;
+		switchTime=0.01;
 		latency=0.80000001;
 		class Wheels
 		{
@@ -1561,6 +1561,9 @@ class cfgVehicles
 		faction = "CIV_F";
 		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
 		hiddenSelectionsTextures[] = {"\red_config\red_f350_08_p\skins\sheriff.paa"};
+                maxOmega=800;
+		enginePower=600;
+		peakTorque=2500;
 	};
 };
 class cfgMods

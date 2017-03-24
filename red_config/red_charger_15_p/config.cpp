@@ -1573,17 +1573,17 @@ class cfgVehicles
 			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
 		};
 	};
-	class red_charger_15_p_ems: red_charger_15_p_p_base
+	class sl_charger_p_so: red_charger_15_p_p_base
 	{
 		scope=2;
-		displayName="2015 Dodge Charger R/T (EMS)";
+		displayName="2015 Dodge Charger SHERIFF OFFICE";
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
 		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
 		hiddenSelectionsTextures[]=
 		{
-			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
+			"red_config\red_charger_15_p\skins\sheriff"
 		};
 	};
 };

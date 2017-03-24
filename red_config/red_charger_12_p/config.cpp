@@ -1363,8 +1363,8 @@ class cfgVehicles
 		centreBias=2.5;
 		clutchStrength=55;
 		maxOmega=628.32001;
-		enginePower=550;
-		peakTorque=1037.23;
+		enginePower=950;
+		peakTorque=1537.23;
 		dampingRateFullThrottle=0.029999999;
 		dampingRateZeroThrottleClutchEngaged=0.34999999;
 		dampingRateZeroThrottleClutchDisengaged=0.050000001;
@@ -1591,19 +1591,6 @@ class cfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
-		};
-	};
-	class red_charger_12_p_swat: red_charger_12_p_p_base
-	{
-		scope=2;
-		displayName="2012 Dodge Charger SRT8 (SWAT)";
-		crew="C_man_1";
-		side=3;
-		faction="CIV_F";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
-		hiddenSelectionsTextures[]=
-		{
-			"red_config\red_charger_12_p\skins\swat.paa"
 		};
 	};
 };
