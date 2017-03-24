@@ -718,7 +718,6 @@ if(_condition == "head") then {
 
 
 			["CUP_H_NAPA_Fedora",nil,120,3,5],
-			["ALE_H_Calot",nil,120,3,5],
 			["ALE_H_Cowboy_White",nil,120,3,5],
 			["ALE_H_Cowboy_Black",nil,120,3,5],
 			["ALE_H_Cowboy_Brown",nil,120,3,5],
