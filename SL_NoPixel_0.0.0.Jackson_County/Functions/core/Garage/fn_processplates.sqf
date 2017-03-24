@@ -51,6 +51,8 @@ _string = _string splitString "ć" joinString "";
 _string = _string splitString "ę" joinString "";
 _string = _string splitString "ń" joinString "";
 _string = _string splitString "ś" joinString "";
+_string = _string splitString "`" joinString "";
+_string = _string splitString "~" joinString "";
 
 if (_string == "") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1],""] call Client_fnc_showNotification;};
 if (isNil "_string") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1],""] call Client_fnc_showNotification;};
