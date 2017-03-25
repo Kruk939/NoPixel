@@ -21,3 +21,14 @@ class kiffd_dowodca: B_Competitor_F
 		displayName = "Ubranie Fire Fighter";
 		
 	};
+	class kiffd_coastg: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "kiffd_uni_coastg";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\kif_fd\Data\clothing\fd\coastguard.paa"};
+		displayName = "Ubranie Coast Guard";
+		
+	};

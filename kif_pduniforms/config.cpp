@@ -37,7 +37,13 @@ class cfgWeapons
 	class Uniform_Base;
 	class UniformItem;
 	class ItemInfo;
-	
+
+	class V_TacVest_blk_POLICE;
+	class VestItem;
+	class HeadgearItem;
+
+	#include "\kif_pduniforms\cfgPoliceVests.hpp"
+
 	#include "\kif_pduniforms\cfgPoliceUniformsW.hpp"
 	#include "\kif_pduniforms\cfgSheriffUniformsW.hpp"
 	#include "\kif_pduniforms\cfgSwatUniformsW.hpp"

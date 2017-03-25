@@ -60,6 +60,7 @@ _availableUniforms = [
     "female_ems8",
     "female_ems5",
     "female_ems",
+    "kiffd_uni_coastg",
     "CUP_U_C_Fireman_01",
     "kiffd_uni_dowodca",
     "kiffd_uni_koszula"

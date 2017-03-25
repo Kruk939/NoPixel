@@ -64,6 +64,7 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
     [_uid,"0"] spawn Server_fnc_connected;
     [_player,2,format ["%1 rozłączył się z serwerem", name _player],_uid,_items] call server_fnc_connectionLog;
 }; 
+[3,_player getVariable ["wallet",-1],_player getVariable ["atm",-1],_uid] call server_fnc_syncmoney;
 
 [] spawn server_fnc_refreshjobs;
 

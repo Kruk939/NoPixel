@@ -28,6 +28,21 @@ class kifpd_uni_swat_ssgt: Uniform_Base
 			armor = 40;
 		};
 	};
+	class kifpd_uni_swat_po3: Uniform_Base
+	{
+		scope = 2;
+		displayName = "SWAT Police Officer 3";
+		picture = "\kif_pduniforms\Data\ui\sl_logo.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "kifpd_swat_po3";
+			containerClass = "Supply100";
+			mass = 0;
+			armor = 40;
+		};
+	};
 	class kifpd_uni_swat_po4: Uniform_Base
 	{
 		scope = 2;

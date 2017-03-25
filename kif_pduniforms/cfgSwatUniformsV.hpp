@@ -20,6 +20,17 @@
 		displayName = "SWAT Sergeant";
 		
 	};
+	class kifpd_swat_po3: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "kifpd_uni_swat_po3";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\swat\SWAT_PO3.paa"};
+		displayName = "SWAT Police Officer 3";
+		
+	};
 	class kifpd_swat_po4: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";

@@ -28,3 +28,18 @@
 			armor = 40;
 		};
 	};
+	class kiffd_uni_coastg: Uniform_Base
+	{
+		scope = 2;
+		displayName = "Ubranie Coast Guard";
+		picture = "\kif_fd\Data\ui\sl_logo.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "kiffd_coastg";
+			containerClass = "Supply100";
+			mass = 0;
+			armor = 40;
+		};
+	};
