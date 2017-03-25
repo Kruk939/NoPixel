@@ -1572,27 +1572,9 @@ class cfgVehicles
 		faction = "CIV_F";
 		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
 		hiddenSelectionsTextures[] = {"red_config\red_explorer_16_p\skins\StateTrooper.paa"};
-	};
-	class red_explorer_16_p_fto: red_explorer_16_p_p_base
-	{
-		scope = 2;
-		displayName = "2016 Ford Explorer (FTO)";
-		crew = "C_man_1";
-		side = 3;
-		faction = "CIV_F";
-		hiddenSelectionsTextures[] = {"red_config\red_explorer_16_p\skins\fto.paa"};
-	};
-	class sl_fpiu_so: red_explorer_16_p_p_base
-	{
-		scope = 2;
-		displayName = "2016 FPIU SHERIFF OFFICE";
-		crew = "C_man_1";
-		side = 3;
-		faction = "CIV_F";
-		hiddenSelectionsTextures[] = {"red_config\red_explorer_16_p\skins\sheriff.paa"};
 		maxOmega=800;
-		enginePower=600;
-		peakTorque=2500;
+		enginePower=500;
+		peakTorque=1200;
 		class Reflectors
 		{
 			class LightCarHeadL01
@@ -1672,6 +1654,24 @@ class cfgVehicles
 				"LightCarHeadS02"
 			}
 		};
+	};
+	class red_explorer_16_p_fto: red_explorer_16_p_statetrooper
+	{
+		scope = 2;
+		displayName = "2016 Ford Explorer (FTO)";
+		crew = "C_man_1";
+		side = 3;
+		faction = "CIV_F";
+		hiddenSelectionsTextures[] = {"red_config\red_explorer_16_p\skins\fto.paa"};
+	};
+	class sl_fpiu_so: red_explorer_16_p_statetrooper
+	{
+		scope = 2;
+		displayName = "2016 FPIU SHERIFF OFFICE";
+		crew = "C_man_1";
+		side = 3;
+		faction = "CIV_F";
+		hiddenSelectionsTextures[] = {"red_config\red_explorer_16_p\skins\sheriff.paa"};
 	};
 };
 class cfgMods

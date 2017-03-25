@@ -51,14 +51,22 @@ Ford Mustang
 class kmc_Mustang_510;
     class kif_mustang_police : kmc_Mustang_510
 	{
-		enginePower = 1400;
+		maxOmega=1150;
+		enginePower=1150;
+		peakTorque=2500;
+		maxSpeed=400;
 		displayName = "Ford Mustang Boss 302 Police";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\mustang\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
-     class kif_mustang_sheriff : kif_mustang_police
+    class kif_mustang_sheriff : kif_mustang_police
 	{
 		displayName = "Ford Mustang Boss 302 Sheriff";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\mustang\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	};
+	class kif_mustang_swat : kif_mustang_police
+	{
+		displayName = "Ford Mustang Boss 302 SWAT";
+        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\mustang\swat.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
 /*	
 Ford Taurus
@@ -67,7 +75,7 @@ class red_taurus_10_p;
     class kif_taurus_police : red_taurus_10_p
 	{
 		enginePower = 500;
-		peakTorque = 800;
+		peakTorque = 2000;
 		maxOmega = 700;
 
 		displayName = "Ford Taurus Police";
@@ -99,6 +107,17 @@ class red_charger_12_p;
 		};
 	};
 /*	
+Porsche Panamera UC
+*/
+class red_panamera_10_p_u_black;
+	class kif_panamera_uc_black: red_panamera_10_p_u_black
+	{
+		maxOmega=750;
+		enginePower=870;
+		peakTorque=1300;
+		maxSpeed=400;
+	};
+/*	
 Lamborghini Reventon
 */
 class ivory_rev_marked;
@@ -106,7 +125,7 @@ class ivory_rev_marked;
 	{
 		maxOmega = 1100;
 		enginePower = 1500;
-		peakTorque = 1300;
+		peakTorque = 2500;
 		maxSpeed = 450;
 	};
 class ivory_rev_unmarked;
@@ -114,7 +133,7 @@ class ivory_rev_unmarked;
 	{
 		maxOmega = 1100;
 		enginePower = 1500;
-		peakTorque = 1300;
+		peakTorque = 2500;
 		maxSpeed = 450;
 	};
 /*	
@@ -125,17 +144,17 @@ class ivory_m3_base;
 	{
 		author="Ivory";
 		vehicleClass="IvoryExtra";
-        	displayName = "BMW M3 Unmarked Black";
+        displayName = "BMW M3 Unmarked Black";
 		scope=2;
 		scopeCurator=2;
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
-        	maxOmega=869.16998;
+        maxOmega=869.16998;
 		enginePower=810;
-		peakTorque=1190;
+		peakTorque = 2500;
 		maxSpeed = 400;
-        	emergencySiren = 1;
+        emergencySiren = 1;
 		emergencyLightbarType = 1;
 		emergencyLightbarTop = 0;
 		emergencyLightbarFront = 1;
@@ -186,17 +205,17 @@ class ivory_wrx_base;
 	{
 		author="Ivory";
 		vehicleClass="IvoryExtra";
-        	displayName = "Subaru WRX STI Unmarked Black";
+        displayName = "Subaru WRX STI Unmarked Black";
 		scope=2;
 		scopeCurator=2;
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
-        	maxOmega=869.16998;
+        maxOmega=869.16998;
 		enginePower=810;
-		peakTorque=1190;
+		peakTorque = 2500;
 		maxSpeed = 400;
-        	emergencySiren = 1;
+        emergencySiren = 1;
 		emergencyLightbarType = 1;
 		emergencyLightbarTop = 0;
 		emergencyLightbarFront = 1;
@@ -246,17 +265,17 @@ class ivory_rs4_base;
 	{
 		author="Ivory";
 		vehicleClass="IvoryExtra";
-        	displayName = "Audi RS4 Unmarked Black";
+        displayName = "Audi RS4 Unmarked Black";
 		scope=2;
 		scopeCurator=2;
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
-       		maxOmega=869.16998;
+       	maxOmega=869.16998;
 		enginePower=810;
-		peakTorque=1190;
+		peakTorque = 2500;
 		maxSpeed = 400;
-        	emergencySiren = 1;
+        emergencySiren = 1;
 		emergencyLightbarType = 1;
 		emergencyLightbarTop = 0;
 		emergencyLightbarFront = 1;
@@ -307,17 +326,17 @@ class ivory_evox_base;
 	{
 		author="Ivory";
 		vehicleClass="IvoryExtra";
-        	displayName = "Mitsubishi Lancer Evo X Unmarked Black";
+        displayName = "Mitsubishi Lancer Evo X Unmarked Black";
 		scope=2;
 		scopeCurator=2;
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
-        	maxOmega=869.16998;
+        maxOmega=869.16998;
 		enginePower=810;
-		peakTorque=1190;
+		peakTorque = 2500;
 		maxSpeed = 400;
-        	emergencySiren = 1;
+        emergencySiren = 1;
 		emergencyLightbarType = 1;
 		emergencyLightbarTop = 0;
 		emergencyLightbarFront = 1;

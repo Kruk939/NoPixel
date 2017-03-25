@@ -1551,6 +1551,9 @@ class cfgVehicles
 		faction = "CIV_F";
 		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
 		hiddenSelectionsTextures[] = {"\red_config\red_f350_08_p\skins\statetrooper.paa"};
+		maxOmega=800;
+		enginePower=500;
+		peakTorque=1200;
 	};
 	class sl_f150_so: red_f350_08_p_p_base
 	{
@@ -1561,9 +1564,9 @@ class cfgVehicles
 		faction = "CIV_F";
 		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
 		hiddenSelectionsTextures[] = {"\red_config\red_f350_08_p\skins\sheriff.paa"};
-                maxOmega=800;
-		enginePower=600;
-		peakTorque=2500;
+        maxOmega=800;
+		enginePower=500;
+		peakTorque=1200;
 	};
 };
 class cfgMods
