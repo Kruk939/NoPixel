@@ -28,65 +28,24 @@ _usedcarinfo = _this select 19;
 _mafia = _this select 20;
 _fire = _this select 21;
 _legal = _this select 22;
-_prisontime = _this select 23;
-_prisonreason = _this select 24;
-_mayor = _this select 25;
-_doughnuts = _this select 26;
-_respawn = _this select 27;
+_mayor = _this select 23;
+_doughnuts = _this select 24;
+_respawn = _this select 25;
+_prisonArray = _this select 26;
 
 
 _higherup = false;
 
 
-if(_mafia == 10) then {
-	//format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];
-	_house = getpos nearestObject [[9842.84,3677.44,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
-if(_mafia == 9) then {
-	//format["A Well Known Businessman has entered the city!", name player] remoteexec ["hint",-2];
-	_house = getpos nearestObject [[9736.28,3629.54,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
-if(_cop == 10) then {
-	//player setvariable ["coplevel",10,false];
-	//format["The Police Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
-	_house = getpos nearestObject [[9626,3578.7,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
-if(_cop == 9) then {
-	//player setvariable ["coplevel",9,false];
-	//format["The Police Captain has entered the City! %1", name player] remoteexec ["hint",-2];
-	_house = getpos nearestObject [[9516.43,3526.09,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
-if(_ems == 10) then {
-	player setvariable ["ems",10,false];
-	//format["The EMS Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
-	_house = getpos nearestObject [[9412.31,3479.1,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
-if(_ems == 9) then {
-	player setvariable ["ems",9,false];
-	//format["The EMS Deputy Commissioner has entered the City! %1", name player] remoteexec ["hint",-2];
-	_house = getpos nearestObject [[9306.67,3430.66,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
-if(_legal == 10) then {
-	//format["The Chief Justice has entered the City! %1", name player] remoteexec ["hint",-2];
-	_house = getpos nearestObject [[9188.22,3371.8,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
-if(_legal == 9) then {
-	//format["The Supreme Court Justice has entered the City! %1", name player] remoteexec ["hint",-2];
-	_house = getpos nearestObject [[9094.99,3324.16,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
-if(_legal == 8) then {
-	//format["The District Attorney has entered the City! %1", name player] remoteexec ["hint",-2];
-	_house = getpos nearestObject [[8984.55,3274.12,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
-};
-
+if(_mafia == 10) then {_house = getpos nearestObject [[9842.84,3677.44,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_mafia == 9) then { _house = getpos nearestObject [[9736.28,3629.54,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_cop == 10) then {_house = getpos nearestObject [[9626,3578.7,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_cop == 9) then { _house = getpos nearestObject [[9516.43,3526.09,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_ems == 10) then { _house = getpos nearestObject [[9412.31,3479.1,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_ems == 9) then { _house = getpos nearestObject [[9306.67,3430.66,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_legal == 10) then { _house = getpos nearestObject [[9188.22,3371.8,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_legal == 9) then { _house = getpos nearestObject [[9094.99,3324.16,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
+if(_legal == 8) then { _house = getpos nearestObject [[8984.55,3274.12,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
 if(_mayor) then { 
 	[] spawn client_fnc_mayorsetup; 
 	_house = getpos nearestObject [[9949.03,3732.87,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
@@ -126,27 +85,25 @@ myoffice = [0,0,0];
 player setVariable ["houselevel", _houselevel, false];
 
 deletemarkerlocal "myhouse";
-if (_houselevel > 6) then 
-{
-deletemarkerlocal "myhouse";
-_marker = createMarkerLocal ["myhouse", _house];
-_marker setMarkerShapeLocal "ICON";
-_marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal "Moja Willa";
+if (_houselevel > 6) then {
+	deletemarkerlocal "myhouse";
+	_marker = createMarkerLocal ["myhouse", _house];
+	_marker setMarkerShapeLocal "ICON";
+	_marker setMarkerTypeLocal "hd_dot";
+	_marker setMarkerTextLocal "Moja Willa";
 };
-if (_houselevel > 3) then 
-{
-deletemarkerlocal "myhouse";
-_marker = createMarkerLocal ["myhouse", _house];
-_marker setMarkerShapeLocal "ICON";
-_marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal "Mój Dom";
+if (_houselevel > 3) then {
+	deletemarkerlocal "myhouse";
+	_marker = createMarkerLocal ["myhouse", _house];
+	_marker setMarkerShapeLocal "ICON";
+	_marker setMarkerTypeLocal "hd_dot";
+	_marker setMarkerTextLocal "Mój Dom";
 } else {
-deletemarkerlocal "myhouse";
-_marker = createMarkerLocal ["myhouse", _house];
-_marker setMarkerShapeLocal "ICON";
-_marker setMarkerTypeLocal "hd_dot";
-_marker setMarkerTextLocal "Moja Klitka";
+	deletemarkerlocal "myhouse";
+	_marker = createMarkerLocal ["myhouse", _house];
+	_marker setMarkerShapeLocal "ICON";
+	_marker setMarkerTypeLocal "hd_dot";
+	_marker setMarkerTextLocal "Moja Klitka";
 };
 
 
@@ -188,71 +145,51 @@ moneyOwed = (_statuses select 11) select 1;
 
 //do prison shit here
 
-if(_prisontime > 0) then {
-	[_prisontime,_prisonreason] spawn client_fnc_jailsetup;
+if(count(_prisonArray) > 0) then {
+	[_prisonArray] spawn client_fnc_slpd_jail_setup;
 } else {
-
-
-
-/*if(_doughnuts == 2 && _houselevel != 3) then {
-	_houselevel = 2;
-};
-if(_doughnuts > 2) then {
-	_houselevel = 3;
-};*/
-player setpos [7639.87,2553.39,0.00143814];
-
-if(_higherup) exitwith { player setpos _house};
-
-
+	player setpos [7639.87,2553.39,0.00143814];
+	if(_higherup) exitwith { player setpos _house};
 	if(_houselevel == 1) then {
 		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];  
 		_containerpos = (_nobject select 0) getrelpos [8,0]; 
 		player setpos _containerpos;
 	};
-
 	if(_houselevel == 2) then {
 		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];  
 		_containerpos = (_nobject select 0) getrelpos [8,0]; 
 		player setpos _containerpos;
 	};
-
 	if(_houselevel == 3) then {
 		_nObject = nearestObjects [_house, ["Land_ivory_trailer_04","Land_ivory_trailer_01","Land_ivory_trailer_02","Land_ivory_trailer_03","Land_ivory_trailer_06","Land_ivory_trailer_05"], 30];  
 		_containerpos = (_nobject select 0) getrelpos [8,0]; 
 		player setpos _containerpos;
 	};
-
 	if(_houselevel == 4) then {
 		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];   
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
 		player setpos _containerpos;
 	};
-
 	if(_houselevel == 5) then {
 		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];   
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
 		player setpos _containerpos;
 	};
-
 	if(_houselevel == 6) then {
 		_nObject = nearestObjects [_house, ["Land_Ranch_DED_Ranch_02_F","Land_Ranch_DED_Ranch_01_F","Land_HouseC_R","Land_HouseC1_L","Land_HouseA1_L","Land_HouseB1_L"], 30];   
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
 		player setpos _containerpos;
 	};
-
 	if(_houselevel == 7) then {
 		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];   
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
 		player setpos _containerpos;
 	};
-
 	if(_houselevel == 8) then {
 		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];   
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
 		player setpos _containerpos;
 	};
-
 	if(_houselevel == 9) then {
 		_nObject = nearestObjects [_house, ["Land_HouseDoubleAL","Land_HouseDoubleAL2"], 30];   
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
@@ -263,8 +200,6 @@ if(_higherup) exitwith { player setpos _house};
 		_containerpos = (_nobject select 0) getrelpos [15,0];  
 		player setpos _containerpos;
 	};
-
-
 };
 
 myhouse = _house;
@@ -281,10 +216,8 @@ removeGoggles player;
 removeHeadgear player;
 
 [player] spawn client_fnc_destroyGroundHolders;
-
 player setunitloadout _items;
 
-// player select here
 if((_statuses select 9) == 0) then {
 	[] spawn client_fnc_playerselect;
 	[] spawn {
@@ -309,15 +242,10 @@ if((_statuses select 9) == 0) then {
 };
 
 if(isNil "TaxRate") then { TaxRate = 0; };
-
 player setUnitRecoilCoefficient 1.75;
-
 if(client_marijuana > 0) then { player setCustomAimCoef 0; };
-
 if(client_cocaine > 0) then { player setAnimSpeedCoef 1.2; };
-
 if(client_heroin > 0) then { player setUnitRecoilCoefficient 0.5; };
-
 if(client_energy > 0) then {
 	player enablefatigue false;
 	player enablestamina false;
