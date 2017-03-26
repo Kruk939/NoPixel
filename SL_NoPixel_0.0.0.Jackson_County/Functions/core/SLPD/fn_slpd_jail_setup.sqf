@@ -1,13 +1,11 @@
-
-
-
-
-
-
-
-
-
-
+/*
+		Author: Kajetan "Kruk" Mruk
+		Date: 26.03.2017
+		Params: 
+			0 - Array, data
+		Description: Updates data in the database
+		Return: nothing
+*/
 _data = _this select 0;
 _time = 0;
 _reason = "";
@@ -26,8 +24,6 @@ ClientArrested = true;
 imrestrained = false;
 _update = 0;
 
-
-
 while{ClientArrested} do {
 	if(getpos player distance [5556.2,6291.29,0.00143433] > 400) exitwith { _escaped = true; };
 	uisleep 60;
@@ -35,8 +31,7 @@ while{ClientArrested} do {
 	_update = _update + 1;
 	if(_time == 0) exitwith {
 		//zerowanie w db [updateSLPDPrison_ended]
-		
-	
+		["ended", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 	};
 	if(_update == 5) then {
 		_first = _data select 0;
@@ -52,13 +47,12 @@ while{ClientArrested} do {
 			_first set [5, _time_left];
 			_data set [0, _first];
 			//usunięcie z db po id [updateSLPDPrison_finish]
-			
+			["finish", [_id]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 		};
 		_update = 0;
 		[_time, _reason,player,false] remoteExec ["server_fnc_jailsetup",2];
 	};
 };
-[0, _reason,player,false] remoteExec ["server_fnc_jailsetup",2];
 ClientArrested = false;
 //when jail time ends normally
 if(!_escaped) then {
@@ -67,18 +61,8 @@ if(!_escaped) then {
 } else {
 	hint "Uciekłeś z wiezienia!";
 	//ustawianie wszystkiego na nieaktywne [updateSLPDPrison_deactive]
-	
-	
-	  
-	//_suspectID = name player;
-	_Suid = getplayeruid player;
-	//_officerID = "Departament Więziennictwa";
-	_charges = format["Ucieczka z wiezienia, pozostało: %1 miesięcy", (secondsLeft/60)];
-	_status = 5;
-	//_evidence = []; // lodged later.
-	//_active = 1; // enabled instantly
-
-	_data = [_Suid, "911", _charges, _status];
+	["deactive", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
+	_data = [getPlayerUID player, "911", format["Ucieczka z wiezienia, pozostało: %1 miesięcy", _time], 5];
 	["personal", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];
 };
 
