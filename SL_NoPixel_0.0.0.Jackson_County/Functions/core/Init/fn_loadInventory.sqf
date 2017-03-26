@@ -288,6 +288,7 @@ player setunitloadout _items;
 if((_statuses select 9) == 0) then {
 	[] spawn client_fnc_playerselect;
 	[] spawn {
+		cutText ["","BLACK IN", 1];
 		"dynamicBlur" ppEffectEnable true; /* enables ppeffect */
 		"dynamicBlur" ppEffectAdjust [0]; /* intensity of blur */
 		"dynamicBlur" ppEffectCommit 25; /* time till vision is fully blurred */

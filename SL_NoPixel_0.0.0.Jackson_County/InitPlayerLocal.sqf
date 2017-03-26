@@ -14,7 +14,6 @@ waitUntil {sleep 0.05; !(isNil {player}) && player == player && alive player};
 [] call Client_fnc_miscVariables;
 player allowdamage false;
 [player] remoteexec ["Server_fnc_initStats",2];
-cutText ["", "BLACK"];
 waituntil {(player getvariable "loaded") == 1};
 player allowdamage true;
 [] call client_fnc_initInteractions;
@@ -34,6 +33,19 @@ _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 uisleep 0.05;
 deletevehicle _vehicle;
 
+if(myhealth > 0.99) exitwith {
+	["Zabijanie gracza za battleloga.", true] spawn domsg;
+	[player,objNull,3,format ["%1 został zabity przez Battleloga", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
+	diag_log format["Zabijam %1 za battleloga", player];
+	["Remove",1] call client_fnc_doHealth;
+	_respawn = player getVariable "respawn";
+	if (_respawn == 0) then {
+		[] spawn client_fnc_respawnTimer;
+	};	
+};
+
+cutText ["", "BLACK"];
+
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call client_fnc_HandleKeys"];
 (findDisplay 46) displayAddEventHandler ["KeyUp", "_this call client_fnc_HandleKeysUp"];
 
@@ -43,13 +55,6 @@ player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed
 
 [Client_fnc_HudEffects, 3] execFSM "call.fsm";
 [Client_fnc_Survival, 300] execFSM "call.fsm";
-
-if(myhealth > 0.99) exitwith {
-	["Zabijanie gracza za battleloga.", true] spawn domsg;
-	[player,objNull,3,format ["%1 został zabity przez Battleloga", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
-	diag_log format["Zabijam %1 za battleloga", player];
-	["Remove",1] call client_fnc_doHealth;
-};
 
 if(uniform player == "" && female) then {
 	player forceadduniform "vvv_character_protibanador";

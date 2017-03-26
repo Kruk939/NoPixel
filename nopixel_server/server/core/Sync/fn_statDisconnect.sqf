@@ -46,7 +46,8 @@ _houselevel = _player getVariable "houselevel";
 
 
 deletemarker format["%1",_uid];
-
+_wallet = _player getVariable "wallet";
+_bank = _player getVariable "atm";
 
 _position = position _player;
 
@@ -64,7 +65,12 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
     [_uid,"0"] spawn Server_fnc_connected;
     [_player,2,format ["%1 rozłączył się z serwerem", name _player],_uid,_items] call server_fnc_connectionLog;
 }; 
-[3,_player getVariable ["wallet",-1],_player getVariable ["atm",-1],_uid] call server_fnc_syncmoney;
+if (_wallet > 0) then {
+        if (_bank > 0) then {
+            _updatestr = format ["updatePlayerMoney:%1:%2:%3", _wallet, _bank, _uid];
+            _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
+        };
+    };
 
 [] spawn server_fnc_refreshjobs;
 

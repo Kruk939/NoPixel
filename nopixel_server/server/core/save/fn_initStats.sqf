@@ -1,5 +1,6 @@
 _player = _this select 0;
 _uid = getPlayerUID _player;
+waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
 _checkstr = format ["existPlayerInfo:%1", _uid];
 _check = [0, _checkstr] call ExternalS_fnc_ExtDBquery;
 _booli = (_check select 0) select 0;
