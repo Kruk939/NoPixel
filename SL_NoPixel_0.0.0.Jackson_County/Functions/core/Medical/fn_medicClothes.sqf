@@ -60,7 +60,10 @@ _availableUniforms = [
     "female_ems8",
     "female_ems5",
     "female_ems",
-    "CUP_U_C_Fireman_01"
+    "kiffd_uni_coastg",
+    "CUP_U_C_Fireman_01",
+    "kiffd_uni_dowodca",
+    "kiffd_uni_koszula"
 ];
  
 _availableVests = [
@@ -70,7 +73,11 @@ _availableVests = [
     "CUP_V_B_LHDVest_Red",
     "CUP_V_B_LHDVest_Violet",
     "CUP_V_B_LHDVest_White",
-    "CUP_V_B_LHDVest_Yellow"
+    "CUP_V_B_LHDVest_Yellow",
+    "kif_fd_chief",
+    "kif_fd_probie",
+    "kif_fd_fd",
+    "kif_fd_divchief"
 ];
  
 _availableBackpacks = [

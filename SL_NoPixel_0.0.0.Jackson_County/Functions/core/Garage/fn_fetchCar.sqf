@@ -45,7 +45,7 @@ if((_this select 0) == 1) exitwith {
 	};
 	if (str _className find "_unmarked_br" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
-		[_vehicle, ["wildstrawberry","matte"], "darkred", 10, 0] call client_fnc_IvoryInitVehicle;
+		[_vehicle, ["wildstrawberry","matte"], "wildstrawberry", 10, 0] call client_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_rr" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];

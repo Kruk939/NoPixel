@@ -26,8 +26,7 @@ if (isNil "_uid") then {_uid = "";};
 _playerName = name _player;
 _playerCash = _player getVariable ["wallet",-1];
 _playerBank = _player getVariable ["atm",-1];
-
-};
+_items = getUnitLoadout _player;
 
 switch (_type) do {
     case 1: {_type = "Połączenie";};
@@ -36,5 +35,5 @@ switch (_type) do {
 };
 
 
-_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7:%8", _uid, _playerName, _playerCash, _playerBank, _items, _type, _tex _amount];
+_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7", _uid, _playerName, _playerCash, _playerBank, _items, _type, _text];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;

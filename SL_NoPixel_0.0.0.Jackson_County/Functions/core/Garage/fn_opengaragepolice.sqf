@@ -54,11 +54,13 @@ if(myJob == "Cop") then {
 			"kif_tahoe_statetrooper",
 			"red_explorer_16_p_fto",
 			"red_kawasaki_10_p",
-			"red_panamera_10_p_u_black",
+			"red_porsche_12_p_u_black",
 			"red_suburban_15_p_f_ia",
 			"kif_ford350_swat",
-			"red_charger_12_p_swat",
+			"kif_charger12_swat",
+			"kif_mustang_swat",
 			"cg_suburban_sert_pol",
+			"Abruzzi_LencoPD_01",
 			//"kif_taurus_sheriff",
 			//"kif_kawasaki_police",
 			//"kif_kawasaki_sheriff",
@@ -128,7 +130,7 @@ if(myJob == "Cop") then {
 			};
 			if(getPlayerUID player in ["76561197998091289","76561198201987250","76561197982469013"]) then {
 				_garageMore = [
-				"red_panamera_10_p_u_black"
+				"kif_panamera_uc_black"
 			];
 			_garage = _garage + _garageMore;
 			};

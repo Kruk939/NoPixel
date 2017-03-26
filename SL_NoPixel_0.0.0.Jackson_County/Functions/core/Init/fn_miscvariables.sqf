@@ -94,8 +94,8 @@ adminInteractions = 0;
 */
 							//downlad
 if (getplayerUID player IN ["76561198023332238"]) then { kif_admin=1; };
-							//danio				//farmer
-if (getplayerUID player IN ["76561198082441969","76561198131854921"]) then { kif_admin=2; };
+							//danio				//farmer			//jimmy
+if (getplayerUID player IN ["76561198082441969","76561198131854921","76561198171609822"]) then { kif_admin=2; };
 							//raf				//sid				//dzoka				//teddy				//arthur
 if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998091289","76561198150573190","76561198028980508"]) then { kif_admin=3; };
 							//katekarin

@@ -20,7 +20,6 @@ _civilianVehicle = [
 	["jonzie_30CSL",3200],
 	["ADM_1969_Charger",3500],
 	["vvv_Abarth_695",4000],
-	["ivory_rs4",5000],
 	["ADM_GMC_Vandura",5100], // can farm
 	["ivory_gti",6000],	
 	["Jonzie_Transit",6400], //can farm
@@ -40,6 +39,7 @@ _civilianVehicle = [
 	["Jonzie_Escalade",12000],
 	["ivory_gt500",12000],
 	["vvv_Chevrolet_Corvette_Cone",12000],
+	["ivory_rs4",15000],
 	["vvv_Cadillac_Eldorado",15000],
 	["ivory_evox",18000],	
 	["ivory_supra",19000],	

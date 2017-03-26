@@ -221,6 +221,7 @@ player setunitloadout _items;
 if((_statuses select 9) == 0) then {
 	[] spawn client_fnc_playerselect;
 	[] spawn {
+		cutText ["","BLACK IN", 1];
 		"dynamicBlur" ppEffectEnable true; /* enables ppeffect */
 		"dynamicBlur" ppEffectAdjust [0]; /* intensity of blur */
 		"dynamicBlur" ppEffectCommit 25; /* time till vision is fully blurred */
@@ -251,4 +252,4 @@ if(client_energy > 0) then {
 	player enablestamina false;
 };
 [player,1,format ["%1 połączył się do serwera", name player],getPlayerUID player, getUnitLoadout player] remoteExec ["server_fnc_connectionLog", 2];
-[getPlayerUID player, "1"] remoteExec ["Server_fnc_connected", 2];
+[getPlayerUID player, "connected", name player] remoteExec ["Server_fnc_connected", 2];

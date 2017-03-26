@@ -200,6 +200,8 @@ _availableGoggles = [
 
     if (player getvariable ["cop", 0] > 5) then {
         _availableGogglesFive = [
+		"G_Tactical_Black",
+		"G_Tactical_Clear",
 		"G_Bandanna_tan",
 		"G_Bandanna_sport",
 		"G_Bandanna_shades",
