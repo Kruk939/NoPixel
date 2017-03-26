@@ -1495,6 +1495,7 @@ class cfgVehicles
 		author="Redhotsteel";
 		hiddenSelectionsTextures[]=
 		{
+			"red_config\red_suburban_15_e\skins\224.paa"
 		};
 		enginePower=583;
 		peakTorque=1000;

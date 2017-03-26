@@ -1577,6 +1577,7 @@ class cfgVehicles
 		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
 		hiddenSelectionsTextures[]=
 		{
+			"red_config\red_charger_12_pu\skins\sheriff_221.paa"
 		};
 		frontBias=2.5;
 		rearBias=2.5;

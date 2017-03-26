@@ -1563,6 +1563,7 @@ class cfgVehicles
 		side = 3;
 		faction = "CIV_F";
 		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
+		hiddenSelectionsTextures[] = {"red_config\red_f350_08_p\skins\sheriff.paa"};
         maxOmega=800;
 		enginePower=500;
 		peakTorque=1200;

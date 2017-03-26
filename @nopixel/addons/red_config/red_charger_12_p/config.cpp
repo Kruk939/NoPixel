@@ -1686,6 +1686,7 @@ class cfgVehicles
 		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
 		hiddenSelectionsTextures[]=
 		{
+			"red_config\red_charger_12_pu\skins\sheriff_220.paa"
 		};
 	};
 };
