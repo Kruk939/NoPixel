@@ -21,4 +21,3 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
 	_updatestr = format ["updatePlayerInfoNoGearNoShopNoHouse:%1:%2:%3:%4:%5", _cash, _bank, _position, _messages, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 }; 
-[_uid,"0"] spawn Server_fnc_connected;
