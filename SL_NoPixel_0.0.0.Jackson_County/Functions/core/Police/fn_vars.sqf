@@ -305,6 +305,24 @@ _availableUniforms = [
 	"NP_W_PD4",
 	"NP_W_PD3",
 
+	"kifpd_uni_cadet",
+	"kifpd_uni_po1",
+	"kifpd_uni_po2",
+	"kifpd_uni_po3",
+	"kifpd_uni_po4",
+	"kifpd_uni_sgt",
+	"kifpd_uni_ssgt",
+	"kifpd_uni_ltpolice",
+	"kifpd_uni_cptpolice",
+	"kifpd_uni_rafblue",
+	"kifpd_uni_rafwhite",
+	"kifpd_uni_dzokablue",
+	"kifpd_uni_dzokawhite",
+
+	"kifpd_uni_aiad_inspector",
+	"kifpd_uni_aiad_depchief",
+	"kifpd_uni_aiad_chief",
+
 	"silver_lake_fbi",
 	"silver_lake_police",
 	"silver_lake_sheriff",
@@ -366,7 +384,16 @@ _availableUniforms = [
 			"Sheriff_rang11",
 			"Sheriff_rang12",
 			"sp_rang3",
-			"sp_rang6"
+			"sp_rang6",
+			"kifpd_uni_sheriff_deputy",
+			"kifpd_uni_sheriff_senior_deputy",
+			"kifpd_uni_sheriff_sergeant",
+			"kifpd_uni_sheriff_lieutenant",
+			"kifpd_uni_sheriff_captain",
+			"kifpd_uni_sheriff_division_chief_so",
+			"kifpd_uni_sheriff_assistant_sheriff",
+			"kifpd_uni_sheriff_undersheriff",
+			"kifpd_uni_sheriff_sheriff"
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
@@ -378,7 +405,9 @@ _availableUniforms = [
 		//Czapki
 		_temp = [
 			"jamie_pcapgreen",
-			"jamie_pcapgreen2"
+			"jamie_pcapgreen2",
+			"kifpd_sheriff_black_vest",
+			"kifpd_sheriff_orange_vest"
 		];
 		_availableHeadgear = _availableHeadgear + _temp;
 	};
@@ -632,7 +661,9 @@ _availableVests = [
 	"kenny_vest_Sheriff",
 	"jamie_sheriff_vest",
 	"kif_traffic_vest",
-	"kif_slpa_vest"
+	"kif_slpa_vest",
+	"kifpd_black_vest",
+	"kifpd_yellow_vest"
 ];
     if (player getvariable ["cop", 0] > 2) then {
         _availableVestsTwo = [

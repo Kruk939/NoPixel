@@ -31,3 +31,17 @@ class kifpd_yellow_vest: kifpd_black_vest{
 			"kif_pduniforms\Data\clothing\pd\vest\VEST_YELLOW.paa"
 		};
 };
+class kifpd_sheriff_black_vest: kifpd_black_vest{
+    displayName="SL Sheriff Black Vest";
+    hiddenSelectionsTextures[]=
+		{
+			"kif_pduniforms\Data\clothing\sheriff\vest\sl_vest_so_black.paa"
+		};
+};
+class kifpd_sheriff_orange_vest: kifpd_black_vest{
+    displayName="SL Sheriff Orange Vest";
+    hiddenSelectionsTextures[]=
+		{
+			"kif_pduniforms\Data\clothing\sheriff\vest\sl_vest_so_orange.paa"
+		};
+};
