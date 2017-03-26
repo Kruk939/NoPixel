@@ -35,5 +35,5 @@ switch (_type) do {
 };
 
 
-_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7:%8", _uid, _playerName, _playerCash, _playerBank, _items, _type, _text];
+_insertstr = format ["connectionLog:%1:%2:%3:%4:%5:%6:%7", _uid, _playerName, _playerCash, _playerBank, _items, _type, _text];
 _insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
