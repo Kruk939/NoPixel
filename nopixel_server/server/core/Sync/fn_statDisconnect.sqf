@@ -62,7 +62,7 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 }; 
 
-[_uid,"0"] spawn Server_fnc_connected;
+[_uid,"disconnected"] spawn Server_fnc_connected;
 [_player,2,format ["%1 rozłączył się z serwerem", name _player],_uid,""] call server_fnc_connectionLog;
 
 [] spawn server_fnc_refreshjobs;
@@ -82,8 +82,8 @@ racecontestents DELETEAT _pia;
 _pia = MafiaLoan1 FIND _player;
 
 if(_pia != -1) then {
-MafiaLoan1 DELETEAT _pia;
-MafiaLoan2 DELETEAT _pia;
+	MafiaLoan1 DELETEAT _pia;
+	MafiaLoan2 DELETEAT _pia;
 };
 
 _player setvariable ["getunitloadout",nil,false];

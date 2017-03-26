@@ -324,4 +324,4 @@ if(client_energy > 0) then {
 	player enablestamina false;
 };
 [player,1,format ["%1 połączył się do serwera", name player],getPlayerUID player, getUnitLoadout player] remoteExec ["server_fnc_connectionLog", 2];
-[getPlayerUID player, "1"] remoteExec ["Server_fnc_connected", 2];
+[getPlayerUID player, "connected", name player] remoteExec ["Server_fnc_connected", 2];
