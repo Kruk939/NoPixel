@@ -5,6 +5,8 @@ sleep 3;
 [] call server_fnc_setupVariablesServer;
 [] call Server_fnc_handleDisconnect;
 
+waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
+
 [] spawn server_fnc_mayorsetup;
 [] spawn server_fnc_racetimes;
 [] spawn server_fnc_rallyracetimes;

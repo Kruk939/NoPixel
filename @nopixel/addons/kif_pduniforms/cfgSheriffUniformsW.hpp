@@ -22,7 +22,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_chief";
+			uniformClass = "kifpd_sheriff_deputy";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
@@ -37,7 +37,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_chief";
+			uniformClass = "kifpd_sheriff_senior_deputy";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
@@ -52,7 +52,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_chief";
+			uniformClass = "kifpd_sheriff_sergeant";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
@@ -67,7 +67,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_chief";
+			uniformClass = "kifpd_sheriff_lieutenant";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
@@ -82,7 +82,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_chief";
+			uniformClass = "kifpd_sheriff_captain";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
@@ -97,7 +97,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_chief";
+			uniformClass = "kifpd_sheriff_division_chief_so";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
@@ -112,7 +112,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_chief";
+			uniformClass = "kifpd_sheriff_assistant_sheriff";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
@@ -127,7 +127,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_chief";
+			uniformClass = "kifpd_sheriff_undersheriff";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
@@ -142,7 +142,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_chief";
+			uniformClass = "kifpd_sheriff_sheriff";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
