@@ -51,10 +51,7 @@ Ford Mustang
 class kmc_Mustang_510;
     class kif_mustang_police : kmc_Mustang_510
 	{
-		maxOmega=1150;
-		enginePower=1150;
-		peakTorque=2500;
-		maxSpeed=400;
+		enginePower = 1400;
 		displayName = "Ford Mustang Boss 302 Police";
         hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\mustang\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
@@ -74,7 +71,7 @@ Ford Taurus
 class red_taurus_10_p;
     class kif_taurus_police : red_taurus_10_p
 	{
-		enginePower = 500;
+		enginePower = 450;
 		peakTorque = 2000;
 		maxOmega = 700;
 
