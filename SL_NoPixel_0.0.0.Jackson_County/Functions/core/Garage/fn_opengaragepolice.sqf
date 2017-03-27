@@ -38,7 +38,7 @@ if(myJob == "Cop") then {
 			"sl_f150_so",
 			"sl_fpiu_so",
 			"sl_charger_220",
-			"sl_charger_221",
+			"sl_charger_slicktop_221",
 			"sl_224",
 			"red_kawasaki_10_p_sheriff",
 			"red_f350_08_p_parkranger",
