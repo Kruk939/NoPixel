@@ -9,6 +9,7 @@
 _data = _this select 0;
 _time = 0;
 _reason = "";
+secondsLeft = 0;
 {
 	_time = _time + (_x select 5);
 	_reason = format["%1%2\n",_reason,(_x select 6)];
@@ -20,6 +21,7 @@ player setpos [5618.46,6335.5,0.00143433];
 removeuniform player;
 player adduniform "noRP_Jail";
 _escaped = false;
+secondsLeft = _time;
 ClientArrested = true;
 imrestrained = false;
 _update = 0;
@@ -28,6 +30,7 @@ while{ClientArrested} do {
 	if(getpos player distance [5556.2,6291.29,0.00143433] > 400) exitwith { _escaped = true; };
 	uisleep 60;
 	_time = _time - 1;
+	secondsLeft = _time;
 	_update = _update + 1;
 	if(_time == 0) exitwith {
 		//zerowanie w db [updateSLPDPrison_ended]
@@ -37,8 +40,10 @@ while{ClientArrested} do {
 		_first = _data select 0;
 		_time_left = (_first select 5) - 5;
 		if(_time_left > 0) then {
+			_id = _first select 0;
 			_first set [5, _time_left];
 			_data set [0, _first];
+			["time", [_time, _id]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 		} else {
 			_data deleteAt 0;
 			_id = _first select 0;
@@ -50,7 +55,6 @@ while{ClientArrested} do {
 			["finish", [_id]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 		};
 		_update = 0;
-		[_time, _reason,player,false] remoteExec ["server_fnc_jailsetup",2];
 	};
 };
 ClientArrested = false;
