@@ -1499,6 +1499,19 @@ class cfgVehicles
 		};
 		enginePower=583;
 		peakTorque=1000;
+		frontBias = 2.5;
+		rearBias = 2.5;
+		class complexGearbox
+		{	
+			GearboxRatios[]    = {"R3",-5.970,"R2",-5.870,"R1",-4.231,"N",0,"D1",4.4619999,"D2",3.5699999,"D3",2.5710001,"D4",0.970,"D5",0.711};
+			TransmissionRatios[] = {"High",4.111};
+			gearBoxMode        = "auto"; 
+			moveOffGear        = 1; 
+			driveString        = "D"; 
+			neutralString      = "N";
+			reverseString      = "R";
+		};
+                torqueCurve[] = {{0.000, 0.000}, {0.178, 0.800}, {0.250, 1.0}, {0.461, 0.900}, {0.900, 0.800}, {1.000, 0.300}};
 		class Reflectors
 		{
 			class LightCarHeadL01

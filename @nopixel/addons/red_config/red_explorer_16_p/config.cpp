@@ -93,6 +93,20 @@ class cfgWeapons
 		drysound[] = {"red_config\sounds\pullover.ogg",1.2,1};
 		scope = "public";
 	};
+	class sl_traffic: SportCarHorn
+	{
+		displayName ="Traffic Buster";
+		reloadtime = 8;
+		drysound[] = {"red_config\sounds\traffic.wav",1,1};
+		scope = "public";
+	};
+	class sl_manual: SportCarHorn
+	{
+		displayName ="Traffic Manual";
+		reloadtime = 8;
+		drysound[] = {"red_config\sounds\manual.wav",1,1};
+		scope = "public";
+	};
 };
 class DefaultEventhandlers;
 class cfgVehicles
@@ -139,10 +153,14 @@ class cfgVehicles
 		author="Redhotsteel";
 		weapons[]=
 		{
-			"red_horn_airhorn",
-			"red_horn_takedown1",
-			"red_horn_takedown2",
-			"red_horn_pullover",
+                        "Airhorn1",
+                        "Airhorn2",
+                        "Howler",
+                        "Manual",
+                        "Takedown",
+                        "pull",
+                        "sl_traffic",
+                        "sl_manual",
 			"red_horn_handsup",
 			"red_horn_driver",
 			"red_horn_passenger"
@@ -1560,7 +1578,19 @@ class cfgVehicles
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
+		weapons[] = {                        
+                        "Airhorn1",
+                        "Airhorn2",
+                        "Howler",
+                        "Manual",
+                        "Takedown",
+                        "pull",
+                        "sl_traffic",
+                        "sl_manual",
+			"red_horn_handsup",
+			"red_horn_driver",
+			"red_horn_passenger"
+                };
 		hiddenSelectionsTextures[] = {"red_config\red_explorer_16_p\skins\ems.paa"};
 	};
 	class red_explorer_16_p_statetrooper: red_explorer_16_p_p_base
@@ -1655,15 +1685,6 @@ class cfgVehicles
 			}
 		};
 	};
-	class red_explorer_16_p_fto: red_explorer_16_p_statetrooper
-	{
-		scope = 2;
-		displayName = "2016 Ford Explorer (FTO)";
-		crew = "C_man_1";
-		side = 3;
-		faction = "CIV_F";
-		hiddenSelectionsTextures[] = {"red_config\red_explorer_16_p\skins\fto.paa"};
-	};
 	class sl_fpiu_so: red_explorer_16_p_statetrooper
 	{
 		scope = 2;
@@ -1671,6 +1692,19 @@ class cfgVehicles
 		crew = "C_man_1";
 		side = 3;
 		faction = "CIV_F";
+		weapons[] = {                        
+                        "Airhorn1",
+                        "Airhorn2",
+                        "Howler",
+                        "Manual",
+                        "Takedown",
+                        "pull",
+                        "sl_traffic",
+                        "sl_manual",
+			"red_horn_handsup",
+			"red_horn_driver",
+			"red_horn_passenger"
+                };
 		hiddenSelectionsTextures[] = {"red_config\red_explorer_16_p\skins\sheriff.paa"};
 	};
 };

@@ -93,6 +93,20 @@ class cfgWeapons
 		drysound[] = {"red_config\sounds\pullover.ogg",1.2,1};
 		scope = "public";
 	};
+	class sl_traffic: SportCarHorn
+	{
+		displayName ="Traffic Buster";
+		reloadtime = 8;
+		drysound[] = {"red_config\sounds\traffic.wav",1,1};
+		scope = "public";
+	};
+	class sl_manual: SportCarHorn
+	{
+		displayName ="Traffic Manual";
+		reloadtime = 8;
+		drysound[] = {"red_config\sounds\manual.wav",1,1};
+		scope = "public";
+	};
 };
 class DefaultEventhandlers;
 class cfgVehicles
@@ -137,7 +151,7 @@ class cfgVehicles
 		picture="\red_base\textures\icon.paa";
 		Icon="\red_base\textures\icon.paa";
 		author="Redhotsteel";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown","pull"};
+		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown","pull","sl_manual","sl_traffic"};
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1579,6 +1593,32 @@ class cfgVehicles
 		{
 			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
 		};
+	};
+	class red_charger_12_p_ems: red_charger_12_p_p_base
+	{
+		scope=2;
+		displayName="2012 Dodge Charger SRT8 (EMS)";
+		crew="C_man_1";
+		side=3;
+		faction="CIV_F";
+		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
+		hiddenSelectionsTextures[]=
+		{
+			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
+		};
+	};
+	class sl_charger_220: red_charger_12_p_p_base
+	{
+		scope=2;
+		displayName="220 SHERIFF OFFICE DODGE CHARGER 2012";
+		crew="C_man_1";
+		side=3;
+		faction="CIV_F";
+		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown","pull","sl_manual","sl_traffic"};
+		hiddenSelectionsTextures[]=
+		{
+			"red_config\red_charger_12_pu\skins\sheriff_220.paa"
+		};
 		frontBias=2.5;
 		rearBias=2.5;
 		enginePower=950;
@@ -1661,32 +1701,6 @@ class cfgVehicles
 			{
 				"LightCarHeadS02"
 			}
-		};
-	};
-	class red_charger_12_p_ems: red_charger_12_p
-	{
-		scope=2;
-		displayName="2012 Dodge Charger SRT8 (EMS)";
-		crew="C_man_1";
-		side=3;
-		faction="CIV_F";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
-		hiddenSelectionsTextures[]=
-		{
-			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
-		};
-	};
-	class sl_charger_220: red_charger_12_p
-	{
-		scope=2;
-		displayName="220 SHERIFF OFFICE DODGE CHARGER 2012";
-		crew="C_man_1";
-		side=3;
-		faction="CIV_F";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
-		hiddenSelectionsTextures[]=
-		{
-			"red_config\red_charger_12_pu\skins\sheriff_220.paa"
 		};
 	};
 };

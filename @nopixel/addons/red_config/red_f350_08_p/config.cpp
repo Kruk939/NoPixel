@@ -93,6 +93,20 @@ class cfgWeapons
 		drysound[] = {"red_config\sounds\pullover.ogg",1.2,1};
 		scope = "public";
 	};
+	class sl_traffic: SportCarHorn
+	{
+		displayName ="Traffic Buster";
+		reloadtime = 8;
+		drysound[] = {"red_config\sounds\traffic.wav",1,1};
+		scope = "public";
+	};
+	class sl_manual: SportCarHorn
+	{
+		displayName ="Traffic Manual";
+		reloadtime = 8;
+		drysound[] = {"red_config\sounds\manual.wav",1,1};
+		scope = "public";
+	};
 };
 class DefaultEventhandlers;
 class cfgVehicles
@@ -139,10 +153,14 @@ class cfgVehicles
 		author="Redhotsteel";
 		weapons[]=
 		{
-			"red_horn_airhorn",
-			"red_horn_takedown1",
-			"red_horn_takedown2",
-			"red_horn_pullover",
+            "Airhorn1",
+            "Airhorn2",
+            "Howler",
+            "Manual",
+            "Takedown",
+            "pull",
+            "sl_traffic",
+            "sl_manual",
 			"red_horn_handsup",
 			"red_horn_driver",
 			"red_horn_passenger"
@@ -1516,45 +1534,6 @@ class cfgVehicles
 			}
 		};
 	};
-	class red_f350_08_p: red_f350_08_p_p_base
-	{
-		scope=2;
-		displayName="2008 Ford F-350 SUPERDUTY (Marked)";
-		crew="C_man_1";
-		side=3;
-		faction="CIV_F";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown","pull"};
-		hiddenSelectionsTextures[]=
-		{
-			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
-		};
-	};
-	class red_f350_08_p_ems: red_f350_08_p_p_base
-	{
-		scope=2;
-		displayName="2008 Ford F-350 SUPERDUTY (EMS)";
-		crew="C_man_1";
-		side=3;
-		faction="CIV_F";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
-		hiddenSelectionsTextures[]=
-		{
-			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
-		};
-	};
-	class red_f350_08_p_statetrooper: red_f350_08_p_p_base
-	{
-		scope = 2;
-		displayName = "2008 Ford F-350 SUPERDUTY (State Trooper)";
-		crew = "C_man_1";
-		side = 3;
-		faction = "CIV_F";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
-		hiddenSelectionsTextures[] = {"\red_config\red_f350_08_p\skins\statetrooper.paa"};
-		maxOmega=800;
-		enginePower=500;
-		peakTorque=1200;
-	};
 	class sl_f150_so: red_f350_08_p_p_base
 	{
 		scope = 2;
@@ -1562,7 +1541,19 @@ class cfgVehicles
 		crew = "C_man_1";
 		side = 3;
 		faction = "CIV_F";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
+		weapons[] = {                        
+                        "Airhorn1",
+                        "Airhorn2",
+                        "Howler",
+                        "Manual",
+                        "Takedown",
+                        "pull",
+                        "sl_traffic",
+                        "sl_manual",
+			"red_horn_handsup",
+			"red_horn_driver",
+			"red_horn_passenger"
+                };
 		hiddenSelectionsTextures[] = {"red_config\red_f350_08_p\skins\sheriff.paa"};
         maxOmega=800;
 		enginePower=500;

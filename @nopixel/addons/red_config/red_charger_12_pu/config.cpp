@@ -93,6 +93,20 @@ class cfgWeapons
 		drysound[] = {"red_config\sounds\pullover.ogg",1.2,1};
 		scope = "public";
 	};
+	class sl_traffic: SportCarHorn
+	{
+		displayName ="Traffic Buster";
+		reloadtime = 8;
+		drysound[] = {"red_config\sounds\traffic.wav",1,1};
+		scope = "public";
+	};
+	class sl_manual: SportCarHorn
+	{
+		displayName ="Traffic Manual";
+		reloadtime = 8;
+		drysound[] = {"red_config\sounds\manual.wav",1,1};
+		scope = "public";
+	};
 };
 class DefaultEventhandlers;
 class cfgVehicles
@@ -137,7 +151,7 @@ class cfgVehicles
 		picture="\red_base\textures\icon.paa";
 		Icon="\red_base\textures\icon.paa";
 		author="Redhotsteel";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown","pull"};
+		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown","pull","sl_traffic","sl_manual"};
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1574,7 +1588,7 @@ class cfgVehicles
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
-		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown"};
+		weapons[] = {"Airhorn1","Airhorn2","Howler","Manual","Takedown","pull","sl_manual","sl_traffic"};
 		hiddenSelectionsTextures[]=
 		{
 			"red_config\red_charger_12_pu\skins\sheriff_221.paa"
