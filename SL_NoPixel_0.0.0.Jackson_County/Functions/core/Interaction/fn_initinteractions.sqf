@@ -735,7 +735,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["clientarrested"],
-		["Długo jeszcze?", "_time = secondsLeft / 60; hint format[""%1"",_time];",4]
+		["Długo jeszcze?", "hint format[""Pozostało %1 miesięcy"",secondsLeft];",4]
 	],
 
 

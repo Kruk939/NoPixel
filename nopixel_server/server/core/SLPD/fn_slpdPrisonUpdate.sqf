@@ -21,3 +21,7 @@ if(_type == "finish") exitWith {
 	_queryString = format["updateSLPDPrison_finish:%1", _data select 0];
 	_query = [0, _queryString] call ExternalS_fnc_ExtDBquery;
 };
+if(_type == "time") exitWith {
+	_queryString = format["updateSLPDPrison_time:%1:%2", (_data select 0), (_data select 1)];
+	_query = [0, _queryString] call ExternalS_fnc_ExtDBquery;
+};
