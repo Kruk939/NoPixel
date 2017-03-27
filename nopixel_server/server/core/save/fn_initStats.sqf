@@ -29,9 +29,7 @@ if (_booli) then {
 	_returned = str _fetch;
 
 	_res = _fetch select 0;
-
 	_items = _res select 0;
-
 	_cash = _res select 1;
 	_bank = _res select 2;
 	_cop = _res select 3;
@@ -42,7 +40,10 @@ if (_booli) then {
 	_messages = _res select 8;
 	_statuses = _res select 9;
 
-
+	_queryStr = format["getSLPDPrison_active:%1:%2", _uid, 1];
+	_prison = [_queryStr, 2] call ExternalS_fnc_ExtDBasync;
+	
+	
 	if(isNil "_statuses") then { _statuses = [0,100,100,100,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0],2,[0,0,0,0,0],["nobody",0,"no reason","NO DATE"]]; };
 
 	_moneyOwed = (_statuses select 11) select 1;
@@ -59,10 +60,8 @@ if (_booli) then {
 	_mafia = _res select 14;
 	_fire = _res select 15;
 	_legal = _res select 16;
-	_prisontime = _res select 17;
-	_prisonreason = _res select 18;
-	_doughnuts = _res select 19;
-	_respawn = _res select 20;
+	_doughnuts = _res select 17;
+	_respawn = _res select 18;
 
 	_messages = [];
 
@@ -178,8 +177,8 @@ if (_booli) then {
 	_house setVariable ["house", _player, false];
 	_shop setVariable ["shop", _player, false];
 
-	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28 %29",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prisontime, _prisonreason, _mayor, _doughnuts, _respawn];																																																																																																																																																													//,_mayor
-	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _prisontime, _prisonreason, _mayor, _doughnuts, _respawn] remoteexec ["Client_fnc_loadInventory", _player];
+	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison];																																																																																																																																																													//,_mayor
+	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison] remoteexec ["Client_fnc_loadInventory", _player];
 } else {
 	_name = name _player;
 	_items = getunitloadout _player;
@@ -190,9 +189,7 @@ if (_booli) then {
 	_mafia = 0;
 	_fire = 0;
 	_legal = 0;
-	_prisontime = 0;
 	_mayor = false;
-	_prisonreason = "none";
 	_position = [0,0,0];
 	_phoneBackground = [80001,1];
 	_messages = [];
@@ -202,7 +199,7 @@ if (_booli) then {
 	_shopcontent = [[[],[],[]],[[],[],[]],[[],[],[]],[[],[],[]]];
 
 	_shopname = format["Sklep %1", _name];
-	_insertstr = format ["insertPlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:%18:%19:%20", _uid, _name, _items, _cash, _bank, _cop, _ems, _position, _phoneBackground, _messages, _statuses, _houselevel, _housecontent, _shopcontent, _shopname, _mafia, _fire, _legal, _prisontime, _prisonreason];
+	_insertstr = format ["insertPlayerInfo:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:%18", _uid, _name, _items, _cash, _bank, _cop, _ems, _position, _phoneBackground, _messages, _statuses, _houselevel, _housecontent, _shopcontent, _shopname, _mafia, _fire, _legal];
 	_insert = [0, _insertstr] call ExternalS_fnc_ExtDBquery;
 
 	sleep 0.15;

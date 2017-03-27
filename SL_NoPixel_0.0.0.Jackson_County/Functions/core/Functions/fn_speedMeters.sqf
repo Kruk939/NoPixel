@@ -128,7 +128,7 @@ while{true} do {
 				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
 				["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
 				
-				_message = format["Kierowco! Zostałeś złapany na przekroczeniu prędkości. Prosimy udaj się na komisariat i opłać swój mandat! %2 Zdjęcie pojazdu o numerze rejestracyjnym: %1", toUpper(_plate), _reason];
+				_message = format["Kierowco! Zostałeś złapany na przekroczeniu prędkości. Prosimy udaj się na komisariat i opłać swój mandat! %2 Zdjęcie pojazdu o numerze rejestracyjnym - %1", toUpper(_plate), _reason];
 				
 				speedMeter_last_ticket = true;
 				[_message] spawn {
