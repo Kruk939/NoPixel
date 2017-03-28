@@ -133,6 +133,10 @@ class ivory_rev_unmarked;
 		peakTorque = 2500;
 		maxSpeed = 450;
 	};
+	class kif_rev_unmarked_bb: kif_rev_unmarked
+	{
+		displayName = "Lamborghini Reventon Unmarked Black";
+	};
 /*	
 BMW M3
 */	
@@ -141,17 +145,17 @@ class ivory_m3_base;
 	{
 		author="Ivory";
 		vehicleClass="IvoryExtra";
-        displayName = "BMW M3 Unmarked Black";
+		displayName = "BMW M3 Unmarked Black";
 		scope=2;
 		scopeCurator=2;
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
-        maxOmega=869.16998;
+		maxOmega=869.16998;
 		enginePower=810;
 		peakTorque = 2500;
 		maxSpeed = 400;
-        emergencySiren = 1;
+		emergencySiren = 1;
 		emergencyLightbarType = 1;
 		emergencyLightbarTop = 0;
 		emergencyLightbarFront = 1;
