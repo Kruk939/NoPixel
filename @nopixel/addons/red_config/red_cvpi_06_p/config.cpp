@@ -1722,8 +1722,14 @@ class cfgVehicles
 		{
 			"\red_config\red_cvpi_06_p\skins\StateTrooper.paa"
 		};
+		maxSpeed=400;
+		frontBias=2.5;
+		rearBias=2.5;
+		enginePower=900;
+		peakTorque=1500;
+
 	};
-	class red_cvpi_06_p_unmarked: red_cvpi_06_p_p_base
+	class red_cvpi_06_p_unmarked: red_cvpi_06_p_trooper
 	{
 		scope=2;
 		displayName="2006 CVPI Unmarked ";
@@ -1736,7 +1742,7 @@ class cfgVehicles
 			"\red_cvpi_06_p\colours\black.paa"
 		};
 	};
-	class red_cvpi_06_p_unmarked_2: red_cvpi_06_p_p_base
+	class red_cvpi_06_p_unmarked_2: red_cvpi_06_p_trooper
 	{
 		scope=2;
 		displayName="2006 CVPI Unmarked V2";
@@ -1749,7 +1755,7 @@ class cfgVehicles
 			"\red_cvpi_06_p\colours\white.paa"
 		};
 	};
-	class red_cvpi_06_p_sheriff: red_cvpi_06_p_p_base
+	class red_cvpi_06_p_sheriff: red_cvpi_06_p_trooper
 	{
 		scope=2;
 		displayName="2006 CVPI Sheriff";
@@ -1762,7 +1768,7 @@ class cfgVehicles
 			"\red_config\red_cvpi_06_p\skins\sheriff.paa"
 		};
 	};
-	class red_cvpi_06_p_custom1: red_cvpi_06_p_p_base
+	class red_cvpi_06_p_custom1: red_cvpi_06_p_trooper
 	{
 		scope=2;
 		displayName="2006 CVPI (P)(Custom 1)";
@@ -1775,7 +1781,7 @@ class cfgVehicles
 			"\red_config\red_cvpi_06_p\skins\custom1.paa"
 		};
 	};
-	class red_cvpi_06_p_custom2: red_cvpi_06_p_p_base
+	class red_cvpi_06_p_custom2: red_cvpi_06_p_trooper
 	{
 		scope=2;
 		displayName="2006 CVPI (P)(Custom 2)";
@@ -1788,7 +1794,7 @@ class cfgVehicles
 			"\red_config\red_cvpi_06_p\skins\custom2.paa"
 		};
 	};
-	class red_cvpi_06_p_custom3: red_cvpi_06_p_p_base
+	class red_cvpi_06_p_custom3: red_cvpi_06_p_trooper
 	{
 		scope=2;
 		displayName="2006 CVPI (P)(Custom 3)";
@@ -1801,7 +1807,7 @@ class cfgVehicles
 			"\red_config\red_cvpi_06_p\skins\custom3.paa"
 		};
 	};
-	class red_cvpi_06_p_custom4: red_cvpi_06_p_p_base
+	class red_cvpi_06_p_custom4: red_cvpi_06_p_trooper
 	{
 		scope=2;
 		displayName="2006 CVPI (P)(Custom 4)";
@@ -1814,7 +1820,7 @@ class cfgVehicles
 			"\red_config\red_cvpi_06_p\skins\custom4.paa"
 		};
 	};
-	class red_cvpi_06_p_custom5: red_cvpi_06_p_p_base
+	class red_cvpi_06_p_custom5: red_cvpi_06_p_trooper
 	{
 		scope=2;
 		displayName="2006 CVPI (P)(Custom 5)";

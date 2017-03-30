@@ -1493,6 +1493,68 @@ class cfgVehicles
 			"#(argb,8,8,3)color(0,0,0,1.0,CO)"
 		};
 	};
+	class sl_224: red_suburban_15_p_f_base
+	{
+		scope=2;
+		displayName="224 CHEVROLET SUBURBAN SLICKTOP SHERIFF OFFICE";
+		crew="C_man_1";
+		side=3;
+		faction="CIV_F";
+		author="Redhotsteel";
+		hiddenSelectionsTextures[]=
+		{
+			"red_config\red_suburban_15_pf\skins\224.paa"
+		};
+		enginePower=583;
+		peakTorque=1000;
+		class Reflectors
+		{
+			class LightCarHeadL01
+			{
+				color[]={1550,1550,2000};
+				ambient[]={5,5,5};
+				position="LightCarHeadL01";
+				direction="LightCarHeadL01_end";
+				hitpoint="Light_L";
+				selection="Light_L";
+				size=1;
+				innerAngle=100;
+				outerAngle=179;
+				coneFadeCoef=10;
+				intensity=30;
+				useFlare="true";
+				dayLight="false";
+				flareSize=0.5;
+				class Attenuation
+				{
+					start=1;
+					constant=0;
+					linear=0;
+					quadratic=0.25;
+					hardLimitStart=30;
+					hardLimitEnd=60;
+				};
+			};
+			class LightCarHeadR01: LightCarHeadL01
+			{
+				position="LightCarHeadR01";
+				direction="LightCarHeadR01_end";
+				hitpoint="Light_R";
+				selection="Light_R";
+			};
+		};
+		aggregateReflectors[]=
+		{
+			
+			{
+				"LightCarHeadL01"
+			},
+			
+			{
+				"LightCarHeadR01"
+			}
+		};
+	};
 };
 class cfgMods
 {
