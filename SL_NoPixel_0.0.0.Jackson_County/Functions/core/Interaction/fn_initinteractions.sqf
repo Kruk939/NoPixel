@@ -684,7 +684,7 @@ NoPixel_InteractionMenuItems = [
 // jobs / situational
 
 	[
-		[" myjob == ""Cop"" && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
+		[" (myjob == ""Cop"" || (player getvariable ""legal"") > 7) && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
 		["Komputer Policyjny", "createdialog ""kruk_slpd_computer"";",4]
 	],
 
