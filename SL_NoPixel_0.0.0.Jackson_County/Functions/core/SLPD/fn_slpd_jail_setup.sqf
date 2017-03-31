@@ -32,7 +32,7 @@ while{ClientArrested} do {
 	_time = _time - 1;
 	secondsLeft = _time;
 	_update = _update + 1;
-	if(_time == 0) exitwith {
+	if(_time < 0) exitwith {
 		//zerowanie w db [updateSLPDPrison_ended]
 		["ended", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 	};
