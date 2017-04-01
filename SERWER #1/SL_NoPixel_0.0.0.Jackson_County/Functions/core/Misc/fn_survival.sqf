@@ -10,8 +10,8 @@ if(!taskrunning) then {
 	[_str, true] spawn domsg;
 	paycheck = paycheck + 35;
 } else {
-	if(myJob == "Fire") then { _addition = player getvariable "Fire"; _addition = _addition + 2; paycheck = paycheck + (30*_addition); };
-	if(myJob == "EMS") then { _addition = player getvariable "EMS"; _addition = _addition + 2; paycheck = paycheck + (30*_addition); };
+	if(myJob == "Fire") then { _addition = player getvariable "Fire"; _addition = _addition + 2; paycheck = paycheck + (60*_addition); };
+	if(myJob == "EMS") then { _addition = player getvariable "EMS"; _addition = _addition + 2; paycheck = paycheck + (60*_addition); };
 	if(myJob == "Cop") then { _addition = player getvariable "Cop"; _addition = _addition + 2; paycheck = paycheck + (25*_addition); };	
 	if(myJob == "Mafia") then { _addition = player getvariable "Mafia"; _addition = _addition + 2; paycheck = paycheck + (5*_addition); };	
 	_str = format["Wlasnie otrzymales $75 z %1 w bonusach",paycheck];
