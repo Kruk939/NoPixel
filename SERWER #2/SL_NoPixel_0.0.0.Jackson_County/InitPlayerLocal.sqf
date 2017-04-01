@@ -60,8 +60,6 @@ if(uniform player == "" && female) then {
 	player forceadduniform "vvv_character_protibanador";
 };
 player setdamage myHealth;
-437 cutRsc ["HUDLoading","PLAIN"];
-
 client_seatwarn = false;
 client_seatbelt = false;
 [] spawn client_fnc_seatbelts;
@@ -74,6 +72,8 @@ _respawn = player getVariable "respawn";
 if (_respawn == 0) then {
 		[] spawn client_fnc_respawnTimer;
 };
+if(im_dead) exitWith {};
+437 cutRsc ["HUDLoading","PLAIN"];
 
 sleep 5;
 420 cutRsc ["playerHUD","PLAIN"];
