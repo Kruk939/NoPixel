@@ -45,3 +45,34 @@ class kifpd_sheriff_orange_vest: kifpd_black_vest{
 			"kif_pduniforms\Data\clothing\sheriff\vest\sl_vest_so_orange.paa"
 		};
 };
+/*
+	dtu
+*/
+class kifpd_detective_vest_black: kifpd_black_vest{
+    displayName="SL DTU Detective Black Vest";
+    hiddenSelectionsTextures[]=
+		{
+			"kif_pduniforms\Data\clothing\dtu\vest\detective_vest_black.paa"
+		};
+};
+class kifpd_detective_vest_white: kifpd_black_vest{
+    displayName="SL DTU Detective White Vest";
+    hiddenSelectionsTextures[]=
+		{
+			"kif_pduniforms\Data\clothing\dtu\vest\detective_vest_white.paa"
+		};
+};
+class kifpd_dtu_vest_black: kifpd_black_vest{
+    displayName="SL DTU Black Vest";
+    hiddenSelectionsTextures[]=
+		{
+			"kif_pduniforms\Data\clothing\dtu\vest\dtu_vest_black.paa"
+		};
+};
+class kifpd_dtu_vest_white: kifpd_black_vest{
+    displayName="SL DTU White Vest";
+    hiddenSelectionsTextures[]=
+		{
+			"kif_pduniforms\Data\clothing\dtu\vest\dtu_vest_white.paa"
+		};
+};

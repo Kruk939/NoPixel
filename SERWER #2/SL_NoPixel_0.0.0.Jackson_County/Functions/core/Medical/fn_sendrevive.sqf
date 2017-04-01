@@ -1,0 +1,2 @@
+[player] remoteExec ["client_fnc_revived",CurrentCursorTarget];
+[player,CurrentCursorTarget,9,format ["%1 reanimował %2", name player, name CurrentCursorTarget],""] remoteExec ["server_fnc_actionLog", 2];

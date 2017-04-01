@@ -28,6 +28,7 @@ class CfgVehicles
 	#include "\kif_pduniforms\cfgPoliceUniformsV.hpp"
 	#include "\kif_pduniforms\cfgSheriffUniformsV.hpp"
 	#include "\kif_pduniforms\cfgSwatUniformsV.hpp"
+	#include "\kif_pduniforms\cfgDtuUniformsV.hpp"
 
 };
 
@@ -47,5 +48,6 @@ class cfgWeapons
 	#include "\kif_pduniforms\cfgPoliceUniformsW.hpp"
 	#include "\kif_pduniforms\cfgSheriffUniformsW.hpp"
 	#include "\kif_pduniforms\cfgSwatUniformsW.hpp"
+	#include "\kif_pduniforms\cfgDtuUniformsW.hpp"
 
 };
