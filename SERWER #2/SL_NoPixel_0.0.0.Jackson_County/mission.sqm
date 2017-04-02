@@ -9869,7 +9869,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="TaskForceRadio";
+							value="StanLakeside#2";
 						};
 					};
 				};
