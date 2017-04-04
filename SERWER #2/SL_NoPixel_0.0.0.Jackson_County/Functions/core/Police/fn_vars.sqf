@@ -323,6 +323,15 @@ _availableUniforms = [
 	"kifpd_uni_aiad_depchief",
 	"kifpd_uni_aiad_chief",
 
+	"kifpd_uni_dtu_lt_yellow",
+	"kifpd_uni_dtu_lt_white",
+	"kifpd_uni_dtu_cpt_yellow",
+	"kifpd_uni_dtu_cpt_white",
+	"kifpd_uni_dtu_det1",
+	"kifpd_uni_dtu_det2",
+	"kifpd_uni_dtu_det3",
+	"kifpd_uni_dtu_det4",
+
 	"silver_lake_fbi",
 	"silver_lake_police",
 	"silver_lake_sheriff",
