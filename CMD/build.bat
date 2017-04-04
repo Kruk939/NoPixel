@@ -36,7 +36,7 @@ CD /D %ARMA3SYNC_DIR%
 Java -jar ArmA3Sync.jar -BUILD "%ARMA3SYNC_REPO_NAME%"
 "%TOOLS_DIR%\MakePbo.exe" "-PgF!WZ=*.wss,jpg,.wav,fsm,pac" "-X=thumbs.db,*.txt,*.h,*.dep,*.bak,*.png,*.log,*.pew, *.psd" "%GITHUB_MISSION_DIR%" "%ARMA3_DIR%\MPMissions"
 CD /D "%ARMA3_DIR%\MPMissions"
-fc /b SL_NoPixel_0.0.0.Jackson_County.pbo %MISSION_NAME% > nul
+fc /b "SL_NoPixel_0.0.0.Jackson_County.pbo" "%MISSION_NAME%" > nul
 if errorlevel 1 (
 	@(set /a BUILD+=1 >nul)
 	SET MISSION_NAME=SL_NoPixel_0.0.%BUILD%.Jackson_County.pbo
@@ -46,11 +46,12 @@ if errorlevel 1 (
 	CD %ARMA3_DIR%\TADST\nopixel
 	powershell -Command "(gc TADST_config.cfg) -replace '%MISSION_NAME_STRING_OLD%', '%MISSION_NAME_STRING%' | Out-File TADST_config.cfg"
 )
-
-CD /D %GITHUB_DIR%\SERWER #1\
-MOVE /Y %GITHUB_DIR%\SERWER #1\nopixel_server P:\nopixel_server
+CD /D %GITHUB_DIR%\
+MOVE /Y "%GITHUB_DIR%\SERWER #1\nopixel_server" P:\
 "%TOOLS_DIR%\MakePbo.exe" "-PsgF!Z=*.wss,jpg,.wav,fsm,pac,*.sqf,*.ogg" "-X=thumbs.db,*.txt,*.h,*.dep,*.bak,*.png,*.log,*.pew, *.psd" "P:\nopixel_server"
-MOVE /Y "P:\nopixel_server.pbo" /Y %ARMA3_DIR%\@NP_Server\addons\
-MOVE /Y P:\nopixel_server %GITHUB_DIR%\SERWER #1\nopixel_server
-REM przygotowanie serwera
-COPY /Y %GITHUB_DIR%\SERWER #1\@extDBNP\sql_custom\rpframework.ini %ARMA3_DIR%\@extDBNP\sql_custom\
+MOVE /Y "P:\nopixel_server.pbo" "%ARMA3_DIR%\@NP_Server\addons\"
+MOVE /Y P:\nopixel_server "%GITHUB_DIR%\SERWER #1\"
+COPY /Y "%GITHUB_DIR%\SERWER #1\@extDBNP\sql_custom\rpframework.ini" "%ARMA3_DIR%\@extDBNP\sql_custom\"
+CD /D P:\
+DEL *.pbo
+DEL *.bisign
