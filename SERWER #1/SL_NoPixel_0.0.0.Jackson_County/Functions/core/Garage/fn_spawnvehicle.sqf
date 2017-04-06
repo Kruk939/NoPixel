@@ -11,6 +11,9 @@ _vehicle attachTo [player, [0, 2.5, 3.5]];
 if(_vehicle iskindof "SHIP") then {
 	_vehicle attachTo [player, [0, 4.5, 5.5]]; 
 };
+if(_vehicle iskindof "AIR") then {
+	_vehicle attachTo [player, [0, 4.5, 5.5]]; 
+};
 
 _vehicle setdir 90;
 

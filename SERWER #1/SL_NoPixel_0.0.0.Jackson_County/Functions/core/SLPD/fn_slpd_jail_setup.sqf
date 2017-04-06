@@ -65,7 +65,7 @@ if(!_escaped) then {
 } else {
 	hint "Uciekłeś z wiezienia!";
 	//ustawianie wszystkiego na nieaktywne [updateSLPDPrison_deactive]
-	["deactive", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
+	["escape", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 	_data = [getPlayerUID player, "911", format["Ucieczka z wiezienia, pozostało: %1 miesięcy", _time], 5];
 	["personal", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];
 };
