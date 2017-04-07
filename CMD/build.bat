@@ -1,7 +1,6 @@
 REM Autor: Kajetan "Kruk" Mruk
 @echo off
 SET ARMA3SYNC_REPO_NAME=StanLakesideNP
-SET ARMA3SYNC_REPO_NAME_BACKUP=StanLakeside
 SET ARMA3SYNC_DIR=C:\Program Files (x86)\ArmA3Sync
 SET TOOLS_DIR=C:\Program Files (x86)\Mikero\DePboTools\bin
 SET GITHUB_DIR=P:\NoPixel
@@ -29,7 +28,7 @@ DEL *.bisign
 
 echo "Budowanie addonow"
 pause
-FOR /d %%i IN (kif_* sl_* red_*) DO ("%TOOLS_DIR%\MakePbo.exe" "-Pg!WZ=*.wss,jpg,.wav,fsm,pac,*.sqf,*.ogg" "-X=thumbs.db,*.txt,*.h,*.dep,*.bak,*.png,*.log,*.pew, *.psd" "P:\%%i")
+FOR /d %%i IN (kif_* sl_*) DO ("%TOOLS_DIR%\MakePbo.exe" "-Pg!WZ=*.wss,jpg,.wav,fsm,pac,*.sqf,*.ogg" "-X=thumbs.db,*.txt,*.h,*.dep,*.bak,*.png,*.log,*.pew, *.psd" "P:\%%i")
 FOR %%i IN (*.pbo) DO ("%ARMA3TOOLS_DIR%\DSSignFile.exe" "%ARMA3TOOLS_KEY%" "%%i")
 
 echo "Przerzucanie ze strefy roboczej"
@@ -49,9 +48,8 @@ CD /D %ARMA3SYNC_DIR%
 
 echo "Budowanie repozytorium"
 pause
-
-Java -jar ArmA3Sync.jar -BUILD "%ARMA3SYNC_REPO_NAME%"
 Java -jar ArmA3Sync.jar -BUILD "%ARMA3SYNC_REPO_NAME_BACKUP%"
+Java -jar ArmA3Sync.jar -BUILD "%ARMA3SYNC_REPO_NAME%"
 "%TOOLS_DIR%\MakePbo.exe" "-PgF!WZ=*.wss,jpg,.wav,fsm,pac" "-X=thumbs.db,*.txt,*.h,*.dep,*.bak,*.png,*.log,*.pew, *.psd" "%GITHUB_MISSION_DIR%" "%ARMA3_DIR%\MPMissions"
 CD /D "%ARMA3_DIR%\MPMissions"
 
