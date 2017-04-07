@@ -1,6 +1,7 @@
 REM Autor: Kajetan "Kruk" Mruk
 @echo off
 SET ARMA3SYNC_REPO_NAME=StanLakesideNP
+SET ARMA3SYNC_REPO_NAME_BACKUP=StanLakeside
 SET ARMA3SYNC_DIR=C:\Program Files (x86)\ArmA3Sync
 SET TOOLS_DIR=C:\Program Files (x86)\Mikero\DePboTools\bin
 SET GITHUB_DIR=P:\NoPixel
@@ -50,6 +51,7 @@ echo "Budowanie repozytorium"
 pause
 
 Java -jar ArmA3Sync.jar -BUILD "%ARMA3SYNC_REPO_NAME%"
+Java -jar ArmA3Sync.jar -BUILD "%ARMA3SYNC_REPO_NAME_BACKUP%"
 "%TOOLS_DIR%\MakePbo.exe" "-PgF!WZ=*.wss,jpg,.wav,fsm,pac" "-X=thumbs.db,*.txt,*.h,*.dep,*.bak,*.png,*.log,*.pew, *.psd" "%GITHUB_MISSION_DIR%" "%ARMA3_DIR%\MPMissions"
 CD /D "%ARMA3_DIR%\MPMissions"
 
