@@ -25,6 +25,7 @@ secondsLeft = _time;
 ClientArrested = true;
 imrestrained = false;
 _update = 0;
+player setVariable ["coplevel", 0, false];
 
 while{ClientArrested} do {
 	if(getpos player distance [5556.2,6291.29,0.00143433] > 400) exitwith { _escaped = true; };
