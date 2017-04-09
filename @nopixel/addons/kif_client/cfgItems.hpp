@@ -186,3 +186,12 @@
 		allowedSlots[]={901};
 		mass=15;
 	};
+	class kif_gold_bar: ItemCore
+	{
+		scope=2;
+		displayName="Gold bar";
+		//picture="\kif_client\textures\icons\items\fish_oil.paa";
+		model="\kif_client\models\ore_bar\gold_bar.p3d";
+		allowedSlots[]={901};
+		mass=15;
+	};
