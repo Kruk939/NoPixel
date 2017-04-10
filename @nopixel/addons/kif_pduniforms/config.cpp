@@ -25,6 +25,7 @@ class cfgFunctions
 class CfgVehicles
 {
 	class B_Competitor_F;
+	class B_Soldier_lite_F;
 	#include "\kif_pduniforms\cfgPoliceUniformsV.hpp"
 	#include "\kif_pduniforms\cfgSheriffUniformsV.hpp"
 	#include "\kif_pduniforms\cfgSwatUniformsV.hpp"
@@ -40,6 +41,7 @@ class cfgWeapons
 	class ItemInfo;
 
 	class V_TacVest_blk_POLICE;
+	class V_PlateCarrier1_rgr;
 	class VestItem;
 	class HeadgearItem;
 

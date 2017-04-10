@@ -76,3 +76,21 @@ class kifpd_dtu_vest_white: kifpd_black_vest{
 			"kif_pduniforms\Data\clothing\dtu\vest\dtu_vest_white.paa"
 		};
 };
+class kifpd_sert_vest : V_PlateCarrier1_rgr {
+		displayName = "SERT Kamizelka Bojowa GREEN";
+		picture = "\kif_pduniforms\Data\ui\sl_logo.paa";
+		model = "\A3\Characters_F\BLUFOR\equip_b_vest02";
+		class ItemInfo : ItemInfo {
+			uniformModel = "A3\Characters_F\BLUFOR\equip_b_vest02";
+			containerClass = "Supply500";
+			mass = 1;
+			armor = 80;
+			passThrough = 1;
+			hiddenSelections[] = { "camo" };
+		};
+		hiddenSelections[] = { "camo" };
+		hiddenSelectionsTextures[]=
+		{ 
+			"kif_pduniforms\Data\clothing\sert\vest\green_vest.paa" 
+		};
+	};

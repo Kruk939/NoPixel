@@ -44,7 +44,7 @@ _availableHeadgear = [
     
     if (player getvariable ["cop", 0] > 5) then {
     _availableHeadgearFive = [
-    
+		"max_sheriff_Hat",
     	"jamie_blackhelmet",
 	"jamie_pcapblack",
 	"jamie_pcapblue2",

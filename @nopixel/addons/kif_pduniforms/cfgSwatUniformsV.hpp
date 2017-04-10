@@ -42,3 +42,13 @@
 		displayName = "SWAT Police Officer 4";
 		
 	};
+	class kifpd_sert: B_Soldier_lite_F
+	{
+		_generalMacro = "B_Soldier_lite_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "kifpd_uni_sert";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\sert\SERT_uniform.paa"};
+		displayName = "SERT Uniform";
+	};
