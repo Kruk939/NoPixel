@@ -416,7 +416,8 @@ _availableUniforms = [
 			"jamie_pcapgreen",
 			"jamie_pcapgreen2",
 			"kifpd_sheriff_black_vest",
-			"kifpd_sheriff_orange_vest"
+			"kifpd_sheriff_orange_vest",
+			"TAC_SGS_SK"
 		];
 		_availableHeadgear = _availableHeadgear + _temp;
 	};
@@ -705,6 +706,7 @@ _availableVests = [
 		"TAC_Sheriff_BA_OD",
 		"TAC_V_tacv1_SRF",
 		"TAC_V_tacv1_P",
+		"TAC_V_tacv1_P2",
 		"EF_CTV1",
 		"TAC_HGB_B",
 		"TAC_V_Sheriff_BA_TB4"
@@ -761,7 +763,9 @@ _availableMagazine = [
 	"CUP_30Rnd_556x45_Stanag",
 	"CUP_6Rnd_Smoke_M203",
 	"CUP_20Rnd_762x51_B_M110",
-	"CUP_5Rnd_86x70_L115A1"
+	"CUP_5Rnd_86x70_L115A1",
+	"RH_30Rnd_556x45_Mk318",
+	"RH_60Rnd_556x45_Mk318"
 ];
 
  
@@ -830,7 +834,10 @@ _availableWeapon = [
 	"CUP_hgun_BallisticShield_Armed",
 	"Rangefinder",
 	"CUP_srifle_M110",
-	"CUP_srifle_AWM_wdl"
+	"CUP_srifle_AWM_wdl",
+	"RH_Hk416c",
+	"RH_Hk416",
+	"RH_M4_ris_m"
     ];
      _availableWeapon = _availableWeapon + _availableWeaponSix;
     };
@@ -877,7 +884,11 @@ _availableAttachments = [
 	"CUP_muzzle_snds_M110",
 	"CUP_muzzle_snds_AWM",
 	"CUP_optic_Leupold_VX3",
-	"optic_Hamr"
+	"optic_Hamr",
+	"RH_qdss_nt4",
+	"RH_SFM952V",
+	"RH_HBLM",
+	"RH_HBLM_des"
 ];
 
 _availableItems = [
