@@ -66,6 +66,7 @@ if(myJob == "Cop") then {
 			"kif_charger12_swat",
 			"kif_mustang_swat",
 			"cg_suburban_sert_pol",
+			"Abruzzi_LencoPD_01",
 			//"Abruzzi_LencoPD_01",
 			//"kif_taurus_sheriff",
 			//"kif_kawasaki_police",
