@@ -195,6 +195,7 @@ _availableGoggles = [
 	"TRYK_headset_Glasses",
 	"TRYK_Spset_PHC1_Glasses",
 	"TRYK_Spset_PHC2_Glasses",
+	"TRYK_SBeard_Gr6",
 	"TRYK_TAC_EARMUFF_SHADE_Gs"
 ];
 
