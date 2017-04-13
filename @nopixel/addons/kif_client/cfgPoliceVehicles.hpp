@@ -379,3 +379,26 @@ class ivory_evox_base;
 	{
 		displayName = "Mitsubishi Lancer Evo X Unmarked Unmarked Blue Black Metalic";
 	};
+
+class ivory_supra_base;
+    class ivory_supra_2_unmarked_bb : ivory_supra_base;
+    {
+    
+    };
+
+    class ivory_supra_unmarked_bb : ivory_supra_base;
+    {
+    
+    };
+
+class ivory_e36_base;
+    class ivory_e36_2_unmarked_bb : ivory_e36_base;
+    {
+    
+    };
+
+    class ivory_e36_unmarked_bb : ivory_e36_base;
+    {
+    
+    };
+
