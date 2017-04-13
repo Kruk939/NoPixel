@@ -76,7 +76,9 @@ if(myjob == "Cop") exitwith {
 				player addHeadgear "Campaign_Hat_Dark";
 			};
 			if(_level == 10) then {
-				player forceAddUniform "vvv_traje_policia_3";
+				player forceAddUniform "kifpd_uni_dzokawhite";
+				player addVest "jamie_black2";
+				player addHeadgear "Campaign_Hat_Dark";
 			};
 		};
 	} else {
