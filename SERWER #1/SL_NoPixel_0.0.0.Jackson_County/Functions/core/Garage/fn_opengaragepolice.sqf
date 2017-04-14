@@ -105,6 +105,8 @@ if(myJob == "Cop") then {
 			if (client_dtu_actions >= 1) then {
 			_garageMore = [
 			
+                //UC
+                
 				"kif_m3_unmarked_bb",
 				"kif_m3_unmarked_mbb",
 				"kif_m3_unmarked_br",
@@ -135,7 +137,7 @@ if(myJob == "Cop") then {
 				"kif_rs4_unmarked_blb",
 				"kif_rs4_unmarked_mblb",
 				
-				/*"kif_evox_unmarked_bb",
+				"kif_evox_unmarked_bb",
 				"kif_evox_unmarked_mbb",
 				"kif_evox_unmarked_br",
 				"kif_evox_unmarked_rb",
@@ -143,10 +145,34 @@ if(myJob == "Cop") then {
 				"kif_evox_unmarked_gb",
 				"kif_evox_unmarked_mgb",
 				"kif_evox_unmarked_blb",
-				"kif_evox_unmarked_mblb"*/
+				"kif_evox_unmarked_mblb",
 				
-				"kif_rev_unmarked_bb"
-				
+				"kif_rev_unmarked_bb",
+                
+                //CIV
+                "ivory_e36_unmarked_bb_civ",
+                "ivory_e92_unmarked_bb_civ",
+                "ivory_isf_unmarked_bb_civ",
+                "ivory_wrx_unmarked_bb_civ",
+                "ivory_evox_unmarked_bb_civ",
+                "ivory_rs4_unmarked_bb_civ",
+                "ivory_gti_unmarked_bb_civ",
+                "ivory_c_unmarked_bb_civ",
+                "ivory_gt500_unmarked_bb_civ",
+                "ivory_190e_unmarked_bb_civ",
+                "ivory_lfa_unmarked_bb_civ",
+                "ivory_r34_unmarked_bb_civ",
+                "ivory_911_unmarked_bb_civ",
+                "ivory_lp560_unmarked_bb_civ",
+                "ivory_rev_unmarked_bb_civ",
+                "ivory_supra_unmarked_bb_civ",
+                "ivory_supra_topsecret_unmarked_bb_civ",
+                "ivory_f1_unmarked_bb_civ",
+                "ivory_elise_unmarked_bb_civ",
+                "ivory_ccx_unmarked_bb_civ",
+                "ivory_veyron_unmarked_bb_civ",
+                "ivory_mp4_unmarked_bb_civ",
+                "ivory_r8_spyder_unmarked_bb_civ"
 			];
 			_garage = _garage + _garageMore;
 			};

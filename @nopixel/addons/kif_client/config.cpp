@@ -10,7 +10,7 @@
 			"plp_containers",
 			"ivory_data",
 			"ivory_isf",
-			"ivory_m3"
+			"ivory_m3",
 		};
  	};
  };
