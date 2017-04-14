@@ -11,6 +11,7 @@
 			"ivory_data",
 			"ivory_isf",
 			"ivory_m3",
+             "np_ivory"
 		};
  	};
  };
