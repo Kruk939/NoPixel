@@ -384,7 +384,7 @@ class ivory_e36_2;
     class ivory_e36_unmarked_bb_civ : ivory_e36_2
     {};
 
-class ivory_m3_2;
+class ivory_e92_2;
     class ivory_e92_unmarked_bb_civ : ivory_e92_2
     {};
 

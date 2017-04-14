@@ -61,6 +61,7 @@ if(myJob == "Cop") then {
 			"kif_mustang_police",
 			"kif_mustang_sheriff",
 			"sl_charger_sert",
+			"SL_Command_Unit",
 			"kif_taurus_police",
 			"red_cvpi_06_p_trooper",
 			"red_explorer_16_p_statetrooper",
