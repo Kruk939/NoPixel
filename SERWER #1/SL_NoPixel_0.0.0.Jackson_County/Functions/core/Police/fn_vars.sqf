@@ -838,6 +838,7 @@ _availableWeapon = [
 	"CUP_srifle_AWM_wdl",
 	"RH_Hk416c",
 	"RH_Hk416",
+    "RH_hk416_wdl",
 	"RH_M4_ris_m"
     ];
      _availableWeapon = _availableWeapon + _availableWeaponSix;
@@ -861,6 +862,9 @@ _availableWeapon = [
 
 
 _availableAttachments = [
+    "RH_eothhs1",
+    "RH_ta31rmr_2D",
+    "RH_ta31rmr_tan_2D",
 	"CUP_optic_LeupoldMk4_10x40_LRT_Woodland",
 	"RH_X300",
 	"acc_flashlight",
