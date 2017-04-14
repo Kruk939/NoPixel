@@ -1,7 +1,7 @@
 tf_radio_channel_name = "StanLakeside#2";
 enableSaving [false, false];
 a9ec2a59c630de5b27603e8ecd9fb153 = true;
-kif_client_v = 0.25;
+kif_client_v = 0.26;
 
 //Radia
 tf_west_radio_code = "";
