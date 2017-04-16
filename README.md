@@ -70,7 +70,7 @@
     Sukces - ["Sukces","Tekst",[0,255,0,1],""] call Client_fnc_showNotification;
     Błąd - ["Błąd","Tekst",[255,0,0,1],""] call Client_fnc_showNotification;
     Ostrzeżenie - ["Ostrzeżenie","Tekst",[255,255,0,1],""] call Client_fnc_showNotification;
-	Informacja - ["Informacja","Tekst",[255,69,0,1],""] call Client_fnc_showNotification;
+    Informacja - ["Informacja","Tekst",[255,69,0,1],""] call Client_fnc_showNotification;
     Ogólny szablon -  ["Tytuł","Tekst",[R,G,B,A],"Dźwięk"] call Client_fnc_showNotification;
 ```
 
@@ -96,8 +96,7 @@
 * \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
 <hr>
-# PRZYDATNE CLASSNAME
-# PRZEDMIOTY
+# PRZYDATNE CLASSNAME PRZEDMIOTÓW
 ```sqf
 kif_GasCooker
 kif_Pseudo
