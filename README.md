@@ -5,7 +5,7 @@
 4. **Plik** nie może być udostępniany bez mojej zgody.
 5. **Pliki** nie mogą być wykorzystywane na innym serwerze niż na tym, który został utworzony przez [stanlakeside.pl](http://stanlakeside.pl)
 
-<hr>
+
 # TODO
 * Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
@@ -16,7 +16,7 @@
 * Zapisywanie przez strażaków na dispatcher
 
 
-<hr>
+
 # DONE
 * Automatycznie przydzielanie ekwipunku przy zaczynaniu pracy (EMS, FIRE, COP).
 * Kupowanie licencji na broń (5000$)
@@ -64,7 +64,7 @@
 * Nitro
 
 
-<hr>
+
 # DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
 ```sqf
     Sukces - ["Sukces","Tekst",[0,255,0,1],""] call Client_fnc_showNotification;
@@ -74,7 +74,7 @@
     Ogólny szablon -  ["Tytuł","Tekst",[R,G,B,A],"Dźwięk"] call Client_fnc_showNotification;
 ```
 
-<hr>
+
 # SZABLON DO SKRYPTÓW
 ```sqf
 /*
@@ -89,13 +89,13 @@
  */
  ```
 
-<hr>
+
 # WAŻNE PLIKI
 * \Functions\core\Police\fn_vars.sqf - ARSENAL
 * \Functions\core\Init\fn_miscvariables.sqf - VARIABLES - ADMIN'S ID
 * \Functions\core\Shopping\fn_loadstore.sqf - Config sklepu z ubraniami
 
-<hr>
+
 # PRZYDATNE CLASSNAME PRZEDMIOTÓW
 ```sqf
 kif_GasCooker
@@ -106,7 +106,7 @@ kif_MetalStack
 kif_Grinder
 ```
 
-<hr>
+
 =======
 # POMYSLY
 * Kupowalne budynki ([stacje benzynowe](http://stanlakeside.pl/index.php?/topic/10379-ożywienie-stacji-benzynowych/&do=findComment&comment=45468))
