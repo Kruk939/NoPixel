@@ -66,7 +66,7 @@
 
 <hr>
 # DODATKOWY SYSTEM POWIADOMIEŃ (Zamiana za hint)
-```
+```sqf
     Sukces - ["Sukces","Tekst",[0,255,0,1],""] call Client_fnc_showNotification;
     Błąd - ["Błąd","Tekst",[255,0,0,1],""] call Client_fnc_showNotification;
     Ostrzeżenie - ["Ostrzeżenie","Tekst",[255,255,0,1],""] call Client_fnc_showNotification;
@@ -76,7 +76,7 @@
 
 <hr>
 # SZABLON DO SKRYPTÓW
-```
+```sqf
 /*
  	Author: XYZ
  	Date: XYZ
@@ -98,7 +98,7 @@
 <hr>
 # PRZYDATNE CLASSNAME
 # PRZEDMIOTY
-```
+```sqf
 kif_GasCooker
 kif_Pseudo
 kif_Acetone
