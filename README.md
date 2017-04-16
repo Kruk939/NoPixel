@@ -7,11 +7,9 @@
 
 
 # TODO
-* Naprawić komputer policji(wantedlista - dodawanie)
 * Firmy
 * Tablice rejestracyjne dla pojazdów roboczych(policja, ems i prace)
 * Dodanie pracy kierowcy autobusu.
-* Poprawić skrypty, tzn. dodać zabezpieczenia przed NULL'ami
 * Wyregulować cenę za filety ryby oraz sztuki za przerobienie ryb
 * Zapisywanie przez strażaków na dispatcher
 
