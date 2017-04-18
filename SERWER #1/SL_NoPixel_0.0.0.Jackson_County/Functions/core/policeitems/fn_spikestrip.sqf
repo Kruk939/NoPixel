@@ -15,5 +15,5 @@ _spikeStrip setVectorUp surfaceNormal _spot;
 
 waitUntil { uiSleep 0.05; _nearVehicles = nearestObjects[getPos _spikeStrip,["Car"],7]; ( count _nearVehicles > 0 || isNull _spikeStrip || player distance _spikestrip > 250 || deadPlayer ) };
 deletevehicle _spikestrip;
-if(count _nearVehicles > 0) then { _vehicle = _nearvehicles select 0; [_vehicle] remoteExecCall ["client_fnc_spikeStripEffect",_vehicle]; };
-[player,objNull,7,format ["%1 rozstawił kolczatkę", name player],""] remoteExec ["server_fnc_copLog", 2];
+if(count _nearVehicles > 0) then { _vehicle = _nearvehicles select 0; [_vehicle] remoteExecCall ["StanLakeside_fnc_spikeStripEffect",_vehicle]; };
+[player,objNull,7,format ["%1 rozstawił kolczatkę", name player],""] remoteExec ["StanLakesideServer_fnc_copLog", 2];

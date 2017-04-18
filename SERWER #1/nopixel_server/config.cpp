@@ -7,7 +7,7 @@ class CfgPatches {
     };
 };
 class CfgFunctions {
-    class Server {
+    class StanLakesideServer {
         class Init {
             file = "NoPixel_Server\server\core\Init";
             class init {};

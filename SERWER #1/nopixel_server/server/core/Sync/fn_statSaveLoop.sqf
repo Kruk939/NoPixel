@@ -20,5 +20,5 @@
 	_updatestr = format ["updatePlayerInfoNoShopNoHouse:%1:%2:%3:%4:%5:%6", _items, _cash, _bank, _position, _messages, _uid]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
     };
-	diag_log "server_fnc_statSaveLoop";
+	diag_log "StanLakesideServer_fnc_statSaveLoop";
 } forEach allPlayers;

@@ -1,4 +1,4 @@
-// [player] spawn client_fnc_destroyGroundHolders;
+// [player] spawn StanLakeside_fnc_destroyGroundHolders;
 
 _objectPos = _this select 0;
 

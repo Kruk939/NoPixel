@@ -11,4 +11,4 @@ _marker setMarkerTextLocal format["Sklep %1 - Zamkniety",_name];
 sklepotw = 0;
 closetime = time;
 
-[_player] remoteExec ["server_fnc_closeshop",2];
+[_player] remoteExec ["StanLakesideServer_fnc_closeshop",2];

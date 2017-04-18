@@ -15,7 +15,7 @@ if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) 
 
 		_localProtection = _localprotection + 1;
 		globalProtection = globalProtection + 1;
-		if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn client_fnc_anticheat; };
+		if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn StanLakeside_fnc_anticheat; };
 		detach _x;
 		deletevehicle _x; 
 		_sound = round(random 5);
@@ -27,7 +27,7 @@ if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) 
 	};
 } forEach attachedObjects vehspawned;
 hint "Drewno przerobione.";  
-[player,objNull,30,format ["%1 przerobił drewno. Ilość drewna przerobionego: %2",name player, totalLogs],totalLogs] remoteExec ["server_fnc_actionLog", 2];
+[player,objNull,30,format ["%1 przerobił drewno. Ilość drewna przerobionego: %2",name player, totalLogs],totalLogs] remoteExec ["StanLakesideServer_fnc_actionLog", 2];
 totalLogs = 0;
 
 globalProtection = 0;

@@ -1,12 +1,12 @@
-//[_location] remoteExec ["client_fnc_startSecurity",_player];
-//[getpos player,] remoteExec ["client_fnc_startGarbage",_player];
+//[_location] remoteExec ["StanLakeside_fnc_startSecurity",_player];
+//[getpos player,] remoteExec ["StanLakeside_fnc_startGarbage",_player];
 // use lexus with directionals only.
 if(myjob != "none") exitwith { hint "Masz już pracę!"; };
 
 if(isnil "taskrunning") then { taskrunning = false; };
 
 myjob = "Repairman";
-[] call client_fnc_hudwork;
+[] call StanLakeside_fnc_hudwork;
 private ["_warning","_JobBase"];
 if(!taskrunning) then {
 
@@ -30,12 +30,12 @@ if(!taskrunning) then {
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
 					hint "Zlecenie (zaznaczone na mapie): Typ - Napraw obiekt";	
-					[((playertasks select 0) select 0)] call client_fnc_jobMarker;			
+					[((playertasks select 0) select 0)] call StanLakeside_fnc_jobMarker;			
 					uisleep 3;
 				};
 			};
 		};
-		if(myjob == "Repairman") then { [] call client_fnc_jobEnd; };
+		if(myjob == "Repairman") then { [] call StanLakeside_fnc_jobEnd; };
 	};
 };
 

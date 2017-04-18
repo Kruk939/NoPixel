@@ -1145,7 +1145,7 @@ lbClear _list;
 {
 
 	_class = _x select 0;
-	_item = [_class] call client_fnc_fetchItemType;
+	_item = [_class] call StanLakeside_fnc_fetchItemType;
 	_price = _x select 2;
 	_type = _x select 3;
 	_classtype = _x select 4;
@@ -1174,7 +1174,7 @@ lbClear _list;
 			_price = _addedprice + _price;
 			_magazines = getArray (configFile / "CfgWeapons" / _class / "magazines");
 			_magazine = _magazines select 0;
-			_item = [_magazine] call client_fnc_fetchItemType;
+			_item = [_magazine] call StanLakeside_fnc_fetchItemType;
 			_list lbAdd format["$%2 (Tax %%3): %1",_item select 1, _magPrice,taxRate];
 			_list lbSetdata [(lbSize _list)-1, str([_magazine,_item select 1, _magPrice,2,0,_addedprice])];
 			_list lbSetPicture [(lbSize _list)-1,_item select 2];

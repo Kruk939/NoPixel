@@ -4,6 +4,6 @@ params ["_amount"];
 _new = _old + _amount;
 player setVariable ["atm,", _new, false];*/
 
-[_amount] call Client_fnc_sl_addBank_secure;
+[_amount] call StanLakeside_fnc_sl_addBank_secure;
 
 hint format ["Zarobiles %1 dzieki podatkom.",_amount];

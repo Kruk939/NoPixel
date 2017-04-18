@@ -1,4 +1,4 @@
-[] spawn server_fnc_init;
+[] spawn StanLakesideServer_fnc_init;
 
 //usunięcie bram w willach
 _obj = [9585.29, 3385.69, 0.00143814] nearestObject 166437; 
@@ -16,8 +16,8 @@ _obj hideObjectGlobal true;
 GarageVariableWhore = "Flag_US_F" createVehicle [0,1,0];
 
 _vehicle = "ivory_wrx" createvehicle [0,0,0];
-[_vehicle, ["black","matte"], "black", 1, 1] call client_fnc_IvoryInitVehicle;
-[_vehicle, "FuckYou", "ivory"] call client_fnc_numberPlate;
+[_vehicle, ["black","matte"], "black", 1, 1] call StanLakeside_fnc_IvoryInitVehicle;
+[_vehicle, "FuckYou", "ivory"] call StanLakeside_fnc_numberPlate;
 
 uisleep 0.05;
 deletevehicle _vehicle;

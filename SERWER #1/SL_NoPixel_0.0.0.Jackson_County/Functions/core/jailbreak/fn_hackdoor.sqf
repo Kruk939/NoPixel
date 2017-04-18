@@ -1,4 +1,4 @@
-if (count currentCop < 3) exitWith {["Błąd","Tekst",[255,0,0,1],"Musi być minimum 3 policjantów!"] call Client_fnc_showNotification;};
+if (count currentCop < 3) exitWith {["Błąd","Tekst",[255,0,0,1],"Musi być minimum 3 policjantów!"] call StanLakeside_fnc_showNotification;};
 if(isNil "jailHacking") then { jailHacking = false; };
 if(jailHacking) exitwith {};
 jailHacking = true;
@@ -59,6 +59,6 @@ if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "La
 		["911: UWAGA! DRZWI ARESZTU ZOSTAŁY OTWORZONE!", false] remoteExec ["domsg", currentCop]; 
 
 	};
-	[player, _door, "hackDoor"] spawn client_fnc_createEvidence;
+	[player, _door, "hackDoor"] spawn StanLakeside_fnc_createEvidence;
 };
 jailHacking = false;

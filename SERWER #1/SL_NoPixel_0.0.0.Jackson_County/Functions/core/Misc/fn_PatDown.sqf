@@ -118,12 +118,12 @@ _back = backpack player;
 
 _new = player getVariable "sl_wallet_silverlake";	
 
-[player, "wallet", _new] remoteExec ["Server_fnc_setVariable",2]; 
+[player, "wallet", _new] remoteExec ["StanLakesideServer_fnc_setVariable",2]; 
 
-[player, getUnitLoadout player] remoteExec ["server_fnc_steppedsync",2]; 
+[player, getUnitLoadout player] remoteExec ["StanLakesideServer_fnc_steppedsync",2]; 
 
 lastforcesync = time;
 
 
-[current_cars] remoteexec ["client_fnc_givekeys",_returnkeys];
-[_returnkeys,player,8,format ["%1 przeszukał %2", name _returnkeys, name player],""] remoteExec ["server_fnc_actionLog", 2];
+[current_cars] remoteexec ["StanLakeside_fnc_givekeys",_returnkeys];
+[_returnkeys,player,8,format ["%1 przeszukał %2", name _returnkeys, name player],""] remoteExec ["StanLakesideServer_fnc_actionLog", 2];

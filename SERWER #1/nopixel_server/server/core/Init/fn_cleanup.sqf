@@ -1,6 +1,6 @@
 _chance = random 100;
 if (_chance < 20 && currentBanks < 2) then {
-    ["Informacja","Jeden z banków właśnie otrzymał dostawę pieniędzy.",[255,69,0,1],""] remoteExec ["Client_fnc_showNotification", -2];
+    ["Informacja","Jeden z banków właśnie otrzymał dostawę pieniędzy.",[255,69,0,1],""] remoteExec ["StanLakeside_fnc_showNotification", -2];
     //"Jeden z banków właśnie otrzymał dostawę pieniędzy." remoteexec["hint", -2];
     _mybank = banks call BIS_fnc_selectRandom;
     _thebankcontainer = "plp_ct_HighSecMediumBlack" createvehicle [9794,978,0.0014];
@@ -31,8 +31,8 @@ _fireLocations = [
 	[2551.75,1455.78,0.00144196]
 ];
 _fire = _fireLocations call bis_fnc_selectRandom;
-[_fire] spawn server_fnc_fireStart;
-[] spawn server_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku
+[_fire] spawn StanLakesideServer_fnc_fireStart;
+[] spawn StanLakesideServer_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku
 
 _dateHour = date select 3;
 if (6 < _dateHour && _dateHour< 18) then {
@@ -87,4 +87,4 @@ _list = (allMissionObjects "WeaponHolder") +
 }
 forEach _list;
 */
-diag_log "server_fnc_cleanup";
+diag_log "StanLakesideServer_fnc_cleanup";

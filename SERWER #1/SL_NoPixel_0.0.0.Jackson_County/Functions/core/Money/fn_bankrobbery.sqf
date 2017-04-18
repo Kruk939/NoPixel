@@ -4,17 +4,17 @@ if(bankrobber != 1) exitwith { hint "W toku, lub niedawno obrabowane"; };
 	_bank = nearestObject [player, "Land_CommonwealthBank"];
 	uiSleep 30;
 	playSound3D ["kif_client\sounds\bankAlarm.ogg", _bank, false, getPosASL _bank, 2, 1, 150]; 
-	[player] remoteExec ["server_fnc_robberyCallBank",2];
+	[player] remoteExec ["StanLakesideServer_fnc_robberyCallBank",2];
 };
 _thebankcontainer = cursortarget;
 theDrill = "itemsvaultdrill1" createvehicle getpos player;
 theDrill attachTo [_thebankcontainer, [0, -0.9, 0] ];
 player removeitem "NP_drillitem";
 
-[player, theDrill, "bankDrill"] spawn client_fnc_createEvidence;
-[player, _theBankContainer, "vaultBreach"] spawn client_fnc_createEvidence;
+[player, theDrill, "bankDrill"] spawn StanLakeside_fnc_createEvidence;
+[player, _theBankContainer, "vaultBreach"] spawn StanLakeside_fnc_createEvidence;
 
-	["Remove","Karma",100] call client_fnc_sustain;
+	["Remove","Karma",100] call StanLakeside_fnc_sustain;
 
 
 bankrobber = 3;

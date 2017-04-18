@@ -22,12 +22,12 @@ _information = _ct getVariable "information";
 		};
 
 
-	[getPlayerUID player, "usedgarage", current_cars] remoteExec ["Server_fnc_setVariable",2];
-	[_fuel,_damage,_license] remoteExec ["server_fnc_updateFuelDamage", 2];
+	[getPlayerUID player, "usedgarage", current_cars] remoteExec ["StanLakesideServer_fnc_setVariable",2];
+	[_fuel,_damage,_license] remoteExec ["StanLakesideServer_fnc_updateFuelDamage", 2];
 	uiSleep 0.5;
 	
 };
 _className = typeOf _ct;
 deleteVehicle _ct;
 _vehicleName = getText(configFile >> "CfgVehicles" >> _className >> "displayName");
-[player,3,format ["%1 schował pojazd %2", name player, _vehicleName],"",_className,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
+[player,3,format ["%1 schował pojazd %2", name player, _vehicleName],"",_className,_vehicleName] remoteExec ["StanLakesideServer_fnc_vehicleLog", 2];

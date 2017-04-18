@@ -2,7 +2,7 @@
 _player = _this select 0; 
 ["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player]; 
 _uid = getPlayerUID _player; 
-[_player,objNull,22,format ["%1 otworzył skrzynkę w sklepie", name _player],""] call server_fnc_actionLog;
+[_player,objNull,22,format ["%1 otworzył skrzynkę w sklepie", name _player],""] call StanLakesideServer_fnc_actionLog;
  
 diag_log ["store %1", _uid]; 
  
@@ -141,7 +141,7 @@ _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 ["Synchronizacja skrzynki zakończona", false] remoteExec ["domsg",_player];
 deleteVehicle _holder;  
  
-[_shopcontent,"start"] remoteExec ["client_fnc_updatePrices",_player]; 
+[_shopcontent,"start"] remoteExec ["StanLakeside_fnc_updatePrices",_player]; 
  
  
 if(getmarkerpos format["%1",_uid] isEqualTo [0,0,0]) then { deletemarker format["%1",_uid]; }; 

@@ -11,11 +11,11 @@ if(_type == "News") exitwith {
 		_players pushback _player;
 		_player2 = currentNewsMan call BIS_fnc_selectRandom;
 		if(_player2 != _player) then { _players pushback _player2; };
-		[_position,_input] remoteExec ["client_fnc_startNews",_players];
+		[_position,_input] remoteExec ["StanLakeside_fnc_startNews",_players];
 	};
 };
  
 if(_type == "Tow") exitwith {
 	_player = currentTowTruckDrivers call BIS_fnc_selectRandom;
-	[_position,_input] remoteExec ["client_fnc_startTowTruck",_player]; 
+	[_position,_input] remoteExec ["StanLakeside_fnc_startTowTruck",_player]; 
 };

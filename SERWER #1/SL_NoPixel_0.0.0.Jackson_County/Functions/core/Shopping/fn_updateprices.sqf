@@ -1,10 +1,10 @@
 //this is where we create a dialog to update prices.
-// [_shopcontent] remoteExec ["client_fnc_updatePrices",_player];
+// [_shopcontent] remoteExec ["StanLakeside_fnc_updatePrices",_player];
 
 private ["_n","_shopcontent","_shop","_loop","_currentShop"];
 disableSerialization;
 
-[player, getUnitLoadout player] remoteExec ["server_fnc_steppedsync",2]; 
+[player, getUnitLoadout player] remoteExec ["StanLakesideServer_fnc_steppedsync",2]; 
 
 lastforcesync = time;
 
@@ -19,14 +19,14 @@ if(_toDo == "nameUpdate") exitwith {
 	_newName = ctrlText 8331;
 	hint format ["Nowa nazwa: %1",_newName];
 	player setvariable ["shop",player,false];
-	[player,_newName] remoteExec ["server_fnc_StoreUpdateName",2];
+	[player,_newName] remoteExec ["StanLakesideServer_fnc_StoreUpdateName",2];
 	deleteMarkerLocal "SklepZamknięty";
 	sklepotw = 1;
 };
 if(_toDo == "finishUpdate") exitwith {
 	if ((closetime + 180) > time) exitwith {hint "Musisz odczekac 3 minuty.";};
 	hint "Zmiany zostały zachowane w bazie danych, gracze będą teraz widzieć nowe ceny.";
-	[player,shopcontent] remoteExec ["server_fnc_finishStoreUpdate",2];
+	[player,shopcontent] remoteExec ["StanLakesideServer_fnc_finishStoreUpdate",2];
 };
 
 if(_toDo == "start") then {
@@ -70,7 +70,7 @@ while{_currentShop < 4} do {
 	_loop = count (shopcontent select _currentShop select 0);
 	while { _n != _loop } do {
 		_class = ((shopcontent select _currentShop) select 0) select _n;
-		_item = [_class] call client_fnc_fetchItemType;
+		_item = [_class] call StanLakeside_fnc_fetchItemType;
 
 		_list lbAdd format["%1 | Ilosc: %2 | Cena: $%3", _item select 1, ((shopcontent select _currentShop) select 1) select _n, ((shopcontent select _currentShop) select 2) select _n];
 		_list lbSetdata [ (lbSize _list)-1 , str([_currentShop,_n]) ];

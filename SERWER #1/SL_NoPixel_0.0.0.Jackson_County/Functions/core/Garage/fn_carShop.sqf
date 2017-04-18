@@ -169,7 +169,7 @@ if(_whatdo == "NEW") then {
 	{
 		_class = _x select 0;
 		_cost = _x select 1;
-		_vehicleName = [(_x select 0)] call Client_fnc_getVehicleName;
+		_vehicleName = [(_x select 0)] call StanLakeside_fnc_getVehicleName;
 
 		_addedprice = (_cost / 100) * taxRate;
 		_addedprice = round (_addedprice);

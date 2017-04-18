@@ -41,7 +41,7 @@ class RscTitles {
 
 class CfgFunctions 
 {
-	class Client
+	class StanLakeside
 	{
 		class Phone
 		{

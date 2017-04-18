@@ -19,7 +19,7 @@ if(_price <= 0) exitWith {}; //za mala cena
 if(count _carsInShop isEqualTo 0) exitWith {}; //Cos poszlo nie tak
 if(isNull _veh) exitWith {}; //Brak pojazdu
 if(_cash < _price) exitWith { ["Nie masz wystarczającej ilosci pieniędzy.", false] spawn domsg; }; //Nie masz pieniedzy
-[_price] call Client_fnc_sl_removeCash_secure;
+[_price] call StanLakeside_fnc_sl_removeCash_secure;
 
 {
 	if(_veh isEqualTo (_x select 2)) exitWith {
@@ -30,5 +30,5 @@ if(_cash < _price) exitWith { ["Nie masz wystarczającej ilosci pieniędzy.", fa
 _shop setVariable ["CarsToBuy", _carsInShop, true];
 
 
-[_price, _veh, player] remoteExec ["Server_fnc_vehBuy",2];
+[_price, _veh, player] remoteExec ["StanLakesideServer_fnc_vehBuy",2];
 ["Pojazd zostanie dostarczony do Twojego garażu.", false] spawn domsg;

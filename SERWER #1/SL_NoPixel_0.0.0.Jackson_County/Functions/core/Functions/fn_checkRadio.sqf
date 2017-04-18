@@ -8,8 +8,8 @@ while {true} do {
 
 				if(count _radios > 0) then {
 					if(!([(call TFAR_fnc_activeSwRadio),"cg_tabletd"] call TFAR_fnc_isSameRadio)) then {
-						[] call client_fnc_checkPhone;
-						[] call client_fnc_resetCallSpawn;
+						[] call StanLakeside_fnc_checkPhone;
+						[] call StanLakeside_fnc_resetCallSpawn;
 						hint "Twoje radio zostalo zastapione telefonem";
 					};
 				};

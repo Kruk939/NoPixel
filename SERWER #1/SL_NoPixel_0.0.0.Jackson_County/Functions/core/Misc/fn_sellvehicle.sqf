@@ -1,4 +1,4 @@
 params["_vehicle"];
 
-[_vehicle,player] remoteexec ["server_fnc_getVehInfo",2];
+[_vehicle,player] remoteexec ["StanLakesideServer_fnc_getVehInfo",2];
 
