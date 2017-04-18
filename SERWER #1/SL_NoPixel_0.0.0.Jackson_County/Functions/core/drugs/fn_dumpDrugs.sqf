@@ -33,7 +33,7 @@ if(myjob == "Mafia" && _mafia >= 4) then { _cashout = _cashout * 2.25 };
 //hint format["Zarobiłeś $%1.",_cashout];
 
 
-
+[player, getunitloadout player, getPlayerUID player] remoteExec ["Server_fnc_invSave", 2];
 if(myJob != "Mafia") exitwith {};
 [1,_total,player,getpos player] remoteExec ["server_fnc_drugJob",2];
 

@@ -27,6 +27,7 @@ if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) 
 	};
 } forEach attachedObjects vehspawned;
 hint "Drewno przerobione.";  
+[player,objNull,30,format ["%1 przerobił drewno. Ilość drewna przerobionego: %2",name player, totalLogs],totalLogs] remoteExec ["server_fnc_actionLog", 2];
 totalLogs = 0;
 
 globalProtection = 0;

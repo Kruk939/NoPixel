@@ -51,7 +51,7 @@ cutText ["", "BLACK"];
 
 player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened;}];
 player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
-player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
+//player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
 
 [Client_fnc_HudEffects, 3] execFSM "call.fsm";
 [Client_fnc_Survival, 300] execFSM "call.fsm";

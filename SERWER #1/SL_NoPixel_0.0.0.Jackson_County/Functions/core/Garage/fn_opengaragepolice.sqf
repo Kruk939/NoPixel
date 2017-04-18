@@ -36,6 +36,15 @@ if(myJob == "Cop") then {
 			"sl_impala_um_blue",
 			"sl_impala_um_red",
 			"sl_f150_so",
+			"sl_cvpi_241",
+			"sl_cvpi_242",
+			"sl_cvpi_243",
+			"sl_cvpi_244",
+			"sl_suburban_251",
+			"sl_suburban_250",
+			"sl_taurus_232",
+			"sl_taurus_233",
+			"sl_taurus_231",
 			"sl_fpiu_so",
 			"sl_fpiu_227",
 			"sl_charger_220",
@@ -51,10 +60,13 @@ if(myJob == "Cop") then {
 			"kif_tahoeuc_police",
 			"kif_mustang_police",
 			"kif_mustang_sheriff",
+			"sl_charger_sert",
+			"SL_Command_Unit",
 			"kif_taurus_police",
 			"red_cvpi_06_p_trooper",
 			"red_explorer_16_p_statetrooper",
 			"red_f350_08_p_statetrooper",
+			"sl_f150_statetrooper",
 			"kif_tahoe_statetrooper",
 			"fpiu_01",
 			"red_explorer_16_p_fto",
@@ -66,6 +78,7 @@ if(myJob == "Cop") then {
 			"kif_charger12_swat",
 			"kif_mustang_swat",
 			"cg_suburban_sert_pol",
+			"Abruzzi_LencoPD_01",
 			//"Abruzzi_LencoPD_01",
 			//"kif_taurus_sheriff",
 			//"kif_kawasaki_police",
@@ -95,6 +108,8 @@ if(myJob == "Cop") then {
 			if (client_dtu_actions >= 1) then {
 			_garageMore = [
 			
+                //UC
+                
 				"kif_m3_unmarked_bb",
 				"kif_m3_unmarked_mbb",
 				"kif_m3_unmarked_br",
@@ -125,7 +140,7 @@ if(myJob == "Cop") then {
 				"kif_rs4_unmarked_blb",
 				"kif_rs4_unmarked_mblb",
 				
-				/*"kif_evox_unmarked_bb",
+				"kif_evox_unmarked_bb",
 				"kif_evox_unmarked_mbb",
 				"kif_evox_unmarked_br",
 				"kif_evox_unmarked_rb",
@@ -133,10 +148,34 @@ if(myJob == "Cop") then {
 				"kif_evox_unmarked_gb",
 				"kif_evox_unmarked_mgb",
 				"kif_evox_unmarked_blb",
-				"kif_evox_unmarked_mblb"*/
+				"kif_evox_unmarked_mblb",
 				
-				"kif_rev_unmarked_bb"
-				
+				"kif_rev_unmarked_bb",
+                
+                //CIV
+                "ivory_e36_unmarked_bb_civ",
+                "ivory_e92_unmarked_bb_civ",
+                "ivory_isf_unmarked_bb_civ",
+                "ivory_wrx_unmarked_bb_civ",
+                "ivory_evox_unmarked_bb_civ",
+                "ivory_rs4_unmarked_bb_civ",
+                "ivory_gti_unmarked_bb_civ",
+                "ivory_c_unmarked_bb_civ",
+                "ivory_gt500_unmarked_bb_civ",
+                "ivory_190e_unmarked_bb_civ",
+                "ivory_lfa_unmarked_bb_civ",
+                "ivory_r34_unmarked_bb_civ",
+                "ivory_911_unmarked_bb_civ",
+                "ivory_lp560_unmarked_bb_civ",
+                "ivory_rev_unmarked_bb_civ",
+                "ivory_supra_unmarked_bb_civ",
+                "ivory_supra_topsecret_unmarked_bb_civ",
+                "ivory_f1_unmarked_bb_civ",
+                "ivory_elise_unmarked_bb_civ",
+                "ivory_ccx_unmarked_bb_civ",
+                "ivory_veyron_unmarked_bb_civ",
+                "ivory_mp4_unmarked_bb_civ",
+                "ivory_r8_spyder_unmarked_bb_civ"
 			];
 			_garage = _garage + _garageMore;
 			};

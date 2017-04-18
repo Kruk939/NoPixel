@@ -64,7 +64,13 @@ switch (_type) do {
     case 22: {_type = "SkrzynkaSklep";};
     case 23: {_type = "PrzeszukanieDomu";};
     case 24: {_type = "PrzeszukanieSklepu";};
-    //case 25: {_type = "";};
+    case 25: {_type = "PosadzilMaryche";};
+    case 26: {_type = "ScialMaryche";};
+    case 27: {_type = "PostawilStolMethy";};
+    case 28: {_type = "ZakonczylGotowacMethe";};
+    case 29: {_type = "ZapakowalDrewnoNaPojazd";};
+    case 30: {_type = "PrzerobilDrewno";};
+    //case 31: {_type = "";};
 };
 
 

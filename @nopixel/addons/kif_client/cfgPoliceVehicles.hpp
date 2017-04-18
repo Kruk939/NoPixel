@@ -379,3 +379,96 @@ class ivory_evox_base;
 	{
 		displayName = "Mitsubishi Lancer Evo X Unmarked Unmarked Blue Black Metalic";
 	};
+
+class ivory_e36_2;
+    class ivory_e36_unmarked_bb_civ : ivory_e36_2
+    {};
+
+class ivory_m3_2;
+    class ivory_e92_unmarked_bb_civ : ivory_m3_2
+    {};
+
+class ivory_isf_2;
+    class ivory_isf_unmarked_bb_civ : ivory_isf_2
+    {};
+
+class ivory_wrx_2;
+    class ivory_wrx_unmarked_bb_civ : ivory_wrx_2
+    {};
+
+class ivory_evox_2;
+    class ivory_evox_unmarked_bb_civ : ivory_evox_2
+    {};
+
+class ivory_rs4_2;
+    class ivory_rs4_unmarked_bb_civ : ivory_rs4_2
+    {};
+
+class ivory_gti_2;
+    class ivory_gti_unmarked_bb_civ : ivory_gti_2
+    {};
+
+class ivory_c_2;
+    class ivory_c_unmarked_bb_civ : ivory_c_2
+    {};
+
+class ivory_gt500_2;
+    class ivory_gt500_unmarked_bb_civ : ivory_gt500_2
+    {};
+
+class ivory_190e_2;
+    class ivory_190e_unmarked_bb_civ : ivory_190e_2
+    {};
+
+class ivory_lfa_2;
+    class ivory_lfa_unmarked_bb_civ : ivory_lfa_2
+    {};
+
+class ivory_r34_2;
+    class ivory_r34_unmarked_bb_civ : ivory_r34_2
+    {};
+
+class ivory_911_2;
+    class ivory_911_unmarked_bb_civ : ivory_911_2
+    {};
+
+class ivory_lp560_2;
+    class ivory_lp560_unmarked_bb_civ : ivory_lp560_2
+    {};
+
+class ivory_rev_2;
+    class ivory_rev_unmarked_bb_civ : ivory_rev_2
+    {};
+
+class ivory_supra_2;
+    class ivory_supra_unmarked_bb_civ : ivory_supra_2
+    {};
+
+class ivory_supra_topsecret_2;
+    class ivory_supra_topsecret_unmarked_bb_civ : ivory_supra_topsecret_2
+    {};
+
+class ivory_f1_2;
+    class ivory_f1_unmarked_bb_civ : ivory_f1_2
+    {};
+
+class ivory_elise_2;
+    class ivory_elise_unmarked_bb_civ : ivory_elise_2
+    {};
+
+class ivory_ccx_2;
+    class ivory_ccx_unmarked_bb_civ : ivory_ccx_2
+    {};
+
+class ivory_veyron_2;
+    class ivory_veyron_unmarked_bb_civ : ivory_veyron_2
+    {};
+
+class ivory_mp4_2;
+    class ivory_mp4_unmarked_bb_civ : ivory_mp4_2
+    {};
+
+class ivory_r8_spyder_2;
+    class ivory_r8_spyder_unmarked_bb_civ : ivory_r8_spyder_2
+    {};
+
