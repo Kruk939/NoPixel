@@ -111,4 +111,5 @@ class cfgWeapons {
 	class HeadgearItem;
 	#include "\kif_client\cfgPoliceVests.hpp"
 	#include "\kif_client\cfgPoliceCaps.hpp"
+	#include "\kif_client\cfgItemsWeapons.hpp"
 };

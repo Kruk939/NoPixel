@@ -923,6 +923,12 @@ _availableItems = [
     ];
      _availableItems = _availableItems + _availableItemsTen;
     };
+	if (client_dtu_actions > 0 ) then {
+	_availableItemsDtu = [
+    "kif_gps"
+    ];
+     _availableItems = _availableItems + _availableItemsDtu;
+	};
 
 
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;

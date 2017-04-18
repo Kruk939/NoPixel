@@ -485,6 +485,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["myjob == ""Cop""", "client_dtu_actions > 0", "typeof CurrentCursorTarget == ""Land_PoliceStation"""],
+		["Skonfiskowane rzeczy", "[""dtu""] spawn client_fnc_retreiveCargo;",3]
+	],
+
+	[
 		["player distance myshop < 3"],
 		["Ceny", "[shopcontent,""start""] call client_fnc_updatePrices;",3]
 	],
@@ -641,13 +646,58 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") || (myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"") || (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") || myJob == ""Mafia"" && player distance myhouse < 40 "],
-		["Otwórz garaż pracownika", "[] spawn client_fnc_opengaragepolice;",3]
+		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
+		["Otwórz garaż policyjny", "[] spawn client_fnc_openGaragePolice;",3]
+	],
+
+	[
+		["client_dtu_actions > 0","myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
+		["Otwórz garaż DTU", "[] spawn client_fnc_openGarageDTU;",3]
+	],
+
+	[
+		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingshospital1"""],
+		["Otwórz garaż EMS", "[] spawn client_fnc_openGarageEMS;",3]
+	],
+
+	[
+		["myjob == ""Fire""", "typeof cursorobject == ""Land_buildingsfiredept1"""],
+		["Otwórz garaż F.D.", "[] spawn client_fnc_openGarageEMS;",3]
+	],
+
+	[
+		["myJob == ""Mafia""", "player distance myhouse < 40 "],
+		["Otwórz garaż Mafii", "[] spawn client_fnc_openGarageMafia;",3]
 	],
 
 	[ 
-		["count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["myjob != ""Cop""", "myjob != ""EMS""", "myjob != ""Fire""", "myjob != ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
 		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3] 
+	],
+
+	[ 
+		["client_dtu_actions > 0","myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż DTU", "[CurrentCursorTarget] call Client_fnc_openGarageDTU",3] 
+	],
+
+	[ 
+		["myjob == ""EMS""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż EMS", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3] 
+	],
+
+	[ 
+		["myjob == ""Fire""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż F.D.", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3] 
+	],
+
+	[ 
+		["myJob == ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż Mafii", "[CurrentCursorTarget] call Client_fnc_openGarageMafia",3] 
+	],
+	
+	[ 
+		["myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż policyjny", "[CurrentCursorTarget] call Client_fnc_openGaragePolice",3] 
 	],
 
 	[

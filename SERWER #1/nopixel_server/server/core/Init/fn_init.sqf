@@ -45,3 +45,5 @@ waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
 	uisleep 30;
 	["seagull"] remoteExec ["client_fnc_createvehicle",-2];
 };
+
+policeStorageActive = 0;

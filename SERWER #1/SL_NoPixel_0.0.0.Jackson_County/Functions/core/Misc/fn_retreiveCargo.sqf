@@ -24,6 +24,10 @@
 		[player] remoteExec ["server_fnc_retreiveStore",2];
 		_time = time + 30;
 	};
+	case "dtu": {
+		[player] remoteExec ["server_fnc_slpdRetreivePoliceStorage",2];
+		_time = time + 30;
+	};
  };
 waitUntil { time > _time };
 client_canSync = true;

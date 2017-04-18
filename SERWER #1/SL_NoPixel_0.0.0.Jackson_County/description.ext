@@ -330,7 +330,10 @@ class CfgFunctions
 			class racetimes {};
 			class lock {};
 			class openF1 {};
-			class opengaragepolice {};
+			class openGaragePolice {};
+			class openGarageEMS {};
+			class openGarageDTU {};
+			class openGarageMafia {};
 			class finishLicense {};
 			class processplates {};
 			class changeplates {};
