@@ -85,7 +85,10 @@ switch (_type) do {
     case 43: {_type = "AdminInteractionLv1";};
     case 44: {_type = "AdminInteractionLv2";};
     case 45: {_type = "AdminInteractionOff";};
-    //case 46: {_type = "";};
+    case 46: {_type = "300mUnrestrain";};
+    case 47: {_type = "Restrain";};
+    case 48: {_type = "Unrestrain";};
+    //case 49: {_type = "";};
 };
 
 
