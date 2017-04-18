@@ -331,8 +331,8 @@ _list lbSetdata [(lbSize _list)-1,str(28)];
 _list lbAdd format["%1", "Arsenal"];
 _list lbSetdata [(lbSize _list)-1,str(29)];
 
-_list lbAdd format["%1", "Debug Console"];
-_list lbSetdata [(lbSize _list)-1,str(30)];
+//_list lbAdd format["%1", "Debug Console"];
+//_list lbSetdata [(lbSize _list)-1,str(30)];
 
 _list lbAdd format["%1", "Add Food"];
 _list lbSetdata [(lbSize _list)-1,str(31)];
