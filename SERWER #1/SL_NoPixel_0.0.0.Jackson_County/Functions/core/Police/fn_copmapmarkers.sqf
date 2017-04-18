@@ -70,7 +70,7 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 } foreach vehicles;
 
 
-	while {visibleMap && "ItemGPS" in assignedItems player || visibleGPS} do
+	while {visibleMap|| visibleGPS} do
 	{
 		{
 			private["_marker","_unit"];
@@ -169,7 +169,7 @@ if(visibleMap && "kif_gps" in assignedItems player || visibleGPS) then {
 } foreach vehicles;
 
 
-	while {visibleMap && "kif_gps" in assignedItems player || visibleGPS} do
+	while {visibleMap || visibleGPS} do
 	{
 		{
 			private["_marker","_unit"];
