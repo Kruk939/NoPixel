@@ -14,7 +14,7 @@ if(count trackedby > 0) then {
 		playSound "cgphone_static";
 		_total = 1;
 		[format["Zaplaciles %1 dolarów ze rozmowę!",_total], false] spawn domsg;
-		[round(_total)] spawn client_fnc_removecash;
+		[round(_total)] spawn Client_fnc_sl_removeCash_secure;
 		sleep 140;
 	};
 };

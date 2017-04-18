@@ -2,7 +2,7 @@ disableserialization;
 private["_text"];
 
 
-_cashcheck = [2,2000] call client_fnc_checkmoney;
+_cashcheck = [2,2000] call Client_fnc_sl_checkMoney_secure;
 if!(_cashCheck) exitwith { hint "Nie masz pieniędzy!"; };
 
 
@@ -59,7 +59,7 @@ if (isNil "_string") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1]
 
 
 
-[2000] call Client_fnc_removebank;
+[2000] call Client_fnc_sl_removeBank_secure;
 
 [plateChange,_string,player] remoteexec ["server_fnc_platechange",2];
 

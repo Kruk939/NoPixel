@@ -1,6 +1,6 @@
 private ["_old", "_new"];
 params ["_amount"];
-_old = player getVariable "wallet";
+_old = player getVariable "sl_wallet_silverlake";
 _new = _old - _amount;
 if (_new < 0) then {
 	_return = false;

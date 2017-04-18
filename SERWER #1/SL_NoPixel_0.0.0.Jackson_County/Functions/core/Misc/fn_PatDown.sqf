@@ -116,7 +116,7 @@ _back = backpack player;
 	player addBackpackglobal _back;
 };
 
-_new = player getVariable "wallet";	
+_new = player getVariable "sl_wallet_silverlake";	
 
 [player, "wallet", _new] remoteExec ["Server_fnc_setVariable",2]; 
 

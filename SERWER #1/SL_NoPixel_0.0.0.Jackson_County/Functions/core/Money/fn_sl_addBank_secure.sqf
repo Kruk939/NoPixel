@@ -1,6 +1,6 @@
 private ["_old", "_new"];
 params ["_amount"];
-_old = player getVariable "atm";
+_old = player getVariable "sl_atm_silverlake";
 _new = _old + _amount;
 if(_new < 0) then { _new = 0; };
 

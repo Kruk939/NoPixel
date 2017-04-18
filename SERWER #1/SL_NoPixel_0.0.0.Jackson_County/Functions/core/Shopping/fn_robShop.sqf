@@ -36,7 +36,7 @@ _POPUP ctrlSetStructuredText parseText format["",_task,_timeLeft];
 
 if(_error == "") then {
 	_amount = round(random(500)) + 200;
-	[_amount] spawn client_fnc_addCash;
+	[_amount] spawn Client_fnc_sl_addCash_secure;
 	[format["Okradłeś sklep, zabrałeś $%1", _amount], false] call domsg;
 	["Remove","Karma",50] call client_fnc_sustain;
 	[player,objNull,19,format ["%1 okradł sklep na kwotę %2", name player, _amount],_amount] remoteExec ["server_fnc_actionLog", 2];

@@ -18,7 +18,7 @@ _cashout = 0;
 } forEach magazines player;
 
 
-[_cashout] call Client_fnc_addCash;
+[_cashout] call Client_fnc_sl_addCash_secure;
 
 
 [player,objNull,7,format ["%1 wyprał %2", name player, _cashout],_cashout] remoteExec ["server_fnc_moneyLog", 2];

@@ -19,7 +19,7 @@ if(_price <= 0) exitWith {}; //za mala cena
 if(count _carsInShop isEqualTo 0) exitWith {}; //Cos poszlo nie tak
 if(isNull _veh) exitWith {}; //Brak pojazdu
 if(_cash < _price) exitWith { ["Nie masz wystarczającej ilosci pieniędzy.", false] spawn domsg; }; //Nie masz pieniedzy
-[_price] call Client_fnc_removeCash;
+[_price] call Client_fnc_sl_removeCash_secure;
 
 {
 	if(_veh isEqualTo (_x select 2)) exitWith {

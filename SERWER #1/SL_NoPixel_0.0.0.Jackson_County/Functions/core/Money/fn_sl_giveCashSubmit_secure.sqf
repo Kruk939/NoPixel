@@ -6,13 +6,13 @@ closeDialog 0;
 if (_amount > 0) then 
 {	
 	if (_amount > 999999) exitWith {hint "Kwota nie może być większa niż 999 999$!";};
-	_enoughCash = [1, _amount] call Client_fnc_checkMoney;
+	_enoughCash = [1, _amount] call Client_fnc_sl_addCash_secure;
 	if (_enoughCash) then 
 	{
 	
-		[_amount] call Client_fnc_removeCash;
+		[_amount] call Client_fnc_sl_removeCash_secure;
 		//[_giver, getUnitLoadout _giver] call Server_fnc_statSave; 
-		[_amount] remoteexec ["Client_fnc_addCash", _target];
+		[_amount] remoteexec ["Client_fnc_sl_addCash_secure", _target];
 		//[_target, getUnitLoadout _target] call Server_fnc_statSave; 
 		_text = format ["%1 dal Ci %2 $", _giver, _amount];
 		[_text, false] remoteExec ["domsg",_target];

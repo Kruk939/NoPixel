@@ -1,8 +1,8 @@
 {
     _messages = [];
 
-    _cash = _x getVariable "wallet";
-    _bank = _x getVariable "atm";
+    _cash = _x getVariable "sl_wallet_silverlake";
+    _bank = _x getVariable "sl_atm_silverlake";
 
     _position = position _x;
 

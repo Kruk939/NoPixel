@@ -67,8 +67,8 @@ if (_booli) then {
 
 	_player setvariable ["getunitloadout",_items,false];
 
-	_player setVariable ["wallet", _cash, false];
-	_player setVariable ["atm", _bank, false];
+	_player setVariable ["sl_wallet_silverlake", _cash, false];
+	_player setVariable ["sl_atm_silverlake", _bank, false];
 	_player setVariable ["bankAccount", _bankAccount, false];
 	_player setVariable ["cop", _cop, false];
 	_player setVariable ["ems", _ems, false];

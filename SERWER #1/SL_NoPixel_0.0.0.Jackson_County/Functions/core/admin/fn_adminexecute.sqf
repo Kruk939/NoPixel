@@ -213,7 +213,7 @@ if(_statementsent == 27) then {
 };
 
 if(_statementsent == 28) then {
-	[1000] remoteExec ["client_fnc_addcash", _target];
+	[1000] remoteExec ["Client_fnc_sl_addCash_secure", _target];
 	[player,objNull,34,format ["%1 dodał sobie 1000$",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 

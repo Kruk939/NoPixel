@@ -7,6 +7,6 @@ if(isNil "theMayor") exitwith {};
  
 [_payment] remoteexec ["Client_fnc_addCashMayor",theMayor]; 
  
-_currentcash = theMayor getvariable "atm"; 
+_currentcash = theMayor getVariable "sl_atm_silverlake"; 
 _new = _currentcash + _payment; 
 theMayor setVariable ["atm", _new, false]; 
