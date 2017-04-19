@@ -38,7 +38,6 @@
 #include "kruk_slpd_computer.hpp"
 #include "kruk_slpd_ticket.hpp"
 
-
 #include "vehSetPrice.hpp"
 #include "vehicle_colors.hpp"
 

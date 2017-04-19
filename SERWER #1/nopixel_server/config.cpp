@@ -22,6 +22,13 @@ class CfgFunctions {
             class initStats {};
             class SetVariable {};
         };
+		class Company {
+			file = "NoPixel_Server\server\core\Company";
+            class company_garageUpdate {};
+            class company_garageInsert {};
+            class company_garageDelete {};
+            class company_garageGet {};
+		};
         class SLPD {
             file = "NoPixel_Server\server\core\SLPD";
 			class slpdComputerLoad {};

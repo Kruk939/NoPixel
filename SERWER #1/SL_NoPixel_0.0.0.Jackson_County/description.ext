@@ -105,7 +105,14 @@ class CfgFunctions
 			class mafiaDrugEvent {};
 			class finishDrugRun {};
 		};
-
+		
+		
+		class Company {
+			file = "Functions\core\Company";
+			class company_garageOpen {};
+		
+		};
+		
 		class JailBreak {
 			file = "Functions\core\JailBreak";
 			class workout {};

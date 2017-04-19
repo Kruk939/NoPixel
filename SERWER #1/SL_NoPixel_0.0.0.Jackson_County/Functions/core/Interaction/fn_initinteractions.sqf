@@ -644,6 +644,11 @@ NoPixel_InteractionMenuItems = [
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") || (myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"") || (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") || myJob == ""Mafia"" && player distance myhouse < 40 "],
 		["Otwórz garaż pracownika", "[] spawn client_fnc_opengaragepolice;",3]
 	],
+	
+	[
+		[" player distance myhouse < 40 "],
+		["Otwórz garaż pracownika(WIP)", "createDialog ""kruk_company_garage"";",3]
+	],
 
 	[ 
 		["count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
