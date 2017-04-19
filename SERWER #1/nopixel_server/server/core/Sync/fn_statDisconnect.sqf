@@ -6,8 +6,8 @@ _items = getUnitLoadout _player;
 _messages = [];
 
 deletemarker format["%1",_uid];
-_cash = _player getVariable "wallet";
-_bank = _player getVariable "atm";
+_cash = _player getVariable "sl_wallet_silverlake";
+_bank = _player getVariable "sl_atm_silverlake";
 
 _position = position _player;
 
@@ -22,10 +22,10 @@ if(_syncInfo == 0 || _player in currentCop || _player in currentEMS || _player i
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 }; 
 
-[_uid,"disconnected"] spawn Server_fnc_connected;
-[_player,2,format ["%1 rozłączył się z serwerem", name _player],_uid,""] call server_fnc_connectionLog;
+[_uid,"disconnected"] spawn StanLakesideServer_fnc_connected;
+[_player,2,format ["%1 rozłączył się z serwerem", name _player],_uid,""] call StanLakesideServer_fnc_connectionLog;
 
-[] spawn server_fnc_refreshjobs;
+[] spawn StanLakesideServer_fnc_refreshjobs;
 
 _playeroffice = _player getVariable "office";
 

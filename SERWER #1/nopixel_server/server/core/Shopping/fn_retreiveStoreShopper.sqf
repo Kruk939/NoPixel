@@ -19,6 +19,6 @@ if(_uid in activeshopcrates) exitwith { ["Ten sklep jest aktualizowany, poczekaj
  
 _shopcontent = _shopplayer getVariable "shopcontent"; 
  
-[_shopcontent,_shopplayer] remoteExec ["client_fnc_openShop",_unit]; 
+[_shopcontent,_shopplayer] remoteExec ["StanLakeside_fnc_openShop",_unit]; 
  
  

@@ -2,7 +2,7 @@
 class phonebg {
 	idd = 537;
 	name= "phoneBG";
-	onLoad = "[] spawn client_fnc_loadBG; [] spawn client_fnc_loadSkin; uiNamespace setVariable [""phonemenu"", _this select 0]; [""nobg""] spawn client_fnc_fadephone;";	
+	onLoad = "[] spawn StanLakeside_fnc_loadBG; [] spawn StanLakeside_fnc_loadSkin; uiNamespace setVariable [""phonemenu"", _this select 0]; [""nobg""] spawn StanLakeside_fnc_fadephone;";	
 	movingEnable = 0;
 	enableSimulation = 1;
 
@@ -57,7 +57,7 @@ class phonebg {
 			idc = 911;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn client_fnc_updateBG;";
+			onLBSelChanged = "[] spawn StanLakeside_fnc_updateBG;";
 			x = 0.35;
 			y = 0.175;
 			w = 0.301;
@@ -67,7 +67,7 @@ class phonebg {
 		class SaveSelected : client_RscButtonMenu {
 			idc = 1115;
 			text = "Save BG";
-			onButtonClick = "[] spawn client_fnc_saveBG;";
+			onButtonClick = "[] spawn StanLakeside_fnc_saveBG;";
 			x = 0.4;
 			y = 0.45;
 			w = 0.15;
@@ -80,7 +80,7 @@ class phonebg {
 			idc = 912;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn client_fnc_updateSkin;";
+			onLBSelChanged = "[] spawn StanLakeside_fnc_updateSkin;";
 			x = 0.35;
 			y = 0.5;
 			w = 0.301;
@@ -90,7 +90,7 @@ class phonebg {
 		class SaveSelectedSkin : client_RscButtonMenu {
 			idc = 1176;
 			text = "Save Skin";
-			onButtonClick = "[] spawn client_fnc_saveSkin;";
+			onButtonClick = "[] spawn StanLakeside_fnc_saveSkin;";
 			x = 0.4;
 			y = 0.74;
 			w = 0.15;

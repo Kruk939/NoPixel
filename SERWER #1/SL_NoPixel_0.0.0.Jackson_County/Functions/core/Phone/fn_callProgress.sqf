@@ -4,7 +4,7 @@ if(isNil "trackedby") then { trackedby = []; };
 
 if(count trackedby > 0) then {
 	if(str CurrentCursorTarget find "cabinatelefonica" == -1) then {
-		[mycallowner,player] remoteexec ["client_fnc_trackedcall",trackedby];
+		[mycallowner,player] remoteexec ["StanLakeside_fnc_trackedcall",trackedby];
 	};
 };
 
@@ -14,7 +14,7 @@ if(count trackedby > 0) then {
 		playSound "cgphone_static";
 		_total = 1;
 		[format["Zaplaciles %1 dolarów ze rozmowę!",_total], false] spawn domsg;
-		[round(_total)] spawn client_fnc_removecash;
+		[round(_total)] spawn StanLakeside_fnc_sl_removeCash_secure;
 		sleep 140;
 	};
 };
@@ -22,11 +22,11 @@ if(count trackedby > 0) then {
 [] spawn {
 	sleep 7;
 	while{callInProgress} do {
-		if( isNull myCallOwner ) exitwith { [] call client_fnc_resetcall; };
+		if( isNull myCallOwner ) exitwith { [] call StanLakeside_fnc_resetcall; };
 		_total = myCallOwner getVariable "PhonecallNumber";	
-		if( _total < 2 ) exitwith { [] call client_fnc_resetcall; };
-		if( deadPlayer && myCallOwner != player ) exitwith { ["Rozmowa zakonczona", false] spawn domsg; [] call client_fnc_hangup };	
-		if( client_battery < 5 ) exitwith { ["Rozmowa zakonczona (Niski poziom baterii)", false] spawn domsg; [] call client_fnc_hangup };	
+		if( _total < 2 ) exitwith { [] call StanLakeside_fnc_resetcall; };
+		if( deadPlayer && myCallOwner != player ) exitwith { ["Rozmowa zakonczona", false] spawn domsg; [] call StanLakeside_fnc_hangup };	
+		if( client_battery < 5 ) exitwith { ["Rozmowa zakonczona (Niski poziom baterii)", false] spawn domsg; [] call StanLakeside_fnc_hangup };	
 		sleep 5;
 	};
 };

@@ -33,7 +33,7 @@ if (myjob in ["Mafia"]) then {
 	hint "Pluskwa podlożona";
 
 	if (myjob == "cop") then {
-		[player,objnull,15,format ["%1 podłożył pluskwę", name player],""] remoteExec ["server_fnc_copLog", 2];
+		[player,objnull,15,format ["%1 podłożył pluskwę", name player],""] remoteExec ["StanLakesideServer_fnc_copLog", 2];
 	};
 
 } else {

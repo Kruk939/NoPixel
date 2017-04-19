@@ -41,7 +41,7 @@ class client_PhoneCallPP_Menu
 			idc = -1;
 			text = "Call";
 			colorBackground[] = {0,0.535294117647059,0.2725490196078431,0.7};
-			onButtonClick = "[1] spawn client_fnc_CallSomebody;";
+			onButtonClick = "[1] spawn StanLakeside_fnc_CallSomebody;";
 			x = 0.52;
 			y = 0.75;
 			w = 0.1;
@@ -56,7 +56,7 @@ class client_PhoneCall_Menu
 {    
 	idd = 5337;
 	name= "client_call";
-	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [""nobg""] spawn client_fnc_fadephone;";
+	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [""nobg""] spawn StanLakeside_fnc_fadephone;";
 	movingEnable = 0;
 	enableSimulation = 1;
 	fadein = 1;
@@ -103,7 +103,7 @@ class client_PhoneCall_Menu
 			idc = -1;
 			text = "Call";
 			colorBackground[] = {0,0.535294117647059,0.2725490196078431,0.7};
-			onButtonClick = "[0] spawn client_fnc_CallSomebody;";
+			onButtonClick = "[0] spawn StanLakeside_fnc_CallSomebody;";
 			x = 0.52;
 			y = 0.75;
 			w = 0.1;

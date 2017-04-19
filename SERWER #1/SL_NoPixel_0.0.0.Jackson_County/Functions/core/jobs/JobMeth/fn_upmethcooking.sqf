@@ -23,7 +23,7 @@ if(requiredOutput == _required) then {
 		"R_60mm_HE" createvehicle (getPosatl player); 
 		hint "Well, you messed up!"; 
 		cookingMeth = false;
-		[(getpos player)] remoteExec ["server_fnc_firestart",2];
+		[(getpos player)] remoteExec ["StanLakesideServer_fnc_firestart",2];
 		player removeaction myAction1;
 		player removeaction myAction2;
 		player removeaction myAction3;

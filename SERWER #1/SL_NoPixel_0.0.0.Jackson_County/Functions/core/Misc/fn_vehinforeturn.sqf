@@ -123,14 +123,14 @@ if(_owner IN _owedPlayers) then {
 	_amount = _amount - _value;
 	if(_amount < 0) then { _amount = 0; };
 
-	["set","MafiaMoney",_amount] remoteExec ["client_fnc_sustain",_owner];
+	["set","MafiaMoney",_amount] remoteExec ["StanLakeside_fnc_sustain",_owner];
 
 	//add funds to mafia bank
 
-	["Add",_value] remoteexec ["server_fnc_updateMafiaBank",2];
+	["Add",_value] remoteexec ["StanLakesideServer_fnc_updateMafiaBank",2];
 
 
-	[_licensePlate, _vehicle, nil, nil, nil, nil, nil, nil, nil, "Remove", _owner] remoteExec ["Server_fnc_garageUpdate",2];
+	[_licensePlate, _vehicle, nil, nil, nil, nil, nil, nil, nil, "Remove", _owner] remoteExec ["StanLakesideServer_fnc_garageUpdate",2];
 	
 	deletevehicle _object;
 	//delete from database

@@ -254,6 +254,31 @@ if(_condition == "clothing") then {
 
 		["CUP_U_I_GUE_Anorak_03",nil,100,3,1],
 		["CUP_U_I_GUE_Anorak_02",nil,100,3,1],
+        
+        ["EF_HM_B1",nil,100,3,1],
+        ["EF_HM_BL1",nil,100,3,1],
+        ["EF_HM_OD1",nil,100,3,1],
+        ["EF_HM_SG1",nil,100,3,1],
+        ["EF_HM_PP1",nil,100,3,1],
+        ["EF_HM_B2",nil,100,3,1],
+        ["EF_HM_BL2",nil,100,3,1],
+        ["EF_HM_OD2",nil,100,3,1],
+        ["EF_HM_SG2",nil,100,3,1],
+        ["EF_HM_PP2",nil,100,3,1],
+        ["EF_MKJKT",nil,100,3,1],
+        ["EF_MKJKT2",nil,100,3,1],
+        ["EF_HM_LPBPS",nil,100,3,1],
+        ["EF_HM_LPBP",nil,100,3,1],
+        ["EF_HM_LPBR",nil,100,3,1],
+        ["EF_HM_LPBW",nil,100,3,1],
+        ["EF_HM_LPB",nil,100,3,1],
+        ["EF_HM_LPBL",nil,100,3,1],
+        ["EF_HM_LPBPS2",nil,100,3,1],
+        ["EF_HM_LPBP2",nil,100,3,1],
+        ["EF_HM_LPBR2",nil,100,3,1],
+        ["EF_HM_LPBW2",nil,100,3,1],
+        ["EF_HM_LPB2",nil,100,3,1],
+        ["EF_HM_LPBL2",nil,100,3,1],
 
 		["TRYK_U_B_PCUGs_BLK_R",nil,100,3,1],
 		["TRYK_U_B_PCUGs_gry_R",nil,100,3,1],
@@ -276,6 +301,23 @@ if(_condition == "clothing") then {
 		["EF_suit_4",nil,100,3,1],
 		["EF_suit_5",nil,100,3,1],
 		["EF_suit_6",nil,100,3,1],
+        
+        ["EF_M_jkt2",nil,500,3,1],
+        ["EF_M_jkt22",nil,500,3,1],
+        ["EF_M_jkt1",nil,500,3,1],
+        ["EF_M_jkt2_2",nil,500,3,1],
+        ["EF_M_jkt2_22",nil,500,3,1],
+        ["EF_M_jkt1_2",nil,500,3,1],
+        ["EF_M_jkt2_3",nil,500,3,1],
+        ["EF_M_jkt2_32",nil,500,3,1],
+        ["EF_M_jkt1_3",nil,500,3,1],
+        ["EF_M_jkt32_2",nil,500,3,1],
+        ["EF_M_jkt32_2",nil,500,3,1],
+        ["EF_M_jkt2_4",nil,500,3,1],
+        ["EF_M_jkt32",nil,500,3,1],
+        ["EF_M_jkt4",nil,500,3,1],
+        
+        ["EF_MX1",nil,1000,3,1],
 
 		["CUP_U_C_Worker_01",nil,100,3,1],
 		["CUP_U_C_Worker_02",nil,100,3,1],
@@ -301,10 +343,6 @@ if(_condition == "clothing") then {
 		["vvv_ropa_comun_f_8",nil,200,3,1],
 		["vvv_ropa_comun_f_9",nil,200,3,1],
 		["vvv_ropa_comun_f_10",nil,200,3,1],
-
-
-
-
 
 		["KAEL_SUITS_BR_F14",nil,200,3,1],
 		["KAEL_SUITS_BR_F12",nil,200,3,1],
@@ -482,7 +520,86 @@ if(_condition == "clothing") then {
 		["EF_FEM_5",nil,100,3,1],
 		["EF_FEM_6",nil,100,3,1],
 		["EF_FEM_3_42",nil,100,3,1],
-
+        
+        ["EF_FEM_3_3B",nil,100,3,1],
+        ["EF_FEM_3_3BL",nil,100,3,1],
+        ["EF_FEM_3_3OD",nil,100,3,1],
+        ["EF_FEM_3_3SG",nil,100,3,1],
+        ["EF_FEM_3_3PP",nil,100,3,1],
+        ["EF_FEM_3_3B2",nil,100,3,1],
+        ["EF_FEM_3_3BL2",nil,100,3,1],
+        ["EF_FEM_3_3OD2",nil,100,3,1],
+        ["EF_FEM_3_3SG2",nil,100,3,1],
+        ["EF_FEM_3_3PP2",nil,100,3,1],
+        ["EF_FEM_3A",nil,100,3,1],
+        ["EF_FEM_3A_2",nil,100,3,1],
+        ["EF_FEM_3A2_2",nil,100,3,1],
+        ["EF_FEM_3_3LPB2",nil,100,3,1],
+        ["EF_FEM_3_3LPBL2",nil,100,3,1],
+        ["EF_FEM_3_75",nil,100,3,1],
+        ["EF_FEM_3_75R",nil,100,3,1],
+        ["EF_FEM_3_76",nil,100,3,1],
+        ["EF_FEM_3_76R",nil,100,3,1],
+        ["EF_FEM_3_4",nil,100,3,1],
+        ["EF_FEM_3_73",nil,100,3,1],
+        ["EF_FEM_3_73R",nil,100,3,1],
+        ["EF_FEM_3_74",nil,100,3,1],
+        ["EF_FEM_3_74R",nil,100,3,1],
+        ["EF_FEM_3_7",nil,100,3,1],
+        ["EF_FEM_3_7R",nil,100,3,1],
+        ["EF_FEM_3_72",nil,100,3,1],
+        ["EF_FEM_3_72R",nil,100,3,1],
+        ["EF_FEM_3_5B",nil,100,3,1],
+        ["EF_FEM_3_5BP",nil,100,3,1],
+        ["EF_FEM_3_5VP",nil,100,3,1],
+        ["EF_FEM_3_5RC",nil,100,3,1],
+        ["EF_FEM_3_5W",nil,100,3,1],
+        ["EF_FEM_3_52",nil,100,3,1],
+        ["EF_FEM_3_52VP",nil,100,3,1],
+        ["EF_FEM_3_52RC",nil,100,3,1],
+        ["EF_FEM_3_52W",nil,100,3,1],
+        ["EF_FEM_4_2B",nil,100,3,1],
+        ["EF_FEM_4_2BL",nil,100,3,1],
+        ["EF_FEM_4_2OD",nil,100,3,1],
+        ["EF_FEM_4_2SG",nil,100,3,1],
+        ["EF_FEM_4_2PP",nil,100,3,1],
+        ["EF_FEM_4_2B2",nil,100,3,1],
+        ["EF_FEM_4_2BL2",nil,100,3,1],
+        ["EF_FEM_4_2OD2",nil,100,3,1],
+        ["EF_FEM_4_2SG2",nil,100,3,1],
+        ["EF_FEM_4_2PP2",nil,100,3,1],
+        ["EF_FEM_4A",nil,100,3,1],
+        ["EF_FEM_4A_2",nil,100,3,1],
+        ["EF_FEM_4A2",nil,100,3,1],
+        ["EF_FEM_4A2_2",nil,100,3,1],
+        ["EF_FEM_4_2LPBL",nil,100,3,1],
+        ["EF_FEM_4_2LPBR2",nil,100,3,1],
+        ["EF_FEM_4_2LPBW2",nil,100,3,1],
+        ["EF_FEM_4_2LPB2",nil,100,3,1],
+        ["EF_FEM_4_2LPBL2",nil,100,3,1],
+        ["EF_FEM_4_75",nil,100,3,1],
+        ["EF_FEM_4_75R",nil,100,3,1],
+        ["EF_FEM_4_76",nil,100,3,1],
+        ["EF_FEM_4_76R",nil,100,3,1],
+        ["EF_FEM_4_73",nil,100,3,1],
+        ["EF_FEM_4_73R",nil,100,3,1],
+        ["EF_FEM_4_74",nil,100,3,1],
+        ["EF_FEM_4_74R",nil,100,3,1],
+        ["EF_FEM_4_7",nil,100,3,1],
+        ["EF_FEM_4_7R",nil,100,3,1],
+        ["EF_FEM_4_72",nil,100,3,1],
+        ["EF_FEM_4_72R",nil,100,3,1],
+        ["EF_FEM_4_4B",nil,100,3,1],
+        ["EF_FEM_4_4BP",nil,100,3,1],
+        ["EF_FEM_4_4VP",nil,100,3,1],
+        ["EF_FEM_4_4RC",nil,100,3,1],
+        ["EF_FEM_4_42",nil,100,3,1],
+        ["EF_FEM_4_42BP",nil,100,3,1],
+        ["EF_FEM_4_42VP",nil,100,3,1],
+        ["EF_FEM_4_42RC",nil,100,3,1],
+        ["EF_FEM_4_42W",nil,100,3,1],
+        ["EF_FEM_62",nil,100,3,1],
+        
 		["I_FEM_AAF_long",nil,150,3,1],
 		["O_FEM_CSAT_Long",nil,150,3,1],
 		["B_FEM_NATO_long",nil,150,3,1],
@@ -1145,7 +1262,7 @@ lbClear _list;
 {
 
 	_class = _x select 0;
-	_item = [_class] call client_fnc_fetchItemType;
+	_item = [_class] call StanLakeside_fnc_fetchItemType;
 	_price = _x select 2;
 	_type = _x select 3;
 	_classtype = _x select 4;
@@ -1174,7 +1291,7 @@ lbClear _list;
 			_price = _addedprice + _price;
 			_magazines = getArray (configFile / "CfgWeapons" / _class / "magazines");
 			_magazine = _magazines select 0;
-			_item = [_magazine] call client_fnc_fetchItemType;
+			_item = [_magazine] call StanLakeside_fnc_fetchItemType;
 			_list lbAdd format["$%2 (Tax %%3): %1",_item select 1, _magPrice,taxRate];
 			_list lbSetdata [(lbSize _list)-1, str([_magazine,_item select 1, _magPrice,2,0,_addedprice])];
 			_list lbSetPicture [(lbSize _list)-1,_item select 2];

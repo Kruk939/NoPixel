@@ -35,4 +35,4 @@ _query = format ["getSLPDplayerInfo_uid:%1", _uid];
 _playerInfo = [_query,2] call ExternalS_fnc_ExtDBasync;
 
 
-[_activeCases, _prevCases, _tickets, _vehicles, _playerInfo] remoteExec ["client_fnc_slpd_load_personalData", _player];
+[_activeCases, _prevCases, _tickets, _vehicles, _playerInfo] remoteExec ["StanLakeside_fnc_slpd_load_personalData", _player];

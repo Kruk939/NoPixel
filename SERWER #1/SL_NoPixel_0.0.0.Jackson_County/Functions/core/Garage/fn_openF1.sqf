@@ -27,7 +27,7 @@ _f1Cars = [
 
 
 {
-	_vehicleName = [_x] call Client_fnc_getVehicleName;
+	_vehicleName = [_x] call StanLakeside_fnc_getVehicleName;
 	_veh = lbAdd [1500, format["%1",_vehicleName] ];
 	lbSetData [1500, _veh, Str(_x)];
 

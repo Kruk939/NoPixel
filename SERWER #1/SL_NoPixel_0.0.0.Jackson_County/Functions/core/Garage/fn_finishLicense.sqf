@@ -10,7 +10,7 @@ _garage = _this select 0;
 }foreach _garage;
 
 player setvariable ["garage",_garage,false];
-[2000] call Client_fnc_removeBank;
+[2000] call StanLakeside_fnc_sl_removeBank_secure;
 
 
 //3049t098jt43

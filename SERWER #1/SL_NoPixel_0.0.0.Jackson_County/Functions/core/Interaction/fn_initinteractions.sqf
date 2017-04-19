@@ -21,59 +21,64 @@ NoPixel_InteractionMenuItems = [
 
 	[ 
 		[" typeof cursortarget == ""plp_ct_HighSecMediumBlack"" "], 
-		["Zabezpiecz pieniądze", " ['Zabezpieczanie pieniędzy',300,client_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5] 
+		["Zabezpiecz pieniądze", " ['Zabezpieczanie pieniędzy',300,StanLakeside_fnc_securefunds,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn StanLakeside_fnc_dotask ",5] 
 	],
 
 	[ 
 		[" bankrobber == 4 "], 
-		["Zbierz pieniądze", " ['Pakuję pieniądze',180,client_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5] 
+		["Zbierz pieniądze", " ['Pakuję pieniądze',180,StanLakeside_fnc_takecash,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn StanLakeside_fnc_dotask ",5] 
 	],
 
 	[ 
 		[" bankrobber == 2 "], 
-		["Napraw wiertło", " ['Repairing Drill',120,client_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",5] 
+		["Napraw wiertło", " ['Repairing Drill',120,StanLakeside_fnc_repairdrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn StanLakeside_fnc_dotask ",5] 
 	],
 
 
 	[ 
 		[" ((lastforcesync + 300) < time) && client_canSync "], 
-		["Sync Data (5min CD)", " [] spawn client_fnc_syncData; ",5] 
+		["Sync Data (5min CD)", " [] spawn StanLakeside_fnc_syncData; ",5] 
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Sync Data", " [] spawn client_fnc_syncData; ",5] 
+		["Sync Data", " [] spawn StanLakeside_fnc_syncData; ",5] 
 	],
 
 	[ 
 		["  "], 
-		["Daj klucze", " [] spawn client_fnc_findplayerskeys; ",5] 
+		["Daj klucze", " [] spawn StanLakeside_fnc_findplayerskeys; ",5] 
 	],
 	
 	[
+<<<<<<< HEAD
 		["(licensearray select 0) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""] && player getVariable[""veh_points"",0] < 15"],
 		["Prawo jazdy 500$", "_cashcheck = [1,500] call client_fnc_checkmoney; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",1] call client_fnc_sustain; [500] call Client_fnc_removecash; ",1]
+=======
+		["(licensearray select 0) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""]"],
+		["Prawo jazdy 500$", "_cashcheck = [1,500] call StanLakeside_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",1] call StanLakeside_fnc_sustain; [500] call StanLakeside_fnc_sl_removeCash_secure; ",1]
+>>>>>>> refs/remotes/origin/master
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Land_buildingGunStore1"" && (licensearray select 1) == 0"],
-		["Licencja Broń 2500$", "_cashcheck = [1,2500] call client_fnc_checkmoney; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",2] call client_fnc_sustain; [2500] call Client_fnc_removecash; ",1]
+		["Licencja Broń 2500$", "_cashcheck = [1,2500] call StanLakeside_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",2] call StanLakeside_fnc_sustain; [2500] call StanLakeside_fnc_sl_removeCash_secure; ",1]
 	],
 
 	
 	[
 		["(licensearray select 2) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Licencja Górnika 700$", "_cashcheck = [1,700] call client_fnc_checkmoney; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",3] call client_fnc_sustain; [700] call Client_fnc_removecash; ",1]
+		["Licencja Górnika 700$", "_cashcheck = [1,700] call StanLakeside_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",3] call StanLakeside_fnc_sustain; [700] call StanLakeside_fnc_sl_removeCash_secure; ",1]
 	],
 
 	[
 		["(licensearray select 3) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Licencja Drwala", "[""Add"",""license"",4] call client_fnc_sustain;",1]
+		["Licencja Drwala", "[""Add"",""license"",4] call StanLakeside_fnc_sustain;",1]
 	],
 
 	[
 		["(licensearray select 4) == 0 && typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Licencja Rybaka 400$", "_cashcheck = [1,400] call client_fnc_checkmoney; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",5] call client_fnc_sustain; [400] call Client_fnc_removecash; ",1]
+		["Licencja Rybaka 400$", "_cashcheck = [1,400] call StanLakeside_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",5] call StanLakeside_fnc_sustain; [400] call StanLakeside_fnc_sl_removeCash_secure; ",1]
 	],
 
 	[
@@ -88,100 +93,100 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" player distance [3370.36,1436.92,0.00147247] < 225 && !paintballing"],
-		["Start Paintball", " [player] remoteexec [""server_fnc_paintball"",2]; ",1]
+		["Start Paintball", " [player] remoteexec [""StanLakesideServer_fnc_paintball"",2]; ",1]
 	],
 
 	[
 		[" myJob != ""cop""", " myJob == ""Mafia"" && currentcursortarget == missionVehicle && !isNull missionVehicle && player distance endOfmission < 25"],
-		["Sprzedawanie narkotyków", " ['Sprzedawanie',60,client_fnc_finishDrugRun,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
+		["Sprzedawanie narkotyków", " ['Sprzedawanie',60,StanLakeside_fnc_finishDrugRun,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask ",1]
 	],
 
 	[
 		[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
-		["Sprzedaj narkotyki", " ['Sprzedawanie',30,client_fnc_dumpDrugs,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",1]
+		["Sprzedaj narkotyki", " ['Sprzedawanie',30,StanLakeside_fnc_dumpDrugs,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask ",1]
 	],
 
 	[
 		[" myJob != ""cop""", "typeof currentcursortarget == ""Land_buildingsbasement1"" && player distance getmarkerpos ""drugdump"" < 30"],
-		["Wypierz pieniądze", " ['Piorę pieniądze',60,client_fnc_dumpMoney,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",1]
+		["Wypierz pieniądze", " ['Piorę pieniądze',60,StanLakeside_fnc_dumpMoney,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn StanLakeside_fnc_dotask ",1]
 	],
 
 	[
 		[" myJob == ""Mafia"" && (player getVariable ""Mafia"") > 5 "],
-		["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
+		["Podsłuchy", " [] spawn StanLakeside_fnc_findTapped; ",1]
 	],
 
 	[
 		[" myJob == ""cop"" &&  client_dtu_actions == 2"],
-		["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
+		["Podsłuchy", " [] spawn StanLakeside_fnc_findTapped; ",1]
 	],
 
 	[
 		[" myJob == ""Cop"" && (count(nearestObjects [player,[""weaponholder""],3])>0) "],
-		["Konfiskuj", " [] spawn client_fnc_seizeObjects; ",1]
+		["Konfiskuj", " [] spawn StanLakeside_fnc_seizeObjects; ",1]
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Konfiskuj", " [] spawn client_fnc_seizeObjects; ",1]
+		["Konfiskuj", " [] spawn StanLakeside_fnc_seizeObjects; ",1]
 	],
 
 	[
 		[" isplayer currentcursortarget && myJob == ""Mafia"" && currentcursortarget distance player < 5"],
-		["Siku sik", " [currentcursortarget] spawn client_fnc_pee; ",1]
+		["Siku sik", " [currentcursortarget] spawn StanLakeside_fnc_pee; ",1]
 	],
 
 //	[
 //		[" myJob == ""Mafia"" "],
-//		["Pożyczki", " [player] remoteexec [""server_fnc_MafiaOwed"",2]; ",1]
+//		["Pożyczki", " [player] remoteexec [""StanLakesideServer_fnc_MafiaOwed"",2]; ",1]
 //	],
 
 //	[
 //		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && (player getvariable ""mafia"") > 5 "],
-//		["Daj Pożyczkę", " [currentcursortarget] spawn client_fnc_giveLoan; ",1]
+//		["Daj Pożyczkę", " [currentcursortarget] spawn StanLakeside_fnc_sl_giveLoan_secure; ",1]
 //	],
 
 	[
 		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""Mafia"" && player getVariable [""Mafia"",0] > 5 "],
-		[" Namierz telefon ", " [] spawn client_fnc_tracecall; ",1]
+		[" Namierz telefon ", " [] spawn StanLakeside_fnc_tracecall; ",1]
 	],
 
 	[
 		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""cop"" &&  client_dtu_actions == 2 "],
-		[" Namierz telefon ", " [] spawn client_fnc_tracecall; ",1]
+		[" Namierz telefon ", " [] spawn StanLakeside_fnc_tracecall; ",1]
 	],
 
 	[
 		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Mafia"" && player getVariable [""Mafia"",0] > 5 "],
 		//[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && (myJob == ""Mafia"" || (myJob == ""Cop"" && player getvariable ""cop"" > 7 )) "],
-		//["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn client_fnc_dotask ",1]
-		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTracking; ",1]
+		//["Pluskwa", " ['Pluskwa',10,StanLakeside_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn StanLakeside_fnc_dotask ",1]
+		["Pluskwa",  " [currentcursortarget, player] spawn StanLakeside_fnc_strTracking; ",1]
 	],
 
 	[
 		[" myJob == ""cop"" &&  client_dtu_actions >= 1"],
-		//["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn client_fnc_dotask ",1]
-		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTrackingCop; ",1]
+		//["Pluskwa", " ['Pluskwa',10,StanLakeside_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn StanLakeside_fnc_dotask ",1]
+		["Pluskwa",  " [currentcursortarget, player] spawn StanLakeside_fnc_strTrackingCop; ",1]
 	],
 	
 	[
 		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"") && myJob == ""Cop"" && (player distance getmarkerpos ""fbiHQ"" < 30 || player distance getmarkerpos ""policeHQ"" < 30) "],
-		["Szukaj pluskwy", " [currentcursortarget] spawn client_fnc_disTracking; ",1]
+		["Szukaj pluskwy", " [currentcursortarget] spawn StanLakeside_fnc_disTracking; ",1]
 	],
 	
 	[
 		[" player distance theDrill < 5"],
-		["Zabierz wiertło", " ['Pakowanie wiertła',30,client_fnc_takeDrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask ",1]
+		["Zabierz wiertło", " ['Pakowanie wiertła',30,StanLakeside_fnc_takeDrill,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn StanLakeside_fnc_dotask ",1]
 	],
 
 	[
 		[" player distance getmarkerpos ""rally_1"" < 80 "],
-		["Próba rajdowa", " [] spawn client_fnc_doRally; ",1]
+		["Próba rajdowa", " [] spawn StanLakeside_fnc_doRally; ",1]
 	],
 
 	[
 		[" player distance getmarkerpos ""formula1"" < 40 "],
-		["Wyścig", " [player] remoteexec [""server_fnc_raceenter"",2] ",1]
+		["Wyścig", " [player] remoteexec [""StanLakesideServer_fnc_raceenter"",2] ",1]
 	],
 
 	[
@@ -202,89 +207,89 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["CurrentCursorTarget getVariable[""dead"",FALSE] && (count currentEMS < 0)"],
-		["Reanimuj", "['Reanimacja',125,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",1]
+		["Reanimuj", "['Reanimacja',125,StanLakeside_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask",1]
 	],
 
 	[
 		["CurrentCursorTarget getVariable[""dead"",FALSE] && (myjob == ""EMS"" || myJob == ""Fire"")"],
-		["Reanimuj", "['Reanimacja',15,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; paycheck = paycheck + 125;",1]
+		["Reanimuj", "['Reanimacja',15,StanLakeside_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask; paycheck = paycheck + 125;",1]
 	],
 
 	[
 		["(count currentEMS < 3) && !(myjob == ""EMS"")"],
-		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
+		["Ulecz", "[] spawn StanLakeside_fnc_openHealMenu;",1]
 	],
 
 	[
 		["(myjob == ""EMS"" || myjob == ""Fire"")"],
-		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
+		["Ulecz", "[] spawn StanLakeside_fnc_openHealMenu;",1]
 	],
 
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"" && (count currentEMS < 3)"],
-		["Ulecz całkowicie", "[] spawn client_fnc_fullheal;",1]
+		["Ulecz całkowicie", "[] spawn StanLakeside_fnc_fullheal;",1]
 	],
 
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"""],
-		["Zmień płeć", " if(female) then {female = false; hint ""You are now male""; } else {female = true; hint ""You are now female""; }; [""NA"",""sex"",0] call client_fnc_sustain;",1]
+		["Zmień płeć", " if(female) then {female = false; hint ""You are now male""; } else {female = true; hint ""You are now female""; }; [""NA"",""sex"",0] call StanLakeside_fnc_sustain;",1]
 	],
 
 	[
 		[" typeof cursorobject == ""Land_buildingshospital1"""],
-		["Szukaj pluskwy", "['Szukanie pluskwy',60,client_fnc_disabletrackingme,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",1]
+		["Szukaj pluskwy", "['Szukanie pluskwy',60,StanLakeside_fnc_disabletrackingme,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn StanLakeside_fnc_dotask;",1]
 	],
 
 	// vehicles
 
 	[
 		[" typeof cursorobject == ""Land_fs_feed_F"" "],
-		["Zatankuj", "[] spawn client_fnc_fillvehicle;",2]
+		["Zatankuj", "[] spawn StanLakeside_fnc_fillvehicle;",2]
 	],
 
 	[
 		["count attachedObjects player > 0 && attachedcar"],
-		["Upuść pojazd", " [] spawn client_fnc_detach; ",2]
+		["Upuść pojazd", " [] spawn StanLakeside_fnc_detach; ",2]
 	],
 
 	[
 		["currentcursortarget in current_cars || myjob IN [""Cop"",""Fire"",""EMS""] "],
-		["Wyciągnij graczy", " ['Wyciąganie graczy',10,client_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; ",2]
+		["Wyciągnij graczy", " ['Wyciąganie graczy',10,StanLakeside_fnc_pulloutplayers,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask; ",2]
 	],
 
 	[
 		["(getpos player) distance [1055,3660,0.014] < 30"],
-		["Zezłomuj", "[""who cares"",0,CurrentCursorTarget,player] remoteExec [""Server_fnc_updateCarStatus"",2]; paycheck = paycheck + 500; hint ""Zezłomowano i doliczono do wypłaty"";",2]
+		["Zezłomuj", "[""who cares"",0,CurrentCursorTarget,player] remoteExec [""StanLakesideServer_fnc_updateCarStatus"",2]; paycheck = paycheck + 500; hint ""Zezłomowano i doliczono do wypłaty"";",2]
 	],
 
 	[
 		["(myjob == ""Cop"" || myjob == ""Fire"") && currentcursortarget isKindOf ""Car"""],
-		["Schowaj($20)", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2];  paycheck = paycheck + 20; hint ""Odholowano i doliczono do wypłaty"";",2]
+		["Schowaj($20)", "[""who cares"",0,currentcursortarget,player] remoteExec [""StanLakesideServer_fnc_updateCarStatus"",2];  paycheck = paycheck + 20; hint ""Odholowano i doliczono do wypłaty"";",2]
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Schowaj pojazd", "[""who cares"",0,currentcursortarget,player] remoteExec [""Server_fnc_updateCarStatus"",2];",2]
+		["Schowaj pojazd", "[""who cares"",0,currentcursortarget,player] remoteExec [""StanLakesideServer_fnc_updateCarStatus"",2];",2]
 	],
 
 	[
 		["myJob == ""Mafia"" && (getpos player) distance [1055,3660,0.014] < 20"],
-		["Sprzedaj pojazd", "['Sprzedawanie',60,client_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask;",2]
+		["Sprzedaj pojazd", "['Sprzedawanie',60,StanLakeside_fnc_sellVehicle,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn StanLakeside_fnc_dotask;",2]
 	],
 
 	[
 		["CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Air' || CurrentCursorTarget isKindOf 'Boat' "],
-		["Napraw", "['Naprawianie',30,client_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn client_fnc_dotask;",2]
+		["Napraw", "['Naprawianie',30,StanLakeside_fnc_repair,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",100] spawn StanLakeside_fnc_dotask;",2]
 	],
 
 	[
 		["(vehicle player) == player && CurrentCursorTarget in Current_Cars"],
-		["Użyj klucza", "[CurrentCursorTarget] call Client_fnc_useKey",2]
+		["Użyj klucza", "[CurrentCursorTarget] call StanLakeside_fnc_useKey",2]
 	],
 
 	[
 		["(vehicle player) in Current_Cars"],
-		["Użyj klucza", "[vehicle player] call Client_fnc_useKey",2]
+		["Użyj klucza", "[vehicle player] call StanLakeside_fnc_useKey",2]
 	],	
 
 	[
@@ -294,22 +299,22 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (CurrentCursorTarget isKindOf 'Car' || CurrentCursorTarget isKindOf 'Ship') && player distance currentcursortarget < 11 && currentcursortarget in current_cars "],
-		["Pchnij", "[] spawn Client_fnc_pushveh",2]
+		["Pchnij", "[] spawn StanLakeside_fnc_pushveh",2]
 	],
 
 	[
 		["CurrentCursorTarget in Current_Cars", "!imRestrained", "myhouse distance getpos player > 50"],
-		["Schowaj do garażu", "['Chowam pojazd do garażu ($10)',30, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",10] spawn client_fnc_dotask",2]
+		["Schowaj do garażu", "['Chowam pojazd do garażu ($10)',30, StanLakeside_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",10] spawn StanLakeside_fnc_dotask",2]
 	],
 
 	[
 		["CurrentCursorTarget in Current_Cars", "!imRestrained", "myhouse distance getpos player < 50"],
-		["Schowaj do garażu", "['Chowam pojazd do garażu',10, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
+		["Schowaj do garażu", "['Chowam pojazd do garażu',10, StanLakeside_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Schowaj do garażu", "['Chowam pojazd do garażu',1, Client_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn client_fnc_dotask",2]
+		["Schowaj do garażu", "['Chowam pojazd do garażu',1, StanLakeside_fnc_storeCar,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_sndimg\sounds\repair.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],
 
 
@@ -322,7 +327,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) "],
-		["Usuń wszystkie meble", "  [0] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
+		["Usuń wszystkie meble", "  [0] spawn StanLakeside_fnc_spawnfurniture; attachedfurniture = false; ",2]
 	],
 
 	[
@@ -337,7 +342,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(player distance myoffice < 25 || (player distance myhouse < 25 && player getVariable ""houselevel"" > 3 )) && attachedfurniture "],
-		["Postaw", " [] spawn client_fnc_spawnfurniture; attachedfurniture = false; ",2]
+		["Postaw", " [] spawn StanLakeside_fnc_spawnfurniture; attachedfurniture = false; ",2]
 	],
 
 	[
@@ -348,7 +353,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" attachedbarrier "],
-		["Postaw barierkę", " [] spawn client_fnc_placebarrier; ",2]
+		["Postaw barierkę", " [] spawn StanLakeside_fnc_placebarrier; ",2]
 	],
 
 	[
@@ -360,7 +365,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["CurrentCursorTarget isKindOf 'Man' && myjob == ""Cop"""],
-		["Odbierz licencję", " ['Odbieranie',5,client_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask",2]
+		["Odbierz licencję", " ['Odbieranie',5,StanLakeside_fnc_revokelicense,CurrentCursorTarget,'vvv_anim_ticket',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],
 
 	[
@@ -375,92 +380,92 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man' && (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Przeszukaj", " ['Przeszukiwanie',10,client_fnc_startpatdown,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Przeszukaj", " ['Przeszukiwanie',10,StanLakeside_fnc_startpatdown,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask ",2]
 	],
 
 	[
 		["(CurrentCursorTarget isKindOf 'Man') && !(myjob == ""Cop"" || myjob == ""Fire"" || myjob == ""EMS"") && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Zabierz pieniądze", " ['Zbieranie pieniędzy',10,client_fnc_takePlayerMoney,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
+		["Zabierz pieniądze", " ['Zbieranie pieniędzy',10,StanLakeside_fnc_takePlayerMoney,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],
 
 	[
 		[" myJob == ""Cop""", "!imRestrained", "(!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man') && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Skuj", " ['Skuwanie',3,client_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Skuj", " ['Skuwanie',3,StanLakeside_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],
 
 	[
 		[" myJob != ""Cop""", "!imRestrained", "(!(cursortarget getVariable[""dead"",FALSE]) && CurrentCursorTarget isKindOf 'Man') && (animationstate CurrentCursorTarget) == 'incapacitated' || (animationstate CurrentCursorTarget) == 'deadstate' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Skuj", " ['Skuwanie',7,client_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Skuj", " ['Skuwanie',7,StanLakeside_fnc_restrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],
 
 	[
 		[" myJob == ""Cop""", "!imRestrained", "CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Rozkuj", " ['Rozkuwanie',5,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Rozkuj", " ['Rozkuwanie',5,StanLakeside_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],
 
 	[
 		[" myJob != ""Cop""", "!imRestrained", "CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop' || (animationstate CurrentCursorTarget) == 'amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon'"],
-		["Rozkuj", " ['Rozkuwanie',60,client_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn client_fnc_dotask",2]
+		["Rozkuj", " ['Rozkuwanie',60,StanLakeside_fnc_unrestrain,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\handcuff.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],
 
 	[
 		[" CurrentCursorTarget isKindOf 'Man'", "!imRestrained", "(headgear CurrentCursorTarget) != 'mgsr_headbag', (animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Załóż worek", " ['Zakładanie worka',5,client_fnc_blindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",2]
+		["Załóż worek", " ['Zakładanie worka',5,StanLakeside_fnc_blindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn StanLakeside_fnc_dotask ",2]
 	],
 
 	[
 		[" CurrentCursorTarget isKindOf 'Man'", "!imRestrained", "(headgear CurrentCursorTarget) == 'mgsr_headbag' "],
-		["Zdejmij worek", " ['Zdejmowanie worka',5,client_fnc_unblindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
+		["Zdejmij worek", " ['Zdejmowanie worka',5,StanLakeside_fnc_unblindfold,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],
 
 	/*[
 		[" CurrentCursorTarget isKindOf 'Man' && !(cursorTarget getVariable [""gagged"", false])", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Wsadź skarpetę", " ['Wkładam skarpetę do mordy',5,client_fnc_gag,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask ",2]
+		["Wsadź skarpetę", " ['Wkładam skarpetę do mordy',5,StanLakeside_fnc_gag,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn StanLakeside_fnc_dotask ",2]
 	],
 
 	[
 		[" CurrentCursorTarget isKindOf 'Man' && (cursorTarget getVariable [""gagged"", false])"],
-		["Wyciągnij skarpetę", " ['Wyciągam skarpetę z mordy',5,client_fnc_ungag,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn client_fnc_dotask",2]
+		["Wyciągnij skarpetę", " ['Wyciągam skarpetę z mordy',5,StanLakeside_fnc_ungag,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""kif_client\sounds\blindfold.ogg"",0] spawn StanLakeside_fnc_dotask",2]
 	],*/
 
 	[
 		[" myJob == ""Cop"" &&  CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Wrzuć do auta", " ['Wrzucanie do auta',10,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Wrzuć do auta", " ['Wrzucanie do auta',10,StanLakeside_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask ",2]
 	],
 
 	[
 		[" myJob != ""Cop"" &&  CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Wrzuć do auta", " ['Wrzucanie do auta',5,client_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Wrzuć do auta", " ['Wrzucanie do auta',5,StanLakeside_fnc_putincar,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask ",2]
 	],
 
 	[
 		[" myJob != ""Fire"" && myJob != ""EMS"" && CurrentCursorTarget isKindOf 'Man'", "(animationstate CurrentCursorTarget) == 'amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon' || (animationstate CurrentCursorTarget) == 'Incapacitated' || (animationstate CurrentCursorTarget) == 'AmovPercMstpSnonWnonDnon_Ease' || (animationstate CurrentCursorTarget) == 'Acts_AidlPsitMstpSsurWnonDnon_loop'"],
-		["Eskortuj", " ['Rozpoczynam eskortę',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Eskortuj", " ['Rozpoczynam eskortę',5,StanLakeside_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask ",2]
 	],
 	
 	[
 		[" (myJob == ""EMS"" || myjob == ""Fire"") && CurrentCursorTarget isKindOf 'Man'"],
-		["Eskortuj", " ['Rozpoczynam eskortę',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Eskortuj", " ['Rozpoczynam eskortę',5,StanLakeside_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask ",2]
 	],
 
 	[
 		["adminInteractions>=2"],
-		["Eskortuj", " ['Rozpoczynam eskortę',5,client_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Eskortuj", " ['Rozpoczynam eskortę',5,StanLakeside_fnc_attach,CurrentCursorTarget,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask ",2]
 	],
 
 	[
 		["count attachedObjects player > 0 && !attachedcar"],
-		["Puść", " ['Puszczam',5,client_fnc_detach,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask ",2]
+		["Puść", " ['Puszczam',5,StanLakeside_fnc_detach,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn StanLakeside_fnc_dotask ",2]
 	],
 
 	[
 		["CurrentCursorTarget isKindOf 'Man' && bankrobber == 1"],
-		["Daj pieniądze", "[CurrentCursorTarget] call Client_fnc_giveCash",2]
+		["Daj pieniądze", "[CurrentCursorTarget] call StanLakeside_fnc_sl_giveCash_secure",2]
 	],
 
 	[
 		["CurrentCursorTarget isKindOf 'Man' && (myjob == ""Mafia"" || myjob == ""Fire"" || myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Judge"" || myjob == ""Lawyer"" || myjob == ""Prosecutor"")"],
-		["Awansuj", "[CurrentCursorTarget] spawn client_fnc_promotionStart",2]
+		["Awansuj", "[CurrentCursorTarget] spawn StanLakeside_fnc_promotionStart",2]
 	],
 
 	[
@@ -481,32 +486,37 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance myshop < 3"],
-		["Wyposażenie sklepu", "[""shop""] spawn client_fnc_retreiveCargo;",3]
+		["Wyposażenie sklepu", "[""shop""] spawn StanLakeside_fnc_retreiveCargo;",3]
+	],
+
+	[
+		["myjob == ""Cop""", "client_dtu_actions > 0", "typeof CurrentCursorTarget == ""Land_PoliceStation"""],
+		["Skonfiskowane rzeczy", "[""dtu""] spawn StanLakeside_fnc_retreiveCargo;",3]
 	],
 
 	[
 		["player distance myshop < 3"],
-		["Ceny", "[shopcontent,""start""] call client_fnc_updatePrices;",3]
+		["Ceny", "[shopcontent,""start""] call StanLakeside_fnc_updatePrices;",3]
 	],
 
 	[
 		["(typeof CurrentCursorTarget) IN [""Land_buildingCommercial1"",""Land_buildingCommercial2""]"],
-		["Przeglądaj sklep", "[typeof CurrentCursorTarget,player] remoteExec [""server_fnc_retreiveStoreShopper"",2]",3]
+		["Przeglądaj sklep", "[typeof CurrentCursorTarget,player] remoteExec [""StanLakesideServer_fnc_retreiveStoreShopper"",2]",3]
 	],
 	
 	[
 		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget in weedPlantArray && player distance CurrentCursorTarget < 3"],
-		["Sprawdz roślinę", "[CurrentCursorTarget] call client_fnc_checkWeedPlant",3]
+		["Sprawdz roślinę", "[CurrentCursorTarget] call StanLakeside_fnc_checkWeedPlant",3]
 	],
 	[
 		["(typeof CurrentCursorTarget) == ""vvv_cannabis1_plan"" && CurrentCursorTarget getVariable [""growing"",false] && CurrentCursorTarget getVariable [""ready"",false] && player distance CurrentCursorTarget < 3"],
-		["Zetnij roślinę", "[CurrentCursorTarget] call client_fnc_cutDownWeedPlant",3]
+		["Zetnij roślinę", "[CurrentCursorTarget] call StanLakeside_fnc_cutDownWeedPlant",3]
 	],
 
 	[
 		//["(player distance myshop < 3) && ("""" != player getvariable ""shop"");"],
 		["(player distance myshop < 3)  && (sklepotw == 1)"],
-		["Zamknij Sklep", "[player] call client_fnc_closeshop;",3]
+		["Zamknij Sklep", "[player] call StanLakeside_fnc_closeshop;",3]
 	],
 	
 	[
@@ -516,7 +526,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["typeof CurrentCursorTarget == ""Land_buildingBarbers1"""],
-		["Fryzjer", "closedialog 0; createdialog ""HairDresser_Menu""; [""Glasses""] spawn client_fnc_loadStore;",3]
+		["Fryzjer", "closedialog 0; createdialog ""HairDresser_Menu""; [""Glasses""] spawn StanLakeside_fnc_loadStore;",3]
 	],
 
 	[
@@ -526,7 +536,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["player distance myhouse < 10 || typeof CurrentCursorTarget IN [""Land_PostB""]"],
-		["Sprawdź mail'a", "[] spawn client_fnc_openMail",3]
+		["Sprawdź mail'a", "[] spawn StanLakeside_fnc_openMail",3]
 	],
 	
 	[
@@ -536,7 +546,7 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 20 && currentCursorTarget in Current_Cars && (count (currentCursorTarget getVariable[""information"",[]]) != 0)"],
-		["Przemaluj pojazd", " [] spawn client_fnc_vehChangeColorMenu; ",3]
+		["Przemaluj pojazd", " [] spawn StanLakeside_fnc_vehChangeColorMenu; ",3]
 	],
 	
 	[
@@ -546,12 +556,12 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 40 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0"],
-		["Sprawdz ofertę", "[cursorTarget] spawn client_fnc_vehGetInfo;",3]
+		["Sprawdz ofertę", "[cursorTarget] spawn StanLakeside_fnc_vehGetInfo;",3]
 	],
 	
 	[
 		["player distance (getpos nearestObject [getPos player, ""Land_ModernShowroom""]) < 40 && cursorTarget isKindOf ""car"" && cursorTarget getVariable[""vehPrice"",0] > 0 && !(cursorTarget in Current_Cars)"],
-		["Kup samochód", "[] spawn client_fnc_vehBuy",3]
+		["Kup samochód", "[] spawn StanLakeside_fnc_vehBuy",3]
 	],
 	
 	
@@ -572,112 +582,157 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["currentcursortarget == fishTrader"],
-		["Skup rzadkich ryb", "closedialog 0; createdialog ""RareFish_Menu""; [""rarefish""] spawn client_fnc_LoadStore;",3]
+		["Skup rzadkich ryb", "closedialog 0; createdialog ""RareFish_Menu""; [""rarefish""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 
 	[
 		["currentcursortarget == fishTrader"],
-		["Wymień rzadką skórę", "closedialog 0; [] spawn client_fnc_rarePelt;",3]
+		["Wymień rzadką skórę", "closedialog 0; [] spawn StanLakeside_fnc_rarePelt;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_Coffee_DED_Coffee_01_F""]"],
-		["Sklep z ubraniami", "closedialog 0; createdialog ""Clothing_Menu""; [""clothing""] spawn client_fnc_LoadStore;",3]
+		["Sklep z ubraniami", "closedialog 0; createdialog ""Clothing_Menu""; [""clothing""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Land_buildingGunStore1"""],
-		["Sklep z bronią", "closedialog 0; createdialog ""gun_menu""; [""gunstore""] spawn client_fnc_LoadStore;",3]
+		["Sklep z bronią", "closedialog 0; createdialog ""gun_menu""; [""gunstore""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"""],
-		["Cukiernia", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn client_fnc_LoadStore;",3]
+		["Cukiernia", "closedialog 0; createdialog ""food_menu""; [""donuts""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 	
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
-		["Pączkowe ubranka", "closedialog 0; createdialog ""Clothing_Menu""; [""doughnuts_general""] spawn client_fnc_LoadStore;",3]
+		["Pączkowe ubranka", "closedialog 0; createdialog ""Clothing_Menu""; [""doughnuts_general""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dunkinbronuts"" && myjob == ""Doughnuts"""],
-		["Pączkowe bronie", "closedialog 0; createdialog ""gun_menu""; [""doughnuts_gun""] spawn client_fnc_LoadStore;",3]
+		["Pączkowe bronie", "closedialog 0; createdialog ""gun_menu""; [""doughnuts_gun""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""land_cg_dexters"""],
-		["Pizzeria", "closedialog 0; createdialog ""food_menu""; [""pizza""] spawn client_fnc_LoadStore;",3]
+		["Pizzeria", "closedialog 0; createdialog ""food_menu""; [""pizza""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Land_Market_DED_Market_01_F"""],
-		["Mc Dildos", "closedialog 0; createdialog ""food_menu""; [""mcdonalds""] spawn client_fnc_LoadStore;",3]
+		["Mc Dildos", "closedialog 0; createdialog ""food_menu""; [""mcdonalds""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 
 	[
 		["str penis find ""carrito"" > -1 || str penis find ""modelos6ki"" > -1"],
-		["Fast Food", "closedialog 0; createdialog ""food_menu""; [""hotdogs""] spawn client_fnc_LoadStore;",3]
+		["Fast Food", "closedialog 0; createdialog ""food_menu""; [""hotdogs""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Land_buildingBar1"""],
-		["Bar", "closedialog 0; createdialog ""food_menu""; [""bar""] spawn client_fnc_LoadStore;",3]
+		["Bar", "closedialog 0; createdialog ""food_menu""; [""bar""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 
 	[
 		["typeof CurrentCursorTarget IN [""Land_Coffee_DED_Coffee_02_F"",""Land_fs_roof_F"",""Land_Coffee_DED_Coffee_01_F"",""Land_Shop_DED_Shop_01_F"",""Land_Shop_DED_Shop_02_F""]"],
-		["Wielobranżowy", "closedialog 0; createdialog ""GeneralStore_Menu""; [""general""] spawn client_fnc_LoadStore;",3]
+		["Wielobranżowy", "closedialog 0; createdialog ""GeneralStore_Menu""; [""general""] spawn StanLakeside_fnc_LoadStore;",3]
 	],
 
 
 	[ 
 		["str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 && (getpos player) distance [1055,3660,0.014] < 20"], 
-		["Parking policyjny", "[CurrentCursorTarget] call Client_fnc_openCarYard",3] 
+		["Parking policyjny", "[CurrentCursorTarget] call StanLakeside_fnc_openCarYard",3] 
 	],
 
 	[ 
 		["str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""]"], 
-		["Ulepsz pojazd", "[] spawn client_fnc_carupdate;",3] 
+		["Ulepsz pojazd", "[] spawn StanLakeside_fnc_carupdate;",3] 
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") || (myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"") || (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") || myJob == ""Mafia"" && player distance myhouse < 40 "],
-		["Otwórz garaż pracownika", "[] spawn client_fnc_opengaragepolice;",3]
+		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
+		["Otwórz garaż policyjny", "[] spawn StanLakeside_fnc_openGaragePolice;",3]
+	],
+
+	[
+		["client_dtu_actions > 0","myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
+		["Otwórz garaż DTU", "[] spawn StanLakeside_fnc_openGarageDTU;",3]
+	],
+
+	[
+		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingshospital1"""],
+		["Otwórz garaż EMS", "[] spawn StanLakeside_fnc_openGarageEMS;",3]
+	],
+
+	[
+		["myjob == ""Fire""", "typeof cursorobject == ""Land_buildingsfiredept1"""],
+		["Otwórz garaż F.D.", "[] spawn StanLakeside_fnc_openGarageEMS;",3]
+	],
+
+	[
+		["myJob == ""Mafia""", "player distance myhouse < 40 "],
+		["Otwórz garaż Mafii", "[] spawn StanLakeside_fnc_openGarageMafia;",3]
 	],
 
 	[ 
-		["count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
-		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3] 
+		["myjob != ""Cop""", "myjob != ""EMS""", "myjob != ""Fire""", "myjob != ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż", "[CurrentCursorTarget] call StanLakeside_fnc_openGarage",3] 
+	],
+
+	[ 
+		["client_dtu_actions > 0","myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż DTU", "[CurrentCursorTarget] call StanLakeside_fnc_openGarageDTU",3] 
+	],
+
+	[ 
+		["myjob == ""EMS""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż EMS", "[CurrentCursorTarget] call StanLakeside_fnc_openGarageEMS",3] 
+	],
+
+	[ 
+		["myjob == ""Fire""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż F.D.", "[CurrentCursorTarget] call StanLakeside_fnc_openGarageEMS",3] 
+	],
+
+	[ 
+		["myJob == ""Mafia""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż Mafii", "[CurrentCursorTarget] call StanLakeside_fnc_openGarageMafia",3] 
+	],
+	
+	[ 
+		["myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"], 
+		["Otwórz garaż policyjny", "[CurrentCursorTarget] call StanLakeside_fnc_openGaragePolice",3] 
 	],
 
 	[
 		["adminInteractions>=2"],
-		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3] 
+		["Otwórz garaż", "[CurrentCursorTarget] call StanLakeside_fnc_openGarage",3] 
 	],
 
 	[
 		[" myJob == ""Mafia"" && (str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] ) "],
-		["Otwórz garaż firmy", "[] spawn client_fnc_opengaragepolice;",3]
+		["Otwórz garaż firmy", "[] spawn StanLakeside_fnc_opengaragepolice;",3]
 	],
 
 	[ 
 		["count attachedObjects player == 0 && !attachedcar && str CurrentCursorTarget find ""embarcadero"" > -1 && player distance currentcursortarget < 20"], 
-		["Otwórz garaż", "[CurrentCursorTarget] call Client_fnc_openGarage",3] 
+		["Otwórz garaż", "[CurrentCursorTarget] call StanLakeside_fnc_openGarage",3] 
 	],
 	
 	[
 		["((player distance (getMarkerPos ""houseUpgrades"")) < 30)"],
-		["Ulepsz dom (50k)", "[] spawn client_fnc_UpgradeHouse",3]
+		["Ulepsz dom (50k)", "[] spawn StanLakeside_fnc_UpgradeHouse",3]
 	],
 
 	[
 		["typeof currentcursortarget == ""Land_Market_DED_Market_03_F"""],
-		["Wymień telefon", "closedialog 0; [] call client_fnc_checkPhone;",3]
+		["Wymień telefon", "closedialog 0; [] call StanLakeside_fnc_checkPhone;",3]
 	],
 
 	[
 		["typeof currentcursortarget == ""Land_Market_DED_Market_03_F"""],
-		["Naładuj telefon", "closedialog 0; [""add"",""battery"",200] call client_fnc_sustain;",3]
+		["Naładuj telefon", "closedialog 0; [""add"",""battery"",200] call StanLakeside_fnc_sustain;",3]
 	],
 
 
@@ -690,22 +745,22 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["(typeof CurrentCursorTarget IN [""Land_Centrelink"",""Land_CommonwealthBank"",""Land_Bank_DED_House_01_F""] || str CurrentCursorTarget find ""mcl_atm"" > -1) && myJob == ""Mafia"" && (player getVariable ""Mafia"") > 6 && bankrobber == 1"],
-		["Bank mafii", "[] call Client_fnc_openMafiaATM",4]
+		["Bank mafii", "[] call StanLakeside_fnc_openMafiaATM",4]
 	],
 
 	[
 		["(typeof CurrentCursorTarget IN [""Land_Centrelink"",""Land_CommonwealthBank"",""Land_Bank_DED_House_01_F""] || str CurrentCursorTarget find ""mcl_atm"" > -1) && bankrobber == 1"],
-		["Bankomat", "[] call Client_fnc_openATM",4]
+		["Bankomat", "[] call StanLakeside_fnc_openATM",4]
 	],
 
 	[
 		["adminInteractions>=2"],
-		["Bankomat", "[] call Client_fnc_openATM",4]
+		["Bankomat", "[] call StanLakeside_fnc_openATM",4]
 	],
 
 	[
 		["player distance myhouse < 10"],
-		["Otwórz wyposażenie domu", "[""house""] spawn client_fnc_retreiveCargo;",4]
+		["Otwórz wyposażenie domu", "[""house""] spawn StanLakeside_fnc_retreiveCargo;",4]
 	],
 	
 //	[
@@ -715,17 +770,17 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["typeof currentcursortarget == ""Land_buildingscourthouse1"" && (myjob == ""Cop"" || myjob == ""Judge"")"],
-		["Zwołaj Jury", "  [] spawn client_fnc_startJury; ",4]
+		["Zwołaj Jury", "  [] spawn StanLakeside_fnc_startJury; ",4]
 	],
 
 	[
 		["(str CurrentCursorTarget find ""gymbench"" > -1 || str CurrentCursorTarget find ""gymrack"" > -1)"],
-		["Ćwicz", "[""Na rozgrzewkę są podskoki, skłony w dół i na boki!"",60,client_fnc_workout,player,'AmovPercMstpSnonWnonDnon_exercisekneeBendA',player,0] spawn client_fnc_dotask; ",4]
+		["Ćwicz", "[""Na rozgrzewkę są podskoki, skłony w dół i na boki!"",60,StanLakeside_fnc_workout,player,'AmovPercMstpSnonWnonDnon_exercisekneeBendA',player,0] spawn StanLakeside_fnc_dotask; ",4]
 	],
 
 	[
 		["Mayor && player distance myhouse < 25"],
-		["Załóż strój burmistrza", "[150] call Client_fnc_removebank; player forceAddUniform ""vvv_traje_ejecutivo_1"";",4]
+		["Załóż strój burmistrza", "[150] call StanLakeside_fnc_sl_removeBank_secure; player forceAddUniform ""vvv_traje_ejecutivo_1"";",4]
 	],
 
 	[
@@ -741,17 +796,17 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && myjob == ""Cop"" && player getvariable ""cop"" > 5"],
-		["Przeszukaj dom", " [player] remoteexec [""client_fnc_raidhouse"",currentcursortarget]; ",4]
+		["Przeszukaj dom", " [player] remoteexec [""StanLakeside_fnc_raidhouse"",currentcursortarget]; ",4]
 	],
 
 	[
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && myjob == ""Cop"" && player getvariable ""cop"" > 5"],
- 		["Przeszukaj sklep", " [player] remoteexec [""client_fnc_raidshop"",currentcursortarget]; ",4]
+ 		["Przeszukaj sklep", " [player] remoteexec [""StanLakeside_fnc_raidshop"",currentcursortarget]; ",4]
 	],
 
 	[
 		[" (isplayer currentcursortarget && currentcursortarget isKindOf ""Man"") && (myjob == ""Cop"" || myjob == ""EMS"" || myjob == ""Fire"")"],
-		["Poziom ‰ krwi", " [currentcursortarget] spawn client_fnc_testIntox; ",4]
+		["Poziom ‰ krwi", " [currentcursortarget] spawn StanLakeside_fnc_testIntox; ",4]
 	],
 
 	[
@@ -766,12 +821,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["str CurrentCursorTarget find ""cabinatelefonica"" > -1 && !callInProgress && !PhonesRinging && !TryingCall"],
-		["Anonimowy telefon", "[] spawn client_fnc_callMenuPP; ",4]
+		["Anonimowy telefon", "[] spawn StanLakeside_fnc_callMenuPP; ",4]
 	],
 
 	[
 		["adminInteractions>=2"],
-		["Anonimowy telefon", "[] spawn client_fnc_callMenuPP; ",4]
+		["Anonimowy telefon", "[] spawn StanLakeside_fnc_callMenuPP; ",4]
 	],
 
 
@@ -782,207 +837,207 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["((typeof CursorTarget) IN shopNameList) && ((time - (CursorTarget getVariable[""lastRobbed"",0])) > 600) && (player distance cursorTarget < 8) && (currentWeapon player != """")"],
-		["Okradnij sklep", " [] spawn client_fnc_robShop; ",4]
+		["Okradnij sklep", " [] spawn StanLakeside_fnc_robShop; ",4]
 	],
 	
 	[
 		["myjob == ""Cop"" && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
-		["Zbierz dowody", "[""Zbieram dowody"",30,client_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+		["Zbierz dowody", "[""Zbieram dowody"",30,StanLakeside_fnc_gatherEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn StanLakeside_fnc_dotask; ",4]
 	],
 	[
 		["CurrentCursorTarget != objNull && count(CurrentCursorTarget getVariable[""evidence"",[]]) != 0"],
-		["Zniszcz dowody", "[""Niszcze dowody"",60,client_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+		["Zniszcz dowody", "[""Niszcze dowody"",60,StanLakeside_fnc_destroyEvidence,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn StanLakeside_fnc_dotask; ",4]
 	],
 
 	[
 		["myjob == ""Fire"" && !dispatch && (player getvariable ""Fire"") > 0 "],
-		["Zapis medyczna centrala", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
+		["Zapis medyczna centrala", "[player,""Medic Dispatch""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		[" myjob == ""Cop"" && !dispatch && (player getvariable ""cop"") > 0 "],
-		["Zapis policyjna centrala", "[player,""Police Dispatch""] spawn client_fnc_jobstart;",4]
+		["Zapis policyjna centrala", "[player,""Police Dispatch""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""EMS"" && !dispatch && (player getvariable ""ems"") > 0 "],
-		["Zapis medyczna centrala", "[player,""Medic Dispatch""] spawn client_fnc_jobstart;",4]
+		["Zapis medyczna centrala", "[player,""Medic Dispatch""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["dispatch"],
-		["Wypis z centrali", "[player] remoteExec [""server_fnc_quitDispatch"",2]; dispatch = false;",4]
+		["Wypis z centrali", "[player] remoteExec [""StanLakesideServer_fnc_quitDispatch"",2]; dispatch = false;",4]
 		//["Dispatch Sign-Off", "Dispatch = false",4]
 	],
 
 	[
 		["myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["Skończ służbę", "[] call client_fnc_jobEnd",4]
+		["Skończ służbę", "[] call StanLakeside_fnc_jobEnd",4]
 	],
 
 	[
 		[" myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"""],
-		["Skończ służbę", "[] call client_fnc_jobEnd",4]
+		["Skończ służbę", "[] call StanLakeside_fnc_jobEnd",4]
 	],
 
 	[
 		["myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"""],
-		["Skończ służbę", "[] call client_fnc_jobEnd",4]
+		["Skończ służbę", "[] call StanLakeside_fnc_jobEnd",4]
 	],
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") || (myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"") || (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") || myJob == ""Mafia"" && player distance myhouse < 20 "],
-		["Podstawowy ekwipunek", "[""basic""] spawn client_fnc_setGear",4]
+		["Podstawowy ekwipunek", "[""basic""] spawn StanLakeside_fnc_setGear",4]
 	],
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") && player getvariable ""cop"" > 6 "],
-		["Ekwipunek SWAT", "[""riot""] spawn client_fnc_setGear",4]
+		["Ekwipunek SWAT", "[""riot""] spawn StanLakeside_fnc_setGear",4]
 	],
 	
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 1 "],
-		["ARSENAL", "[cursorobject] spawn client_fnc_vars"]
+		["ARSENAL", "[cursorobject] spawn StanLakeside_fnc_vars"]
 	],
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
-		["TECZKA 100K", "[2] spawn client_fnc_takeSuitcase"]
+		["TECZKA 100K", "[2] spawn StanLakeside_fnc_takeSuitcase"]
 	],
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
-		["TECZKA 50K", "[3] spawn client_fnc_takeSuitcase"]
+		["TECZKA 50K", "[3] spawn StanLakeside_fnc_takeSuitcase"]
 	],
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed == 2 "],
-		["TECZKA 250K", "[1] spawn client_fnc_takeSuitcase"]
+		["TECZKA 250K", "[1] spawn StanLakeside_fnc_takeSuitcase"]
 	],
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
-		["TECZKA 10K", "[4] spawn client_fnc_takeSuitcase"]
+		["TECZKA 10K", "[4] spawn StanLakeside_fnc_takeSuitcase"]
 	],
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
-		["TECZKA 5K", "[5] spawn client_fnc_takeSuitcase"]
+		["TECZKA 5K", "[5] spawn StanLakeside_fnc_takeSuitcase"]
 	],
 	
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""cop"" > 10 "],
-		["MUNDURY PD", "[cursorobject] spawn client_fnc_policeClothes"]
+		["MUNDURY PD", "[cursorobject] spawn StanLakeside_fnc_policeClothes"]
 	],
 	
 	[
 		[" (myjob == ""EMS"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""ems"" > 1 "],
-		["Mundury EMS", "[cursorobject] spawn client_fnc_medicClothes"]
+		["Mundury EMS", "[cursorobject] spawn StanLakeside_fnc_medicClothes"]
 	],
 	
 	[
 		[" (myjob == ""Fire"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""Fire"" > 1 "],
-		["Mundury FD", "[cursorobject] spawn client_fnc_medicClothes"]
+		["Mundury FD", "[cursorobject] spawn StanLakeside_fnc_medicClothes"]
 	],
 
 	[
 		[" myjob == ""none"" && (player getvariable ""cop"") > 0 && typeof cursorobject == ""Land_PoliceStation"""],
-		["Rozpocznij służbę", "[player,""Cop""] spawn client_fnc_jobstart;",4]
+		["Rozpocznij służbę", "[player,""Cop""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""Fire"") > 0 && typeof cursorobject == ""Land_buildingsfiredept1"""],
-		["Rozpocznij służbę FD", "[player,""Fire""] spawn client_fnc_jobstart;",4]
+		["Rozpocznij służbę FD", "[player,""Fire""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""ems"") > 0 && (typeof cursorobject == ""Land_buildingshospital1"" || player distance getmarkerpos ""marker_30"" < 15 || player distance getmarkerpos ""marker_31"" < 15)"],
-		["Rozpocznij służbę EMS", "[player,""EMS""] spawn client_fnc_jobstart;",4]
+		["Rozpocznij służbę EMS", "[player,""EMS""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
-		["Praca sędziego", "[player,""Judge""] spawn client_fnc_jobstart;",4]
+		["Praca sędziego", "[player,""Judge""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""legal"") > 3"],
-		["Praca prokuratora", "[player,""Prosecutor""] spawn client_fnc_jobstart;",4]
+		["Praca prokuratora", "[player,""Prosecutor""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""doughnuts"") > 0"],
-		["Przewoznik paczkow", "[player,""doughnuts""] spawn client_fnc_jobstart;",4]
+		["Przewoznik paczkow", "[player,""doughnuts""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""none"" && (player getvariable ""legal"") > 0"],
-		["Praca adwokata", "[player,""Lawyer""] spawn client_fnc_jobstart;",4]
+		["Praca adwokata", "[player,""Lawyer""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""Judge"" || myjob == ""Lawyer"" || myjob == ""Prosecutor"" "],
-		["Zakończ pracę", "[] call client_fnc_jobEnd",4]
+		["Zakończ pracę", "[] call StanLakeside_fnc_jobEnd",4]
 	],
 	
 	[
 		["myjob == ""none"" && (player getvariable ""mafia"") > 0 && player distance myhouse < 30"],
-		["Rozpocznij działalność", "[player,""Mafia""] spawn client_fnc_jobstart;",4]
+		["Rozpocznij działalność", "[player,""Mafia""] spawn StanLakeside_fnc_jobstart;",4]
 	],
 
 	[
 		["myjob == ""Mafia"""],
-		["Zakończ działalność", "[] call client_fnc_jobEnd",4]
+		["Zakończ działalność", "[] call StanLakeside_fnc_jobEnd",4]
 	],
 
 	[
 		["(str CurrentCursorTarget find ""modelos6estateriademedicamentos"" > -1 || str CurrentCursorTarget find ""modelos6mesadeoperaciones"" > -1 || str CurrentCursorTarget find ""modelos6papeleradehospital"" > -1 || str CurrentCursorTarget find ""m6estanterialargahospital"" > -1) && player distance getmarkerpos ""drugprocess"" < 100 "],
-		["Przetwórz narkotyki", "closedialog 0; [] spawn client_fnc_processBricks",4]
+		["Przetwórz narkotyki", "closedialog 0; [] spawn StanLakeside_fnc_processBricks",4]
 	],
 
 	[
 		["((player distance (getMarkerPos ""sales"")) < 30)"],
-		["Sprzedaj surowce", "closedialog 0; [] spawn client_fnc_sellOre",4]
+		["Sprzedaj surowce", "closedialog 0; [] spawn StanLakeside_fnc_sellOre",4]
 	],
 
 	[
 		["((player distance (getMarkerPos ""peltCuring"")) < 30)"],
-		["Przetwórz skóry", "closedialog 0; [] spawn client_fnc_refinePelts",4]
+		["Przetwórz skóry", "closedialog 0; [] spawn StanLakeside_fnc_refinePelts",4]
 	],
 
 	[
 		["((player distance (getMarkerPos ""fishRefinery"")) < 70) || typeof (vehicle player) IN [""vvv_NewYacht"",""POP_Speed_yatch""] "],
-		["Przetwórz ryby", "closedialog 0; [] spawn client_fnc_refineFish",4]
+		["Przetwórz ryby", "closedialog 0; [] spawn StanLakeside_fnc_refineFish",4]
 	],
 
 	[
 		["client_tran == 1 && ((player distance (getMarkerPos ""fishRefinery"")) < 70)"],
-		["Tran", "closedialog 0; [] spawn client_fnc_refineFishOil",4]
+		["Tran", "closedialog 0; [] spawn StanLakeside_fnc_refineFishOil",4]
 	],
 
 	[
 		["((player distance (getMarkerPos ""logRefinery"")) < 30)"],
-		["Przetwórz drewno", "closedialog 0; [] spawn client_fnc_refineLogs",4]
+		["Przetwórz drewno", "closedialog 0; [] spawn StanLakeside_fnc_refineLogs",4]
 	],
 
 	[
 		["((player distance (getMarkerPos ""oilRefinery"")) < 30)"],
-		["Przetwórz ropę", "closedialog 0; [] spawn client_fnc_refineoil;",4]
+		["Przetwórz ropę", "closedialog 0; [] spawn StanLakeside_fnc_refineoil;",4]
 	],
 
 	[
 		["((player distance (getMarkerPos ""OreRefinery"")) < 30)"],
-		["Przetwórz rudę", "closedialog 0; [] spawn client_fnc_refinemetal1;",4]
+		["Przetwórz rudę", "closedialog 0; [] spawn StanLakeside_fnc_refinemetal1;",4]
 	],
 
 	[
 		["ClientArrested && player distance [5616.14,6313.37,0.00143433] < 8"],
-		["Wytwórz narzędzie hakujące", "[""Wytwarzam narzędzie hakujące"",20,client_fnc_crafthackingdevice,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn client_fnc_dotask; ",4]
+		["Wytwórz narzędzie hakujące", "[""Wytwarzam narzędzie hakujące"",20,StanLakeside_fnc_crafthackingdevice,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,0] spawn StanLakeside_fnc_dotask; ",4]
 	],
 	
 	[
 		["ClientArrested && (str CurrentCursorTarget find ""gymbench"" > -1 || str CurrentCursorTarget find ""gymrack""> -1 ) && getpos player distance [5644.19,6329.73,0.00143433] < 55"],
-		["Wytwórz wytrych", "[""Wytwarzam wytrych"",60,client_fnc_craftlockpick,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn client_fnc_dotask; ",4]
+		["Wytwórz wytrych", "[""Wytwarzam wytrych"",60,StanLakeside_fnc_craftlockpick,player,'AmovPercMstpSnonWnonDnon_exercisePushup',player,0] spawn StanLakeside_fnc_dotask; ",4]
 	],
 
 	[
@@ -992,37 +1047,37 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["((player distance (getMarkerPos ""fishSales"")) < 20)"],
-		["Sprzedaj ryby", "closedialog 0; [] spawn client_fnc_sellFish",4]
+		["Sprzedaj ryby", "closedialog 0; [] spawn StanLakeside_fnc_sellFish",4]
 	],
 
 	[
 		["str CurrentCursorTarget find ""plp_cts_contshippinggreen"" > -1 && getpos player distance getpos currentcursortarget < 4"],
-		["Przeszukaj obiekt", "[""Szukam"",7,client_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Przeszukaj obiekt", "[""Szukam"",7,StanLakeside_fnc_searchcrates,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn StanLakeside_fnc_dotask; ",4]
 	],
 
 	[
 		["myjob != ""none"" && (typeof CurrentCursorTarget IN [""Land_Centrelink""] || player distance myhouse < 20)"],
-		["Zakończ pracę", "[] spawn client_fnc_jobEnd;",4]
+		["Zakończ pracę", "[] spawn StanLakeside_fnc_jobEnd;",4]
 	],
 
 	[
 		["myjob != ""none"" && typeof CurrentCursorTarget IN [""Land_Centrelink""]"],
-		["Pojazd służbowy", "[] spawn client_fnc_spawnjobvehicle",4]
+		["Pojazd służbowy", "[] spawn StanLakeside_fnc_spawnjobvehicle",4]
 	],
 
 	[
 		["typeof CurrentCursorTarget == ""Land_Centrelink"""],
-		["Szukaj pracy", "[player] spawn client_fnc_startjob",4]
+		["Szukaj pracy", "[player] spawn StanLakeside_fnc_startjob",4]
 	],
 
 	[
 		["myjob == ""Repairman"""],
-		["Napraw obiekt", "[""Naprawiam obiekt"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Napraw obiekt", "[""Naprawiam obiekt"",15,StanLakeside_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn StanLakeside_fnc_dotask; ",4]
 	],
 
 	[
 		["adminInteractions>=1"],
-		["Napraw obiekt", "[""Naprawiam obiekt"",1,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
+		["Napraw obiekt", "[""Naprawiam obiekt"",1,StanLakeside_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn StanLakeside_fnc_dotask; ",4]
 	],
 
 	[

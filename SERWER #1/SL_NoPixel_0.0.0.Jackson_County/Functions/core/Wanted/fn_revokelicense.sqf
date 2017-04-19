@@ -1,2 +1,2 @@
-[player] remoteexec ["client_fnc_revokesend",currentcursortarget];
-[player,currentcursortarget,5,format ["%1 zabrał licencje %2", name player, name currentcursortarget],""] remoteExec ["server_fnc_copLog", 2];
+[player] remoteexec ["StanLakeside_fnc_revokesend",currentcursortarget];
+[player,currentcursortarget,5,format ["%1 zabrał licencje %2", name player, name currentcursortarget],""] remoteExec ["StanLakesideServer_fnc_copLog", 2];

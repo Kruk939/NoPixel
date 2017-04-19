@@ -29,7 +29,7 @@ class giveCash
 			y = 0.57697 * safezoneH + safezoneY;
 			w = 0.055 * safezoneW;
 			h = 0.0549786 * safezoneH;
-			action = [currentcursortarget, player]call Client_fnc_giveCashSubmit;
+			action = [currentcursortarget, player]call StanLakeside_fnc_sl_giveCash_secureSubmit;
 		};
 		class RscEdit_1401: RscEdit
 		{
@@ -120,7 +120,7 @@ class loanMenu {
 		class LockVoteOption : client_RscButtonMenu {
 			idc = 9995;
 			text = "Accept";
-			onButtonClick = "[] spawn client_fnc_acceptLoan;";
+			onButtonClick = "[] spawn StanLakeside_fnc_acceptLoan;";
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -219,7 +219,7 @@ class LoanShark {
 			idc = 9001;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn client_fnc_updateLoanMenu;";
+			onLBSelChanged = "[] spawn StanLakeside_fnc_updateLoanMenu;";
 			x = 0.331121 * safezoneW + safezoneX;
 			y = 0.293241 * safezoneH + safezoneY;
 			w = 0.167653 * safezoneW;
@@ -244,7 +244,7 @@ class LoanShark {
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-			action = [] spawn Client_fnc_setOwed;
+			action = [] spawn StanLakeside_fnc_setOwed;
 		};
 
 		class CloseOption : HideButton {
@@ -286,7 +286,7 @@ class giveLoan
 			y = 0.64697 * safezoneH + safezoneY;
 			w = 0.055 * safezoneW;
 			h = 0.0549786 * safezoneH;
-			action = [currentcursortarget, player] call Client_fnc_giveLoanSubmit;
+			action = [currentcursortarget, player] call StanLakeside_fnc_sl_giveLoan_secureSubmit;
 		};
 
 

@@ -1,8 +1,8 @@
 params[["_type","basic"]];
 
-[player,objNull,1,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_jobLog", 2];
+[player,objNull,1,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["StanLakesideServer_fnc_jobLog", 2];
 if(myjob == "Cop") exitwith {
-	[player,objNull,9,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_copLog", 2];
+	[player,objNull,9,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["StanLakesideServer_fnc_copLog", 2];
 
 	if(_type == "basic") then {
 		removeAllWeapons player;

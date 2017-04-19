@@ -6,4 +6,4 @@ format["Podatki zmienione na %1% przez Burmistrza Miasta: %2",_quantity,name pla
 TaxRate = _quantity;
 publicVariable "TaxRate";
 
-[_quantity] remoteExec ["server_fnc_taxupdate",2];
+[_quantity] remoteExec ["StanLakesideServer_fnc_taxupdate",2];

@@ -20,5 +20,5 @@ _markerz setMarkerType "hd_dot";
 _markerz setMarkerColor "ColorGreen"; 
 _markerz setMarkerText format["%1", _marker]; 
  
-[] remoteexec ["client_fnc_completeoffice",_player];  
+[] remoteexec ["StanLakeside_fnc_completeoffice",_player];  
  

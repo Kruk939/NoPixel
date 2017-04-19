@@ -28,16 +28,16 @@ while{ClientArrested} do {
 		_update = 0;
 		_time = secondsLeft / 60;
 		_time = round(_time);
-		[_time, _reason,player,false] remoteExec ["server_fnc_jailsetup",2];
+		[_time, _reason,player,false] remoteExec ["StanLakesideServer_fnc_jailsetup",2];
 	};
 };
-[0, _reason,player,false] remoteExec ["server_fnc_jailsetup",2];
+[0, _reason,player,false] remoteExec ["StanLakesideServer_fnc_jailsetup",2];
 ClientArrested = false;
 //when jail time ends normally
 if(!_escaped) then {
 	hint "Skonczyles odsiadke";
 	player setpos [5538.63,6258.06,0.00143433];
-	[player] remoteExec ["server_fnc_wantedRemove2",2];
+	[player] remoteExec ["StanLakesideServer_fnc_wantedRemove2",2];
 } else {
 	hint "Uciekłeś z wiezienia!";
 	
@@ -50,8 +50,8 @@ _status = 5;
 //_active = 1; // enabled instantly
 
 	_data = [_Suid, "911", _charges, _status];
-	["personal", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];
-//[_suspectID, _Suid, _officerID, "", _charges, _status, _evidence, _active] remoteexec ["server_fnc_addcriminal",2];
-//[_suspectID,_Suid,_officerID,_charges,_status,_evidence,_active] remoteexec ["server_fnc_addcriminal",2];
+	["personal", _data] remoteExec ["StanLakesideServer_fnc_slpdCaseAdd", 2];
+//[_suspectID, _Suid, _officerID, "", _charges, _status, _evidence, _active] remoteexec ["StanLakesideServer_fnc_addcriminal",2];
+//[_suspectID,_Suid,_officerID,_charges,_status,_evidence,_active] remoteexec ["StanLakesideServer_fnc_addcriminal",2];
 };
 

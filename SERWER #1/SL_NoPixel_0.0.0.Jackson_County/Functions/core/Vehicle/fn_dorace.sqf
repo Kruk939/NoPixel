@@ -56,7 +56,7 @@ while{true} do {
 
 		if(_markerNum == 1) then { _laps = _laps + 1; _lapTime = _timer;  if(_laptime < _myfastest) then { _myfastest = _laptime; }; hint format["Your last laptime was: %1 seconds --- fastest: %2",_laptime,_myfastest];  _timer = 0; };
 
-		if(_laps == 3) then { _finish = true; hint "Ukonczyles sesje i otrzymales $175!"; [175] call Client_fnc_addCash; };
+		if(_laps == 3) then { _finish = true; hint "Ukonczyles sesje i otrzymales $175!"; [175] call StanLakeside_fnc_sl_addCash_secure; };
 
 	};
 
@@ -91,5 +91,5 @@ _servercheck = false;
 }foreach racetimes;
 
 if(_servercheck) then {
-	[_myfastest,name player] remoteexec ["server_fnc_updatefastest",2];
+	[_myfastest,name player] remoteexec ["StanLakesideServer_fnc_updatefastest",2];
 };

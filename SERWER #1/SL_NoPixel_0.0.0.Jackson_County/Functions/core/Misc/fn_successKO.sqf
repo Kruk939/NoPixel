@@ -8,7 +8,7 @@ _obj setPosATL (getPosATL player);
 player attachTo [_obj,[0,0,0]];
 [_obj] spawn {
 	params ["_obj"];
-	[3] call client_fnc_hudElements;
+	[3] call StanLakeside_fnc_hudElements;
 	uisleep 5;
 	deleteVehicle _obj;
 	player switchmove "";

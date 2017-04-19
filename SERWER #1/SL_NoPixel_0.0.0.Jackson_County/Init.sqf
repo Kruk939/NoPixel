@@ -1,6 +1,6 @@
 enableSaving [false, false];
 a9ec2a59c630de5b27603e8ecd9fb153 = true;
-kif_client_v = 0.26;
+kif_client_v = 0.27;
 
 //Radia
 tf_west_radio_code = "";
@@ -25,7 +25,7 @@ shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_0
 		} foreach _resourceZones;
 		if(_zone != "Spooky") then {_straszymy = false;};
 		if (_straszymy) then {
-		[] spawn client_fnc_cmentarz;
+		[] spawn StanLakeside_fnc_cmentarz;
 		};
 	};
 	sleep 30;

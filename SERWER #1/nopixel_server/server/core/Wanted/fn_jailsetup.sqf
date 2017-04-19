@@ -12,5 +12,5 @@ sleep 0.15;
  
  
 if(_sendtoJail) then { 
-[_length, _reason] remoteExec ["client_fnc_jailsetup",_player]; 
+[_length, _reason] remoteExec ["StanLakeside_fnc_jailsetup",_player]; 
 }; 

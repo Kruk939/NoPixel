@@ -21,7 +21,7 @@ if(!isnil "_process") then {
 
 		_localProtection = _localprotection + 1;
 		globalProtection = globalProtection + 1;
-		if(_localProtection != globalProtection) exitwith { [1,"Mafia Drop Off"] spawn client_fnc_anticheat; };
+		if(_localProtection != globalProtection) exitwith { [1,"Mafia Drop Off"] spawn StanLakeside_fnc_anticheat; };
 
 		_itemNumber = _ItemCount select _count;
 		 if !(_x IN _oreArray) then {
@@ -44,7 +44,7 @@ globalProtection = 0;
 
 _mafiacash = _totalValue * 500;
 
-["Add",_mafiaCash] remoteexec ["server_fnc_updateMafiaBank",2];
+["Add",_mafiaCash] remoteexec ["StanLakesideServer_fnc_updateMafiaBank",2];
 
 //format["Mafia zgarnęła %1 z transportu narkotykowego.",_mafiaCash] remoteexec ["hint",-2];
 

@@ -36,16 +36,16 @@ _POPUP ctrlSetStructuredText parseText format["",_task,_timeLeft];
 
 if(_error == "") then {
 	_amount = round(random(500)) + 200;
-	[_amount] spawn client_fnc_addCash;
+	[_amount] spawn StanLakeside_fnc_sl_addCash_secure;
 	[format["Okradłeś sklep, zabrałeś $%1", _amount], false] call domsg;
-	["Remove","Karma",50] call client_fnc_sustain;
-	[player,objNull,19,format ["%1 okradł sklep na kwotę %2", name player, _amount],_amount] remoteExec ["server_fnc_actionLog", 2];
+	["Remove","Karma",50] call StanLakeside_fnc_sustain;
+	[player,objNull,19,format ["%1 okradł sklep na kwotę %2", name player, _amount],_amount] remoteExec ["StanLakesideServer_fnc_actionLog", 2];
 	_chance = random(100);
 	if(_chance < 90) then {
-		[player] remoteExec ["server_fnc_robberyCall", 2];
+		[player] remoteExec ["StanLakesideServer_fnc_robberyCall", 2];
 	};
 	if(_chance < 95) then {
-		[player, _shop, "storeRobbery"] spawn client_fnc_createEvidence;
+		[player, _shop, "storeRobbery"] spawn StanLakeside_fnc_createEvidence;
 	};
 	_shop setVariable ["lastRobbed", time, true];
 };

@@ -15,7 +15,7 @@ if(isNull _shopplayer) exitwith {};
  
 _shopcontent = _shopplayer getVariable "shopcontent"; 
  
-_cash = _player getVariable "wallet"; 
+_cash = _player getVariable "sl_wallet_silverlake"; 
 _cash = call compile format["%1", _cash]; 
  
 _myweapons = (_shopcontent select 0);  
@@ -154,14 +154,14 @@ if(_ERROR == "Success") exitwith {
 _shopcontent = [_myweapons,_mymagazines,_myitems,_mybackpacks]; 
 _shopplayer setVariable ["shopcontent",_shopcontent,false]; 
  
-[_quantity, _item, _totalprice,_type,_shopcontent] remoteExec ["client_fnc_payShopOwner",_shopplayer]; 
+[_quantity, _item, _totalprice,_type,_shopcontent] remoteExec ["StanLakeside_fnc_payShopOwner",_shopplayer]; 
  
  
 _updatestr = format ["updateShop:%1:%2", _shopcontent, getPlayerUID _shopplayer]; 
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 
  
  
-[_quantity, _item, _totalprice, _type] remoteExec ["client_fnc_confirmPurchase",_player]; 
+[_quantity, _item, _totalprice, _type] remoteExec ["StanLakeside_fnc_confirmPurchase",_player]; 
 }; 
  
 format["Error: %1",_ERROR] remoteExec ["hint",_player]; 

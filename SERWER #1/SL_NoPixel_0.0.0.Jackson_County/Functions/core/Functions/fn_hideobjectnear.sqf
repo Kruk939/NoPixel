@@ -1,4 +1,4 @@
-//	[_object,_distanceofplayers,_sleeptimetilrespawn] spawn client_fnc_hideobjectnear;
+//	[_object,_distanceofplayers,_sleeptimetilrespawn] spawn StanLakeside_fnc_hideobjectnear;
 
 _object = _this select 0;
 _distance = _this select 1;

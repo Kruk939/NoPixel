@@ -2,7 +2,7 @@
 Set Current Level // Koil // why do i have phone functions here? herp.
 */
 
-client_fnc_checkPhone = {
+StanLakeside_fnc_checkPhone = {
 
 	_radios = player call TFAR_fnc_radiosList;
 
@@ -25,7 +25,7 @@ client_fnc_checkPhone = {
 
 };
 
-client_fnc_resetCallSpawn = {
+StanLakeside_fnc_resetCallSpawn = {
 	player setvariable["PhoneCallNumber",0,true];
 	player setvariable["PhoneID",0,true];
 	player setVariable ["tf_unable_to_use_radio", true];

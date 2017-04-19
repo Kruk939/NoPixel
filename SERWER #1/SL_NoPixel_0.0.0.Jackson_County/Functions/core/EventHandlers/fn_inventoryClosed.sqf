@@ -7,5 +7,5 @@
 	Return: nothing
 */
 if !(myjob IN ["cop","ems","fire"]) then {
-[player, getunitloadout player, getPlayerUID player] remoteExec ["Server_fnc_invSave", 2];
+[player, getunitloadout player, getPlayerUID player] remoteExec ["StanLakesideServer_fnc_invSave", 2];
 };

@@ -16,12 +16,16 @@
  switch(_type) do {
 	case "house": {
 		hint "Skrzynka zniknie w ciągu 2 minut!";
-		[player] remoteExec ["server_fnc_retreivehouse",2];
+		[player] remoteExec ["StanLakesideServer_fnc_retreivehouse",2];
 		_time = time + 120;
 	};
 	case "shop": {
 		hint "Twoja skrzynia zniknie w ciągu 30 sekund - ludzie nie mogą używać do tego czasu Twojego sklepu!";
-		[player] remoteExec ["server_fnc_retreiveStore",2];
+		[player] remoteExec ["StanLakesideServer_fnc_retreiveStore",2];
+		_time = time + 30;
+	};
+	case "dtu": {
+		[player] remoteExec ["StanLakesideServer_fnc_slpdRetreivePoliceStorage",2];
 		_time = time + 30;
 	};
  };

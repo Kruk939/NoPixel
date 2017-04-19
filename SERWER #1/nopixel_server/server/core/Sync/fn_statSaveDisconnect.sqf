@@ -44,8 +44,8 @@ _houselevel = _player getVariable "houselevel";
 
 deletemarker format["%1",_uid];
 
-_cash = _player getVariable "wallet";
-_bank = _player getVariable "atm";
+_cash = _player getVariable "sl_wallet_silverlake";
+_bank = _player getVariable "sl_atm_silverlake";
 
 _position = position _player;
 

@@ -48,7 +48,7 @@ class adminMessage {
 			idc = -1;
 			text = "Wyślij";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[] call client_fnc_adminMessage;";
+			onButtonClick = "[] call StanLakeside_fnc_adminMessage;";
 			x = 0.45;
 			y = 0.35;
 			w = (6.25 / 40);

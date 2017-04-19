@@ -1,18 +1,18 @@
 disableSerialization;
 //9001 
-_cash = player getVariable "wallet";
-_bank = player getVariable "atm";
+_cash = player getVariable "sl_wallet_silverlake";
+_bank = player getVariable "sl_atm_silverlake";
 _display = findDisplay 9999; 
 
 _text = _display displayCtrl 9993;
 
-_bank = _bank call client_fnc_numberText;
+_bank = _bank call StanLakeside_fnc_numberText;
 
 _text ctrlSetStructuredText parseText format["%1",_bank];
 
 _text = _display displayCtrl 9994;
 
-_cash = _cash call client_fnc_numberText;
+_cash = _cash call StanLakeside_fnc_numberText;
 
 _text ctrlSetStructuredText parseText format["%1",_cash];
 

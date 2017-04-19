@@ -34,7 +34,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 			sleep 1;
 			client_istazed = false;
 			disableUserInput false;
-			[player,""] remoteExecCall ["client_fnc_animSync"];
+			[player,""] remoteExecCall ["StanLakeside_fnc_animSync"];
 			player setVariable ["tf_voiceVolume", 1, true];
 		};
 	};

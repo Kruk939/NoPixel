@@ -3,7 +3,7 @@ _currentHitLocation = _this select 1;
 _source = _this select 2;
 
 
-[3] spawn client_fnc_bleed;
+[3] spawn StanLakeside_fnc_bleed;
 
 if(_currentHitLocation IN _injuryArray) then {
 	_myInjuries = player getVariable "playerInjuries";
@@ -28,22 +28,22 @@ if(_currentHitLocation IN _injuryArray) then {
 	};
 
 	if(_currentHitLocation IN ["head","face_hub","neck"] && _source != player) then {
-		["Remove",1,_source,1] spawn Client_Fnc_DoHealth;
+		["Remove",1,_source,1] spawn StanLakeside_fnc_DoHealth;
 	};
 
 	if(_currentHitLocation IN ["body","spine1","spine2","spine3"] && _source != player && uniform player != "nopixel_character_swat") then {
-		[21] spawn client_fnc_bleed;
+		[21] spawn StanLakeside_fnc_bleed;
 	};
 
 	if(_currentHitLocation IN ["legs","pelvis","hands","arms"] && _source != player && uniform player != "nopixel_character_swat") then {
-		[10] spawn client_fnc_bleed;
+		[10] spawn StanLakeside_fnc_bleed;
 	};
 
 
 	player setVariable ["playerInjuriesToUpdate",_myInjuries,false];
 
 	if(myUpdate) then {
-		[] spawn client_fnc_doInjuriesUpdate;
+		[] spawn StanLakeside_fnc_doInjuriesUpdate;
 	};
 };
 

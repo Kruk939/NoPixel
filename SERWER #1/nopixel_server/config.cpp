@@ -7,7 +7,7 @@ class CfgPatches {
     };
 };
 class CfgFunctions {
-    class Server {
+    class StanLakesideServer {
         class Init {
             file = "NoPixel_Server\server\core\Init";
             class init {};
@@ -35,6 +35,7 @@ class CfgFunctions {
 			class slpdPrisonInsert {};
 			class slpdPrisonUpdate {};
 			class slpdPrisonGet {};
+            class slpdRetreivePoliceStorage {};
         };
         class Sync {
             file = "NoPixel_Server\server\core\Sync";

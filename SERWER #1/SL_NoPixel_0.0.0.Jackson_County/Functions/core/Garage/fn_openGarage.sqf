@@ -1,5 +1,3 @@
-if(myJob == "Cop" || myJob == "EMS" || myJob == "Fire") exitwith { [] spawn client_fnc_opengaragepolice; };
-
 if(str CurrentCursorTarget find "tallerdepinturaabandonado" > -1 || str CurrentCursorTarget find "otros" > -1 || str CurrentCursorTarget find "garaje" > -1 ) then { createdialog "garageplates"; } else { createDialog "garage"; };
 
 ctrlSetText [1000, "Garage"];
@@ -8,7 +6,7 @@ _garage = player getVariable "garage";
 
 {
 	_class = _x select 1;
-	_vehicleName = [_class] call Client_fnc_getVehicleName;
+	_vehicleName = [_class] call StanLakeside_fnc_getVehicleName;
 	_Color = _x select 2;
 	_colorName = getText(configFile >> "cfgIvoryTextures" >> _Color >> "displayname");
 	_license = _x select 0;

@@ -162,20 +162,6 @@
 		allowedSlots[]={901};
 		mass=15;
 	};
-	class kif_gps: ItemCore
-    {
-        displayName="GPS Receiver";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        mass=1;
-        author="Extermi111";
-        simulation="ItemGPS";
-        picture="\kif_client\textures\icons\items\gps.paa";
-        icon="\kif_client\textures\icons\items\gps.paa";
-        model="\kif_client\models\gps\transmitter.p3d";
-        allowedSlots[] = {901, 801, 701};
-    };
 	class kif_fish_oil: ItemCore
 	{
 		scope=2;
