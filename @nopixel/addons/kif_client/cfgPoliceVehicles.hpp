@@ -471,4 +471,21 @@ class ivory_mp4_2;
 class ivory_r8_spyder_2;
     class ivory_r8_spyder_unmarked_bb_civ : ivory_r8_spyder_2
     {};
+/*
+//Adam do 300km/h
+class red_cvpi_06_p_trooper;
+class sl_impala_201_supervisior;
+class kif_taurus_police;
+class sl_f150_statetrooper;
 
+//Edward powyzej 300km/h
+class kif_dodge_charger_police;
+class sl_charger_220;
+class kif_dodgedurango_police;
+class sl_impala_um_red; //uc
+
+class kif_mustang_police;
+class kif_tahoe_police;
+class red_explorer_16_p_fto;
+class ivory_m3_unmarked;
+*/

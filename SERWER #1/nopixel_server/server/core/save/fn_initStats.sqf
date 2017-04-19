@@ -6,7 +6,7 @@ _check = [0, _checkstr] call ExternalS_fnc_ExtDBquery;
 _booli = (_check select 0) select 0;
 
 diag_log format["init stats %1 %2", _uid,_booli];
-
+_points = 0;
 
 if (_booli) then {
 	_fetchstr = format ["getMessages:%1", _uid];
@@ -27,6 +27,7 @@ if (_booli) then {
 	_fetchstr = format ["playerInfo:%1", _uid];
 	_fetch = [_fetchstr, 2] call ExternalS_fnc_ExtDBasync;
 	_returned = str _fetch;
+	
 
 	_res = _fetch select 0;
 	_items = _res select 0;
@@ -42,6 +43,9 @@ if (_booli) then {
 
 	_queryStr = format["getSLPDPrison_active:%1:%2", _uid, 1];
 	_prison = [_queryStr, 2] call ExternalS_fnc_ExtDBasync;
+	
+	_queryStr = format["getSLPDticket_points:%1", _uid];
+	_points = ([_queryStr, 2] call ExternalS_fnc_ExtDBasync) select 0;
 	
 	
 	if(isNil "_statuses") then { _statuses = [0,100,100,100,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0],2,[0,0,0,0,0],["nobody",0,"no reason","NO DATE"]]; };
@@ -176,9 +180,8 @@ if (_booli) then {
 
 	_house setVariable ["house", _player, false];
 	_shop setVariable ["shop", _player, false];
-
-	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison];																																																																																																																																																													//,_mayor
-	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison] remoteexec ["StanLakeside_fnc_loadInventory", _player];
+	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28 %29",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points];																																																																																																																																																													//,_mayor
+	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points] remoteexec ["Client_fnc_loadInventory", _player];
 } else {
 	_name = name _player;
 	_items = getunitloadout _player;

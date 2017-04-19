@@ -23,6 +23,9 @@ if(_type == "accept") then {
 	[_amount] call StanLakeside_fnc_sl_removeBank_secure;
 	[format["%1 zapłacił mandat w wysokości $%2", _name, _amount]] remoteExec ["domsg", _officer];
 	[_uid_player, _uid_officer, _amount, _reason, _points] remoteExec ["StanLakesideServer_fnc_slpdTicketAdd", 2];
+	_veh_points = player getVariable["veh_points",0];
+	_veh_points = _veh_points + _points;
+	player setVariable["veh_points",_veh_points,false];
 	player playmove "vvv_anim_ticket";
 } else {
 	[format["%1 odmówił zapłacenia mandatu.", _name]] remoteExec ["domsg", _officer];
