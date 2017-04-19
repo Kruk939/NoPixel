@@ -57,7 +57,7 @@ if(_type == "Drink") then {
 if(_type == "Battery") then {
 	if(_adjust == "Add") then { client_battery = client_battery + _amount; };
 	if(_adjust == "Remove") then { client_battery = client_battery - _amount; };
-	if(client_battery > 100) then {client_battery = 100;};
+	if(client_battery > 200) then {client_battery = 200;};
 	if(client_battery < 0) then {client_battery = 0;};	
 	_selection = 3;
 	_change = client_battery;

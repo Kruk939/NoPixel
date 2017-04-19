@@ -88,8 +88,12 @@ if(myjob == "Cop") exitwith {
 			if(_level == 10) then {
 				player forceAddUniform "vvv_traje_policia_3";
 			};
+		//jedzonko
+		player additemtobackpack "np_water";
+		player additemtobackpack "np_beefsoup";
 		};
-	} else {
+	};
+	if(_type == "riot") then {
 
 		removeAllWeapons player;
 		removeAllItems player;
@@ -126,9 +130,6 @@ if(myjob == "Cop") exitwith {
 		player linkItem "TRYK_G_bala_ess_NV";
 
 	};
-	//jedzonko
-	player additemtobackpack "np_water";
-	player additemtobackpack "np_beefsoup";
 
 	
 };
