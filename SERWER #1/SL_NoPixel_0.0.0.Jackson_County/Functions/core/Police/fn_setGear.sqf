@@ -4,6 +4,17 @@ params[["_type","basic"]];
 if(myjob == "Cop") exitwith {
 	[player,objNull,9,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["StanLakesideServer_fnc_copLog", 2];
 
+	//Częstotliwość policyjna
+	player setvariable["PhoneCallNumber",33.3,true];
+	player setvariable["PhoneID",33.3,true];
+	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
+	_channel = _channel + 1;
+	[(call TFAR_fnc_activeSwRadio), _channel, 33.3] call TFAR_fnc_SetChannelFrequency;
+	
+	//Ładowanie baterii
+	["add","battery",200] call StanLakesideClient_fnc_sustain;
+
+
 	if(_type == "basic") then {
 		removeAllWeapons player;
 		removeAllItems player;
@@ -27,7 +38,8 @@ if(myjob == "Cop") exitwith {
 		for "_i" from 1 to 10 do {player addItemToBackPack "vvv_np_magazine_taser"; };
 		for "_i" from 1 to 2 do {player addItemToBackPack "nonlethal_swing"; };
 		{ player additemtobackpack _x; } foreach ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","kif_gopro","kif_panicbutton"];
-
+		player additemtobackpack "np_water";
+		player additemtobackpack "np_beefsoup";
 		_level = player getvariable ["cop", 0];
 		
 		if(female) then { player forceAddUniform "female_police"; player addHeadgear "EF_Fcap_P"; } else { 
@@ -105,6 +117,8 @@ if(myjob == "Cop") exitwith {
 
 		{ player additemtobackpack _x; } foreach ["np_energydrink","RH_33Rnd_9x19_g18","RH_33Rnd_9x19_g18","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","CG_ATF_First_Aid_Kit_i","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","kif_gopro","kif_panicbutton"];
 		for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShell";};
+		player additemtobackpack "np_water";
+		player additemtobackpack "np_beefsoup";
 		player addWeapon "RH_m4_wdl";
 		player addPrimaryWeaponItem "RH_qdss_nt4_tg";
 		player addPrimaryWeaponItem "RH_ta01nsn_tan";
