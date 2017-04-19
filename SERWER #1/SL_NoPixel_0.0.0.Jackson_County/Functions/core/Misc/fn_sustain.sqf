@@ -41,7 +41,7 @@ if(_type == "Food") then {
 	if(client_hunger < 0) then {client_hunger = 0;};
 	_selection = 1;
 	_change = client_hunger;
-	[] spawn StanLakesideClient_fnc_hudhunger;
+	[] spawn client_fnc_hudhunger;
 };
 
 if(_type == "Drink") then {
@@ -51,17 +51,17 @@ if(_type == "Drink") then {
 	if(client_thirst < 0) then {client_thirst = 0;};
 	_selection = 2;
 	_change = client_thirst;
-	[] spawn StanLakesideClient_fnc_hudthirst;		
+	[] spawn client_fnc_hudthirst;		
 };
 
 if(_type == "Battery") then {
 	if(_adjust == "Add") then { client_battery = client_battery + _amount; };
 	if(_adjust == "Remove") then { client_battery = client_battery - _amount; };
-	if(client_battery > 100) then {client_battery = 100;};
+	if(client_battery > 200) then {client_battery = 200;};
 	if(client_battery < 0) then {client_battery = 0;};	
 	_selection = 3;
 	_change = client_battery;
-	[] spawn StanLakesideClient_fnc_hudbattery;			
+	[] spawn client_fnc_hudbattery;			
 };
 
 if(_type == "Poop") then {
@@ -85,12 +85,12 @@ if(_type == "unhealthiness") then {
 		_chance = random(_roll);
 		_wtf = _chance + client_unhealthiness;
 		if(_wtf > 90 && _adjust == "Add") then {
-			[69] spawn StanLakesideClient_fnc_givedisease;
+			[69] spawn client_fnc_givedisease;
 		};
 	};
 	_change = client_unhealthiness;	
 	_selection = 6;	
-	[] spawn StanLakesideClient_fnc_hudunhealthiness;
+	[] spawn client_fnc_hudunhealthiness;
 };
 
 //8 left open for licenses
@@ -144,7 +144,7 @@ if(_type == "sex") then {
 
 
 if(_type == "drug") then {
-	["remove","unhealthiness",1] call StanLakesideClient_fnc_sustain;
+	["remove","unhealthiness",1] call client_fnc_sustain;
 	if(client_marijuana > 0) then { client_marijuana = client_marijuana - 1; if(client_marijuana == 0) then { player setCustomAimCoef 1; }; if(client_marijuana == 1) then { 429 cutRsc ["HUDmarijuana","PLAIN"]; };   };
 	if(client_cocaine > 0) then { client_cocaine = client_cocaine - 1; if(client_cocaine == 0) then { player setAnimSpeedCoef 1; }; if(client_cocaine == 1) then { 430 cutRsc ["HUDcocaine","PLAIN"]; };  };
 	if(client_meth > 0) then { client_meth = client_meth - 1; if(client_meth == 0) then {}; if(client_meth == 1) then { 431 cutRsc ["HUDmeth","PLAIN"]; };  };
@@ -182,12 +182,12 @@ if(_type == "MafiaMoney") then {
 
 	player setVariable ["statuses",_mystatuses,false];
 
-	[player,Loan] remoteexec ["StanLakesideServer_fnc_updateMafiaOwed",2];
+	[player,Loan] remoteexec ["server_fnc_updateMafiaOwed",2];
 	
 };
 
-	[player, "statuses", (player getvariable "statuses")] remoteExec ["StanLakesideServer_fnc_setVariable",2];
-	[_mystatuses,getplayeruid player] remoteExec ["StanLakesideServer_fnc_syncStatuses",2];
+	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
+	[_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
 
 
 // experience food drink battery poop health unhealthiness [playerinjuries], [licneses], sex, [4 drug effects], moneyowed
