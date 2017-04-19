@@ -105,16 +105,16 @@ if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif
 /*
 	DTU
 */
-							//liang	   			//walezy
-if (getplayerUID player IN ["76561198007690584","76561198060193900"]) then { client_dtu_actions=1; };
-							//rudolf	   		//richard			//marian			//dzoka				//raf				//kifkick			//Kruk
-if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087","76561197998091289","76561197982469013","76561198201987250", "76561198015862132"]) then { client_dtu_actions=2; };
+							//walezy	   		//katekarin	   		//zajac
+if (getplayerUID player IN ["76561198060193900","76561198041834190","76561197992165129"]) then { client_dtu_actions=1; };
+							//liang	   			//rudolf	   		//richard			//marian			//dzoka				//raf				//kifkick
+if (getplayerUID player IN ["76561198007690584","76561198083797213","76561198022486899","76561198035513087","76561197998091289","76561197982469013","76561198201987250"]) then { client_dtu_actions=2; };
 /*
 	TECZKA ALLOWED
 */
-							//rudolf	   		//richard			//marian
-if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087"]) then { teczka_allowed=1; };
-							//dzoka				//raf				//kifkick			//dorian			//Kruk
+							//rudolf	   		//richard			//marian	   		//liang
+if (getplayerUID player IN ["76561198083797213","76561198022486899","76561198035513087","76561198007690584"]) then { teczka_allowed=1; };
+							//dzoka				//raf				//kifkick			//dorian			//kruk
 if (getplayerUID player IN ["76561197998091289","76561197982469013","76561198201987250","76561198253273755","76561198015862132"]) then { teczka_allowed=2; };
 /*
 	TRAN
