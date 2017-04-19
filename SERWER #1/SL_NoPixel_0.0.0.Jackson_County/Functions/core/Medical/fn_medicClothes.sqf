@@ -63,7 +63,15 @@ _availableUniforms = [
     "kiffd_uni_coastg",
     "CUP_U_C_Fireman_01",
     "kiffd_uni_dowodca",
-    "kiffd_uni_koszula"
+    "kiffd_uni_koszula",
+    "EF_FEM_3A_EMS",
+    "EF_FEM_3_6_EMS",
+    "EF_FEM_4A_EMS",
+    "EF_FEM_4A_EMS2",
+    "EF_FEM_4_5_EMS",
+    "EF_MKJKT_EMS",
+    "EF_MKJKT_EMS2",
+    "EF_M_EMS_U"
 ];
  
 _availableVests = [
