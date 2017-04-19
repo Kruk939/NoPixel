@@ -45,7 +45,10 @@ if (_booli) then {
 	_prison = [_queryStr, 2] call ExternalS_fnc_ExtDBasync;
 	
 	_queryStr = format["getSLPDticket_points:%1", _uid];
-	_points = ([_queryStr, 2] call ExternalS_fnc_ExtDBasync) select 0;
+	_points = (([_queryStr, 2] call ExternalS_fnc_ExtDBasync) select 0) select 0;
+	if(TYPENAME _points == "STRING") then {
+		_points = 0;
+	};
 	
 	
 	if(isNil "_statuses") then { _statuses = [0,100,100,100,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0],2,[0,0,0,0,0],["nobody",0,"no reason","NO DATE"]]; };
