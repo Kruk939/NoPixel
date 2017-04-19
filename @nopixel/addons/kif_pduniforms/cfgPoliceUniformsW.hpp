@@ -16,7 +16,7 @@ class kifpd_uni_rafwhite: Uniform_Base
 	class kifpd_uni_dzokawhite: Uniform_Base
 	{
 		scope = 2;
-		displayName = "Police Uniform Dzoka White";
+		displayName = "Police Uniform Kruk White";
 		picture = "\kif_pduniforms\Data\ui\sl_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
@@ -31,7 +31,7 @@ class kifpd_uni_rafwhite: Uniform_Base
 	class kifpd_uni_dzokablue: Uniform_Base
 	{
 		scope = 2;
-		displayName = "Police Uniform Dzoka Blue";
+		displayName = "Police Uniform Kruk Blue";
 		picture = "\kif_pduniforms\Data\ui\sl_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
