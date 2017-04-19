@@ -1,8 +1,8 @@
 params[["_type","basic"]];
 
-[player,objNull,1,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_jobLog", 2];
+[player,objNull,1,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["StanLakesideServer_fnc_jobLog", 2];
 if(myjob == "Cop") exitwith {
-	[player,objNull,9,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_copLog", 2];
+	[player,objNull,9,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["StanLakesideServer_fnc_copLog", 2];
 
 	
 	//Częstotliwość policyjna
@@ -13,7 +13,7 @@ if(myjob == "Cop") exitwith {
 	[(call TFAR_fnc_activeSwRadio), _channel, 33.3] call TFAR_fnc_SetChannelFrequency;
 	
 	//Ładowanie baterii
-	["add","battery",200] call client_fnc_sustain;
+	["add","battery",200] call StanLakesideClient_fnc_sustain;
 	
 	if(_type == "basic") then {
 		removeAllWeapons player;
