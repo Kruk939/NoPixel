@@ -16,8 +16,8 @@ _obj hideObjectGlobal true;
 GarageVariableWhore = "Flag_US_F" createVehicle [0,1,0];
 
 _vehicle = "ivory_wrx" createvehicle [0,0,0];
-[_vehicle, ["black","matte"], "black", 1, 1] call StanLakeside_fnc_IvoryInitVehicle;
-[_vehicle, "FuckYou", "ivory"] call StanLakeside_fnc_numberPlate;
+[_vehicle, ["black","matte"], "black", 1, 1] call StanLakesideClient_fnc_IvoryInitVehicle;
+[_vehicle, "FuckYou", "ivory"] call StanLakesideClient_fnc_numberPlate;
 
 uisleep 0.05;
 deletevehicle _vehicle;

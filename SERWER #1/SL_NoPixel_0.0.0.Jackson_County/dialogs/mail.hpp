@@ -3,7 +3,7 @@ class client_findMail {
 	name= "client_findMail";
 	movingEnable = 0;
 	enableSimulation = 1;
-	onLoad = "[] spawn StanLakeside_fnc_findPlayersALL;";
+	onLoad = "[] spawn StanLakesideClient_fnc_findPlayersALL;";
 
 	class controls {
 		
@@ -128,7 +128,7 @@ class client_findMail {
 		class sendOption : HideButton {
 			idc = 1115;
 			text = "Send";
-			onButtonClick = "[] spawn StanLakeside_fnc_chooseUserMail;";
+			onButtonClick = "[] spawn StanLakesideClient_fnc_chooseUserMail;";
 			x = 0.401967 * safezoneW + safezoneX;
 			y = 0.703346 * safezoneH + safezoneY;
 			w = 0.0899712 * safezoneW;
@@ -249,7 +249,7 @@ class openMail {
 			idc = 9001;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn StanLakeside_fnc_openMail;";
+			onLBSelChanged = "[] spawn StanLakesideClient_fnc_openMail;";
 			x = 0.315826 * safezoneW + safezoneX;
 			y = 0.288839 * safezoneH + safezoneY;
 			w = 0.164036 * safezoneW;

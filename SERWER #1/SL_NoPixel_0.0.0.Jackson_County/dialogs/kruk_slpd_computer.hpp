@@ -143,7 +143,7 @@ class kruk_slpd_computer {
 			y = 21.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 4.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [_data, ""vehicle""] spawn StanLakeside_fnc_slpd_load_checkCase; diag_log ""Button click"";";
+			action = "_data = lbData[1102,lbCurSel (1102)]; _data = call compile format[""%1"", _data]; [_data, ""vehicle""] spawn StanLakesideClient_fnc_slpd_load_checkCase; diag_log ""Button click"";";
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_check_list: client_RscButtonMenu {
@@ -204,7 +204,7 @@ class kruk_slpd_computer {
 			y = 10 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.0 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "_data = lbData[1101,lbCurSel (1101)]; _data = call compile format[""%1"", _data]; [_data, ""personal""] spawn StanLakeside_fnc_slpd_load_checkCase;";
+			action = "_data = lbData[1101,lbCurSel (1101)]; _data = call compile format[""%1"", _data]; [_data, ""personal""] spawn StanLakesideClient_fnc_slpd_load_checkCase;";
 			colorBackground[] = {0,0,0,0.5};
 		};
 		class button_refresh: client_RscButtonMenu {
@@ -378,7 +378,7 @@ class kruk_slpd_casefile {
 			y = 23.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "_data = lbData[1104,lbCurSel (1104)]; _data = call compile format[""%1"", _data]; [_data] call StanLakeside_fnc_slpd_load_vehicleAdd;";
+			action = "_data = lbData[1104,lbCurSel (1104)]; _data = call compile format[""%1"", _data]; [_data] call StanLakesideClient_fnc_slpd_load_vehicleAdd;";
 		};
 		class button_check_vehicle: client_RscButtonMenu {
 			idc = 1205;
@@ -603,7 +603,7 @@ class kruk_slpd_vehicle_add {
 			y = 16.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "[""vehicle""] call StanLakeside_fnc_slpd_add_computerRecord; closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
+			action = "[""vehicle""] call StanLakesideClient_fnc_slpd_add_computerRecord; closeDialog 0; [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class button_close: client_RscButtonMenu
 		{
@@ -673,7 +673,7 @@ class kruk_slpd_criminal_add {
 	name = "kruk_slpd_criminal_add";
 	movingEnable = 0;
 	enableSimulation = 1;
-	onLoad = "[] spawn StanLakeside_fnc_slpd_load_criminalAdd;";
+	onLoad = "[] spawn StanLakesideClient_fnc_slpd_load_criminalAdd;";
 	class controls {
 		class BASE {    
 			shadow = 0;
@@ -722,7 +722,7 @@ class kruk_slpd_criminal_add {
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 9.5 * GUI_GRID_W;
 			h = 1.5 * GUI_GRID_H;
-			action = "[""personal"", kruk_slpd_computer_data select 0] call StanLakeside_fnc_slpd_add_computerRecord; closeDialog 0;  [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
+			action = "[""personal"", kruk_slpd_computer_data select 0] call StanLakesideClient_fnc_slpd_add_computerRecord; closeDialog 0;  [] spawn {sleep 0.2; createDialog ""kruk_slpd_computer"";};";
 		};
 		class button_close: client_RscButtonMenu
 		{

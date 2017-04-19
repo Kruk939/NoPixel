@@ -17,7 +17,7 @@ if(count tower > 0) then {
     endpoint setpos [(_endpos2 select 0), (_endpos2 select 1), (_endpos2 select 2) + 22];
 	myRope = ropeCreate [beginPoint, [0,0,0], endPoint, [0,0,0]]; 
 	sleep 2;
-	[] spawn StanLakeside_fnc_climbrope;
+	[] spawn StanLakesideClient_fnc_climbrope;
 } else {
 	hint "Jesteś zbyt daleko!";
 };

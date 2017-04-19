@@ -18,11 +18,11 @@ _cashout = 0;
 } forEach magazines player;
 
 
-[_cashout] call StanLakeside_fnc_sl_addCash_secure;
+[_cashout] call StanLakesideClient_fnc_addCash;
 
 
 [player,objNull,7,format ["%1 wyprał %2", name player, _cashout],_cashout] remoteExec ["StanLakesideServer_fnc_moneyLog", 2];
-["Sukces",format["Wyprałeś: $%1", _cashout],[0,255,0,1],""] call StanLakeside_fnc_showNotification;
+["Sukces",format["Wyprałeś: $%1", _cashout],[0,255,0,1],""] call StanLakesideClient_fnc_showNotification;
 [player, getunitloadout player, getPlayerUID player] remoteExec ["StanLakesideServer_fnc_invSave", 2];
 //[player,objNull,3,format ["%1 sprzedał NARKOTYKI w ilości %2 za %3 $", name player, _total, _cashout],_cashout, "NARKOTYKI", _total] remoteExec ["StanLakesideServer_fnc_economyLog", 2];
 //hint format["Zarobiłeś $%1.",_cashout];

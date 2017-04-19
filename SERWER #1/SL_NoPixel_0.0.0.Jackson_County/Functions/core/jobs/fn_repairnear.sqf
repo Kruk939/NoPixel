@@ -1,4 +1,4 @@
-//if working - ["Naprawa obiektu",15,StanLakeside_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,"cg_sndimg\sounds\repair.ogg"] spawn StanLakeside_fnc_dotask;
+//if working - ["Naprawa obiektu",15,StanLakesideClient_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,"cg_sndimg\sounds\repair.ogg"] spawn StanLakesideClient_fnc_dotask;
 private["_thisobject"];
 if(isNil "repairedobjects") then { repairedobjects = []; };
 if(isNil "lastpos") then { lastpos = getpos player; };

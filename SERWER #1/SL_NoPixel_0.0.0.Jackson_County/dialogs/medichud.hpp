@@ -516,7 +516,7 @@ class medicHUD
 		{
 			idc = 27;
 			text = "Ulecz";
-			onButtonClick = "[] spawn StanLakeside_fnc_bandagetarget;";
+			onButtonClick = "[] spawn StanLakesideClient_fnc_bandagetarget;";
 			x = 0.45; 
 			y = 1.05;
 			w = 0.55; 

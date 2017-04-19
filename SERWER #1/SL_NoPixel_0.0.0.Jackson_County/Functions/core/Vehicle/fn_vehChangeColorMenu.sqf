@@ -151,8 +151,8 @@ for "_i" from 1 to 9 do {
 };
 lbSetCurSel [1504, _selectedWindowsDialog];
 
-if(isNil "StanLakeside_fnc_vehChangeColorOnLbChange") then {
-	StanLakeside_fnc_vehChangeColorOnLbChange = {
+if(isNil "StanLakesideClient_fnc_vehChangeColorOnLbChange") then {
+	StanLakesideClient_fnc_vehChangeColorOnLbChange = {
 			disableSerialization;
 			_display = findDisplay 70001;
 			_priceCtrl = _display displayCtrl 1001;
@@ -204,10 +204,10 @@ if(isNil "StanLakeside_fnc_vehChangeColorOnLbChange") then {
 			spawnedVehicle setObjectTexture [2,"#(argb,8,8,3)color(0,0,0," + str (_selectedWindows / 10) + ",ca)"];
 			spawnedVehicle setObjectTexture [3,"#(argb,8,8,3)color(0,0,0," + str (_selectedLights / 10) + ",ca)"];*/
 			if (str _classname find "vory_" > -1 || str _className find "adilac_" > -1) then {
-				[spawnedVehicle, [_selectedColor,_selectedFinish], _selectedRims, _selectedWindows, _selectedLights] call StanLakeside_fnc_IvoryInitVehicle;
+				[spawnedVehicle, [_selectedColor,_selectedFinish], _selectedRims, _selectedWindows, _selectedLights] call StanLakesideClient_fnc_IvoryInitVehicle;
 			};
 			if (str _classname find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1) then {
-				[spawnedVehicle, [_selectedColor,_selectedFinish]] remoteexec ["StanLakeside_fnc_initVehicle",2];
+				[spawnedVehicle, [_selectedColor,_selectedFinish]] remoteexec ["StanLakesideClient_fnc_initVehicle",2];
 			};
 			if (str _classname find "vv_" > -1) then {
 				_selectedColor = getText(configfile >> "CfgIvoryTextures" >> _selectedColor >> "texture");
@@ -223,8 +223,8 @@ if(isNil "StanLakeside_fnc_vehChangeColorOnLbChange") then {
 			_priceCtrl ctrlSetText _priceStr;
 	};
 };
-if(isNil "StanLakeside_fnc_vehChangeColorButtonAccept") then {
-	StanLakeside_fnc_vehChangeColorButtonAccept = {
+if(isNil "StanLakesideClient_fnc_vehChangeColorButtonAccept") then {
+	StanLakesideClient_fnc_vehChangeColorButtonAccept = {
 		_information = spawnedVehicle getVariable ["information", 0];
 		if(isNull spawnedVehicle) exitWith { hint "My vehicle is null (2), i'm not looking on car?"; closeDialog 0; };
 		if((count _information) == 0) exitWith { hint "Informations about my car is count 0 (2), maybe spawned vehicle?";	closeDialog 0; };
@@ -267,7 +267,7 @@ if(isNil "StanLakeside_fnc_vehChangeColorButtonAccept") then {
 		_selectedWindows = parseNumber(lbData[1504, _index]);
 		_price = parseNumber((ctrlText 1001) select [7]);
 
-		_haveCash = [1,_price] call StanLakeside_fnc_sl_checkMoney_secure;
+		_haveCash = [1,_price] call StanLakesideClient_fnc_checkMoney;
 		if !(_haveCash) exitWith {
 			["Nie masz wystarczającej ilości pieniędzy.", false] spawn domsg;
 			closeDialog 0;
@@ -275,10 +275,10 @@ if(isNil "StanLakeside_fnc_vehChangeColorButtonAccept") then {
 			//_finish = getText(configfile >> "CfgIvoryMaterials" >> _finish >> "material");
 			//_rims = getText(configfile >> "CfgIvoryTextures" >> _rims >> "texture");
 			if (str _classname find "vory_" > -1 || str _className find "vv_" > -1 || str _className find "adilac_" > -1) then {
-				[spawnedVehicle, [_color,_finish], _rims, _windows, _lights] call StanLakeside_fnc_IvoryInitVehicle;
+				[spawnedVehicle, [_color,_finish], _rims, _windows, _lights] call StanLakesideClient_fnc_IvoryInitVehicle;
 			};
 			if (str _classname find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1) then {
-				[spawnedVehicle, [_color,_finish]] remoteexec ["StanLakeside_fnc_initVehicle",2];
+				[spawnedVehicle, [_color,_finish]] remoteexec ["StanLakesideClient_fnc_initVehicle",2];
 			};
 		};
 
@@ -288,7 +288,7 @@ if(isNil "StanLakeside_fnc_vehChangeColorButtonAccept") then {
 		if (isNil "_selectedWindows") exitWith {hint "Selected windows is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedLights") exitWith {hint "Selected lights is nil, maybe not selected options?"; closeDialog 0; };
 
-		[_price] call StanLakeside_fnc_sl_removeCash_secure;
+		[_price] call StanLakesideClient_fnc_removeCash;
 		
 		_information set [2,_selectedColor];
 		_information set [3,_selectedFinish];
@@ -299,7 +299,7 @@ if(isNil "StanLakeside_fnc_vehChangeColorButtonAccept") then {
 		[format["Przemalowałeś pojazd za: $%1. Twój pojazd jest teraz w garażu.", _price], false] spawn domsg;
 		[_selectedColor, _selectedFinish, _selectedRims, _selectedLights, _selectedWindows, _license] remoteExec ["StanLakesideServer_fnc_updateVehicleColor", 2];
 		
-		[spawnedVehicle] call StanLakeside_fnc_storeCar;
+		[spawnedVehicle] call StanLakesideClient_fnc_storeCar;
 		spawnedVehicle = objNull;
 	};
 };

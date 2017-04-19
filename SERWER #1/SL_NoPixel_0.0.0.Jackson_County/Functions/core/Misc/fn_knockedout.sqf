@@ -4,5 +4,5 @@
 	uisleep 10;
 
 	player switchmove "";
-	[player,""] remoteExec ["StanLakeside_fnc_animSync"];
+	[player,""] remoteExec ["StanLakesideClient_fnc_animSync"];
 };

@@ -9,8 +9,8 @@ if(_total == 0) then {
 		sleep 5;
 		_endme = _endme + 5;
 		_total = myCallOwner getVariable "PhonecallNumber";
-		if(_total == 1) exitwith { [] call StanLakeside_fnc_answered; player call StanLakeside_fnc_answercall; playSound "cgphone_static"; };
-		if(_endme > 20) exitwith { [] call StanLakeside_fnc_noanswer; };
+		if(_total == 1) exitwith { [] call StanLakesideClient_fnc_answered; player call StanLakesideClient_fnc_answercall; playSound "cgphone_static"; };
+		if(_endme > 20) exitwith { [] call StanLakesideClient_fnc_noanswer; };
 	};
 } else {
 	while{tryingCall} do {
@@ -18,8 +18,8 @@ if(_total == 0) then {
 		sleep 5;
 		_endme = _endme + 5;
 		_total = myCallOwner getVariable "PhonecallNumber";
-		if(_total == _newTotal) exitwith { [] call StanLakeside_fnc_answered; };
-		if(_endme > 20) exitwith { [] call StanLakeside_fnc_noanswer; };
+		if(_total == _newTotal) exitwith { [] call StanLakesideClient_fnc_answered; };
+		if(_endme > 20) exitwith { [] call StanLakesideClient_fnc_noanswer; };
 	};	
 };
 tryingcall = false;

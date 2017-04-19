@@ -15,21 +15,21 @@ if(!isNil "vehspawned") then {
 	};
 };
 
-[10] call StanLakeside_fnc_sl_removeBank_secure;
+[10] call StanLakesideClient_fnc_removeBank;
 ["Zostałeś obciażony kwota $10 dolarów za wypożyczenie pojazdu służbowego.", true] spawn doquickmsg;
 
 _jobType = myjob;
 
 if (_jobType == "Mafia") exitwith {
 	vehspawned = createVehicle ["VVV_Bentley_Arnage", [0,0,(random(500) + 3)], [], 0, "NONE"];	
-	[vehspawned] spawn StanLakeside_fnc_spawnvehicle;
+	[vehspawned] spawn StanLakesideClient_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
 };
 
 if (_jobType == "Wood Logging") exitwith {
 	vehspawned = createVehicle ["jonzie_log_truck", [0,0,(random(500) + 3)], [], 0, "NONE"];
-	[vehspawned] spawn StanLakeside_fnc_spawnvehicle;
-	[vehspawned, ["white","Glossy"]] remoteexec ["StanLakeside_fnc_initVehicle",2];
+	[vehspawned] spawn StanLakesideClient_fnc_spawnvehicle;
+	[vehspawned, ["white","Glossy"]] remoteexec ["StanLakesideClient_fnc_initVehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["CUP_U_C_Mechanic_01",1];
 	hint "You have some items in the truck, use them!";
@@ -37,7 +37,7 @@ if (_jobType == "Wood Logging") exitwith {
 
 if (_jobType == "mail") exitwith {
 	vehspawned = createVehicle ["nopixel_fedex", [0,0,(random(500) + 3)], [], 0, "NONE"];	
-	[vehspawned] spawn StanLakeside_fnc_spawnvehicle;
+	[vehspawned] spawn StanLakesideClient_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["CUP_U_O_SLA_Overalls_Tank",1];
 	hint "You have some items in the truck, use them!";
@@ -45,7 +45,7 @@ if (_jobType == "mail") exitwith {
 
 if (_jobType == "trashman") exitwith {	
 	vehspawned = createVehicle ["nopixel_garbageTruck", [0,0,(random(500) + 3)], [], 0, "NONE"];	
-	[vehspawned] spawn StanLakeside_fnc_spawnvehicle;
+	[vehspawned] spawn StanLakesideClient_fnc_spawnvehicle;
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["G_Uniform_worker_l",1];
 	hint "You have some items in the truck, use them!";
@@ -53,8 +53,8 @@ if (_jobType == "trashman") exitwith {
 
 if (_jobType == "repairman") exitwith {	
 	vehspawned = createVehicle ["nopixel_mrfixit", [0,0,(random(500) + 3)], [], 0, "NONE"];	
-	[vehspawned, ["white","Glossy"]] spawn StanLakeside_fnc_initVehicle;
-	[vehspawned] spawn StanLakeside_fnc_spawnvehicle;	
+	[vehspawned, ["white","Glossy"]] spawn StanLakesideClient_fnc_initVehicle;
+	[vehspawned] spawn StanLakesideClient_fnc_spawnvehicle;	
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["CUP_U_C_Mechanic_02",1];
 	hint "You have some items in the truck, use them!";
@@ -62,7 +62,7 @@ if (_jobType == "repairman") exitwith {
 
 if (_jobType == "security") exitwith {
 	vehspawned = createVehicle ["ivory_rs4_security", [0,0,(random(500) + 3)], [], 0, "NONE"];
-	[vehspawned] spawn StanLakeside_fnc_spawnvehicle;
+	[vehspawned] spawn StanLakesideClient_fnc_spawnvehicle;
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["vvv_character_agente_473",1];
@@ -71,7 +71,7 @@ if (_jobType == "security") exitwith {
 
 if (_jobType == "towtruck") exitwith {
 	vehspawned = createVehicle ["A3L_Towtruck", [0,0,(random(500) + 3)], [], 0, "NONE"];	
-	[vehspawned] spawn StanLakeside_fnc_spawnvehicle;
+	[vehspawned] spawn StanLakesideClient_fnc_spawnvehicle;
 
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["CUP_U_C_Mechanic_03",1];
@@ -80,7 +80,7 @@ if (_jobType == "towtruck") exitwith {
 
 if (_jobType == "NewsMan") exitwith {	
 	vehspawned = createVehicle ["nopixel_news_van_original", [0,0,(random(500) + 3)], [], 0, "NONE"];	
-	[vehspawned] spawn StanLakeside_fnc_spawnvehicle;
+	[vehspawned] spawn StanLakesideClient_fnc_spawnvehicle;
 	clearmagazinecargoGlobal (vehspawned);
 	current_cars pushback vehspawned; uisleep 1;
 
@@ -99,7 +99,7 @@ if (_jobType == "taxi") exitwith {
 	{
 		vehspawned = createVehicle ["ivory_190e_taxi", [0,0,(random(500) + 3)], [], 0, "NONE"];
 	};
-	[vehspawned] spawn StanLakeside_fnc_spawnvehicle;
+	[vehspawned] spawn StanLakesideClient_fnc_spawnvehicle;
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
 	vehspawned addItemCargo ["np_shirt_8",1];

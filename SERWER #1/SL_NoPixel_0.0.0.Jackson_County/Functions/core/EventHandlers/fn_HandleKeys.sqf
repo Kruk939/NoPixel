@@ -27,7 +27,7 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift && (driver (vehicle player) isEqualTo player) && (vehicle player) != player) then {
-		[] spawn StanLakeside_fnc_itemNOS;
+		[] spawn StanLakesideClient_fnc_itemNOS;
 		};
 	};
 	//U Key
@@ -44,7 +44,7 @@ switch (_code) do
 					if(local _veh) then {
 						_veh lock 0;
 					} else {
-						[_veh,0] remoteExecCall ["StanLakeside_fnc_lock",_veh];
+						[_veh,0] remoteExecCall ["StanLakesideClient_fnc_lock",_veh];
 					};
 					["Otworzono pojazd", false] spawn doquickmsg; 
 
@@ -55,7 +55,7 @@ switch (_code) do
 					if(local _veh) then {
 						_veh lock 2;
 					} else {
-						[_veh,2] remoteExecCall ["StanLakeside_fnc_lock",_veh];
+						[_veh,2] remoteExecCall ["StanLakesideClient_fnc_lock",_veh];
 					};	
 
 					["Zamknięto pojazd", false] spawn doquickmsg; 
@@ -74,12 +74,12 @@ switch (_code) do
 	{
 		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then 
 		{
-			[2] spawn StanLakeside_fnc_rotateLight;
+			[2] spawn StanLakesideClient_fnc_rotateLight;
 		};
 
 		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then 
 		{
-			[] spawn StanLakeside_fnc_raisebasket;
+			[] spawn StanLakesideClient_fnc_raisebasket;
 		};	
 	};
 
@@ -87,11 +87,11 @@ switch (_code) do
 	{
 		if(myJob == "Cop" && typeof vehicle player IN ["VVV_dodge_charger_sheriff","VVV_dodge_charger_normal","VVV_dodge_charger_swat"]) then 
 		{
-			[1] spawn StanLakeside_fnc_rotateLight;
+			[1] spawn StanLakesideClient_fnc_rotateLight;
 		};
 		if( (myJob == "EMS" || myJob == "Fire") && typeof vehicle player == "C_hh60j_unarmed_F" && driver (vehicle player) != player ) then 
 		{
-			[] spawn StanLakeside_fnc_lowerbasket;
+			[] spawn StanLakesideClient_fnc_lowerbasket;
 		};	
 	};
 
@@ -100,13 +100,13 @@ switch (_code) do
 	{
 		if(myJob == "EMS" || myJob == "Fire") then 
 		{
-			[] spawn StanLakeside_fnc_mapMarkers;
+			[] spawn StanLakesideClient_fnc_mapMarkers;
 		} else {
 			if(myJob == "Cop") then 
 			{
-				[] spawn StanLakeside_fnc_copmapMarkers;
+				[] spawn StanLakesideClient_fnc_copmapMarkers;
 			} else {
-				[] spawn StanLakeside_fnc_playermapMarkers;
+				[] spawn StanLakesideClient_fnc_playermapMarkers;
 			};
 		};
 
@@ -211,8 +211,8 @@ switch (_code) do
 
 		if(mouseMovement == 1) exitwith { mouseMovement = 3; _handle = true; };
 		if(!busyPlayer) then {
-			[] call StanLakeside_fnc_openInteraction;
-			[] spawn StanLakeside_fnc_keyBusyPlayer;
+			[] call StanLakesideClient_fnc_openInteraction;
+			[] spawn StanLakesideClient_fnc_keyBusyPlayer;
 			_handle = true;
 		};
 	};
@@ -221,7 +221,7 @@ switch (_code) do
 	{
 	    if(_shift && !_alt && !_ctrlKey && !busyPlayer) then
 	    {
-	 		[] spawn StanLakeside_fnc_keyBusyPlayer;      	
+	 		[] spawn StanLakesideClient_fnc_keyBusyPlayer;      	
 			if (!client_fadeSound) then 
 			{
 				1 fadeSound 0.1;
@@ -263,8 +263,8 @@ switch (_code) do
 
 			if(mouseMovement == 1) exitwith { mouseMovement = 3; _handle = true; };
 			if(!busyPlayer) then {
-				[] call StanLakeside_fnc_openInteraction;
-				[] spawn StanLakeside_fnc_keyBusyPlayer;
+				[] call StanLakesideClient_fnc_openInteraction;
+				[] spawn StanLakesideClient_fnc_keyBusyPlayer;
 				_handle = true;
 			};
 		};
@@ -278,13 +278,13 @@ switch (_code) do
 		{
 			if (isNull objectParent player && !busyPlayer && (animationState player) != "Incapacitated" ) then
 			{
-				[] spawn StanLakeside_fnc_keyBusyPlayer;
+				[] spawn StanLakesideClient_fnc_keyBusyPlayer;
 				if (player getVariable ["surrender", false]) then
 				{
 					player setVariable ["surrender", nil, false];
 				} else
 				{
-					[] spawn StanLakeside_fnc_surrender;
+					[] spawn StanLakesideClient_fnc_surrender;
 				};
 			};
 		};
@@ -293,7 +293,7 @@ switch (_code) do
 			if (isNull objectParent player && !busyPlayer && !imRestrained) then
 			{
 				player playActionNow "gesturefinger";
-				[] spawn StanLakeside_fnc_keyBusyPlayer;
+				[] spawn StanLakesideClient_fnc_keyBusyPlayer;
 				_handle = true;
 			};
 	    };

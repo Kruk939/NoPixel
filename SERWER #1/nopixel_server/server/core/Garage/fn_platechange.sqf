@@ -70,5 +70,5 @@ _garage pushback _vehicle;
  
 _player setVariable ["garage", _garage, false]; 
  
-[_garage] remoteexec ["StanLakeside_fnc_finishLicense",_player]; 
+[_garage] remoteexec ["StanLakesideClient_fnc_finishLicense",_player]; 
 }; 

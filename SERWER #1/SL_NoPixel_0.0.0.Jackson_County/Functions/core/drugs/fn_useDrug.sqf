@@ -9,30 +9,30 @@ _amount = _amount - _unhealth;
 if(_type == "marijuana") then {
 	client_marijuana = _amount;
 	player setCustomAimCoef 0;
-	["set",0] call StanLakeside_fnc_DoHealth;
+	["set",0] call StanLakesideClient_fnc_DoHealth;
 	["Czujesz się wspaniale i bardzo spokojnie.",false] spawn domsg;
-	["Remove","Karma",20] call StanLakeside_fnc_sustain;
+	["Remove","Karma",20] call StanLakesideClient_fnc_sustain;
 };
 
 if(_type == "cocaine") then {
 	client_cocaine = _amount;
 	player setAnimSpeedCoef 1.2;
 	["Czujesz, że mógłbyś przebiec maraton.",false] spawn domsg;
-	["Remove","Karma",20] call StanLakeside_fnc_sustain;
+	["Remove","Karma",20] call StanLakesideClient_fnc_sustain;
 };
 
 if(_type == "heroin") then {
 	client_heroin = _amount;
 	player setUnitRecoilCoefficient 0.5;
 	["Celowanie wydaje się teraz o wiele łatwiejsze!",false] spawn domsg;
-	["Remove","Karma",20] call StanLakeside_fnc_sustain;
+	["Remove","Karma",20] call StanLakesideClient_fnc_sustain;
 };
 
 
 if(_type == "meth") then {
 	client_meth = _amount;
 	["Czujesz się niezniszczalny.",false] spawn domsg;
-	["Remove","Karma",20] call StanLakeside_fnc_sustain;
+	["Remove","Karma",20] call StanLakesideClient_fnc_sustain;
 	//notazepls
 };
 
@@ -41,9 +41,9 @@ if(_type == "energy") then {
 	player enablefatigue false;
 	player enablestamina false;
 	["Czujesz się bardzo lekko!",false] spawn domsg;
-	["Remove","Karma",20] call StanLakeside_fnc_sustain;
+	["Remove","Karma",20] call StanLakesideClient_fnc_sustain;
 };
-["Add","unhealthiness",5] call StanLakeside_fnc_sustain;
+["Add","unhealthiness",5] call StanLakesideClient_fnc_sustain;
 
 [format ["%1 will last %2m due to unhealthiness of %3",_type, (_amount * 5), client_unhealthiness],false] spawn domsg;
 

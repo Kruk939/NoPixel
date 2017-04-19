@@ -41,9 +41,9 @@ waitUntil {!(isNil{extDB_SQL_CUSTOM_ID})};
 	{ shops pushback _x; } foreach nearestObjects [[0,0,0], _shops, 35500];
 
 	uisleep 28650;
-	[] remoteExec ["StanLakeside_fnc_survival",-2];
+	[] remoteExec ["StanLakesideClient_fnc_survival",-2];
 	uisleep 30;
-	["seagull"] remoteExec ["StanLakeside_fnc_createvehicle",-2];
+	["seagull"] remoteExec ["StanLakesideClient_fnc_createvehicle",-2];
 };
 
 policeStorageActive = 0;

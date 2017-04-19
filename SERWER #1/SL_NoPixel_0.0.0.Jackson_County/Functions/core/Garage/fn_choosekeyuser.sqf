@@ -7,4 +7,4 @@ closedialog 0;
 sleep 0.05;
 if(isNil "_status") exitwith { };
 
-[current_cars] remoteexec ["StanLakeside_fnc_givekeys",_status];
+[current_cars] remoteexec ["StanLakesideClient_fnc_givekeys",_status];

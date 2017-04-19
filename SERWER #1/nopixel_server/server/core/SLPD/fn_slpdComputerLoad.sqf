@@ -16,4 +16,4 @@ _query = format ["getSLPDWantedVehicle_active:%1", 1];
 _vehicles = [_query,2] call ExternalS_fnc_ExtDBasync;
 
 
-[_criminals, _vehicles] remoteExec ["StanLakeside_fnc_slpd_load_computerData", _player];
+[_criminals, _vehicles] remoteExec ["StanLakesideClient_fnc_slpd_load_computerData", _player];

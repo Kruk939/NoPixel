@@ -9,7 +9,7 @@ if(_veh iskindof "Car" || _veh iskindof "Ship" || _veh iskindof "Air") then {
 			if(local _veh) then {
 				_veh lock 0;
 			} else {
-				[_veh,0] remoteExecCall ["StanLakeside_fnc_lock",_veh];
+				[_veh,0] remoteExecCall ["StanLakesideClient_fnc_lock",_veh];
 			};
 			["Otwarty", false] spawn doquickmsg; 
 		} else {
@@ -17,7 +17,7 @@ if(_veh iskindof "Car" || _veh iskindof "Ship" || _veh iskindof "Air") then {
 			if(local _veh) then {
 				_veh lock 2;
 			} else {
-				[_veh,2] remoteExecCall ["StanLakeside_fnc_lock",_veh];
+				[_veh,2] remoteExecCall ["StanLakesideClient_fnc_lock",_veh];
 			};	
 
 			["Zamkniety", false] spawn doquickmsg; 

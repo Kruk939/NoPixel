@@ -11,10 +11,10 @@ theDrill = "itemsvaultdrill1" createvehicle getpos player;
 theDrill attachTo [_thebankcontainer, [0, -0.9, 0] ];
 player removeitem "NP_drillitem";
 
-[player, theDrill, "bankDrill"] spawn StanLakeside_fnc_createEvidence;
-[player, _theBankContainer, "vaultBreach"] spawn StanLakeside_fnc_createEvidence;
+[player, theDrill, "bankDrill"] spawn StanLakesideClient_fnc_createEvidence;
+[player, _theBankContainer, "vaultBreach"] spawn StanLakesideClient_fnc_createEvidence;
 
-	["Remove","Karma",100] call StanLakeside_fnc_sustain;
+	["Remove","Karma",100] call StanLakesideClient_fnc_sustain;
 
 
 bankrobber = 3;

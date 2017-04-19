@@ -2,7 +2,7 @@
 Params
 0 - Number - (1 - Cash, 2 - Bank)
 1 - Number - Amount of checked money
-["wallet",_amount] call StanLakeside_fnc_sl_addCash_secure;
+["wallet",_amount] call StanLakesideClient_fnc_addCash;
 */
 params ["_type", "_amount"];
 

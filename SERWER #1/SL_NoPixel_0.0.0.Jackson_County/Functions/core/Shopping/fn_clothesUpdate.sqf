@@ -20,7 +20,7 @@ cockbag addbackpack (backpack player);
 cockbag addgoggles (goggles player);
 cockbag addvest (vest player);
 
-[cockbag] spawn StanLakeside_fnc_destroyGroundHolders;
+[cockbag] spawn StanLakesideClient_fnc_destroyGroundHolders;
 
 if(_type == 0) exitwith {};
 

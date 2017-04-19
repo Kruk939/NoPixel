@@ -14,7 +14,7 @@
 		10: acc_Pointers
 		11: acc_Optics
 		12: acc_Muzzles
-		_item = ["arifle_mas_ww2_mp40"] call StanLakeside_fnc_fetchItemType;
+		_item = ["arifle_mas_ww2_mp40"] call StanLakesideClient_fnc_fetchItemType;
 	*/
 	private["_entity","_cfg","_ret","_type","_acc_p","_acc_o","_acc_m","_scope","_displayName","_picture","_config","_itemInfo","_muzzles","_magazines","_desc"];
 	_entity = _this select 0;

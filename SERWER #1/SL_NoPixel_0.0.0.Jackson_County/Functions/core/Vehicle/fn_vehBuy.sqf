@@ -11,7 +11,7 @@ _veh = cursorTarget;
 _price = _veh getVariable ["vehPrice",0];
 _shop = nearestObject [getPos player, "Land_ModernShowroom"];
 _carsInShop = _shop getVariable ["CarsToBuy",[]];
-_cash = player getVariable ["wallet",0];
+_cash = player getVariable ["sl_wallet_silverlake",0];
 
 _information = _veh getVariable ["information",[]];
 if((count _information) isEqualTo 0) exitWith { ["Nie można było kupić pojazdu.", false] spawn domsg; };
@@ -19,7 +19,7 @@ if(_price <= 0) exitWith {}; //za mala cena
 if(count _carsInShop isEqualTo 0) exitWith {}; //Cos poszlo nie tak
 if(isNull _veh) exitWith {}; //Brak pojazdu
 if(_cash < _price) exitWith { ["Nie masz wystarczającej ilosci pieniędzy.", false] spawn domsg; }; //Nie masz pieniedzy
-[_price] call StanLakeside_fnc_sl_removeCash_secure;
+[_price] call StanLakesideClient_fnc_removeCash;
 
 {
 	if(_veh isEqualTo (_x select 2)) exitWith {

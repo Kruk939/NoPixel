@@ -8,7 +8,7 @@ closeDialog 0;
 
 if (_amount > 0) then 
 {
-	[player,_amount,_reason,_datedue] remoteexec ["StanLakeside_fnc_takeLoan",_target];
+	[player,_amount,_reason,_datedue] remoteexec ["StanLakesideClient_fnc_takeLoan",_target];
 } else {
 	hint "Wartosc musi byc wieksza od $0!";
 };

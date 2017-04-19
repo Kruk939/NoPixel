@@ -47,7 +47,7 @@ if(vehicle player != player && (vehicle player isKindOf "LandVehicle")) then
 		[] spawn {
 			uiSleep 0.1;
 			if(handgunWeapon player isEqualTo "" && primaryWeapon player isEqualTo "") exitWith {};
-			[player,"AmovPercMstpSnonWnonDnon"] remoteExecCall ["StanLakeside_fnc_animSync"];
+			[player,"AmovPercMstpSnonWnonDnon"] remoteExecCall ["StanLakesideClient_fnc_animSync"];
 			player switchMove "AmovPercMstpSnonWnonDnon"; 
 		};
 		while {_time > time} do {

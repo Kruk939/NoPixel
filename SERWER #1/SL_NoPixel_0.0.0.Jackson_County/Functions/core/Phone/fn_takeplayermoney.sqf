@@ -1,1 +1,1 @@
-[player] remoteexec ["StanLakeside_fnc_returnwallet",currentcursortarget];
+[player] remoteexec ["StanLakesideClient_fnc_returnwallet",currentcursortarget];

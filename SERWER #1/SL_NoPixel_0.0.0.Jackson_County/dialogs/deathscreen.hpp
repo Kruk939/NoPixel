@@ -21,7 +21,7 @@ class DeathScreen
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
 			text = "Respawn";
-			onButtonClick = "closeDialog 0; [] call StanLakeside_fnc_startFresh;";
+			onButtonClick = "closeDialog 0; [] call StanLakesideClient_fnc_startFresh;";
 			colorBackground[] = {0, 0, 0, 1};
 			class Attributes 
 			{

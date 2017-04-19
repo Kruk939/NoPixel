@@ -154,14 +154,14 @@ if(_ERROR == "Success") exitwith {
 _shopcontent = [_myweapons,_mymagazines,_myitems,_mybackpacks]; 
 _shopplayer setVariable ["shopcontent",_shopcontent,false]; 
  
-[_quantity, _item, _totalprice,_type,_shopcontent] remoteExec ["StanLakeside_fnc_payShopOwner",_shopplayer]; 
+[_quantity, _item, _totalprice,_type,_shopcontent] remoteExec ["StanLakesideClient_fnc_payShopOwner",_shopplayer]; 
  
  
 _updatestr = format ["updateShop:%1:%2", _shopcontent, getPlayerUID _shopplayer]; 
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery; 
  
  
-[_quantity, _item, _totalprice, _type] remoteExec ["StanLakeside_fnc_confirmPurchase",_player]; 
+[_quantity, _item, _totalprice, _type] remoteExec ["StanLakesideClient_fnc_confirmPurchase",_player]; 
 }; 
  
 format["Error: %1",_ERROR] remoteExec ["hint",_player]; 

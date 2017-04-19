@@ -59,7 +59,7 @@ while{true} do {
 
 		if(_markerNum == 1) then { _laps = _laps + 1; _lapTime = _timer;  if(_laptime < _myfastest) then { _myfastest = _laptime; }; hint format["Twoje ostatnie okrążenie to: %1 sekund --- Najszybsze: %2",_laptime,_myfastest];  _timer = 0; };
 
-		if(_laps == 3) then { _finish = true; hint "Ukonczyłes sesje i otrzymales $100!"; [100] call StanLakeside_fnc_sl_addCash_secure; };
+		if(_laps == 3) then { _finish = true; hint "Ukonczyłes sesje i otrzymales $100!"; [100] call StanLakesideClient_fnc_addCash; };
 
 	};
 

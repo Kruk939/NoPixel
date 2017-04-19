@@ -5,9 +5,9 @@
 */
 params["_betamt"];
 private["_slot","_slot1","_slot2","_slot3","_winnings","_slotcash","_betamt","_display"];
-_check = [1, _betamt] call StanLakeside_fnc_sl_checkMoney_secure;
+_check = [1, _betamt] call StanLakesideClient_fnc_checkMoney;
 if !(_check) exitWith {hint "You do not have enough money to play.";};
-[_betamt] call StanLakeside_fnc_sl_removeCash_secure;
+[_betamt] call StanLakesideClient_fnc_removeCash;
 disableSerialization;
 _display = findDisplay 5780;
 
@@ -103,7 +103,7 @@ switch (_slot) do
 //multiple winnings by bet amount
 _slotcash = _winnings * ( _betamt / 1000 );
 
-[_slotcash] call StanLakeside_fnc_sl_addCash_secure;
+[_slotcash] call StanLakesideClient_fnc_addCash;
 _winningsText ctrlSetStructuredText parseText format["<t size='2.6px' color='#0099ff'>%1$</t>",_slotcash];
 
 _bet1 ctrlEnable true;

@@ -135,7 +135,7 @@ while{true} do {
 					_message = _this select 0;
 					uiSleep 60;
 					["fotoradar",player,_message,"Wydział ruchu drogowego","[Mandat] Wydział ruchu drogowego"] remoteExec ["StanLakesideServer_fnc_sendMail",2];
-					[_message,"[Mandat] Wydział ruchu drogowego","Wydział ruchu drogowego"] remoteExec ["StanLakeside_fnc_sendMail",player];
+					[_message,"[Mandat] Wydział ruchu drogowego","Wydział ruchu drogowego"] remoteExec ["StanLakesideClient_fnc_sendMail",player];
 					speedMeter_last_ticket = false;
 				};
 			};

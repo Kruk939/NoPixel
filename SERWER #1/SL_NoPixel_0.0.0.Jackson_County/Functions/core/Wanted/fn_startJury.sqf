@@ -1,4 +1,4 @@
-//startjury - [] spawn StanLakeside_fnc_startJury;
+//startjury - [] spawn StanLakesideClient_fnc_startJury;
 
 _allHCs = entities "HeadlessClient_F";
 _allHPs = allPlayers - _allHCs;
@@ -16,5 +16,5 @@ while {_n > 0} do {
 	_n = _n - 1;
 };
 
-[name player, getpos player, player] remoteexec ["StanLakeside_fnc_jurycall",_players];
+[name player, getpos player, player] remoteexec ["StanLakesideClient_fnc_jurycall",_players];
 hint "Lawa przysieglych została wezwana - proszę czekać."

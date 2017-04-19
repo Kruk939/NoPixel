@@ -10,8 +10,8 @@ _windows = _information select 5;
 _lights = _information select 6; 
 
 if (str _classname find "vory_" > -1 || str _className find "vv_" > -1 || str _className find "adilac_" > -1) then {
-	[spawnedVehicle, [_color,_finish], _rims, _windows, _lights] call StanLakeside_fnc_IvoryInitVehicle;
+	[spawnedVehicle, [_color,_finish], _rims, _windows, _lights] call StanLakesideClient_fnc_IvoryInitVehicle;
 };
 if (str _classname find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 || str _className find "opixel_" > -1) then {
-	[spawnedVehicle, [_color,_finish]] remoteexec ["StanLakeside_fnc_initVehicle",2];
+	[spawnedVehicle, [_color,_finish]] remoteexec ["StanLakesideClient_fnc_initVehicle",2];
 };

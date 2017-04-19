@@ -33,7 +33,7 @@ _randomValue = round(random 5) + 1;
 
 if(myDrugValue < 50) then { myDrugValue = 50; };
 _item = format["CG_MethBag%1", myDrugValue];
-["Sukces",format["Ugotowałeś %1 worków metamfetaminy", _randomvalue],[0,255,0,1],""] call StanLakeside_fnc_showNotification;
+["Sukces",format["Ugotowałeś %1 worków metamfetaminy", _randomvalue],[0,255,0,1],""] call StanLakesideClient_fnc_showNotification;
 [player,objNull,28,format ["%1 ugotował %2 worków metamfetaminy o jakości %3 CLASSNAME %4",name player, _randomValue, myDrugValue, _item],_randomValue] remoteExec ["StanLakesideServer_fnc_actionLog", 2];
 //hint format["Ugotowałeś %1 worków metamfetaminy!",_randomvalue];
 player additem "NP_DrugTable";

@@ -3,7 +3,7 @@
 class buycar {
 	idd = 1444;
 	name= "buycar";
-	onLoad = "[""NEW""] spawn StanLakeside_fnc_carShop; client_kcCamera  = ""CAMERA"" camCreate (getPos player); showCinemaBorder true; client_kcCamera cameraEffect [""EXTERNAL"", ""BACK""];";	
+	onLoad = "[""NEW""] spawn StanLakesideClient_fnc_carShop; client_kcCamera  = ""CAMERA"" camCreate (getPos player); showCinemaBorder true; client_kcCamera cameraEffect [""EXTERNAL"", ""BACK""];";	
 	onunload = "deletevehicle spawnedvehicle; client_kcCamera cameraEffect [""TERMINATE"",""BACK""]; camDestroy client_kcCamera;";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -44,7 +44,7 @@ class buycar {
 			y = 0.162 * safezoneH + safezoneY;
 			w = 0.385 * safezoneW;
 			h = 0.12 * safezoneH;
-			onLBSelChanged = "[""CAR""] spawn StanLakeside_fnc_carShop;";
+			onLBSelChanged = "[""CAR""] spawn StanLakesideClient_fnc_carShop;";
 		};
 
 		class RscListbox_Color: RscListbox
@@ -59,7 +59,7 @@ class buycar {
 			y = 0.29 * safezoneH + safezoneY;
 			w = 0.192 * safezoneW;
 			h = 0.085 * safezoneH;
-			onLBSelChanged = "[""COLOR""] spawn StanLakeside_fnc_carShop;";
+			onLBSelChanged = "[""COLOR""] spawn StanLakesideClient_fnc_carShop;";
 		};
 
 		class RscListbox_Finish: RscListbox
@@ -74,13 +74,13 @@ class buycar {
 			y = 0.29 * safezoneH + safezoneY;
 			w = 0.193 * safezoneW;
 			h = 0.085 * safezoneH;
-			onLBSelChanged = "[""FINISH""] spawn StanLakeside_fnc_carShop;";
+			onLBSelChanged = "[""FINISH""] spawn StanLakesideClient_fnc_carShop;";
 		};
 
 		class Saveranks : client_RscButtonMenu {
 			idc = 1115;
 			text = "Buy Car";
-			onButtonClick = "[] call StanLakeside_fnc_carShopBuy;";
+			onButtonClick = "[] call StanLakesideClient_fnc_carShopBuy;";
 			x = 0.85;
 			y = 0.95;
 			w = 0.15;
@@ -106,7 +106,7 @@ class charselect {
 			idc = 1500;
 			sizeEx = 0.033;
 			text = "FEMALE";
-			onButtonClick = "[""Female""] spawn StanLakeside_fnc_playerselectFinish;";		
+			onButtonClick = "[""Female""] spawn StanLakesideClient_fnc_playerselectFinish;";		
 			x = 0.405 * safezoneW + safezoneX;
 			y = 0.76 * safezoneH + safezoneY;
 			w = 0.15;
@@ -121,7 +121,7 @@ class charselect {
 			idc = 1501;
 			sizeEx = 0.033;
 			text = "MALE";
-			onButtonClick = "[""Male""] spawn StanLakeside_fnc_playerselectFinish;";		
+			onButtonClick = "[""Male""] spawn StanLakesideClient_fnc_playerselectFinish;";		
 			x = 0.53 * safezoneW + safezoneX;
 			y = 0.76 * safezoneH + safezoneY;
 			w = 0.15;
@@ -141,7 +141,7 @@ class koiladmin {
 
 	idd = 1444;
 	name= "koiladmin";
-	onLoad = "[] spawn StanLakeside_fnc_adminloadplayers;";	
+	onLoad = "[] spawn StanLakesideClient_fnc_adminloadplayers;";	
 	onunload = "client_kacCamera cameraEffect [""TERMINATE"",""BACK""]; camDestroy client_kacCamera;";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -182,7 +182,7 @@ class koiladmin {
 			y = 0.16 * safezoneH + safezoneY;
 			w = 0.075 * safezoneW;
 			h = 0.68 * safezoneH;
-			onLBSelChanged = "[] spawn StanLakeside_fnc_adminupdateplayer;";
+			onLBSelChanged = "[] spawn StanLakesideClient_fnc_adminupdateplayer;";
 		};
 
 		class RscListbox_functions: RscListbox
@@ -203,7 +203,7 @@ class koiladmin {
 		class execute : client_RscButtonMenu {
 			idc = 1115;
 			text = "Execute";
-			onButtonClick = "[] spawn StanLakeside_fnc_adminexecute;";
+			onButtonClick = "[] spawn StanLakesideClient_fnc_adminexecute;";
 			x = 0.55;
 			y = 0.8;
 			w = 0.15;

@@ -93,7 +93,7 @@ if (!isnull _policeHolder) then {
 
     _units = nearestObjects [_policeHolder, ["Man"], 50];
     {
-		[] remoteExec ["StanLakeside_fnc_closedialogs",_x];
+		[] remoteExec ["StanLakesideClient_fnc_closedialogs",_x];
 	} foreach _units;
 	policeStorageActive = 0;
     deleteVehicle _policeHolder;

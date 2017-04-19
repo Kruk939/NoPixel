@@ -47,7 +47,7 @@ if(_fuck != _you) then {
 
 		[format["%1 jest ciężko ranny!", _you], false] spawn domsg; 
 		shooting_death = false;
-		[_killer, player, "vehicleKill"] spawn StanLakeside_fnc_createEvidence;
+		[_killer, player, "vehicleKill"] spawn StanLakesideClient_fnc_createEvidence;
 	} else {
 		[getpos player, "News", "Shooting"] remoteexec ["StanLakesideServer_fnc_giveTask",2];
 		if(_headshot == 1) then { [format["%1 ustrzelił głowę %2 z dystansu %3 używając: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  } else { [format["%1 ułożył do snu %2 z dystansu %3 używając: %4.", _fuck, _you, _killdistance, _killweapon], false] spawn domsg;  };
@@ -61,7 +61,7 @@ if(_fuck != _you) then {
 		client_kcCamera camCommit 0;
 		_playerkill = true;
 		shooting_death = true;
-		[_killer, player, "killAtempt"] spawn StanLakeside_fnc_createEvidence;
+		[_killer, player, "killAtempt"] spawn StanLakesideClient_fnc_createEvidence;
 	};
 	[player,_killer,1,format ["%1 zabił %2 z dystansu %3 używając %4",_fuck, name player, _killdistance, _killweapon],_killweapon, _killdistance] remoteExec ["StanLakesideServer_fnc_deathLog", 2];
 } else {
@@ -112,10 +112,10 @@ _unit spawn
 	if (_respawn == 0) then 
 	{
 		_Timer ctrlSetText "Skończyły Ci się życia! Jeżeli w ciągu 15 minut nie pomoże Ci służba medyczna zostaniesz wyrzucony z serwera!";
-		[] spawn StanLakeside_fnc_respawnTimer;
+		[] spawn StanLakesideClient_fnc_respawnTimer;
 	};
 	if(!deadplayer) exitwith { closedialog 0; };
-	//if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; [] call StanLakeside_fnc_startFresh; };			
+	//if(shooting_death && round(maxTime - time) <= 0) exitwith { closeDialog 0; [] call StanLakesideClient_fnc_startFresh; };			
 };
 
 [_unit] spawn

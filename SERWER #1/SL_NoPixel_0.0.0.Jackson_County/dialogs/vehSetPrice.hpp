@@ -48,7 +48,7 @@ class vehSetPrice {
 			idc = -1;
 			text = "Ustaw cene";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[] call StanLakeside_fnc_vehSetPrice;";
+			onButtonClick = "[] call StanLakesideClient_fnc_vehSetPrice;";
 			x = 0.45;
 			y = 0.35;
 			w = (6.25 / 40);

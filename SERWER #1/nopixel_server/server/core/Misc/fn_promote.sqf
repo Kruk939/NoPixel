@@ -22,4 +22,4 @@ if(_rank > 1) then {
 		diag_log format ["Unkown faction: %1; Player: %2; Rank: %3", _type, _player, _rank];
 	};
 };
-[_type,_rank] remoteExec ["StanLakeside_fnc_setvariable",_player];
+[_type,_rank] remoteExec ["StanLakesideClient_fnc_setvariable",_player];

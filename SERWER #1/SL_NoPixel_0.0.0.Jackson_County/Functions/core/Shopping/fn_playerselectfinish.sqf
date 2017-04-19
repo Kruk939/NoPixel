@@ -19,6 +19,6 @@ client_kcCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy client_kcCamera;
 playMusic  "";
 //updates sex based off FEMALE variable
-["NA","sex",0] call StanLakeside_fnc_sustain;
+["NA","sex",0] call StanLakesideClient_fnc_sustain;
 player setVariable["loaded", 1, false];
 

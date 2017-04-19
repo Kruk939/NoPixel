@@ -1,5 +1,5 @@
-//[_location] remoteExec ["StanLakeside_fnc_startSecurity",_player];
-//[getpos player,] remoteExec ["StanLakeside_fnc_startGarbage",_player];
+//[_location] remoteExec ["StanLakesideClient_fnc_startSecurity",_player];
+//[getpos player,] remoteExec ["StanLakesideClient_fnc_startGarbage",_player];
 // use lexus with directionals only.
 
 private ["_warning","_JobBase"];

@@ -34,7 +34,7 @@ if(!isNull _source) then {
 			paintballhit = true;
 			if(!godmode && _selectionName == "") then {
 				godmode = true;
-				[2] remoteexec ["StanLakeside_fnc_paintball",_source];
+				[2] remoteexec ["StanLakesideClient_fnc_paintball",_source];
 			};
 			[] SPAWN {
 				sleep 1;
@@ -44,18 +44,18 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep in ["CG_CROSS","CG_BATON","CG_TELBAT","CG_SHOVEL"] && vehicle player == player) exitwith {
-			[_unit,_source] spawn StanLakeside_fnc_blunthit;
+			[_unit,_source] spawn StanLakesideClient_fnc_blunthit;
 			_damage = 0;
 		};
 
 		if(_curWep in ["cg_scythe","CG_PICKAXE","cg_hatchet","cg_machete","CG_BAT"] && vehicle player == player) exitwith {
-			[_unit,_source] spawn StanLakeside_fnc_sharphit;
+			[_unit,_source] spawn StanLakesideClient_fnc_sharphit;
 			_damage = 0;
 		};
 
 		if(_curWep == "Taser" && vehicle player == player && vehicle _source == _source) exitwith {
 			if(player distance _source < 40) then {
-				[_unit,_source] spawn StanLakeside_fnc_tazed;
+				[_unit,_source] spawn StanLakesideClient_fnc_tazed;
 			};
 			_damage = 0;	
 		};
@@ -89,17 +89,17 @@ if(uniform player == "nopixel_character_swat") then { _damage = _damage / 3; };
 	if(client_meth > 4) then { _damage = _damage / 1.1; };
 	if(client_meth > 0) then { _damage = _damage / 1.1; };
 
-	["Remove",_damage,_source] spawn StanLakeside_fnc_DoHealth;
+	["Remove",_damage,_source] spawn StanLakesideClient_fnc_DoHealth;
 	
 } else {
 
 	if(!isNull _source && isPlayer _source && _source != _unit && _damage > 0.1) then {	
 
-		[_damage,_selectionName,_source] spawn StanLakeside_fnc_damageChance;
+		[_damage,_selectionName,_source] spawn StanLakesideClient_fnc_damageChance;
 		//[] call fnc_firstPersonForced;
 	} else {
 		_source = player;
-		if(_damage > 0.65) then { [_damage,_selectionName,_source] spawn StanLakeside_fnc_damageChance; };
+		if(_damage > 0.65) then { [_damage,_selectionName,_source] spawn StanLakesideClient_fnc_damageChance; };
 	};
 
 };

@@ -24,11 +24,11 @@ switch (_type) do {
     case 4: { _backpackitems = backpackItems player; removeBackpack player; player addBackpack _item; {player addItemToBackpack _x} foreach _backpackitems;};   
 };
 
-[_totalPrice] call StanLakeside_fnc_sl_removeCash_secure;
+[_totalPrice] call StanLakesideClient_fnc_removeCash;
 
 _chance = round (random 100);
 if(_chance > 35) then {
-	["Add","Karma",2] call StanLakeside_fnc_sustain;
+	["Add","Karma",2] call StanLakesideClient_fnc_sustain;
 };
 
 [player,objNull,1,format ["%1 kupił %2 w ilości %3 za %4 $", name player, _item, _quantity, _totalPrice],_totalPrice, _item, _quantity] remoteExec ["StanLakesideServer_fnc_economyLog", 2];

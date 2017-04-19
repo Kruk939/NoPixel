@@ -14,4 +14,4 @@ _total = myCallOwner getVariable "PhonecallNumber";
 _total = _total + 1;	
 myCallOwner setvariable["PhoneCallNumber",_total,true];
 
-[] spawn StanLakeside_fnc_callProgress;
+[] spawn StanLakesideClient_fnc_callProgress;

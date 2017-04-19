@@ -17,15 +17,15 @@ _player removeAction _action;
 
 _action = _myDT addAction [ "Posadź", { 
 	params["_target", "_caller", "_id"];
-	[_target] spawn StanLakeside_fnc_weedgrowing;
+	[_target] spawn StanLakesideClient_fnc_weedgrowing;
 	myDrugValue2 = 4;
 	totalskills = 4;
 	_target removeAction _id;
-	_target addAction [ "Podlej rosline", { ["Water", (_this select 0)] call StanLakeside_fnc_upweedgrowing; } ];
-	_target addAction [ "Przytnij rosline", { ["Prune", (_this select 0)] call StanLakeside_fnc_upweedgrowing; } ];
-	_target addAction [ "Ochlodz rosline", { ["Cool", (_this select 0)] call StanLakeside_fnc_upweedgrowing; } ];
-	_target addAction [ "Ogrzej rosline", { ["Heat", (_this select 0)] call StanLakeside_fnc_upweedgrowing; } ];
-	_target addAction [ "Kultywatorowanie", { ["Turnover", (_this select 0)] call StanLakeside_fnc_upweedgrowing; } ];
+	_target addAction [ "Podlej rosline", { ["Water", (_this select 0)] call StanLakesideClient_fnc_upweedgrowing; } ];
+	_target addAction [ "Przytnij rosline", { ["Prune", (_this select 0)] call StanLakesideClient_fnc_upweedgrowing; } ];
+	_target addAction [ "Ochlodz rosline", { ["Cool", (_this select 0)] call StanLakesideClient_fnc_upweedgrowing; } ];
+	_target addAction [ "Ogrzej rosline", { ["Heat", (_this select 0)] call StanLakesideClient_fnc_upweedgrowing; } ];
+	_target addAction [ "Kultywatorowanie", { ["Turnover", (_this select 0)] call StanLakesideClient_fnc_upweedgrowing; } ];
 	[player,objNull,25,format ["%1 posadził marychę",name player],""] remoteExec ["StanLakesideServer_fnc_actionLog", 2];
 } ];
 weedPlantArray pushBack _myDT;

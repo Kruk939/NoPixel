@@ -1,4 +1,4 @@
-_cashCheck = [1,50000] call StanLakeside_fnc_sl_checkMoney_secure;
+_cashCheck = [1,50000] call StanLakesideClient_fnc_checkMoney;
 
 if!(_cashCheck) exitwith { hint "Za mało pieniędzy!"; };
 
@@ -21,7 +21,7 @@ player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "Itemwatch";
 
-[50000] call StanLakeside_fnc_sl_removeCash_secure;
+[50000] call StanLakesideClient_fnc_removeCash;
 
 
 

@@ -39,11 +39,11 @@ switch(_stage) do {
 	
 	case 4: {
 
-		[7] spawn StanLakeside_fnc_HudElements;
+		[7] spawn StanLakesideClient_fnc_HudElements;
 		_chance = round (random 1000);
 		if(_chance < 500) then {
 			["Your stomach hurts...", false] spawn domsg; 
-			[player,"hungry"] spawn StanLakeside_fnc_playSound;
+			[player,"hungry"] spawn StanLakesideClient_fnc_playSound;
 			uiSleep 3;
 		};
 

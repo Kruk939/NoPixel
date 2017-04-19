@@ -1,5 +1,5 @@
-//[_location] remoteExec ["StanLakeside_fnc_startSecurity",_player];
-//[getpos player,] remoteExec ["StanLakeside_fnc_startGarbage",_player];
+//[_location] remoteExec ["StanLakesideClient_fnc_startSecurity",_player];
+//[getpos player,] remoteExec ["StanLakesideClient_fnc_startGarbage",_player];
 // use lexus with directionals only.
 
 if( myjob != "none" && myjob != "towtruck") exitwith { hint "Masz już pracę!"; };
@@ -8,7 +8,7 @@ if(isnil "taskrunning") then { taskrunning = false; };
 
 myjob = "towtruck";
 
-[] call StanLakeside_fnc_hudwork;
+[] call StanLakesideClient_fnc_hudwork;
 private ["_warning","_JobBase"];
 if(!taskrunning) then {
 
@@ -32,12 +32,12 @@ if(!taskrunning) then {
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
 					hint "Zlecenie (Zaznaczone na mapie): Typ - Holuj pojazd";	
-					[((playertasks select 0) select 0)] call StanLakeside_fnc_jobMarker;			
+					[((playertasks select 0) select 0)] call StanLakesideClient_fnc_jobMarker;			
 					uisleep 3;
 				};
 			};
 		};
-		if(myjob == "towtruck") then { [] call StanLakeside_fnc_jobEnd; };
+		if(myjob == "towtruck") then { [] call StanLakesideClient_fnc_jobEnd; };
 	};
 };
 

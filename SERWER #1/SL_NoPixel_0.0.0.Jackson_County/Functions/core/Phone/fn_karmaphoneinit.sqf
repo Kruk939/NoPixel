@@ -5,7 +5,7 @@ Set Current Level // Koil
 player setvariable["PhoneCallNumber",0,true];
 player setvariable["PhoneID",0,true];
 
-StanLakeside_fnc_checkPhone = {
+StanLakesideClient_fnc_checkPhone = {
 
 	_radios = player call TFAR_fnc_radiosList;
 
@@ -28,7 +28,7 @@ StanLakeside_fnc_checkPhone = {
 
 };
 
-StanLakeside_fnc_resetCallSpawn = {
+StanLakesideClient_fnc_resetCallSpawn = {
 	player setvariable["PhoneCallNumber",0,true];
 	player setvariable["PhoneID",0,true];
 	player setVariable ["tf_unable_to_use_radio", true];
@@ -42,8 +42,8 @@ StanLakeside_fnc_resetCallSpawn = {
 	call TFAR_fnc_HideHint;
 };
 
-[] call StanLakeside_fnc_checkPhone;
-[] call StanLakeside_fnc_resetCallSpawn;
+[] call StanLakesideClient_fnc_checkPhone;
+[] call StanLakesideClient_fnc_resetCallSpawn;
 
 if(client_karma > 999) then {
 	karma_level = client_karma / 400;

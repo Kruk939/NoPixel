@@ -1,5 +1,5 @@
-//if(myjob == "Cop") exitwith { [] call StanLakeside_fnc_ChangePolice; };
-if(myjob in ["Cop","EMS","Fire"]) exitwith { [] call StanLakeside_fnc_ChangePolice; };
+//if(myjob == "Cop") exitwith { [] call StanLakesideClient_fnc_ChangePolice; };
+if(myjob in ["Cop","EMS","Fire"]) exitwith { [] call StanLakesideClient_fnc_ChangePolice; };
 playSound "cgphone_hangup";
 player setvariable["PhoneCallNumber",0,true];
 player setvariable["PhoneID",0,true];

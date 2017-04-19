@@ -1,5 +1,5 @@
 if(currentcursortarget iskindof "man") then {
-	[] remoteExec ["StanLakeside_fnc_unrestrained",currentcursortarget];
+	[] remoteExec ["StanLakesideClient_fnc_unrestrained",currentcursortarget];
 };
 
 if(currentcursortarget iskindof "car"  || currentcursortarget iskindof "boat" || currentcursortarget iskindof "Air") then {
@@ -7,4 +7,4 @@ if(currentcursortarget iskindof "car"  || currentcursortarget iskindof "boat" ||
 	[player,objNull,18,format ["%1 zwytrychował %2", name player, typeOf currentcursortarget],typeOf currentcursortarget] remoteExec ["StanLakesideServer_fnc_actionLog", 2];
 };
 
-	["Remove","Karma",15] call StanLakeside_fnc_sustain;
+	["Remove","Karma",15] call StanLakesideClient_fnc_sustain;

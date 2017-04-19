@@ -1,5 +1,5 @@
-//[_location] remoteExec ["StanLakeside_fnc_startSecurity",_player];
-//[getpos player,] remoteExec ["StanLakeside_fnc_startGarbage",_player];
+//[_location] remoteExec ["StanLakesideClient_fnc_startSecurity",_player];
+//[getpos player,] remoteExec ["StanLakesideClient_fnc_startGarbage",_player];
 // use lexus with directionals only.
 if(myjob != "none" && myjob != "Security") exitwith { hint "Masz już pracę!"; };
 
@@ -7,7 +7,7 @@ if(isnil "taskrunning") then { taskrunning = false; };
 
 myjob = "security";
 
-[] call StanLakeside_fnc_hudwork;
+[] call StanLakesideClient_fnc_hudwork;
 
 private ["_warning","_JobBase"];
 
@@ -33,12 +33,12 @@ if(!taskrunning) then {
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
 					hint "A store robbery has occured!: Job Type - Security";	
-					[((playertasks select 0) select 0)] call StanLakeside_fnc_jobMarker;			
+					[((playertasks select 0) select 0)] call StanLakesideClient_fnc_jobMarker;			
 					uisleep 3;
 				};
 			};
 		};
-		if(myjob == "security") then { [] call StanLakeside_fnc_jobEnd; };
+		if(myjob == "security") then { [] call StanLakesideClient_fnc_jobEnd; };
 	};
 };
 

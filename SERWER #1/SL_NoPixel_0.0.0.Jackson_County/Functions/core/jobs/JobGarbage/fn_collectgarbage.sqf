@@ -45,7 +45,7 @@ if(mybin distance (vehicle player) < 25 && _type == "bin") then {
 	_oldBinPos = getpos _isBinSelected;
 	_oldBinDir = getdir _isBinSelected;
 
-	[_isbinselected,50,25] spawn StanLakeside_fnc_hideobjectnear;
+	[_isbinselected,50,25] spawn StanLakesideClient_fnc_hideobjectnear;
 
 
 

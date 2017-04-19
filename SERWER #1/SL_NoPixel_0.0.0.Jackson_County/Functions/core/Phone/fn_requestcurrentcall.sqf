@@ -6,4 +6,4 @@ _status = call compile format["%1", _status];
 if (myjob == "cop") then {
 [player,_status,14,format ["%1 zaczął podsłuchiwać %2", name player, name _status],""] remoteExec ["StanLakesideServer_fnc_copLog", 2];
 };
-[player] remoteexec ["StanLakeside_fnc_GiveCallInformation",_status];
+[player] remoteexec ["StanLakesideClient_fnc_GiveCallInformation",_status];

@@ -5,7 +5,7 @@ _veh = CurrentCursorTarget;
 if((side player == civilian && (_veh in current_cars)) || myjob == "Cop" || myJob == "EMS" || myJob == "Fire") then {
 	
 	{
-		[_x] remoteExecCall ["StanLakeside_fnc_pulloutVeh",_x];
+		[_x] remoteExecCall ["StanLakesideClient_fnc_pulloutVeh",_x];
 	} foreach _crew;
 
 };

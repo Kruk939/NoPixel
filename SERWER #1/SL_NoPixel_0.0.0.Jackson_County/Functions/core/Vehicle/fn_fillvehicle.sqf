@@ -9,7 +9,7 @@ lbClear _list;
 _vehicles = nearestObjects [player, ["Car","Air","Ship"], 20];
 
 {
-	_vehicleName = [(typeof _x)] call StanLakeside_fnc_getVehicleName;
+	_vehicleName = [(typeof _x)] call StanLakesideClient_fnc_getVehicleName;
 	_list lbAdd format["%1", _vehicleName];
 	_list lbSetdata [(lbSize _list)-1,str([typeof _x,getpos _x])];
 } foreach _vehicles;

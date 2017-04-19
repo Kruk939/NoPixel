@@ -1,4 +1,4 @@
-//[getpos player(or object they drop / bin they use),"player"] remoteExec ["StanLakeside_fnc_startGarbage",_player];
+//[getpos player(or object they drop / bin they use),"player"] remoteExec ["StanLakesideClient_fnc_startGarbage",_player];
 //
 // _type is bin, player, dump - only should need to call player driven tasks with remoteexec.
 if(myjob != "none" && myjob != "TrashMan") exitwith { hint "Masz już pracę!"; };
@@ -19,7 +19,7 @@ if(taskrunning) then {
 };
 
 myjob = "TrashMan";
-[] call StanLakeside_fnc_hudwork;
+[] call StanLakesideClient_fnc_hudwork;
 playertasks = [];
 taskrunning = true;
 _markername = format["job%1",getPlayerUID player];
@@ -32,12 +32,12 @@ while{taskrunning  && myjob == "TrashMan" } do {
 		if(_garbageLevel > 10) then {
 			_garbageLevel = 0;
 			playertasks pushback [[1064,3667,0.014],"dump"];	
-			[getpos ((playertasks select 0) select 0)] call StanLakeside_fnc_jobMarker;
+			[getpos ((playertasks select 0) select 0)] call StanLakesideClient_fnc_jobMarker;
 			hint "Zlecenie (Zaznaczone na mapie): Wywóz śmieci";			
 		} else {
 			mybin = mapBins call BIS_fnc_selectRandom;
 			playertasks pushback [mybin,"bin"];
-			[getpos ((playertasks select 0) select 0)] call StanLakeside_fnc_jobMarker;
+			[getpos ((playertasks select 0) select 0)] call StanLakesideClient_fnc_jobMarker;
 			hint "Zlecenie (Zaznaczone na mapie): Wywóz śmieci";
 		};
 	} else {
@@ -50,14 +50,14 @@ while{taskrunning  && myjob == "TrashMan" } do {
 		};
 
 		if !( (getmarkerpos _markername select 0) isEqualTo (getpos ((playertasks select 0) select 0) select 0) && (getmarkerpos _markername select 1) isEqualTo (getpos ((playertasks select 0) select 0) select 1) ) then {
-			[getpos ((playertasks select 0) select 0)] call StanLakeside_fnc_jobMarker;
+			[getpos ((playertasks select 0) select 0)] call StanLakesideClient_fnc_jobMarker;
 		};
 
 
 		if(player distance ((playertasks select 0) select 0) < 15 && vehicle player != player && player distance vehspawned < 10) then {
 
 			if(((playertasks select 0) select 1) == "bin") then {
-				["bin"] spawn StanLakeside_fnc_collectGarbage;
+				["bin"] spawn StanLakesideClient_fnc_collectGarbage;
 				_warnings = 0;
 				paycheck = paycheck + 130;
 				playertasks deleteat 0;
@@ -65,7 +65,7 @@ while{taskrunning  && myjob == "TrashMan" } do {
 			};
 
 			if(((playertasks select 0) select 1) == "dump") then {
-				["dump"] spawn StanLakeside_fnc_collectGarbage;
+				["dump"] spawn StanLakesideClient_fnc_collectGarbage;
 				_warnings = 0;
 				paycheck = paycheck + 250;
 				playertasks deleteat 0;
@@ -83,6 +83,6 @@ while{taskrunning  && myjob == "TrashMan" } do {
 	};
 };
 
-if(myjob == "TrashMan") then { [] call StanLakeside_fnc_jobEnd; };
+if(myjob == "TrashMan") then { [] call StanLakesideClient_fnc_jobEnd; };
 
 

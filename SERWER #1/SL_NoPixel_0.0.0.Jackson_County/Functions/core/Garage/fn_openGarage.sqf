@@ -6,7 +6,7 @@ _garage = player getVariable "garage";
 
 {
 	_class = _x select 1;
-	_vehicleName = [_class] call StanLakeside_fnc_getVehicleName;
+	_vehicleName = [_class] call StanLakesideClient_fnc_getVehicleName;
 	_Color = _x select 2;
 	_colorName = getText(configFile >> "cfgIvoryTextures" >> _Color >> "displayname");
 	_license = _x select 0;

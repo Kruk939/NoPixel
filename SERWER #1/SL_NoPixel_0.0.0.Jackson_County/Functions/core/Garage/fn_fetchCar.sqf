@@ -28,54 +28,54 @@ if((_this select 0) == 1) exitwith {
 	_vehicle allowdamage false;
 	_className = toLower(_car);
 	if (str _className find "vory_" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
 	};
 	if (str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 ) then {
-		[_vehicle, "", "jonzie"] remoteexec ["StanLakeside_fnc_numberPlate",2];
+		[_vehicle, "", "jonzie"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
 	};
 	if (str _className find "vv_" > -1 ) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
 	};
 	if (str _className find "adilac_" > -1 ) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
 	};
 	if (str _className find "_unmarked_bb" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
-		[_vehicle, ["black","matte"], "black", 10, 10] call StanLakeside_fnc_IvoryInitVehicle;
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
+		[_vehicle, ["black","matte"], "black", 10, 10] call StanLakesideClient_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_br" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
-		[_vehicle, ["wildstrawberry","matte"], "wildstrawberry", 10, 10] call StanLakeside_fnc_IvoryInitVehicle;
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
+		[_vehicle, ["wildstrawberry","matte"], "wildstrawberry", 10, 10] call StanLakesideClient_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_rr" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
-		[_vehicle, ["darkred","matte"], "red", 10, 10] call StanLakeside_fnc_IvoryInitVehicle;
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
+		[_vehicle, ["darkred","matte"], "red", 10, 10] call StanLakesideClient_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_rb" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
-		[_vehicle, ["darkred","matte"], "black", 10, 10] call StanLakeside_fnc_IvoryInitVehicle;
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
+		[_vehicle, ["darkred","matte"], "black", 10, 10] call StanLakesideClient_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_mbb" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
-		[_vehicle, ["black","metallic"], "black", 10, 10] call StanLakeside_fnc_IvoryInitVehicle;
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
+		[_vehicle, ["black","metallic"], "black", 10, 10] call StanLakesideClient_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_gb" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
-		[_vehicle, ["dimgray","matte"], "black", 10, 10] call StanLakeside_fnc_IvoryInitVehicle;
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
+		[_vehicle, ["dimgray","matte"], "black", 10, 10] call StanLakesideClient_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_mgb" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
-		[_vehicle, ["sunglow","metallic"], "black", 10, 10] call StanLakeside_fnc_IvoryInitVehicle;
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
+		[_vehicle, ["sunglow","metallic"], "black", 10, 10] call StanLakesideClient_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_blb" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
-		[_vehicle, ["brandeisblue","matte"], "black", 10, 10] call StanLakeside_fnc_IvoryInitVehicle;
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
+		[_vehicle, ["brandeisblue","matte"], "black", 10, 10] call StanLakesideClient_fnc_IvoryInitVehicle;
 	};
 	if (str _className find "_unmarked_mblb" > -1) then {
-		[_vehicle, "", "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
-		[_vehicle, ["darkjunglegreen","metallic"], "black", 10, 10] call StanLakeside_fnc_IvoryInitVehicle;
+		[_vehicle, "", "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
+		[_vehicle, ["darkjunglegreen","metallic"], "black", 10, 10] call StanLakesideClient_fnc_IvoryInitVehicle;
 	};
-	[_vehicle] call StanLakeside_fnc_spawnvehicle;
+	[_vehicle] call StanLakesideClient_fnc_spawnvehicle;
 	_vehicle allowdamage true;
 	Current_Cars pushBack _vehicle;
 };
@@ -97,7 +97,7 @@ _pia = _garage find _car;
 _garage deleteAt _pia;
 player setVariable ["garage", _garage, false];
 
-if (_damage > 0.99) exitWith {["Informacja","Mój pojazd jest doszczętnie rozwalony!",[255,69,0,1],""] call StanLakeside_fnc_showNotification; };
+if (_damage > 0.99) exitWith {["Informacja","Mój pojazd jest doszczętnie rozwalony!",[255,69,0,1],""] call StanLakesideClient_fnc_showNotification; };
 
 _vehicle = _classname createVehicle [(getpos player) select 0,(getpos player) select 1,((getpos player) select 2) + 100];
 
@@ -117,31 +117,31 @@ _vehicle setvariable ["information",_car,false];
 if (_vehicle isKindOf "Car") then {
 
 	if (str _className find "vory_" > -1) then {
-		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call StanLakeside_fnc_IvoryInitVehicle;
-		[_vehicle, _numberPlate, "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
+		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call StanLakesideClient_fnc_IvoryInitVehicle;
+		[_vehicle, _numberPlate, "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
 	};
 
 	if (str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 ) then {
-		[_vehicle, [_carColor,_carFinish]] call StanLakeside_fnc_initVehicle;
-		[_vehicle, _numberPlate, "jonzie"] remoteexec ["StanLakeside_fnc_numberPlate",2];
+		[_vehicle, [_carColor,_carFinish]] call StanLakesideClient_fnc_initVehicle;
+		[_vehicle, _numberPlate, "jonzie"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
 	};
 
 	if (str _className find "opixel_" > -1 ) then {
-		[_vehicle, [_carColor,_carFinish]] call StanLakeside_fnc_initVehicle;
+		[_vehicle, [_carColor,_carFinish]] call StanLakesideClient_fnc_initVehicle;
 	};
 	if (str _className find "vv_" > -1 ) then {
-		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call StanLakeside_fnc_IvoryInitVehicle;
-		[_vehicle, _numberPlate, "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
+		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call StanLakesideClient_fnc_IvoryInitVehicle;
+		[_vehicle, _numberPlate, "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
 	};
 	if (str _className find "adilac_" > -1 ) then {
-		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call StanLakeside_fnc_IvoryInitVehicle;
-		[_vehicle, _numberPlate, "ivory"] remoteexec ["StanLakeside_fnc_numberPlate",2];
+		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call StanLakesideClient_fnc_IvoryInitVehicle;
+		[_vehicle, _numberPlate, "ivory"] remoteexec ["StanLakesideClient_fnc_numberPlate",2];
 	};
 _vehicle setFuel _fuel;
 _vehicle setDamage _damage;
 };
 
-[_vehicle] call StanLakeside_fnc_spawnvehicle;
+[_vehicle] call StanLakesideClient_fnc_spawnvehicle;
 _vehicle allowdamage true;
 Current_Cars pushBack _vehicle;
 //[1,_vehicle,_vehicle,_numberPlate,player] remoteExec ["StanLakesideServer_fnc_fuelVehicle", 2];

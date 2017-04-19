@@ -8,8 +8,8 @@ if(!isPlayer _target) exitWith {};
 if(player distance _target > 4) exitWith {};
 
 player switchmove "vvv_anim_weaponHit";
-[player,"vvv_anim_weaponHit"] remoteExecCall ["StanLakeside_fnc_animSync"];
-	["Remove","Karma",15] call StanLakeside_fnc_sustain;
-[name player] remoteExecCall ["StanLakeside_fnc_knockedOut",_target];
+[player,"vvv_anim_weaponHit"] remoteExecCall ["StanLakesideClient_fnc_animSync"];
+	["Remove","Karma",15] call StanLakesideClient_fnc_sustain;
+[name player] remoteExecCall ["StanLakesideClient_fnc_knockedOut",_target];
 
 

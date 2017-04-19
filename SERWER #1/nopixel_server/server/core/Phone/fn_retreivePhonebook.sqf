@@ -32,7 +32,7 @@ _information = [
  
 ]; 
  
-[_information] remoteExec ["StanLakeside_fnc_updatePhonebook",_player]; 
+[_information] remoteExec ["StanLakesideClient_fnc_updatePhonebook",_player]; 
  
  
 diag_log ["retreive phonebook %1", _player]; 

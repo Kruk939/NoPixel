@@ -1,2 +1,2 @@
-[player] remoteExec ["StanLakeside_fnc_revived",CurrentCursorTarget];
+[player] remoteExec ["StanLakesideClient_fnc_revived",CurrentCursorTarget];
 [player,CurrentCursorTarget,9,format ["%1 reanimował %2", name player, name CurrentCursorTarget],""] remoteExec ["StanLakesideServer_fnc_actionLog", 2];

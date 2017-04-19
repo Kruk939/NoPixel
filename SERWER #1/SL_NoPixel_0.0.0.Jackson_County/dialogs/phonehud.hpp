@@ -4,7 +4,7 @@ class phoneHUD
 {    
 	idd = 12198;
 	name= "client_phone_hud";
-	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [""baseload""] spawn StanLakeside_fnc_fadephone;";
+	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [""baseload""] spawn StanLakesideClient_fnc_fadephone;";
 	movingEnable = 0;
 	enableSimulation = 1;
 	fadein = 1;
@@ -91,7 +91,7 @@ class phoneHUD
 			y = 0.2;
 			w = 0.1;
 			h = 0.1;
-			action = "closedialog 0; [] spawn StanLakeside_fnc_openMessages";
+			action = "closedialog 0; [] spawn StanLakesideClient_fnc_openMessages";
 		};
 
 		class volup: RscButtonSilent
@@ -102,7 +102,7 @@ class phoneHUD
 			y = 0.3;
 			w = 0.1;
 			h = 0.1;
-			action = "[] spawn StanLakeside_fnc_iVol;";
+			action = "[] spawn StanLakesideClient_fnc_iVol;";
 		};
 
 		class voldown: RscButtonSilent
@@ -113,7 +113,7 @@ class phoneHUD
 			y = 0.3;
 			w = 0.1;
 			h = 0.1;
-			action = "[] spawn StanLakeside_fnc_dVol;";
+			action = "[] spawn StanLakesideClient_fnc_dVol;";
 		};
 
 		class Call: RscButtonSilent
@@ -124,7 +124,7 @@ class phoneHUD
 			y = 0.7;
 			w = 0.1;
 			h = 0.1;
-			action = "closedialog 0; [] spawn StanLakeside_fnc_trycall;";
+			action = "closedialog 0; [] spawn StanLakesideClient_fnc_trycall;";
 		};
 
 		class Hangup: RscButtonSilent
@@ -135,7 +135,7 @@ class phoneHUD
 			y = 0.7;
 			w = 0.1;
 			h = 0.1;
-			action = "closedialog 0; [] spawn StanLakeside_fnc_tryhangup;";
+			action = "closedialog 0; [] spawn StanLakesideClient_fnc_tryhangup;";
 		};
 
 
@@ -147,7 +147,7 @@ class phoneHUD
 			y = 0.7;
 			w = 0.1;
 			h = 0.1;
-			action = "closedialog 0; [] spawn StanLakeside_fnc_phoneDisabled;";
+			action = "closedialog 0; [] spawn StanLakesideClient_fnc_phoneDisabled;";
 		};
                                                              
 		class phoneglare: RscPicture

@@ -15,7 +15,7 @@ if(vehSpawned distance player > 15 || isNil {vehSpawned} || isnull vehSpawned ) 
 
 		_localProtection = _localprotection + 1;
 		globalProtection = globalProtection + 1;
-		if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn StanLakeside_fnc_anticheat; };
+		if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn StanLakesideClient_fnc_anticheat; };
 		detach _x;
 		deletevehicle _x; 
 		_sound = round(random 5);

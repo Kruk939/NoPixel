@@ -82,7 +82,7 @@ class vehicle_colors {
 			w = 0.113437 * safezoneW;
 			h = 0.198 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
-			onLBSelChanged = "[] spawn StanLakeside_fnc_vehChangeColorOnLbChange;";
+			onLBSelChanged = "[] spawn StanLakesideClient_fnc_vehChangeColorOnLbChange;";
 		};
 		class listbox_finish: RscListbox
 		{
@@ -92,7 +92,7 @@ class vehicle_colors {
 			w = 0.113437 * safezoneW;
 			h = 0.088 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
-			onLBSelChanged = "[] spawn StanLakeside_fnc_vehChangeColorOnLbChange;";
+			onLBSelChanged = "[] spawn StanLakesideClient_fnc_vehChangeColorOnLbChange;";
 		};
 		class combo_lights: RscCombo
 		{
@@ -102,7 +102,7 @@ class vehicle_colors {
 			w = 0.113437 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
-			onLBSelChanged = "[] spawn StanLakeside_fnc_vehChangeColorOnLbChange;";
+			onLBSelChanged = "[] spawn StanLakesideClient_fnc_vehChangeColorOnLbChange;";
 		};
 		class combo_windows: RscCombo
 		{
@@ -112,7 +112,7 @@ class vehicle_colors {
 			w = 0.113437 * safezoneW;
 			h = 0.022 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
-			onLBSelChanged = "[] spawn StanLakeside_fnc_vehChangeColorOnLbChange;";
+			onLBSelChanged = "[] spawn StanLakesideClient_fnc_vehChangeColorOnLbChange;";
 		};
 		class listbox_rims: RscListbox
 		{
@@ -122,7 +122,7 @@ class vehicle_colors {
 			w = 0.113437 * safezoneW;
 			h = 0.198 * safezoneH;
 			colorBackground[] = {0,0,0,0.5};
-			onLBSelChanged = "[] spawn StanLakeside_fnc_vehChangeColorOnLbChange;";
+			onLBSelChanged = "[] spawn StanLakesideClient_fnc_vehChangeColorOnLbChange;";
 		};
 		class button_confirm: client_RscButtonMenu
 		{
@@ -133,7 +133,7 @@ class vehicle_colors {
 			w = 0.0928125 * safezoneW;
 			h = 0.033 * safezoneH;
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
-			action = "[] spawn StanLakeside_fnc_vehChangeColorButtonAccept; closeDialog 0; ";
+			action = "[] spawn StanLakesideClient_fnc_vehChangeColorButtonAccept; closeDialog 0; ";
 		};
 		class button_cancel: client_RscButtonMenu
 		{
@@ -144,7 +144,7 @@ class vehicle_colors {
 			w = 0.0464062 * safezoneW;
 			h = 0.033 * safezoneH;
 			colorBackground[] = {0,0,0,0.7};
-			action = "[] spawn StanLakeside_fnc_resetColor; closeDialog 0;";
+			action = "[] spawn StanLakesideClient_fnc_resetColor; closeDialog 0;";
 		};
 	};
 };

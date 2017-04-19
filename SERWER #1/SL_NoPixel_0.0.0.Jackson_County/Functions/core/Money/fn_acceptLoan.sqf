@@ -19,9 +19,9 @@ loan SET [3,_amount select 3];
 
 
 
-[_amountcheck] call StanLakeside_fnc_sl_addCash_secure;
+[_amountcheck] call StanLakesideClient_fnc_addCash;
 
 ["Remove",_amountcheck] remoteexec ["StanLakesideServer_fnc_updateMafiaBank",2];
 
-["Add","MafiaMoney",_owed] call StanLakeside_fnc_sustain;
+["Add","MafiaMoney",_owed] call StanLakesideClient_fnc_sustain;
 

@@ -9,4 +9,4 @@ closedialog 0;
 sleep 0.05;
 if(isNil "_status") exitwith { };
 ["personal",_status,_message,player,format["Mail od %1", name player]] remoteExec ["StanLakesideServer_fnc_sendMail",2];
-[_message,format["Mail od %1", name player],name player] remoteExec ["StanLakeside_fnc_sendMail",_status];
+[_message,format["Mail od %1", name player],name player] remoteExec ["StanLakesideClient_fnc_sendMail",_status];
