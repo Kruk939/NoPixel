@@ -494,6 +494,11 @@ _availableUniforms = [
 		"TRYK_U_B_PCUGs_BLK_R",
 		"TRYK_U_denim_jersey_blu",
 		"TRYK_U_B_Denim_T_BG_BK",
+        "TRYK_shirts_BLK_PAD_BL",
+        "TRYK_U_pad_hood_CSATBlk",
+            
+        "U_BG_Guerilla3_1",
+        "U_BG_Guerrilla_6_1",
 
 		"CUP_U_C_Villager_03",
 		"CUP_U_C_Woodlander_04",
