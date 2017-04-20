@@ -3,7 +3,7 @@ class FindPlayer_Menu {
 	name= "client_craft";
 	movingEnable = 0;
 	enableSimulation = 1;
-	onLoad = "[] spawn StanLakeside_fnc_findPlayers;";
+	onLoad = "[] spawn client_fnc_findPlayers;";
 
 	class controlsBackground {
 	
@@ -45,7 +45,7 @@ class FindPlayer_Menu {
 		class HomeOption : client_RscButtonMenu {
 			idc = 1115;
 			text = "Select";
-			onButtonClick = "[] spawn StanLakeside_fnc_chooseUser;";
+			onButtonClick = "[] spawn client_fnc_chooseUser;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;
 			w = (6.25 / 40);
@@ -111,7 +111,7 @@ class FindKeyPlayer_Menu {
 		class HomeOption : client_RscButtonMenu {
 			idc = 1115;
 			text = "Select";
-			onButtonClick = "[] spawn StanLakeside_fnc_chooseKeyUser;";
+			onButtonClick = "[] spawn client_fnc_chooseKeyUser;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;
 			w = (6.25 / 40);
@@ -135,7 +135,7 @@ class client_Craft_Menu {
 	name= "client_craft";
 	movingEnable = 0;
 	enableSimulation = 1;
-	onLoad = "[""FRESH""] spawn StanLakeside_fnc_craftMenu;";
+	onLoad = "[""FRESH""] spawn client_fnc_craftMenu;";
 	
 	class controls {
 		
@@ -219,7 +219,7 @@ class client_Craft_Menu {
 			idc = 1113;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[""REFRESH""] spawn StanLakeside_fnc_craftMenu;";
+			onLBSelChanged = "[""REFRESH""] spawn client_fnc_craftMenu;";
 			x = 0.33173 * safezoneW + safezoneX;
 			y = 0.301596 * safezoneH + safezoneY;
 			w = 0.14605 * safezoneW;
@@ -228,7 +228,7 @@ class client_Craft_Menu {
 
 		class HomeOption : HideButton {
 			idc = 1115;
-			onButtonClick = "[""FRESH""] spawn StanLakeside_fnc_CraftMenu;";
+			onButtonClick = "[""FRESH""] spawn client_fnc_CraftMenu;";
 			x = 0.485 * safezoneW + safezoneX;
 			y = 0.65 * safezoneH + safezoneY;
 			w = 0.03 * safezoneW;
@@ -238,7 +238,7 @@ class client_Craft_Menu {
 		class ProcessOption : HideButton {
 			idc = 1117;
 			text = "Open";
-			onButtonClick = "[""MENU""] spawn StanLakeside_fnc_CraftMenu; [""REFRESH""] spawn StanLakeside_fnc_craftMenu;";
+			onButtonClick = "[""MENU""] spawn client_fnc_CraftMenu; [""REFRESH""] spawn client_fnc_craftMenu;";
 			x = 0.311275 * safezoneW + safezoneX;
 			y = 0.70016 * safezoneH + safezoneY;
 			w = 0.0899698 * safezoneW;
@@ -248,7 +248,7 @@ class client_Craft_Menu {
 		class CraftOption : HideButton {
 			idc = 1116;
 			text = "Craft Item";
-			onButtonClick = "[""CRAFT""] spawn StanLakeside_fnc_CraftMenu;";
+			onButtonClick = "[""CRAFT""] spawn client_fnc_CraftMenu;";
 			x = 0.406871 * safezoneW + safezoneX;
 			y = 0.700203 * safezoneH + safezoneY;
 			w = 0.0899698 * safezoneW;
@@ -258,7 +258,7 @@ class client_Craft_Menu {
 		class MagOption : HideButton {
 			idc = 1118;
 			text = "Craft Mag";
-			onButtonClick = "[""CRAFTMAG""] spawn StanLakeside_fnc_CraftMenu;";
+			onButtonClick = "[""CRAFTMAG""] spawn client_fnc_CraftMenu;";
 			x = 0.503218 * safezoneW + safezoneX;
 			y = 0.699443 * safezoneH + safezoneY;
 			w = 0.0899698 * safezoneW;

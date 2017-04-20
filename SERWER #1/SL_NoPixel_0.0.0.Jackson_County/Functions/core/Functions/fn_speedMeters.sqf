@@ -126,7 +126,7 @@ while{true} do {
 				_uid_officer = "901";
 				_reason = format["Predkosc %1kmh%2",round(_vel),_text];
 				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
-				["vehicle", _data] remoteExec ["StanLakesideServer_fnc_slpdCaseAdd",2];
+				["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
 				
 				_message = format["Kierowco! Zostałeś złapany na przekroczeniu prędkości. Prosimy udaj się na komisariat i opłać swój mandat! %2 Zdjęcie pojazdu o numerze rejestracyjnym - %1", toUpper(_plate), _reason];
 				
@@ -134,8 +134,8 @@ while{true} do {
 				[_message] spawn {
 					_message = _this select 0;
 					uiSleep 60;
-					["fotoradar",player,_message,"Wydział ruchu drogowego","[Mandat] Wydział ruchu drogowego"] remoteExec ["StanLakesideServer_fnc_sendMail",2];
-					[_message,"[Mandat] Wydział ruchu drogowego","Wydział ruchu drogowego"] remoteExec ["StanLakeside_fnc_sendMail",player];
+					["fotoradar",player,_message,"Wydział ruchu drogowego","[Mandat] Wydział ruchu drogowego"] remoteExec ["server_fnc_sendMail",2];
+					[_message,"[Mandat] Wydział ruchu drogowego","Wydział ruchu drogowego"] remoteExec ["client_fnc_sendMail",player];
 					speedMeter_last_ticket = false;
 				};
 			};

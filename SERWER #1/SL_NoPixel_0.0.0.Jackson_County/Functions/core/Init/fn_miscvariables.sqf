@@ -122,14 +122,14 @@ if (getplayerUID player IN ["76561197998091289","76561197982469013","76561198201
 							//wedkarz bogdan	//michael skocik	//kifkick
 if (getplayerUID player IN ["76561198084421746","76561198045378889","76561198201987250"]) then { client_tran=1; };
 
-StanLakeside_fnc_keyBusyPlayer = compileFinal
+client_fnc_keyBusyPlayer = compileFinal
 "
 	busyPlayer = true;
 	uisleep 1;
 	busyPlayer = false;
 ";
 
-StanLakeside_fnc_blindfolded = compileFinal
+client_fnc_blindfolded = compileFinal
 "
 	blindfolded = true;
 	""colorCorrections"" ppEffectEnable true;			
@@ -154,7 +154,7 @@ StanLakeside_fnc_blindfolded = compileFinal
 	""colorCorrections"" ppEffectEnable false;	
 ";
 
-StanLakeside_fnc_unblindfolded = compileFinal
+client_fnc_unblindfolded = compileFinal
 "
 	blindfolded = false;
 	""colorCorrections"" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 
@@ -164,23 +164,23 @@ StanLakeside_fnc_unblindfolded = compileFinal
 	player addheadgear oldheadgear;
 ";
 
-StanLakeside_fnc_moveIn = compileFinal
+client_fnc_moveIn = compileFinal
 "
 	player moveInCargo (_this select 0);
 ";
 
-StanLakeside_fnc_restrained = compileFinal
+client_fnc_restrained = compileFinal
 "
 	imRestrained = true;
 	player switchmove """";
 	player setVariable [""tf_unable_to_use_radio"", true];
 	uisleep 0.05;
-	[player,""Acts_AidlPsitMstpSsurWnonDnon_loop""] remoteExec [""StanLakeside_fnc_animSync""];
+	[player,""Acts_AidlPsitMstpSsurWnonDnon_loop""] remoteExec [""client_fnc_animSync""];
 
 	while{imRestrained} do {
 
 		if (animationstate player != ""Acts_AidlPsitMstpSsurWnonDnon_loop"" && !deadplayer && vehicle player == player) then {
-			[player,""Acts_AidlPsitMstpSsurWnonDnon_loop""] remoteExec [""StanLakeside_fnc_animSync""];
+			[player,""Acts_AidlPsitMstpSsurWnonDnon_loop""] remoteExec [""client_fnc_animSync""];
 			uisleep 1;
 		};
 		if(vehicle player != player) then {
@@ -193,7 +193,7 @@ StanLakeside_fnc_restrained = compileFinal
 	};
 ";
 
-StanLakeside_fnc_unrestrained = compileFinal
+client_fnc_unrestrained = compileFinal
 "
 	imRestrained = false;
 	player switchMove """";
@@ -219,7 +219,7 @@ KK_fnc_forceRagdoll = compileFinal
 	};
 ";
 
-StanLakeside_fnc_animSync = compileFinal
+client_fnc_animSync = compileFinal
 "
 	private[""_unit"",""_anim""];
 	_unit = param [0,ObjNull,[Objnull]];
@@ -368,7 +368,7 @@ player addEventHandler["put", {
 		_loadout = getunitloadout player;
 		_isPack = getNumber(configFile >> "CfgVehicles" >> (_this select 2) >> "isBackpack");
 		_attempt = isClass (ConfigFile >> "CfgWeapons" >> (_this select 2));
-		if(_attempt || _isPack == 1) then {	[player, "getunitloadout", _loadout] remoteExec ["StanLakesideServer_fnc_setVariable",2]; };
+		if(_attempt || _isPack == 1) then {	[player, "getunitloadout", _loadout] remoteExec ["Server_fnc_setVariable",2]; };
 
 		if(uniform player == "" && female) then {
 		player forceadduniform "vvv_character_protibanador";
@@ -393,11 +393,11 @@ player addEventHandler["put", {
 	};
 }];
 
-player addEventHandler["Fired",{_this call StanLakeside_fnc_handleFired;}];
-//player addEventHandler["FiredNear",{_this call StanLakeside_fnc_handlefiredNear;}];
-player addEventHandler["handleDamage", { _this spawn StanLakeside_fnc_handleDamage; false } ];
+player addEventHandler["Fired",{_this call client_fnc_handleFired;}];
+//player addEventHandler["FiredNear",{_this call client_fnc_handlefiredNear;}];
+player addEventHandler["handleDamage", { _this spawn Client_fnc_handleDamage; false } ];
 
-client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","StanLakeside_fnc_nametags"] call BIS_fnc_addStackedEventHandler; 
+client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","client_fnc_nametags"] call BIS_fnc_addStackedEventHandler; 
 
 turboVehicleList = [
 	"ivory_190e_tuned3",

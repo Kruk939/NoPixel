@@ -4,7 +4,7 @@ if(_doughnuts < 1) exitWith {};
 
 myjob = "Doughnuts";
 if(isnil "taskrunning") then { taskrunning = false; };
-[] call StanLakeside_fnc_hudwork;
+[] call client_fnc_hudwork;
 player setVariable ["doughnutsLevel", _doughnuts, false];
 _pay = [0,60,120,200,250,350];
 _payment = _pay select _doughnuts;
@@ -17,6 +17,6 @@ if(!taskrunning) then {
 			uisleep 180;
 			paycheck = paycheck + _payment;
 		};
-		if(myjob == "Doughnuts") then { [] call StanLakeside_fnc_jobEnd; };
+		if(myjob == "Doughnuts") then { [] call client_fnc_jobEnd; };
 	};
 };

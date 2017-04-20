@@ -1,4 +1,3 @@
-//params[["_type","basic"]];
 _type = _this select 0;
 [player,objNull,1,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_jobLog", 2];
 if(myjob == "Cop") exitwith {

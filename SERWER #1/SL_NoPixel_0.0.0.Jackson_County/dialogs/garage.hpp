@@ -5,7 +5,7 @@
 class racetimes {
 	idd = 9999;
 	name= "racetimes";
-	onLoad = "[] spawn StanLakeside_fnc_racetimes";
+	onLoad = "[] spawn client_fnc_racetimes";
 	movingEnable = 0;
 	enableSimulation = 1;
 
@@ -171,7 +171,7 @@ class fillvehicle
 			y = 0.703346 * safezoneH + safezoneY;
 			w = 0.0899712 * safezoneW;
 			h = 0.0483903 * safezoneH;
-			action = [] spawn StanLakeside_fnc_confirmfillvehicle;
+			action = [] spawn Client_fnc_confirmfillvehicle;
 		};
 
 		class Close: HideButton
@@ -264,7 +264,7 @@ class garage2
 			y = 0.654 * safezoneH + safezoneY;
 			w = 0.09 * safezoneW;
 			h = 0.046 * safezoneH;
-			action = [] spawn StanLakeside_fnc_fetchCar2;
+			action = [] spawn Client_fnc_fetchCar2;
 		};
 		class Close: HideButton
 		{
@@ -355,7 +355,7 @@ class garage3
 			y = 0.654 * safezoneH + safezoneY;
 			w = 0.09 * safezoneW;
 			h = 0.046 * safezoneH;
-			action = [1] spawn StanLakeside_fnc_fetchCar;
+			action = [1] spawn Client_fnc_fetchCar;
 		};
 		class Close: HideButton
 		{
@@ -448,7 +448,7 @@ class garage
 			y = 0.654 * safezoneH + safezoneY;
 			w = 0.09 * safezoneW;
 			h = 0.046 * safezoneH;
-			action = [0] spawn StanLakeside_fnc_fetchCar;
+			action = [0] spawn Client_fnc_fetchCar;
 		};
 		class Close: HideButton
 		{
@@ -539,7 +539,7 @@ class EnterLicense {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Purchase";
-			onButtonClick = "[] spawn StanLakeside_fnc_processPlates";
+			onButtonClick = "[] spawn client_fnc_processPlates";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.7 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;
@@ -637,7 +637,7 @@ class garageplates
 			y = 0.654 * safezoneH + safezoneY;
 			w = 0.09 * safezoneW;
 			h = 0.046 * safezoneH;
-			action = [0] spawn StanLakeside_fnc_fetchCar;
+			action = [0] spawn Client_fnc_fetchCar;
 		};
 
 		class RscButton_1601: HideButton
@@ -648,7 +648,7 @@ class garageplates
 			y = 0.654 * safezoneH + safezoneY;
 			w = 0.09 * safezoneW;
 			h = 0.046 * safezoneH;
-			action = [] spawn StanLakeside_fnc_changePlates;
+			action = [] spawn Client_fnc_changePlates;
 		};
 
 		class Close: HideButton

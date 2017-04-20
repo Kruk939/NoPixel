@@ -12,6 +12,6 @@ while { true } do {
 	if(_n == 5) exitwith {};
 };
 
-[taxpayments] remoteexec ["StanLakesideServer_fnc_paymayor",2];
+[taxpayments] remoteexec ["server_fnc_paymayor",2];
 
 taxpayments = 0;

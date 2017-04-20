@@ -17,7 +17,7 @@ while{ _i > 0 } do {
 
 	_localProtection = _localprotection + 1;
 	globalProtection = globalProtection + 1;
-	if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn StanLakeside_fnc_anticheat; };
+	if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn client_fnc_anticheat; };
 
 
 	player removeitem "CG_DrugBrick";

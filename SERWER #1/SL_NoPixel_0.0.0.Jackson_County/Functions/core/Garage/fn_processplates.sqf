@@ -2,14 +2,14 @@ disableserialization;
 private["_text"];
 
 
-_cashcheck = [2,2000] call StanLakeside_fnc_sl_checkMoney_secure;
+_cashcheck = [2,2000] call Client_fnc_sl_checkMoney_secure;
 if!(_cashCheck) exitwith { hint "Nie masz pieniędzy!"; };
 
 
 _text = ctrlText 9993;
 
 _countPlate = count _text;
-if (_countPlate > 7) exitWith {["Błąd","Twoja tablica ma więcej niż 7 znaków!",[255,0,0,1],""] call StanLakeside_fnc_showNotification;};
+if (_countPlate > 7) exitWith {["Błąd","Twoja tablica ma więcej niż 7 znaków!",[255,0,0,1],""] call Client_fnc_showNotification;};
 _string = _text splitString " " joinString "";
 _string = _string splitString "#" joinString "";
 _string = _string splitString "*" joinString "";
@@ -54,13 +54,13 @@ _string = _string splitString "ś" joinString "";
 _string = _string splitString "`" joinString "";
 _string = _string splitString "~" joinString "";
 
-if (_string == "") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1],""] call StanLakeside_fnc_showNotification;};
-if (isNil "_string") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1],""] call StanLakeside_fnc_showNotification;};
+if (_string == "") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1],""] call Client_fnc_showNotification;};
+if (isNil "_string") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1],""] call Client_fnc_showNotification;};
 
 
 
-[2000] call StanLakeside_fnc_sl_removeBank_secure;
+[2000] call Client_fnc_sl_removeBank_secure;
 
-[plateChange,_string,player] remoteexec ["StanLakesideServer_fnc_platechange",2];
+[plateChange,_string,player] remoteexec ["server_fnc_platechange",2];
 
 closedialog 0;

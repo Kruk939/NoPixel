@@ -55,7 +55,7 @@ if(_status == "Add") then {
 	_garageArray pushback _newVehicle;
 	_player setvariable ["garage",_garageArray,false];
 
-	["garage", _newVehicle] remoteExec ["StanLakeside_fnc_setVariable",_player];
+	["garage", _newVehicle] remoteExec ["client_fnc_setVariable",_player];
 
 	_updatestr = format ["insertGarage:%1:%2:%3:%4:%5:%6:%7:%8:%9", _licensePlate, _class, _color, _finish, _rims,_windows, _lights, _owner,_statuses];
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;

@@ -13,5 +13,5 @@ if(_type == "jail_player") exitWith {
 	_uid = getPlayerUID _player;
 	_query = format["getSLPDPrison_active:%1:%2", _uid, _active];
 	_data = [_query,2] call ExternalS_fnc_ExtDBasync;
-	[_data] remoteExec ["StanLakeside_fnc_slpd_jail_setup",_player];
+	[_data] remoteExec ["client_fnc_slpd_jail_setup",_player];
 };

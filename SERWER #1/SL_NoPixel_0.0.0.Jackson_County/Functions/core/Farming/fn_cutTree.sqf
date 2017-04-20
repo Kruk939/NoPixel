@@ -31,9 +31,9 @@ if (str _tree find ": t_" > -1) then {
 	 if(_treeCutChance > 4) then {	
 		mytrees pushback _tree;
 		if(!isnil "vehspawned") then {
-			[] call StanLakeside_fnc_packLogs;
+			[] call client_fnc_packLogs;
 		} else {
-			["Błąd","Musisz się zatrudnić jako drwal by ścinać drzewa!",[255,0,0,1],""] call StanLakeside_fnc_showNotification;
+			["Błąd","Musisz się zatrudnić jako drwal by ścinać drzewa!",[255,0,0,1],""] call Client_fnc_showNotification;
 			//hint "Musisz się zatrudnić jako drwal by ścinać drzewa!";
 		};
 	};

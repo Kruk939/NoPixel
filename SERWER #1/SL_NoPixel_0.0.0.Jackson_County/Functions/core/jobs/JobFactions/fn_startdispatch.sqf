@@ -1,5 +1,5 @@
-//[_location] remoteExec ["StanLakeside_fnc_startSecurity",_player];
-//[getpos player,] remoteExec ["StanLakeside_fnc_startGarbage",_player];
+//[_location] remoteExec ["client_fnc_startSecurity",_player];
+//[getpos player,] remoteExec ["client_fnc_startGarbage",_player];
 // use lexus with directionals only.
 
 private ["_warning","_JobBase"];
@@ -13,6 +13,6 @@ if(!dispatch) then {
 			uisleep 180;
 			paycheck = paycheck + 10;
 		};
-		//[player] remoteExec ["StanLakesideServer_fnc_quitDispatch",2];
+		//[player] remoteExec ["server_fnc_quitDispatch",2];
 	};
 };

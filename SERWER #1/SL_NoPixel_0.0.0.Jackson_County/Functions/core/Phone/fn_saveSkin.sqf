@@ -18,7 +18,7 @@ if(isNil "phoneSkin") exitwith { hint "Błąd zapisu"; };
 
 _bg = [phoneBackground,phoneskin];
 
-[player, "phoneBackground", [phoneBackground,phoneskin]] remoteExec ["StanLakesideServer_fnc_setVariable",2];
-[_bg, getPlayerUID player] remoteExec ["StanLakesideServer_fnc_PhoneBackgroundSync", 2];
+[player, "phoneBackground", [phoneBackground,phoneskin]] remoteExec ["Server_fnc_setVariable",2];
+[_bg, getPlayerUID player] remoteExec ["Server_fnc_PhoneBackgroundSync", 2];
 
-[50] call StanLakeside_fnc_sl_removeBank_secure;
+[50] call Client_fnc_sl_removeBank_secure;

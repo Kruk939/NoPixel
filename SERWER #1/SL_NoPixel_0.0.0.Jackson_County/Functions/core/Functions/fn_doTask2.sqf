@@ -1,4 +1,4 @@
-//["Task",TIME,fnc_to_run,Object Distance Check,animation,[Array of actions],soundtoplay] spawn StanLakeside_fnc_dotask;
+//["Task",TIME,fnc_to_run,Object Distance Check,animation,[Array of actions],soundtoplay] spawn client_fnc_dotask;
 
 player say "slideout";
 disableSerialization;

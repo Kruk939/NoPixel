@@ -43,5 +43,5 @@ _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
  
 format["%1 just got a top 3 lap of %2 at the rally track",_nameplayer,_racetime] remoteexec ["hint",-2]; 
  
-[] spawn StanLakesideServer_fnc_rallyracetimes; 
+[] spawn server_fnc_rallyracetimes; 
 }; 

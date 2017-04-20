@@ -1,4 +1,4 @@
-//["Do you like chicken?"] call StanLakeside_fnc_questionPlayer;
+//["Do you like chicken?"] call client_fnc_questionPlayer;
 
 disableSerialization;
 

@@ -21,7 +21,7 @@ class DeathScreen
 			w = 0.0878542 * safezoneW;
 			h = 0.0461907 * safezoneH;
 			text = "Respawn";
-			onButtonClick = "closeDialog 0; [] call StanLakeside_fnc_startFresh;";
+			onButtonClick = "closeDialog 0; [] call client_fnc_startFresh;";
 			colorBackground[] = {0, 0, 0, 1};
 			class Attributes 
 			{
@@ -36,7 +36,7 @@ class DeathScreen
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
 			h = 0.0461907 * safezoneH;
-			onButtonClick = "[player] remoteExec [""StanLakesideServer_fnc_requestMedic"",2]; _MedicBtn = ((findDisplay 7300) displayCtrl 7303); _MedicBtn ctrlEnable false; ";
+			onButtonClick = "[player] remoteExec [""server_fnc_requestMedic"",2]; _MedicBtn = ((findDisplay 7300) displayCtrl 7303); _MedicBtn ctrlEnable false; ";
 			text = "Request Medic";
 			colorBackground[] = {0, 0, 0, 1};
 			class Attributes 

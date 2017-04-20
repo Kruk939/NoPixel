@@ -1,4 +1,4 @@
-//[] spawn StanLakeside_fnc_spreaddisease;
+//[] spawn client_fnc_spreaddisease;
 _myInjuries = player getVariable "playerInjuries";
 _spread = _myinjuries select 10;
 _list = player nearEntities ["Man", 5];
@@ -8,4 +8,4 @@ _players = [];
 		_players pushBack _x;
 	};
 } forEach _list;
-[_spread] remoteexec ["StanLakeside_fnc_givedisease",_players];
+[_spread] remoteexec ["client_fnc_givedisease",_players];

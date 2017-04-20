@@ -16,4 +16,4 @@ _queryString = format["insertSLPDPrison:%1:%2:%3:%4:%5", _uid_player, _uid_offic
 _query = [0, _queryString] call ExternalS_fnc_ExtDBquery;
 
 //Execing jail
-["jail_player", _player, 1] call StanLakesideServer_fnc_slpdPrisonGet;
+["jail_player", _player, 1] call server_fnc_slpdPrisonGet;

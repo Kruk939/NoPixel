@@ -6,4 +6,4 @@ _status = call compile format["%1", _status];
 closedialog 0;
 sleep 0.05;
 if(isNil "_status") exitwith { };
-[_status] spawn StanLakeside_fnc_medicUpdater;
+[_status] spawn client_fnc_medicUpdater;

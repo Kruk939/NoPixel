@@ -141,4 +141,4 @@ uisleep 15;
 ] spawn BIS_fnc_typeText;
 
 
-["Add","license",1] call StanLakeside_fnc_sustain;
+["Add","license",1] call client_fnc_sustain;

@@ -9,7 +9,7 @@ if(deadPlayer) exitWith {};
 if(_shooter isKindOf "Man" && !deadPlayer) then
 {
 	
-["Remove",0.05] call StanLakeside_fnc_doHealth;
+["Remove",0.05] call client_fnc_doHealth;
 
 	if(!client_istazed) then
 	{
@@ -19,7 +19,7 @@ if(_shooter isKindOf "Man" && !deadPlayer) then
 		player setVariable ["tf_voiceVolume", 0, true];
 		[] spawn {
 			uiSleep 3;
-			[player,"amovppnemstpsraswrfldnon"] remoteExecCall ["StanLakeside_fnc_animSync"];
+			[player,"amovppnemstpsraswrfldnon"] remoteExecCall ["client_fnc_animSync"];
 			detach player;
 			client_istazed = false;
 			player allowDamage true;

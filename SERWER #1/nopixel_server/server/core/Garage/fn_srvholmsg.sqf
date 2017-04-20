@@ -5,4 +5,4 @@ params ["_fura","_player"];
 
 _fura = _fura getvariable "information";
  
-[_fura,_player] remoteexec ["StanLakeside_fnc_clholmsg",_player]; 
+[_fura,_player] remoteexec ["client_fnc_clholmsg",_player]; 

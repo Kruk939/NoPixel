@@ -1,12 +1,12 @@
-//[_location] remoteExec ["StanLakeside_fnc_startSecurity",_player];
-//[getpos player,] remoteExec ["StanLakeside_fnc_startGarbage",_player];
+//[_location] remoteExec ["client_fnc_startSecurity",_player];
+//[getpos player,] remoteExec ["client_fnc_startGarbage",_player];
 // use lexus with directionals only.
 if(myjob != "none") exitwith { hint "Masz już pracę!"; };
 
 if(isnil "taskrunning") then { taskrunning = false; };
 
 myjob = "taxi";
-[] call StanLakeside_fnc_hudwork;
+[] call client_fnc_hudwork;
 private ["_warning","_JobBase"];
 if(!taskrunning) then {
 
@@ -19,6 +19,6 @@ if(!taskrunning) then {
 			uisleep 180;
 			paycheck = paycheck + 55;
 		};
-		if(myjob == "taxi") then { [] call StanLakeside_fnc_jobEnd; };
+		if(myjob == "taxi") then { [] call client_fnc_jobEnd; };
 	};
 };

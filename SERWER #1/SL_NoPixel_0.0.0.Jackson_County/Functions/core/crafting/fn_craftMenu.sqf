@@ -653,7 +653,7 @@ if(_error) exitwith {};
 	shopholder setpos (getposATL player);	
 
 	hint format["You have crafted a %1",_status];
-	[player,1,format ["%1 wycraftował %2", name player, _status],_classStatus,_status] remoteExec ["StanLakesideServer_fnc_craftLog", 2];
+	[player,1,format ["%1 wycraftował %2", name player, _status],_classStatus,_status] remoteExec ["server_fnc_craftLog", 2];
 	closedialog 0;
 };
 
@@ -704,7 +704,7 @@ if((_this select 0) == "CRAFTMAG") exitwith {
 	shopholder addmagazineCargoGlobal [_magazineclass,2];
 
 	hint format["You have crafted 2 mags for a %1",_status];
-	[player,2,format ["%1 wycraftował 2 magazynki dla broni %2", name player, _status],_magazineclass,_status] remoteExec ["StanLakesideServer_fnc_craftLog", 2];
+	[player,2,format ["%1 wycraftował 2 magazynki dla broni %2", name player, _status],_magazineclass,_status] remoteExec ["server_fnc_craftLog", 2];
 	closedialog 0;
 	player disablecollisionwith shopholder;
 	shopholder setpos (getpos player);	

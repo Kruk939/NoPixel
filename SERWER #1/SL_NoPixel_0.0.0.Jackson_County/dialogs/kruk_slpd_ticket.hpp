@@ -63,7 +63,7 @@ class kruk_slpd_ticket_give {
 			y = 21 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			action = "[] spawn StanLakeside_fnc_slpd_ticket_give;";
+			action = "[] spawn client_fnc_slpd_ticket_give;";
 			colorBackground[] = {0.325,0.906,0.235,1};
 		};
 		class button_close: client_RscButtonMenu {
@@ -185,7 +185,7 @@ class kruk_slpd_ticket_receive {
 			y = 21 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			action = "[""accept""] spawn StanLakeside_fnc_slpd_ticket_action;";
+			action = "[""accept""] spawn client_fnc_slpd_ticket_action;";
 			colorBackground[] = {0.325,0.906,0.235,1};
 		};
 		class button_close: client_RscButtonMenu {
@@ -197,7 +197,7 @@ class kruk_slpd_ticket_receive {
 			y = 21 * GUI_GRID_H + GUI_GRID_Y;
 			w = 7 * GUI_GRID_W;
 			h = 2 * GUI_GRID_H;
-			action = "[""refuse""] spawn StanLakeside_fnc_slpd_ticket_action;";
+			action = "[""refuse""] spawn client_fnc_slpd_ticket_action;";
 			colorBackground[] = {0.7,0,0,1};
 		};
 		class text_reason: RscText {

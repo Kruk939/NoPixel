@@ -10,7 +10,7 @@ if(_chance > 80) then {
 
 	if(_chance > 95) then {
 
-		[player] remoteexec ["StanLakesideServer_fnc_robberyCall",2];
+		[player] remoteexec ["server_fnc_robberyCall",2];
 
 	};
 
@@ -44,7 +44,7 @@ if(_chance > 80) then {
 
 		if(_amount < 0) then { _amount = 5; };
 
-		robbedstores pushback _shop; hint format["Okradłeś ten sklep na: %1",_amount]; [_amount] call StanLakeside_fnc_sl_addCash_secure; 
+		robbedstores pushback _shop; hint format["Okradłeś ten sklep na: %1",_amount]; [_amount] call Client_fnc_sl_addCash_secure; 
 
 	};
 

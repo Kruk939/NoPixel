@@ -15,7 +15,7 @@ _selection = 0;
 	_giver = (_owing select _selection) select 0;
 	_moneyOwed = (_owing select _selection) select 1;
 
-	_cash = _moneyOwed call StanLakeside_fnc_numberText;
+	_cash = _moneyOwed call client_fnc_numberText;
 	_reason = (_owing select _selection) select 2;
 	_datedue = (_owing select _selection) select 3;
 

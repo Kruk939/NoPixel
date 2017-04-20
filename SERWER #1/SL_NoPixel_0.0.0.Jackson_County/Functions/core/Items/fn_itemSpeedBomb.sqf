@@ -8,18 +8,18 @@
     private["_unit","_timer"];
     _unit = cursorObject;
 
-    ["kif_speedbomb",0] spawn StanLakeside_fnc_removeitem;
+    ["kif_speedbomb",0] spawn client_fnc_removeitem;
     
-    //if((!(_unit isKindOf "LandVehicle"))&&(!(_unit getVariable ["escorted",false])) && (ClientArrested) && (client_istazed)) exitWith {["Błąd","Nie możesz podłożyć bomby!",[255,0,0,1],""] call StanLakeside_fnc_showNotification;};
-    //if(player distance _unit > 7) exitWith {["Błąd","Jesteś za daleko!",[255,0,0,1],""] call StanLakeside_fnc_showNotification; player addItem "kif_speedbomb";};
+    //if((!(_unit isKindOf "LandVehicle"))&&(!(_unit getVariable ["escorted",false])) && (ClientArrested) && (client_istazed)) exitWith {["Błąd","Nie możesz podłożyć bomby!",[255,0,0,1],""] call Client_fnc_showNotification;};
+    //if(player distance _unit > 7) exitWith {["Błąd","Jesteś za daleko!",[255,0,0,1],""] call Client_fnc_showNotification; player addItem "kif_speedbomb";};
      
     //player playMove "AinvPknlMstpSnonWnonDnon_medic_1";
     //sleep 1.5;
     //waitUntil {animationState player != "ainvpknlmstpsnonwnondnon_medic_1"};
      
-    if(player distance _unit > 7) exitWith {["Błąd","Jesteś za daleko!",[255,0,0,1],""] call StanLakeside_fnc_showNotification; player addItem "kif_speedbomb";};
+    if(player distance _unit > 7) exitWith {["Błąd","Jesteś za daleko!",[255,0,0,1],""] call Client_fnc_showNotification; player addItem "kif_speedbomb";};
      
-    ["Sukces","Podłożyłeś bombę pod pojazd!",[0,255,0,1],""] call StanLakeside_fnc_showNotification;
+    ["Sukces","Podłożyłeś bombę pod pojazd!",[0,255,0,1],""] call Client_fnc_showNotification;
      
     [_unit] spawn
     {

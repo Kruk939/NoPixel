@@ -1,6 +1,6 @@
 params ["_garage","_plate","_newVehicle","_player","_uid","_Current_Cars"]; 
  
-[_uid,"usedgarage",_current_cars] spawn StanLakesideServer_fnc_setvariable; 
+[_uid,"usedgarage",_current_cars] spawn server_fnc_setvariable; 
  
 _player setvariable ["garage",_garage,false]; 
  

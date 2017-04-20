@@ -19,4 +19,4 @@ while{_doorkick > 0} do {
 };
 
 hint "";
-if(!_failed) then { [vehicle player,0] remoteExecCall ["StanLakeside_fnc_lock",vehicle player]; player action ["Eject", vehicle player]; };
+if(!_failed) then { [vehicle player,0] remoteExecCall ["client_fnc_lock",vehicle player]; player action ["Eject", vehicle player]; };

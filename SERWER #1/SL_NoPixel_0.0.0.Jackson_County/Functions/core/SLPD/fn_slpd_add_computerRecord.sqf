@@ -16,7 +16,7 @@ if(_type == "vehicle") then {
 	_desc = ctrlText 1003;
 	_reason = ctrlText 1004;
 	_data = [_plate, _desc, _uid_officer, _reason, _level];
-	["vehicle", _data] remoteExec ["StanLakesideServer_fnc_slpdCaseAdd", 2];
+	["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];
 };
 if(_type == "personal") then {
 	_uid_suspect = _this select 1;
@@ -24,5 +24,5 @@ if(_type == "personal") then {
 	_reason = ctrlText 1001;
 	_level = parseNumber(ctrlText 1002);
 	_data = [_uid_suspect, _uid_officer, _reason, _level];
-	["personal", _data] remoteExec ["StanLakesideServer_fnc_slpdCaseAdd", 2];
+	["personal", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];
 };

@@ -3,7 +3,7 @@
 class vote_Menu {
 	idd = 9999;
 	name= "vote_menu";
-	onLoad = "[] spawn StanLakeside_fnc_loadVote";
+	onLoad = "[] spawn client_fnc_loadVote";
 	movingEnable = 0;
 	enableSimulation = 1;
 
@@ -78,7 +78,7 @@ class vote_Menu {
 		class LockVoteOption : HideButton {
 			idc = 9995;
 			text = "";
-			onButtonClick = "[] spawn StanLakeside_fnc_LockVote;"; 
+			onButtonClick = "[] spawn client_fnc_LockVote;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -104,7 +104,7 @@ class vote_Menu {
 class placefurniture {
 	idd = 9999;
 	name= "placefurniture";
-	onload = "[] spawn StanLakeside_fnc_listfurniture;";
+	onload = "[] spawn client_fnc_listfurniture;";
 	movingEnable = 0;
 	enableSimulation = 1;
 
@@ -146,7 +146,7 @@ class placefurniture {
 		class PurchaseOption : RSCButton {
 			idc = 9995;
 			text = "Accept";
-			onButtonClick = "[] call StanLakeside_fnc_spawnfurniture;"; 
+			onButtonClick = "[] call client_fnc_spawnfurniture;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -210,7 +210,7 @@ class rentshop {
 		class PurchaseOption : RSCButton {
 			idc = 9995;
 			text = "Accept";
-			onButtonClick = "[] call StanLakeside_fnc_rentOffice;"; 
+			onButtonClick = "[] call client_fnc_rentOffice;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -275,7 +275,7 @@ class tax_Menu {
 		class PurchaseOption : RSCButton {
 			idc = 9995;
 			text = "Ustaw podatek";
-			onButtonClick = "[] spawn StanLakeside_fnc_settax;"; 
+			onButtonClick = "[] spawn client_fnc_settax;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -302,7 +302,7 @@ class shop_update {
 	movingEnable = 0;
 	enableSimulation = 1;
 
-	onunLoad = "[shopcontent,""finishupdate""] spawn StanLakeside_fnc_updatePrices;";
+	onunLoad = "[shopcontent,""finishupdate""] spawn client_fnc_updatePrices;";
 
 
 	class controls {
@@ -387,7 +387,7 @@ class shop_update {
 		class PriceUpdateOption : HideButton {
 			idc = 9995;
 			text = "Ustaw cene";
-			onButtonClick = "[shopcontent,""update""] spawn StanLakeside_fnc_updatePrices;"; 
+			onButtonClick = "[shopcontent,""update""] spawn client_fnc_updatePrices;"; 
 			x = 0.412136 * safezoneW + safezoneX;
 			y = 0.655309 * safezoneH + safezoneY;
 			w = 0.087862 * safezoneW;
@@ -410,7 +410,7 @@ class shop_update {
 		class ShopnameUpdateOption : HideButton {
 			idc = 8995;
 			text = "Zmien nazwe";
-			onButtonClick = "[shopcontent,""nameupdate""] spawn StanLakeside_fnc_updatePrices;"; 
+			onButtonClick = "[shopcontent,""nameupdate""] spawn client_fnc_updatePrices;"; 
 			x = 0.412136 * safezoneW + safezoneX;
 			y = 0.70991 * safezoneH + safezoneY;
 			w = 0.087862 * safezoneW;
@@ -517,7 +517,7 @@ class Shop_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kup";
-			onButtonClick = "[] spawn StanLakeside_fnc_purchase;"; 
+			onButtonClick = "[] spawn client_fnc_purchase;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -551,7 +551,7 @@ class Shop_Menu {
 class GUN_Menu {
 	idd = 9999;
 	name= "GUN_menu";
-	onLoad = "[] spawn StanLakeside_fnc_storesetup";
+	onLoad = "[] spawn client_fnc_storesetup";
 	onunload = "dialog_open = false; deletevehicle cockbag; client_kcCamera cameraEffect [""TERMINATE"",""BACK""]; camDestroy client_kcCamera;";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -617,7 +617,7 @@ class GUN_Menu {
 			idc = 9001;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn StanLakeside_fnc_clothesUpdate;";
+			onLBSelChanged = "[] spawn client_fnc_clothesUpdate;";
 			x = 0.311121 * safezoneW + safezoneX;
 			y = 0.293241 * safezoneH + safezoneY;
 			w = 0.178 * safezoneW;
@@ -627,7 +627,7 @@ class GUN_Menu {
 		class gunOption : HideButton {
 			idc = 9993;
 			text = "";
-			onButtonClick = "[""gunstore""] spawn StanLakeside_fnc_loadStore;";
+			onButtonClick = "[""gunstore""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -637,7 +637,7 @@ class GUN_Menu {
 		class vestOption : HideButton {
 			idc = 9994;
 			text = "";
-			onButtonClick = "[""veststore""] spawn StanLakeside_fnc_loadStore;"; 
+			onButtonClick = "[""veststore""] spawn client_fnc_loadStore;"; 
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -647,7 +647,7 @@ class GUN_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kup";
-			onButtonClick = "[""standard""] spawn StanLakeside_fnc_purchaseAI;";
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -765,7 +765,7 @@ class Food_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kup";
-			onButtonClick = "[""standard""] spawn StanLakeside_fnc_purchaseAI;"; 
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -875,7 +875,7 @@ class GeneralStore_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kup";
-			onButtonClick = "[""standard""] spawn StanLakeside_fnc_purchaseAI;"; 
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -898,7 +898,7 @@ class GeneralStore_Menu {
 class RareFish_Menu {
 	idd = 9999;
 	name= "RareFish_Menu";
-	onLoad = "[] spawn StanLakeside_fnc_storesetup";
+	onLoad = "[] spawn client_fnc_storesetup";
 	onunload = "dialog_open = false; deletevehicle cockbag; client_kcCamera cameraEffect [""TERMINATE"",""BACK""]; camDestroy client_kcCamera;";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -964,7 +964,7 @@ class RareFish_Menu {
 			idc = 9001;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn StanLakeside_fnc_clothesUpdate;";
+			onLBSelChanged = "[] spawn client_fnc_clothesUpdate;";
 			x = 0.311121 * safezoneW + safezoneX;
 			y = 0.293241 * safezoneH + safezoneY;
 			w = 0.178 * safezoneW;
@@ -974,7 +974,7 @@ class RareFish_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kup";
-			onButtonClick = "[""fish""] spawn StanLakeside_fnc_purchaseAI;"; 
+			onButtonClick = "[""fish""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -997,7 +997,7 @@ class RareFish_Menu {
 class Clothing_Menu {
 	idd = 9999;
 	name= "Clothing_menu";
-	onLoad = "[] spawn StanLakeside_fnc_storesetup";
+	onLoad = "[] spawn client_fnc_storesetup";
 	onunload = "dialog_open = false; deletevehicle cockbag; client_kcCamera cameraEffect [""TERMINATE"",""BACK""]; camDestroy client_kcCamera;";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -1063,7 +1063,7 @@ class Clothing_Menu {
 			idc = 9001;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn StanLakeside_fnc_clothesUpdate;";
+			onLBSelChanged = "[] spawn client_fnc_clothesUpdate;";
 			x = 0.311121 * safezoneW + safezoneX;
 			y = 0.293241 * safezoneH + safezoneY;
 			w = 0.178 * safezoneW;
@@ -1073,7 +1073,7 @@ class Clothing_Menu {
 		class ClothingOption : HideButton {
 			idc = 9993;
 			text = "Clothing";
-			onButtonClick = "[""clothing""] spawn StanLakeside_fnc_loadStore;";
+			onButtonClick = "[""clothing""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -1083,7 +1083,7 @@ class Clothing_Menu {
 		class BackpackOption : HideButton {
 			idc = 9994;
 			text = "Backpack";
-			onButtonClick = "[""backpack""] spawn StanLakeside_fnc_loadStore;";
+			onButtonClick = "[""backpack""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -1093,7 +1093,7 @@ class Clothing_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kup";
-			onButtonClick = "[""standard""] spawn StanLakeside_fnc_purchaseAI;"; 
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -1118,7 +1118,7 @@ class Clothing_Menu {
 class HairDresser_Menu {
 	idd = 9999;
 	name= "HairDresser_menu";
-	onLoad = "[] spawn StanLakeside_fnc_storesetup";
+	onLoad = "[] spawn client_fnc_storesetup";
 	onunload = "dialog_open = false; deletevehicle cockbag; client_kcCamera cameraEffect [""TERMINATE"",""BACK""]; camDestroy client_kcCamera;";
 	movingEnable = 0;
 	enableSimulation = 1;
@@ -1184,7 +1184,7 @@ class HairDresser_Menu {
 			idc = 9001;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn StanLakeside_fnc_clothesUpdate;";
+			onLBSelChanged = "[] spawn client_fnc_clothesUpdate;";
 			x = 0.311121 * safezoneW + safezoneX;
 			y = 0.293241 * safezoneH + safezoneY;
 			w = 0.178 * safezoneW;
@@ -1194,7 +1194,7 @@ class HairDresser_Menu {
 		class ClothingOption : HideButton {
 			idc = 9993;
 			text = "Glasses";
-			onButtonClick = "[""Glasses""] spawn StanLakeside_fnc_loadStore;";
+			onButtonClick = "[""Glasses""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -1204,7 +1204,7 @@ class HairDresser_Menu {
 		class BackpackOption : HideButton {
 			idc = 9994;
 			text = "Head";
-			onButtonClick = "[""head""] spawn StanLakeside_fnc_loadStore;";
+			onButtonClick = "[""head""] spawn client_fnc_loadStore;";
 			x = 0.311029 * safezoneW + safezoneX;
 			y = 0.729497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -1214,7 +1214,7 @@ class HairDresser_Menu {
 		class PurchaseOption : HideButton {
 			idc = 9995;
 			text = "Kup";
-			onButtonClick = "[""standard""] spawn StanLakeside_fnc_purchaseAI;"; 
+			onButtonClick = "[""standard""] spawn client_fnc_purchaseAI;"; 
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.706497 * safezoneH + safezoneY;
 			w = 0.0867957 * safezoneW;
@@ -1237,7 +1237,7 @@ class HairDresser_Menu {
 class wallet_Menu {
 	idd = 9999;
 	name= "wallet_menu";
-	onLoad = "[] spawn StanLakeside_fnc_wallet";
+	onLoad = "[] spawn client_fnc_wallet";
 	movingEnable = 0;
 	enableSimulation = 1;
 

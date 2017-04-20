@@ -24,6 +24,6 @@ if(_quantity > _availableQuantity) exitwith { hint "Wpisz odpowiednia ilosc."; }
 if(_totalprice == 0 || _totalprice < 0) exitwith { hint "Nie mozesz kupic przedmiotu, który kosztuje $0"; };
 
 _status = (_status select 0);
-[player,_status,_quantity] remoteexec ["StanLakesideServer_fnc_shopPurchase",2];
+[player,_status,_quantity] remoteexec ["server_fnc_shopPurchase",2];
 
 //remote exec the purhcase to handle on the server.

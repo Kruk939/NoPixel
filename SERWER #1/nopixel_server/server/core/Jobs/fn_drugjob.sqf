@@ -40,10 +40,10 @@ if (drugcount > 150) then {
 
         };
         _veh = createVehicle["ADM_GMC_Vandura", _vehspawn, [], 0, "NONE"];
-        [_veh, ["black", "Matte"]] remoteexec["StanLakeside_fnc_initVehicle", 2];
+        [_veh, ["black", "Matte"]] remoteexec["client_fnc_initVehicle", 2];
         _veh addMagazineCargoGlobal["CG_Heroin", 50];
         _veh lock 2;
-        [_vehspawn, _endmission, currentMafia, _veh] remoteexec["StanLakeside_fnc_mafiaDrugEvent", currentMafia];
+        [_vehspawn, _endmission, currentMafia, _veh] remoteexec["client_fnc_mafiaDrugEvent", currentMafia];
 		czaseventu = time;
     };
 };

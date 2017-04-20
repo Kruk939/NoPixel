@@ -31,5 +31,5 @@ _vehicle setvariable ["tracker3c",objNull,true];
 
 while { attachedcar } do {
 	uisleep 0.1;
-	if(vehicle player != player) exitWith { [] spawn StanLakeside_fnc_detach; };
+	if(vehicle player != player) exitWith { [] spawn client_fnc_detach; };
 };

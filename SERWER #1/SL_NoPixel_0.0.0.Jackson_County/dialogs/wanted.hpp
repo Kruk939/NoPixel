@@ -142,7 +142,7 @@ class revoke_Menu {
 		class RemoveOption : HideButton {
 			idc = 9995;
 			text = "Revoke";
-			onButtonClick = "[] spawn StanLakeside_fnc_revoke;";
+			onButtonClick = "[] spawn client_fnc_revoke;";
 			x = 0.40229 * safezoneW + safezoneX;
 			y = 0.659497 * safezoneH + safezoneY;
 			w = 0.0878542 * safezoneW;

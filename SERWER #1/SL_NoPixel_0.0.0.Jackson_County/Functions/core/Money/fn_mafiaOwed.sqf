@@ -1,1 +1,1 @@
-[player] remoteexec ["StanLakesideServer_fnc_MafiaOwed",2];
+[player] remoteexec ["server_fnc_MafiaOwed",2];

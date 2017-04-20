@@ -8,7 +8,7 @@ diag_log["retreive house: %1", _player];
 
 
 _uid = getPlayerUID _player;
-[_player,objNull,23,format ["%1 miał przeszukany dom przez policję", name _player],""] call StanLakesideServer_fnc_actionLog;
+[_player,objNull,23,format ["%1 miał przeszukany dom przez policję", name _player],""] call server_fnc_actionLog;
 
 if (_uid in activecrates) exitwith {};
 activecrates pushback _uid;
@@ -136,7 +136,7 @@ if (!isnull _holder) then {
 
     _units = nearestObjects [_holder, ["Man"], 50];
     {
-		[] remoteExec ["StanLakeside_fnc_closedialogs",_x];
+		[] remoteExec ["client_fnc_closedialogs",_x];
 	} foreach _units;
     
     deleteVehicle _holder;

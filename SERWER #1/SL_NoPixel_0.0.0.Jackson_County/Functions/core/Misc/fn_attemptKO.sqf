@@ -6,5 +6,5 @@ player playmove "AwopPercMstpSgthWrflDnon_End2";
 
 _chance = round (random 100);
 if(_chance > 75) then {
-	[] remoteExecCall ["StanLakeside_fnc_successKO",_target];
+	[] remoteExecCall ["client_fnc_successKO",_target];
 };

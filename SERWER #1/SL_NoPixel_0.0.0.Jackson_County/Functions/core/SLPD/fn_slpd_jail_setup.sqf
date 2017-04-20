@@ -35,7 +35,7 @@ while{ClientArrested} do {
 	_update = _update + 1;
 	if(_time < 0) exitwith {
 		//zerowanie w db [updateSLPDPrison_ended]
-		["ended", [getPlayerUID player]] remoteExec ["StanLakesideServer_fnc_slpdPrisonUpdate",2];
+		["ended", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 	};
 	if(_update == 5) then {
 		_first = _data select 0;
@@ -44,7 +44,7 @@ while{ClientArrested} do {
 			_id = _first select 0;
 			_first set [5, _time_left];
 			_data set [0, _first];
-			["time", [_time, _id]] remoteExec ["StanLakesideServer_fnc_slpdPrisonUpdate",2];
+			["time", [_time, _id]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 		} else {
 			_data deleteAt 0;
 			_id = _first select 0;
@@ -53,7 +53,7 @@ while{ClientArrested} do {
 			_first set [5, _time_left];
 			_data set [0, _first];
 			//usunięcie z db po id [updateSLPDPrison_finish]
-			["finish", [_id]] remoteExec ["StanLakesideServer_fnc_slpdPrisonUpdate",2];
+			["finish", [_id]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 		};
 		_update = 0;
 	};
@@ -66,8 +66,8 @@ if(!_escaped) then {
 } else {
 	hint "Uciekłeś z wiezienia!";
 	//ustawianie wszystkiego na nieaktywne [updateSLPDPrison_deactive]
-	["escape", [getPlayerUID player]] remoteExec ["StanLakesideServer_fnc_slpdPrisonUpdate",2];
+	["escape", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 	_data = [getPlayerUID player, "911", format["Ucieczka z wiezienia, pozostało: %1 miesięcy", _time], 5];
-	["personal", _data] remoteExec ["StanLakesideServer_fnc_slpdCaseAdd", 2];
+	["personal", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];
 };
 

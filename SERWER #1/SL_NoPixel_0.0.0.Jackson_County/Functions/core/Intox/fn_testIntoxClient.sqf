@@ -9,4 +9,4 @@ params [["_cop", ObjNull, [ObjNull]]];
 
 if(isNull _cop) exitWith {};
 
-[player,client_intox] remoteExec ["StanLakeside_fnc_intoxTestReturn",_cop];
+[player,client_intox] remoteExec ["client_fnc_intoxTestReturn",_cop];

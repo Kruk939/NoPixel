@@ -1,4 +1,4 @@
-//[getpos object,"text to display","Job or Location"] spawn StanLakeside_fnc_hudHelper;
+//[getpos object,"text to display","Job or Location"] spawn client_fnc_hudHelper;
 
 _type = _this select 2;
 

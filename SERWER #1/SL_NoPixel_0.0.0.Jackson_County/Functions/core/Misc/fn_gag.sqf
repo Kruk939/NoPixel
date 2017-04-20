@@ -24,6 +24,6 @@ while {true} do {
 		_unit setVariable["gagged", true, true];
 		_unit setVariable ["tf_voiceVolume", 0, true];
 		//[_unit,"gagged"] spawn life_fnc_nearestSound;
-		[player] remoteExec ["StanLakeside_fnc_gagged", _unit];
+		[player] remoteExec ["client_fnc_gagged", _unit];
 	};
 };

@@ -220,7 +220,7 @@ if (_booli) then {
 
 	sleep 1;
 
-	[_player] spawn StanLakesideServer_fnc_initStats;
+	[_player] spawn Server_fnc_initStats;
 
 	_startercars = ["Jonzie_XB","ADM_1969_Camaro","Jonzie_Mini_Cooper","Jonzie_Ceed","ADM_1964_Impala","ivory_190e"];
 	_class = _startercars call BIS_fnc_selectRandom;
@@ -231,5 +231,5 @@ if (_booli) then {
 	_owner = getplayeruid _player;
 	_licensePlate = "FrstCar";
 	_statuses = 1;
-	[_licensePlate, _class, _color, _finish, _rims, _windows, _lights, _owner, _statuses, "Add", _player] spawn StanLakesideServer_fnc_garageUpdate;
+	[_licensePlate, _class, _color, _finish, _rims, _windows, _lights, _owner, _statuses, "Add", _player] spawn Server_fnc_garageUpdate;
 };

@@ -19,7 +19,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [0] call StanLakeside_fnc_interactionAction;
+			action = [0] call Client_fnc_interactionAction;
 		};
 		class RscButton_1601: RscButton
 		{
@@ -29,7 +29,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [1] call StanLakeside_fnc_interactionAction;
+			action = [1] call Client_fnc_interactionAction;
 		};
 		class RscButton_1602: RscButton
 		{
@@ -39,7 +39,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [2] call StanLakeside_fnc_interactionAction;
+			action = [2] call Client_fnc_interactionAction;
 		};
 		class RscButton_1603: RscButton
 		{
@@ -49,7 +49,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [3] call StanLakeside_fnc_interactionAction;
+			action = [3] call Client_fnc_interactionAction;
 		};
 		class RscButton_1604: RscButton
 		{
@@ -59,7 +59,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [4] call StanLakeside_fnc_interactionAction;
+			action = [4] call Client_fnc_interactionAction;
 		};
 		class RscButton_1605: RscButton
 		{
@@ -69,7 +69,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [5] call StanLakeside_fnc_interactionAction;
+			action = [5] call Client_fnc_interactionAction;
 		};
 		class RscButton_1606: RscButton
 		{
@@ -79,7 +79,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [6] call StanLakeside_fnc_interactionAction;
+			action = [6] call Client_fnc_interactionAction;
 		};
 		class RscButton_1607: RscButton
 		{
@@ -89,7 +89,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [7] call StanLakeside_fnc_interactionAction;
+			action = [7] call Client_fnc_interactionAction;
 		};
 		class RscButton_1608: RscButton
 		{
@@ -99,7 +99,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [8] call StanLakeside_fnc_interactionAction;
+			action = [8] call Client_fnc_interactionAction;
 		};
 		class RscButton_1609: RscButton
 		{
@@ -109,7 +109,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [9] call StanLakeside_fnc_interactionAction;
+			action = [9] call Client_fnc_interactionAction;
 		};
 		class RscButton_1610: RscButton
 		{
@@ -119,7 +119,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [10] call StanLakeside_fnc_interactionAction;
+			action = [10] call Client_fnc_interactionAction;
 		};
 		class RscButton_1611: RscButton
 		{
@@ -129,7 +129,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [11] call StanLakeside_fnc_interactionAction;
+			action = [11] call Client_fnc_interactionAction;
 		};
 		class RscButton_1612: RscButton
 		{
@@ -139,7 +139,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [12] call StanLakeside_fnc_interactionAction;
+			action = [12] call Client_fnc_interactionAction;
 		};
 		class RscButton_1613: RscButton
 		{
@@ -150,7 +150,7 @@ class interaction
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [13] call StanLakeside_fnc_interactionAction;
+			action = [13] call Client_fnc_interactionAction;
 		};
 		class RscButton_1614: RscButton
 		{
@@ -160,7 +160,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [14] call StanLakeside_fnc_interactionAction;
+			action = [14] call Client_fnc_interactionAction;
 		};
 		class RscButton_1615: RscButton
 		{
@@ -170,7 +170,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [15] call StanLakeside_fnc_interactionAction;
+			action = [15] call Client_fnc_interactionAction;
 		};
 		class RscButton_1616: RscButton
 		{
@@ -180,7 +180,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [16] call StanLakeside_fnc_interactionAction;
+			action = [16] call Client_fnc_interactionAction;
 		};
 		class RscButton_1617: RscButton
 		{
@@ -190,7 +190,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [17] call StanLakeside_fnc_interactionAction;
+			action = [17] call Client_fnc_interactionAction;
 		};
 
 
@@ -202,7 +202,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [18] call StanLakeside_fnc_interactionAction;
+			action = [18] call Client_fnc_interactionAction;
 		};
 
 		class RscButton_1619: RscButton
@@ -213,7 +213,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [19] call StanLakeside_fnc_interactionAction;
+			action = [19] call Client_fnc_interactionAction;
 		};
 		class RscButton_1620: RscButton
 		{
@@ -223,7 +223,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [20] call StanLakeside_fnc_interactionAction;
+			action = [20] call Client_fnc_interactionAction;
 		};
 		class RscButton_1621: RscButton
 		{
@@ -233,7 +233,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [21] call StanLakeside_fnc_interactionAction;
+			action = [21] call Client_fnc_interactionAction;
 		};
 		class RscButton_1622: RscButton
 		{
@@ -243,7 +243,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [22] call StanLakeside_fnc_interactionAction;
+			action = [22] call Client_fnc_interactionAction;
 		};
 		class RscButton_1623: RscButton
 		{
@@ -253,7 +253,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [23] call StanLakeside_fnc_interactionAction;
+			action = [23] call Client_fnc_interactionAction;
 		};
 		class RscButton_1624: RscButton
 		{
@@ -263,7 +263,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [24] call StanLakeside_fnc_interactionAction;
+			action = [24] call Client_fnc_interactionAction;
 		};
 		class RscButton_1625: RscButton
 		{
@@ -273,7 +273,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [25] call StanLakeside_fnc_interactionAction;
+			action = [25] call Client_fnc_interactionAction;
 		};
 		class RscButton_1626: RscButton
 		{
@@ -283,7 +283,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0,0.2,0.9};
-			action = [26] call StanLakeside_fnc_interactionAction;
+			action = [26] call Client_fnc_interactionAction;
 		};
 
 
@@ -319,7 +319,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [0] call StanLakeside_fnc_interactionAction;
+			action = [0] call Client_fnc_interactionAction;
 		};
 		class RscButton_16011: RscButton
 		{
@@ -329,7 +329,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [1] call StanLakeside_fnc_interactionAction;
+			action = [1] call Client_fnc_interactionAction;
 		};
 		class RscButton_16021: RscButton
 		{
@@ -339,7 +339,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [2] call StanLakeside_fnc_interactionAction;
+			action = [2] call Client_fnc_interactionAction;
 		};
 		class RscButton_16031: RscButton
 		{
@@ -349,7 +349,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [3] call StanLakeside_fnc_interactionAction;
+			action = [3] call Client_fnc_interactionAction;
 		};
 		class RscButton_16041: RscButton
 		{
@@ -359,7 +359,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [4] call StanLakeside_fnc_interactionAction;
+			action = [4] call Client_fnc_interactionAction;
 		};
 		class RscButton_16051: RscButton
 		{
@@ -369,7 +369,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [5] call StanLakeside_fnc_interactionAction;
+			action = [5] call Client_fnc_interactionAction;
 		};
 		class RscButton_16061: RscButton
 		{
@@ -379,7 +379,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [6] call StanLakeside_fnc_interactionAction;
+			action = [6] call Client_fnc_interactionAction;
 		};
 		class RscButton_16071: RscButton
 		{
@@ -389,7 +389,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [7] call StanLakeside_fnc_interactionAction;
+			action = [7] call Client_fnc_interactionAction;
 		};
 		class RscButton_16081: RscButton
 		{
@@ -399,7 +399,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [8] call StanLakeside_fnc_interactionAction;
+			action = [8] call Client_fnc_interactionAction;
 		};
 		class RscButton_16091: RscButton
 		{
@@ -409,7 +409,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [9] call StanLakeside_fnc_interactionAction;
+			action = [9] call Client_fnc_interactionAction;
 		};
 		class RscButton_16101: RscButton
 		{
@@ -419,7 +419,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [10] call StanLakeside_fnc_interactionAction;
+			action = [10] call Client_fnc_interactionAction;
 		};
 		class RscButton_16111: RscButton
 		{
@@ -429,7 +429,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [11] call StanLakeside_fnc_interactionAction;
+			action = [11] call Client_fnc_interactionAction;
 		};
 		class RscButton_16121: RscButton
 		{
@@ -439,7 +439,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [12] call StanLakeside_fnc_interactionAction;
+			action = [12] call Client_fnc_interactionAction;
 		};
 		class RscButton_16131: RscButton
 		{
@@ -450,7 +450,7 @@ class interaction
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [13] call StanLakeside_fnc_interactionAction;
+			action = [13] call Client_fnc_interactionAction;
 		};
 		class RscButton_16141: RscButton
 		{
@@ -460,7 +460,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [14] call StanLakeside_fnc_interactionAction;
+			action = [14] call Client_fnc_interactionAction;
 		};
 		class RscButton_16151: RscButton
 		{
@@ -470,7 +470,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [15] call StanLakeside_fnc_interactionAction;
+			action = [15] call Client_fnc_interactionAction;
 		};
 		class RscButton_16161: RscButton
 		{
@@ -480,7 +480,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [16] call StanLakeside_fnc_interactionAction;
+			action = [16] call Client_fnc_interactionAction;
 		};
 		class RscButton_16171: RscButton
 		{
@@ -490,7 +490,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [17] call StanLakeside_fnc_interactionAction;
+			action = [17] call Client_fnc_interactionAction;
 		};
 
 
@@ -502,7 +502,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [18] call StanLakeside_fnc_interactionAction;
+			action = [18] call Client_fnc_interactionAction;
 		};
 
 		class RscButton_16191: RscButton
@@ -513,7 +513,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [19] call StanLakeside_fnc_interactionAction;
+			action = [19] call Client_fnc_interactionAction;
 		};
 		class RscButton_16201: RscButton
 		{
@@ -523,7 +523,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [20] call StanLakeside_fnc_interactionAction;
+			action = [20] call Client_fnc_interactionAction;
 		};
 		class RscButton_16211: RscButton
 		{
@@ -533,7 +533,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [21] call StanLakeside_fnc_interactionAction;
+			action = [21] call Client_fnc_interactionAction;
 		};
 		class RscButton_16221: RscButton
 		{
@@ -543,7 +543,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [22] call StanLakeside_fnc_interactionAction;
+			action = [22] call Client_fnc_interactionAction;
 		};
 		class RscButton_16231: RscButton
 		{
@@ -553,7 +553,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [23] call StanLakeside_fnc_interactionAction;
+			action = [23] call Client_fnc_interactionAction;
 		};
 		class RscButton_16241: RscButton
 		{
@@ -563,7 +563,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [24] call StanLakeside_fnc_interactionAction;
+			action = [24] call Client_fnc_interactionAction;
 		};
 		class RscButton_16251: RscButton
 		{
@@ -573,7 +573,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [25] call StanLakeside_fnc_interactionAction;
+			action = [25] call Client_fnc_interactionAction;
 		};
 		class RscButton_16261: RscButton
 		{
@@ -583,7 +583,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0, 0, 0, 0.9};
-			action = [26] call StanLakeside_fnc_interactionAction;
+			action = [26] call Client_fnc_interactionAction;
 		};
 
 
@@ -602,7 +602,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [0] call StanLakeside_fnc_interactionAction;
+			action = [0] call Client_fnc_interactionAction;
 		};
 		class RscButton_16012: RscButton
 		{
@@ -612,7 +612,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [1] call StanLakeside_fnc_interactionAction;
+			action = [1] call Client_fnc_interactionAction;
 		};
 		class RscButton_16022: RscButton
 		{
@@ -622,7 +622,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [2] call StanLakeside_fnc_interactionAction;
+			action = [2] call Client_fnc_interactionAction;
 		};
 		class RscButton_16032: RscButton
 		{
@@ -632,7 +632,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [3] call StanLakeside_fnc_interactionAction;
+			action = [3] call Client_fnc_interactionAction;
 		};
 		class RscButton_16042: RscButton
 		{
@@ -642,7 +642,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [4] call StanLakeside_fnc_interactionAction;
+			action = [4] call Client_fnc_interactionAction;
 		};
 		class RscButton_16052: RscButton
 		{
@@ -652,7 +652,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [5] call StanLakeside_fnc_interactionAction;
+			action = [5] call Client_fnc_interactionAction;
 		};
 		class RscButton_16062: RscButton
 		{
@@ -662,7 +662,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [6] call StanLakeside_fnc_interactionAction;
+			action = [6] call Client_fnc_interactionAction;
 		};
 		class RscButton_16072: RscButton
 		{
@@ -672,7 +672,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [7] call StanLakeside_fnc_interactionAction;
+			action = [7] call Client_fnc_interactionAction;
 		};
 		class RscButton_16082: RscButton
 		{
@@ -682,7 +682,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [8] call StanLakeside_fnc_interactionAction;
+			action = [8] call Client_fnc_interactionAction;
 		};
 		class RscButton_16092: RscButton
 		{
@@ -692,7 +692,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [9] call StanLakeside_fnc_interactionAction;
+			action = [9] call Client_fnc_interactionAction;
 		};
 		class RscButton_16102: RscButton
 		{
@@ -702,7 +702,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [10] call StanLakeside_fnc_interactionAction;
+			action = [10] call Client_fnc_interactionAction;
 		};
 		class RscButton_16112: RscButton
 		{
@@ -712,7 +712,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [11] call StanLakeside_fnc_interactionAction;
+			action = [11] call Client_fnc_interactionAction;
 		};
 		class RscButton_16122: RscButton
 		{
@@ -722,7 +722,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [12] call StanLakeside_fnc_interactionAction;
+			action = [12] call Client_fnc_interactionAction;
 		};
 		class RscButton_16132: RscButton
 		{
@@ -733,7 +733,7 @@ class interaction
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [13] call StanLakeside_fnc_interactionAction;
+			action = [13] call Client_fnc_interactionAction;
 		};
 		class RscButton_16142: RscButton
 		{
@@ -743,7 +743,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [14] call StanLakeside_fnc_interactionAction;
+			action = [14] call Client_fnc_interactionAction;
 		};
 		class RscButton_16152: RscButton
 		{
@@ -753,7 +753,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [15] call StanLakeside_fnc_interactionAction;
+			action = [15] call Client_fnc_interactionAction;
 		};
 		class RscButton_16162: RscButton
 		{
@@ -763,7 +763,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [16] call StanLakeside_fnc_interactionAction;
+			action = [16] call Client_fnc_interactionAction;
 		};
 		class RscButton_16172: RscButton
 		{
@@ -773,7 +773,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [17] call StanLakeside_fnc_interactionAction;
+			action = [17] call Client_fnc_interactionAction;
 		};
 
 
@@ -785,7 +785,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [18] call StanLakeside_fnc_interactionAction;
+			action = [18] call Client_fnc_interactionAction;
 		};
 
 		class RscButton_16192: RscButton
@@ -796,7 +796,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [19] call StanLakeside_fnc_interactionAction;
+			action = [19] call Client_fnc_interactionAction;
 		};
 		class RscButton_16202: RscButton
 		{
@@ -806,7 +806,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [20] call StanLakeside_fnc_interactionAction;
+			action = [20] call Client_fnc_interactionAction;
 		};
 		class RscButton_16212: RscButton
 		{
@@ -816,7 +816,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [21] call StanLakeside_fnc_interactionAction;
+			action = [21] call Client_fnc_interactionAction;
 		};
 		class RscButton_16222: RscButton
 		{
@@ -826,7 +826,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [22] call StanLakeside_fnc_interactionAction;
+			action = [22] call Client_fnc_interactionAction;
 		};
 		class RscButton_16232: RscButton
 		{
@@ -836,7 +836,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [23] call StanLakeside_fnc_interactionAction;
+			action = [23] call Client_fnc_interactionAction;
 		};
 		class RscButton_16242: RscButton
 		{
@@ -846,7 +846,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [24] call StanLakeside_fnc_interactionAction;
+			action = [24] call Client_fnc_interactionAction;
 		};
 		class RscButton_16252: RscButton
 		{
@@ -856,7 +856,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [25] call StanLakeside_fnc_interactionAction;
+			action = [25] call Client_fnc_interactionAction;
 		};
 		class RscButton_16262: RscButton
 		{
@@ -866,7 +866,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0,0.15,0,0.9};
-			action = [26] call StanLakeside_fnc_interactionAction;
+			action = [26] call Client_fnc_interactionAction;
 		};
 
 
@@ -887,7 +887,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [0] call StanLakeside_fnc_interactionAction;
+			action = [0] call Client_fnc_interactionAction;
 		};
 		class RscButton_16013: RscButton
 		{
@@ -897,7 +897,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [1] call StanLakeside_fnc_interactionAction;
+			action = [1] call Client_fnc_interactionAction;
 		};
 		class RscButton_16023: RscButton
 		{
@@ -907,7 +907,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [2] call StanLakeside_fnc_interactionAction;
+			action = [2] call Client_fnc_interactionAction;
 		};
 		class RscButton_16033: RscButton
 		{
@@ -917,7 +917,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [3] call StanLakeside_fnc_interactionAction;
+			action = [3] call Client_fnc_interactionAction;
 		};
 		class RscButton_16043: RscButton
 		{
@@ -927,7 +927,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [4] call StanLakeside_fnc_interactionAction;
+			action = [4] call Client_fnc_interactionAction;
 		};
 		class RscButton_16053: RscButton
 		{
@@ -937,7 +937,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [5] call StanLakeside_fnc_interactionAction;
+			action = [5] call Client_fnc_interactionAction;
 		};
 		class RscButton_16063: RscButton
 		{
@@ -947,7 +947,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [6] call StanLakeside_fnc_interactionAction;
+			action = [6] call Client_fnc_interactionAction;
 		};
 		class RscButton_16073: RscButton
 		{
@@ -957,7 +957,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [7] call StanLakeside_fnc_interactionAction;
+			action = [7] call Client_fnc_interactionAction;
 		};
 		class RscButton_16083: RscButton
 		{
@@ -967,7 +967,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [8] call StanLakeside_fnc_interactionAction;
+			action = [8] call Client_fnc_interactionAction;
 		};
 		class RscButton_16093: RscButton
 		{
@@ -977,7 +977,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [9] call StanLakeside_fnc_interactionAction;
+			action = [9] call Client_fnc_interactionAction;
 		};
 		class RscButton_16103: RscButton
 		{
@@ -987,7 +987,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [10] call StanLakeside_fnc_interactionAction;
+			action = [10] call Client_fnc_interactionAction;
 		};
 		class RscButton_16113: RscButton
 		{
@@ -997,7 +997,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [11] call StanLakeside_fnc_interactionAction;
+			action = [11] call Client_fnc_interactionAction;
 		};
 		class RscButton_16123: RscButton
 		{
@@ -1007,7 +1007,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [12] call StanLakeside_fnc_interactionAction;
+			action = [12] call Client_fnc_interactionAction;
 		};
 		class RscButton_16133: RscButton
 		{
@@ -1018,7 +1018,7 @@ class interaction
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [13] call StanLakeside_fnc_interactionAction;
+			action = [13] call Client_fnc_interactionAction;
 		};
 		class RscButton_16143: RscButton
 		{
@@ -1028,7 +1028,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [14] call StanLakeside_fnc_interactionAction;
+			action = [14] call Client_fnc_interactionAction;
 		};
 		class RscButton_16153: RscButton
 		{
@@ -1038,7 +1038,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [15] call StanLakeside_fnc_interactionAction;
+			action = [15] call Client_fnc_interactionAction;
 		};
 		class RscButton_16163: RscButton
 		{
@@ -1048,7 +1048,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [16] call StanLakeside_fnc_interactionAction;
+			action = [16] call Client_fnc_interactionAction;
 		};
 		class RscButton_16173: RscButton
 		{
@@ -1058,7 +1058,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [17] call StanLakeside_fnc_interactionAction;
+			action = [17] call Client_fnc_interactionAction;
 		};
 
 
@@ -1070,7 +1070,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [18] call StanLakeside_fnc_interactionAction;
+			action = [18] call Client_fnc_interactionAction;
 		};
 
 		class RscButton_16193: RscButton
@@ -1081,7 +1081,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [19] call StanLakeside_fnc_interactionAction;
+			action = [19] call Client_fnc_interactionAction;
 		};
 		class RscButton_16203: RscButton
 		{
@@ -1091,7 +1091,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [20] call StanLakeside_fnc_interactionAction;
+			action = [20] call Client_fnc_interactionAction;
 		};
 		class RscButton_16213: RscButton
 		{
@@ -1101,7 +1101,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [21] call StanLakeside_fnc_interactionAction;
+			action = [21] call Client_fnc_interactionAction;
 		};
 		class RscButton_16223: RscButton
 		{
@@ -1111,7 +1111,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [22] call StanLakeside_fnc_interactionAction;
+			action = [22] call Client_fnc_interactionAction;
 		};
 		class RscButton_16233: RscButton
 		{
@@ -1121,7 +1121,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [23] call StanLakeside_fnc_interactionAction;
+			action = [23] call Client_fnc_interactionAction;
 		};
 		class RscButton_16243: RscButton
 		{
@@ -1131,7 +1131,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [24] call StanLakeside_fnc_interactionAction;
+			action = [24] call Client_fnc_interactionAction;
 		};
 		class RscButton_16253: RscButton
 		{
@@ -1141,7 +1141,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [25] call StanLakeside_fnc_interactionAction;
+			action = [25] call Client_fnc_interactionAction;
 		};
 		class RscButton_16263: RscButton
 		{
@@ -1151,7 +1151,7 @@ class interaction
 			w = 0.084583 * safezoneW;
 			h = 0.0329871 * safezoneH; font = "PuristaMedium";
 			colorBackground[] = {0.5,0,0,0.9};
-			action = [26] call StanLakeside_fnc_interactionAction;
+			action = [26] call Client_fnc_interactionAction;
 		};
 	};
 };

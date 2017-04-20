@@ -8,7 +8,7 @@ if (policeStorageActive == 1) exitWith {["Ktoś już używa skrzyni!", false] re
 if (policeStorageActive == 0) then {policeStorageActive = 1;};
 
 _uid = getPlayerUID _player;
-//[_player,objNull,21,format ["%1 otworzył skrzynkę w domu", name _player],""] call StanLakesideServer_fnc_actionLog;
+//[_player,objNull,21,format ["%1 otworzył skrzynkę w domu", name _player],""] call server_fnc_actionLog;
 
 _policeHolder = createVehicle["kif_storage_cargobox_dtu", _player modeltoworld[0, 2, 1], [], 0, "can_Collide"];
 ["Zapis nastąpi po zniknięciu szkrzynki", false] remoteExec ["domsg",_player];
@@ -93,7 +93,7 @@ if (!isnull _policeHolder) then {
 
     _units = nearestObjects [_policeHolder, ["Man"], 50];
     {
-		[] remoteExec ["StanLakeside_fnc_closedialogs",_x];
+		[] remoteExec ["client_fnc_closedialogs",_x];
 	} foreach _units;
 	policeStorageActive = 0;
     deleteVehicle _policeHolder;
