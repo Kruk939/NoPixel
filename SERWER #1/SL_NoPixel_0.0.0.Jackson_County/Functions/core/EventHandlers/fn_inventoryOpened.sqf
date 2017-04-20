@@ -63,8 +63,8 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
 };
 
 /*if (!(myjob IN ["cop","ems","fire"]) && ("tf_anprc152_2" || "tf_anprc152" in (vestItems player + uniformItems player + backpackItems player + assignedItems player + vestItems _unit + uniformItems _unit + backpackItems _unit + assignedItems _unit))) exitWith {
-		["tf_anprc152",0] spawn StanLakesideClient_fnc_removeitem;
-		["cg_tabletd",0] spawn StanLakesideClient_fnc_addItem;
+		["tf_anprc152",0] spawn StanLakeside_fnc_removeitem;
+		["cg_tabletd",0] spawn StanLakeside_fnc_addItem;
 };*/
 
 
@@ -74,10 +74,10 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
 	uiSleep 0.05;
 	waituntil {!(isnull (finddisplay 602)) || handle };
 	if(!handle) then {
-		((findDisplay 602) displayCtrl 638) ctrlSetEventHandler ["LBDblClick", "_this call StanLakesideClient_fnc_fuckyoucgandprorpandothershitmods"];  
-		((findDisplay 602) displayCtrl 633) ctrlSetEventHandler ["LBDblClick", "_this call StanLakesideClient_fnc_fuckyoucgandprorpandothershitmods"];  
-		((findDisplay 602) displayCtrl 640) ctrlSetEventHandler ["LBDblClick", "_this call StanLakesideClient_fnc_fuckyoucgandprorpandothershitmods"];  
-		((findDisplay 602) displayCtrl 619) ctrlSetEventHandler ["LBDblClick", "_this call StanLakesideClient_fnc_fuckyoucgandprorpandothershitmods"];
+		((findDisplay 602) displayCtrl 638) ctrlSetEventHandler ["LBDblClick", "_this call StanLakeside_fnc_fuckyoucgandprorpandothershitmods"];  
+		((findDisplay 602) displayCtrl 633) ctrlSetEventHandler ["LBDblClick", "_this call StanLakeside_fnc_fuckyoucgandprorpandothershitmods"];  
+		((findDisplay 602) displayCtrl 640) ctrlSetEventHandler ["LBDblClick", "_this call StanLakeside_fnc_fuckyoucgandprorpandothershitmods"];  
+		((findDisplay 602) displayCtrl 619) ctrlSetEventHandler ["LBDblClick", "_this call StanLakeside_fnc_fuckyoucgandprorpandothershitmods"];
 	}; 
 };
 

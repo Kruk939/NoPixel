@@ -21,7 +21,7 @@ _n = 0;
 
 		_localProtection = _localprotection + 1;
 		globalProtection = globalProtection + 1;
-		if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn StanLakesideClient_fnc_anticheat; };
+		if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn StanLakeside_fnc_anticheat; };
 
 
 		player removeitem (_oreArray select _n);
@@ -58,7 +58,7 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 
 			_localProtection = _localprotection + 1;
 			globalProtection = globalProtection + 1;
-			if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn StanLakesideClient_fnc_anticheat; };
+			if(_localProtection != globalProtection) exitwith { [1,"Refine Pelt Script"] spawn StanLakeside_fnc_anticheat; };
 
 			_itemNumber = _ItemCount select _count;
 			 if !(_x IN _oreArray) then {

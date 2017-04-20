@@ -1,11 +1,11 @@
-//[position,type IE "Murder" or "Vehicle Accident"] remoteExec ["StanLakesideClient_fnc_startNews",_player];
+//[position,type IE "Murder" or "Vehicle Accident"] remoteExec ["StanLakeside_fnc_startNews",_player];
 
 if(myjob != "none" && myjob != "NewsMan") exitwith { hint "Masz już pracę!"; };
 if(isnil "taskrunning") then { taskrunning = false; };
 
 myjob = "NewsMan";
 
-[] call StanLakesideClient_fnc_hudwork;
+[] call StanLakeside_fnc_hudwork;
 private ["_warning","_JobBase"];
 if(!taskrunning) then {
 
@@ -29,12 +29,12 @@ if(!taskrunning) then {
 					uisleep 3;
 				} else {
 					[format ["Zlecenie (Zaznaczone na mapie): Typ - %1", ((playertasks select 0) select 1)], false] spawn doquickmsg;
-					[((playertasks select 0) select 0)] call StanLakesideClient_fnc_jobMarker;			
+					[((playertasks select 0) select 0)] call StanLakeside_fnc_jobMarker;			
 					uisleep 30;
 				};
 			};
 		};
-		if(myjob == "NewsMan") then { [] call StanLakesideClient_fnc_jobEnd; };
+		if(myjob == "NewsMan") then { [] call StanLakeside_fnc_jobEnd; };
 	};
 };
 

@@ -105,15 +105,15 @@ if(_typebuy == "standard") then {
 	_lostprice = _status select 5;
 	if(_lostprice > 0) then {
 		if(isNil "taxpayments") then { taxpayments = 0; };
-		if(taxpayments == 0) then { taxpayments = taxpayments + _lostprice;	[_lostprice] spawn StanLakesideClient_fnc_payMayor; } else { taxpayments = taxpayments + _lostprice; };
+		if(taxpayments == 0) then { taxpayments = taxpayments + _lostprice;	[_lostprice] spawn StanLakeside_fnc_payMayor; } else { taxpayments = taxpayments + _lostprice; };
 	};
 
-	[_totalPrice] call StanLakesideClient_fnc_removeCash;
+	[_totalPrice] call StanLakeside_fnc_sl_removeCash_secure;
 };
 
 _chance = round (random 100);
 if(_chance > 35) then {
-	["Add","Karma",2] call StanLakesideClient_fnc_sustain;
+	["Add","Karma",2] call StanLakeside_fnc_sustain;
 };
 
 

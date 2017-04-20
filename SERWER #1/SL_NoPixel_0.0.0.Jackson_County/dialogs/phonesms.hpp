@@ -3,7 +3,7 @@
 class openMessages {
 	idd = 9999;
 	name= "openMessages";
-	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [""nobg""] spawn StanLakesideClient_fnc_fadephone;";	
+	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [""nobg""] spawn StanLakeside_fnc_fadephone;";	
 	movingEnable = 0;
 	enableSimulation = 1;
 
@@ -58,7 +58,7 @@ class openMessages {
 			idc = 9001;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn StanLakesideClient_fnc_openMessages;";
+			onLBSelChanged = "[] spawn StanLakeside_fnc_openMessages;";
 			x = 0.35;
 			y = 0.175;
 			w = 0.301;
@@ -111,7 +111,7 @@ class client_findSMS {
 	name= "client_findSMS";
 	movingEnable = 0;
 	enableSimulation = 1;
-	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [] spawn StanLakesideClient_fnc_findPlayersALL; [""nobg""] spawn StanLakesideClient_fnc_fadephone;";
+	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [] spawn StanLakeside_fnc_findPlayersALL; [""nobg""] spawn StanLakeside_fnc_fadephone;";
 	class controls {
 		
 		class phoneMain: RscPicture
@@ -163,7 +163,7 @@ class client_findSMS {
 		class HomeOption : client_RscButtonMenu {
 			idc = 1115;
 			text = "Send";
-			onButtonClick = "[] spawn StanLakesideClient_fnc_chooseUserMessage;";
+			onButtonClick = "[] spawn StanLakeside_fnc_chooseUserMessage;";
 			x = 0.52;
 			y = 0.75;
 			w = 0.1;

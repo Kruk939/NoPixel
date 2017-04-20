@@ -11,7 +11,7 @@ if (count fires > 0) then {
     {
 
         if (_obj distance(_x select 1) < 40 && _chance > 90) then {
-            [(_x select 1)] remoteexec["StanLakesideClient_fnc_fireDelete", -2];
+            [(_x select 1)] remoteexec["StanLakeside_fnc_fireDelete", -2];
             paycheck = paycheck + 250;
         };
 
@@ -32,7 +32,7 @@ if ((count _personas) != 0) then {
     foreach _personas;
 
     if ((count _notstunned) > 0) then {
-        "deadstate"  remoteExec["StanLakesideClient_fnc_playAnim", _notStunned];
+        "deadstate"  remoteExec["StanLakeside_fnc_playAnim", _notStunned];
     };
     sleep 5;
     _removeStun = []; {
@@ -44,6 +44,6 @@ if ((count _personas) != 0) then {
     foreach _personas;
     if ((count _removeStun) > 0) then {
         "AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWrflDnon_gear"
-        remoteExec["StanLakesideClient_fnc_playAnim", _removeStun];
+        remoteExec["StanLakeside_fnc_playAnim", _removeStun];
     };
 };

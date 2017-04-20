@@ -6,13 +6,13 @@ _display = findDisplay 9999;
 
 _text = _display displayCtrl 9993;
 
-_bank = _bank call StanLakesideClient_fnc_numberText;
+_bank = _bank call StanLakeside_fnc_numberText;
 
 _text ctrlSetStructuredText parseText format["%1",_bank];
 
 _text = _display displayCtrl 9994;
 
-_cash = _cash call StanLakesideClient_fnc_numberText;
+_cash = _cash call StanLakeside_fnc_numberText;
 
 _text ctrlSetStructuredText parseText format["%1",_cash];
 

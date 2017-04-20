@@ -9,18 +9,18 @@ _change = false;
 if(_adjust == "Add") then {
 	myHealth = myHealth - _amount;
 	if(_amount > 0.1) then {
-		[6] spawn StanLakesideClient_fnc_HudElements;	
+		[6] spawn StanLakeside_fnc_HudElements;	
 	};	
 };
 if(_adjust == "Remove") then {
 	myHealth = myHealth + _amount; 
 	if(_amount > 0.1) then {
-		[5] spawn StanLakesideClient_fnc_HudElements;
+		[5] spawn StanLakeside_fnc_HudElements;
 	};
 };
 
 if(_adjust == "Set") then {
-	[6] spawn StanLakesideClient_fnc_HudElements; 
+	[6] spawn StanLakeside_fnc_HudElements; 
 	myHealth = _amount; 
 };
 
@@ -37,9 +37,9 @@ if(myHealth > 0.99) exitwith {
 	if(Myhealth > 1.8) then { myHealth = 1.8; };
 	_damage = myHealth - 1;
 	_damage = _damage * 10;
-	[] spawn StanLakesideClient_fnc_hudhealth;
-	[] spawn StanLakesideClient_fnc_hudeffects;
-	[player,_source,_damage,_headshot] spawn StanLakesideClient_fnc_HandleKilled;
+	[] spawn StanLakeside_fnc_hudhealth;
+	[] spawn StanLakeside_fnc_hudeffects;
+	[player,_source,_damage,_headshot] spawn StanLakeside_fnc_HandleKilled;
 };
 
 if((damage player) != myhealth) then {
@@ -47,5 +47,5 @@ if((damage player) != myhealth) then {
 };
 
 
-[] spawn StanLakesideClient_fnc_hudhealth;
-[] spawn StanLakesideClient_fnc_hudeffects;
+[] spawn StanLakeside_fnc_hudhealth;
+[] spawn StanLakeside_fnc_hudeffects;

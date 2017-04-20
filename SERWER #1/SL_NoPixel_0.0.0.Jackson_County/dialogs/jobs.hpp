@@ -4,7 +4,7 @@ class job_update {
 	movingEnable = 0;
 	enableSimulation = 1;
 
-	onLoad = "[player] spawn StanLakesideClient_fnc_startjob;";
+	onLoad = "[player] spawn StanLakeside_fnc_startjob;";
 
 	class controls {
 			
@@ -82,7 +82,7 @@ class job_update {
 		class ChooseJobOption : HideButton {
 			idc = 9995;
 			text = "";
-			onButtonClick = "[] spawn StanLakesideClient_fnc_selectJob;";
+			onButtonClick = "[] spawn StanLakeside_fnc_selectJob;";
 			x = 0.404632 * safezoneW + safezoneX;
 			y = 0.69972 * safezoneH + safezoneY;
 			w = 0.0889114 * safezoneW;

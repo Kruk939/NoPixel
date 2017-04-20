@@ -17,8 +17,8 @@ _startpos = getpos _vehicle;
 closedialog 0;
 while {true} do {
 	uisleep 0.5;
-	_mycash = [1,2] call StanLakesideClient_fnc_checkMoney;
-	[2] call StanLakesideClient_fnc_removeCash;
+	_mycash = [1,2] call StanLakeside_fnc_sl_checkMoney_secure;
+	[2] call StanLakeside_fnc_sl_removeCash_secure;
 	_curFuel = fuel _vehicle;
 	if !(_mycash) exitwith { hint "Nie masz już pieniędzy."; };
 	if(_curFuel > 0.99) exitwith { hint "Pojazd zatankowany!"; };

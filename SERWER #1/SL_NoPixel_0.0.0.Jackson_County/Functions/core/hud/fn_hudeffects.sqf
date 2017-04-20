@@ -22,7 +22,7 @@ make anonymous phone calls from booths
 disableSerialization;
 private["_injurytext","_ui","_food","_water","_health","_money","_cash","_ammo","_stam","_select","_ammocount","_selectcount","_bulletcount","_dam","_fps","_watermark","_lowfood","_lowhealth","_lowdrink","_bleeding","_wounded","_fracture","_unconcious","_woundedon","_fractureon","_unconciouson","_diseaseon","_currentactions","_currentactionson","_battery","_karma","_progfood","_progwater","_proghealth","_progfps","_progstamina","_progmags","_progammo","_progselect","_progbattery","_progkarma","_progpoop","_progdirt","_tfrchat"];
 
-if(myhealth > 0) then { [] spawn StanLakesideClient_fnc_hudhealth; [] call StanLakesideClient_fnc_hudwork; };
+if(myhealth > 0) then { [] spawn StanLakeside_fnc_hudhealth; [] call StanLakeside_fnc_hudwork; };
 	_ui = uiNameSpace getVariable ["playerHUD",displayNull];
 
 	_bleeding = _ui displayCtrl 23570;
@@ -48,7 +48,7 @@ if(myhealth > 0) then { [] spawn StanLakesideClient_fnc_hudhealth; [] call StanL
 				_chances = round (random 1000);
 				if(_chances > 985) then
 				{
-					["Remove",0.01] call StanLakesideClient_fnc_DoHealth;
+					["Remove",0.01] call StanLakeside_fnc_DoHealth;
 				};
 
 			}
@@ -68,7 +68,7 @@ if(myhealth > 0) then { [] spawn StanLakesideClient_fnc_hudhealth; [] call StanL
 				_chances = round (random 1000);
 				if(_chances > 985) then
 				{
-					["Remove",0.01] call StanLakesideClient_fnc_DoHealth;
+					["Remove",0.01] call StanLakeside_fnc_DoHealth;
 				};
 
 			}
@@ -87,7 +87,7 @@ if(myhealth > 0) then { [] spawn StanLakesideClient_fnc_hudhealth; [] call StanL
 				_chances = round (random 1000);
 				if(_chances > 985) then
 				{
-					["Remove",0.01] call StanLakesideClient_fnc_DoHealth;
+					["Remove",0.01] call StanLakeside_fnc_DoHealth;
 				};
 
 			}
@@ -106,7 +106,7 @@ if(myhealth > 0) then { [] spawn StanLakesideClient_fnc_hudhealth; [] call StanL
 				_chances = round (random 1000);
 				if(_chances > 985) then
 				{
-					["Remove",0.01] call StanLakesideClient_fnc_DoHealth;
+					["Remove",0.01] call StanLakeside_fnc_DoHealth;
 				};
 
 			}
@@ -133,7 +133,7 @@ if(myhealth > 0) then { [] spawn StanLakesideClient_fnc_hudhealth; [] call StanL
 			if(_chances > 595) then {
 				playSound3D ["cg_sndimg\sounds\cough1.ogg", player, false, getPosASL player, 3, 1, 45];
 				playSound3D ["cg_sndimg\sounds\cough2.ogg", player, false, getPosASL player, 3, 1, 45];
-				[1] spawn StanLakesideClient_fnc_HudElements;
+				[1] spawn StanLakeside_fnc_HudElements;
 
 			} else {
 				_chances = round (random 1000);
@@ -141,7 +141,7 @@ if(myhealth > 0) then { [] spawn StanLakesideClient_fnc_hudhealth; [] call StanL
 				{
 					player enableFatigue true;
 					player setFatigue 0;
-					[1] spawn StanLakesideClient_fnc_HudElements;
+					[1] spawn StanLakeside_fnc_HudElements;
 					_coughtype = round (random 4);
 					if(_coughtype == 1) then
 					{
@@ -164,9 +164,9 @@ if(myhealth > 0) then { [] spawn StanLakesideClient_fnc_hudhealth; [] call StanL
 						if(isNull objectParent player) then
 						{
 							[] spawn KK_fnc_forceRagdoll;
-							[] spawn StanLakesideClient_fnc_spreaddisease;
+							[] spawn StanLakeside_fnc_spreaddisease;
 						};
-					["Remove",0.05] call StanLakesideClient_fnc_DoHealth;
+					["Remove",0.05] call StanLakeside_fnc_DoHealth;
 					};
 				};
 			};
@@ -177,6 +177,6 @@ if(myhealth > 0) then { [] spawn StanLakesideClient_fnc_hudhealth; [] call StanL
 			_disease ctrlSetText format["%1", _diseaseon];
 		};
 	};
-	if(isNil "StanLakesideClient_fnc_totalPain") exitWith {};
-	[] spawn StanLakesideClient_fnc_totalPain;
+	if(isNil "StanLakeside_fnc_totalPain") exitWith {};
+	[] spawn StanLakeside_fnc_totalPain;
 	

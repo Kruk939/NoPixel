@@ -18,4 +18,4 @@ _vehInfo = _vehInfo select 0;
 _query = format ["getSLPDWantedVehicle_plate:%1", _plate];
 _wanted = [_query,2] call ExternalS_fnc_ExtDBasync;
 
-[[_vehInfo,_wanted], "plate"] remoteExec ["StanLakesideClient_fnc_slpd_load_checkCase", _player];
+[[_vehInfo,_wanted], "plate"] remoteExec ["StanLakeside_fnc_slpd_load_checkCase", _player];

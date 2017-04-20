@@ -1,7 +1,7 @@
 _wallet = player getVariable "sl_wallet_silverlake";
 _atm = player getVariable "sl_atm_silverlake";
-[player, "sl_wallet_silverlake", _wallet] remoteExec ["StanLakesideServer_fnc_setVariable",2];
-[player, "sl_atm_silverlake", _atm] remoteExec ["StanLakesideServer_fnc_setVariable",2];
+[player, "wallet", _wallet] remoteExec ["StanLakesideServer_fnc_setVariable",2];
+[player, "atm", _atm] remoteExec ["StanLakesideServer_fnc_setVariable",2];
 [player, "sync", 1] remoteExec ["StanLakesideServer_fnc_setVariable",2];
 [player, getUnitLoadout player] remoteExec ["StanLakesideServer_fnc_steppedsync",2];
 

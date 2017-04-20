@@ -56,7 +56,7 @@ while{paintballing} do {
 
 	if(paintballhit && !godmode) then {
 		godmode = true;
-		["set",0] call StanLakesideClient_fnc_DoHealth;
+		["set",0] call StanLakeside_fnc_DoHealth;
 		_goto = _spawnpoints call BIS_fnc_selectRandom;
 		player setpos _goto;
 		player setdir random(360);
@@ -90,7 +90,7 @@ paintballscore = 0;
 paintballing = false;
 paintballhit = false;
 
-[_amount] call StanLakesideClient_fnc_addCash;
+[_amount] call StanLakeside_fnc_sl_addCash_secure;
 [format["Wygrałeś %1 dolarów!",_amount],false] spawn domsg;
 
 if(client_energy == 0) then {

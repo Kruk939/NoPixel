@@ -2,7 +2,7 @@
 
 //	[
 //		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_Uniforms_F"") && player getvariable ""cop"" > 1 "],
-//		["MUNDURY", "[cursorobject] spawn StanLakesideClient_fnc_vars"]
+//		["MUNDURY", "[cursorobject] spawn StanLakeside_fnc_vars"]
 //	],
 
 

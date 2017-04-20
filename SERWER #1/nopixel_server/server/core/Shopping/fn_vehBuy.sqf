@@ -33,9 +33,9 @@ if(isNull _player) then {
 	_updatestr = format ["updateVehOwnerPay:%1:%2", _price, _carowner]; 
 	_update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 } else {
-	[_price, _veh] remoteExec["StanLakesideClient_fnc_vehSold", _player];
+	[_price, _veh] remoteExec["StanLakeside_fnc_vehSold", _player];
 };
-["garage",_information] remoteExec ["StanLakesideClient_fnc_setVariable", _buyer];
+["garage",_information] remoteExec ["StanLakeside_fnc_setVariable", _buyer];
 _updatestr = format ["updateVehOwner:%1:%2", getPlayerUID _buyer, _information select 0]; 
 _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 _className = typeOf _veh;

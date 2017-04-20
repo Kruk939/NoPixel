@@ -41,7 +41,7 @@ class RscTitles {
 
 class CfgFunctions 
 {
-	class StanLakesideClient
+	class StanLakeside
 	{
 		class Phone
 		{
@@ -496,16 +496,16 @@ class CfgFunctions
 			class mafiaOwed {};
 			class loanUpdate {};
 			class numberText {};
-			class addcashmayor {};
-			class addBank {};
-			class addCash {};
-			class checkMoney {};
-			class giveLoan {};
-			class giveLoanSubmit {};			
-			class giveCash {};
-			class giveCashSubmit {};
-			class removeBank {};
-			class removeCash {};
+			class sl_addcashmayor_secure {};
+			class sl_addBank_secure {};
+			class sl_addCash_secure {};
+			class sl_checkMoney_secure {};
+			class sl_giveLoan_secure {};
+			class sl_giveLoanSubmit_secure {};			
+			class sl_giveCash_secure {};
+			class sl_giveCashSubmit_secure {};
+			class sl_removeBank_secure {};
+			class sl_removeCash_secure {};
 			class takeDrill {};
 		};
 		class Vehicle

@@ -1,5 +1,5 @@
 //this is where we create a dialog to update prices.
-// [_shopcontent] remoteExec ["StanLakesideClient_fnc_updatePrices",_player];
+// [_shopcontent] remoteExec ["StanLakeside_fnc_updatePrices",_player];
 
 private ["_n","_shopcontent","_shop","_loop","_currentShop"];
 disableSerialization;
@@ -70,7 +70,7 @@ while{_currentShop < 4} do {
 	_loop = count (shopcontent select _currentShop select 0);
 	while { _n != _loop } do {
 		_class = ((shopcontent select _currentShop) select 0) select _n;
-		_item = [_class] call StanLakesideClient_fnc_fetchItemType;
+		_item = [_class] call StanLakeside_fnc_fetchItemType;
 
 		_list lbAdd format["%1 | Ilosc: %2 | Cena: $%3", _item select 1, ((shopcontent select _currentShop) select 1) select _n, ((shopcontent select _currentShop) select 2) select _n];
 		_list lbSetdata [ (lbSize _list)-1 , str([_currentShop,_n]) ];

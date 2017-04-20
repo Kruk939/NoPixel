@@ -136,7 +136,7 @@ if (!isnull _holder) then {
 
     _units = nearestObjects [_holder, ["Man"], 50];
     {
-		[] remoteExec ["StanLakesideClient_fnc_closedialogs",_x];
+		[] remoteExec ["StanLakeside_fnc_closedialogs",_x];
 	} foreach _units;
     
     deleteVehicle _holder;

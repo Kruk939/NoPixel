@@ -18,10 +18,10 @@ if(_type == "vehicle") then {
 	_query = format ["getSLPDWantedVehicle_case:%1", _id];
 	_case = [_query,2] call ExternalS_fnc_ExtDBasync;
 	_case = _case select 0;
-	[_case, "vehicle"] remoteExec ["StanLakesideClient_fnc_slpd_load_checkCase", _player];
+	[_case, "vehicle"] remoteExec ["StanLakeside_fnc_slpd_load_checkCase", _player];
 } else {
 	_query = format ["getSLPDWanted_case:%1", _id];
 	_case = [_query,2] call ExternalS_fnc_ExtDBasync;
 	_case = _case select 0;
-	[_case, "personal"] remoteExec ["StanLakesideClient_fnc_slpd_load_checkCase", _player];
+	[_case, "personal"] remoteExec ["StanLakeside_fnc_slpd_load_checkCase", _player];
 };

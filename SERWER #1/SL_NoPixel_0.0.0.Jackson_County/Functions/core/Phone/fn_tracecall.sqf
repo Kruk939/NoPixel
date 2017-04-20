@@ -1,6 +1,6 @@
 if(isNil "TracingPlayers") then { TracingPlayers = []; };
 if(CurrentCursorTarget in TracingPlayers) exitWith {};
-[player] remoteexec ["StanLakesideClient_fnc_trackedby",CurrentCursorTarget];
+[player] remoteexec ["StanLakeside_fnc_trackedby",CurrentCursorTarget];
 TracingPlayers pushback CurrentCursorTarget;
 if (myjob == "cop") then {
 [player,CurrentCursorTarget,16,format ["%1 namierzył rozmowę %2", name player, name CurrentCursorTarget],""] remoteExec ["StanLakesideServer_fnc_copLog", 2];

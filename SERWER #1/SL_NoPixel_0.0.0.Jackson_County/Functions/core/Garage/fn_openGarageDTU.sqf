@@ -84,7 +84,7 @@ if(myJob == "Cop") then {
 
 {
 	_class = _x;
-	_vehicleName = [_x] call StanLakesideClient_fnc_getVehicleName; 
+	_vehicleName = [_x] call StanLakeside_fnc_getVehicleName; 
 	if((str CurrentCursorTarget find "embarcadero" > -1 ) && _class isKindOf "Ship" ) then {
 		_veh = lbAdd [1500, format["%1",_vehicleName] ];
 		lbSetData [1500, _veh, format["%1",Str(_x)]];

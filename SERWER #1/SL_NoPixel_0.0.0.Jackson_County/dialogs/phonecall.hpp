@@ -46,7 +46,7 @@ class phoneTapMenu {
 		class HomeOption : client_RscButtonMenu {
 			idc = 1115;
 			text = "Select";
-			onButtonClick = "[] spawn StanLakesideClient_fnc_requestCurrentCall;";
+			onButtonClick = "[] spawn StanLakeside_fnc_requestCurrentCall;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.65;
 			w = (6.25 / 40);
@@ -70,7 +70,7 @@ class client_CurrentPhoneCall_Menu
 {    
 	idd = 5337;
 	name= "client_call";
-	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [""nobg""] spawn StanLakesideClient_fnc_fadephone;";
+	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [""nobg""] spawn StanLakeside_fnc_fadephone;";
 	movingEnable = 0;
 	enableSimulation = 1;
 	fadein = 1;
@@ -117,7 +117,7 @@ class client_CurrentPhoneCall_Menu
 			idc = -1;
 			text = "Add";
 			colorBackground[] = {0,0.535294117647059,0.2725490196078431,0.7};
-			onButtonClick = "[] spawn StanLakesideClient_fnc_CallMenu;";
+			onButtonClick = "[] spawn StanLakeside_fnc_CallMenu;";
 			x = 0.52;
 			y = 0.75;
 			w = 0.1;

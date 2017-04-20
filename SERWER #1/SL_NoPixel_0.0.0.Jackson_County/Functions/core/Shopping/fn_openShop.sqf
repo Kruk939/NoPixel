@@ -18,7 +18,7 @@ while{_currentShop < 4} do {
 	_loop = count (_shopcontent select _currentShop select 0);
 	while { _n != _loop } do {
 		_class = ((_shopcontent select _currentShop) select 0) select _n;
-		_item = [_class] call StanLakesideClient_fnc_fetchItemType;
+		_item = [_class] call StanLakeside_fnc_fetchItemType;
 		_quantity = ((_shopcontent select _currentShop) select 1) select _n;
 		_price = ((_shopcontent select _currentShop) select 2) select _n;
 		if(_price > 0) then {

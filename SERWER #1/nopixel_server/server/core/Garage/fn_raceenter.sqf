@@ -23,7 +23,7 @@ if (_player IN racecontestents) exitwith {
 racecontestents pushback _player;
 racecount = racecount + 1;
 
-[racecount] remoteexec["StanLakesideClient_fnc_openF1", _player];
+[racecount] remoteexec["StanLakeside_fnc_openF1", _player];
 
 
 
@@ -40,7 +40,7 @@ if (racecount == 1) then {
     "Wyścigi F1 startują TERAZ!"
     remoteexec["hint", -2];
 
-    [] remoteexec["StanLakesideClient_fnc_dorace", racecontestents];
+    [] remoteexec["StanLakeside_fnc_dorace", racecontestents];
     raceprogress = true;
 
 

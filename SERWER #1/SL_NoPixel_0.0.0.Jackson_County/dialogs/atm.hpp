@@ -1,7 +1,7 @@
 class ATMmafia
 {
 	idd = 1015;
-	onLoad = "[] spawn StanLakesideClient_fnc_findplayersatm;";
+	onLoad = "[] spawn StanLakeside_fnc_findplayersatm;";
 	class controls 
 	{
 
@@ -111,7 +111,7 @@ class ATMmafia
 			y = 0.58;
 			w = 0.09875 * safezoneW;
 			h = 0.0329871 * safezoneH;
-			action = [1]call StanLakesideClient_fnc_atmWithdraw;
+			action = [1]call StanLakeside_fnc_atmWithdraw;
 		};
 		class RscButton_1601: HideButton
 		{
@@ -121,7 +121,7 @@ class ATMmafia
 			y = 0.45;
 			w = 0.09875 * safezoneW;
 			h = 0.0329871 * safezoneH;
-			action = [1]call StanLakesideClient_fnc_atmDeposit;
+			action = [1]call StanLakeside_fnc_atmDeposit;
 		};
 
 		class RscButton_1602: HideButton
@@ -132,7 +132,7 @@ class ATMmafia
 			y = 0.71;
 			w = 0.09875 * safezoneW;
 			h = 0.0329871 * safezoneH;
-			action = [1]call StanLakesideClient_fnc_atmTransfer;
+			action = [1]call StanLakeside_fnc_atmTransfer;
 		};
 
 		class kRscButton_1603: HideButton
@@ -154,7 +154,7 @@ class ATMmafia
 class ATM
 {
 	idd = 1015;
-	onLoad = "[] spawn StanLakesideClient_fnc_findplayersatm;";
+	onLoad = "[] spawn StanLakeside_fnc_findplayersatm;";
 	class controls 
 	{
 
@@ -264,7 +264,7 @@ class ATM
 			y = 0.58;
 			w = 0.09875 * safezoneW;
 			h = 0.0329871 * safezoneH;
-			action = [0]call StanLakesideClient_fnc_atmWithdraw;
+			action = [0]call StanLakeside_fnc_atmWithdraw;
 		};
 		class RscButton_1601: HideButton
 		{
@@ -274,7 +274,7 @@ class ATM
 			y = 0.45;
 			w = 0.09875 * safezoneW;
 			h = 0.0329871 * safezoneH;
-			action = [0]call StanLakesideClient_fnc_atmDeposit;
+			action = [0]call StanLakeside_fnc_atmDeposit;
 		};
 
 		class RscButton_1602: HideButton
@@ -285,7 +285,7 @@ class ATM
 			y = 0.71;
 			w = 0.09875 * safezoneW;
 			h = 0.0329871 * safezoneH;
-			action = [0]call StanLakesideClient_fnc_atmTransfer;
+			action = [0]call StanLakeside_fnc_atmTransfer;
 		};
 
 		class kRscButton_1603: HideButton

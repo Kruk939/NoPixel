@@ -2,6 +2,6 @@ if(isnil "taskrunning") then { taskrunning = false; };
 
 myjob = "Mafia";
 taskrunning = true;
-[] call StanLakesideClient_fnc_hudwork;
-//[] call StanLakesideClient_fnc_jobEnd;
+[] call StanLakeside_fnc_hudwork;
+//[] call StanLakeside_fnc_jobEnd;
 

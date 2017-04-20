@@ -1,4 +1,4 @@
-// [1] spawn StanLakesideClient_fnc_spawnFurniture;
+// [1] spawn StanLakeside_fnc_spawnFurniture;
 
 // 0 = delete all and start over - 1 is office chair - 2 is sofa - 3 and 4 are laying chairs
 private["_type","_status"];

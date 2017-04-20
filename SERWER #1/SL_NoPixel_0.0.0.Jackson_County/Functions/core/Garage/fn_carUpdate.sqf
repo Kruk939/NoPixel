@@ -108,7 +108,7 @@ if(typeof _PROCESS IN ["ADM_1964_Impala","ADM_1969_Charger","ADM_1969_Camaro","A
 };
 
 
-_cashcheck = [2,_price] call StanLakesideClient_fnc_checkMoney;
+_cashcheck = [2,_price] call StanLakeside_fnc_sl_checkMoney_secure;
 if!(_cashCheck) exitwith { hint format["$%1 - Nie masz wystarczająco dużo pieniędzy!",_price]; };
 
 
@@ -168,7 +168,7 @@ if(_attempt && _oldveh in current_cars) then {
 	deletevehicle _oldveh;
 
 	[_garage,_numberPlate,_newVehicle,player,getPlayerUID player,Current_Cars] remoteexec ["StanLakesideServer_fnc_upgradeVehicle",2];
-	[_price] call StanLakesideClient_fnc_removeBank;
+	[_price] call StanLakeside_fnc_sl_removeBank_secure;
 
 } else {
 	hint "Ten pojazd został już ulepszony, albo nie może być ulepszony w ogóle!";

@@ -3,7 +3,7 @@ if(myjob != "none") exitwith { hint "Masz już pracę!"; };
 if(isnil "taskrunning") then { taskrunning = false; };
 
 myjob = "Prosecutor";
-[] call StanLakesideClient_fnc_hudwork;
+[] call StanLakeside_fnc_hudwork;
 private ["_warning","_JobBase"];
 if(!taskrunning) then {
 
@@ -16,7 +16,7 @@ if(!taskrunning) then {
 			uisleep 180;
 			paycheck = paycheck + 120;
 		};
-		if(myjob == "Prosecutor") then { [] call StanLakesideClient_fnc_jobEnd; };
+		if(myjob == "Prosecutor") then { [] call StanLakeside_fnc_jobEnd; };
 	};
 };
 player setVariable ["coplevel", 1, false];

@@ -4,7 +4,7 @@
 class phoneBook {
 	idd = 9999;
 	name= "phoneBook";
-	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [player] spawn StanLakesideClient_fnc_updatePhonebook; [""nobg""] spawn StanLakesideClient_fnc_fadephone;";
+	onLoad = "uiNamespace setVariable [""phonemenu"", _this select 0]; [player] spawn StanLakeside_fnc_updatePhonebook; [""nobg""] spawn StanLakeside_fnc_fadephone;";
 	movingEnable = 0;
 	enableSimulation = 1;
 
@@ -39,7 +39,7 @@ class phoneBook {
 			idc = 9001;
 			text = "";
 			sizeEx = 0.05;
-			onLBSelChanged = "[] spawn StanLakesideClient_fnc_updatePhoneBookPlayers";
+			onLBSelChanged = "[] spawn StanLakeside_fnc_updatePhoneBookPlayers";
 			x = 0.35;
 			y = 0.175;
 			w = 0.301;
@@ -60,7 +60,7 @@ class phoneBook {
 		class CallSelected : client_RscButtonMenu {
 			idc = 1115;
 			text = "Call Player";
-			onButtonClick = "[0] spawn StanLakesideClient_fnc_CallSomebody;";
+			onButtonClick = "[0] spawn StanLakeside_fnc_CallSomebody;";
 			x = 0.75;
 			y = 0.75;
 			w = 0.1;

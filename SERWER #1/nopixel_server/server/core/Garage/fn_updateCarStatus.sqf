@@ -28,7 +28,7 @@ _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 
 if (_status isEqualTo 0) then {
 	 _information SET[7, 0];
-	 ["garage", _information] remoteExec["StanLakesideClient_fnc_setVariable", _player];
+	 ["garage", _information] remoteExec["StanLakeside_fnc_setVariable", _player];
 	 deleteVehicle _object;
 } else {
 	_license = _information select 0;

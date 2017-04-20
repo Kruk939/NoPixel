@@ -8,5 +8,5 @@ if(player distance myhouse < 100) then {
 	};
 
 } else {
-	[myhouse,"Lokalizacja domu","Job"] remoteexec ["StanLakesideClient_fnc_hudHelper",_player];
+	[myhouse,"Lokalizacja domu","Job"] remoteexec ["StanLakeside_fnc_hudHelper",_player];
 };

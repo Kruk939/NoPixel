@@ -5,7 +5,7 @@ tryingcall = false;
 
 phonesringing = false;
 
-StanLakesideClient_fnc_checkPhone = {
+StanLakeside_fnc_checkPhone = {
 
 	_radios = player call TFAR_fnc_radiosList;
 
@@ -28,7 +28,7 @@ StanLakesideClient_fnc_checkPhone = {
 
 };
 
-StanLakesideClient_fnc_resetCallSpawn = {
+StanLakeside_fnc_resetCallSpawn = {
 	player setvariable["PhoneCallNumber",0,true];
 	player setvariable["PhoneID",0,true];
 	player setVariable ["tf_unable_to_use_radio", true];
@@ -42,8 +42,8 @@ StanLakesideClient_fnc_resetCallSpawn = {
 	call TFAR_fnc_HideHint;	
 };
 
-[] call StanLakesideClient_fnc_checkPhone;
-[] spawn StanLakesideClient_fnc_resetCallSpawn;
+[] call StanLakeside_fnc_checkPhone;
+[] spawn StanLakeside_fnc_resetCallSpawn;
 
 
 if(client_karma > 999) then {

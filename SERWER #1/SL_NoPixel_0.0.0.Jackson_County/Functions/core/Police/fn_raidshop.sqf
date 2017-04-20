@@ -8,6 +8,6 @@ if(player distance myshop < 100) then {
 	};
 } else {
 
-	[myshop,"Lokalizacja sklepu","Job"] remoteexec ["StanLakesideClient_fnc_hudHelper",_player];
+	[myshop,"Lokalizacja sklepu","Job"] remoteexec ["StanLakeside_fnc_hudHelper",_player];
 	
 };

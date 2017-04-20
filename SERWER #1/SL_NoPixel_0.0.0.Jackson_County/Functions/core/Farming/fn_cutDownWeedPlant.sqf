@@ -20,7 +20,7 @@ if(player distance [1409.98,5740.65,0.00143814] < 400) then {
 
 _msg = format["Sciąłeś %1 paczek zioła!",_randomValue];
 [player,objNull,26,format ["%1 ściął marychę w sztukach %2 i jakości %3 CLASSNAME: %4",name player, _randomValue, _quality, _item],_randomValue] remoteExec ["StanLakesideServer_fnc_actionLog", 2];
-["Sukces", _msg, [0,255,0,1],""] call StanLakesideClient_fnc_showNotification;
+["Sukces", _msg, [0,255,0,1],""] call StanLakeside_fnc_showNotification;
 while {_randomValue > 0} do { player addItem _item; _randomValue = _randomValue - 1; };
 _point = weedPlantArray find _object;
 

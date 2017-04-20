@@ -1,4 +1,4 @@
-//[_POSITION] remoteexec ["StanLakesideClient_fnc_fireStart",-2];
+//[_POSITION] remoteexec ["StanLakeside_fnc_fireStart",-2];
 
 params ["_location"];
 _num = 3;

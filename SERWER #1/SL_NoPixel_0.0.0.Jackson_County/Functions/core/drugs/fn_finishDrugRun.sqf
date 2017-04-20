@@ -21,7 +21,7 @@ if(!isnil "_process") then {
 
 		_localProtection = _localprotection + 1;
 		globalProtection = globalProtection + 1;
-		if(_localProtection != globalProtection) exitwith { [1,"Mafia Drop Off"] spawn StanLakesideClient_fnc_anticheat; };
+		if(_localProtection != globalProtection) exitwith { [1,"Mafia Drop Off"] spawn StanLakeside_fnc_anticheat; };
 
 		_itemNumber = _ItemCount select _count;
 		 if !(_x IN _oreArray) then {

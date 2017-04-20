@@ -141,7 +141,7 @@ _update = [0, _updatestr] call ExternalS_fnc_ExtDBquery;
 ["Synchronizacja skrzynki zakończona", false] remoteExec ["domsg",_player];
 deleteVehicle _holder;  
  
-[_shopcontent,"start"] remoteExec ["StanLakesideClient_fnc_updatePrices",_player]; 
+[_shopcontent,"start"] remoteExec ["StanLakeside_fnc_updatePrices",_player]; 
  
  
 if(getmarkerpos format["%1",_uid] isEqualTo [0,0,0]) then { deletemarker format["%1",_uid]; }; 

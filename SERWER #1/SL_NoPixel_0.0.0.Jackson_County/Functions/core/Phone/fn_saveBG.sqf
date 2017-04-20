@@ -12,7 +12,7 @@ _bg = [phoneBackground,phoneskin];
 [player, "phoneBackground", [phoneBackground,phoneskin]] remoteExec ["StanLakesideServer_fnc_setVariable",2];
 [_bg, getPlayerUID player] remoteExec ["StanLakesideServer_fnc_PhoneBackgroundSync", 2];
 
-[1] call StanLakesideClient_fnc_removeBank;
+[1] call StanLakeside_fnc_sl_removeBank_secure;
 
 
 

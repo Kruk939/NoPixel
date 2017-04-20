@@ -23,8 +23,8 @@ if (isNil "_nameItem") then {_nameItem = "";};
 
 _playerUID = getPlayerUID _player;
 _playerName = name _player;
-_playerCash = _player getVariable ["sl_wallet_silverlake",-1];
-_playerBank = _player getVariable ["sl_atm_silverlake",-1];
+_playerCash = _player getVariable ["wallet",-1];
+_playerBank = _player getVariable ["atm",-1];
 _playerInv = getUnitLoadout _player;
 
 switch (_type) do {

@@ -1,4 +1,4 @@
-//[69] spawn StanLakesideClient_fnc_givedisease;
+//[69] spawn StanLakeside_fnc_givedisease;
 _disease = _this select 0;
 
 _myInjuries = player getVariable "playerInjuries";
@@ -11,5 +11,5 @@ if(_myinjuries select 10 == 0) then {
 };
 player setVariable ["playerInjuriesToUpdate",_myInjuries,false];
 if(myUpdate) then {
-	[] spawn StanLakesideClient_fnc_doInjuriesUpdate;
+	[] spawn StanLakeside_fnc_doInjuriesUpdate;
 };

@@ -19,5 +19,5 @@ _amount = ctrlText _edit_amount;
 _points = ctrlText _edit_points;
 _reason = ctrlText _edit_reason;
 player playmove "vvv_anim_ticket";
-[[_amount, _points, _reason],player] remoteExec ["StanLakesideClient_fnc_slpd_ticket_receive", _target];
+[[_amount, _points, _reason],player] remoteExec ["StanLakeside_fnc_slpd_ticket_receive", _target];
 closeDialog 0;

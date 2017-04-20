@@ -19,13 +19,13 @@ if (_statementsent == 2) then {
 
 if(_statementsent == 3) then {
 	[_target,false] remoteExec ["allowdamage", _target];
-	[] remoteExec ["StanLakesideClient_fnc_adminGodmode", _target];
+	[] remoteExec ["StanLakeside_fnc_adminGodmode", _target];
 	[player,_target,3,format ["%1 włączył godmode dla %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2]; 
 };
 
 if(_statementsent == 4) then {
 	[_target,true] remoteExec ["allowdamage", _target]; 
-	[] remoteExec ["StanLakesideClient_fnc_adminGodmode", _target];
+	[] remoteExec ["StanLakeside_fnc_adminGodmode", _target];
 	[player,_target,4,format ["%1 wyłączył godmode dla %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
@@ -42,7 +42,7 @@ if(_statementsent == 6) then {
 };
 
 if(_statementsent == 7) then {
-	["Remove",1,_target] remoteExec ["StanLakesideClient_fnc_DoHealth", _target]; 
+	["Remove",1,_target] remoteExec ["StanLakeside_fnc_DoHealth", _target]; 
 	[player,_target,7,format ["%1 zabił %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
@@ -72,39 +72,39 @@ if(_statementsent == 11) then {
 	removeBackpack _target;
 	removeGoggles _target;
 	removeHeadgear _target;
-	[_target] spawn StanLakesideClient_fnc_destroyGroundHolders;
+	[_target] spawn StanLakeside_fnc_destroyGroundHolders;
 	[player,_target,11,format ["%1 usunął wszystkie przedmioty gracza %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 12) then {
 	_units = nearestObjects [player, ["Man"], 300];
 	{
-		[] remoteExec ["StanLakesideClient_fnc_restrained",_x];
+		[] remoteExec ["StanLakeside_fnc_restrained",_x];
 	} foreach _units - [player];
 	[player,_target,32,format ["%1 skuł osoby w pobliżu 300m",name player],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 13) then {
-	[] remoteExec ["StanLakesideClient_fnc_fullheal", _target]; 
-	["SET",0] remoteexec ["StanLakesideClient_fnc_DoHealth",_target];
+	[] remoteExec ["StanLakeside_fnc_fullheal", _target]; 
+	["SET",0] remoteexec ["StanLakeside_fnc_DoHealth",_target];
 	[player,_target,12,format ["%1 uzdrowił %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 14) then {
-	[_target] remoteExec ["StanLakesideClient_fnc_revived", _target]; 
+	[_target] remoteExec ["StanLakeside_fnc_revived", _target]; 
 	[player,_target,13,format ["%1 odrodził %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 15) then {
 	if(vehicle _TARGET != _target) then {
-		[(vehicle _TARGET)] spawn StanLakesideClient_fnc_moveIn;
+		[(vehicle _TARGET)] spawn StanLakeside_fnc_moveIn;
 		[player,_target,14,format ["%1 przesunął %2 w pojeździe",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 	};
 };
 
 if(_statementsent == 16) then {
 	_target = driver (vehicle _target);
-	[_target] remoteExec ["StanLakesideClient_fnc_pulloutVeh", _target]; 
+	[_target] remoteExec ["StanLakeside_fnc_pulloutVeh", _target]; 
 	[player,_target,15,format ["%1 wyciągnął kierowcę z pojazdu gdzie znajdował się gracz %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
@@ -113,14 +113,14 @@ if(_statementsent == 17) then {
 	_crew = crew (vehicle _target);
 	_veh = (vehicle _target);
 	{
-		[_x] remoteExec ["StanLakesideClient_fnc_pulloutVeh",_x];
+		[_x] remoteExec ["StanLakeside_fnc_pulloutVeh",_x];
 	} foreach _crew;
 	[player,_target,16,format ["%1 wyciągnął wszystkich z pojazdu gdzie znajdował się gracz %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 18) then {
 	if(isNil "adminESP") then { adminESP = false; };
-	if(!adminESP) exitwith { adminESP = true; client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","StanLakesideClient_fnc_adminESP"] call BIS_fnc_addStackedEventHandler; [player,objNull,17,format ["%1 włączył adminESP",name player],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2]; };
+	if(!adminESP) exitwith { adminESP = true; client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","StanLakeside_fnc_adminESP"] call BIS_fnc_addStackedEventHandler; [player,objNull,17,format ["%1 włączył adminESP",name player],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2]; };
 	if(adminESP) exitwith { adminESP = Nil; ["client_PlayerTags", "onEachFrame"] call BIS_fnc_removeStackedEventHandler; [player,objNull,18,format ["%1 wyłączył adminESP",name player],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];};
 };
 
@@ -144,14 +144,14 @@ if(_statementsent == 20) then {
 if(_statementsent == 21) then {
 	_units = nearestObjects [player, ["Man"], 300];
 	{
-		[_x] remoteExec ["StanLakesideClient_fnc_revived",_x];
+		[_x] remoteExec ["StanLakeside_fnc_revived",_x];
 	} foreach _units - [player];
 	[player,objNull,21,format ["%1 odrodził graczy w zasięgu 300m od siebie",name player],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 22) then {
 	{
-		[_x] remoteExec ["StanLakesideClient_fnc_revived",_x];
+		[_x] remoteExec ["StanLakeside_fnc_revived",_x];
 	} foreach allplayers;
 	[player,objNull,22,format ["%1 odrodził wszystkich graczy na serwerze",name player],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
@@ -213,7 +213,7 @@ if(_statementsent == 27) then {
 };
 
 if(_statementsent == 28) then {
-	[1000] remoteExec ["StanLakesideClient_fnc_addCash", _target];
+	[1000] remoteExec ["StanLakeside_fnc_sl_addCash_secure", _target];
 	[player,objNull,34,format ["%1 dodał sobie 1000$",name player],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
@@ -230,22 +230,22 @@ if(_statementsent == 30) then {
 };
 
 if(_statementsent == 31) then {
-	["add","food",100] remoteExec ["StanLakesideClient_fnc_sustain", _target];
+	["add","food",100] remoteExec ["StanLakeside_fnc_sustain", _target];
 	[player,_target,37,format ["%1 nakarmił żołądek %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 32) then {
-	["add","drink",100] remoteExec ["StanLakesideClient_fnc_sustain", _target];
+	["add","drink",100] remoteExec ["StanLakeside_fnc_sustain", _target];
 	[player,_target,38,format ["%1 napoił żołądek %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 33) then {
-	["remove","unhealthiness",100] remoteExec ["StanLakesideClient_fnc_sustain", _target];
+	["remove","unhealthiness",100] remoteExec ["StanLakeside_fnc_sustain", _target];
 	[player,_target,39,format ["%1 polepszył poczucie %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 34) then {
-	["add","battery",200] remoteExec ["StanLakesideClient_fnc_sustain", _target];
+	["add","battery",200] remoteExec ["StanLakeside_fnc_sustain", _target];
 	[player,_target,40,format ["%1 naładował telefon %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
@@ -277,24 +277,24 @@ if(_statementsent == 38) then {
 };
 
 if(_statementsent == 39) then {
-	[] remoteExec ["StanLakesideClient_fnc_syncdata", _target];
+	[] remoteExec ["StanLakeside_fnc_syncdata", _target];
 	[player,_target,33,format ["%1 wykonał synchronizację gracza %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 40) then {
 	_units = nearestObjects [player, ["Man"], 300];
 	{
-		[] remoteExec ["StanLakesideClient_fnc_unrestrained",_x];
+		[] remoteExec ["StanLakeside_fnc_unrestrained",_x];
 	} foreach _units - [player];
 	[player,_target,46,format ["%1 rozskuł osoby w pobliżu 300m",name player],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 41) then {
-	[] remoteExec ["StanLakesideClient_fnc_restrained",_target];
+	[] remoteExec ["StanLakeside_fnc_restrained",_target];
 	[player,_target,47,format ["%1 zakuł gracza %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };
 
 if(_statementsent == 42) then {
-	[] remoteExec ["StanLakesideClient_fnc_unrestrained",_target];
+	[] remoteExec ["StanLakeside_fnc_unrestrained",_target];
 	[player,_target,48,format ["%1 rozkuł gracza %2",name player, name _target],""] remoteExec ["StanLakesideServer_fnc_adminLog", 2];
 };

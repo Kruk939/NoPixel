@@ -37,7 +37,7 @@ _n = 0;
 		playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosasl player, 5, 1, 5];
 		sleep 0.25;
 		if(dialog) then { closedialog 0; };
-		["Sukces","Twoje ryby są przetwarzane na tran, poczekaj chwilę!",[0,255,0,1],""] call StanLakesideClient_fnc_showNotification;
+		["Sukces","Twoje ryby są przetwarzane na tran, poczekaj chwilę!",[0,255,0,1],""] call StanLakeside_fnc_showNotification;
 		//hint "Your fish is being filleted, stay still!";
 	};
 

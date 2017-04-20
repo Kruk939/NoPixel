@@ -123,7 +123,7 @@ if(_owner IN _owedPlayers) then {
 	_amount = _amount - _value;
 	if(_amount < 0) then { _amount = 0; };
 
-	["set","MafiaMoney",_amount] remoteExec ["StanLakesideClient_fnc_sustain",_owner];
+	["set","MafiaMoney",_amount] remoteExec ["StanLakeside_fnc_sustain",_owner];
 
 	//add funds to mafia bank
 

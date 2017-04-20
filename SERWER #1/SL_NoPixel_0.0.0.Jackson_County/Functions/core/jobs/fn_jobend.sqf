@@ -31,7 +31,7 @@ if(!isNil "vehspawned") then {
 		};
 	};
 };
-[] call StanLakesideClient_fnc_hudwork;
-[] spawn StanLakesideClient_fnc_tryhangup;
+[] call StanLakeside_fnc_hudwork;
+[] spawn StanLakeside_fnc_tryhangup;
 
-[getpos player,"text to display","destroy"] spawn StanLakesideClient_fnc_hudHelper;
+[getpos player,"text to display","destroy"] spawn StanLakeside_fnc_hudHelper;

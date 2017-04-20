@@ -33,16 +33,16 @@ if (_war) then
 		if (!(isNull _tracker1)) then {_veh setvariable ["tracker1",objNull,true];};
 		if (!(isNull _tracker2)) then {_veh setvariable ["tracker2",objNull,true];};
 		if (!(isNull _tracker3)) then {_veh setvariable ["tracker3",objNull,true];};
-		if (!(isNull _tracker1)) then {[_veh] remoteexec ["StanLakesideClient_fnc_disTracking2",_tracker1];};
-		if (!(isNull _tracker2)) then {[_veh] remoteexec ["StanLakesideClient_fnc_disTracking2",_tracker2];};
-		if (!(isNull _tracker3)) then {[_veh] remoteexec ["StanLakesideClient_fnc_disTracking2",_tracker3];};
+		if (!(isNull _tracker1)) then {[_veh] remoteexec ["StanLakeside_fnc_disTracking2",_tracker1];};
+		if (!(isNull _tracker2)) then {[_veh] remoteexec ["StanLakeside_fnc_disTracking2",_tracker2];};
+		if (!(isNull _tracker3)) then {[_veh] remoteexec ["StanLakeside_fnc_disTracking2",_tracker3];};
 
 		if (!(isNull _tracker1c)) then {_veh setvariable ["tracker1c",objNull,true];};
 		if (!(isNull _tracker2c)) then {_veh setvariable ["tracker2c",objNull,true];};
 		if (!(isNull _tracker3c)) then {_veh setvariable ["tracker3c",objNull,true];};
-		if (!(isNull _tracker1c)) then {[_veh] remoteexec ["StanLakesideClient_fnc_disTracking2",_tracker1c];};
-		if (!(isNull _tracker2c)) then {[_veh] remoteexec ["StanLakesideClient_fnc_disTracking2",_tracker2c];};
-		if (!(isNull _tracker3c)) then {[_veh] remoteexec ["StanLakesideClient_fnc_disTracking2",_tracker3c];};
+		if (!(isNull _tracker1c)) then {[_veh] remoteexec ["StanLakeside_fnc_disTracking2",_tracker1c];};
+		if (!(isNull _tracker2c)) then {[_veh] remoteexec ["StanLakeside_fnc_disTracking2",_tracker2c];};
+		if (!(isNull _tracker3c)) then {[_veh] remoteexec ["StanLakeside_fnc_disTracking2",_tracker3c];};
 	} else
 	{
 		hint "Nic nie znaleziono...";

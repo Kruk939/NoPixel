@@ -24,8 +24,8 @@ if (isNil "_price") then {_amount = "";};
 
 _playerUID = getPlayerUID _player;
 _playerName = name _player;
-_playerCash = _player getVariable ["sl_wallet_silverlake",-1];
-_playerBank = _player getVariable ["sl_atm_silverlake",-1];
+_playerCash = _player getVariable ["wallet",-1];
+_playerBank = _player getVariable ["atm",-1];
 _playerInv = getUnitLoadout _player;
 
 if (isNull _unit) then {
@@ -34,8 +34,8 @@ if (isNull _unit) then {
 } else {
     _unitUID = getPlayerUID _unit;
     _unitName = name _unit;
-    _unitCash = _unit getVariable ["sl_wallet_silverlake",-1];
-    _unitBank = _unit getVariable ["sl_atm_silverlake",-1];
+    _unitCash = _unit getVariable ["wallet",-1];
+    _unitBank = _unit getVariable ["atm",-1];
     _unitInv = getUnitLoadout _unit;
 };
 
