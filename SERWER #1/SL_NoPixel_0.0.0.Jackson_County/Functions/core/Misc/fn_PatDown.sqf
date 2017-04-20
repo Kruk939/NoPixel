@@ -118,7 +118,7 @@ _back = backpack player;
 
 _new = player getVariable "sl_wallet_silverlake";	
 
-[player, "wallet", _new] remoteExec ["Server_fnc_setVariable",2]; 
+[player, "sl_wallet_silverlake", _new] remoteExec ["Server_fnc_setVariable",2]; 
 
 [player, getUnitLoadout player] remoteExec ["server_fnc_steppedsync",2]; 
 

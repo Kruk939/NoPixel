@@ -9,4 +9,4 @@ if(isNil "theMayor") exitwith {};
  
 _currentcash = theMayor getVariable "sl_atm_silverlake"; 
 _new = _currentcash + _payment; 
-theMayor setVariable ["atm", _new, false]; 
+theMayor setVariable ["sl_atm_silverlake", _new, false]; 

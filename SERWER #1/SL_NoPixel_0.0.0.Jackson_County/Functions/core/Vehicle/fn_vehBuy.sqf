@@ -11,7 +11,7 @@ _veh = cursorTarget;
 _price = _veh getVariable ["vehPrice",0];
 _shop = nearestObject [getPos player, "Land_ModernShowroom"];
 _carsInShop = _shop getVariable ["CarsToBuy",[]];
-_cash = player getVariable ["wallet",0];
+_cash = player getVariable ["sl_wallet_silverlake",0];
 
 _information = _veh getVariable ["information",[]];
 if((count _information) isEqualTo 0) exitWith { ["Nie można było kupić pojazdu.", false] spawn domsg; };

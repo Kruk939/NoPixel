@@ -52,7 +52,7 @@ NoPixel_InteractionMenuItems = [
 	
 	[
 		["(licensearray select 0) == 0 && typeof CurrentCursorTarget IN [""Land_Centrelink""] && player getVariable[""veh_points"",0] < 15"],
-		["Prawo jazdy 500$", "_cashcheck = [1,500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",1] call StanLakeside_fnc_sustain; [500] call StanLakeside_fnc_sl_removeCash_secure; ",1]
+		["Prawo jazdy 500$", "_cashcheck = [1,500] call Client_fnc_sl_checkMoney_secure; if!(_cashCheck) exitwith { hint ""Nie masz pieniędzy!""; }; [""Add"",""license"",1] call client_fnc_sustain; [500] call Client_fnc_sl_removeCash_secure; ",1]
 	],
 
 	[
