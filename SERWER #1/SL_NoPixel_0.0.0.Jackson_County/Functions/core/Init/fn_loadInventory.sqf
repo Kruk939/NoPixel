@@ -49,7 +49,7 @@ if(_legal == 10) then { _house = getpos nearestObject [[9188.22,3371.8,0.0014381
 if(_legal == 9) then { _house = getpos nearestObject [[9094.99,3324.16,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
 if(_legal == 8) then { _house = getpos nearestObject [[8984.55,3274.12,0.00143814], "Land_vvv_np_maison1"]; _higherup = true; };
 if(_mayor) then { 
-	[] spawn StanLakesideClient_fnc_mayorsetup; 
+	[] spawn StanLakeside_fnc_mayorsetup; 
 	_house = getpos nearestObject [[9949.03,3732.87,0.00143814], "Land_vvv_np_maison1"]; _higherup = true;
 };
 
@@ -148,7 +148,7 @@ moneyOwed = (_statuses select 11) select 1;
 //do prison shit here
 
 if(count(_prisonArray) > 0) then {
-	[_prisonArray] spawn StanLakesideClient_fnc_slpd_jail_setup;
+	[_prisonArray] spawn StanLakeside_fnc_slpd_jail_setup;
 } else {
 	player setpos [7639.87,2553.39,0.00143814];
 	if(_higherup) exitwith { player setpos _house};
@@ -217,11 +217,11 @@ removeBackpack player;
 removeGoggles player;
 removeHeadgear player;
 
-[player] spawn StanLakesideClient_fnc_destroyGroundHolders;
+[player] spawn StanLakeside_fnc_destroyGroundHolders;
 player setunitloadout _items;
 
 if((_statuses select 9) == 0) then {
-	[] spawn StanLakesideClient_fnc_playerselect;
+	[] spawn StanLakeside_fnc_playerselect;
 	[] spawn {
 		cutText ["","BLACK IN", 1];
 		"dynamicBlur" ppEffectEnable true; /* enables ppeffect */
