@@ -29,7 +29,7 @@ class giveCash
 			y = 0.57697 * safezoneH + safezoneY;
 			w = 0.055 * safezoneW;
 			h = 0.0549786 * safezoneH;
-			action = [currentcursortarget, player]call Client_fnc_giveCashSubmit;
+			action = [currentcursortarget, player]call Client_fnc_sl_giveCashSubmit_secure;
 		};
 		class RscEdit_1401: RscEdit
 		{
@@ -286,7 +286,7 @@ class giveLoan
 			y = 0.64697 * safezoneH + safezoneY;
 			w = 0.055 * safezoneW;
 			h = 0.0549786 * safezoneH;
-			action = [currentcursortarget, player] call Client_fnc_giveLoanSubmit;
+			action = [currentcursortarget, player] call Client_fnc_sl_giveLoan_secureSubmit;
 		};
 
 

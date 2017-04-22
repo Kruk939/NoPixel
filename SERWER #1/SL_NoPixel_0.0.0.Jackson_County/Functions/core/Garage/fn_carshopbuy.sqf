@@ -18,12 +18,12 @@ _price = _price + _pricePaint;
 
 
 
-_cash = player getVariable "wallet";
+_cash = player getVariable "sl_wallet_silverlake";
 
 
 if(_cash < _price) exitwith { [format["KOSZT: %1 - Za mało pieniędzy.",_price], true] spawn domsg; };
 
-[_price] call Client_fnc_removeCash;
+[_price] call Client_fnc_sl_removeCash_secure;
 
 
 

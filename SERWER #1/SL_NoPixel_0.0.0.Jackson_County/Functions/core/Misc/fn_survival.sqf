@@ -21,7 +21,7 @@ if(!taskrunning) then {
 
 
 
-[paycheck] call Client_fnc_addBank;
+[paycheck] call Client_fnc_sl_addBank_secure;
 paycheck = 0;
 
 if(client_marijuana > 0 || client_cocaine > 0 || client_meth > 0 || client_heroin > 0  || client_energy > 0) then { ["Remove","drug",1] call client_fnc_sustain; };

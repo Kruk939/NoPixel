@@ -13,7 +13,7 @@ vehspawned = createVehicle ["ivory_r34", getpos player, [], 0, "NONE"];
 
 */
 
-_cashcheck = [2,2000] call client_fnc_checkmoney;
+_cashcheck = [2,2000] call Client_fnc_sl_checkMoney_secure;
 if!(_cashCheck) exitwith { hint "Nie masz pieniędzy!"; };
 _currentitemindex = lbCurSel 1500;
 if (_currentitemindex == -1) exitWith {};

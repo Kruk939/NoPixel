@@ -213,7 +213,7 @@ if(_statementsent == 27) then {
 };
 
 if(_statementsent == 28) then {
-	[1000] remoteExec ["client_fnc_addcash", _target];
+	[1000] remoteExec ["Client_fnc_sl_addCash_secure", _target];
 	[player,objNull,34,format ["%1 dodał sobie 1000$",name player],""] remoteExec ["server_fnc_adminLog", 2];
 };
 
@@ -279,4 +279,22 @@ if(_statementsent == 38) then {
 if(_statementsent == 39) then {
 	[] remoteExec ["client_fnc_syncdata", _target];
 	[player,_target,33,format ["%1 wykonał synchronizację gracza %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
+};
+
+if(_statementsent == 40) then {
+	_units = nearestObjects [player, ["Man"], 300];
+	{
+		[] remoteExec ["client_fnc_unrestrained",_x];
+	} foreach _units - [player];
+	[player,_target,46,format ["%1 rozskuł osoby w pobliżu 300m",name player],""] remoteExec ["server_fnc_adminLog", 2];
+};
+
+if(_statementsent == 41) then {
+	[] remoteExec ["client_fnc_restrained",_target];
+	[player,_target,47,format ["%1 zakuł gracza %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
+};
+
+if(_statementsent == 42) then {
+	[] remoteExec ["client_fnc_unrestrained",_target];
+	[player,_target,48,format ["%1 rozkuł gracza %2",name player, name _target],""] remoteExec ["server_fnc_adminLog", 2];
 };

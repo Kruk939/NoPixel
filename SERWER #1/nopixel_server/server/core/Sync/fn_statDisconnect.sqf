@@ -6,8 +6,8 @@ _items = getUnitLoadout _player;
 _messages = [];
 
 deletemarker format["%1",_uid];
-_cash = _player getVariable "wallet";
-_bank = _player getVariable "atm";
+_cash = _player getVariable "sl_wallet_silverlake";
+_bank = _player getVariable "sl_atm_silverlake";
 
 _position = position _player;
 
@@ -48,8 +48,8 @@ if(_pia != -1) then {
 
 _player setvariable ["getunitloadout",nil,false];
 _player setVariable ["sync", nil, false];
-_player setVariable ["wallet", nil, false];
-_player setVariable ["atm", nil, false];
+_player setVariable ["sl_wallet_silverlake", nil, false];
+_player setVariable ["sl_atm_silverlake", nil, false];
 _player setVariable ["bankAccount", nil, false];
 _player setVariable ["cop", nil, false];
 _player setVariable ["ems", nil, false];

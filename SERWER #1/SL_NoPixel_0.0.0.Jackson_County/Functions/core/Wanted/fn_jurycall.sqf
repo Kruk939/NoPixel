@@ -49,7 +49,7 @@ if(!_failed) then {
 	[format["Nazwisko Twojego oficera to %1, odbierz od niego $2000.",_policeOfficerName], false] spawn domsg;
 	while{JuryDuty} do {
 		if( clientarrested || imRestrained || myJob != "None" ) exitwith {};
-		if(player distance _officer < 5) exitwith { ["Dotarles do sadu", false] spawn doquickmsg; [2000] call Client_fnc_addCash; }; 
+		if(player distance _officer < 5) exitwith { ["Dotarles do sadu", false] spawn doquickmsg; [2000] call Client_fnc_sl_addCash_secure; }; 
 		uisleep 1;
 		mypositionJob = getpos _officer;
 		[getpos _officer] call client_fnc_jobMarker;

@@ -90,7 +90,7 @@ paintballscore = 0;
 paintballing = false;
 paintballhit = false;
 
-[_amount] call Client_fnc_addCash;
+[_amount] call Client_fnc_sl_addCash_secure;
 [format["Wygrałeś %1 dolarów!",_amount],false] spawn domsg;
 
 if(client_energy == 0) then {

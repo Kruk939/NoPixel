@@ -28,7 +28,7 @@ _cashTotal = 0;
 
 		player removeitem (_barArray select _n);
 		_value = (_priceArray select _n);
-		[_value] call Client_fnc_addCash;
+		[_value] call Client_fnc_sl_addCash_secure;
 		_cashTotal = _cashTotal + _value;
 		_i = _i - 1;
 		playSound3D ["vvv_fishingrod\sounds\splash.ogg", player, false, getPosasl player, 5, 1, 5];

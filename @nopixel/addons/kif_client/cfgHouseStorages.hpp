@@ -70,3 +70,9 @@ class kif_storage_cargobox10: kif_storage_cargobox
 		maximumLoad=10000;
 		transportMaxBackpacks=0;
 	};
+class kif_storage_cargobox_dtu: kif_storage_cargobox
+	{
+		transportFuel=100000;
+		maximumLoad=100000;
+		transportMaxBackpacks=10;
+	};

@@ -12,7 +12,7 @@
 _price = _this select 0;
 _veh = _this select 1;
 hint format [""];
-[_price] call Client_fnc_addBank;
+[_price] call Client_fnc_sl_addBank_secure;
 [format["Twój samochód sprzedał się za: $%1!", _price], true] spawn domsg;
 [player,6,format ["%1 dostał %2 za sprzedaż samochodu",name player,_price],_price,"",""] remoteExec ["server_fnc_vehicleLog", 2];
 

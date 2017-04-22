@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=540;
+		nextID=556;
 	};
 	class MarkerIDProvider
 	{
-		nextID=36;
+		nextID=45;
 	};
 	class Camera
 	{
-		pos[]={7241.4233,107.66592,5581.9785};
-		dir[]={-0.84513676,-0.38356832,-0.37259585};
-		up[]={-0.35099956,0.92341942,-0.15474671};
-		aside[]={-0.4034695,-4.6957575e-007,0.91516805};
+		pos[]={231.43858,42.757828,1673.4617};
+		dir[]={0.83629245,-0.46070445,-0.2973457};
+		up[]={0.43411288,0.8875342,-0.15435055};
+		aside[]={-0.3350139,3.1333184e-007,-0.94223607};
 	};
 };
 binarizationWanted=0;
@@ -9066,7 +9066,7 @@ class Mission
 			type="mil_unknown";
 			colorName="ColorOrange";
 			id=384;
-			atlOffset=4.5814524;
+			atlOffset=7.8963175;
 		};
 		class Item227
 		{
@@ -9287,11 +9287,10 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={305.51617,6.9416504,1649.1194};
-				angles[]={0,4.7176075,0};
+				position[]={311.47015,6.9415436,1662.3612};
+				angles[]={0,3.1221108,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				name="eqbox_1";
@@ -9299,6 +9298,7 @@ class Mission
 			};
 			id=403;
 			type="Box_NATO_Equip_F";
+			atlOffset=3.8973529;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10016,8 +10016,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={304.022,6.9417572,1649.1281};
-				angles[]={0,1.5744441,0};
+				position[]={311.49838,6.9416504,1660.8673};
+				angles[]={0,6.2621326,0};
 			};
 			side="Empty";
 			flags=4;
@@ -10027,7 +10027,6 @@ class Mission
 			};
 			id=468;
 			type="Box_NATO_Uniforms_F";
-			atlOffset=0.00010681152;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10871,126 +10870,15 @@ class Mission
 		};
 		class Item276
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={9560.3506,81.851746,7361.2588};
-				angles[]={5.8518095,0,6.1617627};
-			};
-			name="rafgraf";
-			id=485;
-			type="ModuleCurator_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ModuleCurator_F_Owner";
-					expression="_this setVariable ['Owner',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="76561197982469013";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ModuleCurator_F_Forced";
-					expression="_this setVariable ['Forced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleCurator_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleInfo";
-					expression="false";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleCurator_F_Addons";
-					expression="_this setVariable ['Addons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				nAttributes=5;
-			};
-		};
-		class Item277
-		{
 			dataType="Marker";
 			position[]={7041.7192,3.0922304e+019,2407.7144};
 			name="speed_cam_1";
 			type="Empty";
-			angle=99.172966;
+			angle=99.172958;
 			id=486;
 			atlOffset=3.0922304e+019;
 		};
-		class Item278
+		class Item277
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11006,7 +10894,7 @@ class Mission
 			id=490;
 			type="Mattaust_Cam2";
 		};
-		class Item279
+		class Item278
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11022,7 +10910,7 @@ class Mission
 			id=496;
 			type="Mattaust_Cam1";
 		};
-		class Item280
+		class Item279
 		{
 			dataType="Marker";
 			position[]={9722.2168,31.285904,7519.0874};
@@ -11032,7 +10920,7 @@ class Mission
 			id=505;
 			atlOffset=-25.075581;
 		};
-		class Item281
+		class Item280
 		{
 			dataType="Marker";
 			position[]={5031.8306,-21.479372,2756.7988};
@@ -11042,7 +10930,7 @@ class Mission
 			id=508;
 			atlOffset=-24.986469;
 		};
-		class Item282
+		class Item281
 		{
 			dataType="Marker";
 			position[]={6906.5635,-2.5839844,5438.7793};
@@ -11052,7 +10940,7 @@ class Mission
 			id=510;
 			atlOffset=-25.003929;
 		};
-		class Item283
+		class Item282
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11068,7 +10956,7 @@ class Mission
 			id=513;
 			type="Mattaust_Cam1";
 		};
-		class Item284
+		class Item283
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11084,13 +10972,13 @@ class Mission
 			id=518;
 			type="Mattaust_Cam1";
 		};
-		class Item285
+		class Item284
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={7041.7051,26.935757,2407.1208};
-				angles[]={-0,5.2495232,0};
+				angles[]={0,5.2495232,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11100,13 +10988,13 @@ class Mission
 			id=520;
 			type="kif_speedcam";
 		};
-		class Item286
+		class Item285
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={7045.7441,26.935757,2408.0471};
-				angles[]={-0,1.9517766,0};
+				angles[]={0,1.9517766,0};
 			};
 			side="Empty";
 			flags=4;
@@ -11116,17 +11004,17 @@ class Mission
 			id=521;
 			type="kif_speedcam";
 		};
-		class Item287
+		class Item286
 		{
 			dataType="Marker";
 			position[]={8663.5781,2.9388917e+037,6409.1309};
 			name="speed_cam_10";
 			type="Empty";
-			angle=99.172974;
+			angle=99.172958;
 			id=531;
 			atlOffset=2.9388917e+037;
 		};
-		class Item288
+		class Item287
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11143,7 +11031,7 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=0.00010490417;
 		};
-		class Item289
+		class Item288
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11160,7 +11048,7 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=0.0095405579;
 		};
-		class Item290
+		class Item289
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11177,7 +11065,7 @@ class Mission
 			type="kif_speedcam";
 			atlOffset=0.0026421547;
 		};
-		class Item291
+		class Item290
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11193,6 +11081,17 @@ class Mission
 			id=539;
 			type="kif_speedcam";
 			atlOffset=0.016267776;
+		};
+		class Item291
+		{
+			dataType="Marker";
+			position[]={7008.7959,0,2306.9451};
+			name="marker_44";
+			text="BAR U KAMILKA I ZIEMNIACZKA";
+			type="b_armor";
+			colorName="ColorPink";
+			id=548;
+			atlOffset=-25;
 		};
 	};
 };

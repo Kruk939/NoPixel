@@ -21,4 +21,4 @@ _bg = [phoneBackground,phoneskin];
 [player, "phoneBackground", [phoneBackground,phoneskin]] remoteExec ["Server_fnc_setVariable",2];
 [_bg, getPlayerUID player] remoteExec ["Server_fnc_PhoneBackgroundSync", 2];
 
-[50] call Client_fnc_removeBank;
+[50] call Client_fnc_sl_removeBank_secure;

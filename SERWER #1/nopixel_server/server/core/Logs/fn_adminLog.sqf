@@ -24,8 +24,8 @@ if (isNil "_amount") then {_amount = "";};
 
 _playerUID = getPlayerUID _player;
 _playerName = name _player;
-_playerCash = _player getVariable ["wallet",-1];
-_playerBank = _player getVariable ["atm",-1];
+_playerCash = _player getVariable ["sl_wallet_silverlake",-1];
+_playerBank = _player getVariable ["sl_atm_silverlake",-1];
 _playerInv = getUnitLoadout _player;
 
 if (isNull _unit) then {
@@ -34,8 +34,8 @@ if (isNull _unit) then {
 } else {
     _unitUID = getPlayerUID _unit;
     _unitName = name _unit;
-    _unitCash = _unit getVariable ["wallet",-1];
-    _unitBank = _unit getVariable ["atm",-1];
+    _unitCash = _unit getVariable ["sl_wallet_silverlake",-1];
+    _unitBank = _unit getVariable ["sl_atm_silverlake",-1];
     _unitInv = getUnitLoadout _unit;
 };
 
@@ -85,7 +85,10 @@ switch (_type) do {
     case 43: {_type = "AdminInteractionLv1";};
     case 44: {_type = "AdminInteractionLv2";};
     case 45: {_type = "AdminInteractionOff";};
-    //case 46: {_type = "";};
+    case 46: {_type = "300mUnrestrain";};
+    case 47: {_type = "Restrain";};
+    case 48: {_type = "Unrestrain";};
+    //case 49: {_type = "";};
 };
 
 

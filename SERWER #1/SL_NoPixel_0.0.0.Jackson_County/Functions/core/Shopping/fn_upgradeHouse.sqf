@@ -1,6 +1,6 @@
 _houseLevel = player getvariable "houselevel";
 
-_cashCheck = [2,50000] call client_fnc_checkmoney;
+_cashCheck = [2,50000] call Client_fnc_sl_checkMoney_secure;
 
 if!(_cashCheck) exitwith { hint "Potrzebujesz $50.000!"; };
 
@@ -14,7 +14,7 @@ if(_houselevel == 7) then { ["Sukces","Ulepszyles dom do 8 poziomu, zmiany wejda
 if(_houselevel == 8) then { ["Sukces","Ulepszyles dom do 9 poziomu, zmiany wejda w zycie po przelogowaniu.",[0,255,0,1],""] call Client_fnc_showNotification; player setvariable ["houselevel",9,false]; [9,getplayeruid player] remoteExec ["server_fnc_synchouselevel",2]; [player,objNull,2,format ["%1 ulepszył dom do poziomu dziewiątego za 50000$", name player],"50000", "", "9"] remoteExec ["server_fnc_economyLog", 2];};
 if(_houselevel == 9) then { ["Informacja","Maksymalny poziom domu osiagniety!",[255,69,0,1],""] call Client_fnc_showNotification; };
 
-[50000] call Client_fnc_removebank;
+[50000] call Client_fnc_sl_removeBank_secure;
 
 _chance = round (random 100);
 if(_chance > 35) then {

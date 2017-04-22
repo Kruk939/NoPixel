@@ -1,20 +1,9 @@
-params[["_type","basic"]];
-
+_type = _this select 0;
 [player,objNull,1,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_jobLog", 2];
 if(myjob == "Cop") exitwith {
 	[player,objNull,9,format ["%1 wyciągnął wyposażenie %2", name player, _type],_type] remoteExec ["server_fnc_copLog", 2];
-
-	
-	//Częstotliwość policyjna
-	player setvariable["PhoneCallNumber",33.3,true];
-	player setvariable["PhoneID",33.3,true];
-	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
-	_channel = _channel + 1;
-	[(call TFAR_fnc_activeSwRadio), _channel, 33.3] call TFAR_fnc_SetChannelFrequency;
-	
-	//Ładowanie baterii
-	["add","battery",200] call client_fnc_sustain;
-	
+    client_gopro = true;
+    434 cutRsc ["HUDGoPro","PLAIN"];
 	if(_type == "basic") then {
 		removeAllWeapons player;
 		removeAllItems player;
@@ -88,7 +77,7 @@ if(myjob == "Cop") exitwith {
 			};
 			if(_level == 10) then {
 				player forceAddUniform "kifpd_uni_dzokawhite";
-				player addVest "jamie_black2";
+				player addVest "jamie_black";
 				player addHeadgear "Campaign_Hat_Dark";
 			};
 			//jedzonko

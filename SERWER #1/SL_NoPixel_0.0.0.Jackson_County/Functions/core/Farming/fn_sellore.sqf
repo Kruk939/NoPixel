@@ -27,7 +27,7 @@ _cashTotal = 0;
 
 		player removeitem (_barArray select _n);
 		_value = (priceArrayOre select _n);
-		[_value] call Client_fnc_addCash;
+		[_value] call Client_fnc_sl_addCash_secure;
 		_cashTotal = _cashTotal + _value;
 		_i = _i - 1;
 		playSound3D ["CG_Jobs\sounds\mining\mineF2.ogg", player, false, getPosasl player, 31, 1, 15];

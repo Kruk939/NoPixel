@@ -73,8 +73,8 @@ if (_booli) then {
 
 	_player setvariable ["getunitloadout",_items,false];
 
-	_player setVariable ["wallet", _cash, false];
-	_player setVariable ["atm", _bank, false];
+	_player setVariable ["sl_wallet_silverlake", _cash, false];
+	_player setVariable ["sl_atm_silverlake", _bank, false];
 	_player setVariable ["bankAccount", _bankAccount, false];
 	_player setVariable ["cop", _cop, false];
 	_player setVariable ["ems", _ems, false];
@@ -182,8 +182,6 @@ if (_booli) then {
 
 	_house setVariable ["house", _player, false];
 	_shop setVariable ["shop", _player, false];
-
-	
 	diag_log format ["%1 %2 %3 %4 %5 %6 %7 %8 %9 %10 %11 %12 %13 %14 %15 %16 %17 %18 %19 %20 %21 %22 %23 %24 %25 %26 %27 %28 %29",name _player, _items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points];																																																																																																																																																													//,_mayor
 	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points] remoteexec ["Client_fnc_loadInventory", _player];
 } else {

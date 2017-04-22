@@ -494,6 +494,11 @@ _availableUniforms = [
 		"TRYK_U_B_PCUGs_BLK_R",
 		"TRYK_U_denim_jersey_blu",
 		"TRYK_U_B_Denim_T_BG_BK",
+        "TRYK_shirts_BLK_PAD_BL",
+        "TRYK_U_pad_hood_CSATBlk",
+            
+        "U_BG_Guerilla3_1",
+        "U_BG_Guerrilla_6_1",
 
 		"CUP_U_C_Villager_03",
 		"CUP_U_C_Woodlander_04",
@@ -504,6 +509,48 @@ _availableUniforms = [
 		"CUP_O_TKI_Khet_Jeans_02",
 		"CUP_O_TKI_Khet_Jeans_03",
 		"CUP_O_TKI_Khet_Jeans_04",
+            
+        "EF_HM_B1",
+        "EF_HM_BL1",
+        "EF_HM_OD1",
+        "EF_HM_SG1",
+        "EF_HM_PP1",
+        "EF_HM_B2",
+        "EF_HM_BL2",
+        "EF_HM_OD2",
+        "EF_HM_SG2",
+        "EF_HM_PP2",
+        "EF_MKJKT",
+        "EF_MKJKT2",
+        "EF_HM_LPBPS",
+        "EF_HM_LPBP",
+        "EF_HM_LPBR",
+        "EF_HM_LPBW",
+        "EF_HM_LPB",
+        "EF_HM_LPBL",
+        "EF_HM_LPBPS2",
+        "EF_HM_LPBP2",
+        "EF_HM_LPBR2",
+        "EF_HM_LPBW2",
+        "EF_HM_LPB2",
+        "EF_HM_LPBL2",
+
+        "EF_M_jkt2",
+        "EF_M_jkt22",
+        "EF_M_jkt1",
+        "EF_M_jkt2_2",
+        "EF_M_jkt2_22",
+        "EF_M_jkt1_2",
+        "EF_M_jkt2_3",
+        "EF_M_jkt2_32",
+        "EF_M_jkt1_3",
+        "EF_M_jkt32_2",
+        "EF_M_jkt32_2",
+        "EF_M_jkt2_4",
+        "EF_M_jkt32",
+        "EF_M_jkt4",
+
+        "EF_MX1",
 
 		"CUP_U_C_Citizen_01",
 		"CUP_U_C_Citizen_02",
@@ -923,6 +970,12 @@ _availableItems = [
     ];
      _availableItems = _availableItems + _availableItemsTen;
     };
+	if (client_dtu_actions > 0 ) then {
+	_availableItemsDtu = [
+    "kif_gps"
+    ];
+     _availableItems = _availableItems + _availableItemsDtu;
+	};
 
 
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;

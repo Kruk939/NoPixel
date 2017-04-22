@@ -561,4 +561,10 @@ class CfgIvoryTextures
 		texture = "\kif_client\textures\vehicles\ivory\all\minecraft.paa";
 		car = "all";
 	};
+	class kif_charger_sert
+	{
+		displayName = "SERT";
+		texture = "\kif_client\textures\vehicles\ivory\other\charger_sert.paa";
+		car = "all";
+	};
 };
