@@ -13,24 +13,22 @@ _type = _this select 0;
 _data = _this select 1;
 _function_name = _this select 2;
 _player = _this select 3;
-if(_type == "avialable") exitWith {
-	_id_company = _data select 0;
-	_level = _data select 1;
-	_query= format["getCompanyVehicle_available:%1:%2", _id_company, _level];
+if(_type == "player") exitWith {
+	_uid_player = _data select 0;
+	_query= format["getCompany_player:%1", _uid_player];
 	_data = [_query,2] call ExternalS_fnc_ExtDBasync;
 	diag_log _data;
 	_data remoteExec[_function_name, _player];
 };
 if(_type == "id") exitWith {
-	_id_vehicle = _data select 0;
-	_query = format["getCompanyVehicle_id:%1", _id_vehicle];
+	_id_company = _data select 0;
+	_query = format["getCompany_id:%1", _id_company];
 	_data = [_query,2] call ExternalS_fnc_ExtDBasync;
 	diag_log _data;
 	_data remoteExec[_function_name, _player];
 };
 if(_type == "all") exitWith {
-	_id_company = _data select 0;
-	_query = format["getCompanyVehicle_all:%1:%2", _id_company];
+	_query = format["getCompany_all"];
 	_data = [_query,2] call ExternalS_fnc_ExtDBasync;
 	diag_log _data;
 	_data remoteExec[_function_name, _player];

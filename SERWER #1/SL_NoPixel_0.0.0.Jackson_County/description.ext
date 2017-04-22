@@ -110,7 +110,9 @@ class CfgFunctions
 		class Company {
 			file = "Functions\core\Company";
 			class company_garageOpen {};
-		
+			class company_init {};
+			class company_jobStart {};
+			class company_jobStop {};
 		};
 		
 		class JailBreak {

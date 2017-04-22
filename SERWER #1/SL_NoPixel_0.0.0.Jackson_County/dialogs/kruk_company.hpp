@@ -3,7 +3,7 @@ class kruk_company_garage {
 	name = "kruk_company_garage";
 	movingEnable = 0;
 	enableSimulation = 1;
-	onLoad = "[""avialable"",[1,4],""client_fnc_company_garageOpen"",player] remoteExec [""server_fnc_company_garageGet"",2]";
+	onLoad = "[] spawn company_fnc_dialog_garageOpen;";
 	class controls {
 		class text_title_vehicles: RscText {
 			idc = -1;

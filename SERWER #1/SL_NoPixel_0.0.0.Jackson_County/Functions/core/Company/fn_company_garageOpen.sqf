@@ -7,14 +7,20 @@
 		Return: none
 */
 disableSerialization;
-_data = _this;
+_data = _this select 0;
 if(isNil "_data") then { _data = []; };
 if(count _data == 0) exitWith {};
+if((count client_company_active_data) != 0) exitWith {};
 //id, plate, class, color, finish
 _display = findDisplay 666010;
 _edit_plate = _display displayCtrl 1001;
 _list_vehicles = _display displayCtrl 1101;
 _text_title = _display displayCtrl 1301;
+
+_company_name = client_company_active_data select 2;
+_company_id = client_company_active_data select 0;
+_str = format["ID: %1 | Flota firmy: %2", _company_id, _company_name];
+_text_title ctrlSetText _str;
 {
 	_id = _x select 0;
 	_plate = _x select 1;

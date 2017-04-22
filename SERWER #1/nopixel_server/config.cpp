@@ -28,6 +28,7 @@ class CfgFunctions {
             class company_garageInsert {};
             class company_garageDelete {};
             class company_garageGet {};
+			class company_companyGet {};
 		};
         class SLPD {
             file = "NoPixel_Server\server\core\SLPD";
