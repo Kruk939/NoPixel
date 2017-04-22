@@ -62,7 +62,9 @@ if(!ClientArrested) then {
 		["Remove","battery",5] call client_fnc_sustain;
 	};
 };
-
+if(client_intox > 0.4) then {
+	["Add",10] spawn client_fnc_dohealth;
+};
 if (!paintballing) then {
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
 };
