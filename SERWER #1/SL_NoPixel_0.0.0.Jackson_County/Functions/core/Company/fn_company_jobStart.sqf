@@ -37,4 +37,59 @@ if((count _cData) != 0) then {
 	player setVariable[_oldVar, nil];
 	player setVariable[_newVar, _newLevel];
 	client_company_active_data = _cData;
+	
+	//TODO customowe skrypty dla firm na podstawie myJob
+	switch(_newName) do {
+		//Police Department
+		case "Cop": {
+			[] spawn client_fnc_startCop;
+			//currentCop pushback _player;
+			//publicvariable "currentCop";
+			["basic"] spawn client_fnc_setGear;
+			[player,objNull,10,format ["%1 rozpoczął służbę", name player],""] remoteExec ["server_fnc_copLog", 2];
+		};
+		case "EMS": {
+			[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
+			[] spawn client_fnc_startEMS;
+			//currentEMS pushback _player;
+			//publicvariable "currentEMS";
+			["basic"] spawn client_fnc_setGear;
+		};
+		case "FD": {
+			[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
+			[] spawn client_fnc_startFire;
+			//currentFire pushback _player;
+			//publicvariable "currentFire";	
+			["basic"] spawn client_fnc_setGear;
+		};
+		case "Judge": {
+			[] spawn client_fnc_startJudge;	
+			//currentJudges pushback _player;
+			//publicvariable "currentJudges";
+		};
+		case "Prosecutor": {
+			[] spawn client_fnc_startProsecutor;	
+			//currentProsecutor pushback _player;
+			//publicvariable "currentProsecutor";
+		};
+		case "Mafia": {
+			[] spawn client_fnc_startMafia;
+			//currentMafia pushback _player;
+			//publicvariable "currentMafia";
+		};
+		//Pączki
+		case "Doughnuts": {
+			[] spawn client_fnc_startDoughnuts;
+			//currentDoughnuts pushback _player;
+			//publicVariable "currentDoughnuts";
+		};
+		
+		//Firmy:
+		//Firmy prawnicze
+		case "Lawyer": {
+			[] spawn client_fnc_startLawyer;
+			//currentlawyers pushback _player;
+			//publicvariable "currentLawyers";
+		};
+	}
 };

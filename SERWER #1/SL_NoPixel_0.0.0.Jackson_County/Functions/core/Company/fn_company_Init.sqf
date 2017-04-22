@@ -7,7 +7,7 @@
 		Return: none
 */
 disableSerialization;
-_data = _this select 0;
+_data = _this;
 if(isNil "_data") then { _data = []; };
 
 

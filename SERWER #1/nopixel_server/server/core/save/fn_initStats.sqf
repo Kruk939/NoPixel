@@ -186,7 +186,7 @@ if (_booli) then {
 	[_items, _position, _cash, _bank, _bankAccount, _cop, _ems, _garage, _inUseVehicles, _phoneBackground, _messages, _statuses, _houselevel, _shopname, (getpos _house), (getpos _shop), _shopcontent, _mail, _phonemessages, _mycarinfo, _mafia, _fire, _legal, _mayor, _doughnuts, _respawn, _prison, _points] remoteexec ["Client_fnc_loadInventory", _player];
 
 	//Companies by Kruk
-	["player", [_uid], "client_fnc_company_Init", _player] call server_fnc_company_companyGet;
+	["player", [_uid], "client_fnc_company_Init", _player] spawn Server_fnc_company_companyGet;
 	
 	
 } else {
