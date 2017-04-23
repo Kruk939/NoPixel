@@ -44,7 +44,7 @@ if(overcast >= 0 && overcast < 0.6) then {_weather = "Deszczowo";} else {
 if(overcast >= 0.6 && overcast <= 1) then {_weather = "Burzowo";};};};
 
 _date = format ["%1 %2 %3",_day,_monthtext,_year];
-_fullhour = format ["%1:%2",_hour,_minute];
+_fullhour = format ["%1 %2",_hour,_minute];
 _windtext = format ["%1,%2", _windDir, _windSpeed];
 _id = 1;
 _updateStr = format ["weatherUpdate:%1:%2:%3:%4:%5:%6",_date,_fullhour,_weather,_windtext,fog,_id];
