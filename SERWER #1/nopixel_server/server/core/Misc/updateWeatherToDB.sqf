@@ -34,6 +34,7 @@ if(windDir >= 290 && windDir <= 340) then {_windDir = "Polnocnego zachodu";};
 
 _windSpeed = vectorMagnitude wind;
 _windSpeed  = round(_windSpeed * (10 ^ 1)) / (10 ^ 1);
+_windSpeed = _windSpeed * 3.6;
 if(rain < 0.05) then {
 if(overcast >= 0 && overcast < 0.4) then {_weather = "Slonecznie";} else {
 if(overcast >= 0.4 && overcast < 0.6) then {_weather = "Pochmurno";} else {
