@@ -58,6 +58,21 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 			armor = 40;
 		};
 	};
+	class kifpd_uni_sheriff_corporal: Uniform_Base
+	{
+		scope = 2;
+		displayName = "Sheriff Uniform Corporal";
+		picture = "\kif_pduniforms\Data\ui\sl_logo.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "kifpd_sheriff_sergeant";
+			containerClass = "Supply100";
+			mass = 0;
+			armor = 40;
+		};
+	};
 	class kifpd_uni_sheriff_lieutenant: Uniform_Base
 	{
 		scope = 2;

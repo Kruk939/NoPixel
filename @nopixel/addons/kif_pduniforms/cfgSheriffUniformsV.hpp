@@ -42,6 +42,17 @@ class kifpd_sheriff_chief: B_Competitor_F
 		displayName = "Sheriff Uniform Sergeant";
 		
 	};
+	class kifpd_sheriff_corporal: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "kifpd_uni_sheriff_corporal";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\sheriff\corporal.paa"};
+		displayName = "Sheriff Uniform Corporal";
+		
+	};
 	class kifpd_sheriff_lieutenant: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
