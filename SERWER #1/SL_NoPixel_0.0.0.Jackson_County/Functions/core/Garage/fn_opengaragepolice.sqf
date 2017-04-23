@@ -66,7 +66,7 @@ if(myJob == "Cop") then {
 			"red_cvpi_06_p_trooper",
 			"red_explorer_16_p_statetrooper",
 			"red_f350_08_p_statetrooper",
-			"sl_f150_statetrooper",
+			"kif_f150_statetrooper",
 			"kif_tahoe_statetrooper",
 			"fpiu_01",
 			"red_explorer_16_p_fto",
