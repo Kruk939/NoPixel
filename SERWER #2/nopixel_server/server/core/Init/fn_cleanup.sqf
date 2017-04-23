@@ -33,7 +33,6 @@ _fireLocations = [
 _fire = _fireLocations call bis_fnc_selectRandom;
 [_fire] spawn server_fnc_fireStart;
 [] spawn server_fnc_economyEvents; //Uruchamia własne eventy dotyczące zachowań rynku
-[] call server_fnc_updateWeatherToDB; //Aktualizuje pogode w DB
 
 _dateHour = date select 3;
 if (6 < _dateHour && _dateHour< 18) then {
