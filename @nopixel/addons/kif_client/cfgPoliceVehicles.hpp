@@ -471,6 +471,18 @@ class ivory_mp4_2;
 class ivory_r8_spyder_2;
     class ivory_r8_spyder_unmarked_bb_civ : ivory_r8_spyder_2
     {};
+	
+	
+	
+	
+	
+	
+	
+class sl_f150_statetrooper;
+	class kif_f150_statetrooper : sl_f150_statetrooper {
+		displayName = "0405 Ford F150 State Trooper";
+        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\f150\fordf150_st.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	};
 /*
 //Adam do 300km/h
 class red_cvpi_06_p_trooper;
