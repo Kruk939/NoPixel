@@ -76,6 +76,7 @@ class CfgFunctions {
             class deleteDeadPlayers {};
             class promote {};
             class paintball {};
+	    class updateWeatherToDB {};
         };
         class Phone {
             file = "NoPixel_Server\server\core\Phone";
