@@ -401,7 +401,8 @@ _availableUniforms = [
 			"kifpd_uni_sheriff_division_chief_so",
 			"kifpd_uni_sheriff_assistant_sheriff",
 			"kifpd_uni_sheriff_undersheriff",
-			"kifpd_uni_sheriff_sheriff"
+			"kifpd_uni_sheriff_sheriff",
+            "kifpd_sheriff_corporal"
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
@@ -703,6 +704,7 @@ _availableUniforms = [
     };
  
 _availableVests = [
+    "EF_PBDF_M1",
 	"V_RebreatherB",
 	"jamie_black",
 	"jamie_blacky2",
@@ -735,11 +737,11 @@ _availableVests = [
     _availableVests = _availableVests + _availableVestsTwo;
     };
     
-    if (player getvariable ["cop", 0] > 3) then {
-        _availableVestsThree = [
-		"EF_PBDF_M1"
+    if (player getvariable ["cop", 0] > 4) then {
+        _availableVestsFour = [
+            "TAC_PBDFG2CPSRF_RG_1"
         ];
-    _availableVests = _availableVests + _availableVestsThree;
+    _availableVests = _availableVests + _availableVestsFour;
     };
 
 	if (player getvariable ["cop", 0] > 5) then {
