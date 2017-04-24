@@ -27,6 +27,11 @@ if(myJob == "Cop") then {
 			"kif_dodgedurango_highway",
 			//"kif_dodgedurango_black",
 			//"kif_dodgedurango_white",
+			
+			"red_cvpi_06_p_custom1",
+			"red_suburban_15_p_custom1",
+			
+			
 			"sl_impala_201_supervisior",
 			"sl_impala_202",
 			"sl_impala_203",
