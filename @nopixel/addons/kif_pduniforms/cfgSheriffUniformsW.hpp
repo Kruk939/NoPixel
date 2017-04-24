@@ -67,7 +67,7 @@ class kifpd_uni_sheriff_chief: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_sheriff_sergeant";
+			uniformClass = "kifpd_sheriff_corporal";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;

@@ -72,12 +72,12 @@ if(myjob == "Cop") exitwith {
 			};
 			if(_level == 9) then {
 				player forceAddUniform "jamie_police3_1";
-				player addVest "jamie_black2";
+				player addVest "TAC_V_tacv1LC_P";
 				player addHeadgear "Campaign_Hat_Dark";
 			};
 			if(_level == 10) then {
 				player forceAddUniform "kifpd_uni_dzokawhite";
-				player addVest "jamie_black";
+				player addVest "TAC_V_tacv1LC_P";
 				player addHeadgear "Campaign_Hat_Dark";
 			};
 			//jedzonko
