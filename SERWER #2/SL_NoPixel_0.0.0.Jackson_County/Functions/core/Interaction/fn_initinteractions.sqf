@@ -831,17 +831,17 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") || (myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"") || (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") || myJob == ""Mafia"" && player distance myhouse < 20 "],
+		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"")) || (myjob == ""Fire"" && typeof cursorobject == ""Land_buildingsfiredept1"") || (myjob == ""EMS"" && typeof cursorobject == ""Land_buildingshospital1"") || myJob == ""Mafia"" && player distance myhouse < 20 "],
 		["Podstawowy ekwipunek", "[""basic""] spawn client_fnc_setGear",4]
 	],
 
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Land_PoliceStation"") && player getvariable ""cop"" > 6 "],
+		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"" || typeOF cursorTarget == ""kif_ford350_swat"" || typeOF cursorTarget == ""Abruzzi_LencoPD_01"")) && player getvariable ""cop"" > 6 "],
 		["Ekwipunek SWAT", "[""riot""] spawn client_fnc_setGear",4]
 	],
 	
 	[
-		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && player getvariable ""cop"" > 1 "],
+		[" (myjob == ""Cop"" && (typeof cursorobject == ""Box_NATO_equip_F"" || typeOF cursorTarget == ""SL_Command_Unit"")) && player getvariable ""cop"" > 1 "],
 		["ARSENAL", "[cursorobject] spawn client_fnc_vars"]
 	],
 
