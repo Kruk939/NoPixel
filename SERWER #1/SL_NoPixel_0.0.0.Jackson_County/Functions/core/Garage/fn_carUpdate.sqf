@@ -14,35 +14,35 @@ _civilianVehicle = [
 	["vvv_Abarth_695",4000],
 	["ivory_rs4",5000],
 	["ADM_GMC_Vandura",5100], // can farm
-	["ivory_gti",6000],	
+	["ivory_gti",6000],
 	["Jonzie_Transit",6400], //can farm
 	["vvv_Chevrolet_Bel_Air",7000],
 	["vvv_Abarth_500",7000],
 	["vvv_Alfa_Romeo_Spider_Duetto",8000],
 	["vvv_Chevrolet_Camaro_RS",9000],
-	["Jonzie_Mini_Cooper_r_spec",9000],	
-	["ADM_Ford_F100",9500], // can farm	
-	["nopixel_GMC_Campervan",9999],	
-	["nopixel_Box_Default",9999],	
+	["Jonzie_Mini_Cooper_r_spec",9000],
+	["ADM_Ford_F100",9500], // can farm
+	["nopixel_GMC_Campervan",9999],
+	["nopixel_Box_Default",9999],
 	["vvv_Chevrolet_Blazer",10000],
 	["vvv_Alfa_Romeo_59", 10000],
 	["vvv_Chevrolet_Impala",10000],
 	["ivory_e36",12000],
-	["Jonzie_Raptor",12000], // can farm	
+	["Jonzie_Raptor",12000], // can farm
 	["Jonzie_Escalade",12000],
 	["ivory_gt500",12000],
 	["vvv_Chevrolet_Corvette_Cone",12000],
 	["vvv_Cadillac_Eldorado",15000],
-	["ivory_evox",18000],	
-	["ivory_supra",19000],	
+	["ivory_evox",18000],
+	["ivory_supra",19000],
 	["ivory_r34",22000],
 	["vvv_Cadillac_CTSV",25000],
 	["ivory_m3",25000],
 	["ivory_wrx",27000],
 	["vvv_Cadillac_Escalade",30000],
 	["vvv_Audi_A4",30000],
-	["ivory_elise",30000],		
-	["ivory_isf",35000],		
+	["ivory_elise",30000],
+	["ivory_isf",35000],
 	["Jonzie_Viper",39999],
 	["vvv_Audi_RS6_Avant_C6",40000],
 	["vvv_Audi_Q7",50000],
@@ -130,7 +130,7 @@ if(_reprocess) then {
 
 		if(_vehicle == "ADM_1969_Camaro") exitwith { _attempt = true; _newVehicle = format["%1_1",_vehicle]; };
 		if(_vehicle == "ADM_1969_Camaro_1") exitwith { _attempt = true; _newVehicle = "ADM_1969_Camaro_2"; };
-		if(_vehicle == "ADM_1969_Camaro_2") exitwith { _attempt = false; };		
+		if(_vehicle == "ADM_1969_Camaro_2") exitwith { _attempt = false; };
 
 } else {
 
@@ -169,6 +169,7 @@ if(_attempt && _oldveh in current_cars) then {
 
 	[_garage,_numberPlate,_newVehicle,player,getPlayerUID player,Current_Cars] remoteexec ["server_fnc_upgradeVehicle",2];
 	[_price] call Client_fnc_sl_removeBank_secure;
+	["CarTunedUp"] spawn mav_ttm_fnc_addExp;
 
 } else {
 	hint "Ten pojazd został już ulepszony, albo nie może być ulepszony w ogóle!";

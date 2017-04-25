@@ -48,13 +48,13 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 
 	_holder = (vehicle player);
 
-	_process = _thecargo select 0; 
+	_process = _thecargo select 0;
 	_ItemCount = _thecargo select 1;
 
 
 	if(!isnil "_process") then {
 		_count = 0;
-		{ 
+		{
 
 			_localProtection = _localprotection + 1;
 			globalProtection = globalProtection + 1;
@@ -73,8 +73,8 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 				uisleep 0.25;
 				if(dialog) then { closedialog 0; };
 			};
-		} foreach _process; 
+		} foreach _process;
 	};
 };
-
+["Processed"] spawn mav_ttm_fnc_addExp;
 globalProtection = 0;

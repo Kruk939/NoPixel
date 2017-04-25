@@ -7,12 +7,12 @@ imfishing = true;
 	player playmove "AwopPercMstpSgthWrflDnon_start1";
 	sleep 1;
 	_dirAdd = (-30) + random(60);
-	_speed = 20; 
-	_Dir = (getdir player) + _dirAdd; 
+	_speed = 20;
+	_Dir = (getdir player) + _dirAdd;
 	_vehicle = createVehicle ["vvv_anzuelo", [getpos player select 0, getpos player select 1, (getpos player select 2) + 3],[], 0, "CAN_COLLIDE"];
 	_vel = velocity _vehicle;
 	_vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2) + 12];
-	playSound3D ["vvv_fishingrod\sounds\wind2.ogg", player, false, getPosASL player, 1, 1, 8]; 
+	playSound3D ["vvv_fishingrod\sounds\wind2.ogg", player, false, getPosASL player, 1, 1, 8];
 
 
 	sleep 2.5;
@@ -51,14 +51,14 @@ imfishing = true;
 	sleep 0.5;
 	if(mouseMovement == 1) then { mousemovement=2; };
 
-	_Dir = _Dir - 180; 
+	_Dir = _Dir - 180;
 	_vel = velocity _vehicle;
 	_speed = 22;
 
 	_timeOut = 0;
 
 	sleep 0.5;
-	playSound3D ["vvv_fishingrod\sounds\wind2.ogg", player, false, getPosASL player, 1, 1, 8]; 
+	playSound3D ["vvv_fishingrod\sounds\wind2.ogg", player, false, getPosASL player, 1, 1, 8];
 
 	player playmove "AmovPercMstpSrasWrflDnon_AmovPercMstpSrasWrflDnon_gear";
 
@@ -107,6 +107,7 @@ imfishing = true;
 		};
 		hint "Złapałeś coś!";
 		Player additemtobackpack _myFish;
+		["FishCaught"] spawn mav_ttm_fnc_addExp;
 
 		_chance = round (random 100);
 		if(vehicle player != player) then { _chance = _chance + 10; };

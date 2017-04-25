@@ -35,6 +35,7 @@ if(_type == "dump") then {
 	sleep 1;
 	_veh animate ['basura_unhide',0];
 	_veh setfuel 1;
+	["TrashPickedUp"] spawn mav_ttm_fnc_addExp;
 
 };
 
@@ -52,7 +53,7 @@ if(mybin distance (vehicle player) < 25 && _type == "bin") then {
 	paycheck = paycheck + 35;
 
 	if(_veh == player) exitwith {};
-		
+
 	_veh setfuel 0;
 	_veh animate ['contenedor_unhide',1];
 	_veh animate ['contenedor',1];
@@ -84,9 +85,10 @@ if(mybin distance (vehicle player) < 25 && _type == "bin") then {
 	sleep 1;
 	_veh animate ['basura_unhide',0];
 	_veh setfuel 1;
+	["TrashPickedUp"] spawn mav_ttm_fnc_addExp;
 
 	} else {
 
-	hint "W pobliżu nie ma śmieci!";	
+	hint "W pobliżu nie ma śmieci!";
 
 };

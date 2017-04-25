@@ -31,8 +31,9 @@ closedialog 0;
 
 _vehicleName = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
 [player,1,format ["%1 kupił pojazd %2 za kwote %3", name player, _vehicleName, _price],_price,_class,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
-//[player, getUnitLoadout player] call Server_fnc_statSave; 
+//[player, getUnitLoadout player] call Server_fnc_statSave;
 ["Pojazd zostanie dostarczony do Twojego garażu.", true] spawn domsg;
+["VehicleBought"] spawn mav_ttm_fnc_addExp;
 
 _player = player;
 _rims = "antiquewhite";

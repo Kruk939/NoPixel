@@ -16,7 +16,7 @@ while{_count < 10 && cookingMeth} do {
 	if(_randomValue == 3) then { requiredOutput = "Cool"; _message = CoolArray call BIS_fnc_selectRandom; hint _message; };
 	if(_randomValue == 4) then { requiredOutput = "Heat"; _message = HeatArray call BIS_fnc_selectRandom; hint _message; };
 	if(_randomValue == 5) then { requiredOutput = "Release"; _message = ReleaseArray call BIS_fnc_selectRandom; hint _message; };
-	sleep 30;	
+	sleep 30;
 	_count = _count + 1;
 };
 mydrugvalue = mydrugvalue - totalskills;
@@ -37,6 +37,7 @@ _item = format["CG_MethBag%1", myDrugValue];
 [player,objNull,28,format ["%1 ugotował %2 worków metamfetaminy o jakości %3 CLASSNAME %4",name player, _randomValue, myDrugValue, _item],_randomValue] remoteExec ["server_fnc_actionLog", 2];
 //hint format["Ugotowałeś %1 worków metamfetaminy!",_randomvalue];
 player additem "NP_DrugTable";
+["MethGathered"] spawn mav_ttm_fnc_addExp;
 
 while {_randomValue > 0} do { player additem _item; _randomValue = _randomValue - 1; };
 

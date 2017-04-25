@@ -20,7 +20,7 @@ _n = 0;
 	while{ _i > 0 } do {
 		player removeitem (_oreArray select _n);
 		_itemnumber = 0;
-		
+
 		if(str _x find "1" > -1) then { _itemNumber = 1; };
 		if(str _x find "2" > -1) then { _itemnumber = 2; };
 		if(str _x find "3" > -1) then { _itemnumber = 3; };
@@ -55,13 +55,13 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 
 	_holder = (vehicle player);
 
-	_process = _thecargo select 0; 
+	_process = _thecargo select 0;
 	_ItemCount = _thecargo select 1;
 
 
 	if(!isnil "_process") then {
 		_count = 0;
-		{ 
+		{
 			_itemNumber = _ItemCount select _count;
 			 if !(_x IN _oreArray) then {
 				_holder addMagazineCargoGlobal [_x,_itemnumber];
@@ -80,7 +80,9 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 				if(dialog) then { closedialog 0; };
 				uisleep 0.25;
 			};
-		} foreach _process; 
+		} foreach _process;
 	};
 
 };
+
+["Processed"] spawn mav_ttm_fnc_addExp;

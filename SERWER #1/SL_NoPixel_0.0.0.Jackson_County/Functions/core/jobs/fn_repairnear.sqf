@@ -9,3 +9,5 @@ if(_thisobject IN repairedobjects || !(_pay)) exitwith {};
 repairedobjects pushback _thisobject;
 if(lastpos distance player < 30) then { paycheck = paycheck + 15; } else { paycheck = paycheck + 50; };
 lastpos = getpos player;
+
+["MechanicRepaired"] spawn mav_ttm_fnc_addExp;

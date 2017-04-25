@@ -26,11 +26,12 @@ if(!taskrunning) then {
 					hint "Dotarłeś na miejsce!";
 					paycheck = paycheck + 250;
 					playertasks deleteat 0;
+					["ReporterArrived"] spawn mav_ttm_fnc_addExp;
 					uisleep 3;
 					deletemarkerlocal format["job%1",getPlayerUID player];
 				} else {
-					hint "Zlecenie (zaznaczone na mapie): Typ - Napraw obiekt";	
-					[((playertasks select 0) select 0)] call client_fnc_jobMarker;			
+					hint "Zlecenie (zaznaczone na mapie): Typ - Napraw obiekt";
+					[((playertasks select 0) select 0)] call client_fnc_jobMarker;
 					uisleep 3;
 				};
 			};
@@ -39,7 +40,7 @@ if(!taskrunning) then {
 	};
 };
 
-if(taskrunning) then { 
+if(taskrunning) then {
 	_location = _this select 0;
-	playertasks pushback [_location]; 
+	playertasks pushback [_location];
 };
