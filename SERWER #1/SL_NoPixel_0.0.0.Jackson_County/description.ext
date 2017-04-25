@@ -17,7 +17,7 @@ forceRotorLibSimulation = 2;
 class Header {
     gameType = RPG;
     minPlayers = 1;
-    maxPlayers = 120;
+    maxPlayers = 130;
 };
 
 showHUD[] = {
@@ -37,10 +37,12 @@ showHUD[] = {
 class RscTitles {
     #include "dialogs\ui.hpp"
 	#include "dialogs\RscNotification.hpp"
+	#include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
 };
 
 class CfgFunctions 
 {
+#include "maverick\maverick_functions_master.cpp"
 	class Client
 	{
 		class Phone
@@ -1598,3 +1600,4 @@ class CfgNotifications {
         priority = 5;
     };
 };
+#include "maverick\maverick_master.cpp"
