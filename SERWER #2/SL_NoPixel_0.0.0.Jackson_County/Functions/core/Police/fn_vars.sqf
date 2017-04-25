@@ -14,8 +14,8 @@ _availableHeadgear = [
 	"Campaign_Hat_Light",
 	"TRYK_H_PASGT_BLK",
 	"TRYK_H_woolhat",
-    	"AM_PatrolHat",
-        "ALE_H_Cowboy_Black",
+    "AM_PatrolHat",
+    "ALE_H_Cowboy_Black",
 	"Campaign_Hat_Dark",
 	"Campaign_Hat_Tan",
 	"Campaign_Hat_Washed",
@@ -44,15 +44,14 @@ _availableHeadgear = [
     
     if (player getvariable ["cop", 0] > 5) then {
     _availableHeadgearFive = [
-    
+		"max_sheriff_Hat",
     	"jamie_blackhelmet",
-	"jamie_pcapblack",
-	"jamie_pcapblue2",
-	"jamie_pcapblue",
-	"jamie_pcapcorrections",
-	"jamie_pcapgreen",
-	"jamie_pcapgreen2",
-	
+		"jamie_pcapblack",
+		"jamie_pcapblue2",
+		"jamie_pcapblue",
+		"jamie_pcapcorrections",
+		"jamie_pcapgreen",
+		"jamie_pcapgreen2",
     	"G_Spectacles_Tinted",
         "CUP_H_NAPA_Fedora",
         "ALE_H_Cowboy_White",
@@ -65,12 +64,11 @@ _availableHeadgear = [
         "ALE_H_NewEra_Black",
         "ALE_H_NewEra_Lakers",
         "ALE_H_NewEra_Redsox",
-
         "H_Beret_blk",
         "H_Booniehat_khk",
         "H_Booniehat_oli",
         "H_Booniehat_tan",
-	"H_Beret_gen_F",
+		"H_Beret_gen_F",
         "TRYK_H_woolhat_WH",
         "TRYK_H_woolhat_tan",
         "TRYK_H_woolhat_CW",
@@ -88,7 +86,7 @@ _availableHeadgear = [
         "TRYK_H_headsetcap_od",
         "TRYK_H_headsetcap_blk",
         "TRYK_H_headsetcap_blk_Glasses",
-	"TRYK_H_headsetcap_od_Glasses",
+		"TRYK_H_headsetcap_od_Glasses",
         "TRYK_H_headsetcap_Glasses",
         "TRYK_H_LHS_HEL_G",
         "TRYK_H_Bandana_wig_g",
@@ -195,6 +193,7 @@ _availableGoggles = [
 	"TRYK_headset_Glasses",
 	"TRYK_Spset_PHC1_Glasses",
 	"TRYK_Spset_PHC2_Glasses",
+	"TRYK_SBeard_Gr6",
 	"TRYK_TAC_EARMUFF_SHADE_Gs"
 ];
 
@@ -402,7 +401,8 @@ _availableUniforms = [
 			"kifpd_uni_sheriff_division_chief_so",
 			"kifpd_uni_sheriff_assistant_sheriff",
 			"kifpd_uni_sheriff_undersheriff",
-			"kifpd_uni_sheriff_sheriff"
+			"kifpd_uni_sheriff_sheriff",
+            "kifpd_sheriff_corporal"
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
@@ -416,7 +416,8 @@ _availableUniforms = [
 			"jamie_pcapgreen",
 			"jamie_pcapgreen2",
 			"kifpd_sheriff_black_vest",
-			"kifpd_sheriff_orange_vest"
+			"kifpd_sheriff_orange_vest",
+			"TAC_SGS_SK"
 		];
 		_availableHeadgear = _availableHeadgear + _temp;
 	};
@@ -492,6 +493,11 @@ _availableUniforms = [
 		"TRYK_U_B_PCUGs_BLK_R",
 		"TRYK_U_denim_jersey_blu",
 		"TRYK_U_B_Denim_T_BG_BK",
+        "TRYK_shirts_BLK_PAD_BL",
+        "TRYK_U_pad_hood_CSATBlk",
+            
+        "U_BG_Guerilla3_1",
+        "U_BG_Guerrilla_6_1",
 
 		"CUP_U_C_Villager_03",
 		"CUP_U_C_Woodlander_04",
@@ -502,6 +508,48 @@ _availableUniforms = [
 		"CUP_O_TKI_Khet_Jeans_02",
 		"CUP_O_TKI_Khet_Jeans_03",
 		"CUP_O_TKI_Khet_Jeans_04",
+            
+        "EF_HM_B1",
+        "EF_HM_BL1",
+        "EF_HM_OD1",
+        "EF_HM_SG1",
+        "EF_HM_PP1",
+        "EF_HM_B2",
+        "EF_HM_BL2",
+        "EF_HM_OD2",
+        "EF_HM_SG2",
+        "EF_HM_PP2",
+        "EF_MKJKT",
+        "EF_MKJKT2",
+        "EF_HM_LPBPS",
+        "EF_HM_LPBP",
+        "EF_HM_LPBR",
+        "EF_HM_LPBW",
+        "EF_HM_LPB",
+        "EF_HM_LPBL",
+        "EF_HM_LPBPS2",
+        "EF_HM_LPBP2",
+        "EF_HM_LPBR2",
+        "EF_HM_LPBW2",
+        "EF_HM_LPB2",
+        "EF_HM_LPBL2",
+
+        "EF_M_jkt2",
+        "EF_M_jkt22",
+        "EF_M_jkt1",
+        "EF_M_jkt2_2",
+        "EF_M_jkt2_22",
+        "EF_M_jkt1_2",
+        "EF_M_jkt2_3",
+        "EF_M_jkt2_32",
+        "EF_M_jkt1_3",
+        "EF_M_jkt32_2",
+        "EF_M_jkt32_2",
+        "EF_M_jkt2_4",
+        "EF_M_jkt32",
+        "EF_M_jkt4",
+
+        "EF_MX1",
 
 		"CUP_U_C_Citizen_01",
 		"CUP_U_C_Citizen_02",
@@ -656,6 +704,7 @@ _availableUniforms = [
     };
  
 _availableVests = [
+    "EF_PBDF_M1",
 	"V_RebreatherB",
 	"jamie_black",
 	"jamie_blacky2",
@@ -688,11 +737,11 @@ _availableVests = [
     _availableVests = _availableVests + _availableVestsTwo;
     };
     
-    if (player getvariable ["cop", 0] > 3) then {
-        _availableVestsThree = [
-		"EF_PBDF_M1"
+    if (player getvariable ["cop", 0] > 4) then {
+        _availableVestsFour = [
+            "TAC_PBDFG2CPSRF_RG_1"
         ];
-    _availableVests = _availableVests + _availableVestsThree;
+    _availableVests = _availableVests + _availableVestsFour;
     };
 
 	if (player getvariable ["cop", 0] > 5) then {
@@ -705,6 +754,7 @@ _availableVests = [
 		"TAC_Sheriff_BA_OD",
 		"TAC_V_tacv1_SRF",
 		"TAC_V_tacv1_P",
+		"TAC_V_tacv1_P2",
 		"EF_CTV1",
 		"TAC_HGB_B",
 		"TAC_V_Sheriff_BA_TB4"
@@ -761,7 +811,9 @@ _availableMagazine = [
 	"CUP_30Rnd_556x45_Stanag",
 	"CUP_6Rnd_Smoke_M203",
 	"CUP_20Rnd_762x51_B_M110",
-	"CUP_5Rnd_86x70_L115A1"
+	"CUP_5Rnd_86x70_L115A1",
+	"RH_30Rnd_556x45_Mk318",
+	"RH_60Rnd_556x45_Mk318"
 ];
 
  
@@ -830,7 +882,11 @@ _availableWeapon = [
 	"CUP_hgun_BallisticShield_Armed",
 	"Rangefinder",
 	"CUP_srifle_M110",
-	"CUP_srifle_AWM_wdl"
+	"CUP_srifle_AWM_wdl",
+	"RH_Hk416c",
+	"RH_Hk416",
+    "RH_hk416_wdl",
+	"RH_M4_ris_m"
     ];
      _availableWeapon = _availableWeapon + _availableWeaponSix;
     };
@@ -853,6 +909,9 @@ _availableWeapon = [
 
 
 _availableAttachments = [
+    "RH_eothhs1",
+    "RH_ta31rmr_2D",
+    "RH_ta31rmr_tan_2D",
 	"CUP_optic_LeupoldMk4_10x40_LRT_Woodland",
 	"RH_X300",
 	"acc_flashlight",
@@ -877,7 +936,11 @@ _availableAttachments = [
 	"CUP_muzzle_snds_M110",
 	"CUP_muzzle_snds_AWM",
 	"CUP_optic_Leupold_VX3",
-	"optic_Hamr"
+	"optic_Hamr",
+	"RH_qdss_nt4",
+	"RH_SFM952V",
+	"RH_HBLM",
+	"RH_HBLM_des"
 ];
 
 _availableItems = [
@@ -907,6 +970,12 @@ _availableItems = [
     ];
      _availableItems = _availableItems + _availableItemsTen;
     };
+	if (client_dtu_actions > 0 ) then {
+	_availableItemsDtu = [
+    "kif_gps"
+    ];
+     _availableItems = _availableItems + _availableItemsDtu;
+	};
 
 
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;
