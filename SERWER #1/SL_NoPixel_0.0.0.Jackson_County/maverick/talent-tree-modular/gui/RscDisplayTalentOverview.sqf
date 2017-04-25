@@ -46,10 +46,10 @@ try {
 		_ctrlTextRankName ctrlSetText getText (_currentLevelConfig >> "displayName");
 
 		if (isClass _nextLevelConfig) then {
-			_ctrlTextStatusInfo ctrlSetText format ["XP: %1/%2, Perk Points Available: %3", life_currentExp - _currentLevelBottomExp, _currentLevelTopExp - _currentLevelBottomExp, life_currentPerkPoints];
+			_ctrlTextStatusInfo ctrlSetText format ["XP: %1/%2, Posiadane Punkty Umiej.: %3", life_currentExp - _currentLevelBottomExp, _currentLevelTopExp - _currentLevelBottomExp, life_currentPerkPoints];
 			_ctrlProgress progressSetPosition _currentLevelProgress;
 		} else {
-			_ctrlTextStatusInfo ctrlSetText format ["XP: %1, Maximum Level, Perk Points Available: %2", life_currentExp - _currentLevelBottomExp, life_currentPerkPoints];
+			_ctrlTextStatusInfo ctrlSetText format ["XP: %1, Maksymalny LVL, Posiadane Punkty Umiej.: %2", life_currentExp - _currentLevelBottomExp, life_currentPerkPoints];
 			_ctrlProgress progressSetPosition 1;
 		};
 	};
@@ -172,26 +172,26 @@ try {
 					if (_hasParents) then {
 						if (!_ownsPerk) then {
 							if ((getNumber (_selectedPerkConfig >> "requiredPerkPoints")) > life_currentPerkPoints) then {
-								_ctrlBtnPurchase ctrlSetText "INSUFFICIENT POINTS";
+								_ctrlBtnPurchase ctrlSetText "ZA MALO PUNKTOW";
 								_ctrlBtnPurchase ctrlEnable false;
 							} else {
-								_ctrlBtnPurchase ctrlSetText "PURCHASE";
+								_ctrlBtnPurchase ctrlSetText "KUP";
 								_ctrlBtnPurchase ctrlEnable true;
 							};
 						} else {
-							_ctrlBtnPurchase ctrlSetText "ALREADY PURCHASED";
+							_ctrlBtnPurchase ctrlSetText "ZAKUPIONE";
 							_ctrlBtnPurchase ctrlEnable false;
 						};
 					} else {
-						_ctrlBtnPurchase ctrlSetText "NOT PURCHASABLE";
+						_ctrlBtnPurchase ctrlSetText "NIE DO ZAKUPIENIA";
 						_ctrlBtnPurchase ctrlEnable false;
 					};
 				} else {
-					_ctrlBtnPurchase ctrlSetText "HIGHER LEVEL REQ.";
+					_ctrlBtnPurchase ctrlSetText "ZA MALY LVL";
 					_ctrlBtnPurchase ctrlEnable false;
 				};
 			} else {
-				_ctrlBtnPurchase ctrlSetText "WRONG FACTION";
+				_ctrlBtnPurchase ctrlSetText "ZLA FRAKCJA";
 				_ctrlBtnPurchase ctrlEnable false;
 			};
 		};
@@ -228,10 +228,10 @@ try {
 
 			life_currentExpPerks call _iterate;
 
-			hint "Perk purchased";
+			hint "Zakupiono umiejetnosc";
 
 			// -- Disable purchase button
-			_ctrlBtnPurchase ctrlSetText "PURCHASED!";
+			_ctrlBtnPurchase ctrlSetText "ZAKUPIONO!";
 			_ctrlBtnPurchase ctrlEnable false;
 
 			// -- Subtract perk points
