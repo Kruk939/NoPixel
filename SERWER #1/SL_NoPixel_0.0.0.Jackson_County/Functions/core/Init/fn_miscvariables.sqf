@@ -1,4 +1,5 @@
 /* ## https://community.bistudio.com/wiki/ListOfKeyCodes You're welcome! ## */
+client_doTask_handle = false;
 life_koil_hh = 0;
 closetime = time;
 sklepotw = 0;
