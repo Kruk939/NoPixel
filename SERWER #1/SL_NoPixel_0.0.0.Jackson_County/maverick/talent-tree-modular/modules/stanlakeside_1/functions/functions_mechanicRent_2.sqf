@@ -8,6 +8,6 @@ scriptName "functions_mechanicRent_2";
 
 _ownsDependency2 = [life_currentExpPerks, "perk_mechanic_lowerprice_3"] call mav_ttm_fnc_hasPerk;
 
-if (!_ownsDependency1 && !_ownsDependency2) then {
+if (!_ownsDependency2) then {
 	mav_ttm_var_mechanicRent = 0.85;
 };
