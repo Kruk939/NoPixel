@@ -85,7 +85,8 @@ _availableVests = [
     "kif_fd_chief",
     "kif_fd_probie",
     "kif_fd_fd",
-    "kif_fd_divchief"
+    "kif_fd_divchief",
+    "sl_fire"
 ];
  
 _availableBackpacks = [
