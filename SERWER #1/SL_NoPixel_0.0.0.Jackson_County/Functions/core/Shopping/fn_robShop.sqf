@@ -35,8 +35,11 @@ player say "slideout";
 _POPUP ctrlSetStructuredText parseText format["",_task,_timeLeft];
 
 if(_error == "") then {
-	_amount = round(random(500)) + 200;
-	[_amount] spawn Client_fnc_sl_addCash_secure;
+
+	_suitCases = ["kif_5k","kif_5k","kif_5k","kif_10k"];
+	_item = _suitCases call BIS_fnc_selectRandom;
+	player addItem _item;
+
 	[format["Okradłeś sklep, zabrałeś $%1", _amount], false] call domsg;
 	["Remove","Karma",50] call client_fnc_sustain;
 	[player,objNull,19,format ["%1 okradł sklep na kwotę %2", name player, _amount],_amount] remoteExec ["server_fnc_actionLog", 2];
