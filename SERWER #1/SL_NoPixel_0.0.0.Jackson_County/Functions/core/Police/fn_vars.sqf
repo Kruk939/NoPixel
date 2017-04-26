@@ -739,7 +739,9 @@ _availableVests = [
     
     if (player getvariable ["cop", 0] > 4) then {
         _availableVestsFour = [
-            "TAC_PBDFG2CPSRF_RG_1"
+            "TAC_PBDFG2CPSRF_RG_1",
+            "sl_academy",
+            "sl_traffic_so"
         ];
     _availableVests = _availableVests + _availableVestsFour;
     };
