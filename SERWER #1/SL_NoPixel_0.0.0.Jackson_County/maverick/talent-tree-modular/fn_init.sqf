@@ -22,6 +22,7 @@ scriptName "fn_init";
 	
 	mav_ttm_var_lockpickMultiplier = 1;
 	mav_ttm_var_paycheckMultiplier = 1;
+	mav_ttm_var_repairToReduce = 0;
 	diag_log "fn_init.sqf 3";
 
 	// Wait until player is ready
