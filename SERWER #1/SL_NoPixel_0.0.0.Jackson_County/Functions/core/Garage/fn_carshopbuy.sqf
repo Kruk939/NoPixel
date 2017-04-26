@@ -16,12 +16,15 @@ _finish = _finish select 0;
 
 _price = _price + _pricePaint;
 
+_price = _price * mav_ttm_var_mechanicRent;
+
 
 
 _cash = player getVariable "sl_wallet_silverlake";
 
 
 if(_cash < _price) exitwith { [format["KOSZT: %1 - Za mało pieniędzy.",_price], true] spawn domsg; };
+
 
 [_price] call Client_fnc_sl_removeCash_secure;
 

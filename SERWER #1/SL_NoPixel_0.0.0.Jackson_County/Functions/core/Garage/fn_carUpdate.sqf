@@ -107,7 +107,7 @@ if(typeof _PROCESS IN ["ADM_1964_Impala","ADM_1969_Charger","ADM_1969_Camaro","A
 	{ if(_typeof == _x select 0) then { _price = (_x select 1) * 0.25; }; } foreach _civilianVehicle;
 };
 
-
+_price = _price * mav_ttm_var_mechanicRent;
 _cashcheck = [2,_price] call Client_fnc_sl_checkMoney_secure;
 if!(_cashCheck) exitwith { hint format["$%1 - Nie masz wystarczająco dużo pieniędzy!",_price]; };
 

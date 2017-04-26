@@ -4,7 +4,7 @@ class VehicleRepaired {
 };
 
 class VehicleBought {
-    exptoAdd = 5;
+    exptoAdd = 4;
     message = "Kupiono pojazd";
 };
 
@@ -59,7 +59,7 @@ class FireEx {
 };
 
 class EvidencePicked {
-    exptoAdd = 5;
+    exptoAdd = 8;
     message = "Zebrano dowody";
 };
 
@@ -104,7 +104,7 @@ class CarTunedUp {
 };
 
 class Paycheck {
-    exptoAdd = 3;
+    exptoAdd = 1;
     message = "Otrzymano wyplate";
 };
 

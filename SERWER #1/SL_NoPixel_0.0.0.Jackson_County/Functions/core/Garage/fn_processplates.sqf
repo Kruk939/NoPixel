@@ -59,7 +59,7 @@ if (isNil "_string") exitWith {["Błąd","Twoja tablica jest pusta!",[255,0,0,1]
 
 
 
-[2000] call Client_fnc_sl_removeBank_secure;
+[(2000 * mav_ttm_var_mechanicRent)] call Client_fnc_sl_removeBank_secure;
 
 [plateChange,_string,player] remoteexec ["server_fnc_platechange",2];
 
