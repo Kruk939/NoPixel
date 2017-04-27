@@ -20,7 +20,7 @@ if(!isServer) exitWith {};
 		_marker = createMarker ["shipwreck",_position];
 		_marker setMarkerColor "ColorBlack";
 		_marker setMarkerType "mil_warning";
-		_marker setMarkerText "Shipwreck";
+		_marker setMarkerText "Wrak Statku";
 		_marker setMarkerAlpha 0.95;
 
 		_markerZone = createMarker ["shipwreckzone",_position];
@@ -38,7 +38,7 @@ if(!isServer) exitWith {};
 		_ship setVariable ["wrecktime", time];
 		_ship setVariable ["wreckloot", selectRandom(getArray(missionConfigFile >> "Maverick_Shipwrecks" >> "ShipLoot")), true];
 
-		
+
 		_ship2 = "Land_Wreck_Traw2_F" createVehicle _position;
 		_ship2 allowDamage false;
 		_ship2 setDamage 0;
