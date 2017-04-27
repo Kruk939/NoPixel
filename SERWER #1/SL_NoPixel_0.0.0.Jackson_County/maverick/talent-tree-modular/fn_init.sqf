@@ -19,11 +19,12 @@ scriptName "fn_init";
 	life_currentExpLevel = 0;
 	life_currentExp = 0;
 	life_currentPerkPoints = 0;
-
 	mav_ttm_var_lockpickMultiplier = 1;
 	mav_ttm_var_paycheckMultiplier = 1;
 	mav_ttm_var_repairToReduce = 0;
 	mav_ttm_var_mechanicRent = 1;
+
+
 	diag_log "fn_init.sqf 3";
 
 	// Wait until player is ready
@@ -64,6 +65,9 @@ scriptName "fn_init";
 		if ((mav_ttm_keybindings_shift == 1) && !_shift) exitWith {};
 		if ((mav_ttm_keybindings_ctrl == 1) && !_ctrl) exitWith {};
 
-		createDialog "TTM_GUI_RscDisplayTalentOverview";
+		if (!dialog && (diag_tickTime - (missionNamespace getVariable ["mav_ttm_lastOpenTime", 0]) > 3)) then {
+			mav_ttm_lastOpenTime = diag_tickTime;
+			createDialog "TTM_GUI_RscDisplayTalentOverview";
+		};
 	}];
 };

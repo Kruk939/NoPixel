@@ -15,7 +15,7 @@ class VehicleLockpicked {
 
 class TreeCutDown {
     exptoAdd = 2;
-    message = "Scieto drzewo";
+    message = "Ścięto drzewo";
 };
 
 class MarihuanaGathered {
@@ -30,7 +30,7 @@ class OreGathered {
 
 class PaidTicket {
     exptoAdd = 5;
-    message = "Zaplacono mandat";
+    message = "Zapłacono mandat";
 };
 
 class GivenTicket {
@@ -45,7 +45,7 @@ class MethGathered {
 
 class CraftedSth {
     exptoAdd = 2;
-    message = "Wytworzono cos";
+    message = "Wytworzono coś";
 };
 
 class Revived {
@@ -55,7 +55,7 @@ class Revived {
 
 class FireEx {
     exptoAdd = 5;
-    message = "Ugaszono pozar";
+    message = "Ugaszono pożar";
 };
 
 class EvidencePicked {
@@ -65,12 +65,12 @@ class EvidencePicked {
 
 class Jailed {
     exptoAdd = 10;
-    message = "Wrzucono kogos do wiezienia";
+    message = "Wrzucono kogoś do wiezienia";
 };
 
 class TrashPickedUp {
     exptoAdd = 2;
-    message = "Zebrano smieci";
+    message = "Zebrano śmieci";
 };
 
 class ReporterArrived {
@@ -84,8 +84,8 @@ class MechanicRepaired {
 };
 
 class FishCaught {
-    exptoAdd = 3;
-    message = "Zlowiono rybe";
+    exptoAdd = 4;
+    message = "Złowiono rybę";
 };
 
 class Processed {
@@ -104,16 +104,21 @@ class CarTunedUp {
 };
 
 class Paycheck {
-    exptoAdd = 1;
-    message = "Otrzymano wyplate";
+    exptoAdd = 2;
+    message = "Otrzymano wypłatę";
 };
 
 class Exercised {
     exptoAdd = 3;
-    message = "Wykonano cwiczenia";
+    message = "Wykonano ćwiczenia";
 };
 
 class PeltProcessed {
     exptoAdd = 5;
-    message = "Przetworzono skore";
+    message = "Przetworzono skórę";
+};
+
+class Shipwreck {
+	exptoAdd = 20;
+	message = "Ograbiono statek";
 };

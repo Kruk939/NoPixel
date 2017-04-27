@@ -27,6 +27,7 @@ if(hasInterface) exitWith {
             } forEach _lootArray;
             if(_allGood) then {
                 hint getText(missionConfigFile >> "Maverick_Shipwrecks" >> "ShipLootSuccess");
+                ["Shipwreck"] spawn mav_ttm_fnc_addExp;
                 ((nearestObjects[player,["Land_Wreck_Traw_F"], 20]) select 0) setVariable ["wreckloot", [], true];
             } else {
 				for "_i" from 0 to _index do {_lootArray deleteAt 0;};
