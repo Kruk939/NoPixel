@@ -15,7 +15,8 @@ class Maverick_Shipwrecks {
         {5199.27,70.8686,17.4996},
         {6159,8124.24,19.0541},
         {7815.14,8709.1,23.3698},
-        {9462.7,1831.04,25.9156}
+        {9462.7,1831.04,25.9156},
+        {3416.83,9617.65,0}
 	};
 
     //Define the radius, in which the wreck randomly spawns around the given center position
