@@ -74,23 +74,3 @@ if(client_intox > 0.4) then {
 if (!paintballing) then {
 	[player, "getunitloadout", getunitloadout player] remoteExec ["Server_fnc_setVariable",2];
 };
-
-_lastPos = visiblePosition player;
-_lastPos = (_lastPos select 0) + (_lastPos select 1);
-
-for "_i" from 0 to 1 step 0 do {
-    if (!alive player) then {_walkDis = 0;} else {
-        _curPos = visiblePosition player;
-        _curPos = (_curPos select 0) + (_curPos select 1);
-        if (!(_curPos isEqualTo _lastPos)) then {
-            _walkDis = _walkDis + 1;
-            if (_walkDis isEqualTo 60) then {
-                _walkDis = 0;
-                ["Distance"] spawn mav_ttm_fnc_addExp;
-            };
-        };
-        _lastPos = visiblePosition player;
-        _lastPos = (_lastPos select 0) + (_lastPos select 1);
-    };
-    uiSleep 1;
-};

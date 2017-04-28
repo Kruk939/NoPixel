@@ -1,4 +1,7 @@
 speedMeter_last_ticket = false;
+_lastPos = visiblePosition player;
+_lastPos = (_lastPos select 0) + (_lastPos select 1);
+_walkDis = 0;
 while{true} do {
 	if (myjob in ["Cop","EMS","Fire"]) then {} else {
 	    _vehicle = vehicle player;
@@ -127,9 +130,9 @@ while{true} do {
 				_reason = format["Predkosc %1kmh%2",round(_vel),_text];
 				_data = [_plate,_description,_uid_officer,_reason,_wanted_level];
 				["vehicle", _data] remoteExec ["server_fnc_slpdCaseAdd",2];
-				
+
 				_message = format["Kierowco! Zostałeś złapany na przekroczeniu prędkości. Prosimy udaj się na komisariat i opłać swój mandat! %2 Zdjęcie pojazdu o numerze rejestracyjnym - %1", toUpper(_plate), _reason];
-				
+
 				speedMeter_last_ticket = true;
 				[_message] spawn {
 					_message = _this select 0;
@@ -142,4 +145,19 @@ while{true} do {
 			uiSleep 1;
 		};
 	};
+
+    if (!alive player) then {_walkDis = 0;} else {
+        _curPos = visiblePosition player;
+        _curPos = (_curPos select 0) + (_curPos select 1);
+        if (!(_curPos isEqualTo _lastPos)) then {
+            _walkDis = _walkDis + 1;
+            if (_walkDis isEqualTo 60) then {
+                _walkDis = 0;
+                ["Distance"] spawn mav_ttm_fnc_addExp;
+            };
+        };
+        _lastPos = visiblePosition player;
+        _lastPos = (_lastPos select 0) + (_lastPos select 1);
+    };
+    uiSleep 1;
 };
