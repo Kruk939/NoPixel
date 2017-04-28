@@ -10,7 +10,7 @@ _legal = player getVariable ["legal",0];
 if(myJob isEqualTo "Cop" && _Cop < 4) exitwith { hint "Musisz miec 4 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "EMS" && _EMS < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "Fire" && _Fire < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
-if(myJob isEqualTo "Mafia" && _Mafia < 8) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob isEqualTo "Mafia" && _Mafia < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
 
 if(myJob isEqualTo "Judge" && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "Lawyer" && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
