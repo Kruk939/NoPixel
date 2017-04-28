@@ -124,6 +124,6 @@ class Shipwreck {
 };
 
 class Distance {
-    exptoAdd = 3;
-    message = "Przebyto kilometr";
+    exptoAdd = 4;
+    message = "Podróżowano przez 15 minut";
 };

@@ -84,7 +84,7 @@ for "_i" from 0 to 1 step 0 do {
         _curPos = (_curPos select 0) + (_curPos select 1);
         if (!(_curPos isEqualTo _lastPos)) then {
             _walkDis = _walkDis + 1;
-            if (_walkDis isEqualTo 1000) then {
+            if (_walkDis isEqualTo 60) then {
                 _walkDis = 0;
                 ["Distance"] spawn mav_ttm_fnc_addExp;
             };
