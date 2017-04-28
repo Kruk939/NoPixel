@@ -22,7 +22,7 @@ _vehicle = "ivory_wrx" createvehicle [0,0,0];
 uisleep 0.05;
 deletevehicle _vehicle;
 
-asct_instanceID = serwer1;
+asct_instanceID = "serwer1";
 
 setTimeMultiplier 12;
 setDate [2016, 6, 25, 6, 0];
