@@ -82,7 +82,7 @@ for "_i" from 0 to 1 step 0 do {
     if (!alive player) then {_walkDis = 0;} else {
         _curPos = visiblePosition player;
         _curPos = (_curPos select 0) + (_curPos select 1);
-        if (!(_curPos isEqualTo _lastPos) && {(isNull objectParent player)}) then {
+        if (!(_curPos isEqualTo _lastPos)) then {
             _walkDis = _walkDis + 1;
             if (_walkDis isEqualTo 1000) then {
                 _walkDis = 0;
