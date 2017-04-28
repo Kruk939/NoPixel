@@ -12,7 +12,7 @@ class perk_gunsspecialist_lessRecoil_1 {
 };
 
 class perk_gunsspecialist_lessRecoil_2 {
-	displayName = "Zmniejszenie odrzutu 2";
+	displayName = "Zmniejszenie odrzutu II";
 	requiredPerkPoints = 6;
 	requiredLevel = 16;
 	requiredPerk = "perk_gunsspecialist_lessRecoil_1";
@@ -24,7 +24,7 @@ class perk_gunsspecialist_lessRecoil_2 {
 };
 
 class perk_gunsspecialist_lessRecoil_3 {
-	displayName = "Zmniejszenie odrzutu 3";
+	displayName = "Zmniejszenie odrzutu III";
 	requiredPerkPoints = 7;
 	requiredLevel = 25;
 	requiredPerk = "perk_gunsspecialist_lessRecoil_2";
@@ -49,7 +49,7 @@ class perk_paycheck_1 {
 };
 
 class perk_paycheck_2 {
-	displayName = "Większa wypłata 2";
+	displayName = "Większa wypłata II";
 	requiredPerkPoints = 3;
 	requiredLevel = 8;
 	requiredPerk = "perk_paycheck_1";
@@ -61,7 +61,7 @@ class perk_paycheck_2 {
 };
 
 class perk_paycheck_3 {
-	displayName = "Większa wypłata 3";
+	displayName = "Większa wypłata III";
 	requiredPerkPoints = 6;
 	requiredLevel = 21;
 	requiredPerk = "perk_paycheck_2";

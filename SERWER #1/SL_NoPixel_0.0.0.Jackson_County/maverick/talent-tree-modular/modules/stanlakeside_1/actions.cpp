@@ -122,3 +122,8 @@ class Shipwreck {
 	exptoAdd = 20;
 	message = "Ograbiono statek";
 };
+
+class Distance {
+    exptoAdd = 3;
+    message = "Przebyto pół kilometra";
+};
