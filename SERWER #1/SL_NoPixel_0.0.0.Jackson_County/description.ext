@@ -40,7 +40,7 @@ class RscTitles {
 	#include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
 };
 
-class CfgFunctions 
+class CfgFunctions
 {
 #include "maverick\maverick_functions_master.cpp"
 	class Client
@@ -64,7 +64,7 @@ class CfgFunctions
 			class saveBG {};
 			class updateSkin {};
 			class loadSkin {};
-			class saveSkin {};			
+			class saveSkin {};
 			class fadePhone {};
 			class answerCall {};
 			class Answered {};
@@ -141,7 +141,8 @@ class CfgFunctions
 			class nametags {};
             class adminMessage {};
             class adminGodmode {};
-		};		
+            class adminRemoteRespawn {};
+		};
 
 		class police {
 			file = "Functions\core\police";
@@ -249,15 +250,15 @@ class CfgFunctions
 			file = "Functions\core\Jobs\JobTowTruck";
 			class startTowTruck {};
 			class startrepair {};
-		};		
+		};
 		class JobNews {
 			file = "Functions\core\Jobs\JobNews";
 			class startNews {};
-		};			
+		};
 		class JobSecurity {
 			file = "Functions\core\Jobs\JobSecurity";
 			class startSecurity {};
-		};				
+		};
 		class JobGarbage {
 			file = "Functions\core\Jobs\JobGarbage";
 			class collectGarbage {};
@@ -285,8 +286,8 @@ class CfgFunctions
 			class healTime {};
             class healTimeTran {};
 			class medicUpdater {};
-			class totalPain {};	
-			class sendrevive {};		
+			class totalPain {};
+			class sendrevive {};
 			class revived {};
 			class medicClothes {};
 			class openHealMenu {};
@@ -302,7 +303,7 @@ class CfgFunctions
 			class settax {};
 			class mayorsetup {};
 			class loadassassin {};
-		};	
+		};
 
 		class Crafting
 		{
@@ -465,15 +466,15 @@ class CfgFunctions
 			class sustain {};
 			class setLevel {};
 			class repair {};
-			class PatDown {};		
+			class PatDown {};
 			class putincar {};
 			class restrain {};
 			class unrestrain {};
-			class startpatdown {};	
+			class startpatdown {};
 			class blindfold {};
 			class unblindfold {};
 			class attemptKO {};
-			class successKO {};	
+			class successKO {};
 			class tazed {};
 			class sharphit {};
 			class blunthit {};
@@ -503,7 +504,7 @@ class CfgFunctions
 			class sl_addCash_secure {};
 			class sl_checkMoney_secure {};
 			class sl_giveLoan_secure {};
-			class sl_giveLoanSubmit_secure {};			
+			class sl_giveLoanSubmit_secure {};
 			class sl_giveCash_secure {};
 			class sl_giveCashSubmit_secure {};
 			class sl_removeBank_secure {};
@@ -521,7 +522,7 @@ class CfgFunctions
 			class disabletrackingme {};
 			class dorace {};
 			class dorally {};
-			class kickoutwindows {};			
+			class kickoutwindows {};
 			class confirmfillvehicle {};
 			class fillvehicle {};
 			class useKey {};
@@ -749,7 +750,7 @@ class CfgSounds {
         };
         titles[] = {};
     };
-	
+
     class bankAlarm {
         name = "bankAlarm";
         sound[] = {
@@ -759,7 +760,7 @@ class CfgSounds {
         };
         titles[] = {};
     };
-	
+
     class shopAlarm {
         name = "shopAlarm";
         sound[] = {

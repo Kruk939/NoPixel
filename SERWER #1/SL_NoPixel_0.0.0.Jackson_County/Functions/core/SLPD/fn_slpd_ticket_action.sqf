@@ -15,7 +15,6 @@ _amount = _data select 0;
 _points = _data select 1;
 _reason = _data select 2;
 kruk_slpd_ticket_data = nil;
-["GivenTicket"] spawn mav_ttm_fnc_addExp;
 
 _check = [2, _amount] call Client_fnc_sl_checkMoney_secure;
 if(!_check) exitWith { [format["%1 nie zapłacił mandatu, gdyż nie ma wystarczająco pieniędzy.", _name]] remoteExec ["domsg", _officer]; };
