@@ -125,5 +125,5 @@ class Shipwreck {
 
 class Distance {
     exptoAdd = 3;
-    message = "Przebyto pół kilometra";
+    message = "Przebyto kilometr";
 };
