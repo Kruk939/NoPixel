@@ -84,6 +84,7 @@ if(myJob == "Cop") then {
 			"red_f350_08_p_statetrooper",
 			"kif_f150_statetrooper",
 			"kif_tahoe_statetrooper",
+			"red_suburban_15_p_u_trooper",
 			"red_explorer_16_p_fto",
 			"red_kawasaki_10_p",
 			"red_porsche_12_p_u_black",
