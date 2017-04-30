@@ -395,14 +395,14 @@ _availableUniforms = [
 			"sp_rang6",
 			"kifpd_uni_sheriff_deputy",
 			"kifpd_uni_sheriff_senior_deputy",
+			"kifpd_uni_sheriff_corporal",
 			"kifpd_uni_sheriff_sergeant",
 			"kifpd_uni_sheriff_lieutenant",
 			"kifpd_uni_sheriff_captain",
 			"kifpd_uni_sheriff_division_chief_so",
 			"kifpd_uni_sheriff_assistant_sheriff",
 			"kifpd_uni_sheriff_undersheriff",
-			"kifpd_uni_sheriff_sheriff",
-            "kifpd_sheriff_corporal"
+			"kifpd_uni_sheriff_sheriff"
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
