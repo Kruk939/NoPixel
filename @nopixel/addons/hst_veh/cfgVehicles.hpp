@@ -20,7 +20,7 @@ class hst_dc15_base : red_charger_15_p_sheriff
 	redRpm = 7500;
 	class complexGearbox
 	{
-			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.50,"D3",1.0,"D4",0.70,"D5",0.55,};
+			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.50,"D3",1.0,"D4",0.70,"D5",0.55};
 			TransmissionRatios[] = {"High",4.111};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -84,7 +84,7 @@ class hst_dc12_base : red_charger_12_p
 	redRpm = 7500;
 	class complexGearbox
 	{
-			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.0,"D2",1.30,"D3",1.0,"D4",0.70,"D5",0.55,};
+			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.0,"D2",1.30,"D3",1.0,"D4",0.70,"D5",0.55};
 			TransmissionRatios[] = {"High",4.0};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -147,7 +147,7 @@ class hst_cvpi_base : red_cvpi_06_p_custom1
 	redRpm = 7000;
 	class complexGearbox
 	{
-			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.2,"D2",1.40,"D3",1.0,"D4",0.60,};
+			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.2,"D2",1.40,"D3",1.0,"D4",0.60};
 			TransmissionRatios[] = {"High",4.0};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
