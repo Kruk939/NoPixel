@@ -318,9 +318,10 @@ _availableUniforms = [
 	"kifpd_uni_dzokablue",
 	"kifpd_uni_dzokawhite",
 
-	"kifpd_uni_aiad_inspector",
-	"kifpd_uni_aiad_depchief",
-	"kifpd_uni_aiad_chief",
+	"kifpd_uni_aiad_div_chief_goc",
+	"kifpd_uni_aiad_dep_div_chief",
+	"kifpd_uni_aiad_insepctor_sgt",
+	"kifpd_uni_aiad_inspector_po4",
 
 	"kifpd_uni_dtu_lt_yellow",
 	"kifpd_uni_dtu_lt_white",
@@ -740,8 +741,8 @@ _availableVests = [
     if (player getvariable ["cop", 0] > 4) then {
         _availableVestsFour = [
             "TAC_PBDFG2CPSRF_RG_1",
-	    "sl_traffic_so",
-	    "sl_academy"
+            "sl_academy",
+            "sl_traffic_so"
         ];
     _availableVests = _availableVests + _availableVestsFour;
     };
