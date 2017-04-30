@@ -403,7 +403,8 @@ _availableUniforms = [
 			"kifpd_uni_sheriff_division_chief_so",
 			"kifpd_uni_sheriff_assistant_sheriff",
 			"kifpd_uni_sheriff_undersheriff",
-			"kifpd_uni_sheriff_sheriff"
+			"kifpd_uni_sheriff_sheriff",
+			"kifpd_uni_sheriff_fto"
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
