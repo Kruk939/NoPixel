@@ -4,7 +4,7 @@ _timer = 50;
 _dir = [player, getpos endPoint] call BIS_fnc_dirTo;
 playSound3D ["CG_Jobs\sounds\jailbreak\zipline.ogg", player, false, getposasl player, 25, 1, 25];
 
-while{true} do {
+for "_i" from 0 to 1 step 0 do {
 	player setdir _dir;
 	sleep 0.25;
 	_vel = velocity player;

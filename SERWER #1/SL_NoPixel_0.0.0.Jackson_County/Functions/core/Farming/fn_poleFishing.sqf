@@ -31,7 +31,7 @@ imfishing = true;
 	_myStartSpot = getpos player;
 	_fail = false;
 
-	while{true} do {
+	for "_i" from 0 to 1 step 0 do {
 		sleep 3;
 		_timeOut = _timeOut + 1;
 		if(_timeOut > _total) exitwith {};

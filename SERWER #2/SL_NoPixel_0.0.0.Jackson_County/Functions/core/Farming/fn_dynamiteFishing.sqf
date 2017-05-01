@@ -34,7 +34,7 @@ pole fishing by koil
 	hint "Zbliż się, by zebrać swoją zdobycz!";
 
 	_timeout = 60; 
-	while{true} do {
+	for "_i" from 0 to 1 step 0 do {
 		_timeout = _timeout - 1;
 		if(player distance _catchPos < 9) exitwith { _catch = true; };
 		if(_timeout < 1) exitwith { _catch = false; };

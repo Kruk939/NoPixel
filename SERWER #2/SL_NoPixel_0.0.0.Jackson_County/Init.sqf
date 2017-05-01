@@ -15,7 +15,7 @@ shopNameList = ["Land_fs_roof_F","Land_Shop_DED_Shop_01_F","Land_Shop_DED_Shop_0
 [] spawn
 {
 	life_koil_hh = 0;
-	while{true}do
+	for "_i" from 0 to 1 step 0 do
 	{
 	if (sunOrMoon == 0 && life_koil_hh != 1) then {
 		_resourceZones = ["Spooky"];

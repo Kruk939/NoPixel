@@ -33,7 +33,7 @@ if (_distanceCheck isEqualTo 0) then {
 	_distanceCheck = player;
 };
 
-while{true} do {
+for "_i" from 0 to 1 step 0 do {
 
 	uisleep 1;
 	_timeLeft = _timeLeft - 1;
