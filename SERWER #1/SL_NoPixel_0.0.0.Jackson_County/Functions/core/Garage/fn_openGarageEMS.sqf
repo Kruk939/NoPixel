@@ -10,6 +10,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"ivory_isf_medic_rr",
 				"NP_Jonzie_Ambulance1",
 				"NP_Jonzie_Ambulance2",
+				"np_Jonzie_Ambulancefire",
 				//"red_ambulance_08_EMS",
 				//"red_ambulance_08_FD",
 				//"red_ambulance_08_SR",
