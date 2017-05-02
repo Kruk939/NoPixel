@@ -88,7 +88,8 @@ _availableVests = [
     "kif_fd_probie",
     "kif_fd_fd",
     "kif_fd_divchief",
-    "sl_traffic_fire"
+    "sl_traffic_fire",
+    "kif_emt_traffic_controller_vest"
 ];
  
 _availableBackpacks = [
