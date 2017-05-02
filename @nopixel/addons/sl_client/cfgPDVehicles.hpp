@@ -100,3 +100,24 @@ class sl_286: red_charger_15_p_u_base
 	#include "\sl_client\lights\red_spotlight_lights.hpp"
 	#include "\sl_client\data\weapons_sheriff_vehicle.hpp"
 };
+
+class C_Boat_Civil_01_police_F;
+class Eventhandlers;
+class sl_boat_fire: C_Boat_Civil_01_police_F
+{
+	author="Jeffrey StanLakeside";
+	scope=2;
+	displayName="Fire Department Motorboat";
+        maxSpeed = 150;
+        enginePower = 325;
+	class Eventhandlers: Eventhandlers
+	{
+		init="_this select 0 animate [""HidePoliceSigns"",1,true]; _this select 0 animate [""HideRescueSigns"",1,true]; _this select 0 animate [""HidePolice"",0,true];";
+	};
+	hiddenSelectionsTextures[]=
+	{
+		"sl_client\tex\vehicles\boat\fire.paa",
+		"\a3\boat_f_gamma\Boat_Civil_01\data\Boat_Civil_01_int_police_co.paa"
+	};
+
+};
