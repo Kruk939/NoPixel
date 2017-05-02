@@ -32,7 +32,8 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"nopixel_guardacostas",
 				"kif_orca_ems",
 				"kif_mh9_ems",
-				"EC635_SAR"
+				"EC635_SAR",
+				"sl_boat_fire"
 			];
 };
 
