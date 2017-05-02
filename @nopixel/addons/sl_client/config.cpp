@@ -8,6 +8,20 @@ class CfgPatches
 		requiredAddons[]= {"A3_Data_F"};
  	};
  };
+class cfgFunctions
+{
+	class Love
+	{
+		class Authors
+		{
+			file="\sl_client";
+			class WeLikeAuthors
+			{
+				preinit=1;
+			};
+		};
+	};
+};
 class CfgVehicles {
 	class All{};
 	class Static: All{};
