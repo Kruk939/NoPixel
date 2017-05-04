@@ -9,6 +9,9 @@ if(myJob == "Cop") then {
 		_garageMore = [
 			
             //UC
+            
+            "red_porsche_12_p_u_black",
+			"red_suburban_15_p_f_ia",
                 
 			"kif_m3_unmarked_bb",
 			"kif_m3_unmarked_mbb",
