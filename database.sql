@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50624
 File Encoding         : 65001
 
-Date: 2017-03-19 05:26:53
+Date: 2017-04-30 17:27:43
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -55,7 +55,7 @@ CREATE TABLE `log_action` (
   `unitInv` varchar(10000) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=70496 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=216602 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for log_admin
@@ -78,7 +78,7 @@ CREATE TABLE `log_admin` (
   `unitInv` varchar(10000) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=8655 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16446 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for log_connection
@@ -94,9 +94,8 @@ CREATE TABLE `log_connection` (
   `playerInv` varchar(10000) NOT NULL,
   `type` varchar(20) NOT NULL,
   `text` varchar(255) NOT NULL,
-  `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=13784 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=68726 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for log_cop
@@ -119,7 +118,7 @@ CREATE TABLE `log_cop` (
   `unitInv` varchar(10000) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=14390 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=45459 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for log_craft
@@ -138,7 +137,7 @@ CREATE TABLE `log_craft` (
   `classname` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=6553 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10434 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for log_death
@@ -162,7 +161,7 @@ CREATE TABLE `log_death` (
   `weapon` varchar(100) NOT NULL,
   `distance` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4078 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12149 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for log_economy
@@ -187,7 +186,7 @@ CREATE TABLE `log_economy` (
   `item` varchar(100) NOT NULL,
   `quantity` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=65420 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=179540 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for log_job
@@ -210,7 +209,7 @@ CREATE TABLE `log_job` (
   `unitInv` varchar(10000) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=12728 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=66308 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for log_money
@@ -233,7 +232,7 @@ CREATE TABLE `log_money` (
   `unitInv` varchar(10000) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=25781 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=72218 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for log_vehicle
@@ -253,7 +252,7 @@ CREATE TABLE `log_vehicle` (
   `vehicleName` varchar(255) NOT NULL,
   `amount` varchar(100) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=53393 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=133805 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for mafiaatm
@@ -288,6 +287,33 @@ CREATE TABLE `messages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
+-- Table structure for slpd_prison
+-- ----------------------------
+DROP TABLE IF EXISTS `slpd_prison`;
+CREATE TABLE `slpd_prison` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `uid_player` varchar(20) NOT NULL DEFAULT '',
+  `uid_officer` varchar(20) NOT NULL DEFAULT '',
+  `active` int(1) NOT NULL DEFAULT '1',
+  `time_prison` int(3) NOT NULL,
+  `time_left` int(3) NOT NULL,
+  `reason` varchar(255) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=261 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for slpd_storage
+-- ----------------------------
+DROP TABLE IF EXISTS `slpd_storage`;
+CREATE TABLE `slpd_storage` (
+  `police` varchar(5000) DEFAULT NULL,
+  `ems` varchar(5000) DEFAULT NULL,
+  `mafia` varchar(5000) DEFAULT NULL,
+  `id` int(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
 -- Table structure for slpd_tickets
 -- ----------------------------
 DROP TABLE IF EXISTS `slpd_tickets`;
@@ -300,7 +326,7 @@ CREATE TABLE `slpd_tickets` (
   `points` int(11) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1030 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for slpd_wanted
@@ -316,7 +342,7 @@ CREATE TABLE `slpd_wanted` (
   `uid_closed` varchar(20) NOT NULL DEFAULT '',
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=256 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for slpd_wanted_vehicle
@@ -327,13 +353,13 @@ CREATE TABLE `slpd_wanted_vehicle` (
   `plate` varchar(7) NOT NULL,
   `description` varchar(255) NOT NULL,
   `uid_officer` varchar(20) NOT NULL,
-  `reason` varchar(255) NOT NULL,
+  `reason` text NOT NULL,
   `wanted_level` int(1) NOT NULL,
   `active` int(1) NOT NULL DEFAULT '1',
   `uid_closed` varchar(20) NOT NULL DEFAULT '',
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=367 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=28714 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for users
@@ -359,12 +385,23 @@ CREATE TABLE `users` (
   `mafia` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `fire` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `legal` enum('0','1','2','3','4','5','6','7','8','9','10') CHARACTER SET utf8 NOT NULL DEFAULT '0',
-  `prisontime` varchar(10) NOT NULL DEFAULT '0',
-  `prisonreason` varchar(128) CHARACTER SET utf8 NOT NULL,
   `mayor` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
   `doughnuts` enum('0','1','2','3','4','5') CHARACTER SET utf8 NOT NULL DEFAULT '0',
-  `connected` enum('0','1') CHARACTER SET utf8 NOT NULL DEFAULT '0',
+  `connected` int(1) NOT NULL DEFAULT '0',
   `respawn` int(2) NOT NULL DEFAULT '2',
+  `exp_level` int(11) NOT NULL DEFAULT '0',
+  `exp_total` int(11) NOT NULL DEFAULT '0',
+  `exp_perkPoints` int(11) NOT NULL DEFAULT '0',
+  `exp_perks` text,
   PRIMARY KEY (`bankaccount`),
   UNIQUE KEY `uid` (`uid`)
-) ENGINE=InnoDB AUTO_INCREMENT=955 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=1630 DEFAULT CHARSET=utf8mb4;
+
+-- ----------------------------
+-- Event structure for DeleteDestroyedVehicles
+-- ----------------------------
+DROP EVENT IF EXISTS `DeleteDestroyedVehicles`;
+DELIMITER ;;
+CREATE DEFINER=`navicat`@`localhost` EVENT `DeleteDestroyedVehicles` ON SCHEDULE EVERY 1 HOUR STARTS '2017-03-22 22:32:57' ON COMPLETION NOT PRESERVE ENABLE DO DELETE FROM garage WHERE damage > 0.9
+;;
+DELIMITER ;

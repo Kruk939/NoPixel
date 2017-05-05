@@ -37,7 +37,7 @@ if(vehicle player != player && (vehicle player isKindOf "LandVehicle")) then
 
 [] spawn
 {
-	while{true} do
+	for "_i" from 0 to 1 step 0 do
 	{
 		waitUntil {vehicle player != player};
 		waitUntil {isNull objectParent player};

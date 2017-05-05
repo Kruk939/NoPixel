@@ -2,7 +2,7 @@ speedMeter_last_ticket = false;
 _lastPos = visiblePosition player;
 _lastPos = (_lastPos select 0) + (_lastPos select 1);
 _walkDis = 0;
-while{true} do {
+for "_i" from 0 to 1 step 0 do {
 	if (myjob in ["Cop","EMS","Fire"]) then {} else {
 	    _vehicle = vehicle player;
 		if(vehicle player != player && driver (vehicle player) isEqualTo player && ((_vehicle isKindOf "Car") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "Bicycle") || (_vehicle isKindOf "Motorbike"))) then {

@@ -318,9 +318,10 @@ _availableUniforms = [
 	"kifpd_uni_dzokablue",
 	"kifpd_uni_dzokawhite",
 
-	"kifpd_uni_aiad_inspector",
-	"kifpd_uni_aiad_depchief",
-	"kifpd_uni_aiad_chief",
+	"kifpd_uni_aiad_div_chief_goc",
+	"kifpd_uni_aiad_dep_div_chief",
+	"kifpd_uni_aiad_insepctor_sgt",
+	"kifpd_uni_aiad_inspector_po4",
 
 	"kifpd_uni_dtu_lt_yellow",
 	"kifpd_uni_dtu_lt_white",
@@ -395,6 +396,7 @@ _availableUniforms = [
 			"sp_rang6",
 			"kifpd_uni_sheriff_deputy",
 			"kifpd_uni_sheriff_senior_deputy",
+			"kifpd_uni_sheriff_corporal",
 			"kifpd_uni_sheriff_sergeant",
 			"kifpd_uni_sheriff_lieutenant",
 			"kifpd_uni_sheriff_captain",
@@ -402,7 +404,8 @@ _availableUniforms = [
 			"kifpd_uni_sheriff_assistant_sheriff",
 			"kifpd_uni_sheriff_undersheriff",
 			"kifpd_uni_sheriff_sheriff",
-            "kifpd_sheriff_corporal"
+			"kifpd_uni_sheriff_fto"
+			
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
@@ -972,12 +975,14 @@ _availableItems = [
     ];
      _availableItems = _availableItems + _availableItemsTen;
     };
-	if (client_dtu_actions > 0 ) then {
+	/*
+    if (client_dtu_actions > 0 ) then {
 	_availableItemsDtu = [
     "kif_gps"
     ];
      _availableItems = _availableItems + _availableItemsDtu;
 	};
+    */
 
 
 [_crate,((backpackCargo _crate) + _availableBackpacks)] call BIS_fnc_addVirtualBackpackCargo;

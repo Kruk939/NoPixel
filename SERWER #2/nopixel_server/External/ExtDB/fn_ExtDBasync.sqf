@@ -24,7 +24,7 @@ while{_loop} do
 	if(_count > 60) exitwith {}; 
 	if (_queryResult isEqualTo "[5]") then { 
 		_queryResult = ""; 
-		while{true} do { 
+		for "_i" from 0 to 1 step 0 do { 
 			_pipe = "extdb3" callExtension format["5:%1", _key]; 
 			if(_pipe isEqualTo "") exitWith {_loop = false}; 
 			_queryResult = _queryResult + _pipe; 

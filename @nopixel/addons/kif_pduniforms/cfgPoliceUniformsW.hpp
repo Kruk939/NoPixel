@@ -193,7 +193,7 @@ class kifpd_uni_rafwhite: Uniform_Base
 			armor = 40;
 		};
 	};
-	class kifpd_uni_aiad_chief: Uniform_Base
+	class kifpd_uni_aiad_dep_div_chief: Uniform_Base
 	{
 		scope = 2;
 		displayName = "Police Uniform AIAD Division Chief";
@@ -202,13 +202,13 @@ class kifpd_uni_rafwhite: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_aiad_chief";
+			uniformClass = "kifpd_aiad_dep_div_chief";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
 		};
 	};
-	class kifpd_uni_aiad_depchief: Uniform_Base
+	class kifpd_uni_aiad_div_chief_goc: Uniform_Base
 	{
 		scope = 2;
 		displayName = "Police Uniform AIAD Deputy Division Chief";
@@ -217,13 +217,13 @@ class kifpd_uni_rafwhite: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_aiad_depchief";
+			uniformClass = "kifpd_aiad_div_chief_goc";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
 		};
 	};
-	class kifpd_uni_aiad_inspector: Uniform_Base
+	class kifpd_uni_aiad_insepctor_sgt: Uniform_Base
 	{
 		scope = 2;
 		displayName = "Police Uniform AIAD Inspector";
@@ -232,7 +232,22 @@ class kifpd_uni_rafwhite: Uniform_Base
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "kifpd_aiad_inspector";
+			uniformClass = "kifpd_aiad_insepctor_sgt";
+			containerClass = "Supply100";
+			mass = 0;
+			armor = 40;
+		};
+	};
+	class kifpd_uni_aiad_inspector_po4: Uniform_Base
+	{
+		scope = 2;
+		displayName = "Police Uniform AIAD Inspector";
+		picture = "\kif_pduniforms\Data\ui\sl_logo.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "kifpd_aiad_inspector_po4";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;

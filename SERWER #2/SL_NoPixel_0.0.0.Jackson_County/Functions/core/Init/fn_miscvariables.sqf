@@ -244,7 +244,7 @@ domsg = {
 	disableSerialization;
 	_message = _this select 0;
 	_sound = _this select 1;
-	while{true} do {
+	for "_i" from 0 to 1 step 0 do {
 		if(!message1_active) exitwith {
 			if(_sound) then { player say "slideout"; };
 			11 cutRsc ["RSC_DOMSG1","PLAIN"];

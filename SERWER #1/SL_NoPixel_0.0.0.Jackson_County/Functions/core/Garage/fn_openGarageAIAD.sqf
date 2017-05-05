@@ -5,10 +5,13 @@ ctrlSetText [1000, "Garage"];
 _garage = [];
 
 if(myJob == "Cop") then {
-		if (client_dtu_actions > 0) then {
+		if (client_aiad_actions > 0) then {
 		_garageMore = [
 			
             //UC
+            
+            "red_porsche_12_p_u_black",
+			"red_suburban_15_p_f_ia",
                 
 			"kif_m3_unmarked_bb",
 			"kif_m3_unmarked_mbb",

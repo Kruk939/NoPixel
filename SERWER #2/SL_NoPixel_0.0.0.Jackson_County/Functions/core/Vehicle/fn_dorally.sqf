@@ -47,7 +47,7 @@ _laptime = 999999;
 _finish = false;
 _myfastest = 999999;
 
-while{true} do {
+for "_i" from 0 to 1 step 0 do {
 
 	_marker = format["rally_%1",_markerNum];
 

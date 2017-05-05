@@ -62,18 +62,18 @@ koildebii = 1;
 koildebiii = 1;
 koildebiiii = 1;
 imRestrained = false;
-im_dead = false; 
-client_firstCombatActive = false; 
-callInProgress = false; 
-PhoneDisabled = false; 
-client_fadeSound = false; 
+im_dead = false;
+client_firstCombatActive = false;
+callInProgress = false;
+PhoneDisabled = false;
+client_fadeSound = false;
 ClientInterrupted = false;
 ClientArrested = false;
-client_pizza = 0; 
-client_bro = 0; 
-client_num = 0; 
-client_crazy = 0; 
-client_bonging = false; 
+client_pizza = 0;
+client_bro = 0;
+client_num = 0;
+client_crazy = 0;
+client_bonging = false;
 client_nos_count = 0;
 client_can_use_nos = true;
 client_intox = 0.00;
@@ -81,11 +81,11 @@ client_godmode = false;
 mytrees = [];
 mymetal = [];
 myoil = [];
-playertasks = []; 
+playertasks = [];
 taskrunning = false;
 paycheck = 0;
 kif_admin = 0;
-client_dtu_actions = 0;
+client_aiad_actions = 0;
 teczka_allowed=0;
 client_tran=0;
 weedPlantArray = [];
@@ -97,19 +97,22 @@ adminInteractions = 0;
 if (getplayerUID player IN ["76561198023332238"]) then { kif_admin=1; };
 							//danio				//farmer			//jimmy
 if (getplayerUID player IN ["76561198082441969","76561198131854921","76561198171609822"]) then { kif_admin=2; };
-//							"76561197982469013",//raf				//sid				//dzoka				//teddy				//arthur
-if (getplayerUID player IN ["76561198061433788","76561197998091289","76561198150573190","76561198028980508"]) then { kif_admin=3; };
+//							//raf				//sid				//dzoka				//teddy				//arthur
+if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998091289","76561198150573190","76561198028980508"]) then { kif_admin=3; };
 							//katekarin
 if (getplayerUID player IN ["76561198041834190"]) then { kif_admin=4; };
 							//kifkick			//dorian
 if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif_admin=5; };
 /*
-	DTU
-*/
-							//Pablo	   		//Donald
-if (getplayerUID player IN ["76561198185455243","76561198023332238"]) then { client_dtu_actions=1; };
+	AIAD
+*/							//Pablo	   		//Donald
+if (getplayerUID player IN ["76561198185455243","76561198023332238"]) then { client_aiad_actions=1; };
 							//Kenju			//Galaretka			//raf				//kifkick
-if (getplayerUID player IN ["76561198019277102","76561198013128581","76561197982469013","76561198201987250","76561198015862132"]) then { client_dtu_actions=2; };
+if (getplayerUID player IN ["76561198019277102","76561198013128581","76561197982469013","76561198201987250","76561198015862132"]) then { client_aiad_actions=2; };
+							//knox	   		    //easy	   			//katekarin	   		//wazka
+if (getplayerUID player IN ["76561198030912509","76561198161472762","76561198041834190","76561198039045183"]) then { client_aiad_actions=1; };
+                            //raf				//kifkick			//miathur			//kruk
+if (getplayerUID player IN ["76561197982469013","76561198201987250","76561198037419471","76561198015862132"]) then { client_aiad_actions=2; };
 /*
 	TECZKA ALLOWED
 */
@@ -133,34 +136,34 @@ client_fnc_keyBusyPlayer = compileFinal
 client_fnc_blindfolded = compileFinal
 "
 	blindfolded = true;
-	""colorCorrections"" ppEffectEnable true;			
-	""colorCorrections"" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 0.01],  [0, 0, 0, 0.0]]; 
+	""colorCorrections"" ppEffectEnable true;
+	""colorCorrections"" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 0.01],  [0, 0, 0, 0.0]];
 	""colorCorrections"" ppEffectCommit 0.3;
 	oldheadgear = headgear player;
 	removeHeadGear player;
 	player addheadgear ""mgsr_headbag"";
 
 	while{ blindfolded } do {
-		if(headgear player != ""mgsr_headbag"") exitwith { 
+		if(headgear player != ""mgsr_headbag"") exitwith {
 			blindfolded = false;
-			""colorCorrections"" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 
+			""colorCorrections"" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]];
 			""colorCorrections"" ppEffectCommit 3;
-			""colorCorrections"" ppEffectEnable false;	
+			""colorCorrections"" ppEffectEnable false;
 		};
 		sleep 1;
 	};
 	blindfolded = false;
-	""colorCorrections"" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 
+	""colorCorrections"" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]];
 	""colorCorrections"" ppEffectCommit 3;
-	""colorCorrections"" ppEffectEnable false;	
+	""colorCorrections"" ppEffectEnable false;
 ";
 
 client_fnc_unblindfolded = compileFinal
 "
 	blindfolded = false;
-	""colorCorrections"" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]]; 
+	""colorCorrections"" ppEffectAdjust [1, 1, -0.003, [0.0, 0.0, 0.0, 0.0], [1, 1, 1, 1],  [0, 0, 0, 0.0]];
 	""colorCorrections"" ppEffectCommit 3;
-	""colorCorrections"" ppEffectEnable false;	
+	""colorCorrections"" ppEffectEnable false;
 	removeHeadGear player;
 	player addheadgear oldheadgear;
 ";
@@ -245,7 +248,7 @@ domsg = {
 	disableSerialization;
 	_message = _this select 0;
 	_sound = _this select 1;
-	while{true} do {
+	for "_i" from 0 to 1 step 0 do {
 		if(!message1_active) exitwith {
 			if(_sound) then { player say "slideout"; };
 			11 cutRsc ["RSC_DOMSG1","PLAIN"];
@@ -301,7 +304,7 @@ domsg = {
 				_blah = _blah - 1;
 			};
 			message3_active = false;
-		};	
+		};
 
 		if(!message4_active) exitwith {
 			if(_sound) then { player say "slideout"; };
@@ -320,7 +323,7 @@ domsg = {
 				_blah = _blah - 1;
 			};
 			message4_active = false;
-		};	
+		};
 
 		if(!message5_active) exitwith {
 			if(_sound) then { player say "slideout"; };
@@ -339,7 +342,7 @@ domsg = {
 				_blah = _blah - 1;
 			};
 			message5_active = false;
-		};	
+		};
 
 		if(!message6_active) exitwith {
 			if(_sound) then { player say "slideout"; };
@@ -359,7 +362,7 @@ domsg = {
 			};
 			message6_active = false;
 		};
-		
+
 		sleep 0.05;
 	};
 };
@@ -386,7 +389,7 @@ player addEventHandler["put", {
 				_itemNumber = _ItemCount select _count;
 					if(_x != "vvv_character_protibanador") then {
 						_container addItemCargoGlobal [_x,_itemnumber];
-					}; 
+					};
 				_count = _count + 1;
 				} foreach _process;
 			};
@@ -398,7 +401,7 @@ player addEventHandler["Fired",{_this call client_fnc_handleFired;}];
 //player addEventHandler["FiredNear",{_this call client_fnc_handlefiredNear;}];
 player addEventHandler["handleDamage", { _this spawn Client_fnc_handleDamage; false } ];
 
-client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","client_fnc_nametags"] call BIS_fnc_addStackedEventHandler; 
+client_ID_PlayerTags = ["client_PlayerTags","onEachFrame","client_fnc_nametags"] call BIS_fnc_addStackedEventHandler;
 
 turboVehicleList = [
 	"ivory_190e_tuned3",

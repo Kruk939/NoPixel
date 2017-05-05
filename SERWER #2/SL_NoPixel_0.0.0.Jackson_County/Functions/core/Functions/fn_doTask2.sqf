@@ -33,7 +33,7 @@ if (_distanceCheck isEqualTo 0) then {
 	_distanceCheck = player;
 };
 
-while{true} do {
+for "_i" from 0 to 1 step 0 do {
 	uisleep 1;
 	_timeLeft = _timeLeft - 1;
 	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];

@@ -30,6 +30,7 @@ _n = 0;
 		sleep 0.25;
 		if(dialog) then { closedialog 0; };
 		hint "You are refining Oil, stay still!";
+		["Processed"] spawn mav_ttm_fnc_addExp;
 	};
 
 	_n = _n + 1;
@@ -77,5 +78,4 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 	};
 };
 
-["Processed"] spawn mav_ttm_fnc_addExp;
 globalProtection = 0;

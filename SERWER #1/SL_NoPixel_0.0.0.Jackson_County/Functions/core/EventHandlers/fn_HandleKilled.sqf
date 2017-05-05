@@ -132,7 +132,7 @@ _unit spawn
 player setdamage 0; 
 
 [] spawn {
-	while{true} do {
+	for "_i" from 0 to 1 step 0 do {
 		sleep 1;
 		if( vehicle player == player && animationstate player != "deadstate" ) then {  player playmovenow "deadstate"; };
 		//if( vehicle player != player && animationstate player != "KIA_commander_MRAP_03" ) then { player action ["Eject", vehicle player]; player playmove "KIA_commander_MRAP_03"; };

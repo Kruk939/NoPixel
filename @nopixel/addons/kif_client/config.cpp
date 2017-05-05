@@ -57,7 +57,6 @@ class CfgMagazines
 			disabled=1;
 		};
 	};
-	#include "\kif_client\cfgItems.hpp"
 };
 class CfgVehicles {
 	class All{};
@@ -109,7 +108,9 @@ class cfgWeapons {
 	class V_TacVest_blk_POLICE;
 	class VestItem;
 	class HeadgearItem;
+	class ItemCore;
 	#include "\kif_client\cfgPoliceVests.hpp"
 	#include "\kif_client\cfgPoliceCaps.hpp"
 	#include "\kif_client\cfgItemsWeapons.hpp"
+	#include "\kif_client\cfgItems.hpp"
 };

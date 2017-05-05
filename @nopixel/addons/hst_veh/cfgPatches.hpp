@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Test_car_F
+	class hst_veh
 	{
 		// List of units defined in this "PBO"
 		units[]= 

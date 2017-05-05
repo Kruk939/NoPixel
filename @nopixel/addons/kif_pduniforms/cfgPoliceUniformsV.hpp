@@ -154,39 +154,51 @@ class kifpd_rafwhite: B_Competitor_F
 		
 	};
 
-	class kifpd_aiad_chief: B_Competitor_F
+	class kifpd_aiad_dep_div_chief: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
 		scope = 2;
 		nakedUniform = "U_BasicBody";
-		uniformClass = "kifpd_uni_aiad_chief";
+		uniformClass = "kifpd_uni_aiad_dep_div_chief";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\aiad\depdivision.paa"};
-		displayName = "Police Uniform AIAD Division Chief";
-		
-	};
-
-	class kifpd_aiad_depchief: B_Competitor_F
-	{
-		_generalMacro = "B_Competitor_F";
-		scope = 2;
-		nakedUniform = "U_BasicBody";
-		uniformClass = "kifpd_uni_aiad_depchief";
-		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\aiad\deputy.paa"};
+		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\aiad\aiad_dep_div_chief.paa"};
 		displayName = "Police Uniform AIAD Deputy Division Chief";
 		
 	};
 
-
-	class kifpd_aiad_inspector: B_Competitor_F
+	class kifpd_aiad_div_chief_goc: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
 		scope = 2;
 		nakedUniform = "U_BasicBody";
-		uniformClass = "kifpd_uni_aiad_inspector";
+		uniformClass = "kifpd_uni_aiad_div_chief_goc";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\aiad\inspector.paa"};
-		displayName = "Police Uniform AIAD Inspector";
+		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\aiad\aiad_div_chief_goc.paa"};
+		displayName = "Police Uniform AIAD Division Chief J. Goc";
+		
+	};
+
+
+	class kifpd_aiad_insepctor_sgt: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "kifpd_uni_aiad_insepctor_sgt";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\aiad\aiad_insepctor_sgt.paa"};
+		displayName = "Police Uniform AIAD Inspector Sergeant";
+		
+	};
+
+	class kifpd_aiad_inspector_po4: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "kifpd_uni_aiad_inspector_po4";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"kif_pduniforms\Data\clothing\aiad\aiad_inspector_po4.paa"};
+		displayName = "Police Uniform AIAD Inspector PO IV";
 		
 	};

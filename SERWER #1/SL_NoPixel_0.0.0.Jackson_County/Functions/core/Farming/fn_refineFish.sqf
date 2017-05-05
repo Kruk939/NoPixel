@@ -38,6 +38,7 @@ _n = 0;
 		sleep 0.25;
 		if(dialog) then { closedialog 0; };
 		["Sukces","Twoje ryby są filetowane, poczekaj chwilę!",[0,255,0,1],""] call Client_fnc_showNotification;
+		["Processed"] spawn mav_ttm_fnc_addExp;
 		//hint "Your fish is being filleted, stay still!";
 	};
 
@@ -84,5 +85,3 @@ if(typeof (vehicle player) IN _farmingVehicles && driver (vehicle player) == pla
 	};
 
 };
-
-["Processed"] spawn mav_ttm_fnc_addExp;
