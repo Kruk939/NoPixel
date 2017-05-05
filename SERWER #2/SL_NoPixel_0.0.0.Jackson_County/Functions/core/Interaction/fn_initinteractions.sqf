@@ -1016,6 +1016,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		[" (myjob == ""Cop""", "cursorTarget isKindOf ""Car"""],
+		["Sprawdź rejestrację", "[] spawn client_fnc_opengaragepolice;",3]
+	],
+
+	[
 		["myjob == ""Repairman"""],
 		["Napraw obiekt", "[""Naprawiam obiekt"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],

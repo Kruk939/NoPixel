@@ -121,6 +121,10 @@ if (_vehicle isKindOf "Car") then {
 		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
 	};
 
+	if (str _className find "red_" > -1) then {
+		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
+	};
+
 	if (str _className find "onzie_" > -1 || str _className find "adm_" > -1  || str _className find "ADM_" > -1 ) then {
 		[_vehicle, [_carColor,_carFinish]] call client_fnc_initVehicle;
 		[_vehicle, _numberPlate, "jonzie"] remoteexec ["client_fnc_numberPlate",2];
@@ -142,7 +146,7 @@ _vehicle setDamage _damage;
 };
 
 [_vehicle] call client_fnc_spawnvehicle;
-_vehicle allowdamage true;
+//_vehicle allowdamage true;
 Current_Cars pushBack _vehicle;
 //[1,_vehicle,_vehicle,_numberPlate,player] remoteExec ["server_fnc_fuelVehicle", 2];
 

@@ -7,13 +7,18 @@ if(isNil "Attachedcar") then {
 };
 attachedcar = true;
 
-_vehicle attachTo [player, [0, 2.5, 3.5]]; 
+if(_vehicle iskindof "CAR") then {
+	_vehicle attachTo [player, [0, 2.5, 3.5]]; 
+};
 if(_vehicle iskindof "SHIP") then {
 	_vehicle attachTo [player, [0, 4.5, 5.5]]; 
 };
 if(_vehicle iskindof "AIR") then {
 	_vehicle attachTo [player, [0, 4.5, 5.5]]; 
 };
+
+attachedCarArray = [];
+attachedCarArray pushback _vehicle;
 
 _vehicle setdir 90;
 

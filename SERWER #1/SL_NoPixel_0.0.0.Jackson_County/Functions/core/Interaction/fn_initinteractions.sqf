@@ -17,6 +17,26 @@ NoPixel_InteractionButtons = [
 	16183, 16193, 16203, 16213, 16223, 16233, 16243, 16253, 16263
 ];
 
+np_red_cars = [
+	"red_beetle_66_black",
+	"red_cvpi_06_black",
+	"red_f350_08_black",
+	"red_towtruck_08_black",
+	"red_taurus_10_black",
+	"red_panamera_10_black",
+	"red_camaro_12_black",
+	"red_charger_12_black",
+	"red_xkrs_12_black",
+	"red_s65_12_black",
+	"red_porsche_12_black",
+	"red_vanquish_13_black",
+	"red_gs350_13_black",
+	"red_corvette_14_black",
+	"red_suburban_15_black",
+	"red_charger_15_black",
+	"red_explorer_16_black"
+];
+
 NoPixel_InteractionMenuItems = [
 
 	[
@@ -1063,6 +1083,11 @@ NoPixel_InteractionMenuItems = [
 	[
 		["typeof CurrentCursorTarget == ""Land_Centrelink"""],
 		["Szukaj pracy", "[player] spawn client_fnc_startjob",4]
+	],
+
+	[
+		["myjob == ""Cop""", "cursorTarget isKindOf ""Car""", "(typeOf cursorTarget IN np_red_cars)"],
+		["Sprawdź rejestrację", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Tablica rejestracyjna"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
 	],
 
 	[

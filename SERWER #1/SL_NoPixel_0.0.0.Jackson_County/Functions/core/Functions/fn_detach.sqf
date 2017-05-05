@@ -7,5 +7,9 @@ _chairs = ["big_chair_civ","sofagris_civ","sillamedico2_civ","sillademedico_civ"
 
 if(attachedcar) then {
 	attachedcar = false;
+	{
+		_x allowdamage true;
+		_pia = attachedCarArray find _x;
+    	attachedCarArray deleteAt _pia;
+	}forEach attachedCarArray;
 };
-
