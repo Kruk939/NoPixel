@@ -105,10 +105,7 @@ if (getplayerUID player IN ["76561198041834190"]) then { kif_admin=4; };
 if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif_admin=5; };
 /*
 	AIAD
-*/							//Pablo	   		//Donald
-if (getplayerUID player IN ["76561198185455243","76561198023332238"]) then { client_aiad_actions=1; };
-							//Kenju			//Galaretka			//raf				//kifkick
-if (getplayerUID player IN ["76561198019277102","76561198013128581","76561197982469013","76561198201987250","76561198015862132"]) then { client_aiad_actions=2; };
+*/
 							//knox	   		    //easy	   			//katekarin	   		//wazka
 if (getplayerUID player IN ["76561198030912509","76561198161472762","76561198041834190","76561198039045183"]) then { client_aiad_actions=1; };
                             //raf				//kifkick			//miathur			//kruk

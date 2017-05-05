@@ -2,19 +2,16 @@ client_fnc_towvehicle = {
     _myVeh = vehicle player;
     _car = (nearestObjects [_myVeh, ["Car","Truck"], 8]) select 1; 
 	if (vehicle player == player) exitWith {hint "You have to be in your vehicle!"};
-	if (isNil "_car") exitWith {hint"No vehicle found!";};
-	//if ({alive _x} count crew _car > 0)exitWith {hint "That vehicle is not empty!";};
+	 if (isNil "_car") exitWith {hint"No vehicle found!";};
+	 if ({alive _x} count crew _car > 0)exitWith {hint "That vehicle is not empty!";};
 	if (speed _myVeh > 1) exitWith {hint "You must be idle."};
 	vehicle player allowDamage false;
 	_memes = 0;
 	if (typeOf _car == "C_Quadbike_01_F") then {_car attachTo [(vehicle player), [0,-2,2] ]; _memes = 1;  };
-	if (typeOf _car == "red_kawasaki_10_p") then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
-	if (typeOf _car == "red_kawasaki_10_p_ems") then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
-	if (typeOf _car == "A3L_Stretcher_F") then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
-	if (typeOf _car == "Mrshounka_ducati_police_p") then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
-	if (typeOf _car == "C_Scooter_Transport_01_F) then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
+	if (typeOf _car == "red_kawasaki_10_p_p_sheriff") then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
+	if (typeOf _car == "red_kawasaki_10_p_p_trooper") then {_car attachTo [(vehicle player), [0,-2.1,0.5] ]; _memes = 1;  };
 	
-	if (_memes == 0) exitWith {hint "This vehicle is not an ATV/Motorcycle/Stretcher!"};
+	if (_memes == 0) exitWith {hint "This vehicle is not an ATV/Motorcycle!"};
 	 
 	 _myVeh setVariable ["Tow", _car, true]; //set variable.... stop people dropping when they not towing etc.
 	 sleep 1;
