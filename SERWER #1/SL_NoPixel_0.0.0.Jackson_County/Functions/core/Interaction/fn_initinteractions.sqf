@@ -66,8 +66,8 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["  "],
-		["Daj klucze", " [] spawn client_fnc_findplayerskeys; ",5]
+		[" alive cursorTarget && cursorTarget isKindOf ""Man"" "],
+		["Daj klucze", " [current_cars] remoteExec [""client_fnc_givekeys"",currentcursortarget]; ",5]
 	],
 
 	[
@@ -1107,4 +1107,3 @@ NoPixel_InteractionMenuItems = [
 ];
 
 player setVariable["loaded", 2, false];
-
