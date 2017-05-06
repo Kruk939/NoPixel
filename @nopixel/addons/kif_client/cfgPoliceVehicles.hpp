@@ -502,43 +502,6 @@ class red_explorer_16_p_fto;
 class ivory_m3_unmarked;
 */
 
-class red_charger_15_base;
-class sl_dorian_charger_15: red_charger_15_base
-{
-	scope=2;
-	displayName="Dodge Charger Dorian";
-	crew="C_man_1";
-	side=3;
-	faction="CIV_F";
-        hiddenSelectionsTextures[] = {"\sl_client\tex\vehicles\Dodge_Charger_15\dorian.paa"};
-	#include "\sl_client\handling\physx_fast.hpp"
-	#include "\sl_client\lights\red_spotlight_lights.hpp"
-};
-class sl_fpiu_so;
-class sl_222: sl_fpiu_so
-{
-	scope=2;
-	displayName="222 Sheriff FTO FPIU";
-	crew="C_man_1";
-	side=3;
-	faction="CIV_F";
-        hiddenSelectionsTextures[] = {"\sl_client\tex\vehicles\Explorer\222.paa"};
-	#include "\sl_client\handling\physx_fast.hpp"
-	#include "\sl_client\lights\red_spotlight_lights.hpp"
-	#include "\sl_client\data\weapons_sheriff_vehicle.hpp"
-};
-class sl_055: sl_fpiu_so
-{
-	scope=2;
-	displayName="055 Police FTO FPIU";
-	crew="C_man_1";
-	side=3;
-	faction="CIV_F";
-        hiddenSelectionsTextures[] = {"\sl_client\tex\vehicles\Explorer\055.paa"};
-	#include "\sl_client\handling\physx_fast.hpp"
-	#include "\sl_client\lights\red_spotlight_lights.hpp"
-	#include "\sl_client\data\weapons_sheriff_vehicle.hpp"
-};
 
 class C_Boat_Civil_01_police_F;
 class Eventhandlers;
