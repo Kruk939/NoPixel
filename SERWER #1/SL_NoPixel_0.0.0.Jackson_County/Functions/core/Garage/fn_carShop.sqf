@@ -76,18 +76,18 @@ _civilianVehicle = [
 	["red_cvpi_06_black",25000],
 	["red_f350_08_black",120000],
 	["red_towtruck_08_black",45000],
-	["red_taurus_10_black",90000],
-	["red_panamera_10_black",350000],
-	["red_camaro_12_black",250000],
-	["red_charger_12_black",300000],
-	["red_xkrs_12_black",450000],
-	["red_s65_12_black",200000],
-	["red_porsche_12_black",400000],
-	["red_vanquish_13_black",600000],
-	["red_gs350_13_black",105000],
-	["red_corvette_14_black",800000],
-	["red_suburban_15_black",350000],
-	["red_charger_15_black",400000],
+	["sl_taurus_10_black",90000],
+	["sl_panamera_10_black",350000],
+	["sl_camaro_12_black",250000],
+	["sl_charger_12_black",300000],
+	["sl_xkrs_12_black",450000],
+	["sl_s65_12_black",200000],
+	["sl_porsche_12_black",400000],
+	["sl_vanquish_13_black",600000],
+	["sl_gs350_13_black",105000],
+	["sl_corvette_14_black",800000],
+	["sl_suburban_15_black",350000],
+	["sl_charger_15_black",400000],
 	["red_explorer_16_black",250000],
 	["C_Quadbike_01_F",5000],
 	["C_SUV_01_F",25000]
@@ -124,7 +124,7 @@ if(_doughnuts > 2) then {
 		["vvv_DOD_RamSRT_civ", 25000],
 		["vvv_dumper", 50000],
 		["Jonzie_Forklift", 25000],
-		["red_genesis_16_black",150000]
+		["sl_genesis_16_black",150000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
 };
@@ -132,7 +132,7 @@ if(_doughnuts > 3) then {
 	_ret = [
 		["vvv_formula1", 100000],
 		["C_Offroad_02_unarmed_F", 50000],
-		["red_venomgt_11_black",400000]
+		["sl_venomgt_11_black",400000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
 };
