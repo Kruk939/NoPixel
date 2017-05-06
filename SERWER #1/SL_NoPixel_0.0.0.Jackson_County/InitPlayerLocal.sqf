@@ -53,6 +53,16 @@ player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened
 player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
 //player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
 
+[ missionNamespace, "arsenalOpened", {
+    disableSerialization;
+    _display = _this select 0;
+    {
+        ( _display displayCtrl _x ) ctrlSetText "Disabled";
+        ( _display displayCtrl _x ) ctrlSetTextColor [ 1, 0, 0, 0.5 ];
+        ( _display displayCtrl _x ) ctrlRemoveAllEventHandlers "buttonclick";
+    }forEach [ 44146, 44147 ];
+} ] call BIS_fnc_addScriptedEventHandler;
+
 [Client_fnc_HudEffects, 3] execFSM "call.fsm";
 [Client_fnc_Survival, 300] execFSM "call.fsm";
 
