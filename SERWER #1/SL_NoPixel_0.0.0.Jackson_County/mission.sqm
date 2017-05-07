@@ -37,7 +37,7 @@ addons[]=
 	"Project_WetPaint_Objects",
 	"task_force_radio_items",
 	"Mattaust_Objects",
-	"kif_client"
+	"sl_client"
 };
 class AddonsMetaData
 {
