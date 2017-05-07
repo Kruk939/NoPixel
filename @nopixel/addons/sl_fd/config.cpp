@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class kif_fd
+	class sl_fd
 	{
 		units[] = {"B_Competitor_F"};
 		weapons[] = {};
@@ -14,7 +14,7 @@ class cfgFunctions
 	{
 		class Authors
 		{
-			file="\kif_fd";
+			file="\sl_fd";
 			class WeLikeAuthors
 			{
 				preinit=1;
@@ -25,7 +25,7 @@ class cfgFunctions
 class CfgVehicles
 {
 	class B_Competitor_F;
-	#include "\kif_fd\cfgFDUniformsV.hpp"
+	#include "\sl_fd\cfgFDUniformsV.hpp"
 
 };
 
@@ -40,7 +40,7 @@ class cfgWeapons
 	class VestItem;
 	class HeadgearItem;
 
-	#include "\kif_fd\cfgFDUniformsW.hpp"
-	#include "\kif_fd\cfgFDVests.hpp"
+	#include "\sl_fd\cfgFDUniformsW.hpp"
+	#include "\sl_fd\cfgFDVests.hpp"
 
 };

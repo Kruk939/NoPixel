@@ -1,8 +1,8 @@
-class kif_fd_chief: V_TacVest_blk_POLICE
+class sl_fd_chief: V_TacVest_blk_POLICE
 	{
 		scope=2;
 		displayName="SilverLake F.D. Chief Vest";
-		picture = "\kif_fd\Data\ui\sl_logo.paa";
+		picture = "\sl_fd\Data\ui\sl_logo.paa";
 		model="A3\Characters_F\Common\equip_tacticalvest";
 		hiddenSelections[]=
 		{
@@ -10,7 +10,7 @@ class kif_fd_chief: V_TacVest_blk_POLICE
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\kif_fd\Data\clothing\fd\vest\chief_fd.paa"
+			"\sl_fd\Data\clothing\fd\vest\chief_fd.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -24,24 +24,24 @@ class kif_fd_chief: V_TacVest_blk_POLICE
 			mass=100;
 		};
 	};
-class kif_fd_probie: kif_fd_chief{
+class sl_fd_probie: sl_fd_chief{
     displayName="SilverLake Probie Vest";
     hiddenSelectionsTextures[]=
 		{
-			"\kif_fd\Data\clothing\fd\vest\probie.paa"
+			"\sl_fd\Data\clothing\fd\vest\probie.paa"
 		};
 };
-class kif_fd_fd: kif_fd_chief{
+class sl_fd_fd: sl_fd_chief{
     displayName="SilverLake F.D. Vest";
     hiddenSelectionsTextures[]=
 		{
-			"\kif_fd\Data\clothing\fd\vest\fd.paa"
+			"\sl_fd\Data\clothing\fd\vest\fd.paa"
 		};
 };
-class kif_fd_divchief: kif_fd_chief{
+class sl_fd_divchief: sl_fd_chief{
     displayName="SilverLake F.D. Divison Chief";
     hiddenSelectionsTextures[]=
 		{
-			"\kif_fd\Data\clothing\fd\vest\div_chief.paa"
+			"\sl_fd\Data\clothing\fd\vest\div_chief.paa"
 		};
 };

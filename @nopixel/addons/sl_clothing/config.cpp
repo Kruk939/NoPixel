@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class kif_pduniforms
+	class sl_pduniforms
 	{
 		units[] = {"B_Competitor_F"};
 		weapons[] = {};
@@ -14,7 +14,7 @@ class cfgFunctions
 	{
 		class Authors
 		{
-			file="\kif_clothing";
+			file="\sl_clothing";
 			class WeLikeAuthors
 			{
 				preinit=1;
@@ -26,6 +26,6 @@ class cfgFunctions
 class cfgWeapons
 {
     class B_Bergen_sgg;
-    #include "\kif_clothing\cfgBackpacks.hpp"
+    #include "\sl_clothing\cfgBackpacks.hpp"
 
 };

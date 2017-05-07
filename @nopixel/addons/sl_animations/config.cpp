@@ -1,7 +1,7 @@
 #include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
-	class kif_animations
+	class sl_animations
 	{
 		units[]={};
 		weapons[]={};
@@ -20,7 +20,7 @@ class cfgFunctions
 	{
 		class Authors
 		{
-			file="\kif_animations";
+			file="\sl_animations";
 			class WeLikeAuthors
 			{
 				preinit=1;
@@ -359,7 +359,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class ActsPsitMstpSnonWunaDnon_sceneNikitinDisloyalty_Cooper: CutSceneAnimationBase
 		{
 			speed=0.00771;
-			file="\kif_animations\ip_a2c\anims\ActsPsitMstpSnonWunaDnon_sceneNikitinDisloyalty_Cooper";
+			file="\sl_animations\ip_a2c\anims\ActsPsitMstpSnonWunaDnon_sceneNikitinDisloyalty_Cooper";
 			looped=0;
 			actions="RifleLowStandActions";
 			disableWeapons=1;
@@ -377,7 +377,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMstpSnonWnonDnon_exerciseKata: CutSceneAnimationBase
 		{
-			file="\kif_animations\ip_a2c\anims\AmovPercMstpSnonWnonDnon_exerciseKata.rtm";
+			file="\sl_animations\ip_a2c\anims\AmovPercMstpSnonWnonDnon_exerciseKata.rtm";
 			speed=0.029999999;
 			canPullTrigger=0;
 			ConnectTo[]=
@@ -395,7 +395,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class ActsPknlMstpSnonWnonDnon_TreatingInjured_NikitinDead: CutSceneAnimationBase
 		{
-			file="\kif_animations\ip_a2c\anims\ActsPknlMstpSnonWnonDnon_TreatingInjured.rtm";
+			file="\sl_animations\ip_a2c\anims\ActsPknlMstpSnonWnonDnon_TreatingInjured.rtm";
 			speed=0.025;
 			enableBinocular=0;
 			canPullTrigger=0;
@@ -412,7 +412,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AdthPercMstpSrasWrflDnon_NikitinDead2: ActsPknlMstpSnonWnonDnon_TreatingInjured_NikitinDead
 		{
-			file="\kif_animations\ip_a2c\anims\AdthPercMstpSrasWrflDnon_NikitinDead.rtm";
+			file="\sl_animations\ip_a2c\anims\AdthPercMstpSrasWrflDnon_NikitinDead.rtm";
 			speed=1.05;
 			looped=0;
 			terminal=0;
@@ -421,7 +421,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_ArrestedIn: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\arrest\anims\ArrestedIn.rtm";
+			file="\sl_animations\arrest\anims\ArrestedIn.rtm";
 			speed=-3;
 			looped=0;
 			soundEnabled=0;
@@ -443,7 +443,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_ArrestedLoop: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\arrest\anims\ArrestedLoop.rtm";
+			file="\sl_animations\arrest\anims\ArrestedLoop.rtm";
 			speed=1e+010;
 			looped=0;
 			duty=0;
@@ -467,7 +467,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_ArrestedOut: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\arrest\anims\ArrestedOut.rtm";
+			file="\sl_animations\arrest\anims\ArrestedOut.rtm";
 			speed=-3;
 			looped=0;
 			duty=0;
@@ -489,7 +489,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_ArrestedProne: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\arrest\anims\ArrestedProne.rtm";
+			file="\sl_animations\arrest\anims\ArrestedProne.rtm";
 			speed=1e+010;
 			looped=0;
 			duty=0;
@@ -511,7 +511,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_ArrestedSit: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\arrest\anims\ArrestedSit.rtm";
+			file="\sl_animations\arrest\anims\ArrestedSit.rtm";
 			speed=1e+010;
 			looped=0;
 			duty=0;
@@ -536,7 +536,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-15;
-			file="\kif_animations\bank\anim\codecrackerATM.rtm";
+			file="\sl_animations\bank\anim\codecrackerATM.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -569,7 +569,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-2.3;
-			file="\kif_animations\bank\anim\drill_short.rtm";
+			file="\sl_animations\bank\anim\drill_short.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -602,7 +602,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-14;
-			file="\kif_animations\bank\anim\managerdoorlockpick.rtm";
+			file="\sl_animations\bank\anim\managerdoorlockpick.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -635,7 +635,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-4;
-			file="\kif_animations\beartrap\anims\beartrap1.rtm";
+			file="\sl_animations\beartrap\anims\beartrap1.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -663,7 +663,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-20;
-			file="\kif_animations\beartrap\anims\beartrap2.rtm";
+			file="\sl_animations\beartrap\anims\beartrap2.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -691,7 +691,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-6;
-			file="\kif_animations\consumables\anims\drinking.rtm";
+			file="\sl_animations\consumables\anims\drinking.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -724,7 +724,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-11;
-			file="\kif_animations\consumables\anims\eating.rtm";
+			file="\sl_animations\consumables\anims\eating.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -755,7 +755,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-15;
-			file="\kif_animations\CopActions\anims\halt.rtm";
+			file="\sl_animations\CopActions\anims\halt.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -788,7 +788,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-75.699997;
-			file="\kif_animations\dance\anims\nightclubdance.rtm";
+			file="\sl_animations\dance\anims\nightclubdance.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -826,7 +826,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-42.799999;
-			file="\kif_animations\dance\anims\dubstepdance.rtm";
+			file="\sl_animations\dance\anims\dubstepdance.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -864,7 +864,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-73.699997;
-			file="\kif_animations\dance\anims\crazydrunkdance.rtm";
+			file="\sl_animations\dance\anims\crazydrunkdance.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -902,7 +902,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-26.799999;
-			file="\kif_animations\dance\anims\dubstepPop.rtm";
+			file="\sl_animations\dance\anims\dubstepPop.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -940,7 +940,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-39.299999;
-			file="\kif_animations\dance\anims\DuoIvan.rtm";
+			file="\sl_animations\dance\anims\DuoIvan.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -978,7 +978,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-39.299999;
-			file="\kif_animations\dance\anims\DuoStephan.rtm";
+			file="\sl_animations\dance\anims\DuoStephan.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1016,7 +1016,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-76;
-			file="\kif_animations\dance\anims\hiphopdance.rtm";
+			file="\sl_animations\dance\anims\hiphopdance.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1054,7 +1054,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-134;
-			file="\kif_animations\dance\anims\robotdance.rtm";
+			file="\sl_animations\dance\anims\robotdance.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1092,7 +1092,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-32.299999;
-			file="\kif_animations\dance\anims\russiandance.rtm";
+			file="\sl_animations\dance\anims\russiandance.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1130,7 +1130,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-96.300003;
-			file="\kif_animations\dance\anims\Stephan.rtm";
+			file="\sl_animations\dance\anims\Stephan.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1168,7 +1168,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-7.5999999;
-			file="\kif_animations\electric_chair\anims\electric_chairing.rtm";
+			file="\sl_animations\electric_chair\anims\electric_chairing.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1196,7 +1196,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_FastRoping_animation: Crew
 		{
-			file="\kif_animations\fastrope\FastRoping_animation.rtm";
+			file="\sl_animations\fastrope\FastRoping_animation.rtm";
 			interpolateTo[]=
 			{
 				"Unconscious",
@@ -1208,7 +1208,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.55000001;
-			file="\kif_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
 			looped=0;
 			soundEnabled=0;
 			canBlendStep=0;
@@ -1233,7 +1233,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.55000001;
-			file="\kif_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
 			looped=0;
 			soundEnabled=0;
 			ConnectFrom[]=
@@ -1257,7 +1257,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.55000001;
-			file="\kif_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
 			looped=0;
 			soundEnabled=0;
 			ConnectFrom[]=
@@ -1281,7 +1281,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.55000001;
-			file="\kif_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
 			looped=0;
 			soundEnabled=0;
 			ConnectFrom[]=
@@ -1305,7 +1305,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.55000001;
-			file="\kif_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
 			looped=0;
 			soundEnabled=0;
 			ConnectFrom[]=
@@ -1329,7 +1329,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.55000001;
-			file="\kif_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_GatheringIn.rtm";
 			looped=0;
 			soundEnabled=0;
 			ConnectFrom[]=
@@ -1353,7 +1353,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.20999999;
-			file="\kif_animations\gathering\anims\CL3_anim_Gathering1.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_Gathering1.rtm";
 			looped=0;
 			soundEnabled=0;
 			canBlendStep=0;
@@ -1373,7 +1373,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.17;
-			file="\kif_animations\gathering\anims\CL3_anim_Gathering2.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_Gathering2.rtm";
 			looped=0;
 			soundEnabled=0;
 			canBlendStep=0;
@@ -1393,7 +1393,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.14;
-			file="\kif_animations\gathering\anims\CL3_anim_Gathering3.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_Gathering3.rtm";
 			looped=0;
 			soundEnabled=0;
 			canBlendStep=0;
@@ -1413,7 +1413,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.090000004;
-			file="\kif_animations\gathering\anims\CL3_anim_Gathering4.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_Gathering4.rtm";
 			looped=0;
 			soundEnabled=0;
 			canBlendStep=0;
@@ -1434,7 +1434,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			forceAim=1;
 			speed=0.17;
 			canBlendStep=0;
-			file="\kif_animations\gathering\anims\CL3_anim_Gathering5.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_Gathering5.rtm";
 			looped=0;
 			soundEnabled=0;
 			ConnectTo[]=
@@ -1454,7 +1454,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			speed=0.15000001;
 			canBlendStep=0;
 			forceAim=1;
-			file="\kif_animations\gathering\anims\CL3_anim_Gathering6.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_Gathering6.rtm";
 			looped=0;
 			soundEnabled=0;
 			ConnectTo[]=
@@ -1471,7 +1471,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			canBlendStep=0;
 			minPlayTime=1;
 			speed=0.55000001;
-			file="\kif_animations\gathering\anims\CL3_anim_GatheringOut.rtm";
+			file="\sl_animations\gathering\anims\CL3_anim_GatheringOut.rtm";
 			looped=0;
 			soundEnabled=0;
 			InterpolateTo[]=
@@ -1487,7 +1487,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-14;
-			file="\kif_animations\getmug\anims\cl3_anim_getmug.rtm";
+			file="\sl_animations\getmug\anims\cl3_anim_getmug.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1518,7 +1518,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-13;
-			file="\kif_animations\halt\anims\cl3_anims_halt.rtm";
+			file="\sl_animations\halt\anims\cl3_anims_halt.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1546,7 +1546,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_HandsUp: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\HandsUp\anims\HandsUp.rtm";
+			file="\sl_animations\HandsUp\anims\HandsUp.rtm";
 			speed=0.64999998;
 			looped=0;
 			soundEnabled=0;
@@ -1568,7 +1568,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_HandsLoop: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\HandsUp\anims\HandsLoop.rtm";
+			file="\sl_animations\HandsUp\anims\HandsLoop.rtm";
 			speed=1e+010;
 			looped=0;
 			soundEnabled=0;
@@ -1592,7 +1592,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_HandsDown: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\HandsUp\anims\HandsDown.rtm";
+			file="\sl_animations\HandsUp\anims\HandsDown.rtm";
 			speed=0.69999999;
 			looped=0;
 			duty=0;
@@ -1617,7 +1617,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-14.602;
-			file="\kif_animations\Jail\anims\pron_grinder.rtm";
+			file="\sl_animations\Jail\anims\pron_grinder.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1648,7 +1648,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-7.5999999;
-			file="\kif_animations\Lockpicking\anims\lockpicking.rtm";
+			file="\sl_animations\Lockpicking\anims\lockpicking.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1679,7 +1679,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-15;
-			file="\kif_animations\mastlun\anims\CL3_anim_lunatic.rtm";
+			file="\sl_animations\mastlun\anims\CL3_anim_lunatic.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1710,7 +1710,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-13.7;
-			file="\kif_animations\menu_gestures\anims\bouncer.rtm";
+			file="\sl_animations\menu_gestures\anims\bouncer.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1748,7 +1748,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-15.8;
-			file="\kif_animations\menu_gestures\anims\bow_pray.rtm";
+			file="\sl_animations\menu_gestures\anims\bow_pray.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1786,7 +1786,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-10.7;
-			file="\kif_animations\menu_gestures\anims\clapping.rtm";
+			file="\sl_animations\menu_gestures\anims\clapping.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1824,7 +1824,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-7;
-			file="\kif_animations\menu_gestures\anims\hand_stand.rtm";
+			file="\sl_animations\menu_gestures\anims\hand_stand.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1862,7 +1862,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-10.3;
-			file="\kif_animations\menu_gestures\anims\muscle.rtm";
+			file="\sl_animations\menu_gestures\anims\muscle.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1900,7 +1900,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-10;
-			file="\kif_animations\menu_gestures\anims\pushups.rtm";
+			file="\sl_animations\menu_gestures\anims\pushups.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1938,7 +1938,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-13;
-			file="\kif_animations\menu_gestures\anims\violin.rtm";
+			file="\sl_animations\menu_gestures\anims\violin.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -1976,7 +1976,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-7.3000002;
-			file="\kif_animations\menu_gestures\anims\wank.rtm";
+			file="\sl_animations\menu_gestures\anims\wank.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -2014,7 +2014,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-20.299999;
-			file="\kif_animations\menu_gestures\anims\yoyo.rtm";
+			file="\sl_animations\menu_gestures\anims\yoyo.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -2052,7 +2052,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-7;
-			file="\kif_animations\mugpis\anims\CL3_anim_mugpis.rtm";
+			file="\sl_animations\mugpis\anims\CL3_anim_mugpis.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -2083,7 +2083,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-9;
-			file="\kif_animations\mugrif\anims\CL3_anim_mugrif.rtm";
+			file="\sl_animations\mugrif\anims\CL3_anim_mugrif.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -2111,7 +2111,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Portaloo: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\naturescall\anims\Portaloo.rtm";
+			file="\sl_animations\naturescall\anims\Portaloo.rtm";
 			speed=-30;
 			looped=0;
 			soundEnabled=0;
@@ -2137,7 +2137,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Poo: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\naturescall\anims\shittingout.rtm";
+			file="\sl_animations\naturescall\anims\shittingout.rtm";
 			speed=-30;
 			looped=0;
 			duty=0;
@@ -2163,7 +2163,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Pee: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\naturescall\anims\pissing.rtm";
+			file="\sl_animations\naturescall\anims\pissing.rtm";
 			speed=-10;
 			looped=0;
 			duty=0;
@@ -2189,7 +2189,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Wank: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\naturescall\anims\wanking.rtm";
+			file="\sl_animations\naturescall\anims\wanking.rtm";
 			speed=-6;
 			looped=0;
 			duty=0;
@@ -2218,7 +2218,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=0.188757;
-			file="\kif_animations\pliers\anims\pliers.rtm";
+			file="\sl_animations\pliers\anims\pliers.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -2259,7 +2259,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			};
 			variantAfter[]={1,5,10};
 			speed=0.55000001;
-			file="\kif_animations\punch\anims\Punch1.rtm";
+			file="\sl_animations\punch\anims\Punch1.rtm";
 			looped=0;
 			soundEnabled=0;
 			disableWeapons=0;
@@ -2284,7 +2284,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Punch1: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Punch1.rtm";
+			file="\sl_animations\punch\anims\Punch1.rtm";
 			speed=0.55000001;
 			looped=0;
 			soundEnabled=0;
@@ -2305,7 +2305,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Punch2: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Punch2.rtm";
+			file="\sl_animations\punch\anims\Punch2.rtm";
 			speed=0.55000001;
 			looped=0;
 			soundEnabled=0;
@@ -2326,7 +2326,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Punch3: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Punch3.rtm";
+			file="\sl_animations\punch\anims\Punch3.rtm";
 			speed=0.55000001;
 			looped=0;
 			soundEnabled=0;
@@ -2347,7 +2347,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Punch4: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Punch4.rtm";
+			file="\sl_animations\punch\anims\Punch4.rtm";
 			speed=0.55000001;
 			looped=0;
 			soundEnabled=0;
@@ -2368,7 +2368,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Receive1a: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Receive1a.rtm";
+			file="\sl_animations\punch\anims\Receive1a.rtm";
 			speed=0.30000001;
 			looped=0;
 			soundEnabled=0;
@@ -2389,7 +2389,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Receive1b: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Receive1b.rtm";
+			file="\sl_animations\punch\anims\Receive1b.rtm";
 			speed=0.30000001;
 			looped=0;
 			soundEnabled=0;
@@ -2410,7 +2410,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Receive2a: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Receive2a.rtm";
+			file="\sl_animations\punch\anims\Receive2a.rtm";
 			speed=0.30000001;
 			looped=0;
 			soundEnabled=0;
@@ -2431,7 +2431,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Receive2b: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Receive2b.rtm";
+			file="\sl_animations\punch\anims\Receive2b.rtm";
 			speed=0.30000001;
 			looped=0;
 			soundEnabled=0;
@@ -2452,7 +2452,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Receive3a: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Receive3a.rtm";
+			file="\sl_animations\punch\anims\Receive3a.rtm";
 			speed=0.44999999;
 			looped=0;
 			soundEnabled=0;
@@ -2473,7 +2473,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Receive3b: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Receive3b.rtm";
+			file="\sl_animations\punch\anims\Receive3b.rtm";
 			speed=0.30000001;
 			looped=0;
 			soundEnabled=0;
@@ -2494,7 +2494,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Receive3c: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Receive3c.rtm";
+			file="\sl_animations\punch\anims\Receive3c.rtm";
 			speed=0.30000001;
 			looped=0;
 			soundEnabled=0;
@@ -2515,7 +2515,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Receive4: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\Receive4.rtm";
+			file="\sl_animations\punch\anims\Receive4.rtm";
 			speed=0.30000001;
 			looped=0;
 			soundEnabled=0;
@@ -2536,7 +2536,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Knockout1In: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\KnockOut1In.rtm";
+			file="\sl_animations\punch\anims\KnockOut1In.rtm";
 			speed=0.27000001;
 			looped=0;
 			soundEnabled=0;
@@ -2553,7 +2553,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Knockout1End: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\KnockOut1End.rtm";
+			file="\sl_animations\punch\anims\KnockOut1End.rtm";
 			speed=0.27000001;
 			looped=0;
 			soundEnabled=0;
@@ -2574,7 +2574,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Knockout2In: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\KnockOut2In.rtm";
+			file="\sl_animations\punch\anims\KnockOut2In.rtm";
 			speed=0.30000001;
 			looped=0;
 			soundEnabled=0;
@@ -2591,7 +2591,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Knockout2End: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\KnockOut2End.rtm";
+			file="\sl_animations\punch\anims\KnockOut2End.rtm";
 			speed=0.25;
 			looped=0;
 			soundEnabled=0;
@@ -2612,7 +2612,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_WeaponHit: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\punch\anims\WeaponHit.rtm";
+			file="\sl_animations\punch\anims\WeaponHit.rtm";
 			speed=0.25;
 			looped=0;
 			soundEnabled=0;
@@ -2634,7 +2634,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-0.69999999;
-			file="\kif_animations\push\anims\push.rtm";
+			file="\sl_animations\push\anims\push.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -2665,7 +2665,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-27;
-			file="\kif_animations\repair\anims\CL3_anim_RepairCrouch.rtm";
+			file="\sl_animations\repair\anims\CL3_anim_RepairCrouch.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -2693,7 +2693,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class cl3_smoke_cig_anim: CutSceneAnimationBase
 		{
-			file="\\kif_animations\smoke\smoke.rtm";
+			file="\\sl_animations\smoke\smoke.rtm";
 			speed=0.188757;
 			boundingSphere=4;
 			collisionShape="A3\anims_f\Data\Geom\Sdr\geom_empty.p3d";
@@ -2702,7 +2702,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_surrenderstart: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\surrender\anims\surrenderstart.rtm";
+			file="\sl_animations\surrender\anims\surrenderstart.rtm";
 			speed=-3;
 			looped=0;
 			soundEnabled=0;
@@ -2724,7 +2724,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_surrenderLoop: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\surrender\anims\surrenderloop.rtm";
+			file="\sl_animations\surrender\anims\surrenderloop.rtm";
 			speed=1e+010;
 			looped=0;
 			soundEnabled=0;
@@ -2748,7 +2748,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_surrenderfinish: AinvPknlMstpSnonWnonDnon_medic
 		{
-			file="\kif_animations\surrender\anims\surrenderfinish.rtm";
+			file="\sl_animations\surrender\anims\surrenderfinish.rtm";
 			speed=-2;
 			looped=0;
 			duty=0;
@@ -2773,7 +2773,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			variantsPlayer[]={};
 			forceAim=1;
 			speed=-8;
-			file="\kif_animations\ticket\anims\CL3_anim_ticket.rtm";
+			file="\sl_animations\ticket\anims\CL3_anim_ticket.rtm";
 			looped=0;
 			minPlayTime=1;
 			disableWeapons=0;
@@ -2801,7 +2801,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class CL3_anim_Shovel: AidlPercMstpSrasWrflDnon_AI
 		{
-			file="\kif_animations\tools\anims\Shovel.rtm";
+			file="\sl_animations\tools\anims\Shovel.rtm";
 			speed=-6;
 			looped=0;
 			soundEnabled=0;
@@ -2877,79 +2877,79 @@ class CfgGesturesMale
 		};
 		class CRPTHSForward: CRPTHSBase
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_forward.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_forward.rtm";
 			speed=1;
 		};
 		class CRPTHSForwardStandLowered: CRPTHSForward
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_forward_stand_lowered.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_forward_stand_lowered.rtm";
 		};
 		class CRPTHSStop: CRPTHSForward
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_stop.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_stop.rtm";
 			speed=0.60000002;
 		};
 		class CRPTHSStopStandLowered: CRPTHSStop
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_stop_stand_lowered.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_stop_stand_lowered.rtm";
 		};
 		class CRPTHSCover: CRPTHSForward
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_cover.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_cover.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSCoverStandLowered: CRPTHSCover
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_cover_stand_lowered.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_cover_stand_lowered.rtm";
 		};
 		class CRPTHSRegroup: CRPTHSForward
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_regroup.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_regroup.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSRegroupStandLowered: CRPTHSRegroup
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_regroup_stand_lowered.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_regroup_stand_lowered.rtm";
 		};
 		class CRPTHSEngage: CRPTHSForward
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_engage.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_engage.rtm";
 			speed=0.89999998;
 		};
 		class CRPTHSEngageStandLowered: CRPTHSEngage
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_engage_stand_lowered.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_engage_stand_lowered.rtm";
 		};
 		class CRPTHSPoint: CRPTHSForward
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_point.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_point.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSPointStandLowered: CRPTHSPoint
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_point_stand_lowered.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_point_stand_lowered.rtm";
 		};
 		class CRPTHSHold: CRPTHSForward
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_hold.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_hold.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSHoldStandLowered: CRPTHSHold
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_hold_stand_lowered.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_hold_stand_lowered.rtm";
 		};
 		class CRPTHSWarning: CRPTHSForward
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_warning.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_warning.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSWarningStandLowered: CRPTHSWarning
 		{
-			file="\\kif_animations\hand_signals\anims\crp_ths_warning_stand_lowered.rtm";
+			file="\\sl_animations\hand_signals\anims\crp_ths_warning_stand_lowered.rtm";
 		};
 		class BP_Drink_Erc_x3_Gesture: Default
 		{
-			file="\\kif_animations\BP\anims\BP_Drink_Erc_x3_Gesture.rtm";
+			file="\\sl_animations\BP\anims\BP_Drink_Erc_x3_Gesture.rtm";
 			looped=0;
 			speed=0.1;
 			duty=0;
@@ -2973,7 +2973,7 @@ class CfgGesturesMale
 		};
 		class BP_Eat_Erc_x3_Gesture: Default
 		{
-			file="\\kif_animations\BP\anims\BP_Eat_Erc_x3_Gesture.rtm";
+			file="\\sl_animations\BP\anims\BP_Eat_Erc_x3_Gesture.rtm";
 			looped=0;
 			speed=0.1;
 			duty=0;
@@ -2997,7 +2997,7 @@ class CfgGesturesMale
 		};
 		class CL3_anim_placec4: Default
 		{
-			file="\\kif_animations\bank\anim\placec4.rtm";
+			file="\\sl_animations\bank\anim\placec4.rtm";
 			looped=0;
 			speed=-1;
 			mask="placeC4";
@@ -3006,21 +3006,21 @@ class CfgGesturesMale
 		};
 		class cl_fishingrod_cast: Default
 		{
-			file="\\kif_animations\fishingrod\anims\fishrodcast.rtm";
+			file="\\sl_animations\fishingrod\anims\fishrodcast.rtm";
 			looped=0;
 			speed=-1.3;
 			mask="FishingRodMask";
 		};
 		class cl_fishingrod_strike: Default
 		{
-			file="\\kif_animations\fishingrod\anims\fishrodstrike.rtm";
+			file="\\sl_animations\fishingrod\anims\fishrodstrike.rtm";
 			looped=0;
 			speed=-1;
 			mask="FishingRodMask";
 		};
 		class cl3_middle_finger: Default
 		{
-			file="\kif_animations\menu_gestures\anims\middle_finger.rtm";
+			file="\sl_animations\menu_gestures\anims\middle_finger.rtm";
 			looped=0;
 			speed=-2;
 			mask="suckIT";
@@ -3029,7 +3029,7 @@ class CfgGesturesMale
 		};
 		class cl3_suck_it: Default
 		{
-			file="\kif_animations\menu_gestures\anims\suck_it.rtm";
+			file="\sl_animations\menu_gestures\anims\suck_it.rtm";
 			looped=0;
 			speed=-8.5;
 			mask="suckIT";
@@ -3038,7 +3038,7 @@ class CfgGesturesMale
 		};
 		class cl3_thumbs_down: Default
 		{
-			file="\kif_animations\menu_gestures\anims\cl3_thumbs_down.rtm";
+			file="\sl_animations\menu_gestures\anims\cl3_thumbs_down.rtm";
 			looped=0;
 			speed=-4;
 			mask="suckIT";
@@ -3047,7 +3047,7 @@ class CfgGesturesMale
 		};
 		class cl3_thumbs_up: Default
 		{
-			file="\kif_animations\menu_gestures\anims\cl3_thumbs_up.rtm";
+			file="\sl_animations\menu_gestures\anims\cl3_thumbs_up.rtm";
 			looped=0;
 			speed=-4;
 			mask="suckIT";
@@ -3056,7 +3056,7 @@ class CfgGesturesMale
 		};
 		class cl3_wanker: Default
 		{
-			file="\kif_animations\menu_gestures\anims\wanker.rtm";
+			file="\sl_animations\menu_gestures\anims\wanker.rtm";
 			looped=0;
 			speed=-4;
 			mask="suckIT";
@@ -3065,7 +3065,7 @@ class CfgGesturesMale
 		};
 		class cl3_no_way: Default
 		{
-			file="\kif_animations\menu_gestures\anims\no_way.rtm";
+			file="\sl_animations\menu_gestures\anims\no_way.rtm";
 			looped=0;
 			speed=-2.5999999;
 			mask="suckIT";
@@ -3074,7 +3074,7 @@ class CfgGesturesMale
 		};
 		class cl3_yes: Default
 		{
-			file="\kif_animations\menu_gestures\anims\yes.rtm";
+			file="\sl_animations\menu_gestures\anims\yes.rtm";
 			looped=0;
 			speed=-2.5999999;
 			mask="suckIT";
@@ -3083,7 +3083,7 @@ class CfgGesturesMale
 		};
 		class cl3_that_way: Default
 		{
-			file="\kif_animations\menu_gestures\anims\that_way.rtm";
+			file="\sl_animations\menu_gestures\anims\that_way.rtm";
 			looped=0;
 			speed=-4.1999998;
 			mask="suckIT";
@@ -3092,7 +3092,7 @@ class CfgGesturesMale
 		};
 		class cl3_hitchhiking: Default
 		{
-			file="\kif_animations\menu_gestures\anims\hitchhiking.rtm";
+			file="\sl_animations\menu_gestures\anims\hitchhiking.rtm";
 			looped=0;
 			speed=-4.5;
 			mask="suckIT";
@@ -3101,7 +3101,7 @@ class CfgGesturesMale
 		};
 		class CL3_anim_Hammer: Default
 		{
-			file="\kif_animations\tools\anims\hammergather.rtm";
+			file="\sl_animations\tools\anims\hammergather.rtm";
 			looped=0;
 			speed=-6;
 			mask="handsWeapon";

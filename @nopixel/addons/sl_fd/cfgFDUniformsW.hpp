@@ -2,7 +2,7 @@
 	{
 		scope = 2;
 		displayName = "Fire Department Ubranie Dowódcy";
-		picture = "\kif_fd\Data\ui\sl_logo.paa";
+		picture = "\sl_fd\Data\ui\sl_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
@@ -17,7 +17,7 @@
 	{
 		scope = 2;
 		displayName = "Ubranie Fire Fighter";
-		picture = "\kif_fd\Data\ui\sl_logo.paa";
+		picture = "\sl_fd\Data\ui\sl_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
@@ -32,7 +32,7 @@
 	{
 		scope = 2;
 		displayName = "Ubranie Coast Guard";
-		picture = "\kif_fd\Data\ui\sl_logo.paa";
+		picture = "\sl_fd\Data\ui\sl_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
