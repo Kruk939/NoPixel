@@ -35,4 +35,9 @@
 			sleep 10;
 		};
 	};
+	if (isMultiplayer) then {
+		if !(kif_client_v == 0.31) then {
+			["NotVersion",false,true] call BIS_fnc_endMission;
+			};
+	};
 };

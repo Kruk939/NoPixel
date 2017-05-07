@@ -6,7 +6,7 @@ class sl_billboard_1: Building
 		vehicleclass = "kif_client";
 		placement = "vertical";
                 hiddenSelections[] = {"camo1"};
-                hiddenSelectionsTextures[]={"\sl_client\tex\billboard\1.paa"};
+                hiddenSelectionsTextures[]={"\sl_client\models\billboard\texture\billboard\1.paa"};
                 class Reflectors
 		{
 			class L01
@@ -141,13 +141,13 @@ class sl_billboard_1: Building
 			};
 		};
 	};
-class sl_billboard_2
+class sl_billboard_2: sl_billboard_1
 {
 		displayName = "Billboard 2";
 		vehicleclass = "kif_client";
 		placement = "vertical";
                 hiddenSelections[] = {"camo1"};
-                hiddenSelectionsTextures[]={"\sl_client\tex\billboard\2.paa"};
+                hiddenSelectionsTextures[]={"\sl_client\models\billboard\texture\2.paa"};
 };
 
 
