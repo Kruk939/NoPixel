@@ -96,13 +96,12 @@ class CfgVehicles {
 		waterAngularDampingCoef=0.1;
 	};
 	#include "\kif_client\cfgHouseStorages.hpp"
-	#include "\kif_client\cfgVVV.hpp"
-	#include "\kif_client\cfgPoliceVehicles.hpp"
-	#include "\kif_client\cfgMedicVehicles.hpp"
+	//#include "\kif_client\cfgVVV.hpp"
+	//#include "\kif_client\cfgPoliceVehicles.hpp"
+	//#include "\kif_client\cfgMedicVehicles.hpp"
 	#include "\kif_client\cfgBuildings.hpp"
 };
 #include "\kif_client\cfgSounds.hpp"
-#include "\kif_client\cfgIvoryTextures.hpp"
 #include "\kif_client\cfgMainMenu.hpp"
 
 class cfgWeapons {

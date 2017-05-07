@@ -1,0 +1,14 @@
+		weapons[]=
+		{
+                        "Airhorn1",
+                        "Airhorn2",
+                        "Howler",
+                        "Manual",
+                        "Takedown",
+                        "pull",
+                        "sl_traffic",
+                        "sl_manual",
+			"red_horn_handsup",
+			"red_horn_driver",
+			"red_horn_passenger"
+		};

@@ -23,7 +23,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"vvv_fire_truck",
 				"B_Boat_Transport_01_F",
 				"C_Boat_Civil_01_F",
-				"kif_tahoe_coastguard",
+				"sl_tahoe_coastguard",
 				"VVV_dodge_charger_medic",
 				"VVV_DodgeDurango_medic",
 				"ivory_suburban_ems",

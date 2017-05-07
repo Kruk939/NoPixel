@@ -1,10 +1,10 @@
 /*	
 TAHOE COAST GUARD
 */	
-	class kif_tahoe_coastguard : kif_tahoe_police
+	class sl_tahoe_coastguard : sl_tahoe_police
 	{
 		displayName = "Chevrolet Tahoe Coast Guard";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\coastguard.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\tahoe\coastguard.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
 /*	
 LEXUS IS-F
@@ -55,7 +55,7 @@ class O_Heli_Light_02_unarmed_F;
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\kif_client\textures\vehicles\ems\helicopters\heli_light_02_ext_EMS.paa"
+			"\sl_vehicles\textures\ems\helicopters\heli_light_02_ext_EMS.paa"
 		};
 	};
 /*	
@@ -75,7 +75,7 @@ class B_Heli_Light_01_F;
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\kif_client\textures\vehicles\ems\helicopters\heli_light_01_ext_EMS.paa"
+			"\sl_vehicles\textures\ems\helicopters\heli_light_01_ext_EMS.paa"
 		};
 		transportSoldier=2;
 		class RenderTargets

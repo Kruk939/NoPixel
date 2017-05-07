@@ -1,44 +1,36 @@
 /*	
-Chevrolet Suburban LTZ 2015 
-*/	
-class red_suburban_15_p_u_black;
-    class kif_suburban_black : red_suburban_15_p_u_black
-	{
-		displayName = "Chevrolet Suburban LTZ 2015 Slicktop Black";
-	};
-/*	
 Chevrolet Tahoe
 */	
 class TahoeCB_01;
-    class kif_tahoe_police : TahoeCB_01
+    class sl_tahoe_police : TahoeCB_01
 	{
 		maxSpeed = 330;
 		enginePower = 550;
 		displayName = "Chevrolet Tahoe Police";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\tahoe\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
-    class kif_tahoe_police_supervisor : kif_tahoe_police
+    class sl_tahoe_police_supervisor : sl_tahoe_police
 	{
 		displayName = "Chevrolet Tahoe Police Supervisor";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\police_supervisor.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\tahoe\police_supervisor.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
-    class kif_tahoe_sheriff : kif_tahoe_police
+    class sl_tahoe_sheriff : sl_tahoe_police
 	{
 		displayName = "Chevrolet Tahoe Sheriff";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\tahoe\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
-    class kif_tahoe_sheriff2 : kif_tahoe_police
+    class sl_tahoe_sheriff2 : sl_tahoe_police
 	{
 		displayName = "Chevrolet Tahoe Sheriff 2";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\sheriff2.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\tahoe\sheriff2.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
-	class kif_tahoe_statetrooper : kif_tahoe_police
+	class sl_tahoe_statetrooper : sl_tahoe_police
 	{
 		displayName = "Chevrolet Tahoe State Trooper";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\tahoe\statetrooper.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\tahoe\statetrooper.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
 class TahoePDUC_01;
-	class kif_tahoeuc_police : TahoePDUC_01
+	class sl_tahoeuc_police : TahoePDUC_01
 	{
 		maxSpeed = 330;
 		enginePower = 550;
@@ -49,70 +41,29 @@ class TahoePDUC_01;
 Ford Mustang
 */	
 class kmc_Mustang_510;
-    class kif_mustang_police : kmc_Mustang_510
+    class sl_mustang_police : kmc_Mustang_510
 	{
 		enginePower = 1400;
 		displayName = "Ford Mustang Boss 302 Police";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\mustang\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\mustang\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
-    class kif_mustang_sheriff : kif_mustang_police
+    class sl_mustang_sheriff : sl_mustang_police
 	{
 		displayName = "Ford Mustang Boss 302 Sheriff";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\mustang\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\mustang\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
-	class kif_mustang_swat : kif_mustang_police
+	class sl_mustang_swat : sl_mustang_police
 	{
 		displayName = "Ford Mustang Boss 302 SWAT";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\mustang\swat.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\mustang\swat.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
-/*	
-Ford Taurus
-*/	
-class red_taurus_10_p;
-    class kif_taurus_police : red_taurus_10_p
-	{
-		enginePower = 450;
-		peakTorque = 2000;
-		maxOmega = 700;
-
-		displayName = "Ford Taurus Police";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\taurus\police.paa","","","","","","","","","","","","","","","","","","","","","","",""};
-	};
-    //class kif_taurus_sheriff : kif_mustang_police
-	//{
-	//	displayName = "Ford Taurus Sheriff";
-    //    hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\taurus\sheriff.paa","","","","","","","","","","","","","","","","","","","","","","",""};
-	//};
-/*	
-Ford F350 SWAT z dildo
+/*
+Ford F150
 */
-class red_swat_08_p_swat;
-	class kif_ford350_swat: red_swat_08_p_swat
-	{
-		displayName = "Ford F350 SWAT z dilodsem";
-	};
-/*	
-Dodge Charger 2012
-*/
-class red_charger_12_p;
-	class kif_charger12_swat: red_charger_12_p
-	{
-		displayName = "2012 Dodge Charger SRT8 (SWAT)";
-		hiddenSelectionsTextures[]=
-		{
-			"\kif_client\textures\vehicles\charger12\swat.paa"
-		};
-	};
-/*	
-Porsche Panamera UC
-*/
-class red_panamera_10_p_u_black;
-	class kif_panamera_uc_black: red_panamera_10_p_u_black
-	{
-		maxOmega=750;
-		enginePower=870;
-		peakTorque=1300;
-		maxSpeed=400;
+class sl_f150_statetrooper;
+	class kif_f150_statetrooper : sl_f150_statetrooper {
+		displayName = "0405 Ford F150 State Trooper";
+        hiddenSelectionsTextures[] = {"\sl_vehicles\textures\f150\fordf150_st.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 	};
 /*	
 Lamborghini Reventon
@@ -137,7 +88,12 @@ class ivory_rev_unmarked;
 	{
 		displayName = "Lamborghini Reventon Unmarked Black";
 	};
-/*	
+
+
+/*
+#       SEGMENT AIAD/DTU
+
+
 BMW M3
 */	
 class ivory_m3_base;
@@ -471,34 +427,3 @@ class ivory_mp4_2;
 class ivory_r8_spyder_2;
     class ivory_r8_spyder_unmarked_bb_civ : ivory_r8_spyder_2
     {};
-	
-	
-	
-	
-	
-	
-	
-class sl_f150_statetrooper;
-	class kif_f150_statetrooper : sl_f150_statetrooper {
-		displayName = "0405 Ford F150 State Trooper";
-        hiddenSelectionsTextures[] = {"\kif_client\textures\vehicles\f150\fordf150_st.paa","","","","","","","","","","","","","","","","","","","","","","",""};
-	};
-/*
-//Adam do 300km/h
-class red_cvpi_06_p_trooper;
-class sl_impala_201_supervisior;
-class kif_taurus_police;
-class sl_f150_statetrooper;
-
-//Edward powyzej 300km/h
-class kif_dodge_charger_police;
-class sl_charger_220;
-class kif_dodgedurango_police;
-class sl_impala_um_red; //uc
-
-class kif_mustang_police;
-class kif_tahoe_police;
-class red_explorer_16_p_fto;
-class ivory_m3_unmarked;
-*/
-
