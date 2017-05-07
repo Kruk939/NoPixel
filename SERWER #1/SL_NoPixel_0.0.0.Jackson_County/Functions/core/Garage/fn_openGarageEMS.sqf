@@ -10,13 +10,20 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"ivory_isf_medic_rr",
 				"NP_Jonzie_Ambulance1",
 				"NP_Jonzie_Ambulance2",
+				"np_Jonzie_Ambulancefire",
+				"red_ambulance_08_EMS",
+				"red_ambulance_08_EMSs",
+				"red_suburban_15_e_EMS",
+				"red_ambulance_08_SR",
+				"red_ambulance_08_FD",
+				"red_stretcher_e_e",
 				//"red_ambulance_08_EMS",
 				//"red_ambulance_08_FD",
 				//"red_ambulance_08_SR",
 				"vvv_fire_truck",
 				"B_Boat_Transport_01_F",
 				"C_Boat_Civil_01_F",
-				"kif_tahoe_coastguard",
+				"sl_tahoe_coastguard",
 				"VVV_dodge_charger_medic",
 				"VVV_DodgeDurango_medic",
 				"ivory_suburban_ems",
@@ -31,7 +38,8 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"nopixel_guardacostas",
 				"kif_orca_ems",
 				"kif_mh9_ems",
-				"EC635_SAR"
+				"EC635_SAR",
+				"sl_boat_fire"
 			];
 };
 

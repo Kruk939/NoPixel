@@ -12,7 +12,8 @@ _crate = _this select 0;
  
  
 _availableHeadgear = [
-    "CUP_H_C_Fireman_Helmet_01"
+    "CUP_H_C_Fireman_Helmet_01",
+    "TCG_pdav_helmet"
 ];
  
 _availableGoggles = [
@@ -35,6 +36,7 @@ _availableGoggles = [
 ];
  
 _availableUniforms = [
+    "TCG_Police_Pilot",
     "vvv_traje_bombero_2",
     "vvv_traje_bombero",
     "vvv_traje_doctor",
@@ -86,7 +88,8 @@ _availableVests = [
     "kif_fd_probie",
     "kif_fd_fd",
     "kif_fd_divchief",
-    "sl_fire"
+    "sl_traffic_fire",
+    "kif_emt_traffic_controller_vest"
 ];
  
 _availableBackpacks = [

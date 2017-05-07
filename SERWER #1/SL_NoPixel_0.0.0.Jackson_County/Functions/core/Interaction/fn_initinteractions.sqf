@@ -17,6 +17,26 @@ NoPixel_InteractionButtons = [
 	16183, 16193, 16203, 16213, 16223, 16233, 16243, 16253, 16263
 ];
 
+np_red_cars = [
+	"red_beetle_66_black",
+	"red_cvpi_06_black",
+	"red_f350_08_black",
+	"red_towtruck_08_black",
+	"sl_taurus_10_black",
+	"sl_panamera_10_black",
+	"sl_camaro_12_black",
+	"sl_charger_12_black",
+	"sl_xkrs_12_black",
+	"sl_s65_12_black",
+	"sl_porsche_12_black",
+	"sl_vanquish_13_black",
+	"sl_gs350_13_black",
+	"sl_corvette_14_black",
+	"sl_suburban_15_black",
+	"sl_charger_15_black",
+	"red_explorer_16_black"
+];
+
 NoPixel_InteractionMenuItems = [
 
 	[
@@ -46,8 +66,8 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["  "],
-		["Daj klucze", " [] spawn client_fnc_findplayerskeys; ",5]
+		[" alive cursorTarget && cursorTarget isKindOf ""Man"" "],
+		["Daj klucze", " [current_cars] remoteExec [""client_fnc_givekeys"",currentcursortarget]; ",5]
 	],
 
 	[
@@ -112,7 +132,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" myJob == ""cop"" &&  client_dtu_actions == 2"],
+		[" myJob == ""cop"" &&  client_aiad_actions == 2"],
 		["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
 	],
 
@@ -147,7 +167,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""cop"" &&  client_dtu_actions == 2 "],
+		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""cop"" &&  client_aiad_actions == 2 "],
 		[" Namierz telefon ", " [] spawn client_fnc_tracecall; ",1]
 	],
 
@@ -159,7 +179,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" myJob == ""cop"" &&  client_dtu_actions >= 1 && vehicle player == player"],
+		[" myJob == ""cop"" &&  client_aiad_actions >= 1 && vehicle player == player"],
 		//["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn client_fnc_dotask ",1]
 		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTrackingCop; ",1]
 	],
@@ -484,10 +504,10 @@ NoPixel_InteractionMenuItems = [
 		["Wyposażenie sklepu", "[""shop""] spawn client_fnc_retreiveCargo;",3]
 	],
 
-	[
+	/*[
 		["myjob == ""Cop""", "client_dtu_actions > 0", "typeof CurrentCursorTarget == ""Land_PoliceStation"""],
 		["Skonfiskowane rzeczy", "[""dtu""] spawn client_fnc_retreiveCargo;",3]
-	],
+	],*/
 
 	[
 		["player distance myshop < 3"],
@@ -651,8 +671,8 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["client_dtu_actions > 0","myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
-		["Otwórz garaż DTU", "[] spawn client_fnc_openGarageDTU;",3]
+		["client_aiad_actions > 0","myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
+		["Otwórz garaż AIAD", "[] spawn client_fnc_openGarageAIAD;",3]
 	],
 
 	[
@@ -676,8 +696,8 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["client_dtu_actions > 0","myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
-		["Otwórz garaż DTU", "[CurrentCursorTarget] call Client_fnc_openGarageDTU",3]
+		["client_aiad_actions > 0","myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
+		["Otwórz garaż AIAD", "[CurrentCursorTarget] call Client_fnc_openGarageAIAD",3]
 	],
 
 	[
@@ -886,7 +906,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"" || typeOF cursorTarget == ""kif_ford350_swat"" || typeOF cursorTarget == ""Abruzzi_LencoPD_01"")) && player getvariable ""cop"" > 6 "],
+		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"" || typeOF cursorTarget == ""sl_ford350_swat"" || typeOF cursorTarget == ""Abruzzi_LencoPD_01"")) && player getvariable ""cop"" > 6 "],
 		["Ekwipunek SWAT", "[""riot""] spawn client_fnc_setGear",4]
 	],
 
@@ -1066,6 +1086,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["myjob == ""Cop""", "cursorTarget isKindOf ""Car""", "(typeOf cursorTarget IN np_red_cars)"],
+		["Sprawdź rejestrację", "_licensev = cursorTarget getVariable [""information"", 0]; _license = _licensev select 0; [""Tablica rejestracyjna"",_license,[255,69,0,1],""""] call Client_fnc_showNotification;",3]
+	],
+
+	[
 		["myjob == ""Repairman"""],
 		["Napraw obiekt", "[""Naprawiam obiekt"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
@@ -1082,4 +1107,3 @@ NoPixel_InteractionMenuItems = [
 ];
 
 player setVariable["loaded", 2, false];
-

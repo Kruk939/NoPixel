@@ -24,7 +24,7 @@ if(!isServer) exitWith {};
 		_marker setMarkerAlpha 0.95;
 
 		_markerZone = createMarker ["shipwreckzone",_position];
-		_markerZone setMarkerColor "ColorGreen";
+		_markerZone setMarkerColor "ColorGrey";
 		_markerZone setMarkerType "Empty";
 		_markerZone setMarkerShape "ELLIPSE";
 		_markerZone setMarkerSize [_radius,_radius];

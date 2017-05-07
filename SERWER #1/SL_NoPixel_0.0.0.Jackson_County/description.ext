@@ -335,7 +335,7 @@ class CfgFunctions
 			class openF1 {};
 			class openGaragePolice {};
 			class openGarageEMS {};
-			class openGarageDTU {};
+			class openGarageAIAD {};
 			class openGarageMafia {};
 			class finishLicense {};
 			class processplates {};
