@@ -8,7 +8,7 @@ class sl_dorian_jaguar: red_xkrs_12_black
 	faction="CIV_F";
         hiddenSelectionsTextures[] = {"\sl_client\tex\vehicles\Jaguar\batman.paa"};
         hiddenSelectionsMaterials[] = {"\sl_impala\rvmat\body.rvmat"};
-	#include "\sl_client\lights\red_spotlight_lights.hpp"
+	#include "\sl_client\lights\red_civ_lights.hpp"
         #include "\sl_client\handling\physx_highplus.hpp"
 };
 class sl_dorian_charger_15: red_charger_15_base
@@ -19,7 +19,7 @@ class sl_dorian_charger_15: red_charger_15_base
 	side=3;
 	faction="CIV_F";
         hiddenSelectionsTextures[] = {"\sl_client\tex\vehicles\Dodge_Charger_15\dorian.paa"};
-	#include "\sl_client\lights\red_spotlight_lights.hpp"
+	#include "\sl_client\lights\red_civ_lights.hpp"
         #include "\sl_client\handling\physx_mediumplus.hpp"
 };
 class sl_camaro_12_black: red_camaro_12_black
