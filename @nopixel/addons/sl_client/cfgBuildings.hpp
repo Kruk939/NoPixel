@@ -6,7 +6,7 @@ class sl_billboard_1: Building
 		vehicleclass = "kif_client";
 		placement = "vertical";
                 hiddenSelections[] = {"camo1"};
-                hiddenSelectionsTextures[]={"\sl_client\models\billboard\texture\billboard\1.paa"};
+                hiddenSelectionsTextures[]={"\sl_client\models\billboard\texture\1.paa"};
                 class Reflectors
 		{
 			class L01
