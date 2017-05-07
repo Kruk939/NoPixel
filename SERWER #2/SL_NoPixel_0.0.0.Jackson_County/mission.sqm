@@ -120,8 +120,8 @@ class AddonsMetaData
 		};
 		class Item12
 		{
-			className="kif_client";
-			name="kif_client";
+			className="sl_client";
+			name="sl_client";
 		};
 	};
 };
