@@ -10,7 +10,7 @@ class sl_traffic_so: V_TacVest_blk_POLICE
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\sl_client\tex\vest\traffic.paa"
+			"\sl_client\textures\clothing\vests\short\traffic.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -23,7 +23,7 @@ class sl_traffic_so: V_TacVest_blk_POLICE
 			};
 		    hiddenSelectionsTextures[]=
 		    {
-			"\sl_client\tex\vest\traffic.paa"
+			"\sl_client\textures\clothing\vests\short\traffic.paa"
 		    };
 			mass=10;
 		};
@@ -33,7 +33,7 @@ class sl_academy: sl_traffic_so
 		displayName="SL POLICE ACADEMY VEST";
 		hiddenSelectionsTextures[]=
 		{
-			"\sl_client\tex\vest\academy.paa"
+			"\sl_client\textures\clothing\vests\short\academy.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -46,7 +46,7 @@ class sl_academy: sl_traffic_so
 			};
 		    hiddenSelectionsTextures[]=
 		    {
-			"\sl_client\tex\vest\academy.paa"
+			"\sl_client\textures\clothing\vests\short\academy.paa"
 		    };
 			mass=10;
 		};
@@ -56,7 +56,7 @@ class sl_traffic_fire: sl_traffic_so
 		displayName="SL FIRE DEPARTMENT TRAFFIC VEST";
 		hiddenSelectionsTextures[]=
 		{
-			"\sl_client\tex\vest\fire.paa"
+			"\sl_client\textures\clothing\vests\short\fire.paa"
 		};
 		class ItemInfo: VestItem
 		{
@@ -69,7 +69,7 @@ class sl_traffic_fire: sl_traffic_so
 			};
 		    hiddenSelectionsTextures[]=
 		    {
-			"\sl_client\tex\vest\fire.paa"
+			"\sl_client\textures\clothing\vests\short\fire.paa"
 		    };
 			mass=10;
 		};

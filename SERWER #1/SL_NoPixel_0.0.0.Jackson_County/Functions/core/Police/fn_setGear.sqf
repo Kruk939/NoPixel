@@ -76,7 +76,7 @@ if(myjob == "Cop") exitwith {
 				player addHeadgear "Campaign_Hat_Dark";
 			};
 			if(_level == 10) then {
-				player forceAddUniform "kifpd_uni_dzokawhite";
+				player forceAddUniform "slpd_uni_dzokawhite";
 				player addVest "TAC_V_tacv1LC_P";
 				player addHeadgear "Campaign_Hat_Dark";
 			};
@@ -96,8 +96,8 @@ if(myjob == "Cop") exitwith {
 		removeHeadgear player;
 		removeGoggles player;
 
-		player forceAddUniform "kifpd_uni_sert";
-		player addVest "kifpd_sert_vest";
+		player forceAddUniform "slpd_uni_sert";
+		player addVest "slpd_sert_vest";
 		for "_i" from 1 to 5 do {player addItemToVest "RH_30Rnd_556x45_M855A1";};
 		for "_i" from 1 to 2 do {player addItemToVest "RH_33Rnd_9x19_g18";};
 		player addBackpack "AM_PoliceBelt";
@@ -107,7 +107,7 @@ if(myjob == "Cop") exitwith {
 		player additemtobackpack "taser";
 		for "_i" from 1 to 5 do {player addItemToBackpack "vvv_np_magazine_taser"; };
 
-		{ player additemtobackpack _x; } foreach ["np_energydrink","RH_33Rnd_9x19_g18","RH_33Rnd_9x19_g18","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","CG_ATF_First_Aid_Kit_i","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","kif_gopro","kif_panicbutton"];
+		{ player additemtobackpack _x; } foreach ["np_energydrink","RH_33Rnd_9x19_g18","RH_33Rnd_9x19_g18","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","CG_ATF_First_Aid_Kit_i","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","kif_gopro","kif_panicbutton","SUPER_flash","SUPER_flash"];
 		for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShell";};
 		player addWeapon "RH_m4_wdl";
 		player addPrimaryWeaponItem "RH_qdss_nt4_tg";

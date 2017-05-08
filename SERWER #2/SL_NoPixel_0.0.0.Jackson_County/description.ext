@@ -5,7 +5,7 @@ disabledAI = 1;
 author = "STANLAKESIDE.PL Developers";
 onLoadName = "Silverlake by StanLakeside.pl";
 onLoadMission = "Powered on NoPixel Mod by Koil";
-loadScreen =  "kif_client\textures\loading\load.paa";
+loadScreen =  "sl\textures\loading\load.paa";
 respawndelay = 1;
 
 wreckLimit = 10;
@@ -738,7 +738,7 @@ class CfgSounds {
     class carlock {
         name = "carlock";
         sound[] = {
-            "@kif_client\sounds\carlock.ogg",
+            "@sl_client\sounds\carlock.ogg",
             1,
             1
         };
@@ -748,7 +748,7 @@ class CfgSounds {
     class bankAlarm {
         name = "bankAlarm";
         sound[] = {
-            "@kif_client\sounds\bankAlarm.ogg",
+            "@sl_client\sounds\bankAlarm.ogg",
             1,
             1
         };
@@ -758,7 +758,7 @@ class CfgSounds {
     class shopAlarm {
         name = "shopAlarm";
         sound[] = {
-            "@kif_client\sounds\shopAlarm.ogg",
+            "@sl_client\sounds\shopAlarm.ogg",
             1,
             1
         };
@@ -768,7 +768,7 @@ class CfgSounds {
     class fireAlarm {
         name = "fireAlarm";
         sound[] = {
-            "@kif_client\sounds\fireAlarm.ogg",
+            "@sl_client\sounds\fireAlarm.ogg",
             1,
             1
         };
@@ -778,7 +778,7 @@ class CfgSounds {
     class bombhasbeenplanted {
         name = "bombhasbeenplanted";
         sound[] = {
-            "@kif_client\sounds\bombhasbeenplanted.ogg",
+            "@sl_client\sounds\bombhasbeenplanted.ogg",
             1,
             1
         };

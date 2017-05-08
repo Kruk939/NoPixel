@@ -3,7 +3,7 @@
 
 	sleep 2;
 	if !(isMultiplayer) exitWith {diag_log "Hello, i like you! <3";};
-	if (isClass(configFile >> "CfgPatches" >> "kif_client")) then {diag_log "Hello, i like you! <3";} else {disableUserInput true; while {true} do { _veh = "O_Heli_Light_02_F" createVehicle [0,0,0]; _veh setDamage 1; sleep 0.5; };};
+	if (isClass(configFile >> "CfgPatches" >> "sl_client")) then {diag_log "Hello, i like you! <3";} else {disableUserInput true; while {true} do { _veh = "O_Heli_Light_02_F" createVehicle [0,0,0]; _veh setDamage 1; sleep 0.5; };};
 	if(isNil "a9ec2a59c630de5b27603e8ecd9fb153") then {
 		sleep 60;
 		removeAllWeapons player;
@@ -34,5 +34,10 @@
 			hint "We don't like copying mods! Visit our page StanLakeside.pl and ask authors :)";
 			sleep 10;
 		};
+	};
+	if (isMultiplayer) then {
+		if !(kif_client_v == 0.31) then {
+			["NotVersion",false,true] call BIS_fnc_endMission;
+			};
 	};
 };
