@@ -60,6 +60,7 @@ player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed
         ( _display displayCtrl _x ) ctrlSetText "Disabled";
         ( _display displayCtrl _x ) ctrlSetTextColor [ 1, 0, 0, 0.5 ];
         ( _display displayCtrl _x ) ctrlRemoveAllEventHandlers "buttonclick";
+		( _display displayCtrl _x ) ctrlEnable false;
     }forEach [ 44146, 44147 ];
 } ] call BIS_fnc_addScriptedEventHandler;
 

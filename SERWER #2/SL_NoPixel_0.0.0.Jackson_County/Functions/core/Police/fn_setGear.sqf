@@ -76,7 +76,7 @@ if(myjob == "Cop") exitwith {
 				player addHeadgear "Campaign_Hat_Dark";
 			};
 			if(_level == 10) then {
-				player forceAddUniform "kifpd_uni_dzokawhite";
+				player forceAddUniform "slpd_uni_dzokawhite";
 				player addVest "TAC_V_tacv1LC_P";
 				player addHeadgear "Campaign_Hat_Dark";
 			};
@@ -96,8 +96,8 @@ if(myjob == "Cop") exitwith {
 		removeHeadgear player;
 		removeGoggles player;
 
-		player forceAddUniform "kifpd_uni_sert";
-		player addVest "kifpd_sert_vest";
+		player forceAddUniform "slpd_uni_sert";
+		player addVest "slpd_sert_vest";
 		for "_i" from 1 to 5 do {player addItemToVest "RH_30Rnd_556x45_M855A1";};
 		for "_i" from 1 to 2 do {player addItemToVest "RH_33Rnd_9x19_g18";};
 		player addBackpack "AM_PoliceBelt";
