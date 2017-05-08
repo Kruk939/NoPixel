@@ -820,6 +820,13 @@ _availableMagazine = [
 	"RH_60Rnd_556x45_Mk318"
 ];
 
+	if(player getVariable ["cop",0] > 6) then {
+		_availableMagazineSeven = [
+			"SUPER_flash"
+		];
+		_availableMagazine = _availableMagazine + _availableMagazineSeven;
+	};
+
  
 _availableWeapon = [
 	"RH_ttracker_g",
