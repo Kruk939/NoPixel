@@ -34,7 +34,9 @@ np_red_cars = [
 	"sl_corvette_14_black",
 	"sl_suburban_15_black",
 	"sl_charger_15_black",
-	"red_explorer_16_black"
+	"red_explorer_16_black",
+	"C_Quadbike_01_F",
+	"C_SUV_01_F"
 ];
 
 NoPixel_InteractionMenuItems = [
