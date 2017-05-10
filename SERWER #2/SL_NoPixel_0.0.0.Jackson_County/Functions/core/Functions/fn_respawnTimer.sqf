@@ -1,2 +1,2 @@
 sleep 900;
-["Respawn",false,true] call BIS_fnc_endMission;
+if(deadPlayer) exitwith { ["Respawn",false,true] call BIS_fnc_endMission; } else {};
