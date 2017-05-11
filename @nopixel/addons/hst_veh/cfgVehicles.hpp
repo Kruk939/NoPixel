@@ -20,7 +20,7 @@ class HST_DC15_base_UC : red_charger_15_p_u_custom1
 	redRpm = 8000;
 	class complexGearbox
 	{
-			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.50,"D3",1.1,"D4",0.80,"D5",0.60,"D6",0.45,};
+			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.50,"D3",1.1,"D4",0.80,"D5",0.60,"D6",0.45};
 			TransmissionRatios[] = {"High",4.111};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -92,7 +92,7 @@ class HST_DC15_base : red_charger_15_p_sheriff
 	redRpm = 7500;
 	class complexGearbox
 	{
-			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.50,"D3",1.0,"D4",0.70,"D5",0.50,};
+			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.462,"D2",1.50,"D3",1.0,"D4",0.70,"D5",0.50};
 			TransmissionRatios[] = {"High",4.111};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -124,13 +124,13 @@ class HST_DC15_base : red_charger_15_p_sheriff
 class HST_DC15_MD022 : HST_DC15_base
 {
 	displayName = "Dodge Charger 2015 MD022";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\022_Dodge_Charger_2015.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\022_Dodge_Charger_2015.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 
 class HST_DC15_MD023 : HST_DC15_base
 {
 	displayName = "Dodge Charger 2015 MD023";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\023_Dodge_Charger_2015.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\023_Dodge_Charger_2015.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 
 
@@ -156,7 +156,7 @@ class HST_DC12_base : red_charger_12_p_custom1
 	redRpm = 7500;
 	class complexGearbox
 	{
-			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.0,"D2",1.30,"D3",1.0,"D4",0.70,"D5",0.50,};
+			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.0,"D2",1.30,"D3",1.0,"D4",0.70,"D5",0.50};
 			TransmissionRatios[] = {"High",4.0};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -188,12 +188,12 @@ class HST_DC12_base : red_charger_12_p_custom1
 class HST_DC12_MD020 : HST_DC12_base
 {
 	displayName = "Dodge Charger 2012 MD020";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\020_Dodge_Charger_2012.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\020_Dodge_Charger_2012.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_DC12_MD021 : HST_DC12_base
 {
 	displayName = "Dodge Charger 2012 MD021";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\021_Dodge_Charger_2012.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\021_Dodge_Charger_2012.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 
 
@@ -219,7 +219,7 @@ class HST_CVPI_base : red_cvpi_06_p_custom1
 	redRpm = 7000;
 	class complexGearbox
 	{
-			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.2,"D2",1.40,"D3",1.0,"D4",0.50,};
+			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.2,"D2",1.40,"D3",1.0,"D4",0.50};
 			TransmissionRatios[] = {"High",4.0};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -251,37 +251,37 @@ class HST_CVPI_base : red_cvpi_06_p_custom1
 class HST_CVPI_MD001 : HST_CVPI_base
 {
 	displayName = "Crown Victoria 2006 MD001";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\001_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\001_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_CVPI_MD002 : HST_CVPI_base
 {
 	displayName = "Crown Victoria 2006 MD002";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\002_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\002_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_CVPI_MD003 : HST_CVPI_base
 {
 	displayName = "Crown Victoria 2006 MD003";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\003_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\003_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_CVPI_MD004 : HST_CVPI_base
 {
 	displayName = "Crown Victoria 2006 MD004";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\004_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\004_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_CVPI_MD005 : HST_CVPI_base
 {
 	displayName = "Crown Victoria 2006 MD005";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\005_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\005_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_CVPI_MD006 : HST_CVPI_base
 {
 	displayName = "Crown Victoria 2006 MD006";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\006_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\006_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_CVPI_MD007 : HST_CVPI_base
 {
 	displayName = "Crown Victoria 2006 MD007";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\007_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\007_Ford_Crown_Victoria.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 
 
@@ -308,7 +308,7 @@ class HST_FPI_base : red_taurus_10_p_sheriff
 	redRpm = 7000;
 	class complexGearbox
 	{
-			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.662,"D2",1.90,"D3",1.6,"D4",1.3,"D5",1.0,"D6",0.70,};
+			GearboxRatios[] = {"R1",-3.231,"N",0,"D1",2.662,"D2",1.90,"D3",1.6,"D4",1.3,"D5",1.0,"D6",0.70};
 			TransmissionRatios[] = {"High",4.1};
 			gearBoxMode = "auto";
 			moveOffGear = 1;
@@ -341,22 +341,22 @@ class HST_FPI_base : red_taurus_10_p_sheriff
 class HST_FPI_MD008 : HST_FPI_base
 {
 	displayName = "Ford Interceptor 2013 MD008";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\008_Ford_Taurus.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\008_Ford_Taurus.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_FPI_MD009 : HST_FPI_base
 {
 	displayName = "Ford Interceptor 2013 MD009";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\009_Ford_Taurus.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\009_Ford_Taurus.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_FPI_MD010 : HST_FPI_base
 {
 	displayName = "Ford Interceptor 2013 MD010";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\010_Ford_Taurus.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\010_Ford_Taurus.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 class HST_FPI_MD011 : HST_FPI_base
 {
 	displayName = "Ford Interceptor 2013 MD011";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\011_Ford_Taurus.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\011_Ford_Taurus.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 
 
@@ -368,7 +368,7 @@ class HST_Mustang_base : kmc_MustangSO_200
 class HST_Mustang_MD051 : HST_Mustang_base
 {
 	displayName = "Ford Mustang SAM MD051";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\051_Ford_Mustang.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\051_Ford_Mustang.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
 
 class red_suburban_15_p_f_ia;
@@ -379,5 +379,5 @@ class HST_Suburban_base : red_suburban_15_p_f_ia
 class HST_Suburban_AIAD901 : HST_Suburban_base
 {
 	displayName = "Suburban AIAD 901";
-	hiddenSelectionsTextures[] = {"\HST_VEH\textures\901_Chevrolet_Suburban_AIAD.paa","","","","","","","","","","","","","","","","","","","","","","",""};
+	hiddenSelectionsTextures[] = {"\hst_veh\textures\901_Chevrolet_Suburban_AIAD.paa","","","","","","","","","","","","","","","","","","","","","","",""};
 };
