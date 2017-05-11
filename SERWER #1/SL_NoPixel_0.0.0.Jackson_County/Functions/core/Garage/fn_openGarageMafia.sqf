@@ -9,6 +9,8 @@ _garage = [
 	"VVV_Bentley_Continental_SS",
 	"VVV_Bentley_Arnage",
 	"VVV_Aston_Martin_1964_DB5",
+	"sl_suburban_15_black",
+	"sl_s65_12_black",
 	"vvv_NewYacht",
 	"C_Boat_Civil_01_F"
 	];
