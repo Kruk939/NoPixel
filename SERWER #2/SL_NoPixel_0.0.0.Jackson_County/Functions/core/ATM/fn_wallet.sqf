@@ -1,7 +1,7 @@
 disableSerialization;
 //9001 
-_cash = player getVariable "wallet";
-_bank = player getVariable "atm";
+_cash = player getVariable "sl_wallet_silverlake";
+_bank = player getVariable "sl_atm_silverlake";
 _display = findDisplay 9999; 
 
 _text = _display displayCtrl 9993;

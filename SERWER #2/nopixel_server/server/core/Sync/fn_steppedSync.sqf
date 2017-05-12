@@ -6,8 +6,8 @@ _uid = getPlayerUID _player;
 _messages = [];
 
 
-_cash = _player getVariable "wallet";
-_bank = _player getVariable "atm";
+_cash = _player getVariable "sl_wallet_silverlake";
+_bank = _player getVariable "sl_atm_silverlake";
 _position = position _player;
 _syncInfo = _player getVariable ["sync",1];
 _exit = false;

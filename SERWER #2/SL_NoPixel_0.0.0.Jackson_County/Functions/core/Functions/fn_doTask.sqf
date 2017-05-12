@@ -1,5 +1,5 @@
 //["Task",TIME,fnc_to_run,Object Distance Check,animation,[Array of actions],soundtoplay] spawn client_fnc_dotask;
-
+if(client_doTask_handle) exitWith {};
 player say "slideout";
 disableSerialization;
 _task = _this select 0;
@@ -11,7 +11,7 @@ _actions = _this select 5;
 _sound = _this select 6;
 _success = true;
 _error = "Sukces!";
-
+ client_doTask_handle = true; 
 _factor = 1;
 if(karma_level != 0) then { _factor = karma_level / 4; };
 
@@ -56,5 +56,6 @@ _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_f
 sleep 1;
 player say "slideout";
 _POPUP ctrlSetStructuredText parseText format["",_task,_timeLeft];
+ client_doTask_handle = false; 
 if(!_success) exitwith {}; // we errored, lets not do the task!
 if !(_process isEqualTo 0) then { if(_actions isEqualTo 0) then { [] spawn _process; } else { [_actions] spawn _process; }; };

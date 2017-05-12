@@ -51,7 +51,7 @@ cutText ["", "BLACK"];
 
 player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened;}];
 player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
-player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
+//player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
 
 [ missionNamespace, "arsenalOpened", {
     disableSerialization;
@@ -76,7 +76,7 @@ client_seatwarn = false;
 client_seatbelt = false;
 [] spawn client_fnc_seatbelts;
 [] spawn client_fnc_gunholster;
-//[] spawn client_fnc_checkRadio;
+[] spawn client_fnc_checkRadio;
 //[] spawn client_fnc_forceFirstPerson;
 [] spawn client_fnc_speedMeters;
 

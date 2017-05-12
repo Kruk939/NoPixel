@@ -15,7 +15,7 @@ if(!isNil "vehspawned") then {
 	};
 };
 
-[10] call Client_fnc_removeBank;
+[10] call Client_fnc_sl_removeBank_secure;
 ["Zostałeś obciażony kwota $10 dolarów za wypożyczenie pojazdu służbowego.", true] spawn doquickmsg;
 
 _jobType = myjob;

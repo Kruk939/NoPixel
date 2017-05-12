@@ -18,7 +18,7 @@ _cost = call compile format["%1", (_status select 2)];
 _availableQuantity = call compile format["%1", (_status select 1)];
 
 _totalprice = _cost * _Quantity;
-_cash = player getVariable "wallet";
+_cash = player getVariable "sl_wallet_silverlake";
 if(_cash < _totalprice) exitwith { hint "Za malo pieniedzy."; };
 if(_quantity > _availableQuantity) exitwith { hint "Wpisz odpowiednia ilosc."; };
 if(_totalprice == 0 || _totalprice < 0) exitwith { hint "Nie mozesz kupic przedmiotu, który kosztuje $0"; };

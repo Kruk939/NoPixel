@@ -404,7 +404,9 @@ _availableUniforms = [
 			"slpd_uni_sheriff_assistant_sheriff",
 			"slpd_uni_sheriff_undersheriff",
 			"slpd_uni_sheriff_sheriff",
-			"slpd_uni_sheriff_fto"
+			"slpd_uni_sheriff_fto",
+			"sl_SO_Sweater",
+			"sl_CRT_Sweater"
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
@@ -419,7 +421,10 @@ _availableUniforms = [
 			"jamie_pcapgreen2",
 			"slpd_sheriff_black_vest",
 			"slpd_sheriff_orange_vest",
-			"TAC_SGS_SK"
+			"TAC_SGS_SK",
+			"S_VHO_OV_95_1",
+			"S_VHO_OV_95_2",
+			"S_VHO_PV_95"
 		];
 		_availableHeadgear = _availableHeadgear + _temp;
 	};
@@ -761,7 +766,9 @@ _availableVests = [
 		"TAC_V_tacv1_P2",
 		"EF_CTV1",
 		"TAC_HGB_B",
-		"TAC_V_Sheriff_BA_TB4"
+		"TAC_V_Sheriff_BA_TB4",
+		"S_VHO_OV_COP_3",
+		"S_VHO_OV_95_7"
 		//"TRYK_V_ArmorVest_Delta",
 		//"TRYK_V_ArmorVest_Delta2"
 	];

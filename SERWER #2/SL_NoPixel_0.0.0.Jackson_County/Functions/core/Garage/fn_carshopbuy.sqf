@@ -16,14 +16,17 @@ _finish = _finish select 0;
 
 _price = _price + _pricePaint;
 
+_price = _price * mav_ttm_var_mechanicRent;
 
 
-_cash = player getVariable "wallet";
+
+_cash = player getVariable "sl_wallet_silverlake";
 
 
 if(_cash < _price) exitwith { [format["KOSZT: %1 - Za mało pieniędzy.",_price], true] spawn domsg; };
 
-[_price] call Client_fnc_removeCash;
+
+[_price] call Client_fnc_sl_removeCash_secure;
 
 
 
@@ -31,8 +34,9 @@ closedialog 0;
 
 _vehicleName = getText(configFile >> "CfgVehicles" >> _class >> "displayName");
 [player,1,format ["%1 kupił pojazd %2 za kwote %3", name player, _vehicleName, _price],_price,_class,_vehicleName] remoteExec ["server_fnc_vehicleLog", 2];
-//[player, getUnitLoadout player] call Server_fnc_statSave; 
+//[player, getUnitLoadout player] call Server_fnc_statSave;
 ["Pojazd zostanie dostarczony do Twojego garażu.", true] spawn domsg;
+["VehicleBought"] spawn mav_ttm_fnc_addExp;
 
 _player = player;
 _rims = "antiquewhite";

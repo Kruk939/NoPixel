@@ -7,7 +7,8 @@
  		requiredVersion = 0.1;
 		requiredAddons[]= {
             "A3_Data_F",
-            "sl_impala"
+            "sl_impala",
+			"sl_sirens"
 		};
  	};
  };
@@ -44,15 +45,22 @@ class cfgVehicles
 	class red_venomgt_11_black;
 	class red_charger_15_base;
 
-    //police vehicles
-    class red_charger_15_p_p_base;
-    class red_taurus_10_p_u_base;
-    class red_charger_12_p_u_base;
-    class red_charger_15_p_u_base;
-    class red_explorer_16_p_p_base;
-    class red_suburban_15_p_u_black;
 
     #include "\sl_vehicles_red\config\cfgCivilianVehicles.hpp"
     #include "\sl_vehicles_red\config\cfgSpecialVehicles.hpp"
     #include "\sl_vehicles_red\config\cfgPoliceVehicles.hpp"
+
+	#include "\sl_vehicles_red\config\vehicles\charger_12_pu.hpp"
+	#include "\sl_vehicles_red\config\vehicles\charger_15_pu.hpp"
+	#include "\sl_vehicles_red\config\vehicles\charger_15_p.hpp"
+	#include "\sl_vehicles_red\config\vehicles\charger_12_p.hpp"
+	#include "\sl_vehicles_red\config\vehicles\cvpi_06_p.hpp"
+	#include "\sl_vehicles_red\config\vehicles\explorer_16_p.hpp"
+	#include "\sl_vehicles_red\config\vehicles\f350_08_p.hpp"
+	#include "\sl_vehicles_red\config\vehicles\kawasaki_10_p.hpp"
+	#include "\sl_vehicles_red\config\vehicles\suburban_15_e.hpp"
+	#include "\sl_vehicles_red\config\vehicles\suburban_15_p.hpp"
+	#include "\sl_vehicles_red\config\vehicles\suburban_15_pu.hpp"
+	#include "\sl_vehicles_red\config\vehicles\taurus_10_p.hpp"
+	#include "\sl_vehicles_red\config\vehicles\taurus_10_pu.hpp"
 };

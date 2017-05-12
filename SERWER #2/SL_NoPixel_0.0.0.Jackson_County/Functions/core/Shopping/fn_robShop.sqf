@@ -22,7 +22,7 @@ _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_f
 for "_i" from 0 to 1 step 0 do {
 	uisleep 1;
 	_timeLeft = _timeLeft - 1;
-	if(_timeLeft == 75) then { playSound3D ["sl_client\sounds\shopAlarm.ogg", _shop, false, getPosASL _shop, 5, 1, 150];  };
+	if(_timeLeft == 75) then { playSound3D ["sl_client\sounds\shopAlarm.ogg", _shop, false, getPosASL _shop, 5, 1, 150]; [player] remoteExec ["server_fnc_robberyCall", 2];};
 	_POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
 	if(_timeLeft == 0) exitwith {};
 	if(DeadPlayer) exitwith { _success = false; _error = "Dead Player"; };	
@@ -35,18 +35,14 @@ player say "slideout";
 _POPUP ctrlSetStructuredText parseText format["",_task,_timeLeft];
 
 if(_error == "") then {
-	_amount = round(random(500)) + 200;
-	[_amount] spawn client_fnc_addCash;
+
+	_suitCases = ["kif_5k","kif_5k","kif_5k","kif_10k"];
+	_item = _suitCases call BIS_fnc_selectRandom;
+	player addItem _item;
+
 	[format["Okradłeś sklep, zabrałeś $%1", _amount], false] call domsg;
 	["Remove","Karma",50] call client_fnc_sustain;
 	[player,objNull,19,format ["%1 okradł sklep na kwotę %2", name player, _amount],_amount] remoteExec ["server_fnc_actionLog", 2];
-	_chance = random(100);
-	if(_chance < 90) then {
-		[player] remoteExec ["server_fnc_robberyCall", 2];
-	};
-	if(_chance < 95) then {
-		[player, _shop, "storeRobbery"] spawn client_fnc_createEvidence;
-	};
 	_shop setVariable ["lastRobbed", time, true];
 };
 client_robbing = false;

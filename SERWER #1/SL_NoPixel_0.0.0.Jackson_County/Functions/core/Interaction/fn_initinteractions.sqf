@@ -386,7 +386,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" CurrentCursorTarget isKindOf 'Man'", "myjob == ""Cop"""],
+		[" CurrentCursorTarget isKindOf 'Man'", "(myjob == ""Cop"" || myjob ""EMS"")"],
 		["Weź dowód", " hint format[""Imię i nazwisko: %1\nPESEL: %2"",name currentcursortarget, getPlayerUID currentcursortarget]; ",2]
 	],
 

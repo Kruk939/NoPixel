@@ -25,6 +25,7 @@ secondsLeft = _time;
 ClientArrested = true;
 imrestrained = false;
 _update = 0;
+player setVariable ["coplevel", 0, false];
 
 while{ClientArrested} do {
 	if(getpos player distance [5556.2,6291.29,0.00143433] > 400) exitwith { _escaped = true; };
@@ -32,7 +33,7 @@ while{ClientArrested} do {
 	_time = _time - 1;
 	secondsLeft = _time;
 	_update = _update + 1;
-	if(_time == 0) exitwith {
+	if(_time < 0) exitwith {
 		//zerowanie w db [updateSLPDPrison_ended]
 		["ended", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 	};
@@ -65,7 +66,7 @@ if(!_escaped) then {
 } else {
 	hint "Uciekłeś z wiezienia!";
 	//ustawianie wszystkiego na nieaktywne [updateSLPDPrison_deactive]
-	["deactive", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
+	["escape", [getPlayerUID player]] remoteExec ["server_fnc_slpdPrisonUpdate",2];
 	_data = [getPlayerUID player, "911", format["Ucieczka z wiezienia, pozostało: %1 miesięcy", _time], 5];
 	["personal", _data] remoteExec ["server_fnc_slpdCaseAdd", 2];
 };

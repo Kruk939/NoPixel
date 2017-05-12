@@ -19,3 +19,7 @@ if(_type == "vehicle") then {
 	_queryString = format["updateSLPDWantedVehicle_close:%1:%2", _uid, _id];
 	_query = [0, _queryString] call ExternalS_fnc_ExtDBquery;
 };
+if(_type == "vehicle_all") then {
+	_queryString = format["updateSLPDWantedVehicle_close_all:%1:%2", _uid, _id];
+	_query = [0, _queryString] call ExternalS_fnc_ExtDBquery;
+};

@@ -26,5 +26,6 @@ _action = _myDT addAction [ "Posadź", {
 	_target addAction [ "Ochlodz rosline", { ["Cool", (_this select 0)] call client_fnc_upweedgrowing; } ];
 	_target addAction [ "Ogrzej rosline", { ["Heat", (_this select 0)] call client_fnc_upweedgrowing; } ];
 	_target addAction [ "Kultywatorowanie", { ["Turnover", (_this select 0)] call client_fnc_upweedgrowing; } ];
+	[player,objNull,25,format ["%1 posadził marychę",name player],""] remoteExec ["server_fnc_actionLog", 2];
 } ];
 weedPlantArray pushBack _myDT;

@@ -34,4 +34,4 @@ while{_count < _random && (_object getVariable ["growing",false])} do {
 };
 removeAllActions _object;
 if(isNull _object) exitwith {};
-_object setVariable ["ready",true,true];
+_object setVariable ["ready",true,false];

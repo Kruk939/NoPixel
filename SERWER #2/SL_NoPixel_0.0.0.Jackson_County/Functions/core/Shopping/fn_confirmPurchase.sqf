@@ -24,7 +24,7 @@ switch (_type) do {
     case 4: { _backpackitems = backpackItems player; removeBackpack player; player addBackpack _item; {player addItemToBackpack _x} foreach _backpackitems;};   
 };
 
-[_totalPrice] call Client_fnc_removeCash;
+[_totalPrice] call Client_fnc_sl_removeCash_secure;
 
 _chance = round (random 100);
 if(_chance > 35) then {

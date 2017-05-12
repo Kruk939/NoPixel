@@ -8,3 +8,4 @@ if(currentcursortarget iskindof "car"  || currentcursortarget iskindof "boat" ||
 };
 
 	["Remove","Karma",15] call client_fnc_sustain;
+	["VehicleLockpicked"] spawn mav_ttm_fnc_addExp;

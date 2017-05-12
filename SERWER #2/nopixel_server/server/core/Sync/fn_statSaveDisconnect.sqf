@@ -4,10 +4,48 @@ _uid = getPlayerUID _player;
 
 _messages = [];
 
+_house = _player getVariable "house";
+_shop = _player getVariable "shop";
+
+_shop setVariable ["shop",nil,false];
+shops pushback _shop;
+_houselevel = _player getVariable "houselevel";
+
+    if (_houseLevel == 1) then {
+        tier1housing pushback _house;
+    };
+    if (_houseLevel == 2) then {
+        tier1housing pushback _house;
+    };
+    if (_houseLevel == 3) then {
+        tier1housing pushback _house;
+    };
+    if (_houseLevel == 4) then {
+        tier2housing pushback _house;
+    };
+    if (_houseLevel == 5) then {
+        tier2housing pushback _house;
+    };
+    if (_houseLevel == 6) then {
+        tier2housing pushback _house;
+    };
+    if (_houseLevel == 7) then {
+        tier3housing pushback _house;
+    };
+    if (_houseLevel == 8) then {
+        tier3housing pushback _house;
+    };
+    if (_houseLevel == 9) then {
+        tier3housing pushback _house;
+    };
+     if (_houseLevel == 10) then {
+        tier3housing pushback _house;
+    };
+
 deletemarker format["%1",_uid];
 
-_cash = _player getVariable "wallet";
-_bank = _player getVariable "atm";
+_cash = _player getVariable "sl_wallet_silverlake";
+_bank = _player getVariable "sl_atm_silverlake";
 
 _position = position _player;
 

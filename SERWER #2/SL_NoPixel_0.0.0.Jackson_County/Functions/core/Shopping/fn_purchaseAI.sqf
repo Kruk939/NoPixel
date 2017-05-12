@@ -34,7 +34,7 @@ if(_typebuy == "fish") then {
 	if(_rarefish < _totalprice) exitwith { hint "Za malo ryb!"; _error = true; };
 };
 if(_typebuy == "standard") then {
-	_cash = player getVariable "wallet";
+	_cash = player getVariable "sl_wallet_silverlake";
 	if(_cash < _totalprice) exitwith { hint "Za malo pieniędzy."; _error = true; };
 };
 
@@ -108,7 +108,7 @@ if(_typebuy == "standard") then {
 		if(taxpayments == 0) then { taxpayments = taxpayments + _lostprice;	[_lostprice] spawn client_fnc_payMayor; } else { taxpayments = taxpayments + _lostprice; };
 	};
 
-	[_totalPrice] call Client_fnc_removeCash;
+	[_totalPrice] call Client_fnc_sl_removeCash_secure;
 };
 
 _chance = round (random 100);

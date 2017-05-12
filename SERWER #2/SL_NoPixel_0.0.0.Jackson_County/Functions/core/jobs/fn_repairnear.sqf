@@ -3,7 +3,7 @@ private["_thisobject"];
 if(isNil "repairedobjects") then { repairedobjects = []; };
 if(isNil "lastpos") then { lastpos = getpos player; };
 _pay = false;
-{ if( damage _x == 1 && !isPlayer _x ) then { if (player distance vehspawned < 20) then { _pay = true; }; _x setdamage 0; _thisobject = _x; }; } foreach nearestObjects [player, [], 20];
+{ if( damage _x == 1 && !isPlayer _x ) then { if (player distance vehspawned < 20) then { _pay = true; ["MechanicRepaired"] spawn mav_ttm_fnc_addExp;}; _x setdamage 0; _thisobject = _x;  }; } foreach nearestObjects [player, [], 20];
 
 if(_thisobject IN repairedobjects || !(_pay)) exitwith {};
 repairedobjects pushback _thisobject;
