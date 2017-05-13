@@ -142,6 +142,7 @@ class CfgFunctions
             class adminMessage {};
             class adminGodmode {};
             class adminRemoteRespawn {};
+			class unhaxMe {};
 		};
 
 		class police {

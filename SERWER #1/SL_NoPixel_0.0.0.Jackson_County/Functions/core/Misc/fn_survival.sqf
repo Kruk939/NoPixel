@@ -2,7 +2,7 @@
 Survival Koil
 */
 if(isNil "paycheck") then { paycheck = 0; };
-
+[] spawn client_fnc_unHaxMe;
 if(paycheck > 500) then { paycheck = 450; };
 
 paycheck = paycheck * mav_ttm_var_paycheckMultiplier;
