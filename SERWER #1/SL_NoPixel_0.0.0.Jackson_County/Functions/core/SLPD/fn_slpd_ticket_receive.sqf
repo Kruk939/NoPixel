@@ -20,6 +20,8 @@ _text_title = _display displayCtrl 1301;
 //_edit_amount, _edit_points, _edit_reason
 _amount = parseNumber(_ticket_data select 0);
 _points = parseNumber(_ticket_data select 1);
+if(_poins < 0) then {_points = 0;};
+if(_amount < 0) then {_amount = 0;};
 _reason = _ticket_data select 2;
 
 _text_title ctrlSetText format["Mandat od: %1", name _officer];
