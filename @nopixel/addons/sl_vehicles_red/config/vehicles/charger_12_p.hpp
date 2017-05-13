@@ -10,7 +10,7 @@ class sl_charger_220: red_charger_12_p_p_base
 		#include "\sl_vehicles_red\data\sirenArray.hpp"
 		hiddenSelectionsTextures[]=
 		{
-			"\sl_vehicles_red\tex\charget_12_p\sheriff_220.paa"
+			"\sl_vehicles_red\tex\charger_12_p\sheriff_220.paa"
 		};
 		frontBias=2.5;
 		rearBias=2.5;
