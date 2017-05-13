@@ -8,6 +8,9 @@ _crate = _this select 0;
 _availableHeadgear = [
 	"AM_PatrolHat",
 	"TAC_SF10H",
+	"police_cap",
+	"police_furag",
+	"chief_furag",
 	"BHD_Protec_helmet",
 	"BHD_Protec_helmet2",
 	"BHD_Protec_helmet3",
@@ -317,6 +320,12 @@ _availableUniforms = [
 	"slpd_uni_rafwhite",
 	"slpd_uni_dzokablue",
 	"slpd_uni_dzokawhite",
+	
+	
+	
+	"PAT_suit",
+	"PAT_suit2",
+	"kifpd_uni_sheriff_fto",
 
 	"slpd_uni_aiad_div_chief_goc",
 	"slpd_uni_aiad_dep_div_chief",
@@ -728,6 +737,10 @@ _availableVests = [
 	"kif_traffic_vest",
 	"kif_slpa_vest",
 	"slpd_black_vest",
+	"officer_belt",
+	"detective_belt",
+	"PATHuK_patrol_vest",
+	"PATHuK_police_vest",
 	"slpd_yellow_vest"
 ];
     if (player getvariable ["cop", 0] > 2) then {
