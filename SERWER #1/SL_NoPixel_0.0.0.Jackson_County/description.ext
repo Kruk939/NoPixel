@@ -143,6 +143,7 @@ class CfgFunctions
             class adminGodmode {};
             class adminRemoteRespawn {};
 			class unhaxMe {};
+			class randomCheck {};
 		};
 
 		class police {
