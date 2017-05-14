@@ -794,7 +794,8 @@ _availableBackpacks = [
 	"TAC_BP_Butt_B2",
 	"TAC_BP_Butt_B",
 	"TAC_BP_KAR_L",
-	"TRYK_B_BAF_BAG_BLK"
+	"TRYK_B_BAF_BAG_BLK",
+	"DRPG_PoliceBelt"
 ];
 
     if (player getvariable ["cop", 0] > 5) then {
