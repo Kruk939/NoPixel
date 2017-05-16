@@ -27,3 +27,13 @@ _vel = velocity _vehicle;
 _dir = direction _vehicle;
 _speed = 5;
 _vehicle setVelocity [(_vel select 0)+(sin _dir*_speed),(_vel select 1)+(cos _dir*_speed),(_vel select 2)];
+
+
+//leczenie sie z choroby
+_myInjuries = player getVariable "playerInjuries";
+
+_user = player;
+_arrayCount = 10;
+_myInjuries set [_arrayCount, 0];  
+_user setVariable ["playerInjuries",_myInjuries,true];  
+imHealing = false;
