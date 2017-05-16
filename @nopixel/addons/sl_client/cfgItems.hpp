@@ -181,3 +181,45 @@
 		allowedSlots[]={901};
 		mass=15;
 	};
+      class kif_item_barrierPlastic : ItemCore {
+            scope=2;
+		displayName="Plastic Barrier Orange";
+		model="\A3\structures_f\civ\constructions\Bricks_V1_F";
+		allowedSlots[]={901};
+		mass=1;
+      };
+      class kif_item_barrierBollard : ItemCore {
+            scope=2;
+		displayName="Bollard Barrier Orange";
+		model="\A3\structures_f\civ\constructions\Bricks_V1_F";
+		allowedSlots[]={901};
+		mass=1;
+      };
+      class kif_item_trafficCone : ItemCore {
+            scope=2;
+		displayName="Traffic Cone Orange";
+		model="\A3\structures_f\civ\constructions\Bricks_V1_F";
+		allowedSlots[]={901};
+		mass=1;
+      };
+      class kif_item_roadCone : ItemCore {
+            scope=2;
+		displayName="Road Cone";
+		model="\A3\structures_f\civ\constructions\Bricks_V1_F";
+		allowedSlots[]={901};
+		mass=1;
+      };
+      class kif_item_roadConeLight : ItemCore {
+            scope=2;
+		displayName="Road Cone with light";
+		model="\A3\structures_f\civ\constructions\Bricks_V1_F";
+		allowedSlots[]={901};
+		mass=1;
+      };
+      class kif_item_barGate : ItemCore {
+            scope=2;
+		displayName="Bar Gate";
+		model="\A3\structures_f\civ\constructions\Bricks_V1_F";
+		allowedSlots[]={901};
+		mass=1;
+      };
