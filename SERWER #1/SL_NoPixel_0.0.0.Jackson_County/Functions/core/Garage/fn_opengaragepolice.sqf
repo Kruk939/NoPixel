@@ -124,7 +124,8 @@ if(myJob == "Cop") then {
 			"C_Boat_Civil_01_F",
 			"C_Scooter_Transport_01_F",
 			"MELB_H6M",
-			"MELB_MH6M"
+			"MELB_MH6M",
+			"sl_impala_um_marshalls"
 			];
 };
 
