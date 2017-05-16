@@ -375,7 +375,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Cop"" || myjob ==""EMS"" || myjob == ""Fire"" "],
-		["Usuń najbliższą barierkę", "_destroy = nearestObjects [player, [""plp_up_BarrierTapePolice8m"",""plp_up_BarrierTapePolice4m"",""plp_up_BarrierTapePolice1m"",""plp_up_woodbarrierlongpolice"",""plp_up_WoodBarrierShortPoliceLightsOn""], 10]; deletevehicle (_destroy select 0); ",2]
+		["Usuń najbliższą barierkę", "_destroy = nearestObjects [player, [""plp_up_BarrierTapePolice8m"",""plp_up_BarrierTapePolice4m"",""plp_up_BarrierTapePolice1m"",""plp_up_woodbarrierlongpolice"",""plp_up_WoodBarrierShortPoliceLightsOn"",""plp_up_PlasticBarrierOrange"",""plp_up_BarrierBollardOrange"",""plp_up_TrafficConeOrange"",""RoadCone_L_F","RoadCone_F","LandBarGate_F""], 10]; deletevehicle (_destroy select 0); ",2]
 	],
 
 	// player to player
