@@ -53,8 +53,8 @@ if(myJob == "Cop") then {
 			"sl_impala_um_black",
 			"sl_impala_um_blue",
 			"sl_impala_um_red",
-			"sl_220",
-			"sl_221",
+			"sl_charger_220",
+			"sl_charger_slicktop_221",
 			"sl_222",
 			"sl_224",
 			"sl_225",
@@ -64,7 +64,7 @@ if(myJob == "Cop") then {
 			"sl_232",
 			"sl_233",
 			"sl_241",
-			"sl_242",
+			"sl_cvpi_242",
 			"sl_243",
 			"sl_244",
 			"sl_251",
@@ -124,8 +124,7 @@ if(myJob == "Cop") then {
 			"C_Boat_Civil_01_F",
 			"C_Scooter_Transport_01_F",
 			"MELB_H6M",
-			"MELB_MH6M",
-			"sl_impala_um_marshalls"
+			"MELB_MH6M"
 			];
 };
 
