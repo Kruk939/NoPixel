@@ -1,5 +1,5 @@
 class red_taurus_10_p_u_base;
-class sl_taurus_231: red_taurus_10_p_u_base
+class sl_231: red_taurus_10_p_u_base
 {
 	scope=2;
 	displayName="231 Slicktop Ford Police Interceptor Sedan";

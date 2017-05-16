@@ -119,3 +119,44 @@ class slpd_sheriff_chief: B_Competitor_F
 		displayName = "Sheriff Uniform Sheriff";
 		
 	};
+        class EF_HMSRF2;
+	class slpd_deputy_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\deputy.paa"};
+	};
+	class slpd_senior_deputy_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\senior_deputy.paa"};
+	};
+	class slpd_corporal_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\corporal.paa"};
+	};
+	class slpd_sergeant_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\sergeant.paa"};
+	};
+	class slpd_lieutenant_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\lieutenant.paa"};
+	};
+	class slpd_captain_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\captain.paa"};
+	};
+	class slpd_div_chief_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\div_chief.paa"};
+	};
+	class slpd_assistant_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\assistant.paa"};
+	};
+	class slpd_under_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\under.paa"};
+	};
+	class slpd_sheriff_blouse: EF_HMSRF2 {
+		scope = 1;
+		hiddenSelectionsTextures[] = {"sl_pduniforms\data\clothing\sheriff\blouse\sheriff.paa"};
+	};

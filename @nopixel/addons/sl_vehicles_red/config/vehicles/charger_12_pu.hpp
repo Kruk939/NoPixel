@@ -6,14 +6,14 @@ class sl_charger_slicktop_221: red_charger_12_p_u_base
 		crew="C_man_1";
 		side=3;
 		faction="CIV_F";
-		hiddenSelectionsTextures[] = {"red_config\red_charger_12_pu\skins\sheriff_221.paa"};
+		hiddenSelectionsTextures[] = {"\sl_vehicles_red\tex\charger_12_pu\sheriff_221.paa"};
 		class eventhandlers
 		{
 			init = "_this call DD_fnc_VehicleInit; _this execVM ""red_charger_12_p\scripts\init.sqf"";";
 		};
         #include "\sl_vehicles_red\handling\physx_fast.hpp"
-	    #include "\sl_vehicles_red\lights\red_spotlight_lights.hpp"
-	    #include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
+	#include "\sl_vehicles_red\lights\red_spotlight_lights.hpp"
+	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
 	#include "\sl_vehicles_red\data\sirenArray.hpp"
 	};
 class sl_283: red_charger_12_p_u_base
