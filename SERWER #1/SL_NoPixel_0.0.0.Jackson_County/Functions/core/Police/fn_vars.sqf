@@ -739,8 +739,6 @@ _availableVests = [
 	"slpd_black_vest",
 	"officer_belt",
 	"detective_belt",
-	"PATHuK_patrol_vest",
-	"PATHuK_police_vest",
 	"slpd_yellow_vest"
 ];
     if (player getvariable ["cop", 0] > 2) then {
