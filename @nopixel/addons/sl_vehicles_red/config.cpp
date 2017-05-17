@@ -7,8 +7,7 @@
  		requiredVersion = 0.1;
 		requiredAddons[]= {
             "A3_Data_F",
-            "sl_impala",
-			"sl_sirens"
+            "sl_impala"
 		};
  	};
  };
