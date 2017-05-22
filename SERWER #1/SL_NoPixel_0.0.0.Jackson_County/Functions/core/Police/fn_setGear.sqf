@@ -107,7 +107,7 @@ if(myjob == "Cop") exitwith {
 		player additemtobackpack "taser";
 		for "_i" from 1 to 5 do {player addItemToBackpack "vvv_np_magazine_taser"; };
 
-		{ player additemtobackpack _x; } foreach ["np_energydrink","RH_33Rnd_9x19_g18","RH_33Rnd_9x19_g18","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","CG_ATF_First_Aid_Kit_i","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","kif_gopro","kif_panicbutton","SUPER_flash","SUPER_flash"];
+		{ player additemtobackpack _x; } foreach ["np_energydrink","RH_33Rnd_9x19_g18","RH_33Rnd_9x19_g18","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","CG_ATF_First_Aid_Kit_i","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","kif_gopro","kif_panicbutton","SUPER_flash","SUPER_flash","Mattaust_Keys"];
 		for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShell";};
 		player addWeapon "RH_m4_wdl";
 		player addPrimaryWeaponItem "RH_qdss_nt4_tg";

@@ -668,7 +668,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
+		["myjob == ""Cop""", "typeof cursorobject IN [""Land_PoliceStation"",""cl3_policehq"",""cl3_policehq_range""]"],
 		["Otwórz garaż policyjny", "[] spawn client_fnc_openGaragePolice;",3]
 	],
 
@@ -756,7 +756,7 @@ NoPixel_InteractionMenuItems = [
 // jobs / situational
 
 	[
-		[" (myjob == ""Cop"" || (player getvariable ""legal"") > 7) && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
+		[" (myjob == ""Cop"" || (player getvariable ""legal"") > 7) && (( (typeof cursorobject) IN [""Land_PoliceStation"",""cl3_policehq"",""Land_buildingsJailCellBlock1"",""cl3_policehq_range""]) || ( vehicle player != player )) "],
 		["Komputer Policyjny", "createdialog ""kruk_slpd_computer"";",4]
 	],
 
