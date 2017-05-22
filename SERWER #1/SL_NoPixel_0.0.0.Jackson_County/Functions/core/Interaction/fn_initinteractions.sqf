@@ -673,8 +673,8 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["client_aiad_actions > 0","myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
-		["Otwórz garaż AIAD", "[] spawn client_fnc_openGarageAIAD;",3]
+		["client_aiad_actions > 0","myjob == ""Cop""", "typeof cursorobject IN [""Land_PoliceStation"",""cl3_policehq"",""cl3_policehq_range""]"],
+		["Otwórz garaż DD", "[] spawn client_fnc_openGarageAIAD;",3]
 	],
 
 	[
