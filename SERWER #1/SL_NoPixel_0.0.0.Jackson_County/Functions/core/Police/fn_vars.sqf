@@ -856,6 +856,10 @@ _availableWeapon = [
 	"RH_m9",
 	"RH_cz75",
 	"Taser",
+      "cl_speedgun",
+      "cl_plastic_shield",
+      "cl_FlashLight",
+      "cl3_fingerprintscanner",
 	"RH_sw659",
 	"RH_g17",
 	"RH_g19"
