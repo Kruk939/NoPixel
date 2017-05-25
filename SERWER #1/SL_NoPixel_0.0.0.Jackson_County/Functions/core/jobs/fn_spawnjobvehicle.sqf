@@ -65,7 +65,7 @@ if (_jobType == "security") exitwith {
 	[vehspawned] spawn client_fnc_spawnvehicle;
 	[vehspawned] remoteexec ["ivory_fnc_initvehicle",2];
 	current_cars pushback vehspawned; uisleep 1;
-	vehspawned addItemCargo ["vvv_character_agente_473",1];
+	vehspawned addItemCargo ["security_suit",1];
 	hint "You have some items in the truck, use them - you can buy a taser from the gun store for this job.";
 };
 
