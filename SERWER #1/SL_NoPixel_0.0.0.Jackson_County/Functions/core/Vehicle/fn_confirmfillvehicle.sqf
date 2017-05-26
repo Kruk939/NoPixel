@@ -15,7 +15,7 @@ _vehicles = nearestObjects [_pos, ["Car","Air","Ship"], 7];
 
 _startpos = getpos _vehicle;
 closedialog 0;
-while {true} do {
+for "_i" from 0 to 1 step 0 do  {
 	uisleep 0.5;
 	_mycash = [1,2] call Client_fnc_sl_checkMoney_secure;
 	[2] call Client_fnc_sl_removeCash_secure;

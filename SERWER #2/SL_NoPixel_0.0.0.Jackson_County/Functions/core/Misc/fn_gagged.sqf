@@ -9,7 +9,7 @@ if(isNull _civ) exitWith {};
 [] spawn
 {
 	private["_time"];
-	while {true} do
+	for "_i" from 0 to 1 step 0 do 
 	{
 		uisleep 5;
 		_chance = round (random 100);

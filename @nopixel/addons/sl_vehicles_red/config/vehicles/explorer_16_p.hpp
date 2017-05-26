@@ -55,3 +55,14 @@ class sl_055: red_explorer_16_p_p_base
 	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
 	#include "\sl_vehicles_red\data\sirenArray.hpp"
 };
+class sl_fd_explorer16p: red_explorer_16_p_p_base
+{
+	scope=2;
+	displayName="Ford Explorer 2016 F.D.";
+	crew="C_man_1";
+	side=3;
+	faction="CIV_F";
+    hiddenSelectionsTextures[] = {"\sl_vehicles_red\tex\explorer_16_p\fd.paa"};
+	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
+	//#include "\sl_vehicles_red\data\sirenArray.hpp"
+};

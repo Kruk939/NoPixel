@@ -12,10 +12,6 @@ _sound = _this select 6;
 _success = true;
 _error = "Sukces!";
  client_doTask_handle = true; 
-_factor = 1;
-if(karma_level != 0) then { _factor = karma_level / 4; };
-
-_timeLeft = _timeLeft - _factor;
 
 if(_timeLeft < 1) then { _timeLeft = 3; };
 _timeLeft = round ( _timeLeft );

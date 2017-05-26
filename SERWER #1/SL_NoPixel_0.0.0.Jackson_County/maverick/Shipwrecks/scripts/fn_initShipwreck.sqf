@@ -63,7 +63,7 @@ if(!isServer) exitWith {};
 		_lastCreateTime = time;
 	};
 
-	while {true} do {
+	for "_i" from 0 to 1 step 0 do  {
 		if(isNull _ship) then {
 			if((time - _lastCreateTime) >= (getNumber(missionConfigFile >> "Maverick_Shipwrecks" >> "ShipwreckInterval"))) then {
 				[] call _deleteOldWreck;

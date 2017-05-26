@@ -24,7 +24,7 @@ if(_chance > 80) then {
 
 		modifier = 3;
 
-		while {true} do {
+		for "_i" from 0 to 1 step 0 do  {
 
 			if(modifier == 0) exitwith { hint "Twój szał rabowania dobiegł końca"; };
 			uisleep 20;
