@@ -15,7 +15,7 @@ if(isNull _shopplayer) exitwith {};
  
 _shopcontent = _shopplayer getVariable "shopcontent"; 
  
-_cash = _player getVariable "wallet"; 
+_cash = _player getVariable "sl_wallet_silverlake"; 
 _cash = call compile format["%1", _cash]; 
  
 _myweapons = (_shopcontent select 0);  

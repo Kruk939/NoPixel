@@ -51,7 +51,7 @@ cutText ["", "BLACK"];
 
 player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened;}];
 player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
-player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
+//player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
 
 [ missionNamespace, "arsenalOpened", {
     disableSerialization;
@@ -61,7 +61,8 @@ player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed
         ( _display displayCtrl _x ) ctrlSetTextColor [ 1, 0, 0, 0.5 ];
         ( _display displayCtrl _x ) ctrlRemoveAllEventHandlers "buttonclick";
 		( _display displayCtrl _x ) ctrlEnable false;
-    }forEach [ 44146, 44147 ];
+    }forEach [ 44150, 44146, 44147 ];
+	__display displayAddEventHandler ["KeyDown", "if ((_this select 1) in [19,29,24]) then {true}"];
 } ] call BIS_fnc_addScriptedEventHandler;
 
 [Client_fnc_HudEffects, 3] execFSM "call.fsm";
@@ -75,7 +76,7 @@ client_seatwarn = false;
 client_seatbelt = false;
 [] spawn client_fnc_seatbelts;
 [] spawn client_fnc_gunholster;
-//[] spawn client_fnc_checkRadio;
+[] spawn client_fnc_checkRadio;
 //[] spawn client_fnc_forceFirstPerson;
 [] spawn client_fnc_speedMeters;
 

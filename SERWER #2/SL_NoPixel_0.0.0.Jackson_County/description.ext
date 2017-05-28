@@ -5,7 +5,7 @@ disabledAI = 1;
 author = "STANLAKESIDE.PL Developers";
 onLoadName = "Silverlake by StanLakeside.pl";
 onLoadMission = "Powered on NoPixel Mod by Koil";
-loadScreen =  "sl\textures\loading\load.paa";
+loadScreen =  "sl_client\textures\loading\load.paa";
 respawndelay = 1;
 
 wreckLimit = 10;
@@ -17,7 +17,7 @@ forceRotorLibSimulation = 2;
 class Header {
     gameType = RPG;
     minPlayers = 1;
-    maxPlayers = 120;
+    maxPlayers = 130;
 };
 
 showHUD[] = {
@@ -37,10 +37,12 @@ showHUD[] = {
 class RscTitles {
     #include "dialogs\ui.hpp"
 	#include "dialogs\RscNotification.hpp"
+	#include "maverick\talent-tree-modular\gui\_masterTitles.cpp"
 };
 
-class CfgFunctions 
+class CfgFunctions
 {
+#include "maverick\maverick_functions_master.cpp"
 	class Client
 	{
 		class Phone
@@ -62,7 +64,7 @@ class CfgFunctions
 			class saveBG {};
 			class updateSkin {};
 			class loadSkin {};
-			class saveSkin {};			
+			class saveSkin {};
 			class fadePhone {};
 			class answerCall {};
 			class Answered {};
@@ -139,7 +141,10 @@ class CfgFunctions
 			class nametags {};
             class adminMessage {};
             class adminGodmode {};
-		};		
+            class adminRemoteRespawn {};
+			class unhaxMe {};
+			class randomCheck {};
+		};
 
 		class police {
 			file = "Functions\core\police";
@@ -247,15 +252,15 @@ class CfgFunctions
 			file = "Functions\core\Jobs\JobTowTruck";
 			class startTowTruck {};
 			class startrepair {};
-		};		
+		};
 		class JobNews {
 			file = "Functions\core\Jobs\JobNews";
 			class startNews {};
-		};			
+		};
 		class JobSecurity {
 			file = "Functions\core\Jobs\JobSecurity";
 			class startSecurity {};
-		};				
+		};
 		class JobGarbage {
 			file = "Functions\core\Jobs\JobGarbage";
 			class collectGarbage {};
@@ -283,8 +288,8 @@ class CfgFunctions
 			class healTime {};
             class healTimeTran {};
 			class medicUpdater {};
-			class totalPain {};	
-			class sendrevive {};		
+			class totalPain {};
+			class sendrevive {};
 			class revived {};
 			class medicClothes {};
 			class openHealMenu {};
@@ -300,7 +305,7 @@ class CfgFunctions
 			class settax {};
 			class mayorsetup {};
 			class loadassassin {};
-		};	
+		};
 
 		class Crafting
 		{
@@ -330,7 +335,10 @@ class CfgFunctions
 			class racetimes {};
 			class lock {};
 			class openF1 {};
-			class opengaragepolice {};
+			class openGaragePolice {};
+			class openGarageEMS {};
+			class openGarageAIAD {};
+			class openGarageMafia {};
 			class finishLicense {};
 			class processplates {};
 			class changeplates {};
@@ -460,15 +468,15 @@ class CfgFunctions
 			class sustain {};
 			class setLevel {};
 			class repair {};
-			class PatDown {};		
+			class PatDown {};
 			class putincar {};
 			class restrain {};
 			class unrestrain {};
-			class startpatdown {};	
+			class startpatdown {};
 			class blindfold {};
 			class unblindfold {};
 			class attemptKO {};
-			class successKO {};	
+			class successKO {};
 			class tazed {};
 			class sharphit {};
 			class blunthit {};
@@ -493,16 +501,16 @@ class CfgFunctions
 			class mafiaOwed {};
 			class loanUpdate {};
 			class numberText {};
-			class addcashmayor {};
-			class addBank {};
-			class addCash {};
-			class checkMoney {};
-			class giveLoan {};
-			class giveLoanSubmit {};			
-			class giveCash {};
-			class giveCashSubmit {};
-			class removeBank {};
-			class removeCash {};
+			class sl_addcashmayor_secure {};
+			class sl_addBank_secure {};
+			class sl_addCash_secure {};
+			class sl_checkMoney_secure {};
+			class sl_giveLoan_secure {};
+			class sl_giveLoanSubmit_secure {};
+			class sl_giveCash_secure {};
+			class sl_giveCashSubmit_secure {};
+			class sl_removeBank_secure {};
+			class sl_removeCash_secure {};
 			class takeDrill {};
 		};
 		class Vehicle
@@ -516,7 +524,7 @@ class CfgFunctions
 			class disabletrackingme {};
 			class dorace {};
 			class dorally {};
-			class kickoutwindows {};			
+			class kickoutwindows {};
 			class confirmfillvehicle {};
 			class fillvehicle {};
 			class useKey {};
@@ -744,7 +752,7 @@ class CfgSounds {
         };
         titles[] = {};
     };
-	
+
     class bankAlarm {
         name = "bankAlarm";
         sound[] = {
@@ -754,7 +762,7 @@ class CfgSounds {
         };
         titles[] = {};
     };
-	
+
     class shopAlarm {
         name = "shopAlarm";
         sound[] = {
@@ -1528,6 +1536,19 @@ class CfgDebriefing {
             1
         };
     };
+    class WypierdalajKurwo {
+        title = "Zostałeś wyrzucony z gry";
+        subtitle = "No elo bulwo!";
+        description = "";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {
+            0,
+            0.3,
+            0.6,
+            1
+        };
+    };
 };
 
 class CfgNotifications {
@@ -1595,3 +1616,4 @@ class CfgNotifications {
         priority = 5;
     };
 };
+#include "maverick\maverick_master.cpp"

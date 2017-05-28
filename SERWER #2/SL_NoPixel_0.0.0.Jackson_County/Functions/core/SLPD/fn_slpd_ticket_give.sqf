@@ -1,7 +1,7 @@
 /*
 		Author: Kajetan "Kruk" Mruk
 		Date: 15.03.2017
-		Params: 
+		Params:
 		Description: Reads personal data and display it on computer screen.
 		Return: none
 */
@@ -21,3 +21,4 @@ _reason = ctrlText _edit_reason;
 player playmove "vvv_anim_ticket";
 [[_amount, _points, _reason],player] remoteExec ["client_fnc_slpd_ticket_receive", _target];
 closeDialog 0;
+["GivenTicket"] spawn mav_ttm_fnc_addExp;

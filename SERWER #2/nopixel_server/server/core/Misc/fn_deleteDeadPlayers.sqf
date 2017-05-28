@@ -1,4 +1,4 @@
-/*while {true} do {
+/*for "_i" from 0 to 1 step 0 do  {
     {
         if (_x isKindOf "Man") then {deleteVehicle _x}
     } forEach allDeadMen;

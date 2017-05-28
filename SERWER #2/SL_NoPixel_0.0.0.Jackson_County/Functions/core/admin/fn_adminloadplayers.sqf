@@ -166,6 +166,15 @@ _list lbSetdata [(lbSize _list)-1,str(11)];
 _list lbAdd format["%1", "AOE Restrain 300m"];
 _list lbSetdata [(lbSize _list)-1,str(12)];
 
+_list lbAdd format["%1", "AOE Unrestrain 300m"];
+_list lbSetdata [(lbSize _list)-1,str(40)];
+
+_list lbAdd format["%1", "Restrain Target"];
+_list lbSetdata [(lbSize _list)-1,str(41)];
+
+_list lbAdd format["%1", "Unrestrain Target"];
+_list lbSetdata [(lbSize _list)-1,str(42)];
+
 _list lbAdd format["%1", "Full Heal"];
 _list lbSetdata [(lbSize _list)-1,str(13)];
 
@@ -262,6 +271,15 @@ _list lbSetdata [(lbSize _list)-1,str(11)];
 _list lbAdd format["%1", "AOE Restrain 300m"];
 _list lbSetdata [(lbSize _list)-1,str(12)];
 
+_list lbAdd format["%1", "AOE Unrestrain 300m"];
+_list lbSetdata [(lbSize _list)-1,str(40)];
+
+_list lbAdd format["%1", "Restrain Target"];
+_list lbSetdata [(lbSize _list)-1,str(41)];
+
+_list lbAdd format["%1", "Unrestrain Target"];
+_list lbSetdata [(lbSize _list)-1,str(42)];
+
 _list lbAdd format["%1", "Full Heal"];
 _list lbSetdata [(lbSize _list)-1,str(13)];
 
@@ -313,8 +331,8 @@ _list lbSetdata [(lbSize _list)-1,str(28)];
 _list lbAdd format["%1", "Arsenal"];
 _list lbSetdata [(lbSize _list)-1,str(29)];
 
-_list lbAdd format["%1", "Debug Console"];
-_list lbSetdata [(lbSize _list)-1,str(30)];
+//_list lbAdd format["%1", "Debug Console"];
+//_list lbSetdata [(lbSize _list)-1,str(30)];
 
 _list lbAdd format["%1", "Add Food"];
 _list lbSetdata [(lbSize _list)-1,str(31)];

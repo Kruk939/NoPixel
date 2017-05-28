@@ -46,7 +46,7 @@ if(_type == "personal") exitWith {
 	_officer_name = _data select 4;
 	_charges = _data select 5;
 	_wanted_level = _data select 6;
-	kruk_slpd_computer_data = [(_data select 0), "personal"];
+	kruk_slpd_computer_data = [(_data select 0), "personal", getPlayerUID player];
 	
 	_string = format["Imię i nazwisko: %1\nPESEL: %2\nPoziom poszukiwania: %3\n\nZarzuty: %4\nWystawił: %5", _suspect_name, _suspect_uid, _wanted_level, _charges, _officer_name];
 	_text_info ctrlSetText _string;
@@ -58,8 +58,6 @@ if(_type == "plate") exitWith {
 	_display = findDisplay 666003;
 	_text_title = _display displayCtrl 1000;
 	_text_info = _display displayCtrl 1001;
-	_button_caseClose = _display displayCtrl 1201;
-	_button_caseClose ctrlShow false;
 	_vehInfo = _data select 0;
 	_wantedInfo = _data select 1;
 	if(count _vehInfo != 0) then {
@@ -88,5 +86,6 @@ if(_type == "plate") exitWith {
 		_text_title ctrlSetText _title;
 		_string = format["Numer rejestracyjny: %1\nWłaściciel: %2\nPESEL: %3\nPoszukiwany: %4\nModel: %5\nKolor: %6(%7)\nMoc: %8KM\nPrędkośc maks.: %9kmh/h", _plate, _owner_name, _owner_uid, _wantedString, _name, _color, _finish, _enginePower, _maxSpeed];
 		_text_info ctrlSetText _string;
+		kruk_slpd_computer_data = [_plate, "vehicle_all", getPlayerUID player];
 	} else { _title = format["Nie znaleziono pojazdu"]; };
 };

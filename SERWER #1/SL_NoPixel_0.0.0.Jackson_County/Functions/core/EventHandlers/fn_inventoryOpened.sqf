@@ -85,7 +85,7 @@ if (_container isKindOf "Man" && !alive _container) exitWith {
 {
 	waituntil {!(isnull (finddisplay 602)) || handle };
 	if(!handle) then {
-		while {true} do
+		for "_i" from 0 to 1 step 0 do 
 		{
 			if(!isNull (findDisplay 49)) exitwith {
 				closedialog 0;

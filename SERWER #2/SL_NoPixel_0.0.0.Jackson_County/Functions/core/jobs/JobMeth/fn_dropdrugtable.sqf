@@ -13,4 +13,5 @@ myActionStart = myDT addAction [ "Zacznij gotować", {
 	myAction3 = myDT addAction [ "Zmniejsz temperaturę", { ["Cool"] call client_fnc_upMethCooking; } ];
 	myAction4 = myDT addAction [ "Zwiększ temperaturę", { ["Heat"] call client_fnc_upMethCooking; } ];
 	myAction5 = myDT addAction [ "Obniż ciśnienie", { ["Release"] call client_fnc_upMethCooking; } ];
+	[player,objNull,27,format ["%1 postawił stół do mety",name player],""] remoteExec ["server_fnc_actionLog", 2];
 } ];

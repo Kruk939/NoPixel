@@ -3,6 +3,10 @@ if (_chance < 20 && currentBanks < 2) then {
     ["Informacja","Jeden z banków właśnie otrzymał dostawę pieniędzy.",[255,69,0,1],""] remoteExec ["Client_fnc_showNotification", -2];
     //"Jeden z banków właśnie otrzymał dostawę pieniędzy." remoteexec["hint", -2];
     _mybank = banks call BIS_fnc_selectRandom;
+
+    _mybankpia = banks find _mybank;
+    banks deleteAt _mybankpia;
+
     _thebankcontainer = "plp_ct_HighSecMediumBlack" createvehicle [9794,978,0.0014];
     _pos = getpos _mybank;
     _thebankcontainer setdir(getdir _mybank) - 89;

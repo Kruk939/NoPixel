@@ -10,7 +10,8 @@ if ("NP_kPelt" IN (magazines player)) then {
 	_luckisaskill = "plp_ct_woodboxlightsmall" createVehicleLocal (getpos player);
 	player disablecollisionwith _luckisaskill;
 	_luckisaskill setpos (getposATL player);
-	
+	["PeltProcessed"] spawn mav_ttm_fnc_addExp;
+
 	if(_chance < 80) then {
 		_rods = ["epic_fishing_rod","platinum_fishing_rod","legendary_fishing_rod","gold_fishing_rod","CUP_NVG_PVS7","ItemGPS"];
 		_myrod = _rods call BIS_FNC_SELECTRANDOM;
@@ -42,8 +43,8 @@ if ("NP_kPelt" IN (magazines player)) then {
 		_luckisaskill addWeaponCargoGlobal [(_myrod select 0),1];
 		_luckisaskill addMagazineCargoGlobal [(_myrod select 1),10];
 	};
-	
-	
+
+
 	[] spawn { sleep 1; peltprotection = 0; };
 	if(peltProtection > 1) then { removeuniform player; removevest player; removebackpack player; peltprotection = 0; };
 } else {

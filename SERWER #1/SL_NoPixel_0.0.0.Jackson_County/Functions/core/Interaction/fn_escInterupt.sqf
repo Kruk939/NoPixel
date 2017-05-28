@@ -43,7 +43,7 @@ _canUseControls = {
 	if((imRestrained) OR (player getVariable ["escorting", false]) OR (ClientArrested) OR (client_istazed)) then {false} else {true};
 };
 
-while {true} do
+for "_i" from 0 to 1 step 0 do 
 {
 	waitUntil{!isNull (findDisplay 49)};
 	_abortButton = (findDisplay 49) displayCtrl 104;

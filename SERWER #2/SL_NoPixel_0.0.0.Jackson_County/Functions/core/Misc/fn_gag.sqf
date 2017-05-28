@@ -12,7 +12,7 @@ _cme = 1;
 _myposy = getPos player;
 //["Remove",30] call fnc_karma;
 
-while {true} do {
+for "_i" from 0 to 1 step 0 do  {
 //life_action_inUse = true;
 	if( player distance _myposy > 2.5 ) exitwith { 
 			["Cel jest zbyt daleko!", false] spawn domsg;

@@ -267,7 +267,7 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		_selectedWindows = parseNumber(lbData[1504, _index]);
 		_price = parseNumber((ctrlText 1001) select [7]);
 
-		_haveCash = [1,_price] call client_fnc_checkmoney;
+		_haveCash = [1,_price] call Client_fnc_sl_checkMoney_secure;
 		if !(_haveCash) exitWith {
 			["Nie masz wystarczającej ilości pieniędzy.", false] spawn domsg;
 			closeDialog 0;
@@ -288,7 +288,7 @@ if(isNil "client_fnc_vehChangeColorButtonAccept") then {
 		if (isNil "_selectedWindows") exitWith {hint "Selected windows is nil, maybe not selected options?"; closeDialog 0; };
 		if (isNil "_selectedLights") exitWith {hint "Selected lights is nil, maybe not selected options?"; closeDialog 0; };
 
-		[_price] call client_fnc_removeCash;
+		[_price] call Client_fnc_sl_removeCash_secure;
 		
 		_information set [2,_selectedColor];
 		_information set [3,_selectedFinish];

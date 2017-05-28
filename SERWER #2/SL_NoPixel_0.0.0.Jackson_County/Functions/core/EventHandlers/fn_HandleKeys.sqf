@@ -314,6 +314,12 @@ switch (_code) do
 			};
 		};
   	};
+	case 59:
+	{
+		if (_shift && !_ctrlKey && !_alt) then {
+			[] spawn client_fnc_unHaxMe;
+		};
+	};
 };
 
 _handle;

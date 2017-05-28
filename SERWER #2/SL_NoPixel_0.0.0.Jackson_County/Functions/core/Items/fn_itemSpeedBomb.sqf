@@ -29,7 +29,7 @@
     	["<t color='#ff0000' size = '.8'>Uwaga!<br /> W pojeździe została podłożona bomba! Jeżeli prędkość pojazdu spadnie poniżej 50km/h bomba eksploduje! W ciągu 15 minut bomba się zdezaktywuje!</t>",-1,-1,10,1,0,789] remoteExec ["BIS_fnc_dynamicText", _crew];
         playSound3D ["sl_client\sounds\bombhasbeenplanted.ogg", _veh, true, getPos _veh, 15, 1, 25];
        // _timer = 0;
-       // while {true} do {
+       // for "_i" from 0 to 1 step 0 do  {
        //     _timer = _timer + 1;
        //     sleep 1;
        //         //if (_timer == 900) then {

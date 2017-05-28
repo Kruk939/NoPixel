@@ -11,7 +11,7 @@ if(typeof cursorobject IN ["Land_GateB","Land_MainSection","Land_Gaol_Main", "La
 	playSound3D ["CG_Jobs\sounds\jailbreak\hacking.ogg", player, false, (getposasl player), 1, 1, 25];
 	_calcT = 0;
 	player playmove "vvv_anim_lockpick";
-	while {true} do {
+	for "_i" from 0 to 1 step 0 do  {
 		if(animationstate player != "vvv_anim_lockpick") then { player playmove "vvv_anim_lockpick"; };
 		_calcT = _calcT + 1;
 		if(_calcT > 25) exitwith {};

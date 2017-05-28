@@ -71,7 +71,26 @@ _civilianVehicle = [
 	["ivory_rev", 220000],
 	["ivory_ccx", 240000],
 	["ivory_f1",250000],
-	["ivory_veyron",300000]
+	["ivory_veyron",300000],
+	["red_beetle_66_black",14000],
+	["red_cvpi_06_black",25000],
+	["red_f350_08_black",120000],
+	["red_towtruck_08_black",45000],
+	["sl_taurus_10_black",90000],
+	["sl_panamera_10_black",350000],
+	["sl_camaro_12_black",250000],
+	["sl_charger_12_black",300000],
+	["sl_xkrs_12_black",450000],
+	["sl_s65_12_black",200000],
+	["sl_porsche_12_black",400000],
+	["sl_vanquish_13_black",600000],
+	["sl_gs350_13_black",105000],
+	["sl_corvette_14_black",800000],
+	["sl_suburban_15_black",350000],
+	["sl_charger_15_black",400000],
+	["red_explorer_16_black",250000],
+	["C_Quadbike_01_F",5000],
+	["C_SUV_01_F",25000]
 ];
 _harleys = [
 	["Acj_Harley_Davidson_Sons_Of_Anarchy",15000],
@@ -104,14 +123,16 @@ if(_doughnuts > 2) then {
 		["devon_gtx", 50000],
 		["vvv_DOD_RamSRT_civ", 25000],
 		["vvv_dumper", 50000],
-		["Jonzie_Forklift", 25000]
+		["Jonzie_Forklift", 25000],
+		["sl_genesis_16_black",150000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
 };
 if(_doughnuts > 3) then {
 	_ret = [
 		["vvv_formula1", 100000],
-		["C_Offroad_02_unarmed_F", 50000]
+		["C_Offroad_02_unarmed_F", 50000],
+		["sl_venomgt_11_black",400000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
 };
@@ -120,6 +141,7 @@ if(_doughnuts > 4) then {
 		["New_Holland_TC590_civ", 25000],
 		["vvv_Ponsse_Buffalo_Forwarder_civ", 30000],
 		["B_T_LSV_01_unarmed_F", 100000],
+		["O_T_LSV_02_unarmed_F",150000],
 		["vvv_SeatLeon_2014_font", 100000],
 		["shelbycobra_car_azul", 100000],
 		["ivory_supra_topsecret", 100000],

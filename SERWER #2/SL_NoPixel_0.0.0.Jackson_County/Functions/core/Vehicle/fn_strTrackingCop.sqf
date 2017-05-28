@@ -1,5 +1,5 @@
 if (myjob in ["Cop"]) then {
-    if (client_dtu_actions >= 1) then {
+    if (client_aiad_actions >= 1) then {
 
 	    _veh = _this select 0;
 	    _player = _this select 1;
@@ -38,7 +38,7 @@ if (myjob in ["Cop"]) then {
 		    [player,objnull,15,format ["%1 podłożył pluskwę", name player],""] remoteExec ["server_fnc_copLog", 2];
 	    };
     } else {
-        hint "Nie jestem w dtu, nie mogę tego zrobić!";
+        hint "Nie jestem w aiad, nie mogę tego zrobić!";
     };
 } else {
 	hint "Nie jestem w policji, nie mogę tego zrobić!";

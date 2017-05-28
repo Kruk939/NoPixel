@@ -1,5 +1,3 @@
-if(myJob == "Cop" || myJob == "EMS" || myJob == "Fire") exitwith { [] spawn client_fnc_opengaragepolice; };
-
 if(str CurrentCursorTarget find "tallerdepinturaabandonado" > -1 || str CurrentCursorTarget find "otros" > -1 || str CurrentCursorTarget find "garaje" > -1 ) then { createdialog "garageplates"; } else { createDialog "garage"; };
 
 ctrlSetText [1000, "Garage"];

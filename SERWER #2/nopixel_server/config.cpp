@@ -35,6 +35,7 @@ class CfgFunctions {
 			class slpdPrisonInsert {};
 			class slpdPrisonUpdate {};
 			class slpdPrisonGet {};
+            class slpdRetreivePoliceStorage {};
         };
         class Sync {
             file = "NoPixel_Server\server\core\Sync";

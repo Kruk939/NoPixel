@@ -97,17 +97,17 @@ adminInteractions = 0;
 if (getplayerUID player IN ["76561198023332238"]) then { kif_admin=1; };
 							//danio				//farmer
 if (getplayerUID player IN ["76561198082441969","76561198131854921"]) then { kif_admin=2; };
-//							//raf				//sid				//dzoka				//teddy				//arthur
-if (getplayerUID player IN ["76561197982469013","76561198061433788","76561197998091289","76561198150573190","76561198028980508"]) then { kif_admin=3; };
-							//katekarin
-if (getplayerUID player IN ["76561198041834190"]) then { kif_admin=4; };
+//							//raf				//teddy				//arthur
+if (getplayerUID player IN ["76561197982469013","76561198150573190","76561198028980508"]) then { kif_admin=3; };
+							//katekarin			//sid				//dzoka
+if (getplayerUID player IN ["76561198041834190","76561198061433788","76561197998091289"]) then { kif_admin=4; };
 							//kifkick			//dorian
 if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif_admin=5; };
 /*
 	AIAD
 */
-							//Pablo	   		//Donald					//knox	   		    //easy	   			//katekarin	   		//wazka
-if (getplayerUID player IN ["76561198185455243","76561198023332238","76561198030912509","76561198161472762","76561198041834190","76561198039045183"]) then { client_aiad_actions=1; };
+							//Hansen	   		//Donald				Alanovski			//knox	   		    //easy	   			//katekarin	   		//wazka
+if (getplayerUID player IN ["76561197973307654","76561198023332238","76561198058274311","76561198030912509","76561198161472762","76561198041834190","76561198039045183"]) then { client_aiad_actions=1; };
                             //Kenju			//Galaretka				//raf				//kifkick			//miathur			//kruk
 if (getplayerUID player IN ["76561198019277102","76561198013128581","76561197982469013","76561198201987250","76561198037419471","76561198015862132"]) then { client_aiad_actions=2; };
 /*

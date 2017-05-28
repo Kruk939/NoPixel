@@ -8,7 +8,7 @@ _position = 0;
  
 _winner = false; 
  
-while {true} do { 
+for "_i" from 0 to 1 step 0 do  { 
 diag_log "updating race"; 
 sleep 0.2; 
  

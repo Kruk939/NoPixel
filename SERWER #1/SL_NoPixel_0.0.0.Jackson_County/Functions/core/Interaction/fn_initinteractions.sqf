@@ -34,7 +34,9 @@ np_red_cars = [
 	"sl_corvette_14_black",
 	"sl_suburban_15_black",
 	"sl_charger_15_black",
-	"red_explorer_16_black"
+	"red_explorer_16_black",
+	"C_Quadbike_01_F",
+	"C_SUV_01_F"
 ];
 
 NoPixel_InteractionMenuItems = [
@@ -373,7 +375,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["myjob == ""Cop"" || myjob ==""EMS"" || myjob == ""Fire"" "],
-		["Usuń najbliższą barierkę", "_destroy = nearestObjects [player, [""plp_up_BarrierTapePolice8m"",""plp_up_BarrierTapePolice4m"",""plp_up_BarrierTapePolice1m"",""plp_up_woodbarrierlongpolice"",""plp_up_WoodBarrierShortPoliceLightsOn""], 10]; deletevehicle (_destroy select 0); ",2]
+		["Usuń najbliższą barierkę", "_destroy = nearestObjects [player, [""plp_up_BarrierTapePolice8m"",""plp_up_BarrierTapePolice4m"",""plp_up_BarrierTapePolice1m"",""plp_up_woodbarrierlongpolice"",""plp_up_WoodBarrierShortPoliceLightsOn"",""plp_up_PlasticBarrierOrange"",""plp_up_BarrierBollardOrange"",""plp_up_TrafficConeOrange"",""RoadCone_L_F"",""RoadCone_F"",""LandBarGate_F""], 10]; deletevehicle (_destroy select 0); ",2]
 	],
 
 	// player to player
@@ -384,7 +386,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" CurrentCursorTarget isKindOf 'Man'", "myjob == ""Cop"""],
+		[" CurrentCursorTarget isKindOf 'Man'", "(myjob == ""Cop"" || myjob == ""EMS"")"],
 		["Weź dowód", " hint format[""Imię i nazwisko: %1\nPESEL: %2"",name currentcursortarget, getPlayerUID currentcursortarget]; ",2]
 	],
 
@@ -666,13 +668,13 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
+		["myjob == ""Cop""", "typeof cursorobject IN [""Land_PoliceStation"",""cl3_policehq"",""cl3_policehq_range""]"],
 		["Otwórz garaż policyjny", "[] spawn client_fnc_openGaragePolice;",3]
 	],
 
 	[
-		["client_aiad_actions > 0","myjob == ""Cop""", "typeof cursorobject == ""Land_PoliceStation"""],
-		["Otwórz garaż AIAD", "[] spawn client_fnc_openGarageAIAD;",3]
+		["client_aiad_actions > 0","myjob == ""Cop""", "typeof cursorobject IN [""Land_PoliceStation"",""cl3_policehq"",""cl3_policehq_range""]"],
+		["Otwórz garaż DD", "[] spawn client_fnc_openGarageAIAD;",3]
 	],
 
 	[
@@ -754,7 +756,7 @@ NoPixel_InteractionMenuItems = [
 // jobs / situational
 
 	[
-		[" (myjob == ""Cop"" || (player getvariable ""legal"") > 7) && (( typeof cursorobject == ""Land_PoliceStation"") || ( vehicle player != player )) "],
+		[" (myjob == ""Cop"" || (player getvariable ""legal"") > 7) && (( (typeof cursorobject) IN [""Land_PoliceStation"",""cl3_policehq"",""Land_buildingsJailCellBlock1"",""cl3_policehq_range""]) || ( vehicle player != player )) "],
 		["Komputer Policyjny", "createdialog ""kruk_slpd_computer"";",4]
 	],
 

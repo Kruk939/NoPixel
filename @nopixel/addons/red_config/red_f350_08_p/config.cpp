@@ -1011,29 +1011,4 @@ class cfgVehicles
 		faction = "CIV_F";
 		hiddenSelectionsTextures[] = {"\red_config\red_f350_08_p\skins\custom5.paa"};
 	};
-	class sl_f150_so: red_f350_08_p_p_base
-	{
-		scope = 2;
-		displayName = "226 SHERIFF OFFICE 2008 Ford F-350 SUPERDUTY";
-		crew = "C_man_1";
-		side = 3;
-		faction = "CIV_F";
-		weapons[] = {                        
-                        "Airhorn1",
-                        "Airhorn2",
-                        "Howler",
-                        "Manual",
-                        "Takedown",
-                        "pull",
-                        "sl_traffic",
-                        "sl_manual",
-			"red_horn_handsup",
-			"red_horn_driver",
-			"red_horn_passenger"
-                };
-		hiddenSelectionsTextures[] = {"red_config\red_f350_08_p\skins\sheriff.paa"};
-        maxOmega=800;
-		enginePower=500;
-		peakTorque=1200;
-	};
 };

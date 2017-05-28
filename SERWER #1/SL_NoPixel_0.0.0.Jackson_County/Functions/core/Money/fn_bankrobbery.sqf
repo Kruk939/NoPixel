@@ -19,7 +19,7 @@ player removeitem "NP_drillitem";
 
 bankrobber = 3;
 
-while {true} do {
+for "_i" from 0 to 1 step 0 do  {
 	if(isNull theDrill) exitWith { bankrobber = 1; };
 	_location = getposatl _thebankcontainer;
 	_PS = "#particlesource" createVehicleLocal _location;  

@@ -29,6 +29,7 @@ if(myJob == "EMS" || myJob == "Fire") then {
 				"ivory_suburban_ems",
 				"FPIUEMS_01",
 				"sl_impala_fire_fd",
+				"sl_fd_explorer16p",
 				"ivory_isf_fd",
 				"SL_MCP",
 				"A3PL_Engine",

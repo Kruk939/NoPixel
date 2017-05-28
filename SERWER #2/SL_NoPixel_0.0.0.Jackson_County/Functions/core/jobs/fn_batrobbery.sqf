@@ -24,7 +24,7 @@ if(_chance > 80) then {
 
 		modifier = 3;
 
-		while {true} do {
+		for "_i" from 0 to 1 step 0 do  {
 
 			if(modifier == 0) exitwith { hint "Twój szał rabowania dobiegł końca"; };
 			uisleep 20;
@@ -44,7 +44,7 @@ if(_chance > 80) then {
 
 		if(_amount < 0) then { _amount = 5; };
 
-		robbedstores pushback _shop; hint format["Okradłeś ten sklep na: %1",_amount]; [_amount] call Client_fnc_addCash; 
+		robbedstores pushback _shop; hint format["Okradłeś ten sklep na: %1",_amount]; [_amount] call Client_fnc_sl_addCash_secure; 
 
 	};
 

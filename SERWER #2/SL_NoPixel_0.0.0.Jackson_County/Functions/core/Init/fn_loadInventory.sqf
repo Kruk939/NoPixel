@@ -32,6 +32,8 @@ _mayor = _this select 23;
 _doughnuts = _this select 24;
 _respawn = _this select 25;
 _prisonArray = _this select 26;
+_points = _this select 27;
+
 
 
 _higherup = false;
@@ -63,8 +65,8 @@ _count = 0;
 
 Shared_Cars = [];
 
-player setVariable ["wallet", _cash, false];
-player setVariable ["atm", _bank, false];
+player setVariable ["sl_wallet_silverlake", _cash, false];
+player setVariable ["sl_atm_silverlake", _bank, false];
 player setVariable ["bankAccount", _bankAccount, false];
 
 player setVariable ["cop", _cop, false];
@@ -79,7 +81,7 @@ player setVariable ["messages", _messages, false];
 player setVariable ["statuses", _statuses, false];
 
 player setVariable ["respawn", _respawn, false];
-
+player setVariable ["veh_points",_points,false];
 
 myoffice = [0,0,0];
 player setVariable ["houselevel", _houselevel, false];

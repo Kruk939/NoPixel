@@ -3,11 +3,14 @@
 
 _crate = _this select 0;
 ["AmmoboxInit",[_crate,false,{true}]] spawn BIS_fnc_arsenal;
- 
- 
+
+
 _availableHeadgear = [
 	"AM_PatrolHat",
 	"TAC_SF10H",
+	"police_cap",
+	"police_furag",
+	"chief_furag",
 	"BHD_Protec_helmet",
 	"BHD_Protec_helmet2",
 	"BHD_Protec_helmet3",
@@ -30,7 +33,7 @@ _availableHeadgear = [
 	"jamie_pcapblue2",
 	"jamie_pcapblack",
 	"KMC_Cap_sert"
-	
+
 ];
     if (player getvariable ["cop", 0] > 2) then {
     _availableHeadgearTwo = [
@@ -41,7 +44,7 @@ _availableHeadgear = [
         ];
     _availableHeadgear = _availableHeadgear + _availableHeadgearTwo;
     };
-    
+
     if (player getvariable ["cop", 0] > 5) then {
     _availableHeadgearFive = [
 		"max_sheriff_Hat",
@@ -170,7 +173,7 @@ _availableHeadgear = [
         ];
         _availableHeadgear = _availableHeadgear + _availableHeadgearFive;
 };
- 
+
 _availableGoggles = [
 	"TRYK_balaclava_BLACK_NV",
 	"Balaclava_Blk_Plain",
@@ -269,7 +272,7 @@ _availableGoggles = [
         ];
         _availableGoggles = _availableGoggles + _availableGogglesFive;
     };
- 
+
 _availableUniforms = [
 
 	"jamie_corrections",
@@ -303,34 +306,43 @@ _availableUniforms = [
 	"NP_W_PD2",
 	"NP_W_PD4",
 	"NP_W_PD3",
+	
+	"Mechanic_suit",
+	"max_sheriff_uniform",
 
-	"kifpd_uni_cadet",
-	"kifpd_uni_po1",
-	"kifpd_uni_po2",
-	"kifpd_uni_po3",
-	"kifpd_uni_po4",
-	"kifpd_uni_sgt",
-	"kifpd_uni_ssgt",
-	"kifpd_uni_ltpolice",
-	"kifpd_uni_cptpolice",
-	"kifpd_uni_rafblue",
-	"kifpd_uni_rafwhite",
-	"kifpd_uni_dzokablue",
-	"kifpd_uni_dzokawhite",
+	"slpd_uni_cadet",
+	"slpd_uni_po1",
+	"slpd_uni_po2",
+	"slpd_uni_po3",
+	"slpd_uni_po4",
+	"slpd_uni_sgt",
+	"slpd_uni_ssgt",
+	"slpd_uni_ltpolice",
+	"slpd_uni_cptpolice",
+	"slpd_uni_rafblue",
+	"slpd_uni_rafwhite",
+	"slpd_uni_dzokablue",
+	"slpd_uni_dzokawhite",
 
-	"kifpd_uni_aiad_div_chief_goc",
-	"kifpd_uni_aiad_dep_div_chief",
-	"kifpd_uni_aiad_insepctor_sgt",
-	"kifpd_uni_aiad_inspector_po4",
 
-	"kifpd_uni_dtu_lt_yellow",
-	"kifpd_uni_dtu_lt_white",
-	"kifpd_uni_dtu_cpt_yellow",
-	"kifpd_uni_dtu_cpt_white",
-	"kifpd_uni_dtu_det1",
-	"kifpd_uni_dtu_det2",
-	"kifpd_uni_dtu_det3",
-	"kifpd_uni_dtu_det4",
+
+	"PAT_suit",
+	"PAT_suit2",
+	"kifpd_uni_sheriff_fto",
+
+	"slpd_uni_aiad_div_chief_goc",
+	"slpd_uni_aiad_dep_div_chief",
+	"slpd_uni_aiad_insepctor_sgt",
+	"slpd_uni_aiad_inspector_po4",
+
+	"slpd_uni_dtu_lt_yellow",
+	"slpd_uni_dtu_lt_white",
+	"slpd_uni_dtu_cpt_yellow",
+	"slpd_uni_dtu_cpt_white",
+	"slpd_uni_dtu_det1",
+	"slpd_uni_dtu_det2",
+	"slpd_uni_dtu_det3",
+	"slpd_uni_dtu_det4",
 
 	"silver_lake_fbi",
 	"silver_lake_police",
@@ -339,7 +351,7 @@ _availableUniforms = [
 	"vvv_traje_policia_1",
 	"vvv_traje_policia_2",
 	"vvv_traje_policia_3",
-	"EF_FEM_3_3",   
+	"EF_FEM_3_3",
 	"EF_FEM_3_3G",
 	"EF_FEM_4_2",
 	"EF_FEM_4_2G",
@@ -394,17 +406,19 @@ _availableUniforms = [
 			"Sheriff_rang12",
 			"sp_rang3",
 			"sp_rang6",
-			"kifpd_uni_sheriff_deputy",
-			"kifpd_uni_sheriff_senior_deputy",
-			"kifpd_uni_sheriff_corporal",
-			"kifpd_uni_sheriff_sergeant",
-			"kifpd_uni_sheriff_lieutenant",
-			"kifpd_uni_sheriff_captain",
-			"kifpd_uni_sheriff_division_chief_so",
-			"kifpd_uni_sheriff_assistant_sheriff",
-			"kifpd_uni_sheriff_undersheriff",
-			"kifpd_uni_sheriff_sheriff",
-			"kifpd_uni_sheriff_fto"
+			"slpd_uni_sheriff_deputy",
+			"slpd_uni_sheriff_senior_deputy",
+			"slpd_uni_sheriff_corporal",
+			"slpd_uni_sheriff_sergeant",
+			"slpd_uni_sheriff_lieutenant",
+			"slpd_uni_sheriff_captain",
+			"slpd_uni_sheriff_division_chief_so",
+			"slpd_uni_sheriff_assistant_sheriff",
+			"slpd_uni_sheriff_undersheriff",
+			"slpd_uni_sheriff_sheriff",
+			"slpd_uni_sheriff_fto",
+			"sl_SO_Sweater",
+			"sl_CRT_Sweater"
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
@@ -417,16 +431,19 @@ _availableUniforms = [
 		_temp = [
 			"jamie_pcapgreen",
 			"jamie_pcapgreen2",
-			"kifpd_sheriff_black_vest",
-			"kifpd_sheriff_orange_vest",
-			"TAC_SGS_SK"
+			"slpd_sheriff_black_vest",
+			"slpd_sheriff_orange_vest",
+			"TAC_SGS_SK",
+			"S_VHO_OV_95_1",
+			"S_VHO_OV_95_2",
+			"S_VHO_PV_95"
 		];
 		_availableHeadgear = _availableHeadgear + _temp;
 	};
-	
-	
-	
-	
+
+
+
+
     if (player getvariable ["cop", 0] > 5) then {
         _availableUniformsFive = [
 		"TRYK_U_hood_nc",
@@ -497,7 +514,7 @@ _availableUniforms = [
 		"TRYK_U_B_Denim_T_BG_BK",
         "TRYK_shirts_BLK_PAD_BL",
         "TRYK_U_pad_hood_CSATBlk",
-            
+
         "U_BG_Guerilla3_1",
         "U_BG_Guerrilla_6_1",
 
@@ -510,7 +527,7 @@ _availableUniforms = [
 		"CUP_O_TKI_Khet_Jeans_02",
 		"CUP_O_TKI_Khet_Jeans_03",
 		"CUP_O_TKI_Khet_Jeans_04",
-            
+
         "EF_HM_B1",
         "EF_HM_BL1",
         "EF_HM_OD1",
@@ -704,9 +721,10 @@ _availableUniforms = [
         ];
         _availableUniforms = _availableUniforms + _availableUniformsFive;
     };
- 
+
 _availableVests = [
     "EF_PBDF_M1",
+	"PATHuK_belt",
 	"V_RebreatherB",
 	"jamie_black",
 	"jamie_blacky2",
@@ -722,8 +740,10 @@ _availableVests = [
 	"jamie_sheriff_vest",
 	"kif_traffic_vest",
 	"kif_slpa_vest",
-	"kifpd_black_vest",
-	"kifpd_yellow_vest"
+	"slpd_black_vest",
+	"officer_belt",
+	"detective_belt",
+	"slpd_yellow_vest"
 ];
     if (player getvariable ["cop", 0] > 2) then {
         _availableVestsTwo = [
@@ -738,7 +758,7 @@ _availableVests = [
         ];
     _availableVests = _availableVests + _availableVestsTwo;
     };
-    
+
     if (player getvariable ["cop", 0] > 4) then {
         _availableVestsFour = [
             "TAC_PBDFG2CPSRF_RG_1",
@@ -761,7 +781,9 @@ _availableVests = [
 		"TAC_V_tacv1_P2",
 		"EF_CTV1",
 		"TAC_HGB_B",
-		"TAC_V_Sheriff_BA_TB4"
+		"TAC_V_Sheriff_BA_TB4",
+		"S_VHO_OV_COP_3",
+		"S_VHO_OV_95_7"
 		//"TRYK_V_ArmorVest_Delta",
 		//"TRYK_V_ArmorVest_Delta2"
 	];
@@ -774,7 +796,8 @@ _availableBackpacks = [
 	"TAC_BP_Butt_B2",
 	"TAC_BP_Butt_B",
 	"TAC_BP_KAR_L",
-	"TRYK_B_BAF_BAG_BLK"
+	"TRYK_B_BAF_BAG_BLK",
+	"DRPG_PoliceBelt"
 ];
 
     if (player getvariable ["cop", 0] > 5) then {
@@ -827,7 +850,7 @@ _availableMagazine = [
 		_availableMagazine = _availableMagazine + _availableMagazineSeven;
 	};
 
- 
+
 _availableWeapon = [
 	"RH_ttracker_g",
 	"RH_uspm",
@@ -837,6 +860,10 @@ _availableWeapon = [
 	"RH_m9",
 	"RH_cz75",
 	"Taser",
+      "cl_speedgun",
+      "cl_plastic_shield",
+      "cl_FlashLight",
+      "cl3_fingerprintscanner",
 	"RH_sw659",
 	"RH_g17",
 	"RH_g19"
@@ -959,6 +986,7 @@ _availableItems = [
 	"ItemMap",
 	"ItemCompass",
 	"Itemwatch",
+	"Mattaust_Keys",
 	"cg_tabletd",
 	"ItemGPS",
 	"TRYK_Headset_NV",

@@ -8,6 +8,9 @@ _crate = _this select 0;
 _availableHeadgear = [
 	"AM_PatrolHat",
 	"TAC_SF10H",
+	"police_cap",
+	"police_furag",
+	"chief_furag",
 	"BHD_Protec_helmet",
 	"BHD_Protec_helmet2",
 	"BHD_Protec_helmet3",
@@ -304,33 +307,39 @@ _availableUniforms = [
 	"NP_W_PD4",
 	"NP_W_PD3",
 
-	"kifpd_uni_cadet",
-	"kifpd_uni_po1",
-	"kifpd_uni_po2",
-	"kifpd_uni_po3",
-	"kifpd_uni_po4",
-	"kifpd_uni_sgt",
-	"kifpd_uni_ssgt",
-	"kifpd_uni_ltpolice",
-	"kifpd_uni_cptpolice",
-	"kifpd_uni_rafblue",
-	"kifpd_uni_rafwhite",
-	"kifpd_uni_dzokablue",
-	"kifpd_uni_dzokawhite",
+	"slpd_uni_cadet",
+	"slpd_uni_po1",
+	"slpd_uni_po2",
+	"slpd_uni_po3",
+	"slpd_uni_po4",
+	"slpd_uni_sgt",
+	"slpd_uni_ssgt",
+	"slpd_uni_ltpolice",
+	"slpd_uni_cptpolice",
+	"slpd_uni_rafblue",
+	"slpd_uni_rafwhite",
+	"slpd_uni_dzokablue",
+	"slpd_uni_dzokawhite",
+	
+	
+	
+	"PAT_suit",
+	"PAT_suit2",
+	"kifpd_uni_sheriff_fto",
 
-	"kifpd_uni_aiad_div_chief_goc",
-	"kifpd_uni_aiad_dep_div_chief",
-	"kifpd_uni_aiad_insepctor_sgt",
-	"kifpd_uni_aiad_inspector_po4",
+	"slpd_uni_aiad_div_chief_goc",
+	"slpd_uni_aiad_dep_div_chief",
+	"slpd_uni_aiad_insepctor_sgt",
+	"slpd_uni_aiad_inspector_po4",
 
-	"kifpd_uni_dtu_lt_yellow",
-	"kifpd_uni_dtu_lt_white",
-	"kifpd_uni_dtu_cpt_yellow",
-	"kifpd_uni_dtu_cpt_white",
-	"kifpd_uni_dtu_det1",
-	"kifpd_uni_dtu_det2",
-	"kifpd_uni_dtu_det3",
-	"kifpd_uni_dtu_det4",
+	"slpd_uni_dtu_lt_yellow",
+	"slpd_uni_dtu_lt_white",
+	"slpd_uni_dtu_cpt_yellow",
+	"slpd_uni_dtu_cpt_white",
+	"slpd_uni_dtu_det1",
+	"slpd_uni_dtu_det2",
+	"slpd_uni_dtu_det3",
+	"slpd_uni_dtu_det4",
 
 	"silver_lake_fbi",
 	"silver_lake_police",
@@ -394,17 +403,19 @@ _availableUniforms = [
 			"Sheriff_rang12",
 			"sp_rang3",
 			"sp_rang6",
-			"kifpd_uni_sheriff_deputy",
-			"kifpd_uni_sheriff_senior_deputy",
-			"kifpd_uni_sheriff_corporal",
-			"kifpd_uni_sheriff_sergeant",
-			"kifpd_uni_sheriff_lieutenant",
-			"kifpd_uni_sheriff_captain",
-			"kifpd_uni_sheriff_division_chief_so",
-			"kifpd_uni_sheriff_assistant_sheriff",
-			"kifpd_uni_sheriff_undersheriff",
-			"kifpd_uni_sheriff_sheriff",
-			"kifpd_uni_sheriff_fto"
+			"slpd_uni_sheriff_deputy",
+			"slpd_uni_sheriff_senior_deputy",
+			"slpd_uni_sheriff_corporal",
+			"slpd_uni_sheriff_sergeant",
+			"slpd_uni_sheriff_lieutenant",
+			"slpd_uni_sheriff_captain",
+			"slpd_uni_sheriff_division_chief_so",
+			"slpd_uni_sheriff_assistant_sheriff",
+			"slpd_uni_sheriff_undersheriff",
+			"slpd_uni_sheriff_sheriff",
+			"slpd_uni_sheriff_fto",
+			"sl_SO_Sweater",
+			"sl_CRT_Sweater"
 		];
 		_availableUniforms = _availableUniforms + _temp;
 		//Kamizelki
@@ -417,9 +428,12 @@ _availableUniforms = [
 		_temp = [
 			"jamie_pcapgreen",
 			"jamie_pcapgreen2",
-			"kifpd_sheriff_black_vest",
-			"kifpd_sheriff_orange_vest",
-			"TAC_SGS_SK"
+			"slpd_sheriff_black_vest",
+			"slpd_sheriff_orange_vest",
+			"TAC_SGS_SK",
+			"S_VHO_OV_95_1",
+			"S_VHO_OV_95_2",
+			"S_VHO_PV_95"
 		];
 		_availableHeadgear = _availableHeadgear + _temp;
 	};
@@ -722,8 +736,12 @@ _availableVests = [
 	"jamie_sheriff_vest",
 	"kif_traffic_vest",
 	"kif_slpa_vest",
-	"kifpd_black_vest",
-	"kifpd_yellow_vest"
+	"slpd_black_vest",
+	"officer_belt",
+	"detective_belt",
+	"PATHuK_patrol_vest",
+	"PATHuK_police_vest",
+	"slpd_yellow_vest"
 ];
     if (player getvariable ["cop", 0] > 2) then {
         _availableVestsTwo = [
@@ -761,7 +779,9 @@ _availableVests = [
 		"TAC_V_tacv1_P2",
 		"EF_CTV1",
 		"TAC_HGB_B",
-		"TAC_V_Sheriff_BA_TB4"
+		"TAC_V_Sheriff_BA_TB4",
+		"S_VHO_OV_COP_3",
+		"S_VHO_OV_95_7"
 		//"TRYK_V_ArmorVest_Delta",
 		//"TRYK_V_ArmorVest_Delta2"
 	];

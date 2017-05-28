@@ -15,10 +15,10 @@ _vehicles = nearestObjects [_pos, ["Car","Air","Ship"], 7];
 
 _startpos = getpos _vehicle;
 closedialog 0;
-while {true} do {
+for "_i" from 0 to 1 step 0 do  {
 	uisleep 0.5;
-	_mycash = [1,2] call client_fnc_checkmoney;
-	[2] call Client_fnc_removeCash;
+	_mycash = [1,2] call Client_fnc_sl_checkMoney_secure;
+	[2] call Client_fnc_sl_removeCash_secure;
 	_curFuel = fuel _vehicle;
 	if !(_mycash) exitwith { hint "Nie masz już pieniędzy."; };
 	if(_curFuel > 0.99) exitwith { hint "Pojazd zatankowany!"; };

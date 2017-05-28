@@ -24,8 +24,8 @@ if (isNil "_amount") then {_amount = "";};
 
 _playerUID = getPlayerUID _player;
 _playerName = name _player;
-_playerCash = _player getVariable ["wallet",-1];
-_playerBank = _player getVariable ["atm",-1];
+_playerCash = _player getVariable ["sl_wallet_silverlake",-1];
+_playerBank = _player getVariable ["sl_atm_silverlake",-1];
 _playerInv = getUnitLoadout _player;
 
 if (isNull _unit) then {
@@ -34,8 +34,8 @@ if (isNull _unit) then {
 } else {
     _unitUID = getPlayerUID _unit;
     _unitName = name _unit;
-    _unitCash = _unit getVariable ["wallet",-1];
-    _unitBank = _unit getVariable ["atm",-1];
+    _unitCash = _unit getVariable ["sl_wallet_silverlake",-1];
+    _unitBank = _unit getVariable ["sl_atm_silverlake",-1];
     _unitInv = getUnitLoadout _unit;
 };
 
@@ -64,7 +64,13 @@ switch (_type) do {
     case 22: {_type = "SkrzynkaSklep";};
     case 23: {_type = "PrzeszukanieDomu";};
     case 24: {_type = "PrzeszukanieSklepu";};
-    //case 25: {_type = "";};
+    case 25: {_type = "PosadzilMaryche";};
+    case 26: {_type = "ScialMaryche";};
+    case 27: {_type = "PostawilStolMethy";};
+    case 28: {_type = "ZakonczylGotowacMethe";};
+    case 29: {_type = "ZapakowalDrewnoNaPojazd";};
+    case 30: {_type = "PrzerobilDrewno";};
+    //case 31: {_type = "";};
 };
 
 

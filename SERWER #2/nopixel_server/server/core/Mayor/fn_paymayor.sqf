@@ -5,8 +5,8 @@ diag_log ["paying mayor %1", _payment];
  
 if(isNil "theMayor") exitwith {}; 
  
-[_payment] remoteexec ["Client_fnc_addCashMayor",theMayor]; 
+[_payment] remoteexec ["Client_fnc_sl_addCash_secure",theMayor]; 
  
-_currentcash = theMayor getvariable "atm"; 
+_currentcash = theMayor getVariable "sl_atm_silverlake"; 
 _new = _currentcash + _payment; 
-theMayor setVariable ["atm", _new, false]; 
+theMayor setVariable ["sl_atm_silverlake", _new, false]; 
