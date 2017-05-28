@@ -30,15 +30,19 @@ if(isNull _ui) then {
 	_sPos = worldToScreen _pos;
 	_distance = _x distance player;
 	_name = getPlayerUID  _x;
-	
+
 	_dickbag = true;
 	_text = "";
-	
+
 	_isAdmin = _x getVariable ["st_hide", false];
-	
-	if(count _sPos > 1 && isPlayer _x && _distance < 2 && !adminESP && _x != player && vehicle player == player && currentweapon player == "" && !_isAdmin) then {
+
+	if(!(lineIntersects [eyePos player, eyePos _x, player, _x]) && count _sPos > 1 && isPlayer _x && _distance < 7 && !adminESP && _x != player && !_isAdmin) then {
 		if(_x isKindOf "Man") then {
+			if(_x getVariable ["tf_isSpeaking",false]) then {
+			_text = format["<t color='#FFFFFF' font='puristaMedium'>%1</t> <img size='1' image='sl_client\textures\icons\smalltalk.paa'/>",_name];
+		} else {
 			_text = format["<t color='#FFFFFF' font='puristaMedium'>%1</t>",_name];
+		};
 		} else {
 			_crew = crew (vehicle _x);
 			{
@@ -56,5 +60,3 @@ if(isNull _ui) then {
 		_idc ctrlShow true;
 	};
 } foreach allPlayers;
-
-
