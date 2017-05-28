@@ -18,7 +18,6 @@ class sl_boat_fire: C_Boat_Civil_01_police_F
 	};
 
 };
-
 /*	
 Ford F350 SWAT z dildo
 */
@@ -26,4 +25,16 @@ class red_swat_08_p_swat;
 	class sl_ford350_swat: red_swat_08_p_swat
 	{
 		displayName = "Ford F350 SWAT z dildosem";
+	};
+/*	
+Lenco Bearcat SERT
+*/
+class Abruzzi_LencoPD_01;
+class sl_bearcat_mat: Abruzzi_LencoPD_01
+	{
+	displayName = "Lenco Bearcat S.E.R.T.";
+	scope=2;
+	side=3;
+	hiddenSelectionsMaterials[]=
+	{"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","\sl_impala\rvmat\body.rvmat",""};
 	};

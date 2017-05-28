@@ -31,4 +31,8 @@ class sl_charger_sert: sl_charger_220
 		{
 			"\sl_vehicles_red\tex\charger_12_p\sert02.paa"
 		};
+		hiddenSelectionsMaterials[]=
+		{
+			"\sl_impala\rvmat\body.rvmat"
+		};
 	};
