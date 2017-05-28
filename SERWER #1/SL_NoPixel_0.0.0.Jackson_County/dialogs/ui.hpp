@@ -4,7 +4,7 @@
 //
 
 	class RSC_DOTASK
-	{    
+	{
 		idd = -1;
 		fadein=1;
 	  	fadeout=1;
@@ -31,12 +31,12 @@
 				shadow=0;
 				text="";
 			};
-		};	
+		};
 	};
 
 
 	class RSC_DOMSG7
-	{    
+	{
 		idd = -1;
 		fadein=1;
 	  	fadeout=1;
@@ -63,11 +63,11 @@
 				shadow=0;
 				text="";
 			};
-		};	
+		};
 	};
 
 	class RSC_DOMSG6
-	{    
+	{
 		idd = -1;
 		fadein=1;
 	  	fadeout=1;
@@ -96,11 +96,11 @@
 				text="";
 			};
 
-		};	
+		};
 	};
 
 	class RSC_DOMSG5
-	{    
+	{
 		idd = -1;
 		fadein=1;
 	  	fadeout=1;
@@ -129,12 +129,12 @@
 				text="";
 			};
 
-		};	
+		};
 	};
 
 
 	class RSC_DOMSG4
-	{    
+	{
 		idd = -1;
 		fadein=1;
 	  	fadeout=1;
@@ -163,11 +163,11 @@
 				text="";
 			};
 
-		};	
+		};
 	};
 
 	class RSC_DOMSG3
-	{    
+	{
 		idd = -1;
 		fadein=1;
 	  	fadeout=1;
@@ -197,11 +197,11 @@
 				text="";
 			};
 
-		};	
+		};
 	};
 
 	class RSC_DOMSG2
-	{    
+	{
 		idd = -1;
 		fadein=1;
 	  	fadeout=1;
@@ -229,11 +229,11 @@
 				shadow=0;
 				text="";
 			};
-		};	
+		};
 	};
 
 	class RSC_DOMSG1
-	{    
+	{
 		idd = -1;
 		fadein=1;
 	  	fadeout=1;
@@ -261,7 +261,7 @@
 				shadow=0;
 				text="";
 			};
-		};	
+		};
 	};
 
 class HUDhealth1
@@ -274,13 +274,13 @@ class HUDhealth1
 	name="HUDhealth1";
 	onLoad="uiNamespace setVariable ['HUDhealth1',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud1
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42369;
 			fadein=1;
 		  	fadeout=1;
@@ -310,13 +310,13 @@ class HUDhealth2
 	name="HUDhealth2";
 	onLoad="uiNamespace setVariable ['HUDhealth2',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud2
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42369;
 			fadein=1;
 		  	fadeout=1;
@@ -346,13 +346,13 @@ class HUDhealth3
 	name="HUDhealth3";
 	onLoad="uiNamespace setVariable ['HUDhealth3',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud3
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42369;
 			fadein=1;
 		  	fadeout=1;
@@ -382,13 +382,13 @@ class HUDFood
 	name="HUDFood";
 	onLoad="uiNamespace setVariable ['HUDFood',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud2
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42369;
 			fadein=1;
 		  	fadeout=1;
@@ -418,13 +418,13 @@ class HUDThirst
 	name="HUDThirst";
 	onLoad="uiNamespace setVariable ['HUDThirst',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud3
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42369;
 			fadein=1;
 		  	fadeout=1;
@@ -454,13 +454,13 @@ class HUDAddiction
 	name="HUDAddiction";
 	onLoad="uiNamespace setVariable ['HUDAddiction',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud4
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42469;
 			fadein=1;
 		  	fadeout=1;
@@ -489,13 +489,13 @@ class HUDBattery
 	name="HUDBattery";
 	onLoad="uiNamespace setVariable ['HUDBattery',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud5
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -524,13 +524,13 @@ class HUDWork
 	name="HUDWork";
 	onLoad="uiNamespace setVariable ['HUDWork',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -559,13 +559,13 @@ class HUDseat
 	name="HUDseat";
 	onLoad="uiNamespace setVariable ['HUDseat',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -584,6 +584,111 @@ class HUDseat
 	};
 };
 
+class HUDSpeak1
+   	{
+	idd=9534;
+	movingEnable=0;
+  	fadein=1;
+	duration = 999999;
+  	fadeout=1;
+	name="HUDSpeak1";
+	onLoad="uiNamespace setVariable ['HUDSpeak1',_this select 0]";
+	objects[]={};
+
+	class controls
+	{
+		class hud6
+		{
+			type = 0;
+			style = 2096;
+			idc=42569;
+			fadein=1;
+		  	fadeout=1;
+			x = 0.50 * safezoneW + safezoneX;
+			y = 0.93 * safezoneH + safezoneY;
+			w = 0.1;
+			H = 0.1;
+			sizeEx=0.01;
+			size=0.01;
+			font="PuristaLight";
+			colorBackground[]={0,0,0,0};
+			colorText[] = { 1 , 1 , 1 , 1 };
+			shadow=0;
+			text = "\sl_client\textures\icons\speaker.paa";
+		};
+	};
+};
+
+class HUDSpeak2
+   	{
+	idd=9535;
+	movingEnable=0;
+  	fadein=1;
+	duration = 999999;
+  	fadeout=1;
+	name="HUDSpeak2";
+	onLoad="uiNamespace setVariable ['HUDSpeak2',_this select 0]";
+	objects[]={};
+
+	class controls
+	{
+		class hud6
+		{
+			type = 0;
+			style = 2096;
+			idc=42569;
+			fadein=1;
+		  	fadeout=1;
+			x = 0.50 * safezoneW + safezoneX;
+			y = 0.93 * safezoneH + safezoneY;
+			w = 0.1;
+			H = 0.1;
+			sizeEx=0.01;
+			size=0.01;
+			font="PuristaLight";
+			colorBackground[]={0,0,0,0};
+			colorText[] = { 1 , 1 , 1 , 1 };
+			shadow=0;
+			text = "\sl_client\textures\icons\speaker2.paa";
+		};
+	};
+};
+
+class HUDSpeak3
+   	{
+	idd=9536;
+	movingEnable=0;
+  	fadein=1;
+	duration = 999999;
+  	fadeout=1;
+	name="HUDSpeak3";
+	onLoad="uiNamespace setVariable ['HUDSpeak3',_this select 0]";
+	objects[]={};
+
+	class controls
+	{
+		class hud6
+		{
+			type = 0;
+			style = 2096;
+			idc=42569;
+			fadein=1;
+		  	fadeout=1;
+			x = 0.50 * safezoneW + safezoneX;
+			y = 0.93 * safezoneH + safezoneY;
+			w = 0.1;
+			H = 0.1;
+			sizeEx=0.01;
+			size=0.01;
+			font="PuristaLight";
+			colorBackground[]={0,0,0,0};
+			colorText[] = { 1 , 1 , 1 , 1 };
+			shadow=0;
+			text = "\sl_client\textures\icons\speaker3.paa";
+		};
+	};
+};
+
 
 class HUDbleed
    	{
@@ -595,13 +700,13 @@ class HUDbleed
 	name="HUDbleed";
 	onLoad="uiNamespace setVariable ['HUDbleed',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -632,13 +737,13 @@ class HUDgun
 	name="HUDgun";
 	onLoad="uiNamespace setVariable ['HUDgun',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -669,13 +774,13 @@ class HUDguncop
 	name="HUDguncop";
 	onLoad="uiNamespace setVariable ['HUDguncop',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -704,13 +809,13 @@ class HUDtasercop
 	name="HUDtasercop";
 	onLoad="uiNamespace setVariable ['HUDtasercop',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -740,13 +845,13 @@ class HUDmarijuana
 	name="HUDgun";
 	onLoad="uiNamespace setVariable ['HUDmarijuana',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -776,13 +881,13 @@ class HUDcocaine
 	name="HUDcocaine";
 	onLoad="uiNamespace setVariable ['HUDcocaine',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -811,13 +916,13 @@ class HUDmeth
 	name="HUDmeth";
 	onLoad="uiNamespace setVariable ['HUDmeth',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -848,13 +953,13 @@ class HUDheroin
 	name="HUDheroin";
 	onLoad="uiNamespace setVariable ['HUDheroin',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -883,13 +988,13 @@ class HUDenergy
 	name="HUDenergy";
 	onLoad="uiNamespace setVariable ['HUDenergy',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud6
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
@@ -918,7 +1023,7 @@ class HUDGoPro
 	name="HUDGoPro";
 	onLoad="uiNamespace setVariable ['HUDGoPro',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud7
@@ -931,7 +1036,7 @@ class HUDGoPro
 		  	fadeout=1;
 			x = 0.967 * safezoneW + safezoneX;
 			y = 0.35 * safezoneH + safezoneY;
-			w = 0.075; 
+			w = 0.075;
 			h = 0.1;
 			sizeEx=0.01;
 			size=0.01;
@@ -955,7 +1060,7 @@ class HUDNos
 	name="HUDNos";
 	onLoad="uiNamespace setVariable ['HUDNos',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud8
@@ -967,7 +1072,7 @@ class HUDNos
 		  	fadeout=1;
 			x = 0.967 * safezoneW + safezoneX;
 			y = 0.41 * safezoneH + safezoneY;
-			w = 0.075; 
+			w = 0.075;
 			h = 0.1;
 			sizeEx=0.01;
 			size=0.01;
@@ -991,19 +1096,19 @@ class HUDNothing
 	name="HUDNothing";
 	onLoad="uiNamespace setVariable ['HUDNothing',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud9
 		{
 			type = 0;
-			style = 2096;			
+			style = 2096;
 			idc=119872;
 			fadein=1;
 		  	fadeout=1;
 			x = 0.967 * safezoneW + safezoneX;
 			y = 0.45 * safezoneH + safezoneY;
-			w = 0.075; 
+			w = 0.075;
 			h = 0.1;
 			sizeEx=0.01;
 			size=0.01;
@@ -1026,7 +1131,7 @@ class HUDLoading
 	name="HUDLoading";
 	onLoad="uiNamespace setVariable ['HUDLoading',_this select 0]";
 	objects[]={};
-		
+
 	class controls
 	{
 		class hud11
@@ -1061,8 +1166,8 @@ class HUDLoading
 		name="playerHUD";
 		onLoad="uiNamespace setVariable ['playerHUD',_this select 0]";
 		objects[]={};
-		
-		
+
+
 		class controls
 		{
 
@@ -1073,7 +1178,7 @@ class HUDLoading
 				style=ST_LEFT;
 				x = 0.834 * safezoneW + safezoneX;
 				y = 0.463 * safezoneH + safezoneY;
-				w = 0.8; 
+				w = 0.8;
 				h = 1;
 				sizeEx=0.03;
 				size=1;
@@ -1091,7 +1196,7 @@ class HUDLoading
 				style=ST_LEFT;
 				x = 0.834 * safezoneW + safezoneX;
 				y = 0.503 * safezoneH + safezoneY;
-				w = 0.8; 
+				w = 0.8;
 				h = 1;
 				sizeEx=0.03;
 				size=1;
@@ -1100,7 +1205,7 @@ class HUDLoading
 				colorText[] = { 1 , 1 , 1 , 1 };
 				shadow=1;
 				text="";
-			};	
+			};
 			class fracturetext
 			{
 				type=CT_STRUCTURED_TEXT;
@@ -1108,7 +1213,7 @@ class HUDLoading
 				style=ST_LEFT;
 				x = 0.834 * safezoneW + safezoneX;
 				y = 0.543 * safezoneH + safezoneY;
-				w = 0.8; 
+				w = 0.8;
 				h = 1;
 				sizeEx=0.03;
 				size=1;
@@ -1117,7 +1222,7 @@ class HUDLoading
 				colorText[] = { 1 , 1 , 1 , 1 };
 				shadow=1;
 				text="";
-			};	
+			};
 
 			class unconcioustext
 			{
@@ -1126,7 +1231,7 @@ class HUDLoading
 				style=ST_LEFT;
 				x = 0.834 * safezoneW + safezoneX;
 				y = 0.583 * safezoneH + safezoneY;
-				w = 0.8; 
+				w = 0.8;
 				h = 1;
 				sizeEx=0.03;
 				size=1;
@@ -1135,7 +1240,7 @@ class HUDLoading
 				colorText[] = { 1 , 1 , 1 , 1 };
 				shadow=1;
 				text="";
-			};	
+			};
 
 
 			class diseasetext
@@ -1145,7 +1250,7 @@ class HUDLoading
 				style=ST_LEFT;
 				x = 0.834 * safezoneW + safezoneX;
 				y = 0.623 * safezoneH + safezoneY;
-				w = 0.8; 
+				w = 0.8;
 				h = 1;
 				sizeEx=0.03;
 				size=1;
@@ -1163,7 +1268,7 @@ class HUDLoading
 				style=ST_LEFT;
 				x = 0.834 * safezoneW + safezoneX;
 				y = 0.663 * safezoneH + safezoneY;
-				w = 0.8; 
+				w = 0.8;
 				h = 1;
 				sizeEx=0.03;
 				size=1;
@@ -1183,7 +1288,7 @@ class HUDLoading
 				style=ST_LEFT;
 				x = 0.967 * safezoneW + safezoneX;
 				y = 0.35 * safezoneH + safezoneY;
-				w = 0.75; 
+				w = 0.75;
 				h = 0.5;
 				sizeEx=0.035;
 				size=0.035;
@@ -1203,7 +1308,7 @@ class HUDLoading
 				style=ST_LEFT;
 				x = 0.967 * safezoneW + safezoneX;
 				y = 0.4 * safezoneH + safezoneY;
-				w = 0.75; 
+				w = 0.75;
 				h = 0.5;
 				sizeEx=0.035;
 				size=0.035;
@@ -1223,7 +1328,7 @@ class HUDLoading
 				style=ST_LEFT;
 				x = 0.967 * safezoneW + safezoneX;
 				y = 0.45 * safezoneH + safezoneY;
-				w = 0.75; 
+				w = 0.75;
 				h = 0.5;
 				sizeEx=0.035;
 				size=0.035;
@@ -1233,7 +1338,7 @@ class HUDLoading
 				shadow=false;
 				text="";
 			};*/
-		};   
+		};
  	};
 
  	#define BaseIconID 78001
@@ -1246,7 +1351,7 @@ class client_HUD_nameTags {
 	name = "client_HUD_nameTags";
 	onLoad = "uiNamespace setVariable['client_HUD_nameTags',_this select 0]";
 	objects[] = {};
-	
+
 	class controls
 	{
 		class BaseIcon
@@ -1263,7 +1368,7 @@ class client_HUD_nameTags {
 			w = 0; h = 0;
 			x = 0.1; y = 0.1;
 		};
-		
+
 		class p1 : BaseIcon {idc = BaseIconID;};
 		class p2 : BaseIcon {idc = BaseIconID + 1;};
 		class p3 : BaseIcon {idc = BaseIconID + 2;};
