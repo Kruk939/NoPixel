@@ -1041,7 +1041,9 @@ _availableItems = [
         "S_VHO_OV_MTP_5",
         "TAC_V_tacv1_FBI2",
         "TAC_V_tacv1LC_FBI",
-        "TAC_V_tacv1_FBI"
+        "TAC_V_tacv1_FBI",
+        "sl_fbi1",
+        "sl_fbi2"
     ];
     _availableVests = _availableVests + _availableVestsFBI;
         
