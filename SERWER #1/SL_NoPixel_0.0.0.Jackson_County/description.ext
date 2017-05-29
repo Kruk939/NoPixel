@@ -338,6 +338,7 @@ class CfgFunctions
 			class openGaragePolice {};
 			class openGarageEMS {};
 			class openGarageAIAD {};
+            class openGarageFBI {};
 			class openGarageMafia {};
 			class finishLicense {};
 			class processplates {};
