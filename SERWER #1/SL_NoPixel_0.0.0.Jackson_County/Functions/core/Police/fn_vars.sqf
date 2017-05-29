@@ -1009,11 +1009,47 @@ _availableItems = [
     ];
      _availableItems = _availableItems + _availableItemsTen;
     };
-	if (client_dtu_actions > 0 ) then {
-	_availableItemsDtu = [
-    "kif_gps"
+
+	if (client_fbi_actions > 0 ) then {
+    _availableUniformsFBI = [
+        "EF_HMFBI_1",
+        "EF_HMFBI_2",
+        "FBI_uni",
+        "FBI_rang1",
+        "FBI_rang2",
+        "FBI_rang3",
+        "FBI_rang4",
+        "FBI_rang5",
+        "FBI_rang6",
+        "FBI_rang7",
+        "FBI_rang8",
+        "FBI_rang9",
+        "FBI_rang10"
     ];
-     _availableItems = _availableItems + _availableItemsDtu;
+    _availableUniforms = _availableUniforms + _availableUniformsFBI;
+    
+    _availableVestsFBI = [
+        "S_VHO_OV_MTP_4",
+        "S_VHO_OV_MTP_8",
+        "S_VHO_OV_MTP_6",
+        "S_VHO_OV_MTP_7",
+        "S_VHO_OV_MTP_1",
+        "S_VHO_OV_MTP_3",
+        "S_VHO_OV_MTP_2",
+        "S_VHO_PV_MTP",
+        "S_VHO_OV_MTP_9",
+        "S_VHO_OV_MTP_5",
+        "TAC_V_tacv1_FBI2",
+        "TAC_V_tacv1LC_FBI",
+        "TAC_V_tacv1_FBI"
+    ];
+    _availableVests = _availableVests + _availableVestsFBI;
+        
+	_availableItemsFBI = [
+        "kif_gps"
+    ];
+        
+     _availableItems = _availableItems + _availableItemsFBI;
 	};
 
 
