@@ -507,7 +507,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Cop""", "client_fbi_actions > 0", "typeof CurrentCursorTarget == ""Land_PoliceStation"""],
+		["myjob == ""Cop""", "client_fbi_actions > 1", "typeof CurrentCursorTarget == ""Land_PoliceStation"""],
 		["Skonfiskowane rzeczy", "[""dtu""] spawn client_fnc_retreiveCargo;",3]
 	],
 
