@@ -124,8 +124,8 @@ if (getplayerUID player IN ["76561198013128581","76561197982469013","76561198201
 */
 							//basta             //walezy            //zając             //shepard
 if (getplayerUID player IN ["76561198190509090","76561198060193900","76561197992165129","76561198129676138"]) then { client_fbi_actions=1; };
-                            //kifkick           //dryg              //richard           //rudolf            //liang
-if (getplayerUID player IN ["76561198201987250","76561198035513087","76561198022486899","76561198083797213","76561198007690584"]) then { client_fbi_actions=2; };
+                            //kifkick           //dryg              //richard           //rudolf            //liang            //dzoka
+if (getplayerUID player IN ["76561198201987250","76561198035513087","76561198022486899","76561198083797213","76561198007690584","76561197998091289"]) then { client_fbi_actions=2; };
 
 /*
 	TRAN

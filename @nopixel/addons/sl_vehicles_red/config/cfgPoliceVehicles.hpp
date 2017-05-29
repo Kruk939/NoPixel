@@ -38,28 +38,3 @@ class sl_bearcat_mat: Abruzzi_LencoPD_01
 	hiddenSelectionsMaterials[]=
 	{"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","\sl_impala\rvmat\body.rvmat",""};
 	};
-
-
-class sl_283;
-    class sl_charger_12_uc_black : sl_283
-    {
-    displayName = "Dodge Charger 2012 Unmarked Black";
-    };
-
-class sl_284;
-    class sl_charger_12_uc_blue : sl_284
-    {
-    displayName = "Dodge Charger 2012 Unmarked Blue";
-    };
-
-class sl_285;
-    class sl_charger_15_uc_black : sl_285
-    {
-    displayName = "Dodge Charger 2015 Unmarked Black";
-    };
-
-class sl_286;
-    class sl_charger_15_uc_blue : sl_286
-    {
-    displayName = "Dodge Charger 2015 Unmarked Blue";
-    };
