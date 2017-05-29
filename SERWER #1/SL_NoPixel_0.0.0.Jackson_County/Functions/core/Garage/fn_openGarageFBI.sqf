@@ -5,7 +5,7 @@ ctrlSetText [1000, "Garage"];
 _garage = [];
 
 if(myJob == "Cop") then {
-		if (client_aiad_actions > 0) then {
+		if (client_fbi_actions > 0) then {
 		_garageMore = [
 			
             //UC
