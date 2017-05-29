@@ -16,7 +16,7 @@ if(myjob == "Cop") exitwith {
 		player addWeapon "Binocular";
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";
-		player linkItem "Itemwatch";
+		player linkItem "Mattaust_Keys";
 		player linkItem "ItemGPS";
 		player linkitem "tf_anprc152";
 		player addweapon "cg_baton";
@@ -98,30 +98,31 @@ if(myjob == "Cop") exitwith {
 
 		player forceAddUniform "slpd_uni_sert";
 		player addVest "slpd_sert_vest";
-		for "_i" from 1 to 5 do {player addItemToVest "RH_30Rnd_556x45_M855A1";};
-		for "_i" from 1 to 2 do {player addItemToVest "RH_33Rnd_9x19_g18";};
-		player addBackpack "AM_PoliceBelt";
+		for "_i" from 1 to 10 do {this addItemToVest "vvv_np_magazine_taser";};
+		for "_i" from 1 to 6 do {this addItemToVest "RH_60Rnd_556x45_Mk262";};
+		player addBackpack "DRPG_PoliceBelt";
+		for "_i" from 1 to 3 do {this addItemToBackpack "SUPER_flash";};
+		for "_i" from 1 to 2 do {this addItemToBackpack "SmokeShell";};
+		for "_i" from 1 to 15 do {this addItemToBackpack "CG_ATF_Bandage_i";};
+		for "_i" from 1 to 4 do {this addItemToBackpack "CG_Spikes_Collapsed";};
+		this addItemToBackpack "np_energydrink";
 		player addHeadgear "TRYK_H_PASGT_OD";
 		player addGoggles "Mask_M40_OD";
-
-		player additemtobackpack "taser";
-		for "_i" from 1 to 5 do {player addItemToBackpack "vvv_np_magazine_taser"; };
-
-		{ player additemtobackpack _x; } foreach ["np_energydrink","RH_33Rnd_9x19_g18","RH_33Rnd_9x19_g18","CUP_15Rnd_9x19_M9","CUP_15Rnd_9x19_M9","CG_Spikes_Collapsed","CG_Spikes_Collapsed","CG_wheel","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","cg_atf_bandage_i","CG_ATF_First_Aid_Kit_i","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","kif_gopro","kif_panicbutton","SUPER_flash","SUPER_flash","Mattaust_Keys"];
-		for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShell";};
-		player addWeapon "RH_m4_wdl";
-		player addPrimaryWeaponItem "RH_qdss_nt4_tg";
-		player addPrimaryWeaponItem "RH_ta01nsn_tan";
-		player addWeapon "RH_g18";
-		player addHandgunItem "RH_gemtech9";
+		
+		player addWeapon "RH_hk416_tg";
+		this addPrimaryWeaponItem "RH_qdss_nt4_tg";
+		this addPrimaryWeaponItem "RH_SFM952V";
+		this addPrimaryWeaponItem "RH_ta01nsn_2D";
+		this addPrimaryWeaponItem "RH_TD_ACB_g";
+		player addWeapon "taser";
 		player addWeapon "Rangefinder";
 
 		player linkItem "ItemMap";
 		player linkItem "ItemCompass";
-		player linkItem "Itemwatch";
+		player linkItem "Mattaust_Keys";
 		player linkItem "tf_anprc148jem_2";
 		player linkItem "ItemGPS";
-		player linkItem "TRYK_G_bala_ess_NV";
+		player linkItem "TAC_SGS";
 
 	};
 

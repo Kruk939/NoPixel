@@ -604,7 +604,7 @@ class HUDSpeak1
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
-			x = 0.50 * safezoneW + safezoneX;
+			x = 0.95 * safezoneW + safezoneX;
 			y = 0.93 * safezoneH + safezoneY;
 			w = 0.1;
 			H = 0.1;
@@ -639,7 +639,7 @@ class HUDSpeak2
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
-			x = 0.50 * safezoneW + safezoneX;
+			x = 0.95 * safezoneW + safezoneX;
 			y = 0.93 * safezoneH + safezoneY;
 			w = 0.1;
 			H = 0.1;
@@ -674,7 +674,7 @@ class HUDSpeak3
 			idc=42569;
 			fadein=1;
 		  	fadeout=1;
-			x = 0.50 * safezoneW + safezoneX;
+			x = 0.95 * safezoneW + safezoneX;
 			y = 0.93 * safezoneH + safezoneY;
 			w = 0.1;
 			H = 0.1;

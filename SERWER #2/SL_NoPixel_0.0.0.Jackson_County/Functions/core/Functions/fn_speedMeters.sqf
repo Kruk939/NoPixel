@@ -160,23 +160,22 @@ for "_i" from 0 to 1 step 0 do {
         _lastPos = (_lastPos select 0) + (_lastPos select 1);
     };
 
-		if (TF_speak_volume_level == "normal") then {
-			9535 cutfadeout 1;
-			9536 cutfadeout 1;
-			9534 cutRsc ["HUDSpeak1","PLAIN"];
-		};
+	if (TF_speak_volume_level == "normal") then {
+   9534 cutfadeout 0;
+   9536 cutfadeout 0;
+   9535 cutRsc ["HUDSpeak2","PLAIN",0.001];
+  };
 
-		if (TF_speak_volume_level == "yelling") then {
-			9535 cutfadeout 1;
-			9534 cutfadeout 1;
-			9536 cutRsc ["HUDSpeak3","PLAIN"];
-		};
+  if (TF_speak_volume_level == "yelling") then {
+   9535 cutfadeout 0;
+   9534 cutfadeout 0;
+   9536 cutRsc ["HUDSpeak3","PLAIN",0.001];
+  };
 
-		if (TF_speak_volume_level == "Whispering") then {
-			9535 cutfadeout 1;
-			9536 cutfadeout 1;
-			9535 cutRsc ["HUDSpeak2","PLAIN"];
-		};
-
+  if (TF_speak_volume_level == "Whispering") then {
+   9535 cutfadeout 0;
+   9536 cutfadeout 0;
+   9534 cutRsc ["HUDSpeak1","PLAIN",0.001];
+  };
     uiSleep 1;
 };
