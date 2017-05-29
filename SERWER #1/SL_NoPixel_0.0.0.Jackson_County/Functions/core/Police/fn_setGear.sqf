@@ -122,7 +122,7 @@ if(myjob == "Cop") exitwith {
 		player linkItem "Mattaust_Keys";
 		player linkItem "tf_anprc148jem_2";
 		player linkItem "ItemGPS";
-		this linkItem "TAC_SGS";
+		player linkItem "TAC_SGS";
 
 	};
 
