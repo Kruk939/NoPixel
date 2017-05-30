@@ -535,3 +535,15 @@ class HST_CVPI_MD048 : HST_CVPI_base_uc
 	displayName = "Crown Victoria 2006 MD048";
 	hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(0,0,0,1.0,CO)"};
 };
+class sl_impala_um_marshalls;
+class HST_CI_base_uc : sl_impala_um_marshalls
+{
+	maxSpeed = 300;
+	peakTorque = 800;
+	fuelCapacity = 20;
+};
+class HST_CI_MD044 : HST_CI_base_uc
+{
+	displayName = "Chevrolet Impala MD044";
+	hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(0,0,0,1.0,CO)"};
+};
