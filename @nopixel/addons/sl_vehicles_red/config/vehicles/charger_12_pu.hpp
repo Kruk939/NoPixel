@@ -33,6 +33,11 @@ class sl_283: red_charger_12_p_u_base
 	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
 	#include "\sl_vehicles_red\data\sirenArray.hpp"
 };
+class sl_charger_12_uc_black : sl_283
+{
+    displayName = "Dodge Charger 2012 Unmarked Black";
+};
+
 class sl_284: red_charger_12_p_u_base
 {
 	scope=2;
@@ -50,6 +55,12 @@ class sl_284: red_charger_12_p_u_base
 	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
 	#include "\sl_vehicles_red\data\sirenArray.hpp"
 };
+
+class sl_charger_12_uc_blue : sl_284
+{
+    displayName = "Dodge Charger 2012 Unmarked Blue";
+};
+
 class sl_charger12_swat: red_charger_12_p_u_base
 {
 	scope=2;

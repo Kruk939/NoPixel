@@ -16,6 +16,12 @@ class sl_285: red_charger_15_p_u_base
 	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
 	#include "\sl_vehicles_red\data\sirenArray.hpp"
 };
+
+class sl_charger_15_uc_black : sl_285
+{
+    displayName = "Dodge Charger 2015 Unmarked Black";
+};
+
 class sl_286: red_charger_15_p_u_base
 {
 	scope=2;
@@ -32,4 +38,9 @@ class sl_286: red_charger_15_p_u_base
 	#include "\sl_vehicles_red\lights\red_spotlight_lights.hpp"
 	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
 	#include "\sl_vehicles_red\data\sirenArray.hpp"
+};
+
+class sl_charger_15_uc_blue : sl_286
+{
+    displayName = "Dodge Charger 2015 Unmarked Blue";
 };

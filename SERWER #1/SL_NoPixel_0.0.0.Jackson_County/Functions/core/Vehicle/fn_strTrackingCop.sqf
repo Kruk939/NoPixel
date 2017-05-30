@@ -1,5 +1,5 @@
 if (myjob in ["Cop"]) then {
-    if (client_aiad_actions >= 1) then {
+    if (client_aiad_actions >= 1 || client_fbi_actions >= 1) then {
 
 	    _veh = _this select 0;
 	    _player = _this select 1;
