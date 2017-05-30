@@ -134,7 +134,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" myJob == ""cop"" &&  (client_aiad_actions == 2 || client_fbi_actions == 2)"],
+		[" myJob == ""cop""",  "client_aiad_actions == 2 || client_fbi_actions == 2"],
 		["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
 	],
 
@@ -169,7 +169,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget) && myJob == ""cop"" &&  (client_aiad_actions == 2 || client_fbi_actions == 2)"],
+		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget)", "myJob == ""cop""", "client_aiad_actions == 2 || client_fbi_actions == 2"],
 		[" Namierz telefon ", " [] spawn client_fnc_tracecall; ",1]
 	],
 
@@ -181,7 +181,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" myJob == ""cop"" &&  (client_aiad_actions >= 1 || client_fbi_actions >= 1) && vehicle player == player"],
+		[" myJob == ""cop""",  "client_aiad_actions >= 1 || client_fbi_actions >= 1", "vehicle player == player"],
 		//["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn client_fnc_dotask ",1]
 		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTrackingCop; ",1]
 	],
