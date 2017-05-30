@@ -1024,7 +1024,8 @@ _availableItems = [
         "FBI_rang7",
         "FBI_rang8",
         "FBI_rang9",
-        "FBI_rang10"
+        "FBI_rang10",
+        "EC_FBI"
     ];
     _availableUniforms = _availableUniforms + _availableUniformsFBI;
     
