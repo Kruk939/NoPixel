@@ -79,7 +79,7 @@ if(client_unhealthiness < 60 || client_meth > 0 || client_heroin > 0 || client_c
 
 if(_selectionName == "") then {
 
-if(myjob == "Cop") then { _damage = _damage / 3; };
+if(player getvariable ["cop", 0] > 8 && myjob isEqualTo "Cop") then { _damage = _damage / 3; };
 
 if(uniform player == "nopixel_character_swat") then { _damage = _damage / 3; };
 

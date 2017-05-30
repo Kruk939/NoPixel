@@ -26,10 +26,12 @@ class CfgVehicles
 {
 	class B_Competitor_F;
 	class B_Soldier_lite_F;
+	class B_Soldier_03_f;
 	#include "\sl_pduniforms\cfgPoliceUniformsV.hpp"
 	#include "\sl_pduniforms\cfgSheriffUniformsV.hpp"
 	#include "\sl_pduniforms\cfgSwatUniformsV.hpp"
 	#include "\sl_pduniforms\cfgDtuUniformsV.hpp"
+	#include "\sl_pduniforms\cfgFbiUniformsV.hpp"
 
 };
 
@@ -45,11 +47,12 @@ class cfgWeapons
 	class VestItem;
 	class HeadgearItem;
 
-	#include "\sl_pduniforms\cfgPoliceVests.hpp"
+	#include "\sl_pduniforms\cfgVests.hpp"
 
 	#include "\sl_pduniforms\cfgPoliceUniformsW.hpp"
 	#include "\sl_pduniforms\cfgSheriffUniformsW.hpp"
 	#include "\sl_pduniforms\cfgSwatUniformsW.hpp"
 	#include "\sl_pduniforms\cfgDtuUniformsW.hpp"
+	#include "\sl_pduniforms\cfgFbiUniformsW.hpp"
 
 };
