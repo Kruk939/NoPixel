@@ -69,6 +69,7 @@ if (_booli) then {
 	_legal = _res select 16;
 	_doughnuts = _res select 17;
 	_respawn = _res select 18;
+	_fbi  = _res select 19;
 
 	_messages = [];
 
@@ -84,6 +85,7 @@ if (_booli) then {
 	_player setVariable ["legal", _legal, false];
 	_player setVariable ["garage", _garage, false];
 	_player setVariable ["doughnuts", _doughnuts, false];
+	_player setVariable ["fbi", _fbi, true];
 
 	_player setVariable ["phoneBackground", _phoneBackground, false];
 	_player setVariable ["messages", _messages, false];

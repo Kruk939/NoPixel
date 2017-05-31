@@ -197,3 +197,17 @@ if(myjob == "Mafia") exitwith {
 	player forceadduniform "vvv_traje_mafioso_F_1";
 	player addHeadgear "H_Hat_brown";
 };
+
+if (myjob == "FBI") exitWith {
+	if (_type isEqualTo "fbi") exitWith {
+		removeAllAssignedItems player;
+
+		player addWeapon "Binocular";
+		player linkItem "ItemMap";
+		player linkItem "ItemCompass";
+		player linkItem "Itemwatch";
+		player linkitem "tf_anprc152";
+		player linkItem "kif_gps";
+	};
+
+};

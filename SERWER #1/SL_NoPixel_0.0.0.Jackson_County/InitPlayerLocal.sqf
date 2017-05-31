@@ -33,6 +33,15 @@ _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 uisleep 0.05;
 deletevehicle _vehicle;
 
+cutText ["", "BLACK"];
+
+(findDisplay 46) displayAddEventHandler ["KeyDown", "_this call client_fnc_HandleKeys"];
+(findDisplay 46) displayAddEventHandler ["KeyUp", "_this call client_fnc_HandleKeysUp"];
+
+player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened;}];
+player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
+//player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
+
 if(myhealth > 0.99) exitwith {
 	["Zabijanie gracza za battleloga.", true] spawn domsg;
 	[player,objNull,3,format ["%1 został zabity przez Battleloga", name player],"", ""] remoteExec ["server_fnc_deathLog", 2];
@@ -43,15 +52,6 @@ if(myhealth > 0.99) exitwith {
 		[] spawn client_fnc_respawnTimer;
 	};	
 };
-
-cutText ["", "BLACK"];
-
-(findDisplay 46) displayAddEventHandler ["KeyDown", "_this call client_fnc_HandleKeys"];
-(findDisplay 46) displayAddEventHandler ["KeyUp", "_this call client_fnc_HandleKeysUp"];
-
-player addEventHandler["InventoryOpened", {_this call client_fnc_inventoryOpened;}];
-player addEventHandler["InventoryClosed", {_this call client_fnc_inventoryClosed;}];
-//player addEventHandler["ContainerClosed", {_this call client_fnc_inventoryClosed;}];
 
 [ missionNamespace, "arsenalOpened", {
     disableSerialization;

@@ -4,7 +4,7 @@ ctrlSetText [1000, "Garage"];
 
 _garage = [];
 
-if(myJob == "Cop") then {
+if(myJob == "FBI") then {
 		if (client_fbi_actions > 0) then {
 		_garageMore = [
 			

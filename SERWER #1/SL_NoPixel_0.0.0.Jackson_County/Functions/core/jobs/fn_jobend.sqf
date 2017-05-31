@@ -1,4 +1,4 @@
-if(myJob IN ["Fire","EMS"]) then {
+if(myJob IN ["Fire","EMS", "FBI"]) then {
 	_playerGear = player getVariable "lastSave";
 	player setunitloadout _playerGear;
 };

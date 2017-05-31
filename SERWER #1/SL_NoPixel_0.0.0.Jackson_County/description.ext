@@ -187,6 +187,7 @@ class CfgFunctions
 			file = "Functions\core\jobs\JobFactions";
 			class startDispatch {};
 			class startCop {};
+			class startFBI {};
 			class startMafia {};
 			class startFire {};
 			class startEMS {};
@@ -311,6 +312,13 @@ class CfgFunctions
 		{
 			file = "Functions\core\crafting";
 			class craftMenu {};
+		};
+
+		class fbi
+		{
+			file = "Functions\core\fbi";
+			class fbiArsenal {};
+            class fbiMapMarkers {};
 		};
 
 		class ATM

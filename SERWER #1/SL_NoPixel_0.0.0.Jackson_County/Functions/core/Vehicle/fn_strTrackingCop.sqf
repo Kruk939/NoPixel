@@ -1,4 +1,4 @@
-if (myjob in ["Cop"]) then {
+if (myjob in ["Cop","FBI"]) then {
     if (client_aiad_actions >= 1 || client_fbi_actions >= 1) then {
 
 	    _veh = _this select 0;

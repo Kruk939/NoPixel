@@ -1,4 +1,4 @@
-private["_display","_list","_i","_EMS","_Cop","_Fire","_Mafia","_legal"];
+private["_display","_list","_i","_EMS","_Cop","_Fire","_Mafia","_legal","_fbi"];
 //Cop - EMS - Mafia - Fire
 disableSerialization;
 _max = 0;
@@ -7,6 +7,7 @@ _Cop = player getVariable ["Cop",0];
 _Fire = player getVariable ["Fire",0];
 _Mafia = player getVariable ["Mafia",0];
 _legal = player getVariable ["legal",0];
+_fbi = player getVariable ["fbi",0];
 if(myJob isEqualTo "Cop" && _Cop < 4) exitwith { hint "Musisz miec 4 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "EMS" && _EMS < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "Fire" && _Fire < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
@@ -15,6 +16,7 @@ if(myJob isEqualTo "Mafia" && _Mafia < 8) exitwith { hint "Musisz miec 8 poziom 
 if(myJob isEqualTo "Judge" && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "Lawyer" && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
 if(myJob isEqualTo "Prosecutor" && _legal < 6) exitwith { hint "Musisz miec 6 poziom aby kogos awansowac."; };
+if(myJob isEqualTo "FBI" && _fbi < 8) exitwith { hint "Musisz miec 8 poziom aby kogos awansowac."; };
 
 
 if(myJob isEqualTo "Cop") then { _max = _Cop; };
@@ -24,6 +26,7 @@ if(myJob isEqualTo "Mafia") then { _max = _Mafia; };
 if(myJob isEqualTo "Judge") then { _max = _legal; };
 if(myJob isEqualTo "Lawyer") then { _max = _legal; };
 if(myJob isEqualTo "Prosecutor") then { _max = _legal; };
+if(myJob isEqualTo "FBI") then { _max = _fbi; };
 
 createdialog "promotion";
 

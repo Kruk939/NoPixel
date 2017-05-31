@@ -86,6 +86,7 @@ taskrunning = false;
 paycheck = 0;
 kif_admin = 0;
 client_aiad_actions = 0;
+client_fbi_actions = 0;
 teczka_allowed=0;
 client_tran=0;
 weedPlantArray = [];
