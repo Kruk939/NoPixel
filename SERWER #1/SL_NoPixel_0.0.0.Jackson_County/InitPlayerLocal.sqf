@@ -80,10 +80,6 @@ client_seatbelt = false;
 //[] spawn client_fnc_forceFirstPerson;
 [] spawn client_fnc_speedMeters;
 
-_respawn = player getVariable "respawn";
-if (_respawn == 0) then {
-		[] spawn client_fnc_respawnTimer;
-};
 if(im_dead) exitWith {};
 437 cutRsc ["HUDLoading","PLAIN"];
 
