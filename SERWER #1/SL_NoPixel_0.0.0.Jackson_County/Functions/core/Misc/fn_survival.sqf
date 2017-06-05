@@ -2,8 +2,8 @@
 Survival Koil
 */
 if(isNil "paycheck") then { paycheck = 0; };
-//[] spawn client_fnc_unHaxMe;
-//[] spawn client_fnc_randomCheck; -- dopoki nie ma tu wszystkich poprawnych zmiennych to jest to tylko bezuzyteczny spam. oddalam do setVariable.txt
+[] spawn client_fnc_unHaxMe;
+[] spawn client_fnc_randomCheck;
 if(paycheck > 500) then { paycheck = 450; };
 
 paycheck = paycheck * mav_ttm_var_paycheckMultiplier;
