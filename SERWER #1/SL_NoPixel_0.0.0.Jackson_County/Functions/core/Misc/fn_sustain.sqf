@@ -51,17 +51,17 @@ if(_type == "Drink") then {
 	if(client_thirst < 0) then {client_thirst = 0;};
 	_selection = 2;
 	_change = client_thirst;
-	[] spawn client_fnc_hudthirst;
+	[] spawn client_fnc_hudthirst;		
 };
 
 if(_type == "Battery") then {
 	if(_adjust == "Add") then { client_battery = client_battery + _amount; };
 	if(_adjust == "Remove") then { client_battery = client_battery - _amount; };
 	if(client_battery > 200) then {client_battery = 200;};
-	if(client_battery < 0) then {client_battery = 0;};
+	if(client_battery < 0) then {client_battery = 0;};	
 	_selection = 3;
 	_change = client_battery;
-	[] spawn client_fnc_hudbattery;
+	[] spawn client_fnc_hudbattery;			
 };
 
 if(_type == "Poop") then {
@@ -70,7 +70,7 @@ if(_type == "Poop") then {
 	if(client_poop > 100) then {client_poop = 100;};
 	if(client_poop < 0) then {client_poop = 0;};
 	_selection = 4;
-	_change = client_poop;
+	_change = client_poop;			
 };
 //health is 5
 
@@ -78,7 +78,7 @@ if(_type == "unhealthiness") then {
 	if(_adjust == "Add") then { [format["+%1 Choroby",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness + _amount; };
 	if(_adjust == "Remove") then { [format["-%1 Choroby",_amount],true] spawn domsg; client_unhealthiness = client_unhealthiness - _amount; };
 	if(client_unhealthiness > 100) then { client_unhealthiness = 100;};
-	if(client_unhealthiness < 0) then { client_unhealthiness = 0;};
+	if(client_unhealthiness < 0) then { client_unhealthiness = 0;};	
 	if(client_unhealthiness > 60) then {
 		hint "Jestes w tym momencie bardzo niezdrowy.";
 		_roll = 100 - client_unhealthiness;
@@ -88,19 +88,19 @@ if(_type == "unhealthiness") then {
 			[69] spawn client_fnc_givedisease;
 		};
 	};
-	_change = client_unhealthiness;
-	_selection = 6;
+	_change = client_unhealthiness;	
+	_selection = 6;	
 	[] spawn client_fnc_hudunhealthiness;
 };
 
 //8 left open for licenses
 
-//LICENSES [0,0,0,0,0,0] -- groundvehicle / gun / mining / woodlogging / fishing /
+//LICENSES [0,0,0,0,0,0] -- groundvehicle / gun / mining / woodlogging / fishing / 
 
 
 if(_type == "license") then {
 
-	if(_adjust == "Add") then {
+	if(_adjust == "Add") then { 
 
 		if(_amount == 1) then { licensearray SET [0,1]; ["Otrzymales prawo jazdy",false] spawn domsg; };
 		if(_amount == 2) then { licensearray SET [1,1]; ["Otrzymales licencje na bron",false] spawn domsg;  };
@@ -110,7 +110,7 @@ if(_type == "license") then {
 
 	};
 
-	if(_adjust == "Remove") then {
+	if(_adjust == "Remove") then { 
 
 		if(_amount == 1) then { licensearray SET [0,0]; ["Straciles prawo jazdy",false] spawn domsg; };
 		if(_amount == 2) then { licensearray SET [1,0]; ["Straciles licencje na bron",false] spawn domsg; };
@@ -120,7 +120,7 @@ if(_type == "license") then {
 
 	};
 
-	if(_adjust == "RemoveQuiet") then {
+	if(_adjust == "RemoveQuiet") then { 
 
 		if(_amount == 1) then { licensearray SET [0,0]; };
 		if(_amount == 2) then { licensearray SET [1,0]; };
@@ -139,7 +139,7 @@ if(_type == "license") then {
 
 if(_type == "sex") then {
 	if(female) then { _change = 1; } else { _change = 2; };
-	_selection = 9;
+	_selection = 9;	
 };
 
 
@@ -160,12 +160,12 @@ _mydrugeffects = [client_marijuana,client_cocaine,client_meth,client_heroin,clie
 _myStatuses = player getvariable "statuses";
 
 if(!isNil "_selection") then {
-	_myStatuses set [_selection, _change];
+	_myStatuses set [_selection, _change]; 
 };
 
 _myInjuriesToUpdate = player getvariable "playerInjuries";
-_myStatuses set [7, _myInjuriesToUpdate];
-_myStatuses set [10, _myDrugEffects];
+_myStatuses set [7, _myInjuriesToUpdate];  
+_myStatuses set [10, _myDrugEffects]; 
 player setVariable ["statuses",_mystatuses,false];
 
 
@@ -178,20 +178,17 @@ if(_type == "MafiaMoney") then {
 	if(moneyOwed < 0) then {moneyOwed = 0;};
 
 	loan SET [1, moneyOwed];
-	_myStatuses set [11, Loan];
+	_myStatuses set [11, Loan]; 
 
 	player setVariable ["statuses",_mystatuses,false];
 
 	[player,Loan] remoteexec ["server_fnc_updateMafiaOwed",2];
-
+	
 };
 
 	[player, "statuses", (player getvariable "statuses")] remoteExec ["Server_fnc_setVariable",2];
+	[_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
 
-if((diag_tickTime - (missionNamespace getVariable ["laststatusupdate", 0])) > 2) then {
-		laststatusupdate = diag_tickTime;
-		[_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
-}
 
 // experience food drink battery poop health unhealthiness [playerinjuries], [licneses], sex, [4 drug effects], moneyowed
 // _statuses = [0,100,100,100,0,0,0,[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0],0,[0,0,0,0,0],0];
