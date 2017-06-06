@@ -11,6 +11,14 @@ if (str _jobtype find "Cop" > -1 || str _jobtype == "Cop") exitwith {
 	[player,objNull,10,format ["%1 rozpoczął służbę", name player],""] remoteExec ["server_fnc_copLog", 2];
 };
 
+if (str _jobtype find "FBI" > -1 || str _jobtype == "FBI") exitwith {
+	//[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
+	[] call client_fnc_startFBI;
+	currentFBI pushback _player;
+	publicvariable "currentFBI";
+	["fbi"] spawn client_fnc_setGear;
+};
+
 if (str _jobtype find "EMS" > -1 || str _jobtype == "EMS") exitwith {
 	[_player, getUnitLoadout _player] remoteexec ["Server_fnc_statSave",2];		
 	[] call client_fnc_startEMS;

@@ -3,7 +3,8 @@ private["_name","_markers"];
 waituntil{visiblemap};
 
 _markers = [];
-if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
+
+if(visibleMap && "kif_gps" in assignedItems player || visibleGPS) then {
 	{
 		if ( _x getVariable["robber",FALSE] ) then {
 			_marker = createMarkerLocal [format["%1_NAMIERZONY_PRZESTĘPCA_BANK",name _x],visiblePosition _x];
@@ -53,6 +54,16 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 				_markers pushBack [_marker,_x];
 			};
 		};
+		if ("kif_gps" in assignedItems _x) then {
+								//&& driver (vehicle _x) == _x
+			if ( _x in currentfbi) then {
+				_marker = createMarkerLocal [format["%1_PD_UNIT",name _x],visiblePosition _x];
+				_marker setMarkerColorLocal "ColorWhite";
+				_marker setMarkerTypeLocal "hd_dot";
+				_marker setMarkerTextLocal format["%1",name _x];
+				_markers pushBack [_marker,_x];
+			};
+		};
 	} foreach PlayableUnits;
 
 
@@ -70,7 +81,7 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 } foreach vehicles;
 
 
-	while {visibleMap|| visibleGPS} do
+	while {visibleMap || visibleGPS} do
 	{
 		{
 			private["_marker","_unit"];

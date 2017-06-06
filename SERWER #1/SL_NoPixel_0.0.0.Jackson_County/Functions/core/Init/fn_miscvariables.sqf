@@ -86,6 +86,7 @@ taskrunning = false;
 paycheck = 0;
 kif_admin = 0;
 client_aiad_actions = 0;
+client_fbi_actions = 0;
 teczka_allowed=0;
 client_tran=0;
 weedPlantArray = [];
@@ -104,7 +105,7 @@ if (getplayerUID player IN ["76561198041834190","76561198061433788","76561197998
 							//kifkick			//dorian
 if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif_admin=5; };
 /*
-	AIAD
+	AIAD + DD
 */
 							//Grey				//Szpachla			//Hoost					//Dukat				//Hansen	   		//Donald				Alanovski			//knox	   			//katekarin	   		//wazka
 if (getplayerUID player IN ["76561198010297273", "76561198026279912", "76561198212483959", "76561198089570329","76561197973307654","76561198023332238","76561198058274311","76561198030912509","76561198041834190","76561198039045183"]) then { client_aiad_actions=1; };
@@ -117,6 +118,13 @@ if (getplayerUID player IN ["76561198019277102","76561197977736539","76561197991
 if (getplayerUID player IN ["76561198019277102"]) then { teczka_allowed=1; };
 							//galaretka				//raf				//kifkick			//dorian			//kruk
 if (getplayerUID player IN ["76561198013128581","76561197982469013","76561198201987250","76561198253273755","76561198015862132"]) then { teczka_allowed=2; };
+
+/*
+	FBI
+*/
+if (getplayerUID player IN []) then { client_fbi_actions=1; };
+if (getplayerUID player IN ["76561197977736539","76561198129676138"]) then { client_fbi_actions=2; };
+
 /*
 	TRAN
 */

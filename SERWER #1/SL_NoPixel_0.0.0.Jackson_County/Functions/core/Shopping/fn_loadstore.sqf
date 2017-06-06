@@ -663,6 +663,7 @@ if(_condition == "clothing") then {
 		["brotherhood_8",nil,1000,3,3],
 		["brotherhood_9",nil,1000,3,3],
 		["acj_chaleco_motero",nil,2000,3,3],
+		["TRYK_U_denim_jersey_blk",nil,500,3,1],
 
 		["U_Cloth01_FS",nil,200,3,1],
 		["vvv_character_wandelina",nil,200,3,1],

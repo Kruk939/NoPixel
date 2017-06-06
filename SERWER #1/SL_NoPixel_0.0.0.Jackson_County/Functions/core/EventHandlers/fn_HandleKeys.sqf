@@ -98,19 +98,13 @@ switch (_code) do
 	//Map Key
 	case 50:
 	{
-		if(myJob == "EMS" || myJob == "Fire") then 
-		{
-			[] spawn client_fnc_mapMarkers;
-		} else {
-			if(myJob == "Cop") then 
-			{
-				[] spawn client_fnc_copmapMarkers;
-			} else {
-				[] spawn client_fnc_playermapMarkers;
-			};
+		switch (myjob) do {
+			case "EMS": {[] spawn client_fnc_mapMarkers;};
+			case "Fire": {[] spawn client_fnc_mapMarkers;};
+			case "Cop": {[] spawn client_fnc_copmapMarkers;};
+			case "FBI": {[] spawn client_fnc_fbiMapMarkers;};	
 		};
-
-
+		if !(myjob IN ["EMS","Fire","Cop","FBI"]) then {[] spawn client_fnc_playermapMarkers;};
 	};
 
 	case 3:

@@ -35,7 +35,7 @@ _availableHeadgear = [
 	"KMC_Cap_sert"
 
 ];
-    if (player getvariable ["cop", 0] > 2) then {
+    if (player getvariable ["fbi", 0] > 2) then {
     _availableHeadgearTwo = [
     	"CUP_NVG_PVS7",
         "TRYK_Headset_NV",
@@ -45,7 +45,7 @@ _availableHeadgear = [
     _availableHeadgear = _availableHeadgear + _availableHeadgearTwo;
     };
 
-    if (player getvariable ["cop", 0] > 5) then {
+    if (player getvariable ["fbi", 0] > 5) then {
     _availableHeadgearFive = [
 		"max_sheriff_Hat",
     	"jamie_blackhelmet",
@@ -200,7 +200,7 @@ _availableGoggles = [
 	"TRYK_TAC_EARMUFF_SHADE_Gs"
 ];
 
-    if (player getvariable ["cop", 0] > 5) then {
+    if (player getvariable ["fbi", 0] > 5) then {
         _availableGogglesFive = [
 		"G_Tactical_Black",
 		"G_Tactical_Clear",
@@ -392,7 +392,7 @@ _availableUniforms = [
 ];
 
 	//Sheriff Office
-    if (player getvariable ["cop", 0] > 4) then {
+    if (player getvariable ["fbi", 0] > 4) then {
 		//Mundury
 		_temp = [
 			"Sheriff_rang1",
@@ -444,7 +444,7 @@ _availableUniforms = [
 
 
 
-    if (player getvariable ["cop", 0] > 5) then {
+    if (player getvariable ["fbi", 0] > 5) then {
         _availableUniformsFive = [
 		"TRYK_U_hood_nc",
 		"TRYK_U_hood_mc",
@@ -745,7 +745,7 @@ _availableVests = [
 	"detective_belt",
 	"slpd_yellow_vest"
 ];
-    if (player getvariable ["cop", 0] > 2) then {
+    if (player getvariable ["fbi", 0] > 2) then {
         _availableVestsTwo = [
 		"EF_BS",
 		"EF_BLT_M1",
@@ -759,7 +759,7 @@ _availableVests = [
     _availableVests = _availableVests + _availableVestsTwo;
     };
 
-    if (player getvariable ["cop", 0] > 4) then {
+    if (player getvariable ["fbi", 0] > 4) then {
         _availableVestsFour = [
             "TAC_PBDFG2CPSRF_RG_1",
             "sl_academy",
@@ -768,7 +768,7 @@ _availableVests = [
     _availableVests = _availableVests + _availableVestsFour;
     };
 
-	if (player getvariable ["cop", 0] > 5) then {
+	if (player getvariable ["fbi", 0] > 5) then {
 	_availableVestsFive = [
 		"EF_BS",
 		"EF_CTV1",
@@ -800,7 +800,7 @@ _availableBackpacks = [
 	"DRPG_PoliceBelt"
 ];
 
-    if (player getvariable ["cop", 0] > 5) then {
+    if (player getvariable ["fbi", 0] > 5) then {
 	    _availableBackpacksFive = [
 		"CUP_B_ACRPara_m95",
 		"CUP_B_HikingPack_Civ"
@@ -843,7 +843,7 @@ _availableMagazine = [
 	"RH_60Rnd_556x45_Mk318"
 ];
 
-	if(player getVariable ["cop",0] > 6) then {
+	if(player getVariable ["fbi",0] > 6) then {
 		_availableMagazineSeven = [
 			"SUPER_flash"
 		];
@@ -868,7 +868,7 @@ _availableWeapon = [
 	"RH_g17",
 	"RH_g19"
 ];
-    if (player getvariable ["cop", 0] > 3) then {
+    if (player getvariable ["fbi", 0] > 3) then {
 		_availableWeaponThree = [
 	"RH_vp70",
 	"CUP_hgun_TaurusTracker455"
@@ -876,9 +876,10 @@ _availableWeapon = [
      _availableWeapon = _availableWeapon + _availableWeaponThree;
     };
 
-    if (player getvariable ["cop", 0] > 4) then {
+    if (player getvariable ["fbi", 0] > 4) then {
 		_availableWeaponFour = [
 	"RH_usp",
+	"CUP_sgun_M1014",
 	"RH_bull",
 	"RH_bullb",
 	"RH_gsh18",
@@ -901,14 +902,14 @@ _availableWeapon = [
      _availableWeapon = _availableWeapon + _availableWeaponFour;
     };
 
-    if (player getvariable ["cop", 0] > 5) then {
+    if (player getvariable ["fbi", 0] > 5) then {
     _availableWeaponFive = [
 	"RH_g18"
     ];
     _availableWeapon = _availableWeapon + _availableWeaponFive;
     };
 
-    if (player getvariable ["cop", 0] > 6) then {
+    if (player getvariable ["fbi", 0] > 6) then {
     _availableWeaponSix =[
 	"CUP_glaunch_M32",
 	"CUP_arifle_CZ805_A1",
@@ -928,14 +929,14 @@ _availableWeapon = [
      _availableWeapon = _availableWeapon + _availableWeaponSix;
     };
 
-    if (player getvariable ["cop", 0] > 8) then {
+    if (player getvariable ["fbi", 0] > 8) then {
     _availableWeaponEight = [
 	"RH_Deagle"
     ];
     _availableWeapon = _availableWeapon + _availableWeaponEight;
     };
 
-    if (player getvariable ["cop", 0] == 10) then {
+    if (player getvariable ["fbi", 0] == 10) then {
     _availableWeaponTen = [
 	"RH_Deaglem",
 	"hgun_mas_ww2_lug_F",
@@ -1000,7 +1001,7 @@ _availableItems = [
 	"kif_gopro",
 	"kif_panicbutton"
 ];
-    if (player getvariable ["cop", 0] == 10) then {
+    if (player getvariable ["fbi", 0] == 10) then {
     _availableItemsTen = [
         "kif_500k",
 	"kif_100k",

@@ -14,6 +14,7 @@ currentCop = [];
 currentEMS = [];
 currentMafia = [];
 currentFire = [];
+currentFBI = [];
 
 fires = [];
 currentBanks = 0;
@@ -48,6 +49,7 @@ publicvariable "currentCop";
 publicvariable "currentEMS"; 
 publicvariable "currentMafia"; 
 publicvariable "currentFire"; 
+publicvariable "currentFBI"; 
  
 publicvariable "currentMailmen"; 
 publicvariable "currentsecurity"; 
