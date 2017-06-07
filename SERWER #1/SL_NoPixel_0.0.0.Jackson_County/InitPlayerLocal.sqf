@@ -50,7 +50,7 @@ if(myhealth > 0.99) exitwith {
 	_respawn = player getVariable "respawn";
 	if (_respawn == 0) then {
 		[] spawn client_fnc_respawnTimer;
-	};	
+	};
 };
 
 [ missionNamespace, "arsenalOpened", {
@@ -75,7 +75,8 @@ player setdamage myHealth;
 client_seatwarn = false;
 client_seatbelt = false;
 [] spawn client_fnc_seatbelts;
-[] spawn client_fnc_gunholster;
+//[] spawn client_fnc_gunholster;
+player addEventHandler ["GetOutMan",{player action ["SwitchWeapon", player, player, 100];}];
 [] spawn client_fnc_checkRadio;
 //[] spawn client_fnc_forceFirstPerson;
 [] spawn client_fnc_speedMeters;
