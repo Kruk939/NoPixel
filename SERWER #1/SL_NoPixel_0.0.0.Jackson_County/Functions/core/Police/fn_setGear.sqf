@@ -98,22 +98,22 @@ if(myjob == "Cop") exitwith {
 
 		player forceAddUniform "slpd_uni_sert";
 		player addVest "slpd_sert_vest";
-		for "_i" from 1 to 10 do {this addItemToVest "vvv_np_magazine_taser";};
-		for "_i" from 1 to 6 do {this addItemToVest "RH_60Rnd_556x45_Mk262";};
+		for "_i" from 1 to 10 do {player addItemToVest "vvv_np_magazine_taser";};
+		for "_i" from 1 to 6 do {player addItemToVest "RH_60Rnd_556x45_Mk262";};
 		player addBackpack "DRPG_PoliceBelt";
-		for "_i" from 1 to 3 do {this addItemToBackpack "SUPER_flash";};
-		for "_i" from 1 to 2 do {this addItemToBackpack "SmokeShell";};
-		for "_i" from 1 to 15 do {this addItemToBackpack "CG_ATF_Bandage_i";};
-		for "_i" from 1 to 4 do {this addItemToBackpack "CG_Spikes_Collapsed";};
-		this addItemToBackpack "np_energydrink";
+		for "_i" from 1 to 3 do {player addItemToBackpack "SUPER_flash";};
+		for "_i" from 1 to 2 do {player addItemToBackpack "SmokeShell";};
+		for "_i" from 1 to 15 do {player addItemToBackpack "CG_ATF_Bandage_i";};
+		for "_i" from 1 to 4 do {player addItemToBackpack "CG_Spikes_Collapsed";};
+		player addItemToBackpack "np_energydrink";
 		player addHeadgear "TRYK_H_PASGT_OD";
 		player addGoggles "Mask_M40_OD";
 		
 		player addWeapon "RH_hk416_tg";
-		this addPrimaryWeaponItem "RH_qdss_nt4_tg";
-		this addPrimaryWeaponItem "RH_SFM952V";
-		this addPrimaryWeaponItem "RH_ta01nsn_2D";
-		this addPrimaryWeaponItem "RH_TD_ACB_g";
+		player addPrimaryWeaponItem "RH_qdss_nt4_tg";
+		player addPrimaryWeaponItem "RH_SFM952V";
+		player addPrimaryWeaponItem "RH_ta01nsn_2D";
+		player addPrimaryWeaponItem "RH_TD_ACB_g";
 		player addWeapon "taser";
 		player addWeapon "Rangefinder";
 
