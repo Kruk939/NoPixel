@@ -909,7 +909,7 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (myjob == ""Cop"" && (typeof cursorobject == ""Land_PoliceStation"" || typeOF cursorTarget == ""SL_Command_Unit"" || typeOF cursorTarget == ""sl_ford350_swat"" || typeOF cursorTarget == ""Abruzzi_LencoPD_01"")) && player getvariable ""cop"" > 6 "],
-		["Ekwipunek SWAT", "[""riot""] spawn client_fnc_setGear",4]
+		["Ekwipunek SERT", "[""riot""] spawn client_fnc_setGear",4]
 	],
 
 	[
