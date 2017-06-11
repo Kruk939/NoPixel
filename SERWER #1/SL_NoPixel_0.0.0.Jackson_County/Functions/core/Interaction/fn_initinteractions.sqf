@@ -531,10 +531,10 @@ NoPixel_InteractionMenuItems = [
 		["Wyposażenie sklepu", "[""shop""] spawn client_fnc_retreiveCargo;",3]
 	],
 
-	/*[
+	[
 		["myjob == ""FBI""", "client_fbi_actions > 1", "typeof CurrentCursorTarget == ""Land_PoliceStation"""],
 		["Skonfiskowane rzeczy", "[""dtu""] spawn client_fnc_retreiveCargo;",3]
-	],*/
+	],
 
 	[
 		["player distance myshop < 3"],
