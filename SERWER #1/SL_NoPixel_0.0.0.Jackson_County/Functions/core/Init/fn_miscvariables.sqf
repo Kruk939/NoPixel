@@ -104,20 +104,30 @@ if (getplayerUID player IN ["76561197982469013","76561198150573190","76561198028
 if (getplayerUID player IN ["76561198041834190","76561198061433788","76561197998091289"]) then { kif_admin=4; };
 							//kifkick			//dorian
 if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif_admin=5; };
+
 /*
-	AIAD + DD
+	AIAD
 */
-							//Grey				//Szpachla			//Hoost					//Dukat				//Hansen	   		//Donald				Alanovski			//knox	   			//katekarin	   		//wazka
-if (getplayerUID player IN ["76561198010297273", "76561198026279912", "76561198212483959", "76561198089570329","76561197973307654","76561198023332238","76561198058274311","76561198030912509","76561198041834190","76561198039045183"]) then { client_aiad_actions=1; };
-											//Kenju			//Shepherd				//Iza				//kifkick			//miathur			//kruk
-if (getplayerUID player IN ["76561198019277102","76561197977736539","76561197991728220 ","76561197992636644 ","76561198201987250","76561198037419471","76561198015862132"]) then { client_aiad_actions=2; };
+                            //knox	   			//katekarin	   		//wazka
+if (getplayerUID player IN ["76561198030912509","76561198041834190","76561198039045183"]) then { client_aiad_actions=1; };
+				            //kifkick			//miathur
+if (getplayerUID player IN ["76561198201987250","76561198037419471"]) then { client_aiad_actions=2; };
+
+/*
+	DD
+*/
+				            //grey			    //szpachla			//hoost             //dukat
+if (getplayerUID player IN ["76561198010297273","76561198026279912","76561198212483959","76561198089570329"]) then { client_aiad_actions=1; };
+				            //shepherd			//kenju			    //hansen			//sullivan          //iza               //donald
+if (getplayerUID player IN ["76561197991728220","76561198019277102","76561197973307654","76561198058274311","76561197992636644","76561198023332238"]) then { client_aiad_actions=2; };
+
 /*
 	TECZKA ALLOWED
 */
-							//kenju
-if (getplayerUID player IN ["76561198019277102"]) then { teczka_allowed=1; };
-							//galaretka				//raf				//kifkick			//dorian			//kruk
-if (getplayerUID player IN ["76561198013128581","76561197982469013","76561198201987250","76561198253273755","76561198015862132"]) then { teczka_allowed=2; };
+							//kenju             //miathur           //kifkick           //dryg              //richard           //rudolf            //shepherd
+if (getplayerUID player IN ["76561198019277102","76561198037419471","76561198201987250","76561198035513087","76561198022486899","76561198083797213","76561197991728220"]) then { teczka_allowed=1; };
+							//raf				//kifkick			//dorian			//kruk
+if (getplayerUID player IN ["76561197982469013","76561198201987250","76561198253273755","76561198015862132"]) then { teczka_allowed=2; };
 
 /*
 	FBI
