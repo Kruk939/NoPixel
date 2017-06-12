@@ -1,6 +1,6 @@
 for "_i" from 0 to 1 step 0 do  {
 	uiSleep 20;
-    if (myjob == "Cop" || myjob == "EMS" || myjob == "Fire") then {
+    if (myjob == "Cop" || myjob == "EMS" || myjob == "Fire" || myjob == "fbi") then {
 		
     }else{
 			_radios = player call TFAR_fnc_radiosList;
