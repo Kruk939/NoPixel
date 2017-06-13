@@ -896,7 +896,8 @@ _availableWeapon = [
 
     if (player getvariable ["cop", 0] > 5) then {
     _availableWeaponFive = [
-	"RH_g18"
+		"CUP_arifle_M4A1_black",
+		"RH_g18"
     ];
     _availableWeapon = _availableWeapon + _availableWeaponFive;
     };
@@ -906,7 +907,6 @@ _availableWeapon = [
 	"CUP_glaunch_M32",
 	"CUP_arifle_CZ805_A1",
 	"CUP_arifle_CZ805_A2",
-	"CUP_arifle_M4A1_black",
 	"CUP_arifle_M16A4_Base",
 	"CUP_smg_MP5A5",
 	"CUP_hgun_BallisticShield_Armed",

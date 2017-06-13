@@ -146,6 +146,11 @@ NoPixel_InteractionMenuItems = [
 		[" myJob == ""Cop"" && (count(nearestObjects [player,[""weaponholder""],3])>0) "],
 		["Konfiskuj", " [] spawn client_fnc_seizeObjects; ",1]
 	],
+	
+	[
+		[" myJob == ""fbi"" && (count(nearestObjects [player,[""weaponholder""],3])>0) "],
+		["Konfiskuj", " [] spawn client_fnc_seizeObjects; ",1]
+	],
 
 	[
 		["adminInteractions>=1"],
@@ -999,6 +1004,31 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
+		["TECZKA 5K", "[5] spawn client_fnc_takeSuitcase"]
+	],
+	
+	[
+		[" (myjob == ""fbi"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
+		["TECZKA 100K", "[2] spawn client_fnc_takeSuitcase"]
+	],
+
+	[
+		[" (myjob == ""fbi"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
+		["TECZKA 50K", "[3] spawn client_fnc_takeSuitcase"]
+	],
+
+	[
+		[" (myjob == ""fbi"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed == 2 "],
+		["TECZKA 250K", "[1] spawn client_fnc_takeSuitcase"]
+	],
+
+	[
+		[" (myjob == ""fbi"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
+		["TECZKA 10K", "[4] spawn client_fnc_takeSuitcase"]
+	],
+
+	[
+		[" (myjob == ""fbi"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 5K", "[5] spawn client_fnc_takeSuitcase"]
 	],
 

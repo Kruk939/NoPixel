@@ -18,6 +18,7 @@ if(myJob == "Cop") then {
 			"HST_FPI_MD009",
 			"HST_FPI_MD010",
 			"HST_FPI_MD011",
+			"HST_CVPI_MD014",
 			"HST_DC12_MD020",
 			"HST_DC12_MD021",
 			"HST_DC15_MD022",
@@ -27,6 +28,7 @@ if(myJob == "Cop") then {
 			"HST_DC15_MD043",
 			"HST_CI_MD044",
 			"HST_FPI_MD046",
+			"HST_CVPI_MD048",
 			"sl_055",
 			"kif_dodgedurango_police",
 			"kif_dodgedurango_police2",
@@ -120,6 +122,7 @@ if(myJob == "Cop") then {
 			"ivory_m3_marked",
 			"kif_rev_marked",
 			"kif_rev_unmarked",
+			"Tahoe_DOJ",
 			"B_Boat_Transport_01_F",
 			"ivory_rs4_unmarked",
 			"vvv_HarleyDavidson_CustomBobber",
@@ -146,7 +149,3 @@ if(myJob == "Cop") then {
 }forEach _garage;
 
 lbSetCurSel [1500, 0];
-
-
-
-

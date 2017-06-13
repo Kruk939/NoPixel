@@ -1,4 +1,4 @@
-if (myjob == "Cop" || myjob == "EMS" || myjob == "Fire") exitWith {};
+if (myjob == "Cop" || myjob == "EMS" || myjob == "Fire" || myjob == "fbi") exitWith {};
 _class1 = ["kif_25k"];  
 _class2 = ["kif_100k"]; 
 _class3 = ["kif_50k"]; 

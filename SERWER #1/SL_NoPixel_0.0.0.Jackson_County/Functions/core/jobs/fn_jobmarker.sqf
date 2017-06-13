@@ -7,7 +7,7 @@ _marker setMarkerTypelocal "hd_dot";
 _marker setMarkerColorlocal "ColorOrange";
 _marker setMarkerTextlocal "Miejsce zadania";
 
-if(myjob == "Cop") then {
+if(myjob == "Cop" || myjob == "fbi") then {
 	[_pos,"Uruchomiony alarm!","Job"] spawn client_fnc_hudHelper;
 } else {
 	if(myjob == "Fire") then {
