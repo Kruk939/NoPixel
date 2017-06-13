@@ -10,6 +10,10 @@ if(myJob == "FBI") then {
 			
             //UC
             
+            "HST_DC15_MD041",
+            "HST_DC15_MD042",
+            "HST_DC15_MD043",
+            
             "sl_charger_12_uc_black",
             "sl_charger_12_uc_blue",
             "sl_charger_15_uc_black",
