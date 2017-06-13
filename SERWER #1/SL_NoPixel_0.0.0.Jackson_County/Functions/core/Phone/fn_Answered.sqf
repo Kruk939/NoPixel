@@ -1,7 +1,7 @@
 playSound "cgphone_click";
 ["Osoba dolaczyla do rozmowy!", false] spawn domsg; 
 
-if(myJob IN ["Cop","EMS","Fire"]) then {
+if(myJob IN ["Cop","EMS","Fire","FBI"]) then {
 
 	myPhoneCall = getPlayerUID player;
 	player setvariable["PhoneID",myPhoneCall,true];

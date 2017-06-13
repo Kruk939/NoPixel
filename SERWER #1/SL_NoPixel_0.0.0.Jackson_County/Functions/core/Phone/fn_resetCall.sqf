@@ -6,7 +6,7 @@ player setvariable["PhoneID",0,true];
 callInProgress = false;
 myCallOwner = player;
 _mynumber = getPlayerUID player;
-if(myjob != "Cop" && myjob != "EMS" && myjob != "Fire") then {
+if(myjob != "Cop" && myjob != "EMS" && myjob != "Fire" && myjob != "FBI") then {
 	player setVariable ["tf_unable_to_use_radio", true];
 };
 _channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;

@@ -15,7 +15,7 @@ lbClear _list;
 	};
 } foreach playableUnits;
 
-if(myjob != "Cop" && myjob != "EMS" && myjob != "Fire") then {
+if(myjob != "Cop" && myjob != "EMS" && myjob != "Fire" && myjob != "FBI") then {
 		player setvariable["PhoneCallNumber",0,true];
 		player setvariable["PhoneID",0,true];
 		callInProgress = false;
