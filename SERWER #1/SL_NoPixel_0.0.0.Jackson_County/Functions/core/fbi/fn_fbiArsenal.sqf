@@ -40,7 +40,8 @@ _availableHeadgear = [
     	"CUP_NVG_PVS7",
         "TRYK_Headset_NV",
 	"TRYK_G_Shades_Blue_NV",
-	"TRYK_G_Shades_Black_NV"
+	"TRYK_G_Shades_Black_NV",
+	"H_HelmetB_snakeskin"
         ];
     _availableHeadgear = _availableHeadgear + _availableHeadgearTwo;
     };
@@ -1025,7 +1026,8 @@ _availableItems = [
         "FBI_rang8",
         "FBI_rang9",
         "FBI_rang10",
-        "EC_FBI"
+        "EC_FBI",
+	"U_B_CombatUniform_mcam"
     ];
     _availableUniforms = _availableUniforms + _availableUniformsFBI;
     
