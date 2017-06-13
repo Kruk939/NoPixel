@@ -17,7 +17,7 @@ private["_ui","_units"];
 500 cutText["","PLAIN"];
 if(visibleMap OR {dialog}) exitWith {
 };
-scale = 0.45;
+scale = 0.55;
 _ui = uiNamespace getVariable ["client_HUD_nameTags",displayNull];
 if(isNull _ui) then {
 	500 cutRsc["client_HUD_nameTags","PLAIN"];
