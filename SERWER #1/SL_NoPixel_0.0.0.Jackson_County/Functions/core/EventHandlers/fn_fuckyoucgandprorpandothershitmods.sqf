@@ -72,7 +72,7 @@ if (_item == "CG_cocaine") then { ["cocaine",10] spawn client_fnc_useDrug; [_ite
 
 if (_item == "np_energydrink") then { ["energy",3] spawn client_fnc_useDrug; [_item,0] spawn client_fnc_removeitem; ["Add","unhealthiness",1] call client_fnc_sustain; closeDialog 0; };
 
-if (_item IN ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS", "kif_item_barrierBollard", "kif_item_trafficCone", "kif_item_roadCone", "kif_item_roadConeLight", "kif_item_barGate"] && myjob IN ["Cop","Fire","EMS"]) then { [_item] spawn client_fnc_useBarrier; closeDialog 0; };
+if (_item IN ["NP_8mPoliceLine","NP_4mPoliceLine","NP_1mPoliceLine","NP_PoliceBarrierL","NP_PoliceBarrierS", "kif_item_barrierBollard", "kif_item_trafficCone", "kif_item_roadCone", "kif_item_roadConeLight", "kif_item_barGate"] && myjob IN ["Cop","Fire","EMS","fbi"]) then { [_item] spawn client_fnc_useBarrier; closeDialog 0; };
 
 if (_item == "CG_Spikes_Collapsed") then { [] spawn client_fnc_spikestrip; [_item,0] spawn client_fnc_removeitem; closeDialog 0; };
 

@@ -1,6 +1,6 @@
 params["_player"];
 _all = currentCop + currentEMS + currentFire;
-if (myjob == "Cop") then {
+if (myjob == "Cop" || myjob == "fbi") then {
     ["Uruchomiłeś panic button!",false] spawn domsg;
     [format["911 PANIC BUTTON: FUNKCJONARIUSZ %1 JEST W NIEBEZPIECZEŃSTWIE!", name _player], false] remoteexec ["domsg",currentCop];
     ["dpanic"] remoteExec ["client_fnc_playSound", currentCop];
