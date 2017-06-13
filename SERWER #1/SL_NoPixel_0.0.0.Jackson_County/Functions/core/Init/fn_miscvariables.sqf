@@ -116,8 +116,8 @@ if (getplayerUID player IN ["76561198201987250","76561198037419471"]) then { cli
 /*
 	DD
 */
-				            //grey			    //szpachla			//hoost             //dukat
-if (getplayerUID player IN ["76561198010297273","76561198026279912","76561198212483959","76561198089570329"]) then { client_aiad_actions=1; };
+				            //willow			    //grey			    //szpachla			//hoost             //dukat
+if (getplayerUID player IN ["76561198063257019","76561198010297273","76561198026279912","76561198212483959","76561198089570329"]) then { client_aiad_actions=1; };
 				            //shepherd			//kenju			    //hansen			//sullivan          //iza               //donald
 if (getplayerUID player IN ["76561197991728220","76561198019277102","76561197973307654","76561198058274311","76561197992636644","76561198023332238"]) then { client_aiad_actions=2; };
 
