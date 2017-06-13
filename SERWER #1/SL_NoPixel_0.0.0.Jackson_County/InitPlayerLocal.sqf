@@ -9,7 +9,7 @@ if(isnil "Np_ProfileVars") then {
 
 [] spawn client_fnc_setGuiColor;
 
-waitUntil {sleep 0.05; !(isNil {player}) && player == player && alive player};
+waitUntil {!(isNil {player}) && player == player && alive player && getClientStateNumber > 8 && !(isNull (findDisplay  46))};
 
 [] call Client_fnc_miscVariables;
 player allowdamage false;
@@ -23,8 +23,6 @@ waituntil {(player getvariable "loaded") == 2};
 [] call client_fnc_karmaPhoneInit;
 
 player setVariable["loaded", nil, false];
-
-waitUntil {!isNull (findDisplay 46)};
 
 _vehicle = "ivory_wrx" createvehiclelocal getpos player;
 [_vehicle, ["black","matte"], "black", 1, 1] call client_fnc_IvoryInitVehicle;
