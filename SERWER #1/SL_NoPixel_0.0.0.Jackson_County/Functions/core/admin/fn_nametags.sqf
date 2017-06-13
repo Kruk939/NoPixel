@@ -29,7 +29,7 @@ if(isNull _ui) then {
 	_pos = [visiblePosition _x select 0, visiblePosition _x select 1, ((_x modelToWorld (_x selectionPosition "head")) select 2)+.5];
 	_sPos = worldToScreen _pos;
 	_distance = _x distance player;
-	_name = getPlayerUID  _x;
+	_name = _x getVariable ["bankaccount", "N/A"];
 
 	_dickbag = true;
 	_text = "";
