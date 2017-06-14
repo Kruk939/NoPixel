@@ -126,8 +126,15 @@ if(myJob == "Cop") then {
 			"B_Boat_Transport_01_F",
 			"ivory_rs4_unmarked",
 			"vvv_HarleyDavidson_CustomBobber",
+        
 			"C_Boat_Civil_01_F",
 			"C_Scooter_Transport_01_F",
+        
+            "DD_chp_CrownVictoria",
+            "DD_CHP_06Charger",
+            "DD_CHP_FPIU",
+            "DD_CHP_15Charger",
+        
 			"MELB_H6M",
 			"MELB_MH6M"
 			];

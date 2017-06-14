@@ -306,6 +306,8 @@ _availableUniforms = [
 	"NP_W_PD2",
 	"NP_W_PD4",
 	"NP_W_PD3",
+    
+    "max_sheriff_uniform",
 
 	"slpd_uni_cadet",
 	"slpd_uni_po1",
@@ -320,8 +322,6 @@ _availableUniforms = [
 	"slpd_uni_rafwhite",
 	"slpd_uni_dzokablue",
 	"slpd_uni_dzokawhite",
-	
-	
 	
 	"PAT_suit",
 	"PAT_suit2",
