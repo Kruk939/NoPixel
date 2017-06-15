@@ -57,8 +57,8 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" ((lastforcesync + 300) < time) && client_canSync "],
-		["Sync Data (5min CD)", " [] spawn client_fnc_syncData; ",5]
+		[" ((lastforcesync + 30) < time) && client_canSync "],
+		["Sync Data", " [] spawn client_fnc_syncData; ",5]
 	],
 
 	[
@@ -146,7 +146,7 @@ NoPixel_InteractionMenuItems = [
 		[" myJob == ""Cop"" && (count(nearestObjects [player,[""weaponholder""],3])>0) "],
 		["Konfiskuj", " [] spawn client_fnc_seizeObjects; ",1]
 	],
-	
+
 	[
 		[" myJob == ""fbi"" && (count(nearestObjects [player,[""weaponholder""],3])>0) "],
 		["Konfiskuj", " [] spawn client_fnc_seizeObjects; ",1]
@@ -710,8 +710,8 @@ NoPixel_InteractionMenuItems = [
 	[
 		["client_fbi_actions > 0", "myjob == ""FBI""", "typeof cursorobject IN [""Land_PoliceStation"",""cl3_policehq"",""cl3_policehq_range""]"],
 		["Otwórz garaż FBI", "[] spawn client_fnc_openGarageFBI;",3]
-	],    
-    
+	],
+
 	[
 		["myjob == ""EMS""", "typeof cursorobject == ""Land_buildingshospital1"""],
 		["Otwórz garaż EMS", "[] spawn client_fnc_openGarageEMS;",3]
@@ -741,7 +741,7 @@ NoPixel_InteractionMenuItems = [
 		["client_fbi_actions > 0","myjob == ""FBI""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
 		["Otwórz garaż FBI", "[CurrentCursorTarget] call Client_fnc_openGarageFBI",3]
 	],
-    
+
 	[
 		["myjob == ""EMS""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
 		["Otwórz garaż EMS", "[CurrentCursorTarget] call Client_fnc_openGarageEMS",3]
@@ -1006,7 +1006,7 @@ NoPixel_InteractionMenuItems = [
 		[" (myjob == ""Cop"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 5K", "[5] spawn client_fnc_takeSuitcase"]
 	],
-	
+
 	[
 		[" (myjob == ""fbi"" && typeof cursorobject == ""Box_NATO_equip_F"") && teczka_allowed >= 1 "],
 		["TECZKA 100K", "[2] spawn client_fnc_takeSuitcase"]
@@ -1183,7 +1183,7 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		["myjob == ""Repairman"""],
+		["myjob == ""Repairman"" || myJob == 'Fire'"],
 		["Napraw obiekt", "[""Naprawiam obiekt"",15,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
 
