@@ -136,7 +136,10 @@ if(myJob == "Cop") then {
             "DD_CHP_15Charger",
         
 			"MELB_H6M",
-			"MELB_MH6M"
+			"MELB_MH6M",
+			"zorak_chevrolet_impala",
+			"zorak_dodge_charger",
+			"zorak_crown_victoria"
 			];
 };
 

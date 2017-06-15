@@ -89,7 +89,20 @@ _civilianVehicle = [
 	["sl_suburban_15_black",350000],
 	["sl_charger_15_black",400000],
 	["red_explorer_16_black",250000],
-	["C_Quadbike_01_F",5000],
+	["zorak_audi_rs3",65000],
+	["RM_Audi_Q7",120000],
+	["zorak_audi_rs6",120000],
+	["RM_Chev_Camaro_SS",350000],
+	["RM_Chevrolet_Tahoe",96000],
+	["RM_Dodge_Charger_2016",379000],
+	["RM_Ferrari_458_Italia_Tune",650000],
+	["RM_Ford_Mustang_Shelby_GT350R_2016",500000],
+	["RM_Ford_Crown_Victoria",125000],
+	["RM_Jeep_Grand_Cherokee_SRT8",250000],
+	["RM_Mercedes_Benz_CLA45_AMG",199000],
+	["RM_Mercedes_Benz_C63_AMG_Black_series",399000],
+	["RM_Porsche_Panamera_Turbo",420000],
+	["RM_Chevrolet_Suburban_2015",400000],
 	["C_SUV_01_F",25000]
 ];
 _harleys = [
@@ -132,6 +145,7 @@ if(_doughnuts > 3) then {
 	_ret = [
 		["vvv_formula1", 100000],
 		["C_Offroad_02_unarmed_F", 50000],
+		["zorak_bugatti_chiron", 500000],
 		["sl_venomgt_11_black",400000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;

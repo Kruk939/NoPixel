@@ -12,7 +12,9 @@ _garage = [
 	"sl_suburban_15_black",
 	"sl_s65_12_black",
 	"vvv_NewYacht",
-	"C_Boat_Civil_01_F"
+	"C_Boat_Civil_01_F",
+	"RM_Jeep_Grand_Cherokee_SRT8_Rebelle",
+	"RM_Chevrolet_Suburban_2015"
 	];
 };
 

@@ -47,3 +47,15 @@ if (myjob =="Cop") then {
 	call TFAR_fnc_HideHint;
 	["Jestes na czestotliwosci PD!", false] spawn domsg;
 };
+if (myjob =="FBI") then {
+	player setvariable["PhoneCallNumber",0,true];
+	player setvariable["PhoneID",0,true];
+	callInProgress = false;
+	myCallOwner = player;
+	_mynumber = getPlayerUID player;
+	player setVariable ["tf_unable_to_use_radio", false];
+	_channel = (call TFAR_fnc_ActiveSwRadio) call TFAR_fnc_getSwChannel;
+	_channel = _channel + 1;
+	[(call TFAR_fnc_activeSwRadio), _channel, _mynumber] call TFAR_fnc_SetChannelFrequency;
+	call TFAR_fnc_HideHint;
+};
