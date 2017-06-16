@@ -134,8 +134,8 @@ if (getplayerUID player IN ["76561197982469013","76561198201987250","76561198253
 */
 
 if (getplayerUID player IN []) then { client_fbi_actions=1; };
-                            //kifkick           //dryg              //richard           //rudolf            //liang            //walezy
-if (getplayerUID player IN ["76561198201987250","76561198035513087","76561198022486899","76561198083797213","76561198007690584","76561198060193900"]) then { client_fbi_actions=2; };
+                            //kifkick           //dryg              //richard           //rudolf            //basta            //walezy
+if (getplayerUID player IN ["76561198201987250","76561198035513087","76561198022486899","76561198083797213","76561198190509090","76561198060193900"]) then { client_fbi_actions=2; };
 
 /*
 	TRAN
