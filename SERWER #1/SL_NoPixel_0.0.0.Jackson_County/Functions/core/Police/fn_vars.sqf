@@ -24,6 +24,7 @@ _availableHeadgear = [
 	"Campaign_Hat_Washed",
 	"H_Cap_police",
 	"EF_Fcap_P",
+    "UR_ShirtMask_11",
 	"H_ALFR_Headset",
 	"CUP_H_FR_Headset",
 	"H_CrewHelmetHeli_B",
@@ -784,6 +785,13 @@ _availableVests = [
 		//"TRYK_V_ArmorVest_Delta2"
 	];
 	_availableVests = _availableVests + _availableVestsFive;
+	};
+
+	if (player getvariable ["cop", 0] > 6) then {
+	_availableVestsSix = [
+        "UR_Armor_Black"
+	];
+	_availableVests = _availableVests + _availableVestsSix;
 	};
 
 
