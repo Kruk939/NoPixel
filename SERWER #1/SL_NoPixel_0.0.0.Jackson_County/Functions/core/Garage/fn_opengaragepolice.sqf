@@ -135,6 +135,11 @@ if(myJob == "Cop") then {
             "DD_CHP_FPIU",
             "DD_CHP_15Charger",
         
+            "AMG_TahoePolice",
+            "JR_ford_fusion_unmarked_1",
+            "JR_ford_fusion_police_1",
+            "JR_ford_fusion_police_sheriff",
+        
 			"MELB_H6M",
 			"MELB_MH6M",
 			"zorak_chevrolet_impala",
