@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.87
+//'now' is Mon Mar 20 19:05:46 2017 : 'file' last modified on Thu Nov 10 20:13:24 2016
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class TahoePD : data\rvmat\car_beacon_red_emit.rvmat{
+class StageTI
+{
+	texture = "a3\data_f\default_vehicle_ti_ca.paa";
+};
+ambient[] = {0,0,0,1};
+diffuse[] = {0,0,0,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {730000,150000,140000,1};
+specular[] = {0,0,0,1};
+specularPower = 1;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

@@ -1,0 +1,22 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 5.45
+//'now' is Tue Jan 13 19:32:21 2015 : 'file' last modified on Tue Jan 13 19:32:21 2015
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class pop_coches4\pop_mercedesbenz_vito : data\rvmat\car_rearsidelights_emit.rvmat{
+class StageTI
+{
+	texture = "a3\data_f\default_vehicle_ti_ca.paa";
+};
+ambient[] = {1,1,1,1};
+diffuse[] = {1,1,1,1};
+forcedDiffuse[] = {0,0,0,1};
+emmisive[] = {6000,200,150,1};
+specular[] = {0,0,0,1};
+specularPower = 1;
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};
