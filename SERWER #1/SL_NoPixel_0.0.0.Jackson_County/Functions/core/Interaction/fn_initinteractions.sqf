@@ -1188,6 +1188,11 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
+		["(myjob == ""EMS"" || myJob == 'Fire') && CurrentCursorTarget getVariable [""dead"",false] && CurrentCursorTarget isKindOf ""Man"""],
+		["Stwierdź zgon", "CurrentCursorTarget setVariable[""confirmeddead"",true,true]",4]
+	],
+
+	[
 		["adminInteractions>=1"],
 		["Napraw obiekt", "[""Naprawiam obiekt"",1,client_fnc_repairNear,player,'AinvPknlMstpSnonWnonDnon_medic_1',player,""cg_sndimg\sounds\repair.ogg""] spawn client_fnc_dotask; ",4]
 	],
