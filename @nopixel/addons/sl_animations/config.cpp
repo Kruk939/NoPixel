@@ -375,7 +375,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			};
 			InterpolateTo[]={};
 		};
-		class AmovPercMstpSnonWnonDnon_exerciseKata: CutSceneAnimationBase
+		/*class AmovPercMstpSnonWnonDnon_exerciseKata: CutSceneAnimationBase
 		{
 			file="\sl_animations\ip_a2c\anims\AmovPercMstpSnonWnonDnon_exerciseKata.rtm";
 			speed=0.029999999;
@@ -392,7 +392,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPercMstpSnonWnonDnon",
 				0.0099999998
 			};
-		};
+		};*/
 		class ActsPknlMstpSnonWnonDnon_TreatingInjured_NikitinDead: CutSceneAnimationBase
 		{
 			file="\sl_animations\ip_a2c\anims\ActsPknlMstpSnonWnonDnon_TreatingInjured.rtm";
@@ -2693,7 +2693,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class cl3_smoke_cig_anim: CutSceneAnimationBase
 		{
-			file="\\sl_animations\smoke\smoke.rtm";
+			file="\sl_animations\smoke\smoke.rtm";
 			speed=0.188757;
 			boundingSphere=4;
 			collisionShape="A3\anims_f\Data\Geom\Sdr\geom_empty.p3d";
@@ -2877,79 +2877,79 @@ class CfgGesturesMale
 		};
 		class CRPTHSForward: CRPTHSBase
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_forward.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_forward.rtm";
 			speed=1;
 		};
 		class CRPTHSForwardStandLowered: CRPTHSForward
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_forward_stand_lowered.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_forward_stand_lowered.rtm";
 		};
 		class CRPTHSStop: CRPTHSForward
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_stop.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_stop.rtm";
 			speed=0.60000002;
 		};
 		class CRPTHSStopStandLowered: CRPTHSStop
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_stop_stand_lowered.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_stop_stand_lowered.rtm";
 		};
 		class CRPTHSCover: CRPTHSForward
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_cover.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_cover.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSCoverStandLowered: CRPTHSCover
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_cover_stand_lowered.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_cover_stand_lowered.rtm";
 		};
 		class CRPTHSRegroup: CRPTHSForward
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_regroup.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_regroup.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSRegroupStandLowered: CRPTHSRegroup
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_regroup_stand_lowered.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_regroup_stand_lowered.rtm";
 		};
 		class CRPTHSEngage: CRPTHSForward
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_engage.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_engage.rtm";
 			speed=0.89999998;
 		};
 		class CRPTHSEngageStandLowered: CRPTHSEngage
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_engage_stand_lowered.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_engage_stand_lowered.rtm";
 		};
 		class CRPTHSPoint: CRPTHSForward
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_point.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_point.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSPointStandLowered: CRPTHSPoint
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_point_stand_lowered.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_point_stand_lowered.rtm";
 		};
 		class CRPTHSHold: CRPTHSForward
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_hold.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_hold.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSHoldStandLowered: CRPTHSHold
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_hold_stand_lowered.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_hold_stand_lowered.rtm";
 		};
 		class CRPTHSWarning: CRPTHSForward
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_warning.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_warning.rtm";
 			speed=0.80000001;
 		};
 		class CRPTHSWarningStandLowered: CRPTHSWarning
 		{
-			file="\\sl_animations\hand_signals\anims\crp_ths_warning_stand_lowered.rtm";
+			file="\sl_animations\hand_signals\anims\crp_ths_warning_stand_lowered.rtm";
 		};
 		class BP_Drink_Erc_x3_Gesture: Default
 		{
-			file="\\sl_animations\BP\anims\BP_Drink_Erc_x3_Gesture.rtm";
+			file="\sl_animations\BP\anims\BP_Drink_Erc_x3_Gesture.rtm";
 			looped=0;
 			speed=0.1;
 			duty=0;
@@ -2973,7 +2973,7 @@ class CfgGesturesMale
 		};
 		class BP_Eat_Erc_x3_Gesture: Default
 		{
-			file="\\sl_animations\BP\anims\BP_Eat_Erc_x3_Gesture.rtm";
+			file="\sl_animations\BP\anims\BP_Eat_Erc_x3_Gesture.rtm";
 			looped=0;
 			speed=0.1;
 			duty=0;
@@ -2997,7 +2997,7 @@ class CfgGesturesMale
 		};
 		class CL3_anim_placec4: Default
 		{
-			file="\\sl_animations\bank\anim\placec4.rtm";
+			file="\sl_animations\bank\anim\placec4.rtm";
 			looped=0;
 			speed=-1;
 			mask="placeC4";
@@ -3006,14 +3006,14 @@ class CfgGesturesMale
 		};
 		class cl_fishingrod_cast: Default
 		{
-			file="\\sl_animations\fishingrod\anims\fishrodcast.rtm";
+			file="\sl_animations\fishingrod\anims\fishrodcast.rtm";
 			looped=0;
 			speed=-1.3;
 			mask="FishingRodMask";
 		};
 		class cl_fishingrod_strike: Default
 		{
-			file="\\sl_animations\fishingrod\anims\fishrodstrike.rtm";
+			file="\sl_animations\fishingrod\anims\fishrodstrike.rtm";
 			looped=0;
 			speed=-1;
 			mask="FishingRodMask";
