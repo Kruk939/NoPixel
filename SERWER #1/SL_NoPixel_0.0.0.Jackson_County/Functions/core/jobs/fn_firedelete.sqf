@@ -11,6 +11,11 @@ _delete = [];
 	};
 } foreach fires;
 
-{ if (typeOf _x == "#particlesource") then { _x setdamage 1; deleteVehicle _x; } } forEach (_location nearObjects 40);
+{ if (typeOf _x == "#particlesource") then {
+	if (round(random 100)) < 5) then {
+		_x setdamage 1; deleteVehicle _x; 
+	};
+  };
+} forEach (_location nearObjects 40);
 
 { fires deleteAT _x; } foreach _delete;

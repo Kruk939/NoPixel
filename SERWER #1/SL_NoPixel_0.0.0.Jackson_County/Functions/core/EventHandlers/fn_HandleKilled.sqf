@@ -104,12 +104,14 @@ _unit spawn
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format["Odrodzenie dostępne za: %1",[(maxTime - time),"MM:SS"] call BIS_fnc_secondsToString]; round(maxTime - time) <= 0 OR isNull _this OR player getVariable ["confirmeddead",false]};
 	_respawn = player getVariable "respawn";
-	waitUntil {
-	sleep 1;
-	{
-	if (!(position player distance position _x < 15)) exitwith {true};
-	} forEach currentEMS;
-	};
+	/*if ((count currentEMS) > 0) then {
+		waitUntil {
+			sleep 1;
+			{
+				if (!(position player distance position _x < 15)) exitwith {true};
+			} forEach currentEMS;
+		};
+	};*/ //nie działa to
 
 	if (_respawn > 0) then
 	{
