@@ -113,6 +113,7 @@ _unit spawn
 		};
 	};*/ //nie działa to
 
+
 	if (_respawn > 0) then
 	{
 		_RespawnBtn ctrlEnable true;
