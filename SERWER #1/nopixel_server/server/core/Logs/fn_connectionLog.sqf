@@ -26,7 +26,7 @@ if (isNil "_uid") then {_uid = "";};
 _playerName = name _player;
 _playerCash = _player getVariable ["sl_wallet_silverlake",-1];
 _playerBank = _player getVariable ["sl_atm_silverlake",-1];
-_items = getUnitLoadout _player;
+_items = "";
 
 switch (_type) do {
     case 1: {_type = "Połączenie";};

@@ -26,7 +26,7 @@ _playerUID = getPlayerUID _player;
 _playerName = name _player;
 _playerCash = _player getVariable ["sl_wallet_silverlake",-1];
 _playerBank = _player getVariable ["sl_atm_silverlake",-1];
-_playerInv = getUnitLoadout _player;
+_playerInv =  "";
 
 if (isNull _unit) then {
     //diag_log "MoneyLog: unit is not defined";
