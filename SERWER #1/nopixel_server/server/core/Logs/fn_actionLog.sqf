@@ -36,7 +36,7 @@ if (isNull _unit) then {
     _unitName = name _unit;
     _unitCash = _unit getVariable ["sl_wallet_silverlake",-1];
     _unitBank = _unit getVariable ["sl_atm_silverlake",-1];
-    _unitInv = getUnitLoadout _unit;
+    _unitInv = "";
 };
 
 switch (_type) do {
