@@ -1217,5 +1217,6 @@ class UserActions {
 		crew = "C_man_1";
 		side = 3;
 		faction = "CIV_F";
+		#include "\sl_vehicles_red\data\sirenArray.hpp"
 	};
 };
