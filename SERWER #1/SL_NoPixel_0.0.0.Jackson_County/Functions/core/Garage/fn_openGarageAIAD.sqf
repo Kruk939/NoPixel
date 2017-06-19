@@ -10,8 +10,9 @@ if(myJob == "Cop") then {
 			
             //UC
             
-            "red_porsche_12_p_u_black",
+			"red_porsche_12_p_u_black",
 			"red_suburban_15_p_f_ia",
+			"red_panamera_10_p_u_black",
                 
 			"kif_m3_unmarked_bb",
 			"kif_m3_unmarked_mbb",
