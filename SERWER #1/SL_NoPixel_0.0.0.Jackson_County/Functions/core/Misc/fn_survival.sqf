@@ -7,6 +7,7 @@ if(isNil "paycheck") then { paycheck = 0; };
 if(paycheck > 500) then { paycheck = 450; };
 
 paycheck = paycheck * mav_ttm_var_paycheckMultiplier;
+[_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
 
 if(!taskrunning) then {
 	_str = format["Wlasnie otrzymales $35 z %1 w bonusach",paycheck];

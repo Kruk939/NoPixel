@@ -33,6 +33,7 @@ if(_length < 5) then { _length = 8; };
 client_respawn_timer = _length;
 
 _unit setVariable["dead",true,true];
+[_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
 
 _playerkill = false;
 _killdistance = round ((_unit distance _killer) * 10) / 10;
@@ -104,15 +105,6 @@ _unit spawn
 	_RespawnBtn ctrlEnable false;
 	waitUntil {_Timer ctrlSetText format["Odrodzenie dostępne za: %1",[(maxTime - time),"MM:SS"] call BIS_fnc_secondsToString]; round(maxTime - time) <= 0 OR isNull _this OR player getVariable ["confirmeddead",false]};
 	_respawn = player getVariable "respawn";
-	/*if ((count currentEMS) > 0) then {
-		waitUntil {
-			sleep 1;
-			{
-				if (!(position player distance position _x < 15)) exitwith {true};
-			} forEach currentEMS;
-		};
-	};*/ //nie działa to
-
 
 	if (_respawn > 0) then
 	{
