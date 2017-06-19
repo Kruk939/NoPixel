@@ -140,7 +140,7 @@ class CfgVehicles
 		};
 		class eventhandlers
 		{
-			init="(_this select 0) spawn vhe_fnc_sirenas;[_this select 0] execVM '\JR_ford_fusion_unmarked\radar.sqf';";
+			init="(_this select 0) call DD_fnc_VehicleInit;(_this select 0) spawn vhe_fnc_sirenas;[_this select 0] execVM '\JR_ford_fusion_unmarked\radar.sqf';";
 		};
 		class Turrets
 		{
