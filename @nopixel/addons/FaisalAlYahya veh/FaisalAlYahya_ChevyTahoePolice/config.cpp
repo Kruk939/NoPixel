@@ -1205,7 +1205,7 @@ class UserActions {
 	};
 		class eventhandlers
 		{
-			init="_this execVM ""FaisalAlYahya_CrownVicPolice\scripts\init.sqf""; if (local (_this select 0)) then { [_this select 0] call ivory_fnc_initVehicle; [_this select 0] call ivory_fnc_setLicense;};";
+			init="_this call DD_fnc_VehicleInit; _this execVM ""FaisalAlYahya_CrownVicPolice\scripts\init.sqf""; if (local (_this select 0)) then { [_this select 0] call ivory_fnc_initVehicle; [_this select 0] call ivory_fnc_setLicense;};";
 		};
 	};
 	class AMG_TahoePolice: AMG_TahoePolice_base
