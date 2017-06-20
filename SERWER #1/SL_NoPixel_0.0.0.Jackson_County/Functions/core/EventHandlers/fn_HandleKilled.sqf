@@ -33,7 +33,6 @@ if(_length < 5) then { _length = 8; };
 client_respawn_timer = _length;
 
 _unit setVariable["dead",true,true];
-[_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
 
 _playerkill = false;
 _killdistance = round ((_unit distance _killer) * 10) / 10;
