@@ -33,7 +33,8 @@ if(_length < 5) then { _length = 8; };
 client_respawn_timer = _length;
 
 _unit setVariable["dead",true,true];
-
+_myStatuses = player getvariable "statuses";
+[_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
 _playerkill = false;
 _killdistance = round ((_unit distance _killer) * 10) / 10;
 _killweapon = (configfile >> "CfgWeapons" >> currentWeapon _killer >> "displayName") call BIS_fnc_getCfgData;

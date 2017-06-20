@@ -7,6 +7,7 @@ if(isNil "paycheck") then { paycheck = 0; };
 if(paycheck > 500) then { paycheck = 450; };
 
 paycheck = paycheck * mav_ttm_var_paycheckMultiplier;
+_myStatuses = player getvariable "statuses";
 [_mystatuses,getplayeruid player] remoteExec ["server_fnc_syncStatuses",2];
 
 if(!taskrunning) then {
