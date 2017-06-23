@@ -54,7 +54,7 @@ if(!isNull _source) then {
 		};
 
 		if(_curWep == "Taser" && vehicle player == player && vehicle _source == _source) exitwith {
-			if(player distance _source < 40) then {
+			if(player distance _source < 25) then {
 				[_unit,_source] spawn client_fnc_tazed;
 			};
 			_damage = 0;	
