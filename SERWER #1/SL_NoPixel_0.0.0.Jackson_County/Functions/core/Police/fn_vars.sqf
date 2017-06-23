@@ -328,11 +328,6 @@ _availableUniforms = [
 	"PAT_suit2",
 	"kifpd_uni_sheriff_fto",
 
-	"slpd_uni_aiad_div_chief_goc",
-	"slpd_uni_aiad_dep_div_chief",
-	"slpd_uni_aiad_insepctor_sgt",
-	"slpd_uni_aiad_inspector_po4",
-
 	"slpd_uni_dtu_lt_yellow",
 	"slpd_uni_dtu_lt_white",
 	"slpd_uni_dtu_cpt_yellow",
@@ -719,6 +714,16 @@ _availableUniforms = [
         ];
         _availableUniforms = _availableUniforms + _availableUniformsFive;
     };
+    
+    if (client_aiad_actions > 0 ) then {
+	_availableUniformsAIAD = [
+        "slpd_uni_aiad_div_chief_goc",
+        "slpd_uni_aiad_dep_div_chief",
+        "slpd_uni_aiad_insepctor_sgt",
+        "slpd_uni_aiad_inspector_po4"
+    ];
+     _availableUniforms = _availableUniforms + _availableUniformsAIAD;
+	};
  
 _availableVests = [
     "EF_PBDF_M1",

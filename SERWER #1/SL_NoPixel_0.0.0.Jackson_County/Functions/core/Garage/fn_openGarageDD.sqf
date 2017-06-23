@@ -5,17 +5,17 @@ ctrlSetText [1000, "Garage"];
 _garage = [];
 
 if(myJob == "Cop") then {
-		if (client_aiad_actions > 0) then {
+		if (client_dd_actions > 0) then {
 		_garageMore = [
 			
             //UC
             
-            "red_suburban_15_p_f_ia",
-			"ivory_isf_unmarked",
-			"red_porsche_12_p_u_black",
-			"red_panamera_10_p_u_black",
-            "HST_DC15_MD041",
+            "HST_DC15_MD042",
+            "HST_CI_MD044",
+            "sl_tahoeuc_police",
+            "HST_FPI_MD046",
             "JR_ford_fusion_unmarked_1",
+			"HST_CVPI_MD048",
             
 			"kif_m3_unmarked_bb",
 			"kif_m3_unmarked_mbb",
@@ -26,17 +26,7 @@ if(myJob == "Cop") then {
 			"kif_m3_unmarked_mgb",
 			"kif_m3_unmarked_blb",
 			"kif_m3_unmarked_mblb",
-				
-			/*"kif_wrx_unmarked_bb",
-			"kif_wrx_unmarked_mbb",
-			"kif_wrx_unmarked_br",
-			"kif_wrx_unmarked_rb",
-			"kif_wrx_unmarked_rr",
-			"kif_wrx_unmarked_gb",
-			"kif_wrx_unmarked_mgb",
-			"kif_wrx_unmarked_blb",
-			"kif_wrx_unmarked_mblb",
-				
+
 			"kif_rs4_unmarked_bb",
 			"kif_rs4_unmarked_mbb",
 			"kif_rs4_unmarked_br",
@@ -46,8 +36,18 @@ if(myJob == "Cop") then {
 			"kif_rs4_unmarked_mgb",
 			"kif_rs4_unmarked_blb",
 			"kif_rs4_unmarked_mblb",
-				
-			"kif_evox_unmarked_bb",
+            
+            "kif_wrx_unmarked_bb",
+			"kif_wrx_unmarked_mbb",
+			"kif_wrx_unmarked_br",
+			"kif_wrx_unmarked_rb",
+			"kif_wrx_unmarked_rr",
+			"kif_wrx_unmarked_gb",
+			"kif_wrx_unmarked_mgb",
+			"kif_wrx_unmarked_blb",
+			"kif_wrx_unmarked_mblb",
+            
+			/*"kif_evox_unmarked_bb",
 			"kif_evox_unmarked_mbb",
 			"kif_evox_unmarked_br",
 			"kif_evox_unmarked_rb",

@@ -133,7 +133,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" myJob == ""cop"" &&  client_aiad_actions == 2"],
+		[" myJob == ""cop"" &&  client_aiad_actions == 3"],
+		["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
+	],
+    
+	[
+		[" myJob == ""cop"" &&  client_dd_actions == 2"],
 		["Podsłuchy", " [] spawn client_fnc_findTapped; ",1]
 	],
 
@@ -183,7 +188,12 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget)", "myJob == ""cop""", "client_aiad_actions == 2"],
+		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget)", "myJob == ""cop""", "client_aiad_actions == 3"],
+		[" Namierz telefon ", " [] spawn client_fnc_tracecall; ",1]
+	],
+    
+	[
+		[" (isplayer currentcursortarget && vehicle currentcursortarget == currentcursortarget)", "myJob == ""cop""", "client_dd_actions == 2"],
 		[" Namierz telefon ", " [] spawn client_fnc_tracecall; ",1]
 	],
 
@@ -195,7 +205,13 @@ NoPixel_InteractionMenuItems = [
 	],
 
 	[
-		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"")", " myJob == ""cop""",  "client_aiad_actions >= 1", "vehicle player == player", "(player distance cursorObject) < 2"],
+		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"")", " myJob == ""cop""",  "client_aiad_actions >= 2", "vehicle player == player", "(player distance cursorObject) < 2"],
+		//["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn client_fnc_dotask ",1]
+		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTrackingCop; ",1]
+	],
+    
+	[
+		[" (currentcursortarget isKindOf ""Air"" || currentcursortarget isKindOf ""Car"" || currentcursortarget isKindOf ""Boat"")", " myJob == ""cop""",  "client_dd_actions >= 1", "vehicle player == player", "(player distance cursorObject) < 2"],
 		//["Pluskwa", " ['Pluskwa',10,client_fnc_strTracking,player,'AinvPknlMstpSnonWnonDnon_medic_1',[currentcursortarget, player],"""",0] spawn client_fnc_dotask ",1]
 		["Pluskwa",  " [currentcursortarget, player] spawn client_fnc_strTrackingCop; ",1]
 	],
@@ -704,7 +720,12 @@ NoPixel_InteractionMenuItems = [
 
 	[
 		["client_aiad_actions > 0","myjob == ""Cop""", "typeof cursorobject IN [""Land_PoliceStation"",""cl3_policehq"",""cl3_policehq_range""]"],
-		["Otwórz garaż DD", "[] spawn client_fnc_openGarageAIAD;",3]
+		["Otwórz garaż AIAD", "[] spawn client_fnc_openGarageAIAD;",3]
+	],
+    
+	[
+		["client_dd_actions > 0","myjob == ""Cop""", "typeof cursorobject IN [""Land_PoliceStation"",""cl3_policehq"",""cl3_policehq_range""]"],
+		["Otwórz garaż DD", "[] spawn client_fnc_openGarageDD;",3]
 	],
 
 	[
@@ -735,6 +756,11 @@ NoPixel_InteractionMenuItems = [
 	[
 		["client_aiad_actions > 0","myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
 		["Otwórz garaż AIAD", "[CurrentCursorTarget] call Client_fnc_openGarageAIAD",3]
+	],
+    
+	[
+		["client_dd_actions > 0","myjob == ""Cop""", "count attachedObjects player == 0 && !attachedcar, player distance myhouse < 30 || str CurrentCursorTarget find ""otros"" > -1 || str CurrentCursorTarget find ""garaje"" > -1 || str CurrentCursorTarget find ""tallerdepinturaabandonado"" > -1 || typeof CurrentCursorTarget IN [""Land_ModernShowroom""] || (typeOF cursorTarget) find ""Hangar_F"" > -1"],
+		["Otwórz garaż DD", "[CurrentCursorTarget] call Client_fnc_openGarageDD",3]
 	],
 
 	[

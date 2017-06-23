@@ -86,6 +86,7 @@ taskrunning = false;
 paycheck = 0;
 kif_admin = 0;
 client_aiad_actions = 0;
+client_dd_actions = 0;
 client_fbi_actions = 0;
 teczka_allowed=0;
 client_tran=0;
@@ -108,24 +109,21 @@ if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif
 /*
 	AIAD
 */
-                            //knox	   			//katekarin	   		//wazka
-if (getplayerUID player IN ["76561198030912509","76561198041834190","76561198039045183"]) then { client_aiad_actions=1; };
+                            //franek star
+                            //knox	   			//katekarin	   		//wazka	   		     //zwolin
 				            //kifkick			//miathur
-if (getplayerUID player IN ["76561198201987250","76561198037419471"]) then { client_aiad_actions=2; };
 
 /*
 	DD
 */
 				            //willow			    //grey			    //szpachla			//hoost             //dukat
-if (getplayerUID player IN ["76561198063257019","76561198010297273","76561198026279912","76561198212483959","76561198089570329"]) then { client_aiad_actions=1; };
-				            //shepherd			//kenju			    //hansen			//sullivan          //iza               //donald
-if (getplayerUID player IN ["76561197991728220","76561198019277102","76561197973307654","76561198058274311","76561197992636644","76561198023332238"]) then { client_aiad_actions=2; };
+				            //kenju			    //hansen			//iza               //donald
 
 /*
 	TECZKA ALLOWED
 */
-							//kenju             //miathur           //dryg              //richard           //rudolf            //shepherd
-if (getplayerUID player IN ["76561198019277102","76561198037419471","76561198035513087","76561198022486899","76561198083797213","76561197991728220"]) then { teczka_allowed=1; };
+							//kenju             //miathur           //dryg              //richard           //rudolf
+if (getplayerUID player IN ["76561198019277102","76561198037419471","76561198035513087","76561198022486899","76561198083797213"]) then { teczka_allowed=1; };
 							//raf				//kifkick			//dorian			//kruk
 if (getplayerUID player IN ["76561197982469013","76561198201987250","76561198253273755","76561198015862132"]) then { teczka_allowed=2; };
 
