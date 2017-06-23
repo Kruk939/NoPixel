@@ -110,14 +110,19 @@ if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif
 	AIAD
 */
                             //franek star
+if (getplayerUID player IN ["76561198246369662"]) then { client_aiad_actions=1; }; //arsenal
                             //knox	   			//katekarin	   		//wazka	   		     //zwolin
+if (getplayerUID player IN ["76561198030912509","76561198041834190","76561198039045183","76561198120852548"]) then { client_aiad_actions=2; }; //arsenal + pluskwy
 				            //kifkick			//miathur
+if (getplayerUID player IN ["76561198201987250","76561198037419471"]) then { client_aiad_actions=3; }; //arsenal + pluskwy + podsłuchy
 
 /*
 	DD
 */
 				            //willow			    //grey			    //szpachla			//hoost             //dukat
+if (getplayerUID player IN ["76561198063257019","76561198010297273","76561198026279912","76561198212483959","76561198089570329"]) then { client_dd_actions=1; }; //pluskwy
 				            //kenju			    //hansen			//iza               //donald
+if (getplayerUID player IN ["76561198019277102","76561197973307654","76561197992636644","76561198023332238"]) then { client_dd_actions=2; }; //pluskwy + podsłuchy
 
 /*
 	TECZKA ALLOWED
