@@ -134,7 +134,7 @@ class EC635_IVY_635: EC635_Unarmed
 		crew = "C_man_1_1_F";
 		typicalCargo[] = {"C_man_1_1_F","C_man_1_1_F"};
 		vehicleClass = "Air";
-		hiddenSelectionsTextures[] = {"\sl_vehicles\textures\eurocopter\ems\OuterHaul_co.paa","\sl_vehicles\textures\eurocopter\ems\UpperParts_co.paa","\sl_vehicles\textures\eurocopter\ems\Tail_co.paa","\sl_vehicles\textures\eurocopter\ems\bawl_co.paa","\sl_vehicles\textures\eurocopter\ems\SideDoors_co.paa","\sl_vehicles\textures\eurocopter\ems\\CargoDoors_co.paa"};
+		hiddenSelectionsTextures[] = {"\sl_vehicles\textures\eurocopter\ems\OuterHaul_co.paa","\sl_vehicles\textures\eurocopter\ems\UpperParts_co.paa","\sl_vehicles\textures\eurocopter\ems\Tail_co.paa","\sl_vehicles\textures\eurocopter\ems\bawl_co.paa","\sl_vehicles\textures\eurocopter\ems\SideDoors_co.paa","\sl_vehicles\textures\eurocopter\ems\CargoDoors_co.paa"};
 	};
 class Jonzie_Ambulance;
 
