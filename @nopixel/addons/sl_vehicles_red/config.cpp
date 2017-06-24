@@ -43,6 +43,7 @@ class cfgVehicles
 	class red_xkrs_12_black;
 	class red_venomgt_11_black;
 	class red_charger_15_base;
+	class red_ambulance_08_p_base;
 
 
     #include "\sl_vehicles_red\config\cfgCivilianVehicles.hpp"
@@ -62,4 +63,5 @@ class cfgVehicles
 	#include "\sl_vehicles_red\config\vehicles\suburban_15_pu.hpp"
 	#include "\sl_vehicles_red\config\vehicles\taurus_10_p.hpp"
 	#include "\sl_vehicles_red\config\vehicles\taurus_10_pu.hpp"
+	#include "\sl_vehicles_red\config\vehicles\ambulance_08.hpp"
 };

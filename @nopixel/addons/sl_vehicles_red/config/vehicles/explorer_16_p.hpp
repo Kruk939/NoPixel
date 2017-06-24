@@ -66,3 +66,25 @@ class sl_fd_explorer16p: red_explorer_16_p_p_base
 	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
 	//#include "\sl_vehicles_red\data\sirenArray.hpp"
 };
+class sl_rru_113: red_explorer_16_p_p_base
+{
+	scope=2;
+	displayName="RRU Explorer 2015 (113)";
+	crew="C_man_1";
+	side=3;
+	faction="CIV_F";
+    hiddenSelectionsTextures[] = {"\sl_vehicles_red\tex\explorer_16_p\113_2016_Explorer_RRU.paa"};
+	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
+	//#include "\sl_vehicles_red\data\sirenArray.hpp"
+};
+class sl_rru_114: red_explorer_16_p_p_base
+{
+	scope=2;
+	displayName="RRU Explorer 2015 (114)";
+	crew="C_man_1";
+	side=3;
+	faction="CIV_F";
+    hiddenSelectionsTextures[] = {"\sl_vehicles_red\tex\explorer_16_p\114_2016_Explorer RRU.paa"};
+	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
+	//#include "\sl_vehicles_red\data\sirenArray.hpp"
+};

@@ -12,6 +12,18 @@ class CfgIvoryTextures
 		texture="\sl_ivoryTextures\textures\ivory\lexus_isf\fire_department.paa";
 		car = "isf";
 	};
+	class isf_rru_121
+	{
+		displayName="ISF RRU 121";
+		texture="\sl_ivoryTextures\textures\ivory\lexus_isf\121_Lexus_ISF_RRU.paa";
+		car = "isf";
+	};
+	class isf_rru_122
+	{
+		displayName="ISF RRU 122";
+		texture="\sl_ivoryTextures\textures\ivory\lexus_isf\122_Lexus_ISF_RRU.paa";
+		car = "isf";
+	};
 	/*
 	VEYRON
 	*/

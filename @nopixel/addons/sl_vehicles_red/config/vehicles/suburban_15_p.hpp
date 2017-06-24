@@ -17,3 +17,15 @@ class sl_251: red_suburban_15_p_p_base
 	#include "\sl_vehicles_red\data\weapons_sheriff_vehicle.hpp"
 	#include "\sl_vehicles_red\data\sirenArray.hpp"
 	};
+	class sl_rru_111: sl_251
+	{
+		displayName="RRU Suburban 2015 (111)";
+		hiddenSelectionsTextures[]=
+		{"\sl_vehicles_red\tex\suburban_15_p\111_2015_Suburban_RRU.paa"};
+	};
+	class sl_rru_112: sl_251
+	{
+		displayName="RRU Suburban 2015 (112)";
+		hiddenSelectionsTextures[]=
+		{"\sl_vehicles_red\tex\suburban_15_p\112_2015_Suburban_RRU.paa"};
+	};

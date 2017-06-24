@@ -23,3 +23,15 @@ class sl_232: red_taurus_10_p_p_base
 		hiddenSelectionsTextures[]=
 		{"\sl_vehicles_red\tex\taurus_10_p\233.paa"};
 	};
+        class sl_rru_115: sl_232
+	{
+		displayName="RRU Taurus (115)";
+		hiddenSelectionsTextures[]=
+		{"\sl_vehicles_red\tex\taurus_10_p\115_Taurus_10_RRU.paa"};
+	};
+        class sl_rru_116: sl_232
+	{
+		displayName="RRU Taurus (116)";
+		hiddenSelectionsTextures[]=
+		{"\sl_vehicles_red\tex\taurus_10_p\116_Taurus_10_RRU.paa"};
+	};

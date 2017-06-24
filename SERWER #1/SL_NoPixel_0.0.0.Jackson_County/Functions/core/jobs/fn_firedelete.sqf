@@ -12,7 +12,7 @@ _delete = [];
 } foreach fires;
 
 { if (typeOf _x == "#particlesource") then {
-	if (round(random 100)) < 5) then {
+	if ((round(random 100)) < 5) then {
 		_x setdamage 1; deleteVehicle _x; 
 	};
   };
