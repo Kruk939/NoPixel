@@ -29,7 +29,7 @@ if(visibleMap && "ItemGPS" in assignedItems player || visibleGPS) then {
 		};
 		if ("ItemGPS" in assignedItems _x) then {
 								//&& driver (vehicle _x) == _x
-			if ( _x in currentcop) then {
+			if ( _x in currentcop || _x in currentFBI) then {
 				_marker = createMarkerLocal [format["%1_PD_UNIT",name _x],visiblePosition _x];
 				_marker setMarkerColorLocal "ColorBlue";
 				_marker setMarkerTypeLocal "hd_dot";
