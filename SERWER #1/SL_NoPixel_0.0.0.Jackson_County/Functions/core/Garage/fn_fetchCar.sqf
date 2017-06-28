@@ -110,7 +110,7 @@ if(_status == 0) then {
 };
 
 _vehicle allowdamage false;
-_vehicle _vehicle addEventhandler ["engine",{if(isEngineOn (_this select 0) && !((_this select 0) IN Current_Cars))then{(_this select 0) engineOn false}}];
+_vehicle addEventhandler ["engine",{if(isEngineOn (_this select 0) && !((_this select 0) IN Current_Cars))then{(_this select 0) engineOn false}}];
 
 [_vehicle, "information", _car] remoteExec ["Server_fnc_setVariable",2];
 _vehicle setvariable ["information",_car,false];
