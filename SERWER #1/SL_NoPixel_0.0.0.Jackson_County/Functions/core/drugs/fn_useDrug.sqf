@@ -41,7 +41,6 @@ if(_type == "energy") then {
 	player enablefatigue false;
 	player enablestamina false;
 	["Czujesz się bardzo lekko!",false] spawn domsg;
-	["Remove","Karma",20] call client_fnc_sustain;
 };
 ["Add","unhealthiness",5] call client_fnc_sustain;
 
