@@ -26,6 +26,7 @@ _car = call compile format["%1", _car];
 if((_this select 0) == 1) exitwith { 
 	_vehicle = _car createvehicle getpos player; 
 	_vehicle allowdamage false;
+	[_vehicle, ["engine",{if(isEngineOn (_this select 0) && !((_this select 0) IN Current_Cars))then{(_this select 0) engineOn false}}]] remoteExec ["addEventHandler", 0, true];
 	_className = toLower(_car);
 	if (str _className find "vory_" > -1) then {
 		[_vehicle, "", "ivory"] remoteexec ["client_fnc_numberPlate",2];
@@ -108,9 +109,8 @@ if(_status == 0) then {
 	[_numberPlate,1,_vehicle,player] remoteExec ["Server_fnc_updateCarStatus",2];
 	_car SET [7,1];
 };
-
+[_vehicle, ["engine",{if(isEngineOn (_this select 0) && !((_this select 0) IN Current_Cars))then{(_this select 0) engineOn false}}]] remoteExec ["addEventHandler", 0, true];
 _vehicle allowdamage false;
-_vehicle addEventhandler ["engine",{if(isEngineOn (_this select 0) && !((_this select 0) IN Current_Cars))then{(_this select 0) engineOn false}}];
 
 [_vehicle, "information", _car] remoteExec ["Server_fnc_setVariable",2];
 _vehicle setvariable ["information",_car,false];

@@ -25,6 +25,7 @@ waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
 
 _vehicle allowdamage false;
 _vehicle setdamage 0;
+[_vehicle), ["engine",{if(isEngineOn (_this select 0) && !((_this select 0) IN Current_Cars))then{(_this select 0) engineOn false}}]] remoteExec ["addEventHandler", 0, true];
 
 player moveInDriver _vehicle;
 
