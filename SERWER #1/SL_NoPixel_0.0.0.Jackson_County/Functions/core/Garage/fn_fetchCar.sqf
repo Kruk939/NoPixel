@@ -109,7 +109,7 @@ if(_status == 0) then {
 	[_numberPlate,1,_vehicle,player] remoteExec ["Server_fnc_updateCarStatus",2];
 	_car SET [7,1];
 };
-[_vehicle, ["engine",{if(isEngineOn (_this select 0) && !((_this select 0) IN Current_Cars))then{(_this select 0) engineOn false}}]] remoteExec ["addEventHandler", 0, true];
+[_vehicle, ["engine",{if(isEngineOn (_this select 0) && !((_this select 0) IN Current_Cars))then{(_this select 0) engineOn false}else{(_this select 0) engineOn true}}]] remoteExec ["addEventHandler", 0, true];
 _vehicle allowdamage false;
 
 [_vehicle, "information", _car] remoteExec ["Server_fnc_setVariable",2];
