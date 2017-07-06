@@ -127,8 +127,8 @@ if (getplayerUID player IN ["76561198019277102","76561197973307654","76561197992
 /*
 	TECZKA ALLOWED
 */
-				             	//miathur           //dryg              //richard           //rudolf           //donald
-if (getplayerUID player IN ["76561198037419471","76561198035513087","76561198022486899","76561198083797213","76561198023332238"]) then { teczka_allowed=1; };
+				             //Danio           //miathur           //dryg              //richard           //rudolf           //donald
+if (getplayerUID player IN ["76561198082441969","76561198037419471","76561198035513087","76561198022486899","76561198083797213","76561198023332238"]) then { teczka_allowed=1; };
 							//raf				//kifkick			//dorian
 if (getplayerUID player IN ["76561197982469013","76561198201987250","76561198253273755"]) then { teczka_allowed=2; };
 
