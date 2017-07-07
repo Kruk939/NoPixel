@@ -96,7 +96,7 @@ adminInteractions = 0;
 	BAN HAMMER
 */
 							//downlad
-if (getplayerUID player IN ["76561198023332238"]) then { kif_admin=1; };
+//if (getplayerUID player IN ["76561198023332238"]) then { kif_admin=1; };
 							//danio				//farmer
 if (getplayerUID player IN ["76561198082441969","76561198131854921"]) then { kif_admin=2; };
 //							//raf				//teddy				//arthur
