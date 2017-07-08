@@ -195,7 +195,7 @@ class RscButtonSilent
 	w = 0.095589;
 	h = 0.039216;
 	shadow = 2;
-	font = "EtelkaNarrowMediumPro";
+	font = "PuristaMedium";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	offsetX = 0.003;
 	offsetY = 0.003;
@@ -262,7 +262,7 @@ class RscText
 	w = 0.3;
 	style = 0;
 	shadow = 1;
-	font = "EtelkaNarrowMediumPro";
+	font = "PuristaMedium";
 	SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	linespacing = 1;
 };
@@ -279,7 +279,7 @@ class RscStructuredText
 	};
 	class Attributes
 	{
-		font = "EtelkaNarrowMediumPro";
+		font = "PuristaMedium";
 		color = "#99D678";
 		align = "center";
 		shadow = 1;
@@ -287,7 +287,7 @@ class RscStructuredText
 	shadow = 1;
 	access = 1;
 	type = 13;
-	font = "EtelkaNarrowMediumPro";
+	font = "PuristaMedium";
 	idc = -1;
 	style = 0;
 	x = 0;
@@ -319,7 +319,7 @@ class RscPicture
 	type = 0;
 	idc = -1;
 	style = 48;
-	font = "TahomaB";
+	font = "PuristaMedium";
 	sizeEx = 0;
 	lineSpacing = 0;
 	text = "";
@@ -1659,7 +1659,7 @@ class RscMapControl
 	colorBackground[] = {0.969,0.957,0.949,1};
 	colorOutside[] = {0,0,0,1};
 	colorText[] = {0,0,0,1};
-	font = "TahomaB";
+	font = "PuristaMedium";
 	sizeEx = 0.04;
 	colorSea[] = {0.467,0.631,0.851,0.5};
 	colorForest[] = {0.624,0.78,0.388,0.5};
@@ -1967,15 +1967,15 @@ class RscMapControl
 	alphaFadeEndScale = 0.4;
 	fontLabel = "PuristaMedium";
 	sizeExLabel = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-	fontGrid = "TahomaB";
+	fontGrid = "PuristaMedium";
 	sizeExGrid = 0.02;
-	fontUnits = "TahomaB";
+	fontUnits = "PuristaMedium";
 	sizeExUnits = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	fontNames = "PuristaMedium";
 	sizeExNames = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
 	fontInfo = "PuristaMedium";
 	sizeExInfo = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-	fontLevel = "TahomaB";
+	fontLevel = "PuristaMedium";
 	sizeExLevel = 0.02;
 	text = "#(argb,8,8,3)color(1,1,1,1)";
 	//text = "\a3\ui_f\data\map_background2_co.paa";
@@ -2423,7 +2423,7 @@ class client_RscButtonSilent
 	w = 0.095589;
 	h = 0.039216;
 	shadow = 2;
-	font = "EtelkaNarrowMediumPro";
+	font = "PuristaMedium";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	offsetX = 0.003;
 	offsetY = 0.003;
@@ -2970,7 +2970,7 @@ class client_RscMapControl
 	colorBackground[] = {0.969,0.957,0.949,1};
 	colorOutside[] = {0,0,0,1};
 	colorText[] = {0,0,0,1};
-	font = "TahomaB";
+	font = "PuristaMedium";
 	sizeEx = 0.04;
 	colorSea[] = {0.467,0.631,0.851,0.5};
 	colorForest[] = {0.624,0.78,0.388,0.5};
@@ -3278,15 +3278,15 @@ class client_RscMapControl
 	alphaFadeEndScale = 0.4;
 	fontLabel = "PuristaMedium";
 	sizeExLabel = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-	fontGrid = "TahomaB";
+	fontGrid = "PuristaMedium";
 	sizeExGrid = 0.02;
-	fontUnits = "TahomaB";
+	fontUnits = "PuristaMedium";
 	sizeExUnits = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	fontNames = "PuristaMedium";
 	sizeExNames = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
 	fontInfo = "PuristaMedium";
 	sizeExInfo = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-	fontLevel = "TahomaB";
+	fontLevel = "PuristaMedium";
 	sizeExLevel = 0.02;
 	text = "#(argb,8,8,3)color(1,1,1,1)";
 	//text = "\a3\ui_f\data\map_background2_co.paa";
