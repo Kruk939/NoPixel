@@ -175,6 +175,7 @@ if(_doughnuts > 4) then {
 		["vvv_steyrmulti_civ", 25000],
 		["1967_Shelby_Mustang_GT500", 20000],
 		["ADM_Monte_Carlo", 15000],
+		["oetzii_hotrod",369000],
 		["VVV_Aston_Martin_1964_DB5", 40000]
 	];
 	_civilianVehicle = _civilianVehicle + _ret;
