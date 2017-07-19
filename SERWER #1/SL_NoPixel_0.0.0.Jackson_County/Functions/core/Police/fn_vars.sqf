@@ -717,8 +717,10 @@ _availableUniforms = [
     
     if (client_aiad_actions > 0 ) then {
 	_availableUniformsAIAD = [
-        "slpd_uni_aiad_div_chief_goc",
-        "slpd_uni_aiad_dep_div_chief",
+        "slpd_uni_aiad_div_chief_ryba_white",
+        "slpd_aiad_div_chief_ryba_blue",
+        "slpd_uni_aiad_dep_div_chief_ssgt",
+        "slpd_uni_aiad_dep_div_chief_sgt",
         "slpd_uni_aiad_insepctor_sgt",
         "slpd_uni_aiad_inspector_po4"
     ];
