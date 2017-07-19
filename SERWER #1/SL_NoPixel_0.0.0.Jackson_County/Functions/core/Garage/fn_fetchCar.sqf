@@ -115,7 +115,7 @@ _vehicle setvariable ["information",_car,false];
 
 if (_vehicle isKindOf "Car") then {
 
-	if (str _className find "vory_" > -1 | str _className find "Faisal_" > -1 | str _className find "AMG_" > -1) then {
+	if (str _className find "vory_" > -1 || str _className find "Faisal_" > -1 || str _className find "AMG_" > -1) then {
 		[_vehicle, [_carColor,_carFinish], _wheelColor, _windowTint, _headlightTint] call client_fnc_IvoryInitVehicle;
 		[_vehicle, _numberPlate, "ivory"] remoteexec ["client_fnc_numberPlate",2];
 	};
