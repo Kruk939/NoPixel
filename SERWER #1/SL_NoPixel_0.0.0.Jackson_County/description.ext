@@ -142,6 +142,7 @@ class CfgFunctions
             class adminMessage {};
             class adminGodmode {};
             class adminRemoteRespawn {};
+	    class adminRemoteSync {};
 			class unhaxMe {};
 			class randomCheck {};
 		};
