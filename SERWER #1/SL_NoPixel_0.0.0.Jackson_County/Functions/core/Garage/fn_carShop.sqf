@@ -110,7 +110,12 @@ _civilianVehicle = [
 	["RM_Mercedes_Benz_CLA45_AMG",199000],
 	["RM_Mercedes_Benz_C63_AMG_Black_series",399000],
 	["RM_Porsche_Panamera_Turbo",420000],
-	["RM_Chevrolet_Suburban_2015",400000],
+	["oetzii_60corvette_black",90000],
+	["oetzii_a45_black",220000],
+	["oetzii_challenger_black",200000],
+	["oetzii_lykan_black",650000],
+	["oetzii_mb300_black",199000],
+	["oetzii_xbow_black",450000],
 	["C_SUV_01_F",25000]
 ];
 _harleys = [

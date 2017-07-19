@@ -193,31 +193,61 @@ class slpd_uni_rafwhite: Uniform_Base
 			armor = 40;
 		};
 	};
-	class slpd_uni_aiad_dep_div_chief: Uniform_Base
+	class slpd_uni_aiad_dep_div_chief_sgt: Uniform_Base
 	{
 		scope = 2;
-		displayName = "Police Uniform AIAD Division Chief";
+		displayName = "PD AIAD Deputy Division Chief";
 		picture = "\sl_pduniforms\Data\ui\sl_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "slpd_aiad_dep_div_chief";
+			uniformClass = "slpd_aiad_dep_div_chief_sgt";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;
 		};
 	};
-	class slpd_uni_aiad_div_chief_goc: Uniform_Base
+	class slpd_uni_aiad_dep_div_chief_ssgt: Uniform_Base
 	{
 		scope = 2;
-		displayName = "Police Uniform AIAD Deputy Division Chief";
+		displayName = "PD AIAD Deputy Division Chief";
 		picture = "\sl_pduniforms\Data\ui\sl_logo.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "slpd_aiad_div_chief_goc";
+			uniformClass = "slpd_aiad_dep_div_chief_ssgt";
+			containerClass = "Supply100";
+			mass = 0;
+			armor = 40;
+		};
+	};
+	class slpd_uni_aiad_div_chief_ryba_white: Uniform_Base
+	{
+		scope = 2;
+		displayName = "PD AIAD Division Chief J. Ryba White";
+		picture = "\sl_pduniforms\Data\ui\sl_logo.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "slpd_uni_aiad_div_chief_ryba_white";
+			containerClass = "Supply100";
+			mass = 0;
+			armor = 40;
+		};
+	};
+	class slpd_aiad_div_chief_ryba_blue: Uniform_Base
+	{
+		scope = 2;
+		displayName = "PD AIAD Division Chief J. Ryba Blue";
+		picture = "\sl_pduniforms\Data\ui\sl_logo.paa";
+		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "slpd_aiad_div_chief_ryba_blue";
 			containerClass = "Supply100";
 			mass = 0;
 			armor = 40;

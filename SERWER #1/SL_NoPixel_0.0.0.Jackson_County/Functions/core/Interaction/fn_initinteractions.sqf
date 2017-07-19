@@ -268,10 +268,10 @@ NoPixel_InteractionMenuItems = [
 		["Reanimuj", "['Reanimacja',15,client_fnc_sendRevive,player,'AinvPknlMstpSnonWnonDnon_medic_1',CurrentCursorTarget,""cg_mission_files\sounds\patdown1.ogg"",0] spawn client_fnc_dotask; paycheck = paycheck + 125;",1]
 	],
 
-	[
-		["(count currentEMS < 3) && !(myjob == ""EMS"")"],
-		["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
-	],
+	//[
+	//	["(count currentEMS < 3) && !(myjob == ""EMS"")"],
+	//	["Ulecz", "[] spawn client_fnc_openHealMenu;",1]
+	//],
 
 	[
 		["(myjob == ""EMS"" || myjob == ""Fire"")"],

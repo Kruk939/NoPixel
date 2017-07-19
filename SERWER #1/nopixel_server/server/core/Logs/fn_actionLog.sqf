@@ -70,7 +70,9 @@ switch (_type) do {
     case 28: {_type = "ZakonczylGotowacMethe";};
     case 29: {_type = "ZapakowalDrewnoNaPojazd";};
     case 30: {_type = "PrzerobilDrewno";};
-    //case 31: {_type = "";};
+    case 31: {_type = "RozpoczalNapad";};
+    case 32: {_type = "ZakonczyllNapad";};
+    //case 33: {_type = "";};
 };
 
 

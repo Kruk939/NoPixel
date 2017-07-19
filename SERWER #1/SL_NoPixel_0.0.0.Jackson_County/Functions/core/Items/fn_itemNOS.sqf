@@ -55,7 +55,7 @@ if(client_nos_count > 0 && _vehicle isKindOf "Car") then {
 		uiSleep 3;
 		[] call client_fnc_hudnos;
 
-        sleep 300;
+        sleep 10;
         client_can_use_nos = true;
         } else {
             ["Musisz odczekać zanim użyjesz nitro kolejny raz!", false] spawn domsg;

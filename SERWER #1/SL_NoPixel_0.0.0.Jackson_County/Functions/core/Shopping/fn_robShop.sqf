@@ -18,6 +18,7 @@ client_robbing = true;
 _POPTASK = uiNameSpace getVariable ["RSC_dotask",displayNull];
 _POPUP = _POPTASK displayCtrl 9119;
 _POPUP ctrlSetStructuredText parseText format["<img size='1' image='cg_mission_files\icons\info.paa'/> <t color='#FFCC00'><t size='0.9'>%1</t> <br/> <t size='2'>%2</t>",_task,_timeLeft];
+[player,objNull,31,format ["%1 rozpoczął napad na sklep.",name player],0] remoteExec ["server_fnc_actionLog", 2];
 
 for "_i" from 0 to 1 step 0 do {
 	uisleep 1;
@@ -38,6 +39,7 @@ if(_error == "") then {
 
 	_suitCases = ["kif_5k","kif_5k","kif_5k","kif_10k"];
 	_item = _suitCases call BIS_fnc_selectRandom;
+	[player,objNull,32,format ["%1 zakończył napad na sklep. Jego zarobek to %2",name player, _item],_item] remoteExec ["server_fnc_actionLog", 2];
 	player addItem _item;
 
 	[format["Okradłeś sklep, zabrałeś $%1", _amount], false] call domsg;

@@ -154,27 +154,50 @@ class slpd_rafwhite: B_Competitor_F
 		
 	};
 
-	class slpd_aiad_dep_div_chief: B_Competitor_F
+	class slpd_aiad_dep_div_chief_sgt: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
 		scope = 2;
 		nakedUniform = "U_BasicBody";
-		uniformClass = "slpd_uni_aiad_dep_div_chief";
+		uniformClass = "slpd_uni_aiad_dep_div_chief_sgt";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"sl_pduniforms\Data\clothing\aiad\aiad_dep_div_chief.paa"};
-		displayName = "Police Uniform AIAD Deputy Division Chief";
+		hiddenSelectionsTextures[] = {"sl_pduniforms\Data\clothing\aiad\aiad_dep_div_chief_blue_sgt.paa"};
+		displayName = "PD AIAD Deputy Division Chief";
+		
+	};
+	class slpd_aiad_dep_div_chief_ssgt: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "slpd_uni_aiad_dep_div_chief_ssgt";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"sl_pduniforms\Data\clothing\aiad\aiad_dep_div_chief_blue_ssgt.paa"};
+		displayName = "PD AIAD Deputy Division Chief";
 		
 	};
 
-	class slpd_aiad_div_chief_goc: B_Competitor_F
+	class slpd_aiad_div_chief_ryba_white: B_Competitor_F
 	{
 		_generalMacro = "B_Competitor_F";
 		scope = 2;
 		nakedUniform = "U_BasicBody";
-		uniformClass = "slpd_uni_aiad_div_chief_goc";
+		uniformClass = "slpd_uni_aiad_div_chief_ryba_white";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"sl_pduniforms\Data\clothing\aiad\aiad_div_chief_goc.paa"};
-		displayName = "Police Uniform AIAD Division Chief J. Goc";
+		hiddenSelectionsTextures[] = {"sl_pduniforms\Data\clothing\aiad\aiad_div_chief_white.paa"};
+		displayName = "PD AIAD Division Chief J. Ryba White";
+		
+	};
+	
+	class slpd_aiad_div_chief_ryba_blue: B_Competitor_F
+	{
+		_generalMacro = "B_Competitor_F";
+		scope = 2;
+		nakedUniform = "U_BasicBody";
+		uniformClass = "slpd_uni_aiad_div_chief_ryba_blue";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"sl_pduniforms\Data\clothing\aiad\aiad_div_chief_blue.paa"};
+		displayName = "PD AIAD Division Chief J. Ryba Blue";
 		
 	};
 
@@ -187,7 +210,7 @@ class slpd_rafwhite: B_Competitor_F
 		uniformClass = "slpd_uni_aiad_insepctor_sgt";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"sl_pduniforms\Data\clothing\aiad\aiad_insepctor_sgt.paa"};
-		displayName = "Police Uniform AIAD Inspector Sergeant";
+		displayName = "PD AIAD Inspector Sergeant";
 		
 	};
 
@@ -199,6 +222,6 @@ class slpd_rafwhite: B_Competitor_F
 		uniformClass = "slpd_uni_aiad_inspector_po4";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"sl_pduniforms\Data\clothing\aiad\aiad_inspector_po4.paa"};
-		displayName = "Police Uniform AIAD Inspector PO IV";
+		displayName = "PD AIAD Inspector PO IV";
 		
 	};
