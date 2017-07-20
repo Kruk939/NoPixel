@@ -109,8 +109,8 @@ if (getplayerUID player IN ["76561198201987250","76561198253273755"]) then { kif
 /*
 	AIAD
 */
-                            //franek star
-if (getplayerUID player IN ["76561198246369662"]) then { client_aiad_actions=1; }; //arsenal
+                            //franek star		//zdzichu_paleta
+if (getplayerUID player IN ["76561198246369662","76561198199656690"]) then { client_aiad_actions=1; }; //arsenal
                             //knox	   			//katekarin	   		//wazka	   		     //zwolin
 if (getplayerUID player IN ["76561198030912509","76561198041834190","76561198039045183","76561198120852548"]) then { client_aiad_actions=2; }; //arsenal + pluskwy
 				            //kifkick			//miathur
