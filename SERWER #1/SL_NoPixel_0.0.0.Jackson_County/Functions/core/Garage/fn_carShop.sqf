@@ -116,6 +116,13 @@ _civilianVehicle = [
 	["oetzii_lykan_black",650000],
 	["oetzii_mb300_black",199000],
 	["oetzii_xbow_black",450000],
+	["GMC_01",15000],
+	["RS5_01",100000],
+	["Veyron_01",650000],
+	["2013Tahoe_01",100000],
+	["Escalade_01",75000],
+	["oetzii_xbow_black",450000],
+	["oetzii_xbow_black",450000],
 	["C_SUV_01_F",25000]
 ];
 _harleys = [

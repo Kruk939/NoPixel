@@ -37,4 +37,5 @@ class sl_bearcat_mat: Abruzzi_LencoPD_01
 	side=3;
 	hiddenSelectionsMaterials[]=
 	{"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","\sl_impala\rvmat\body.rvmat",""};
+	hiddenSelectionsTextures[] = {"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","\sl_vehicles_red\tex\bearcat_lenco\body04.paa",""};
 	};

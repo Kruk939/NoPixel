@@ -1,6 +1,6 @@
 enableSaving [false, false];
 a9ec2a59c630de5b27603e8ecd9fb153 = true;
-kif_client_v = 0.41;
+kif_client_v = 0.42;
 
 //Radia
 tf_west_radio_code = "";
