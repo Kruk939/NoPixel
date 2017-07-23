@@ -119,8 +119,8 @@ if (getplayerUID player IN ["76561198201987250","76561198037419471"]) then { cli
 /*
 	DD
 */
-				            //willow			    //grey			    //szpachla			//hoost             //dukat
-if (getplayerUID player IN ["76561198063257019","76561198010297273","76561198026279912","76561198212483959","76561198089570329"]) then { client_dd_actions=1; }; //pluskwy
+		            		//willow	    	//grey		    	//szpachla			//hoost
+if (getplayerUID player IN ["76561198063257019","76561198010297273","76561198026279912","76561198212483959"]) then { client_dd_actions=1; }; //pluskwy
                             //kifkick           //dryg              //richard           //rudolf            //basta            //walezy
 if (getplayerUID player IN ["76561198201987250","76561198035513087","76561198022486899","76561198083797213","76561198190509090","76561198060193900"]) then { client_dd_actions=2; }; //pluskwy + podsłuchy
 
