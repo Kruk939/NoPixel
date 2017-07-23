@@ -47,7 +47,7 @@ if(myJob == "Cop") then {
 			"kif_wrx_unmarked_blb",
 			"kif_wrx_unmarked_mblb",
             
-			/*"kif_evox_unmarked_bb",
+			"kif_evox_unmarked_bb",
 			"kif_evox_unmarked_mbb",
 			"kif_evox_unmarked_br",
 			"kif_evox_unmarked_rb",
@@ -57,7 +57,7 @@ if(myJob == "Cop") then {
 			"kif_evox_unmarked_blb",
 			"kif_evox_unmarked_mblb",
 				
-			"kif_rev_unmarked_bb",*/
+			"kif_rev_unmarked_bb",
                 
             //CIV
             "ivory_e36_unmarked_bb_civ",
